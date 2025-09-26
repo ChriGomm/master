@@ -13,7 +13,7 @@ plt.style.use('_mpl-gallery')
 
 fig, ax = plt.subplots(subplot_kw={"projection": "3d"},figsize=(8, 6))
 # for i in range(4,eigenvals.shape[2]):
-for i in range(2,4):
+for i in range(4,6):
     # ax.plot_surface(kx[:grid_size//2,:], ky[:grid_size//2,:], eigenvals[:grid_size//2,:,i],color=cm.viridis(i/eigenvals.shape[2]), alpha=0.7)
     # for x in range(grid_size):
     #     for y in range(grid_size):
