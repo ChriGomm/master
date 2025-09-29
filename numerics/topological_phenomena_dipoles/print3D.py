@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-eigenvals = np.load("numerics/3D_data/periodic_dipole_eigenvalues.npy")
-kx, ky = np.load("numerics/3D_data/k_periodic_dipole.npy")
+eigenvals = np.load("numerics/topological_phenomena_dipoles/3D_data/periodic_dipole_eigenvalues5.npy")
+kx, ky = np.load("numerics/topological_phenomena_dipoles/3D_data/k_periodic_dipole5.npy")
 grid_size  = eigenvals.shape[0]
 from matplotlib import cm
 
