@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-eigenvals = np.load("numerics/topological_phenomena_dipoles/3D_data/periodic_dipole_eigenvalues5.npy")
-kx, ky = np.load("numerics/topological_phenomena_dipoles/3D_data/k_periodic_dipole5.npy")
+eigenvals = np.load("numerics/topological_phenomena_dipoles/3D_data/periodic_eigenvalues_VdW.npy")
+kx, ky = np.load("numerics/topological_phenomena_dipoles/3D_data/k_periodic_VdW.npy")
 grid_size  = eigenvals.shape[0]
 from matplotlib import cm
 
@@ -13,11 +13,11 @@ plt.style.use('_mpl-gallery')
 
 fig, ax = plt.subplots(subplot_kw={"projection": "3d"},figsize=(8, 6))
 # for i in range(4,eigenvals.shape[2]):
-for i in range(4,6):
+for i in range(2,4):
     # ax.plot_surface(kx[:grid_size//2,:], ky[:grid_size//2,:], eigenvals[:grid_size//2,:,i],color=cm.viridis(i/eigenvals.shape[2]), alpha=0.7)
     # for x in range(grid_size):
     #     for y in range(grid_size):
-    ax.scatter(kx, ky, np.real(eigenvals[:,:,i]), color=cm.viridis(i/eigenvals.shape[2]), alpha=0.7,s=20)
+    ax.scatter(kx, ky, np.real(eigenvals[:,:,i]), color=cm.viridis(i/eigenvals.shape[2]), alpha=0.7)#,s=20)
 ax.view_init(elev=5, azim=30)
 
 plt.show()
