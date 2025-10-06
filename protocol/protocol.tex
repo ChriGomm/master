@@ -1,0 +1,339 @@
+\documentclass[10pt]{scrbook} % report for PDF, scrbook for printing
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% bachelor thesis template at University of Tübingen
+%
+% created by Marcel Cech (marcel.cech@student.uni-tuebingen.de) by joining 
+% - PosterA0 from Chris Nill (chris.nill@student.uni-tuebingen.de) & Simon Kochsiek (simon.kochsiek@student.uni-tuebingen.de)
+% - bachelor thesis of Tom von Scheven (tom.von-scheven@student.uni-tuebingen.de)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% standard input packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+%\renewcommand{\familydefault}{\rmdefault}
+% \usepackage{lmodern}
+\usepackage[T1]{fontenc}
+%printing
+% \addtokomafont{disposition}{\rmfamily} %for printing with scrbook
+\usepackage[pdftex]{graphicx}
+% \usepackage{fancybox}
+% \usepackage{framed}
+% \usepackage{here} %Positionierung von Objekten mit H
+% \usepackage[section]{placeins} %Grafiken gleiten nicht in nächste Section
+%\usepackage[list=true,font=large,labelfont=bf,labelformat=brace,position=top]{subcaption}
+%\captionsetup[subfigure]{list=true, font=large, labelfont=bf, labelformat=brace, position=top} %Ermöglicht mehrere Bilder nebeneinander
+% \usepackage{blindtext} %Blindtext
+%\setlength\parindent{0pt} %global \noindent
+% \renewenvironment{quote}{%Umgebung für
+%   \list{}{%
+%     \leftmargin1cm   % this is the adjusting screw
+%     \rightmargin\leftmargin
+%   }
+%   \item\relax
+% }
+% {\endlist}
+% \newcommand{\mycaption}[2]{\caption[#1]{\textbf{#1} #2}}
+% \newcommand{\kRange}{{\mathbf{k} \in \{ 0, 1 \}^N}}
+% \DeclareFontFamily{OT1}{pzc}{}
+% \DeclareFontShape{OT1}{pzc}{m}{it}{<-> s * [1.10] pzcmi7t}{}
+% \DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+%\usepackage{scrhack} %for printing, implements old features, when using scrbook instead of report
+
+%% TIKZ
+% \usepackage{pgfplots}
+% \DeclareUnicodeCharacter{2212}{−}
+% \usepgfplotslibrary{groupplots, dateplot}
+% \usetikzlibrary{patterns,shapes.arrows}
+% \pgfplotsset{compat=newest}
+% \usepgfplotslibrary{external} 
+% \tikzexternalize[prefix=cache/]
+
+%% layout-settings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% standard PDF
+% \usepackage[a4paper, left=3cm, right=3cm, top=3.7cm, bottom=3cm, head=14.5pt]{geometry} %textwidth = 21cm - left - right
+% ohne Anschnitt für digitale Version
+% \usepackage[off,width=210truemm,height=297truemm,center]{crop}
+
+% real twosided printing: https://www.online-druck.biz/infos/kundenservice/daten_vorliegen/#infoblatt-druckdaten
+%printing
+% \usepackage[twoside, dvips=false, pdftex=false, vtex=false, a4paper, left=3.2cm, right=2cm, top=2.7cm, bottom=3.0cm, head=14.5pt]{geometry} 
+\usepackage[twoside, dvips=false, pdftex=false, vtex=false, a4paper, left=2.6cm, right=2.6cm, top=2.7cm, bottom=3.0cm, head=14.5pt]{geometry} 
+\usepackage[off,width=216truemm,height=303truemm,center]{crop}
+
+%kurzer Check dann auf https://www.check4print.com
+
+% or onesided printing 
+%\usepackage[a4paper, left=3.5cm, right=2.5cm, top=3.7cm, bottom=3cm,head=14.5pt]{geometry}
+
+% and some helpful pages
+
+\usepackage{StandardPages}
+
+% \newlength{\mytextwidth}
+% \newcommand{\measuretext}[1]{%
+%     \settowidth{\mytextwidth}{#1} % Measure the width of the text
+%     \the\mytextwidth              % Output the width
+% }
+
+%% foot- and headline for PDF
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\usepackage[headwidth=0.25\textwidth:0.75\textwidth,headsepline,automark]{scrlayer-scrpage}
+% \pagestyle{scrheadings}
+\renewcommand*{\sectionmarkformat}{}
+%printing => comment following commands
+% \clearpairofpagestyles
+\automark[chapter]{section}
+\lehead[\headmark]{\headmark}
+\rohead[\headmark]{\headmark}
+% \lehead[chapter]{chapter}
+% \rohead[section]{section}
+% \cfoot*{\pagemark} %for PDF
+
+\usepackage[hang,flushmargin]{footmisc}  % left flushed footnotes
+
+%% standard packages for physics
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amssymb,amsmath,mathtools}
+\numberwithin{equation}{chapter} % Numbering equations in sections 
+% \usepackage{mathbbol}
+%\usepackage{siunitx} % Specify numerical values correctly formatted with SI unit
+%\sisetup{per-mode = fraction} % Einstellungen des Pakets siunitx
+%\let\svqty\qty
+% \usepackage{physics} % Standard package for physics (bra-ket, del, curl, ...)
+\usepackage{relsize} % scale math symbols (e.g. the sum symbol)
+\usepackage{amsfonts,amsthm} % mathematical theorems
+\usepackage{dsfont}
+\usepackage{bm} %bold math for vectors
+\usepackage{amsthm}
+\usepackage{acronym}
+\usepackage{pdfpages} %include PDFs
+\usepackage{braket}
+\usepackage{wrapfig}
+\usepackage{floatrow}
+% \usepackage{subcaption}
+\usepackage[toc,page]{appendix}
+% math styled 
+% \newtheorem{theorem}{Theorem}[section]
+% \newtheorem{corollary}{Corollary}[theorem]
+% \newtheorem{lemma}[theorem]{Lemma}
+% \newtheorem{definition}{Definition}[section]
+
+% SVG graphics (comment out which platform you use)
+% unix:
+% \usepackage{svg}
+% windows: need path to inkscape executable %inkscapeexe="C:/Program Files/Inkscape/bin/inkscape.exe"
+% \usepackage[inkscapeexe="C:/Program Files/Inkscape/bin/inkscape.exe",inkscapepath=cache/]{svg} 
+
+%% color settings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{xcolor}
+% use the corporate design from university, see https://www.cd.uni-tuebingen.de
+%\definecolor{rot}{RGB}{165,30,55} % uni-rot
+%\definecolor{blau}{RGB}{65,90,140} % uni-blau
+%\definecolor{gold}{RGB}{180,160,105} % uni-gold
+%\definecolor{anthrazit}{RGB}{50,65,75} % uni-anthrazit, Hex = 32414B
+%\definecolor{mainCol}{RGB}{255,255,255} % Hintergrund weiss
+%% standard matplotlib-colors
+%\definecolor{C0}{HTML}{1f77b4}
+%\definecolor{C1}{HTML}{ff7f0e}
+%\definecolor{C2}{HTML}{2ca02c}
+%\definecolor{C3}{HTML}{d62728}
+%\definecolor{C4}{HTML}{9467bd}
+%\definecolor{C5}{HTML}{8c564b}
+%\definecolor{C6}{HTML}{e377c2}
+%\definecolor{C7}{HTML}{7f7f7f}
+%\definecolor{C8}{HTML}{bcbd22}
+%\definecolor{C9}{HTML}{17becf}
+%% colorbrewer2: 5-class RdYlBu, see https://colorbrewer2.org/?type=diverging&scheme=RdYlBu&n=5
+\definecolor{CB1}{HTML}{d7191c}
+\definecolor{CB2}{HTML}{fdae61}
+\definecolor{CB3}{HTML}{ffffbf}
+\definecolor{CB4}{HTML}{abd9e9}
+\definecolor{CB5}{HTML}{2c7bb6}
+\definecolor{CB6}{HTML}{32414b} %gray
+
+
+%% hyperlinks and image captions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[
+	unicode=true,
+	colorlinks=true,
+	linkcolor=black,
+	citecolor=blue,
+	citebordercolor=blue, 
+	urlcolor=blue,
+	hypertexnames=false % suitable for suppl. mat. (see  https://latex.org/forum/viewtopic.php?t=32205)
+]{hyperref}
+\usepackage[
+	format=plain, % Die Beschriftung als Absatz.
+	margin={0pt,0pt}, % Margin der Beschriftung ist 1cm.
+	labelformat=simple, % Hinter der Zahl soll eine runde Klammer stehen z.B. 1)
+	labelsep=colon, % Zwischen Label und Text soll ein Zeilenumbruch erfolgen.
+	textformat=simple, % Der Text soll nicht verändert werden.
+	justification=justified, % Der Text soll zentriert werden.
+	labelfont=default, % zB: Der Bezeichner soll groß und fett geschrieben werden.
+	font=default, % ändere die Größe der Schrift (zuvor footnotesize)
+	textfont=default % Der Text soll kursiv gesetzt werden. -->it
+]{caption}
+
+% macros for references
+\newcommand{\figref}[1]{Fig.\,\ref{#1}}
+\newcommand{\secref}[1]{Section\,\ref{#1}}
+\newcommand{\chref}[1]{Chapter\,\ref{#1}}
+\renewcommand{\eqref}[1]{Eq.\,(\ref{#1})}
+\newcommand{\appref}[1]{Appendix\;\ref{#1}}
+\newcommand{\anticomm}[2]{\left\{#1, #2\right\}}
+
+%% bibliography with biber
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \usepackage{csquotes} % quotations with inverted commas, required by BibLaTeX
+% \usepackage[citestyle=phys, bibstyle=phys, biblabel=brackets, pageranges=true, backend=biber]{biblatex}
+% \bibliography{source2.bib}
+% \addbibresource{source.bib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% end of template; document content begins now
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% information for the title page (tp) 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\tpauthorname}{Christian Gommeringer}
+\newcommand{\tpsupervisors}{Dr. Albert Cabot}
+\newcommand{\tpevaluators}{Prof. Dr. Igor Lesanovsky}
+\newcommand{\tptypeofthesis}{Bachelor Thesis}
+\newcommand{\tpag}{AG Lesanovsky}
+\newcommand{\tpinstitute}{Institut f\"{u}r Theoretische Physik}
+\newcommand{\tpuniversity}{Eberhard-Karls Universit\"{a}t T\"{u}bingen}
+\newcommand{\tpfaculty}{Mathematisch-Naturwissenschaftliche Fakult\"{a}t}
+\newcommand{\tpfachbereich}{Fachbereich Physik}
+\newcommand{\tptitle}{Synchronized Time Crystal Phase in a Driven-Dissipative Atomic Ensemble}
+\newcommand{\tpdate}{\today}
+
+
+\newcommand{\half}{\frac{1}{2}}
+\newcommand{\Trs}[1]{\text{Tr}_S\left\{#1\right\}}
+\newcommand{\Trb}[1]{\text{Tr}_B\left\{#1\right\}}
+% \newcommand{\dt}[1]{\frac{\text{d} #1}{\text{d}t}}
+\newcommand{\dt}{\frac{\text{d}}{\text{d}t}}
+\newcommand{\tk}{\tilde{\kappa}}
+\newcommand{\tw}{\tilde{\omega}}
+\newcommand{\dkw}{\left(\frac{\text{d}}{\text{d}{y}}\,\frac{\Omega^2}{K}\right)}
+\newcommand{\kw}{\frac{\Omega^2}{K}}
+\newcommand{\ty}{\tilde{y}}
+\newcommand{\diff}{\text{d}}
+\begin{document}
+% \makebookcover
+% \end{document}
+% \maketitlepage
+
+% % 
+% \setcounter{page}{1}
+% \pagenumbering{roman}
+
+
+
+% % \newpage\null\thispagestyle{empty}\newpage
+
+% \makealllistofcontents
+% \setcounter{page}{1}
+% \pagenumbering{arabic}
+% \cleardoubleemptypage
+% %% main document  
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \automark[section]{chapter}
+% \lehead[\headmark]{\headmark}
+% \rohead[\headmark]{\headmark}
+% %\input{content/Deleted.tex}
+% % \clearpage
+% % \lehead[Introduction]{Introduction}
+% % \rohead[Introdduction]{Introduction}
+% \input{chapters/introduction.tex}
+% % \newpage
+
+% \input{chapters/theory.tex}
+% % \clearpage
+% \input{chapters/zero_detuning.tex}
+% % % \clearpage
+% \input{chapters/detuned_case.tex}
+% % \automark[section]{section}
+% % \lehead[\headmark]{\headmark}
+% % \rohead[\headmark]{\headmark}
+% % \lehead[Conclusion]{Conclusion}
+% % \rohead[Conclusion]{Conclusion}
+% % \automark[chapter]{chapter}
+% \input{chapters/conclusion.tex}
+
+
+% \cleardoublepage
+% % \lehead[]{}
+% % \newpage
+% \makedeclarationoffidelity
+% \automark[section]{chapter}
+% \lehead[\headmark]{\headmark}
+% \rohead[\headmark]{\headmark}
+
+
+\input{interactions.tex}
+
+% {	
+% 	\thispagestyle{plain}
+
+% 	\section*{Related publication}
+% 	This thesis resulted from the research conducted in the master studies of the author. Parts of these results are already published in the following preprint:\\
+
+% 	\begin{center}
+% 		M. Cech, I. Lesanovsky, and F. Carollo, \\
+% 		``Thermodynamics of quantum trajectories on a quantum computer'', \\
+% 		\href{https://doi.org/10.48550/arXiv.2301.07124}{arXiv:2301.07124 (2023)},\\
+% 		Submitted to \textit{Physical Review Letters} in January 2023.
+% 	\end{center}
+% 	\clearpage
+% }
+% \automark[section]{section}
+% \lehead[\headmark]{\headmark}
+% \rohead[\headmark]{\headmark}
+% \printbibliography
+% \input{chapters/appendices.tex}
+% \cleardoublepage
+
+% additional material  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% {
+% 	\thispagestyle{plain}
+% 	\printbibliography
+% 	\clearpage
+% }
+
+% \input{chapters/appendices.tex}
+% % \clearpage
+
+% {
+% 	\thispagestyle{plain}
+% 	\chapter*{}
+% 	\section*{Acknowledgements}
+% 	First and foremost, I thank my two supervisors, Prof. Dr. Igor Lesanovsky and Dr. Federico Carollo. Your guidance, support, and mentorship have been invaluable throughout my master thesis and the related publication. After each of our discussions, I felt old questions answered and new ones raised.
+
+% 	Of course, my gratitude also belongs to Prof. Dr. Daniel Braun, who appraised this thesis despite his current research semester.
+
+% 	Also, I wish to extend my thanks to Priv.-Doz. Dr. Beatriz Olmos Sanchez, Chris Nill and Tom von Scheven. Your advices, encouragement and the professional exchange in each and every project during the last year provided me with a new perspective and have helped me approach problems from different angles. 
+
+% 	Finally, I want to thank Moritz Eissler for proofreading this thesis and contributing valuable suggestions for its presentation. 
+	
+% 	\clearpage
+	
+% 	\thispagestyle{plain}
+% 	\section*{Contact Information}
+% 	Marcel Cech\\
+% 	Institut für Theoretische Physik\\
+% 	Auf der Morgenstelle 14\\
+% 	Universität Tübingen\\
+% 	72076 Tübingen\\
+% 	Marcel.Cech@student.uni-tuebingen.de
+
+
+% }
+
+\end{document}

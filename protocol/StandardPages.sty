@@ -1,0 +1,116 @@
+%% standard-pages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\makebookcover}{
+    \begin{titlepage}
+        \begin{center}
+            
+            
+            {\huge \bfseries \tptypeofthesis}\\[7cm] % Thesis type
+            
+            %\rule{.95\linewidth}{.6pt} \\[0.4cm] % Horizontal line
+            {\huge \bfseries \tptitle \par} 
+            
+            \vspace*{13.5cm}
+
+            {\huge \bfseries
+                \tpauthorname\\[1cm]
+            }
+            % {\large
+            %     \tpdate
+            % }\\[4cm] % Date
+            %\includegraphics{Logo} % University/department logo - uncomment to place it
+            
+            \vfill
+        \end{center}
+    \end{titlepage}
+}
+
+\newcommand{\maketitlepage}{
+    \begin{titlepage}
+        \begin{center}
+            
+            \vspace*{0cm}
+            {\scshape{\LARGE \tpuniversity\\} \tpfaculty \\ \tpfachbereich \\}\vspace{2cm} % University name
+            
+            
+            \rule{.95\linewidth}{3pt} \\[0.4cm] % Horizontal line
+            {\huge \bfseries \tptitle \par}\vspace{0.4cm} % Thesis title
+            \rule{.95\linewidth}{3pt} \\[4.5cm] % Horizontal line
+            \textsc{\Large \tptypeofthesis}\\[2cm] % Thesis type
+            \begin{minipage}[t]{0.425\textwidth}
+                \begin{flushleft} \large
+                    \emph{Author:}\\
+                    {\tpauthorname}
+                \end{flushleft}
+            \end{minipage}
+            \begin{minipage}[t]{0.425\textwidth}
+                \begin{flushright} \large
+                    \emph{Supervisors:} \\
+                    {\tpsupervisors\\\tpevaluators}\\[1cm] % Supervisor name - remove the \href bracket to remove the link  
+                    
+                    % \emph{Referees:} \\
+                    % {\tpevaluators}
+                \end{flushright}
+            \end{minipage}\\[2cm]
+            
+            \vfill
+            
+            \tpag\\ 
+            \tpinstitute\\[2.5cm] % Research group name and department name
+            
+            \vfill
+            
+            {\large \tpdate}\\[3cm] % Date
+            %\includegraphics{Logo} % University/department logo - uncomment to place it
+            
+            \vfill
+        \end{center}
+    \end{titlepage}
+}
+
+\newcommand{\makedeclarationoffidelity}{
+    \thispagestyle{plain}
+
+	\section*{Declaration of Authenticity}
+	Hereby I declare that I wrote this work by myself and that I did not use any other aid or source than the ones indicated. All literal or logical quotes from other works I have marked as such. This work is not part of any other examination procedure - neither fully nor in parts. I have not published this work already - neither fully nor in parts.
+
+	\vspace{5cm}
+
+    \noindent Tübingen, \tpdate\par
+    \vspace*{-0.2cm}
+	\noindent\rule{5cm}{.4pt}\hfill\rule{5cm}{.4pt}\par
+	\noindent Place, Date \hfill Signature
+
+	\newpage
+}
+
+\newcommand{\makeabstractpage}{
+    \thispagestyle{plain}
+
+	\include{content/Abstract.tex}
+
+	\newpage
+}
+
+\newcommand{\makealllistofcontents}{
+    \thispagestyle{plain}
+	\tableofcontents
+	\cleardoubleemptypage
+	\thispagestyle{plain}
+	\listoffigures
+	\newpage
+    %\chapter*{List of Variables???}
+    %\newpage
+    % \chapter*{List of Abbreviations}%Abkürzungsverzeichnis
+	% \begin{acronym}
+    %     \acro{nisq}[NISQ]{noisy intermediate-scale quantum}
+	% 	\acro{cnot}[CNOT]{controlled-NOT}
+	% 	\acro{povm}[POVM]{positive operator-valued measure}
+    %     \acro{cpt}[CPT]{completely positive trace-preserving}
+    %     \acro{ld}[LD]{large deviation}
+	% \end{acronym}
+    % \newpage
+	%\listoftables
+	%\newpage
+}
+    

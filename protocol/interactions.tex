@@ -1,0 +1,137 @@
+\section*{Aligned Dipole-Dipole Interactions}
+
+Starting with the dipole interactions
+\begin{align*}
+    V_{dd}(\mathbf{R}) = \frac{1}{R^3}-3\,\frac{(\mathbf{R}\cdot \hat{\mathbf{d}})^2}{R^5},
+\end{align*}
+with $\mathbf{R}=\mathbf{r}_i-\mathbf{r}_j$. The first derivative reads
+\begin{align*}
+    \frac{\partial V_{dd}}{\partial R_\alpha} = -\frac{3 R_\alpha}{R^5} + \frac{15 R_\alpha (\mathbf{R}\cdot \hat{\mathbf{d}})^2}{R^7} - \frac{6 (\mathbf{R}\cdot \hat{\mathbf{d}}) d_\alpha}{R^5},
+\end{align*}
+the second derivative reads consequently
+\begin{align*}
+    \frac{\partial^2 V_{dd}}{\partial R_\alpha \partial R_\beta} &= -3\,\frac{\delta_{\alpha\beta}}{R^5} + 15\, \frac{R_\alpha R_\beta}{R^7} + 15 \,\frac{\delta_{\alpha\beta} (\mathbf{R}\cdot \hat{\mathbf{d}})^2}{R^7} - 15\cdot7\, \frac{R_\alpha R_\beta (\mathbf{R}\cdot \hat{\mathbf{d}})^2}{R^9} \\
+    &+30\, \frac{d_\alpha R_\beta + d_\beta R_\alpha}{R^7}\,(\mathbf{R}\cdot \hat{\mathbf{d}}) - 6\, \frac{d_\alpha d_\beta}{R^5}\\\\
+    &= \delta_{\alpha\beta}\left(-3\,\frac{1}{R^5} + 15\, \frac{(\mathbf{R}\cdot \hat{\mathbf{d}})^2}{R^7}\right)- 6\, \frac{d_\alpha d_\beta}{R^5} +30\, \frac{d_\alpha R_\beta + d_\beta R_\alpha}{R^7}\,(\mathbf{R}\cdot \hat{\mathbf{d}}) \\
+    &+ 15\,R_\alpha R_\beta \left( \frac{1}{R^7} - 7\, \frac{(\mathbf{R}\cdot \hat{\mathbf{d}})^2}{R^9}\right).
+\end{align*}
+
+
+\section*{General Dipole-Dipole Interactions}
+In the case where not all dipole moments are aligned, the properties of the interaction get extended to 
+
+\begin{align*}
+    V_{dd}(\mathbf{R}) = \frac{\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2}{R^3}-3\,\frac{(\mathbf{R}\cdot \mathbf{\hat{d}}_1)(\mathbf{R}\cdot \mathbf{\hat{d}}_2)}{R^5}.
+\end{align*}
+The first derivative reads
+\begin{align*}
+    \frac{\partial V_{dd}}{\partial R_\alpha} = -\frac{3\,(\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2)\, R_\alpha}{R^5} + \frac{15 R_\alpha (\mathbf{R}\cdot \mathbf{\hat{d}}_1)(\mathbf{R}\cdot \mathbf{\hat{d}}_2)}{R^7} - \frac{3\,\left( (\mathbf{R}\cdot \mathbf{\hat{d}}_1)\, d_{2,\alpha} +(\mathbf{R}\cdot \mathbf{\hat{d}}_2)\, d_{1,\alpha}\right)}{R^5},
+\end{align*}
+the second derivative reads consequently
+\begin{align*}
+    \frac{\partial^2 V_{dd}}{\partial R_\alpha \partial R_\beta} &= -3\,\frac{\delta_{\alpha\beta}\,(\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2)}{R^5} + 15\, \frac{R_\alpha R_\beta\,(\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2)}{R^7} + 15 \,\frac{\delta_{\alpha\beta} (\mathbf{R}\cdot \mathbf{\hat{d}}_1)(\mathbf{R}\cdot \mathbf{\hat{d}}_2)}{R^7} - 15\cdot7\, \frac{R_\alpha R_\beta (\mathbf{R}\cdot \mathbf{\hat{d}}_1)(\mathbf{R}\cdot \mathbf{\hat{d}}_2)}{R^9} \\
+    &+15\,\left[\frac{d_{1,\alpha} R_\beta + d_{1,\beta} R_\alpha}{R^7}\,(\mathbf{R}\cdot \mathbf{\hat{d}}_2) + \frac{d_{2,\alpha} R_\beta + d_{2,\beta} R_\alpha}{R^7}\,(\mathbf{R}\cdot \mathbf{\hat{d}}_1) \right] - 3\, \frac{d_{1,\alpha} d_{2,\beta} + d_{2,\alpha} d_{1,\beta}}{R^5}\\\\
+    &= \delta_{\alpha\beta}\left(-3\,\frac{\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2}{R^5} + 15\, \frac{(\mathbf{R}\cdot \mathbf{\hat{d}}_1)(\mathbf{R}\cdot \mathbf{\hat{d}}_2)}{R^7}\right)- 3\, \frac{d_{1,\alpha} d_{2,\beta} + d_{2,\alpha} d_{1,\beta}}{R^5} \\
+    &+ 15\,\left[\frac{d_{1,\alpha} R_\beta + d_{1,\beta} R_\alpha}{R^7}\,(\mathbf{R}\cdot \mathbf{\hat{d}}_2) + \frac{d_{2,\alpha} R_\beta + d_{2,\beta} R_\alpha}{R^7}\,(\mathbf{R}\cdot \mathbf{\hat{d}}_1) \right] \\
+    &+ 15\,R_\alpha R_\beta \left( \frac{\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2}{R^7} - 7\, \frac{(\mathbf{R}\cdot \mathbf{\hat{d}}_1)(\mathbf{R}\cdot \mathbf{\hat{d}}_2)}{R^9}\right).
+\end{align*}
+
+For the the Van der Waals interaction the potential has to be squared. Therefore the second derivative reads
+\begin{align*}
+    \frac{\partial V_{dd}^2}{\partial R_\alpha} &= 2\,V_{dd} \frac{\partial V_{dd}}{\partial R_\alpha}\\
+    \frac{\partial^2 V_{dd}^2}{\partial R_\alpha \partial R_\beta} &= 2\,\frac{\partial V_{dd}}{\partial R_\alpha}\frac{\partial V_{dd}}{\partial R_\beta} + 2\,V_{dd}\frac{\partial^2 V_{dd}}{\partial R_\alpha \partial R_\beta}
+\end{align*}
+
+
+
+For the the Van der Waals interaction the potential has to be squared. Therefore the second derivative reads
+\begin{align*}
+    \frac{\partial V_{dd}^2}{\partial R_\alpha} &= 2\,V_{dd} \frac{\partial V_{dd}}{\partial R_\alpha}\\
+    \frac{\partial^2 V_{dd}^2}{\partial R_\alpha \partial R_\beta} &= 2\,\frac{\partial V_{dd}}{\partial R_\alpha}\frac{\partial V_{dd}}{\partial R_\beta} + 2\,V_{dd}\frac{\partial^2 V_{dd}}{\partial R_\alpha \partial R_\beta}
+\end{align*}
+
+
+\section*{Winding Number}
+A chiral Hamiltonian is defined through the property, that it anticommutes with a unitary hermitian operator $\Gamma$
+\begin{align}
+    \Gamma H \Gamma = -H \quad \text{with} \quad \Gamma^2 = 1.
+\end{align}
+From this property follows that the Hamiltonian can be written in block off-diagonal form
+\begin{align}
+    H = \begin{pmatrix}
+        0 & h \\
+        h^\dagger & 0
+    \end{pmatrix},
+\end{align}
+where $h$ is, in general, a non-Hermitian matrix. This structure also applies for the matrix in momentum space and allows the definition of a winding number, which characterizes the topological properties of the system. If the Hamiltonian is $2\times 2$ dimensional, the winding number can be defined through the decomposition of $H$ in terms of the Pauli matrices
+\begin{align}
+    H =  \mathbf{n}\cdot \boldsymbol{\sigma},
+\end{align}
+where $\mathbf{n}=(n_x,n_y,0)$ is a vector in the $xy$-plane. The winding number is then given by the winding of the vector $\mathbf{n}$ around the origin when traversing the Brillouin zone. Identifying the $xy$-plane of $\mathbf{n}$ with the complex plane, which defines a path $\mathbf{n}(k)\rightarrow\gamma(k)$, the winding number can be calculated through
+\begin{align*}
+    w = \frac{1}{2\pi i} \oint_{\gamma_k}\frac1z\,dz = \frac{1}{2\pi i} \int_\text{BZ} dk \frac{1}{\gamma(k)}\frac{d\gamma(k)}{dk}.
+\end{align*}
+In terms of the Hamiltonian above this reads
+\begin{align*}
+    w= \frac{1}{2\pi i} \int_{\text{BZ}} dk\, \frac{h'(k)}{h(k)}.
+\end{align*}
+Generalizing the winding number to higher dimensional Hamiltonians is possible through the use of the block off-diagonal form. The winding number then reads
+\begin{align*}
+    w = \frac{1}{2\pi i} \int_\text{BZ} dk \,\text{Tr}\left[h^{-1}(k) \partial_kh(k)\right].
+\end{align*}
+Diagonalizing $h$ as $h=S\Lambda S^{-1}$ with the diagonal matrix $\Lambda=\text{diag}(\lambda_1,\lambda_2,...)$ and the invertible matrix $S$, the trace can be rewritten as
+\begin{align*}
+    \text{Tr}\left[h^{-1} \partial_kh\right] &= \text{Tr}\left[S \Lambda S^{-1} \partial_k(S \Lambda S^{-1})\right]\\
+    &= \text{Tr}\left[\Lambda^{-1} \partial_k\Lambda + S^{-1}\partial_k S + (\partial_k S^{-1}) S\right]\\
+    \text{Tr}\left[ S^{-1}\partial_k S + S \partial_k S^{-1}\right] &=
+    \text{Tr}\left[\partial_k\,(S S^{-1})\right] = 0,\\
+    \Rightarrow \text{Tr}\left[h^{-1} \partial_kh\right] &= \text{Tr}\left[\Lambda^{-1} \partial_k\Lambda\right] = \sum_i \frac{\partial_k \lambda_i}{\lambda_i} = \partial_k \left(\sum_i \ln(\lambda_i)\right) = \partial_k \ln(\det[h]).
+\end{align*}
+
+Another useful definition of the winding number is through the so-called $Q$-matrix, which is defined through the projectors onto the eigenstates of the Hamiltonian. As the Hamiltonian is chiral, the eigenvalues come in pairs $\pm E$. We introduce a labeling of the eigenvalues, such that $E_j = -E_{-j}$ with $j=1,2,...,N$ and $N$ being half the dimension of the Hamiltonian. The corresponding eigenstates are labeled accordingly ($\ket{\psi_j}$) and posses the property $\Gamma\ket{\psi_j}=\ket{\psi_{-j}}$. The Q-matrix is defined as 
+\begin{align*}
+    Q = \sum_{j=1}^N \left(\ket{\psi_j}\bra{\psi_j} - \ket{\psi_{-j}}\bra{\psi_{-j}}\right).
+\end{align*}
+As a consequence of the chiral symmetry, the Q-matrix anticommutes with $\Gamma$ and can therefore be written in block off-diagonal form in the basis, where $\Gamma$ is diagonal, which is also the case in which H is block off-diagonal.
+\begin{align*}
+    \Gamma Q \Gamma &= \sum_{j=1}^N \left( \ket{\psi_{-j}}\bra{\psi_{-j}} - \ket{\psi_j}\bra{\psi_j}\right) = -Q\\
+    \Rightarrow Q &= \begin{pmatrix}
+        0 & q \\
+        q^\dagger & 0
+    \end{pmatrix}
+\end{align*}
+Labeling the eigenvalues and eigenstates of $h$ as $h_i$ and $\ket{h_i}$ respectively, a basis of H can be constructed that preserves the block off-diagonal structure. The basis is split into two sets A and B,
+\begin{align*}
+    \ket{h^A_i}= \begin{pmatrix}
+        \ket{h_i} \\
+        0
+    \end{pmatrix}, \quad \ket{h^B_i}= \begin{pmatrix}
+        0 \\
+        \ket{h_i}
+    \end{pmatrix}.
+\end{align*}
+The eigenstates of H can be constructed from this as
+\begin{align*}
+    \ket{H^+_i} & = \frac{1}{\sqrt{2}|h_i|} ,\left( |h_i| \,\ket{h^A_i} + h^*_i\, \ket{h^B_i}\right)\\
+    \ket{H^-_i} & = \frac{1}{\sqrt{2}|h_i|} ,\left( |h_i| \,\ket{h^A_i} - h^*_i\, \ket{h^B_i}\right)\\
+    \text{with} \quad H \ket{H^\pm_i} &= \pm |h_i| \ket{H^\pm_i}.
+\end{align*}
+The Q-matrix can thus be written as
+\begin{align*}
+    Q &= \sum_i \left(\ket{H^+_i}\bra{H^+_i} - \ket{H^-_i}\bra{H^-_i}\right)\\
+    & = \sum_i \frac{1}{|h_i|}\,\left( h_i\,\ket{h^A_i}\bra{h^B_i} + h_i^* \,\ket{h^B_i}\bra{h^A_i}\right)
+\end{align*}
+It now follows that the winding number of the q-matirx is the same as that of $h$
+\begin{align*}
+    w_q &= \frac{1}{2\pi i} \, \sum_j \int_\text{BZ} dk \,\frac{\partial_k\hat{h}_j}{|\hat{h}_j|}\\
+    &= \frac{1}{2\pi i} \, \sum_j \int_\text{BZ} dk \,\frac{\partial_k h_j}{h_j} \\
+    &= w_h.
+\end{align*}
+where $\hat{h}_j = h_j/|h_j|$ is the normalized eigenvalue. Another equivalent expression for the winding number can be given through the eigenstates of the Hamiltonian
+\begin{align*}
+    w &= \frac{1}{\pi i} \sum_j\int_\text{BZ} dk S_j(k)\\
+    \text{with} \quad S_j(k) &= \bra{\Gamma\,H^-_j}\partial_k \ket{H^-_j}\\
+    &=\bra{H^+_j}\partial_k \ket{H^-_j}\\
+    &= \frac{1}{2}\left( \bra{h_j^A}\partial_k\ket{h_j^A} - \bra{h_j^B}\partial_k\ket{h_j^B}\right) - \frac12 \,\frac{h_j \partial_k h_j^* }{|h_j|^2}\\
+    &= -\frac12 \frac{\partial_k h_j^*}{h_j^*}.
+\end{align*}
