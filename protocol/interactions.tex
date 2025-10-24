@@ -1,19 +1,95 @@
+\section*{Hamiltonian}
+I am considering the Hamiltonian of a system of $N$ particles with positions $\{\mathbf{R}_l\}_{l\in\{1,\dots,N\}}$. The Hamiltonion shall consist of two-body interactions, which depend on the position of the involved particles. Thus the Hamiltonian can be written in the form
+\begin{align*}
+    H(\{\mathbf{R}_l\}) = \sum_{i,j;\;i\neq j}V_{i,j}(\mathbf{R}_i,\mathbf{R}_j)
+\end{align*}
+In order to being able to derive the second order expansion of the Hamiltonian, that will be needed, in a more formal way, I write the two-body interactions as dependend on all positions.
+\begin{align*}
+    H(\{\mathbf{R}_l\}) = \sum_{i,j;\;i\neq j}V_{i,j}(\{\mathbf{R}_l\})
+\end{align*}
+The $V_{i,j}$ are formally functions of all positions $\{\mathbf{R}_l\}$, i.e $V_{i,j}(\{\mathbf{R}_l\})$. But of course they only depend on $\mathbf{R}_i$ and $\mathbf{R}_j$, i.e.
+\begin{align*}
+    \frac{\partial\,V_{i,j}}{\partial \mathbf{R}_l } = 0\quad\text{if}\:i\neq l\neq j
+\end{align*}
+Now I expand the Hamiltonian in small displacements from the tweezer centers $\{\delta\mathbf{R}_l\}$. By redefining the trap center the first order term can be absorbed. Consider a function $f(r)$ which is expanded up to first order in $r$, i.e. $f(r+\delta r)\approx f(r)+ \partial_rf(r)\cdot\delta r$, if we now add a trap-like potiential
+\begin{align*}
+    \frac12 m\omega^2 \,\delta r^2 + f(r) +\partial_rf(r)\,\delta r&= \frac12 m\omega^2\,(\delta r+\frac{\partial_rf(r)}{m\omega^2})^2+ \frac12 \,\frac{(\partial_rf(r))^2}{m\omega^2} + f(r)\\
+    &=\vcentcolon  \frac12 m\omega^2 \,\delta\tilde{r}^2 +\text{const.},
+\end{align*}
+Thus by discarding the first order the Hamiltonian up to second order reads
+\begin{align*}
+    H(\{\mathbf{R}_l+\delta\mathbf{R}_l\})&=H(\{\mathbf{R}_l\})+\frac12\sum_{n,m}\delta\mathbf{R}_n\,\frac{\partial^2 H(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m\\
+    &=H(\{\mathbf{R}_l\})+\frac12\sum_{n\neq m}\delta\mathbf{R}_n\,\frac{\partial^2 H(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m + \frac12\sum_{n= m}\delta\mathbf{R}_n\,\frac{\partial^2 H(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m\\
+    &=H(\{\mathbf{R}_l\})+\frac12\sum_{n\neq m}\;\sum_{i,j;\;i\neq j}\delta\mathbf{R}_n\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m  +\frac12\sum_{n}\sum_{i,j;\;i\neq j}\delta\mathbf{R}_n\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n^2}\,\delta\mathbf{R}_n \\
+    &=H(\{\mathbf{R}_l\})+\frac12\sum_{n\neq m}\;\sum_{i,j;\;i\neq j}\delta\mathbf{R}_n\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m \,(\delta_{n=i,m=j}+\delta_{n=j,m=i})  \\
+    &+\frac12\sum_{n}\sum_{i,j;\;i\neq j}\delta\mathbf{R}_n\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n^2}\,\delta\mathbf{R}_n\,(\delta_{n=i}+\delta_{n=j}) \\
+\end{align*}
+Using the fact, that
+\begin{align*}
+   \delta\mathbf{R}_i\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i\partial\mathbf{R}_j}\,\delta\mathbf{R}_j=\delta\mathbf{R}_j\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_j\partial\mathbf{R}_i}\,\delta\mathbf{R}_i
+\end{align*}
+the expansion can be written as
+\begin{align*}
+    H(\{\mathbf{R}_l+\delta\mathbf{R}_l\})&=H(\{\mathbf{R}_l\})+\sum_{i,j;\;i\neq j} \delta\mathbf{R}_i\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i\partial\mathbf{R}_j}\,\delta\mathbf{R}_j \\
+    &+\sum_{i,j;\;i\neq j}\delta\mathbf{R}_i\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i^2}\,\delta\mathbf{R}_i
+\end{align*}
+If I introduce a matrix $U$ the expanded Hamiltonian can be brought into the same form as in the paper.
+\begin{align*}
+    H(\{\mathbf{R}_l+\delta\mathbf{R}_l\})&=H(\{\mathbf{R}_l\})+\sum_{n,m}\delta\mathbf{R}_n\,U_{n,m}\,\delta\mathbf{R}_m
+\end{align*}
+with
+\begin{align*}
+    U_{n,m}&=
+        \frac{\partial^2 V_{n,m}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\quad\text{if}\:n\neq m\\
+    U_{n,n} &= \sum_{j;\,j\neq n}\frac{\partial^2 V_{n,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n^2}
+\end{align*}
+Swithing again to the reduced writting, where $V_{ij}$ is only writen as a function of the variables of which it actually depends, reads
+\begin{align*}
+    U_{n,m}&=
+        \frac{\partial^2 V_{n,m}(\mathbf{R}_n,\mathbf{R}_m)}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\quad\text{if}\:n\neq m\\
+    U_{n,n} &= \sum_{j;\,j\neq n}\frac{\partial^2 V_{n,j}(\mathbf{R}_n,\mathbf{R}_j)}{\partial \mathbf{R}_n^2}
+\end{align*}
+
+This result is a good point to specify the potential that is used in the next sections further. The potential will only depend on the relative vector between the two positions, i.e. $\mathbf{r}_{ij}=\mathbf{R}_i-\mathbf{R}_j$. Using the derivative
+\begin{align*}
+    \frac{\partial \mathbf{r}_{ij}}{\partial \mathbf{R}_i}=\mathbb{1}=-\frac{\partial \mathbf{r}_{ij}}{\partial \mathbf{R}_j}
+\end{align*}
+the derivatives of the $U$ matrix can be written as 
+\begin{align*}
+    \frac{\partial^2 V_{n,m}(\mathbf{r}_{nm})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}&=\frac{\partial}{\partial  \mathbf{R}_n }\,\left( \frac{\partial V_{n,m}(\mathbf{r}_{nm})}{\partial\mathbf{r}_{nm}}\,  \frac{\partial \mathbf{r}_{nm}}{\partial\mathbf{R}_{m}}\right)\\
+    &= \frac{\partial^2 V_{n,m}(\mathbf{r}_{nm})}{\partial\mathbf{r}_{nm}^2}\,  \frac{\partial \mathbf{r}_{nm}}{\partial\mathbf{R}_{m}}\frac{\partial \mathbf{r}_{nm}}{\partial\mathbf{R}_{n}}+\frac{\partial V_{n,m}(\mathbf{r}_{nm})}{\partial\mathbf{r}_{nm}}\,  \frac{\partial^2 \mathbf{r}_{nm}}{\partial\mathbf{R}_{n}\partial\mathbf{R}_{m}}\\
+    &=-\frac{\partial^2 V_{n,m}(\mathbf{r}_{nm})}{\partial\mathbf{r}_{nm}^2}
+\end{align*}
+and
+\begin{align*}
+    \frac{\partial^2 V_{n,m}(\mathbf{r}_{nm})}{\partial \mathbf{R}_m^2m}
+    &= \frac{\partial^2 V_{n,m}(\mathbf{r}_{nm})}{\partial\mathbf{r}_{nm}^2}\,  \frac{\partial \mathbf{r}_{nm}}{\partial\mathbf{R}_{m}}\frac{\partial \mathbf{r}_{nm}}{\partial\mathbf{R}_{m}}\\
+    &=\frac{\partial^2 V_{n,m}(\mathbf{r}_{nm})}{\partial\mathbf{r}_{nm}^2}
+\end{align*}
+Thus
+\begin{align*}
+    U_{n,m}&=
+        -\frac{\partial^2 V_{n,m}(\mathbf{r}_{nm})}{\partial\mathbf{r}_{nm}^2}\quad\text{if}\:n\neq m\\
+    U_{n,n} &= \sum_{j;\,j\neq n}\frac{\partial^2 V_{n,j}(\mathbf{r}_{nj})}{\partial\mathbf{r}_{nj}^2}
+\end{align*}
+
+
 \section*{Aligned Dipole-Dipole Interactions}
 
-Starting with the dipole interactions
+In this section the derivative of the dipole interaction will be performed in the case where all dipoles point into the same direction. The subsripts lableling the different positions are droped in order to make the notation plainer.
 \begin{align*}
-    V_{dd}(\mathbf{R}) = \frac{1}{R^3}-3\,\frac{(\mathbf{R}\cdot \hat{\mathbf{d}})^2}{R^5},
+    V_{dd}(\mathbf{r}) = \frac{1}{r^3}-3\,\frac{(\mathbf{r}\cdot \hat{\mathbf{d}})^2}{r^5},
 \end{align*}
-with $\mathbf{R}=\mathbf{r}_i-\mathbf{r}_j$. The first derivative reads
+with $\mathbf{r}=\mathbf{R}_i-\mathbf{R}_j$ beeing the distance between any to sites $i$ and $j$ ($i\neq j$). The first derivative with respect to component $\alpha$ of $\mathbf{r}$, $\alpha\in\{x,y,z\}$ reads
 \begin{align*}
-    \frac{\partial V_{dd}}{\partial R_\alpha} = -\frac{3 R_\alpha}{R^5} + \frac{15 R_\alpha (\mathbf{R}\cdot \hat{\mathbf{d}})^2}{R^7} - \frac{6 (\mathbf{R}\cdot \hat{\mathbf{d}}) d_\alpha}{R^5},
+    \frac{\partial V_{dd}}{\partial r_\alpha} = -\frac{3 r_\alpha}{r^5} + \frac{15 r_\alpha (\mathbf{r}\cdot \hat{\mathbf{d}})^2}{r^7} - \frac{6 (\mathbf{r}\cdot \hat{\mathbf{d}}) d_\alpha}{r^5},
 \end{align*}
 the second derivative reads consequently
 \begin{align*}
-    \frac{\partial^2 V_{dd}}{\partial R_\alpha \partial R_\beta} &= -3\,\frac{\delta_{\alpha\beta}}{R^5} + 15\, \frac{R_\alpha R_\beta}{R^7} + 15 \,\frac{\delta_{\alpha\beta} (\mathbf{R}\cdot \hat{\mathbf{d}})^2}{R^7} - 15\cdot7\, \frac{R_\alpha R_\beta (\mathbf{R}\cdot \hat{\mathbf{d}})^2}{R^9} \\
-    &+30\, \frac{d_\alpha R_\beta + d_\beta R_\alpha}{R^7}\,(\mathbf{R}\cdot \hat{\mathbf{d}}) - 6\, \frac{d_\alpha d_\beta}{R^5}\\\\
-    &= \delta_{\alpha\beta}\left(-3\,\frac{1}{R^5} + 15\, \frac{(\mathbf{R}\cdot \hat{\mathbf{d}})^2}{R^7}\right)- 6\, \frac{d_\alpha d_\beta}{R^5} +30\, \frac{d_\alpha R_\beta + d_\beta R_\alpha}{R^7}\,(\mathbf{R}\cdot \hat{\mathbf{d}}) \\
-    &+ 15\,R_\alpha R_\beta \left( \frac{1}{R^7} - 7\, \frac{(\mathbf{R}\cdot \hat{\mathbf{d}})^2}{R^9}\right).
+    \frac{\partial^2 V_{dd}}{\partial r_\alpha \partial r_\beta} &= -3\,\frac{\delta_{\alpha\beta}}{r^5} + 15\, \frac{r_\alpha r_\beta}{r^7} + 15 \,\frac{\delta_{\alpha\beta} (\mathbf{r}\cdot \hat{\mathbf{d}})^2}{r^7} - 15\cdot7\, \frac{r_\alpha r_\beta (\mathbf{r}\cdot \hat{\mathbf{d}})^2}{r^9} \\
+    &+30\, \frac{d_\alpha r_\beta + d_\beta r_\alpha}{r^7}\,(\mathbf{r}\cdot \hat{\mathbf{d}}) - 6\, \frac{d_\alpha d_\beta}{r^5}\\\\
+    &= \delta_{\alpha\beta}\left(-3\,\frac{1}{r^5} + 15\, \frac{(\mathbf{r}\cdot \hat{\mathbf{d}})^2}{r^7}\right)- 6\, \frac{d_\alpha d_\beta}{r^5} +30\, \frac{d_\alpha r_\beta + d_\beta r_\alpha}{r^7}\,(\mathbf{r}\cdot \hat{\mathbf{d}}) \\
+    &+ 15\,r_\alpha r_\beta \left( \frac{1}{r^7} - 7\, \frac{(\mathbf{r}\cdot \hat{\mathbf{d}})^2}{r^9}\right).
 \end{align*}
 
 
@@ -21,33 +97,25 @@ the second derivative reads consequently
 In the case where not all dipole moments are aligned, the properties of the interaction get extended to 
 
 \begin{align*}
-    V_{dd}(\mathbf{R}) = \frac{\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2}{R^3}-3\,\frac{(\mathbf{R}\cdot \mathbf{\hat{d}}_1)(\mathbf{R}\cdot \mathbf{\hat{d}}_2)}{R^5}.
+    V_{dd}(\mathbf{r}) = \frac{\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2}{r^3}-3\,\frac{(\mathbf{r}\cdot \mathbf{\hat{d}}_1)(\mathbf{r}\cdot \mathbf{\hat{d}}_2)}{r^5}.
 \end{align*}
 The first derivative reads
 \begin{align*}
-    \frac{\partial V_{dd}}{\partial R_\alpha} = -\frac{3\,(\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2)\, R_\alpha}{R^5} + \frac{15 R_\alpha (\mathbf{R}\cdot \mathbf{\hat{d}}_1)(\mathbf{R}\cdot \mathbf{\hat{d}}_2)}{R^7} - \frac{3\,\left( (\mathbf{R}\cdot \mathbf{\hat{d}}_1)\, d_{2,\alpha} +(\mathbf{R}\cdot \mathbf{\hat{d}}_2)\, d_{1,\alpha}\right)}{R^5},
+    \frac{\partial V_{dd}}{\partial r_\alpha} = -\frac{3\,(\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2)\, r_\alpha}{r^5} + \frac{15 r_\alpha (\mathbf{r}\cdot \mathbf{\hat{d}}_1)(\mathbf{r}\cdot \mathbf{\hat{d}}_2)}{r^7} - \frac{3\,\left( (\mathbf{r}\cdot \mathbf{\hat{d}}_1)\, d_{2,\alpha} +(\mathbf{r}\cdot \mathbf{\hat{d}}_2)\, d_{1,\alpha}\right)}{r^5},
 \end{align*}
 the second derivative reads consequently
 \begin{align*}
-    \frac{\partial^2 V_{dd}}{\partial R_\alpha \partial R_\beta} &= -3\,\frac{\delta_{\alpha\beta}\,(\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2)}{R^5} + 15\, \frac{R_\alpha R_\beta\,(\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2)}{R^7} + 15 \,\frac{\delta_{\alpha\beta} (\mathbf{R}\cdot \mathbf{\hat{d}}_1)(\mathbf{R}\cdot \mathbf{\hat{d}}_2)}{R^7} - 15\cdot7\, \frac{R_\alpha R_\beta (\mathbf{R}\cdot \mathbf{\hat{d}}_1)(\mathbf{R}\cdot \mathbf{\hat{d}}_2)}{R^9} \\
-    &+15\,\left[\frac{d_{1,\alpha} R_\beta + d_{1,\beta} R_\alpha}{R^7}\,(\mathbf{R}\cdot \mathbf{\hat{d}}_2) + \frac{d_{2,\alpha} R_\beta + d_{2,\beta} R_\alpha}{R^7}\,(\mathbf{R}\cdot \mathbf{\hat{d}}_1) \right] - 3\, \frac{d_{1,\alpha} d_{2,\beta} + d_{2,\alpha} d_{1,\beta}}{R^5}\\\\
-    &= \delta_{\alpha\beta}\left(-3\,\frac{\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2}{R^5} + 15\, \frac{(\mathbf{R}\cdot \mathbf{\hat{d}}_1)(\mathbf{R}\cdot \mathbf{\hat{d}}_2)}{R^7}\right)- 3\, \frac{d_{1,\alpha} d_{2,\beta} + d_{2,\alpha} d_{1,\beta}}{R^5} \\
-    &+ 15\,\left[\frac{d_{1,\alpha} R_\beta + d_{1,\beta} R_\alpha}{R^7}\,(\mathbf{R}\cdot \mathbf{\hat{d}}_2) + \frac{d_{2,\alpha} R_\beta + d_{2,\beta} R_\alpha}{R^7}\,(\mathbf{R}\cdot \mathbf{\hat{d}}_1) \right] \\
-    &+ 15\,R_\alpha R_\beta \left( \frac{\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2}{R^7} - 7\, \frac{(\mathbf{R}\cdot \mathbf{\hat{d}}_1)(\mathbf{R}\cdot \mathbf{\hat{d}}_2)}{R^9}\right).
+    \frac{\partial^2 V_{dd}}{\partial r_\alpha \partial r_\beta} &= -3\,\frac{\delta_{\alpha\beta}\,(\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2)}{r^5} + 15\, \frac{r_\alpha r_\beta\,(\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2)}{r^7} + 15 \,\frac{\delta_{\alpha\beta} (\mathbf{r}\cdot \mathbf{\hat{d}}_1)(\mathbf{r}\cdot \mathbf{\hat{d}}_2)}{r^7} - 15\cdot7\, \frac{r_\alpha r_\beta (\mathbf{r}\cdot \mathbf{\hat{d}}_1)(\mathbf{r}\cdot \mathbf{\hat{d}}_2)}{r^9} \\
+    &+15\,\left[\frac{d_{1,\alpha} r_\beta + d_{1,\beta} r_\alpha}{r^7}\,(\mathbf{r}\cdot \mathbf{\hat{d}}_2) + \frac{d_{2,\alpha} r_\beta + d_{2,\beta} r_\alpha}{r^7}\,(\mathbf{r}\cdot \mathbf{\hat{d}}_1) \right] - 3\, \frac{d_{1,\alpha} d_{2,\beta} + d_{2,\alpha} d_{1,\beta}}{r^5}\\\\
+    &= \delta_{\alpha\beta}\left(-3\,\frac{\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2}{r^5} + 15\, \frac{(\mathbf{r}\cdot \mathbf{\hat{d}}_1)(\mathbf{r}\cdot \mathbf{\hat{d}}_2)}{r^7}\right)- 3\, \frac{d_{1,\alpha} d_{2,\beta} + d_{2,\alpha} d_{1,\beta}}{r^5} \\
+    &+ 15\,\left[\frac{d_{1,\alpha} r_\beta + d_{1,\beta} r_\alpha}{r^7}\,(\mathbf{r}\cdot \mathbf{\hat{d}}_2) + \frac{d_{2,\alpha} r_\beta + d_{2,\beta} r_\alpha}{r^7}\,(\mathbf{r}\cdot \mathbf{\hat{d}}_1) \right] \\
+    &+ 15\,r_\alpha r_\beta \left( \frac{\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2}{r^7} - 7\, \frac{(\mathbf{r}\cdot \mathbf{\hat{d}}_1)(\mathbf{r}\cdot \mathbf{\hat{d}}_2)}{r^9}\right).
 \end{align*}
 
 For the the Van der Waals interaction the potential has to be squared. Therefore the second derivative reads
 \begin{align*}
-    \frac{\partial V_{dd}^2}{\partial R_\alpha} &= 2\,V_{dd} \frac{\partial V_{dd}}{\partial R_\alpha}\\
-    \frac{\partial^2 V_{dd}^2}{\partial R_\alpha \partial R_\beta} &= 2\,\frac{\partial V_{dd}}{\partial R_\alpha}\frac{\partial V_{dd}}{\partial R_\beta} + 2\,V_{dd}\frac{\partial^2 V_{dd}}{\partial R_\alpha \partial R_\beta}
-\end{align*}
-
-
-
-For the the Van der Waals interaction the potential has to be squared. Therefore the second derivative reads
-\begin{align*}
-    \frac{\partial V_{dd}^2}{\partial R_\alpha} &= 2\,V_{dd} \frac{\partial V_{dd}}{\partial R_\alpha}\\
-    \frac{\partial^2 V_{dd}^2}{\partial R_\alpha \partial R_\beta} &= 2\,\frac{\partial V_{dd}}{\partial R_\alpha}\frac{\partial V_{dd}}{\partial R_\beta} + 2\,V_{dd}\frac{\partial^2 V_{dd}}{\partial R_\alpha \partial R_\beta}
+    \frac{\partial V_{dd}^2}{\partial r_\alpha} &= 2\,V_{dd} \frac{\partial V_{dd}}{\partial r_\alpha}\\
+    \frac{\partial^2 V_{dd}^2}{\partial r_\alpha \partial r_\beta} &= 2\,\frac{\partial V_{dd}}{\partial r_\alpha}\frac{\partial V_{dd}}{\partial r_\beta} + 2\,V_{dd}\frac{\partial^2 V_{dd}}{\partial r_\alpha \partial r_\beta}
 \end{align*}
 
 
