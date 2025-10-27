@@ -1,27 +1,28 @@
 \section*{Hamiltonian}
-I am considering the Hamiltonian of a system of $N$ particles with positions $\{\mathbf{R}_l\}_{l\in\{1,\dots,N\}}$. The Hamiltonion shall consist of two-body interactions, which depend on the position of the involved particles. Thus the Hamiltonian can be written in the form
+I am considering the interaction term $H_I$ of a Hamiltonian of a system of $N$ particles with positions $\{\bar{\mathbf{R}}_l\}_{l\in\{1,\dots,N\}}$. It shall consist of two-body interactions, which depend on the position of the involved particles. Thus $H_I$ can be written in the form
 \begin{align*}
-    H(\{\mathbf{R}_l\}) = \sum_{i,j;\;i\neq j}V_{i,j}(\mathbf{R}_i,\mathbf{R}_j)
+    H_I(\{\bar{\mathbf{R}}_l\}) = \sum_{i,j;\;i\neq j}V_{i,j}(\bar{\mathbf{R}}_i,\bar{\mathbf{R}}_j)
 \end{align*}
-In order to being able to derive the second order expansion of the Hamiltonian, that will be needed, in a more formal way, I write the two-body interactions as dependend on all positions.
+In order to being able to derive the second order expansion of $H_I$, that will be needed later, in a more formal way, I write the two-body interactions as dependend on all positions.
 \begin{align*}
-    H(\{\mathbf{R}_l\}) = \sum_{i,j;\;i\neq j}V_{i,j}(\{\mathbf{R}_l\})
+    H_I(\{\bar{\mathbf{R}}_l\}) = \sum_{i,j;\;i\neq j}V_{i,j}(\{\bar{\mathbf{R}}_l\})
 \end{align*}
-The $V_{i,j}$ are formally functions of all positions $\{\mathbf{R}_l\}$, i.e $V_{i,j}(\{\mathbf{R}_l\})$. But of course they only depend on $\mathbf{R}_i$ and $\mathbf{R}_j$, i.e.
+The $V_{i,j}$ are formally functions of all positions $\{\bar{\mathbf{R}}_l\}$, i.e $V_{i,j}(\{\bar{\mathbf{R}}_l\})$. But of course they only depend on $\bar{\mathbf{R}}_i$ and $\bar{\mathbf{R}}_j$, i.e.
 \begin{align*}
-    \frac{\partial\,V_{i,j}}{\partial \mathbf{R}_l } = 0\quad\text{if}\:i\neq l\neq j
+    \frac{\partial\,V_{i,j}}{\partial \bar{\mathbf{R}}_l } = 0\quad\text{if}\:i\neq l\neq j
 \end{align*}
-Now I expand the Hamiltonian in small displacements from the tweezer centers $\{\delta\mathbf{R}_l\}$. By redefining the trap center the first order term can be absorbed. Consider a function $f(r)$ which is expanded up to first order in $r$, i.e. $f(r+\delta r)\approx f(r)+ \partial_rf(r)\cdot\delta r$, if we now add a trap-like potiential
+Now I expand the interaction Hamiltonian in small displacements $\{\delta\mathbf{R}_l\}$ from the tweezer centers $\{\mathbf{R}_l\}$. 
+% By redefining the trap center the first order term can be absorbed. Consider a function $f(r)$ which is expanded up to first order in $r$, i.e. $f(r+\delta r)\approx f(r)+ \partial_rf(r)\cdot\delta r$, if we now add a trap-like potiential
+% \begin{align*}
+%     \frac12 m\omega^2 \,\delta r^2 + f(r) +\partial_rf(r)\,\delta r&= \frac12 m\omega^2\,(\delta r+\frac{\partial_rf(r)}{m\omega^2})^2+ \frac12 \,\frac{(\partial_rf(r))^2}{m\omega^2} + f(r)\\
+%     &=\vcentcolon  \frac12 m\omega^2 \,\delta\tilde{r}^2 +\text{const.},
+% \end{align*}
+% Thus by discarding the first order the Hamiltonian up to second order reads
 \begin{align*}
-    \frac12 m\omega^2 \,\delta r^2 + f(r) +\partial_rf(r)\,\delta r&= \frac12 m\omega^2\,(\delta r+\frac{\partial_rf(r)}{m\omega^2})^2+ \frac12 \,\frac{(\partial_rf(r))^2}{m\omega^2} + f(r)\\
-    &=\vcentcolon  \frac12 m\omega^2 \,\delta\tilde{r}^2 +\text{const.},
-\end{align*}
-Thus by discarding the first order the Hamiltonian up to second order reads
-\begin{align*}
-    H(\{\mathbf{R}_l+\delta\mathbf{R}_l\})&=H(\{\mathbf{R}_l\})+\frac12\sum_{n,m}\delta\mathbf{R}_n\,\frac{\partial^2 H(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m\\
-    &=H(\{\mathbf{R}_l\})+\frac12\sum_{n\neq m}\delta\mathbf{R}_n\,\frac{\partial^2 H(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m + \frac12\sum_{n= m}\delta\mathbf{R}_n\,\frac{\partial^2 H(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m\\
-    &=H(\{\mathbf{R}_l\})+\frac12\sum_{n\neq m}\;\sum_{i,j;\;i\neq j}\delta\mathbf{R}_n\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m  +\frac12\sum_{n}\sum_{i,j;\;i\neq j}\delta\mathbf{R}_n\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n^2}\,\delta\mathbf{R}_n \\
-    &=H(\{\mathbf{R}_l\})+\frac12\sum_{n\neq m}\;\sum_{i,j;\;i\neq j}\delta\mathbf{R}_n\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m \,(\delta_{n=i,m=j}+\delta_{n=j,m=i})  \\
+    H_I(\{\mathbf{R}_l+\delta\mathbf{R}_l\})&=H_I(\{\mathbf{R}_l\})+\sum_n\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,\delta\mathbf{R}_n +  \frac12\sum_{n,m}\delta\mathbf{R}_n\,\frac{\partial^2 H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m\\
+    &=H_I(\{\mathbf{R}_l\})+\sum_n\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,\delta\mathbf{R}_n +  \frac12\sum_{n\neq m}\delta\mathbf{R}_n\,\frac{\partial^2 H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m + \frac12\sum_{n= m}\delta\mathbf{R}_n\,\frac{\partial^2 H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m\\
+    &=H_I(\{\mathbf{R}_l\})+\sum_n\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,\delta\mathbf{R}_n +  \frac12\sum_{n\neq m}\;\sum_{i,j;\;i\neq j}\delta\mathbf{R}_n\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m  \\&+\frac12\sum_{n}\sum_{i,j;\;i\neq j}\delta\mathbf{R}_n\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n^2}\,\delta\mathbf{R}_n \\
+    &=H_I(\{\mathbf{R}_l\})+\sum_n\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,\delta\mathbf{R}_n +  \frac12\sum_{n\neq m}\;\sum_{i,j;\;i\neq j}\delta\mathbf{R}_n\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m \,(\delta_{n=i,m=j}+\delta_{n=j,m=i})  \\
     &+\frac12\sum_{n}\sum_{i,j;\;i\neq j}\delta\mathbf{R}_n\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n^2}\,\delta\mathbf{R}_n\,(\delta_{n=i}+\delta_{n=j}) \\
 \end{align*}
 Using the fact, that
@@ -30,12 +31,12 @@ Using the fact, that
 \end{align*}
 the expansion can be written as
 \begin{align*}
-    H(\{\mathbf{R}_l+\delta\mathbf{R}_l\})&=H(\{\mathbf{R}_l\})+\sum_{i,j;\;i\neq j} \delta\mathbf{R}_i\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i\partial\mathbf{R}_j}\,\delta\mathbf{R}_j \\
+    H_I(\{\mathbf{R}_l+\delta\mathbf{R}_l\})&=H_I(\{\mathbf{R}_l\})+\sum_i\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i}\,\delta\mathbf{R}_i +  \sum_{i,j;\;i\neq j} \delta\mathbf{R}_i\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i\partial\mathbf{R}_j}\,\delta\mathbf{R}_j \\
     &+\sum_{i,j;\;i\neq j}\delta\mathbf{R}_i\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i^2}\,\delta\mathbf{R}_i
 \end{align*}
 If I introduce a matrix $U$ the expanded Hamiltonian can be brought into the same form as in the paper.
 \begin{align*}
-    H(\{\mathbf{R}_l+\delta\mathbf{R}_l\})&=H(\{\mathbf{R}_l\})+\sum_{n,m}\delta\mathbf{R}_n\,U_{n,m}\,\delta\mathbf{R}_m
+    H_I(\{\mathbf{R}_l+\delta\mathbf{R}_l\})&=H_I(\{\mathbf{R}_l\})+\sum_n\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,\delta\mathbf{R}_n + \sum_{n,m}\delta\mathbf{R}_n\,U_{n,m}\,\delta\mathbf{R}_m
 \end{align*}
 with
 \begin{align*}
@@ -49,8 +50,7 @@ Swithing again to the reduced writting, where $V_{ij}$ is only writen as a funct
         \frac{\partial^2 V_{n,m}(\mathbf{R}_n,\mathbf{R}_m)}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\quad\text{if}\:n\neq m\\
     U_{n,n} &= \sum_{j;\,j\neq n}\frac{\partial^2 V_{n,j}(\mathbf{R}_n,\mathbf{R}_j)}{\partial \mathbf{R}_n^2}
 \end{align*}
-
-This result is a good point to specify the potential that is used in the next sections further. The potential will only depend on the relative vector between the two positions, i.e. $\mathbf{r}_{ij}=\mathbf{R}_i-\mathbf{R}_j$. Using the derivative
+This result is a good point to further specify the potential that is used in the next sections. The potential will only depend on the relative vector between the two positions, i.e. $\mathbf{r}_{ij}=\mathbf{R}_i-\mathbf{R}_j$. Using the derivative
 \begin{align*}
     \frac{\partial \mathbf{r}_{ij}}{\partial \mathbf{R}_i}=\mathbb{1}=-\frac{\partial \mathbf{r}_{ij}}{\partial \mathbf{R}_j}
 \end{align*}
@@ -72,6 +72,33 @@ Thus
         -\frac{\partial^2 V_{n,m}(\mathbf{r}_{nm})}{\partial\mathbf{r}_{nm}^2}\quad\text{if}\:n\neq m\\
     U_{n,n} &= \sum_{j;\,j\neq n}\frac{\partial^2 V_{n,j}(\mathbf{r}_{nj})}{\partial\mathbf{r}_{nj}^2}
 \end{align*}
+At this point I can eliminate the linear term of the Hamiltonian by introducing the trap potential 
+\begin{align*}
+    H_0(\{\delta\mathbf{R}_l\}) = \sum_n \frac12 m \omega^2 \,\delta\mathbf{R}_n^2 
+\end{align*}
+and redefining the trap centers by a equal shift of all positions $\{\delta\mathbf{R}_l\}=\{\delta\tilde{\mathbf{R}}_l+\mathbf{\Delta}\}$. Neglection all constant terms the Hamiltonian up to second order reads
+\begin{align*}
+    H(\{\delta\mathbf{R}_l\})&= \sum_n \frac12 m \omega^2 \,(\delta\tilde{\mathbf{R}}_n+\mathbf{\Delta}_n)^2+ \sum_n\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,(\delta\tilde{\mathbf{R}}_n+\mathbf{\Delta}_n) + \sum_{n,m}(\delta\tilde{\mathbf{R}}_n+\mathbf{\Delta}_n)\,U_{n,m}\,(\delta\tilde{\mathbf{R}}_m+\mathbf{\Delta}_m)\\
+    &= \sum_n \frac12 m \omega^2 \,\delta\tilde{\mathbf{R}}_n^2  + \sum_{n,m}\delta\tilde{\mathbf{R}}_n\,U_{n,m}\,\delta\tilde{\mathbf{R}}_m + \sum_n\left(\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n} +\left( 2\,\sum_m\delta\tilde{\mathbf{R}}_m\, U_{m,n} + m\omega^2\right)\,\mathbf{\Delta}_n  \right)\,\delta\tilde{\mathbf{R}}_n,
+\end{align*}
+where it was used that $U$ is symmetric. The linear term vanishes, if $\mathbf{\Delta}_n$ is chosen such that
+\begin{align*}
+    \mathbf{\Delta}_n = -\left( 2\,\sum_m\delta\tilde{\mathbf{R}}_m\, U_{m,n} + m\omega^2\right)^{-1} \,\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}
+\end{align*}
+Thus
+\begin{align*}
+    H(\{\delta\tilde{\mathbf{R}}_l\})&= \sum_n\frac12 m\omega^2\,\delta\tilde{\mathbf{R}}_n^2+ \sum_{n,m}\delta\tilde{\mathbf{R}}_n\,U_{n,m}\,\delta\tilde{\mathbf{R}}_m
+\end{align*}
+To describe the deviation from the center in a quantum mechanical way, the displacements are now quantized as phonons using the quadrature operators 
+\begin{align*}
+    \delta\tilde{\mathbf{R}}_n = \frac{1}{\sqrt{m\omega}}\,(a_n + a_n^\dagger)
+\end{align*}
+If we exploit that the interactions realized in $U$ are much smaller compared to the trap frequency, i.e. $U_{n,m}\ll m\omega^2$, the creation and annhiliation of phonons is supressed and the dynamics only involves phonon hopping, thus combinations $aa$ or $a^\dagger a^\dagger$ are discarded. 
+\begin{align*}
+    H &= \sum_n \omega\,a_n^\dagger a_n +2\, \sum_{n,m} \frac{U_{n,m}}{m\omega}\,a_n^\dagger a_m\\
+    &=\vcentcolon\sum_n \omega\,a_n^\dagger a_n +\sum_{n,m} \tilde{U}_{n,m}\,a_n^\dagger a_m
+\end{align*}
+
 
 
 \section*{Aligned Dipole-Dipole Interactions}
@@ -149,7 +176,7 @@ Generalizing the winding number to higher dimensional Hamiltonians is possible t
 \end{align*}
 Diagonalizing $h$ as $h=S\Lambda S^{-1}$ with the diagonal matrix $\Lambda=\text{diag}(\lambda_1,\lambda_2,...)$ and the invertible matrix $S$, the trace can be rewritten as
 \begin{align*}
-    \text{Tr}\left[h^{-1} \partial_kh\right] &= \text{Tr}\left[S \Lambda S^{-1} \partial_k(S \Lambda S^{-1})\right]\\
+    \text{Tr}\left[h^{-1} \partial_kh\right] &= \text{Tr}\left[S \Lambda^{-1} S^{-1} \partial_k(S \Lambda S^{-1})\right]\\
     &= \text{Tr}\left[\Lambda^{-1} \partial_k\Lambda + S^{-1}\partial_k S + (\partial_k S^{-1}) S\right]\\
     \text{Tr}\left[ S^{-1}\partial_k S + S \partial_k S^{-1}\right] &=
     \text{Tr}\left[\partial_k\,(S S^{-1})\right] = 0,\\
@@ -168,34 +195,45 @@ As a consequence of the chiral symmetry, the Q-matrix anticommutes with $\Gamma$
         q^\dagger & 0
     \end{pmatrix}
 \end{align*}
-Labeling the eigenvalues and eigenstates of $h$ as $h_i$ and $\ket{h_i}$ respectively, a basis of H can be constructed that preserves the block off-diagonal structure. The basis is split into two sets A and B,
+The fact that the winding number of the q-matrix is the same as that of $h$ can be shown with the help of the following two properties.
 \begin{align*}
-    \ket{h^A_i}= \begin{pmatrix}
-        \ket{h_i} \\
+    Q^2 &= 1\quad\Rightarrow \quad q q^\dagger = \mathbb{1}, \quad q^\dagger q = \mathbb{1}\\
+    QHQ& = H\quad\Rightarrow\quad qh^\dagger q=h^\dagger
+\end{align*}
+From the second property follows that $q^\dagger h = h^\dagger q$. Thus $h^\dagger q$ is a hermitian matrix and therefore has no winding number, since the eigenvalues are real. Hence
+\begin{align*}
+    0 &= \text{Tr}\left[ q^\dagger (h^\dagger)^{-1} \partial_k (h^\dagger q)\right]\\
+    &= \text{Tr}\left[q\,q^\dagger\,(h^\dagger)^{-1} \partial_k h^\dagger + h^\dagger (h^\dagger)^{-1}\,q^\dagger \partial_k q\right]\\
+    \Rightarrow \text{Tr}\left[q^{-1} \partial_k q\right] &= -\text{Tr}\left[(h^\dagger)^{-1} \partial_k h^\dagger\right]\\
+    &=\text{Tr}\left[h^{-1} \partial_k h\right]
+\end{align*}
+
+
+
+
+As $q$ is unitary, $q$ and $q^\dagger$ can be simultaneaously diagonalized.
+Labeling the eigenvalues and eigenstates of $q$ as $q_i$ and $\ket{q_i}$ respectively, a basis of Q can be constructed that preserves the block off-diagonal structure. The basis is split into two sets A and B,
+\begin{align*}
+    \ket{q^A_i}= \begin{pmatrix}
+        \ket{q_i} \\
         0
-    \end{pmatrix}, \quad \ket{h^B_i}= \begin{pmatrix}
+    \end{pmatrix}, \quad \ket{q^B_i}= \begin{pmatrix}
         0 \\
-        \ket{h_i}
+        \ket{q_i}
     \end{pmatrix}.
 \end{align*}
-The eigenstates of H can be constructed from this as
+The eigenstates of Q can be constructed from this as
 \begin{align*}
-    \ket{H^+_i} & = \frac{1}{\sqrt{2}|h_i|} ,\left( |h_i| \,\ket{h^A_i} + h^*_i\, \ket{h^B_i}\right)\\
-    \ket{H^-_i} & = \frac{1}{\sqrt{2}|h_i|} ,\left( |h_i| \,\ket{h^A_i} - h^*_i\, \ket{h^B_i}\right)\\
-    \text{with} \quad H \ket{H^\pm_i} &= \pm |h_i| \ket{H^\pm_i}.
+    \ket{Q^+_i} & = \frac{1}{\sqrt{2}|q_i|} ,\left( |q_i| \,\ket{q^A_i} + q^*_i\, \ket{q^B_i}\right)\\
+    \ket{Q^-_i} & = \frac{1}{\sqrt{2}|q_i|} ,\left( |q_i| \,\ket{q^A_i} - q^*_i\, \ket{q^B_i}\right)\\
+    \text{with} \quad Q \ket{Q^\pm_i} &= \pm |q_i| \ket{Q^\pm_i}.
 \end{align*}
 The Q-matrix can thus be written as
 \begin{align*}
-    Q &= \sum_i \left(\ket{H^+_i}\bra{H^+_i} - \ket{H^-_i}\bra{H^-_i}\right)\\
-    & = \sum_i \frac{1}{|h_i|}\,\left( h_i\,\ket{h^A_i}\bra{h^B_i} + h_i^* \,\ket{h^B_i}\bra{h^A_i}\right)
+    Q &= \sum_i \left(\ket{Q^+_i}\bra{Q^+_i} - \ket{Q^-_i}\bra{Q^-_i}\right)\\
+    & = \sum_i \frac{1}{|q_i|}\,\left( q_i\,\ket{q^A_i}\bra{q^B_i} + q_i^* \,\ket{q^B_i}\bra{q^A_i}\right)
 \end{align*}
-It now follows that the winding number of the q-matirx is the same as that of $h$
-\begin{align*}
-    w_q &= \frac{1}{2\pi i} \, \sum_j \int_\text{BZ} dk \,\frac{\partial_k\hat{h}_j}{|\hat{h}_j|}\\
-    &= \frac{1}{2\pi i} \, \sum_j \int_\text{BZ} dk \,\frac{\partial_k h_j}{h_j} \\
-    &= w_h.
-\end{align*}
-where $\hat{h}_j = h_j/|h_j|$ is the normalized eigenvalue. Another equivalent expression for the winding number can be given through the eigenstates of the Hamiltonian
+Another equivalent expression for the winding number can be given through the eigenstates of the Hamiltonian
 \begin{align*}
     w &= \frac{1}{\pi i} \sum_j\int_\text{BZ} dk S_j(k)\\
     \text{with} \quad S_j(k) &= \bra{\Gamma\,H^-_j}\partial_k \ket{H^-_j}\\
