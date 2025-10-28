@@ -1,0 +1,220 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{maffei_topological_2018}{article}{}
+      \name{author}{5}{}{%
+        {{hash=32d46a789950e4548b2a49c1fc0d6466}{%
+           family={Maffei},
+           familyi={M\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
+        {{hash=42d32f862262fb4c790c26b34d072518}{%
+           family={Dauphin},
+           familyi={D\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=26952e027e3576cf04165c1f92267b6a}{%
+           family={Cardano},
+           familyi={C\bibinitperiod},
+           given={Filippo},
+           giveni={F\bibinitperiod}}}%
+        {{hash=bb70d7fd7235ae3a7ea0481b921e220e}{%
+           family={Lewenstein},
+           familyi={L\bibinitperiod},
+           given={Maciej},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a3f4b2fdf3513d2d3fa12d64a290f5b3}{%
+           family={Massignan},
+           familyi={M\bibinitperiod},
+           given={Pietro},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{035bcba2a623d6271544f2147efb4345}
+      \strng{fullhash}{a1e72475a4183353a70069961c9d5f8d}
+      \strng{bibnamehash}{a1e72475a4183353a70069961c9d5f8d}
+      \strng{authorbibnamehash}{a1e72475a4183353a70069961c9d5f8d}
+      \strng{authornamehash}{035bcba2a623d6271544f2147efb4345}
+      \strng{authorfullhash}{a1e72475a4183353a70069961c9d5f8d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study chiral models in one spatial dimension, both static and periodically driven. We demonstrate that their topological properties may be read out through the long time limit of a bulk observable, the mean chiral displacement. The derivation of this result is done in terms of spectral projectors, allowing for a detailed understanding of the physics. We show that the proposed detection converges rapidly and it can be implemented in a wide class of chiral systems. Furthermore, it can measure arbitrary winding numbers and topological boundaries, it applies to all non-interacting systems, independently of their quantum statistics, and it requires no additional elements, such as external ﬁelds, nor ﬁlled bands.}
+      \field{day}{17}
+      \field{issn}{1367-2630}
+      \field{journaltitle}{New Journal of Physics}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{New J. Phys.}
+      \field{title}{Topological characterization of chiral models through their long time dynamics}
+      \field{urlday}{28}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{volume}{20}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{013023}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1367-2630/aa9d4c
+      \endverb
+      \verb{file}
+      \verb PDF:/home/christian/Zotero/storage/QV9N8786/Maffei et al. - 2018 - Topological characterization of chiral models through their long time dynamics.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://iopscience.iop.org/article/10.1088/1367-2630/aa9d4c
+      \endverb
+      \verb{url}
+      \verb https://iopscience.iop.org/article/10.1088/1367-2630/aa9d4c
+      \endverb
+    \endentry
+    \entry{schnyder_classification_2008}{article}{}
+      \name{author}{4}{}{%
+        {{hash=a67373224eafb9e6200fd3ab19f3b6b6}{%
+           family={Schnyder},
+           familyi={S\bibinitperiod},
+           given={Andreas\bibnamedelima P.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=e98e80616d8c35e9d2fbbb928838ec72}{%
+           family={Ryu},
+           familyi={R\bibinitperiod},
+           given={Shinsei},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7b57c51242955fc185759690e6088d41}{%
+           family={Furusaki},
+           familyi={F\bibinitperiod},
+           given={Akira},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dc858600b1f8b10b087f1d4e46c6cff7}{%
+           family={Ludwig},
+           familyi={L\bibinitperiod},
+           given={Andreas\bibnamedelimb W.\bibnamedelimi W.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b2afe9d1439255b39dd52994c8a925b6}
+      \strng{fullhash}{e796206db38de31c55877e4f5af154bb}
+      \strng{bibnamehash}{e796206db38de31c55877e4f5af154bb}
+      \strng{authorbibnamehash}{e796206db38de31c55877e4f5af154bb}
+      \strng{authornamehash}{b2afe9d1439255b39dd52994c8a925b6}
+      \strng{authorfullhash}{e796206db38de31c55877e4f5af154bb}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{26}
+      \field{issn}{1098-0121, 1550-235X}
+      \field{journaltitle}{Physical Review B}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{19}
+      \field{shortjournal}{Phys. Rev. B}
+      \field{title}{Classification of topological insulators and superconductors in three spatial dimensions}
+      \field{urlday}{28}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{volume}{78}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{195125}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.78.195125
+      \endverb
+      \verb{file}
+      \verb PDF:/home/christian/Zotero/storage/XSN7LECB/Schnyder et al. - 2008 - Classification of topological insulators and superconductors in three spatial dimensions.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.78.195125
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.78.195125
+      \endverb
+    \endentry
+    \entry{mondragon-shem_topological_2014}{article}{}
+      \name{author}{4}{}{%
+        {{hash=c7eac818468f03cd990011c7a5deb495}{%
+           family={Mondragon-Shem},
+           familyi={M\bibinithyphendelim S\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=963e05e74e6c18075e45849051373b1e}{%
+           family={Hughes},
+           familyi={H\bibinitperiod},
+           given={Taylor\bibnamedelima L.},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=5485dc745f1f9a712c3adfc8cc1577c8}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Juntao},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d06619865b27dd6bae18e036deb780f9}{%
+           family={Prodan},
+           familyi={P\bibinitperiod},
+           given={Emil},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{7364dc6776cb42eab85e1574966924c3}
+      \strng{fullhash}{f62d58136d2ef18297b7d6fe8e7fd5d8}
+      \strng{bibnamehash}{f62d58136d2ef18297b7d6fe8e7fd5d8}
+      \strng{authorbibnamehash}{f62d58136d2ef18297b7d6fe8e7fd5d8}
+      \strng{authornamehash}{7364dc6776cb42eab85e1574966924c3}
+      \strng{authorfullhash}{f62d58136d2ef18297b7d6fe8e7fd5d8}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{23}
+      \field{issn}{0031-9007, 1079-7114}
+      \field{journaltitle}{Physical Review Letters}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{4}
+      \field{shortjournal}{Phys. Rev. Lett.}
+      \field{title}{Topological Criticality in the Chiral-Symmetric {AIII} Class at Strong Disorder}
+      \field{urlday}{28}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{volume}{113}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{046802}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.113.046802
+      \endverb
+      \verb{file}
+      \verb PDF:/home/christian/Zotero/storage/6TVIYV34/Mondragon-Shem et al. - 2014 - Topological Criticality in the Chiral-Symmetric AIII Class at Strong Disorder.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.113.046802
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.113.046802
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -170,7 +170,7 @@ In terms of the Hamiltonian above this reads
 \begin{align*}
     w= \frac{1}{2\pi i} \int_{\text{BZ}} dk\, \frac{h'(k)}{h(k)}.
 \end{align*}
-Generalizing the winding number to higher dimensional Hamiltonians is possible through the use of the block off-diagonal form. The winding number then reads
+Generalizing the winding number to higher dimensional Hamiltonians is possible through the use of the block off-diagonal form. The winding number then reads \cite{maffei_topological_2018,schnyder_classification_2008}
 \begin{align*}
     w = \frac{1}{2\pi i} \int_\text{BZ} dk \,\text{Tr}\left[h^{-1}(k) \partial_kh(k)\right].
 \end{align*}
@@ -208,36 +208,77 @@ From the second property follows that $q^\dagger h = h^\dagger q$. Thus $h^\dagg
     &=\text{Tr}\left[h^{-1} \partial_k h\right]
 \end{align*}
 
-
-
-
-As $q$ is unitary, $q$ and $q^\dagger$ can be simultaneaously diagonalized.
-Labeling the eigenvalues and eigenstates of $q$ as $q_i$ and $\ket{q_i}$ respectively, a basis of Q can be constructed that preserves the block off-diagonal structure. The basis is split into two sets A and B,
+There is another useful property, for which we consider the basis in which $\Gamma=\sigma_z \otimes \mathbb{1}_N$. This is the same diagonal basis as previously used. In this basis we can represent all eigenvalues of $H$ as a stack of to $N$-component vectors. The eigenvector for negative energies is written as
 \begin{align*}
-    \ket{q^A_i}= \begin{pmatrix}
-        \ket{q_i} \\
-        0
-    \end{pmatrix}, \quad \ket{q^B_i}= \begin{pmatrix}
-        0 \\
-        \ket{q_i}
-    \end{pmatrix}.
+    \ket{\psi_{i}^-}=\frac{1}{\sqrt{2}}\begin{pmatrix}
+        \ket{h_{1i}} \\
+        \ket{h_{2i}}
+    \end{pmatrix}\quad i\in\{1,\dots,N\}
 \end{align*}
-The eigenstates of Q can be constructed from this as
+Because of the chirality of the Hamiltonian the eigenvector with positive energy is already determined by this choice and reads
 \begin{align*}
-    \ket{Q^+_i} & = \frac{1}{\sqrt{2}|q_i|} ,\left( |q_i| \,\ket{q^A_i} + q^*_i\, \ket{q^B_i}\right)\\
-    \ket{Q^-_i} & = \frac{1}{\sqrt{2}|q_i|} ,\left( |q_i| \,\ket{q^A_i} - q^*_i\, \ket{q^B_i}\right)\\
-    \text{with} \quad Q \ket{Q^\pm_i} &= \pm |q_i| \ket{Q^\pm_i}.
+    \ket{\psi^+_{i}}=\frac{1}{\sqrt{2}}\begin{pmatrix}
+        \ket{h_{1i}} \\
+        -\ket{h_{2i}}
+    \end{pmatrix}
 \end{align*}
-The Q-matrix can thus be written as
+The matrix $Q$ is represented in the following form
 \begin{align*}
-    Q &= \sum_i \left(\ket{Q^+_i}\bra{Q^+_i} - \ket{Q^-_i}\bra{Q^-_i}\right)\\
-    & = \sum_i \frac{1}{|q_i|}\,\left( q_i\,\ket{q^A_i}\bra{q^B_i} + q_i^* \,\ket{q^B_i}\bra{q^A_i}\right)
+    Q&=\sum_i\begin{pmatrix}
+        0 & \ket{h_{1i}}\bra{h_{2i}} \\
+        \ket{h_{2i}}\bra{h_{1i}} & 0
+    \end{pmatrix}\\
+    \Rightarrow\quad q&= \sum_i\ket{h_{1i}}\bra{h_{2i}}
 \end{align*}
-Another equivalent expression for the winding number can be given through the eigenstates of the Hamiltonian
+If we now compute the kernel of the winding number with respect to $q$ we get
 \begin{align*}
-    w &= \frac{1}{\pi i} \sum_j\int_\text{BZ} dk S_j(k)\\
-    \text{with} \quad S_j(k) &= \bra{\Gamma\,H^-_j}\partial_k \ket{H^-_j}\\
-    &=\bra{H^+_j}\partial_k \ket{H^-_j}\\
-    &= \frac{1}{2}\left( \bra{h_j^A}\partial_k\ket{h_j^A} - \bra{h_j^B}\partial_k\ket{h_j^B}\right) - \frac12 \,\frac{h_j \partial_k h_j^* }{|h_j|^2}\\
-    &= -\frac12 \frac{\partial_k h_j^*}{h_j^*}.
+    \text{Tr}[q^\dagger\partial_k q]&= \text{Tr}\left[ \sum_{i,j}\ket{h_{2i}}\bra{h_{1i}}\partial_k\,\left( \ket{h_{1j}}\bra{h_{2j}}\right) \right]\\
+    &=\sum_{i,j}\text{Tr}\left[\ket{h_{2i}}\bra{h_{1i}}\left( \partial_k\ket{h_{1j}}\right)\,\bra{h_{2j}} \right]+\sum_{i,j}\text{Tr}\left[ \ket{h_{2i}}\bra{h_{1i}}\ket{h_{1j}}\,\left(\partial_k \bra{h_{2j}}\right) \right]\\
+    &=\sum_{i}\bra{h_{1i}}\left( \partial_k\ket{h_{1i}}\right)+\sum_{i} \left(\partial_k \bra{h_{2i}}\right)\ket{h_{2i}} 
 \end{align*}
+When computing the winding number the second term contributes with a minus sign compared to its complex conjugated self, i.e.
+\begin{align*}
+    \int_{\text{BZ}} dk\,\left(\partial_k \bra{h_{2i}}\right)\ket{h_{2i}}&=  -\int_{\text{BZ}} dk\, \bra{h_{2i}}\left(\partial_k\ket{h_{2i}}\right)
+\end{align*}
+Thus the winding number reads
+\begin{align*}
+     w&= \frac{1}{2\pi i} \int_{\text{BZ}} dk\,\text{Tr}[q^\dagger\partial_k q]\\
+     &= \frac{1}{2\pi i} \,\sum_i\int_{\text{BZ}} dk\,\left(\bra{h_{1i}} \partial_k\ket{h_{1i}}-\bra{h_{2i}}\partial_k \ket{h_{2i}}\right)
+\end{align*}
+This can be expressed with respect to the full eigenvectors of the Hamiltonian via
+\begin{align*}
+    w&= \frac{1}{\pi i}  \sum_i\int_{\text{BZ}} dk\,\bra{\Gamma\psi^-_i}\partial_k\ket{\psi^-_i}\\
+    &= \frac{1}{\pi i}  \sum_i\int_{\text{BZ}} dk\,\bra{\psi^+_i}\partial_k\ket{\psi^-_i}\\
+    &= \frac{1}{2\pi i}  \sum_i\int_{\text{BZ}} dk\,\left(\bra{h_{1i}} \partial_k\ket{h_{1i}}-\bra{h_{2i}}\partial_k \ket{h_{2i}}\right)
+\end{align*}
+The quantity $\sum_i\bra{\Gamma\psi^-_i}\partial_k\ket{\psi^-_i}$ can be related to a polarisation \cite{mondragon-shem_topological_2014}.
+% As $q$ is unitary, $q$ and $q^\dagger$ can be simultaneaously diagonalized.
+% Labeling the eigenvalues and eigenstates of $q$ as $q_i$ and $\ket{q_i}$ respectively, a basis of Q can be constructed that preserves the block off-diagonal structure. The basis is split into two sets A and B,
+% \begin{align*}
+%     \ket{q^A_i}= \begin{pmatrix}
+%         \ket{q_i} \\
+%         0
+%     \end{pmatrix}, \quad \ket{q^B_i}= \begin{pmatrix}
+%         0 \\
+%         \ket{q_i}
+%     \end{pmatrix}.
+% \end{align*}
+% The eigenstates of Q can be constructed from this as
+% \begin{align*}
+%     \ket{Q^+_i} & = \frac{1}{\sqrt{2}|q_i|} ,\left( |q_i| \,\ket{q^A_i} + q^*_i\, \ket{q^B_i}\right)\\
+%     \ket{Q^-_i} & = \frac{1}{\sqrt{2}|q_i|} ,\left( |q_i| \,\ket{q^A_i} - q^*_i\, \ket{q^B_i}\right)\\
+%     \text{with} \quad Q \ket{Q^\pm_i} &= \pm |q_i| \ket{Q^\pm_i}.
+% \end{align*}
+% As q is unitary $|q_i|=1$ for all $i$, and hence the Q-matrix can be written as
+% \begin{align*}
+%     Q &= \sum_i \left(\ket{Q^+_i}\bra{Q^+_i} - \ket{Q^-_i}\bra{Q^-_i}\right)\\
+%     & = \sum_i \frac{1}{|q_i|}\,\left( q_i\,\ket{q^A_i}\bra{q^B_i} + q_i^* \,\ket{q^B_i}\bra{q^A_i}\right)
+% \end{align*}
+% Another equivalent expression for the winding number can be given through the eigenstates of the Hamiltonian
+% \begin{align*}
+%     w &= \frac{1}{\pi i} \sum_j\int_\text{BZ} dk S_j(k)\\
+%     \text{with} \quad S_j(k) &= \bra{\Gamma\,H^-_j}\partial_k \ket{H^-_j}\\
+%     &=\bra{H^+_j}\partial_k \ket{H^-_j}\\
+%     &= \frac{1}{2}\left( \bra{h_j^A}\partial_k\ket{h_j^A} - \bra{h_j^B}\partial_k\ket{h_j^B}\right) - \frac12 \,\frac{h_j \partial_k h_j^* }{|h_j|^2}\\
+%     &= -\frac12 \frac{\partial_k h_j^*}{h_j^*}.
+% \end{align*}

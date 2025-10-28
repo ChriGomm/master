@@ -190,10 +190,11 @@
 
 %% bibliography with biber
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \usepackage{csquotes} % quotations with inverted commas, required by BibLaTeX
-% \usepackage[citestyle=phys, bibstyle=phys, biblabel=brackets, pageranges=true, backend=biber]{biblatex}
+\usepackage{csquotes} % quotations with inverted commas, required by BibLaTeX
+\usepackage[citestyle=phys, bibstyle=phys, biblabel=brackets, pageranges=true, backend=biber]{biblatex}
 % \bibliography{source2.bib}
-% \addbibresource{source.bib}
+% \addbibresource{sources.bib}
+\bibliography{sources.bib}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% end of template; document content begins now
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -302,11 +303,11 @@
 % additional material  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% {
-% 	\thispagestyle{plain}
-% 	\printbibliography
-% 	\clearpage
-% }
+{
+	\thispagestyle{plain}
+	\printbibliography
+	\clearpage
+}
 
 % \input{chapters/appendices.tex}
 % % \clearpage
