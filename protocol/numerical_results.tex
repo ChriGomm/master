@@ -1,0 +1,104 @@
+\section*{1D analysis of topological states}
+In order to have a chiral Hamiltonian I will choose the orientation of the dipoles in a way, such that the chirality remains. This will be done for each lattice configuration separately, i.e. the dipoles depend on the lattice geometry.
+\subsection*{Out of plane dipoles}
+First I will allow the dipoles to point out of the $xy$-plane in which the one dimensional chain will reside. I restrict the dipoles to the following form in order to have easier calcualtions.
+\begin{align*}
+    \mathbf{d}_1= \begin{pmatrix}
+        d_{1,x}\\
+        0\\
+        \sqrt{-d_{1,x}^2}
+    \end{pmatrix},\quad
+    \mathbf{d}_2= \begin{pmatrix}
+        0\\
+        d_{2,y}\\
+        \sqrt{-d_{2,y}^2}
+    \end{pmatrix}
+\end{align*}
+\begin{figure}[H]
+    \centering
+    \includegraphics[]{pictures/out_of_plane_dipole_orientation_zigzag.pdf}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[]{pictures/dipole_orientation_off_plane.pdf}
+    \caption{The occurance of topological states is signaled by the vertical lines. Between the two red as well as between the two green lines topological states can be found.}
+\end{figure}%
+As chain I consider a zig-zag chain with sublattice vector $\mathbf{a}_S$ and lattice vector $\mathbf{a}_L$.
+\begin{align*}
+    \mathbf{a}_S = \begin{pmatrix}
+        c\\
+        \epsilon
+    \end{pmatrix},\quad\mathbf{a}_L = \begin{pmatrix}
+        c+1\\
+        0
+    \end{pmatrix}
+\end{align*}
+For nearest neighbour interaction the condition that lets the momentum space Hamiltonian be chiral under periodic boudary conditions reads
+\begin{align*}
+    0&\overset{!}{=}V''_{xy}(\mathbf{a}_S)+V''_{xy}(\mathbf{a}_S-\mathbf{a}_L)\\
+    V''_{xy}(\mathbf{r}_0)&\vcentcolon=\frac{\partial^2 V}{\partial r_x\partial r_y}(\mathbf{r}_0)
+\end{align*}
+
+With the particual dipole configuration, introduced above, the derived interaction takes the form
+\begin{align*}
+    V''_{xy}(\mathbf{r})&=d_{1,x}d_{2,y}\,\left( \frac{12}{r^5}-105\,\frac{r_x^2r_y^2}{r^9} \right)+15\,\sqrt{1-d_{1,x}^2}\,\sqrt{1-d_{2,y}^2}\,\frac{r_xr_y}{r^7}\\
+    V''_{\alpha\alpha}(\mathbf{r})&=d_{1,x}d_{2,y}\,\left( 45\,\frac{r_xr_y}{r^7} - 105\,r_\alpha^2\,\frac{r_xr_y}{r^9} \right)+\sqrt{1-d_{1,x}^2}\,\sqrt{1-d_{2,y}^2}\,\left( -\frac{3}{r^5}+15\,\frac{r_\alpha^2}{r^7} \right)
+\end{align*}
+
+
+\subsection*{In plane dipole orientation}
+As a next step I restrict the dipoles to the $xy$-plane seperate the magnitude of the dipole projected onto the plane from the occurance of topological states. In this scenario I investigate the properties of the dipole restriction of the following form.
+\begin{align*}
+    \mathbf{d}_1= \begin{pmatrix}
+        d_{1,x}\\
+        d_{1,y}\\
+        0
+    \end{pmatrix},\quad
+    \mathbf{d}_2= \begin{pmatrix}
+        d_2\\
+        0\\
+        0
+    \end{pmatrix}
+\end{align*}
+For this configuration the interaction takes to From
+\begin{align*}
+    V''_{xy}(\mathbf{r})&=d_{1,x}d_2\,\left( 45\,\frac{r_xr_y}{r^7}-105\,\frac{r_x^3r_y}{r^9} \right)+ d_{1,y}d_2\,\left( \frac{12}{r^5}-105\,\frac{r_x^2r_y^2}{r^9} \right)\\
+    V''_{\alpha\alpha}(\mathbf{r})&=d_{1,x}d_2\,\left[ -\frac{3+\delta_{\alpha,x}}{r^5}+\frac{15}{r^7}\,\left( r_x^2 + 2\,r_\alpha r_x+r_\alpha^2+2\delta_{\alpha,x}\,r_x^2\right) -105\,\frac{r_x^2\,r_\alpha^2}{r^9} \right]\\
+    &+ d_{1,y}d_2\,\left[ \frac{15}{r^7}\,\left( r_xr_y + 2\delta_{\alpha,x}\,r_xr_y\right)-105\,\frac{r_\alpha^2r_xr_y}{r^9} \right]
+\end{align*}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[]{pictures/inplane_dipole_orientation_zigzag.pdf}
+\end{figure} 
+\begin{figure}[H]
+    \centering
+    \includegraphics[]{pictures/dipole_orientation_in_plain.pdf}
+    \caption{Topological states can again be found in the angle range between the two red vertical lines.}
+\end{figure}
+
+\subsection*{1D hexagonal chain}
+In this chapter I consider a chain with equal spacing $r$ between the atoms where the angle $\varphi$ is changed in a manner, such that the first layer of a 2D hexagonal lattice is reached. Because of the one dimensionality of the chain the unit cell contains four atoms (A, B, C, D).
+\begin{align*}
+    \mathbf{a}_L&=\begin{pmatrix}
+        2r\,(1+\cos\varphi_L)\\0
+    \end{pmatrix}\quad\mathbf{a}_B=\begin{pmatrix}
+        r\cos\varphi_L\\r\sin\varphi_L
+    \end{pmatrix}\\
+    \mathbf{a}_C&=\begin{pmatrix}
+        r\,(1+\cos\varphi_L)\\r\sin\varphi_L
+    \end{pmatrix}\quad\mathbf{a}_D=\begin{pmatrix}
+        r\,(1+2\cos\varphi_L)\\0
+    \end{pmatrix}
+\end{align*}
+
+\begin{figure}
+    \centering
+    \includegraphics[]{pictures/in_plane_dipole_orientation_hex1D.pdf}
+\end{figure} 
+\begin{figure}
+    \centering
+    \includegraphics[]{pictures/dipole_orientation_in_plane_hex1D.pdf}
+    \caption{In this configuration with equal spacing between the atoms no topological states occur.}
+\end{figure}
+
