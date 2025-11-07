@@ -386,6 +386,11 @@ INPUT ./pictures/aligned_dipoles_in_plane_zigzag_h0.2.pdf
 INPUT ./pictures/aligned_dipoles_in_plane_zigzag_h0.2.pdf
 INPUT ./pictures/aligned_dipoles_in_plane_zigzag_h0.2.pdf
 INPUT ./pictures/aligned_dipoles_in_plane_zigzag_h0.2.pdf
+INPUT ./pictures/aligned_dipoles_in_plane_zigzag_h0.2_eigenvecs.pdf
+INPUT ./pictures/aligned_dipoles_in_plane_zigzag_h0.2_eigenvecs.pdf
+INPUT ./pictures/aligned_dipoles_in_plane_zigzag_h0.2_eigenvecs.pdf
+INPUT ./pictures/aligned_dipoles_in_plane_zigzag_h0.2_eigenvecs.pdf
+INPUT ./pictures/aligned_dipoles_in_plane_zigzag_h0.2_eigenvecs.pdf
 INPUT ./pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.2.pdf
 INPUT ./pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.2.pdf
 INPUT ./pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.2.pdf
@@ -401,6 +406,11 @@ INPUT ./pictures/aligned_dipoles_in_plane_zigzag_h0.6.pdf
 INPUT ./pictures/aligned_dipoles_in_plane_zigzag_h0.6.pdf
 INPUT ./pictures/aligned_dipoles_in_plane_zigzag_h0.6.pdf
 INPUT ./pictures/aligned_dipoles_in_plane_zigzag_h0.6.pdf
+INPUT ./pictures/aligned_dipoles_in_plane_zigzag_h0.6_eigenvecs.pdf
+INPUT ./pictures/aligned_dipoles_in_plane_zigzag_h0.6_eigenvecs.pdf
+INPUT ./pictures/aligned_dipoles_in_plane_zigzag_h0.6_eigenvecs.pdf
+INPUT ./pictures/aligned_dipoles_in_plane_zigzag_h0.6_eigenvecs.pdf
+INPUT ./pictures/aligned_dipoles_in_plane_zigzag_h0.6_eigenvecs.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecsx2074.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm
 INPUT protocol.aux
@@ -419,6 +429,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb

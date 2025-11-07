@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.26)  6 NOV 2025 18:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.26)  7 NOV 2025 11:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1056,30 +1056,46 @@ Overfull \hbox (5.84123pt too wide) in paragraph at lines 108--109
  [][] 
  []
 
-<pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.2.pdf, id=250, 461.93623pt x 227.79163pt>
+<pictures/aligned_dipoles_in_plane_zigzag_h0.2_eigenvecs.pdf, id=250, 429.51175pt x 690.92516pt>
+File: pictures/aligned_dipoles_in_plane_zigzag_h0.2_eigenvecs.pdf Graphic file (type pdf)
+<use pictures/aligned_dipoles_in_plane_zigzag_h0.2_eigenvecs.pdf>
+Package pdftex.def Info: pictures/aligned_dipoles_in_plane_zigzag_h0.2_eigenvecs.pdf  used on input line 112.
+(pdftex.def)             Requested size: 429.5107pt x 690.92346pt.
+
+LaTeX Warning: Float too large for page by 8.05722pt on input line 113.
+
+<pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.2.pdf, id=251, 461.93623pt x 227.79163pt>
 File: pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.2.pdf Graphic file (type pdf)
 <use pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.2.pdf>
-Package pdftex.def Info: pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.2.pdf  used on input line 112.
+Package pdftex.def Info: pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.2.pdf  used on input line 116.
 (pdftex.def)             Requested size: 461.9351pt x 227.79106pt.
 
-Overfull \hbox (12.38188pt too wide) in paragraph at lines 112--113
+Overfull \hbox (12.38188pt too wide) in paragraph at lines 116--117
  [][] 
  []
 
-<pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.6.pdf, id=251, 447.90591pt x 227.79163pt>
+<pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.6.pdf, id=252, 447.90591pt x 227.79163pt>
 File: pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.6.pdf Graphic file (type pdf)
 <use pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.6.pdf>
-Package pdftex.def Info: pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.6.pdf  used on input line 116.
+Package pdftex.def Info: pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.6.pdf  used on input line 120.
 (pdftex.def)             Requested size: 447.90482pt x 227.79106pt.
-<pictures/aligned_dipoles_in_plane_zigzag_h0.6.pdf, id=252, 444.19939pt x 666.24261pt>
+<pictures/aligned_dipoles_in_plane_zigzag_h0.6.pdf, id=253, 444.19939pt x 666.24261pt>
 File: pictures/aligned_dipoles_in_plane_zigzag_h0.6.pdf Graphic file (type pdf)
 <use pictures/aligned_dipoles_in_plane_zigzag_h0.6.pdf>
-Package pdftex.def Info: pictures/aligned_dipoles_in_plane_zigzag_h0.6.pdf  used on input line 120.
+Package pdftex.def Info: pictures/aligned_dipoles_in_plane_zigzag_h0.6.pdf  used on input line 124.
 (pdftex.def)             Requested size: 444.1983pt x 666.24098pt.
-) [9 <./pictures/dipole_orientation_in_plain.pdf>] [10 <./pictures/in_plane_dipole_orientation_hex1D.pdf> <./pictures/dipole_orientation_in_plane_hex1D.pdf>] [11 <./pictures/aligned_dipoles_in_plane_zigzag_h0.2.pdf>] [12 <./pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.2.pdf> <./pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.6.pdf>] [13 <./pictures/aligned_dipoles_in_plane_zigzag_h0.6.pdf>] [14
+<pictures/aligned_dipoles_in_plane_zigzag_h0.6_eigenvecs.pdf, id=254, 429.51175pt x 691.22737pt>
+File: pictures/aligned_dipoles_in_plane_zigzag_h0.6_eigenvecs.pdf Graphic file (type pdf)
+<use pictures/aligned_dipoles_in_plane_zigzag_h0.6_eigenvecs.pdf>
+Package pdftex.def Info: pictures/aligned_dipoles_in_plane_zigzag_h0.6_eigenvecs.pdf  used on input line 128.
+(pdftex.def)             Requested size: 429.5107pt x 691.22568pt.
+
+LaTeX Warning: Float too large for page by 8.35944pt on input line 129.
+
+) [9 <./pictures/dipole_orientation_in_plain.pdf>] [10 <./pictures/in_plane_dipole_orientation_hex1D.pdf> <./pictures/dipole_orientation_in_plane_hex1D.pdf>] [11 <./pictures/aligned_dipoles_in_plane_zigzag_h0.2.pdf>] [12 <./pictures/aligned_dipoles_in_plane_zigzag_h0.2_eigenvecs.pdf>] [13 <./pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.2.pdf> <./pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.6.pdf>] [14 <./pictures/aligned_dipoles_in_plane_zigzag_h0.6.pdf>] [15 <./pictures/aligned_dipoles_in_plane_zigzag_h0.6_eigenvecs.pdf>] [16
 
 
-] [15] (./protocol.aux)
+] [17] (./protocol.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1091,18 +1107,18 @@ Package logreq Info: Writing requests to 'protocol.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29276 strings out of 474222
- 555236 string characters out of 5748733
+ 29294 strings out of 474222
+ 556254 string characters out of 5748733
  1963975 words of memory out of 5000000
- 51101 multiletter control sequences out of 15000+600000
+ 51115 multiletter control sequences out of 15000+600000
  570815 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,20n,107p,10945b,1783s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2074.pfb>
-Output written on protocol.pdf (15 pages, 673967 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2074.pfb>
+Output written on protocol.pdf (17 pages, 725609 bytes).
 PDF statistics:
- 784 PDF objects out of 1000 (max. 8388607)
- 387 compressed objects within 4 object streams
- 42 named destinations out of 1000 (max. 500000)
- 59 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 871 PDF objects out of 1000 (max. 8388607)
+ 436 compressed objects within 5 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 69 words of extra memory for PDF output out of 10000 (max. 10000000)
 

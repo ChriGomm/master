@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber protocol"] 0 "protocol.bcf" "protocol.bbl" "protocol" 1762450233.73065 -1
-  "protocol.bcf" 1762450233.66769 107652 4b74a88ecaa0ac210f9c3287221a8e63 "pdflatex"
+["biber protocol"] 0 "protocol.bcf" "protocol.bbl" "protocol" 1762511736.95621 -1
+  "protocol.bcf" 1762511736.89322 107652 4b74a88ecaa0ac210f9c3287221a8e63 "pdflatex"
   "sources.bib" 1761739259.99344 32186 2c86ff9267f8cfb71fe754fdf1e880a4 ""
   (generated)
   "protocol.bbl"
   "protocol.blg"
   (rewritten before read)
-["pdflatex"] 1762450232.5345 "/home/christian/Documents/master/protocol/protocol.tex" "protocol.pdf" "protocol" 1762450233.73082 0
+["pdflatex"] 1762511735.7825 "/home/christian/Documents/master/protocol/protocol.tex" "protocol.pdf" "protocol" 1762511736.95641 0
   "/etc/texmf/web2c/texmf.cnf" 1758895203.64774 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/christian/Documents/master/protocol/protocol.tex" 1762250722.7561 13126 41b4d348329b47787d0495208f1e0b21 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -49,6 +49,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1248133631 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb" 1248133631 24393 3b7eb51a67a0a62aec5849271bdb9c2e ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb" 1248133631 28902 2f5c04fd2884d1878057baa5aad22765 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb" 1290383964 25452 d4e98a3bf6b13d4b7dcffd6302990a65 ""
@@ -194,21 +195,23 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1758895244 8213773 f45dae838239d55b66681526ece92c70 ""
   "StandardPages.sty" 1759150099.35658 3802 cf878797be82f080136d69564456bed0 ""
   "interactions.tex" 1761739259.98626 23181 f3220afaae966fb3e55cdfe0343ac585 ""
-  "numerical_results.tex" 1762450231.13577 5364 5c7fdb6aef805e3d320c0efa1090701b ""
+  "numerical_results.tex" 1762511734.15922 5621 87464d29e57982874c0b22551cc7a226 ""
   "pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.2.pdf" 1762449338.33 176988 1fa3d2d39278af524c7876f0764caeb2 ""
   "pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.6.pdf" 1762449413.7503 178121 65d66a73a084a6a4a46a05ef5077b148 ""
   "pictures/aligned_dipoles_in_plane_zigzag_h0.2.pdf" 1762449154.95926 227408 5f53771de9fe1d9b565ecc482956acda ""
+  "pictures/aligned_dipoles_in_plane_zigzag_h0.2_eigenvecs.pdf" 1762511628.04689 222818 7bca2dcc69a3a27ece1058cec1d6970e ""
   "pictures/aligned_dipoles_in_plane_zigzag_h0.6.pdf" 1762450040.21207 271808 844542adc5f515d0616bd47cf6d1a67a ""
+  "pictures/aligned_dipoles_in_plane_zigzag_h0.6_eigenvecs.pdf" 1762511121.16374 161418 087e51f65fc6bff4123760b2620e1b8c ""
   "pictures/dipole_orientation_in_plain.pdf" 1762279401.28796 288302 60f4c82153d3a2747d10cf3fa154ad42 ""
   "pictures/dipole_orientation_in_plane_hex1D.pdf" 1762279432.43825 288210 650b32df9f8bb68dc1c368698a88c92c ""
   "pictures/dipole_orientation_off_plane.pdf" 1762279333.79305 288488 9f5d93d3314995e932d3b3e1f58abfd6 ""
   "pictures/in_plane_dipole_orientation_hex1D.pdf" 1762274704.05314 233444 982c68890c166dfbb55829b0cd09bf96 ""
   "pictures/inplane_dipole_orientation_zigzag.pdf" 1762250941.14383 202954 88fd87918d2e1407058d684707c41a7f ""
   "pictures/out_of_plane_dipole_orientation_zigzag.pdf" 1762251976.8506 202909 50337e74c96fab1024859569f00a1c2f ""
-  "protocol.aux" 1762450233.66569 2149 3c8a83d6a44c7735259f966bb6491131 "pdflatex"
+  "protocol.aux" 1762511736.89222 2149 6dec22868a967dea48c8b7558fb4c9a1 "pdflatex"
   "protocol.bbl" 1761739259.98702 8978 fbe845761ef1008bccaed514a2c5189c "biber protocol"
-  "protocol.out" 1762450233.46117 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "protocol.run.xml" 1762450233.66854 2455 9fca3ebbd622dcf6cac90ea88dc21fbe "pdflatex"
+  "protocol.out" 1762511736.69284 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "protocol.run.xml" 1762511736.89531 2455 9fca3ebbd622dcf6cac90ea88dc21fbe "pdflatex"
   "protocol.tex" 1762250722.7561 13126 41b4d348329b47787d0495208f1e0b21 ""
   (generated)
   "protocol.aux"
