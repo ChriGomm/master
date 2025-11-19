@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.26)  7 NOV 2025 11:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.11)  19 NOV 2025 21:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -138,9 +138,9 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language76). Reported on input line 105.
+(babel)             (\language28). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language76). Reported on input line 108.
+(babel)             (\language28). Reported on input line 108.
 )) (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 11.
@@ -1013,86 +1013,68 @@ Overfull \hbox (31.65314pt too wide) detected at line 83
 []
  []
 
-[2] [3] [4] [5]) (./numerical_results.tex
-<pictures/out_of_plane_dipole_orientation_zigzag.pdf, id=51, 440.71358pt x 227.79163pt>
-File: pictures/out_of_plane_dipole_orientation_zigzag.pdf Graphic file (type pdf)
-<use pictures/out_of_plane_dipole_orientation_zigzag.pdf>
-Package pdftex.def Info: pictures/out_of_plane_dipole_orientation_zigzag.pdf  used on input line 19.
-(pdftex.def)             Requested size: 440.7125pt x 227.79106pt.
-<pictures/dipole_orientation_off_plane.pdf, id=52, 388.81561pt x 317.99939pt>
-File: pictures/dipole_orientation_off_plane.pdf Graphic file (type pdf)
-<use pictures/dipole_orientation_off_plane.pdf>
-Package pdftex.def Info: pictures/dipole_orientation_off_plane.pdf  used on input line 23.
-(pdftex.def)             Requested size: 388.81467pt x 317.99861pt.
- [6] [7 <./pictures/out_of_plane_dipole_orientation_zigzag.pdf> <./pictures/dipole_orientation_off_plane.pdf>]
-<pictures/inplane_dipole_orientation_zigzag.pdf, id=179, 440.71358pt x 227.79163pt>
-File: pictures/inplane_dipole_orientation_zigzag.pdf Graphic file (type pdf)
-<use pictures/inplane_dipole_orientation_zigzag.pdf>
-Package pdftex.def Info: pictures/inplane_dipole_orientation_zigzag.pdf  used on input line 72.
-(pdftex.def)             Requested size: 440.7125pt x 227.79106pt.
-<pictures/dipole_orientation_in_plain.pdf, id=180, 386.03781pt x 318.83168pt>
-File: pictures/dipole_orientation_in_plain.pdf Graphic file (type pdf)
-<use pictures/dipole_orientation_in_plain.pdf>
-Package pdftex.def Info: pictures/dipole_orientation_in_plain.pdf  used on input line 76.
-(pdftex.def)             Requested size: 386.03685pt x 318.8309pt.
- [8 <./pictures/inplane_dipole_orientation_zigzag.pdf>]
-<pictures/in_plane_dipole_orientation_hex1D.pdf, id=247, 440.71358pt x 231.17398pt>
-File: pictures/in_plane_dipole_orientation_hex1D.pdf Graphic file (type pdf)
-<use pictures/in_plane_dipole_orientation_hex1D.pdf>
-Package pdftex.def Info: pictures/in_plane_dipole_orientation_hex1D.pdf  used on input line 97.
-(pdftex.def)             Requested size: 440.7125pt x 231.1734pt.
-<pictures/dipole_orientation_in_plane_hex1D.pdf, id=248, 386.03781pt x 318.83168pt>
-File: pictures/dipole_orientation_in_plane_hex1D.pdf Graphic file (type pdf)
-<use pictures/dipole_orientation_in_plane_hex1D.pdf>
-Package pdftex.def Info: pictures/dipole_orientation_in_plane_hex1D.pdf  used on input line 101.
-(pdftex.def)             Requested size: 386.03685pt x 318.8309pt.
-<pictures/aligned_dipoles_in_plane_zigzag_h0.2.pdf, id=249, 455.39557pt x 666.24261pt>
-File: pictures/aligned_dipoles_in_plane_zigzag_h0.2.pdf Graphic file (type pdf)
-<use pictures/aligned_dipoles_in_plane_zigzag_h0.2.pdf>
-Package pdftex.def Info: pictures/aligned_dipoles_in_plane_zigzag_h0.2.pdf  used on input line 108.
-(pdftex.def)             Requested size: 455.39445pt x 666.24098pt.
+[2] [3] [4] [5]) (./numerical_results.tex [6]
+<pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a3.pdf, id=57, 444.66496pt x 666.24261pt>
+File: pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a3.pdf Graphic file (type pdf)
+<use pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a3.pdf>
+Package pdftex.def Info: pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a3.pdf  used on input line 32.
+(pdftex.def)             Requested size: 444.66388pt x 666.24098pt.
 
-Overfull \hbox (5.84123pt too wide) in paragraph at lines 108--109
- [][] 
- []
 
-<pictures/aligned_dipoles_in_plane_zigzag_h0.2_eigenvecs.pdf, id=250, 429.51175pt x 690.92516pt>
-File: pictures/aligned_dipoles_in_plane_zigzag_h0.2_eigenvecs.pdf Graphic file (type pdf)
-<use pictures/aligned_dipoles_in_plane_zigzag_h0.2_eigenvecs.pdf>
-Package pdftex.def Info: pictures/aligned_dipoles_in_plane_zigzag_h0.2_eigenvecs.pdf  used on input line 112.
-(pdftex.def)             Requested size: 429.5107pt x 690.92346pt.
+LaTeX Warning: Float too large for page by 17.37474pt on input line 34.
 
-LaTeX Warning: Float too large for page by 8.05722pt on input line 113.
+<pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a3.pdf, id=58, 443.49138pt x 227.79163pt>
+File: pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a3.pdf Graphic file (type pdf)
+<use pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a3.pdf>
+Package pdftex.def Info: pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a3.pdf  used on input line 37.
+(pdftex.def)             Requested size: 399.13853pt x 205.01056pt.
+<pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs0.pdf, id=59, 439.51176pt x 523.60382pt>
+File: pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs0.pdf Graphic file (type pdf)
+<use pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs0.pdf>
+Package pdftex.def Info: pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs0.pdf  used on input line 41.
+(pdftex.def)             Requested size: 373.58676pt x 445.06535pt.
+<pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs1.pdf, id=60, 439.51176pt x 681.16428pt>
+File: pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs1.pdf Graphic file (type pdf)
+<use pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs1.pdf>
+Package pdftex.def Info: pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs1.pdf  used on input line 45.
+(pdftex.def)             Requested size: 439.51068pt x 681.16261pt.
+<pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs2.pdf, id=61, 439.51176pt x 681.16428pt>
+File: pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs2.pdf Graphic file (type pdf)
+<use pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs2.pdf>
+Package pdftex.def Info: pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs2.pdf  used on input line 49.
+(pdftex.def)             Requested size: 439.51068pt x 681.16261pt.
+<pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a5.pdf, id=62, 449.665pt x 666.24261pt>
+File: pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a5.pdf Graphic file (type pdf)
+<use pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a5.pdf>
+Package pdftex.def Info: pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a5.pdf  used on input line 54.
+(pdftex.def)             Requested size: 449.6639pt x 666.24098pt.
 
-<pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.2.pdf, id=251, 461.93623pt x 227.79163pt>
-File: pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.2.pdf Graphic file (type pdf)
-<use pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.2.pdf>
-Package pdftex.def Info: pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.2.pdf  used on input line 116.
-(pdftex.def)             Requested size: 461.9351pt x 227.79106pt.
+LaTeX Warning: Float too large for page by 29.37474pt on input line 56.
 
-Overfull \hbox (12.38188pt too wide) in paragraph at lines 116--117
- [][] 
- []
+<pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a5.pdf, id=63, 443.49138pt x 227.79163pt>
+File: pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a5.pdf Graphic file (type pdf)
+<use pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a5.pdf>
+Package pdftex.def Info: pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a5.pdf  used on input line 59.
+(pdftex.def)             Requested size: 399.13853pt x 205.01056pt.
+<pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs0.pdf, id=64, 389.70435pt x 406.23183pt>
+File: pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs0.pdf Graphic file (type pdf)
+<use pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs0.pdf>
+Package pdftex.def Info: pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs0.pdf  used on input line 63.
+(pdftex.def)             Requested size: 389.70338pt x 406.23083pt.
+<pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs1.pdf, id=65, 424.51172pt x 692.18022pt>
+File: pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs1.pdf Graphic file (type pdf)
+<use pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs1.pdf>
+Package pdftex.def Info: pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs1.pdf  used on input line 67.
+(pdftex.def)             Requested size: 424.51067pt x 692.17853pt.
 
-<pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.6.pdf, id=252, 447.90591pt x 227.79163pt>
-File: pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.6.pdf Graphic file (type pdf)
-<use pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.6.pdf>
-Package pdftex.def Info: pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.6.pdf  used on input line 120.
-(pdftex.def)             Requested size: 447.90482pt x 227.79106pt.
-<pictures/aligned_dipoles_in_plane_zigzag_h0.6.pdf, id=253, 444.19939pt x 666.24261pt>
-File: pictures/aligned_dipoles_in_plane_zigzag_h0.6.pdf Graphic file (type pdf)
-<use pictures/aligned_dipoles_in_plane_zigzag_h0.6.pdf>
-Package pdftex.def Info: pictures/aligned_dipoles_in_plane_zigzag_h0.6.pdf  used on input line 124.
-(pdftex.def)             Requested size: 444.1983pt x 666.24098pt.
-<pictures/aligned_dipoles_in_plane_zigzag_h0.6_eigenvecs.pdf, id=254, 429.51175pt x 691.22737pt>
-File: pictures/aligned_dipoles_in_plane_zigzag_h0.6_eigenvecs.pdf Graphic file (type pdf)
-<use pictures/aligned_dipoles_in_plane_zigzag_h0.6_eigenvecs.pdf>
-Package pdftex.def Info: pictures/aligned_dipoles_in_plane_zigzag_h0.6_eigenvecs.pdf  used on input line 128.
-(pdftex.def)             Requested size: 429.5107pt x 691.22568pt.
+LaTeX Warning: Float too large for page by 9.31229pt on input line 68.
 
-LaTeX Warning: Float too large for page by 8.35944pt on input line 129.
-
-) [9 <./pictures/dipole_orientation_in_plain.pdf>] [10 <./pictures/in_plane_dipole_orientation_hex1D.pdf> <./pictures/dipole_orientation_in_plane_hex1D.pdf>] [11 <./pictures/aligned_dipoles_in_plane_zigzag_h0.2.pdf>] [12 <./pictures/aligned_dipoles_in_plane_zigzag_h0.2_eigenvecs.pdf>] [13 <./pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.2.pdf> <./pictures/aligned_dipole_in_plane_zigzag_spectrum_h0.6.pdf>] [14 <./pictures/aligned_dipoles_in_plane_zigzag_h0.6.pdf>] [15 <./pictures/aligned_dipoles_in_plane_zigzag_h0.6_eigenvecs.pdf>] [16
+<pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs2.pdf, id=66, 434.51176pt x 681.16428pt>
+File: pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs2.pdf Graphic file (type pdf)
+<use pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs2.pdf>
+Package pdftex.def Info: pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs2.pdf  used on input line 71.
+(pdftex.def)             Requested size: 434.5107pt x 681.16261pt.
+) [7] [8 <./pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a3.pdf>] [9 <./pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a3.pdf> <./pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs0.pdf>] [10 <./pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs1.pdf>] [11 <./pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs2.pdf>] [12 <./pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a5.pdf>] [13 <./pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a5.pdf> <./pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs0.pdf>] [14 <./pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs1.pdf>] [15 <./pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs2.pdf>] [16
 
 
 ] [17] (./protocol.aux)
@@ -1107,18 +1089,18 @@ Package logreq Info: Writing requests to 'protocol.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29294 strings out of 474222
- 556254 string characters out of 5748733
+ 29262 strings out of 474222
+ 555886 string characters out of 5748732
  1963975 words of memory out of 5000000
- 51115 multiletter control sequences out of 15000+600000
+ 51088 multiletter control sequences out of 15000+600000
  570815 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,20n,107p,10945b,1783s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,20n,107p,10945b,1773s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2074.pfb>
-Output written on protocol.pdf (17 pages, 725609 bytes).
+Output written on protocol.pdf (17 pages, 819468 bytes).
 PDF statistics:
- 871 PDF objects out of 1000 (max. 8388607)
- 436 compressed objects within 5 object streams
- 46 named destinations out of 1000 (max. 500000)
- 69 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 675 PDF objects out of 1000 (max. 8388607)
+ 363 compressed objects within 4 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
