@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.11)  19 NOV 2025 21:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.26)  24 NOV 2025 11:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -138,9 +138,9 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language28). Reported on input line 105.
+(babel)             (\language76). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language28). Reported on input line 108.
+(babel)             (\language76). Reported on input line 108.
 )) (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 11.
@@ -992,29 +992,29 @@ LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (55.84561pt too wide) detected at line 27
+Overfull \hbox (55.84561pt too wide) detected at line 30
 []
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-LaTeX Font Info:    Trying to load font information for U+bbold on input line 56.
+LaTeX Font Info:    Trying to load font information for U+bbold on input line 59.
  (/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd)
-Overfull \hbox (31.65314pt too wide) detected at line 83
+Overfull \hbox (31.65314pt too wide) detected at line 86
 []
  []
 
-[2] [3] [4] [5]) (./numerical_results.tex [6]
-<pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a3.pdf, id=57, 444.66496pt x 666.24261pt>
+[2] [3] [4] [5] [6]) (./numerical_results.tex
+<pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a3.pdf, id=56, 444.66496pt x 666.24261pt>
 File: pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a3.pdf Graphic file (type pdf)
 <use pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a3.pdf>
 Package pdftex.def Info: pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a3.pdf  used on input line 32.
@@ -1023,45 +1023,47 @@ Package pdftex.def Info: pictures/aligned_dipoles_in_plane_orientation_sheer_h1.
 
 LaTeX Warning: Float too large for page by 17.37474pt on input line 34.
 
-<pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a3.pdf, id=58, 443.49138pt x 227.79163pt>
+<pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a3.pdf, id=57, 443.49138pt x 227.79163pt>
 File: pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a3.pdf Graphic file (type pdf)
 <use pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a3.pdf>
 Package pdftex.def Info: pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a3.pdf  used on input line 37.
 (pdftex.def)             Requested size: 399.13853pt x 205.01056pt.
-<pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs0.pdf, id=59, 439.51176pt x 523.60382pt>
+<pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs0.pdf, id=58, 439.51176pt x 523.60382pt>
 File: pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs0.pdf Graphic file (type pdf)
 <use pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs0.pdf>
 Package pdftex.def Info: pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs0.pdf  used on input line 41.
 (pdftex.def)             Requested size: 373.58676pt x 445.06535pt.
-<pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs1.pdf, id=60, 439.51176pt x 681.16428pt>
+<pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs1.pdf, id=59, 439.51176pt x 681.16428pt>
 File: pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs1.pdf Graphic file (type pdf)
 <use pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs1.pdf>
 Package pdftex.def Info: pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs1.pdf  used on input line 45.
 (pdftex.def)             Requested size: 439.51068pt x 681.16261pt.
-<pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs2.pdf, id=61, 439.51176pt x 681.16428pt>
+<pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs2.pdf, id=60, 439.51176pt x 681.16428pt>
 File: pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs2.pdf Graphic file (type pdf)
 <use pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs2.pdf>
 Package pdftex.def Info: pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs2.pdf  used on input line 49.
 (pdftex.def)             Requested size: 439.51068pt x 681.16261pt.
-<pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a5.pdf, id=62, 449.665pt x 666.24261pt>
+[7]
+<pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a5.pdf, id=70, 449.665pt x 666.24261pt>
 File: pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a5.pdf Graphic file (type pdf)
 <use pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a5.pdf>
 Package pdftex.def Info: pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a5.pdf  used on input line 54.
 (pdftex.def)             Requested size: 449.6639pt x 666.24098pt.
 
+
 LaTeX Warning: Float too large for page by 29.37474pt on input line 56.
 
-<pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a5.pdf, id=63, 443.49138pt x 227.79163pt>
+<pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a5.pdf, id=71, 443.49138pt x 227.79163pt>
 File: pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a5.pdf Graphic file (type pdf)
 <use pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a5.pdf>
 Package pdftex.def Info: pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a5.pdf  used on input line 59.
 (pdftex.def)             Requested size: 399.13853pt x 205.01056pt.
-<pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs0.pdf, id=64, 389.70435pt x 406.23183pt>
+<pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs0.pdf, id=72, 389.70435pt x 406.23183pt>
 File: pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs0.pdf Graphic file (type pdf)
 <use pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs0.pdf>
 Package pdftex.def Info: pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs0.pdf  used on input line 63.
 (pdftex.def)             Requested size: 389.70338pt x 406.23083pt.
-<pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs1.pdf, id=65, 424.51172pt x 692.18022pt>
+<pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs1.pdf, id=73, 424.51172pt x 692.18022pt>
 File: pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs1.pdf Graphic file (type pdf)
 <use pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs1.pdf>
 Package pdftex.def Info: pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs1.pdf  used on input line 67.
@@ -1069,15 +1071,15 @@ Package pdftex.def Info: pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenve
 
 LaTeX Warning: Float too large for page by 9.31229pt on input line 68.
 
-<pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs2.pdf, id=66, 434.51176pt x 681.16428pt>
+<pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs2.pdf, id=74, 434.51176pt x 681.16428pt>
 File: pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs2.pdf Graphic file (type pdf)
 <use pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs2.pdf>
 Package pdftex.def Info: pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs2.pdf  used on input line 71.
 (pdftex.def)             Requested size: 434.5107pt x 681.16261pt.
-) [7] [8 <./pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a3.pdf>] [9 <./pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a3.pdf> <./pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs0.pdf>] [10 <./pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs1.pdf>] [11 <./pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs2.pdf>] [12 <./pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a5.pdf>] [13 <./pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a5.pdf> <./pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs0.pdf>] [14 <./pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs1.pdf>] [15 <./pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs2.pdf>] [16
+) [8] [9 <./pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a3.pdf>] [10 <./pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a3.pdf> <./pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs0.pdf>] [11 <./pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs1.pdf>] [12 <./pictures/aligned_dipoles_in_plane_sheer_h1.1_a3_eigenvecs2.pdf>] [13 <./pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a5.pdf>] [14 <./pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a5.pdf> <./pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs0.pdf>] [15 <./pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs1.pdf>] [16 <./pictures/aligned_dipoles_in_plane_sheer_h1.1_a5_eigenvecs2.pdf>] [17
 
 
-] [17] (./protocol.aux)
+] (./protocol.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1089,18 +1091,18 @@ Package logreq Info: Writing requests to 'protocol.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29262 strings out of 474222
- 555886 string characters out of 5748732
- 1963975 words of memory out of 5000000
- 51088 multiletter control sequences out of 15000+600000
+ 29267 strings out of 474222
+ 556099 string characters out of 5748733
+ 1960975 words of memory out of 5000000
+ 51092 multiletter control sequences out of 15000+600000
  570815 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,20n,107p,10945b,1773s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2074.pfb>
-Output written on protocol.pdf (17 pages, 819468 bytes).
+Output written on protocol.pdf (17 pages, 820244 bytes).
 PDF statistics:
- 675 PDF objects out of 1000 (max. 8388607)
- 363 compressed objects within 4 object streams
- 41 named destinations out of 1000 (max. 500000)
+ 676 PDF objects out of 1000 (max. 8388607)
+ 364 compressed objects within 4 object streams
+ 42 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
