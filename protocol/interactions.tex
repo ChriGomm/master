@@ -1,5 +1,15 @@
 \section*{Abstract}
-We investigate the topological properties of phonons in trapped Rydberg atom arrays, where interatomic interactions arise from dipole-dipole and van der Waals couplings. We analyze the influence of lattice geometry in one and two dimensions, as well as dipole orientation, on the existence and number of topological phononic edge states. These states exhibit strong localization of phononic excitations at the system boundaries and demonstrate robustness against perturbations. We further study the role of spin-phonon coupling and its impact on spin and charge transport in Rydberg atom lattices. While in previous works topological states in atoms' electronic degrees of freedom have been exploited to establish topologically protected charge pumping protocols, we investigate the influence of the phonon topology on such transport phenomena. This can provide insight into the design of Rydberg-based platforms for controlled topological transport.
+% We investigate the topological properties of phonons in trapped Rydberg atom arrays, where interatomic interactions arise from dipole-dipole and van der Waals couplings. We analyze the influence of lattice geometry in one and two dimensions, as well as dipole orientation, on the existence and number of topological phononic edge states. These states exhibit strong localization of phononic excitations at the system boundaries and demonstrate robustness against perturbations. We further study the role of spin-phonon coupling and its impact on spin and charge transport in Rydberg atom lattices. While in previous works topological states in atoms' electronic degrees of freedom have been exploited to establish topologically protected charge pumping protocols, we investigate the influence of the phonon topology on such transport phenomena. This can provide insight into the design of Rydberg-based platforms for controlled topological transport.
+
+
+% We investigate the topological properties of phonons in trapped Rydberg atom arrays, arising from dipole-dipole interactions between the atoms. For different chain geometries from zigzag to armchair configurations we analyze the symmetries of the phononic Hamiltonian and its topological properties. Due to the character of the phonon-phonon interactions, achieving chiral symmetry necessary to encounter topological phases is non-trivial. We address this issue by selecting a geometry dependent orientation of the atomic dipole moments, which restores chiral symmetry and allows for the analysis of topology in one dimension. The interplay between two phononic degrees of freedom in the harmonic trap potential mediated by the dipole-dipole interactions leads to interesting topological phases with winding numbers from zero to two. The strong localization and robustness of the resulting edge states can be of interest in various setups utilizing Rydberg atom arrays, such as quantum transport. 
+
+% As an outlook we want to investigate the influence of the phonon topology on such charge transport phenomena. In this context topological states in atoms' electronic degrees of freedom have already been shown to enable topologically protected charge pumping [citation]. Studying the influence of spin-phonon coupling on the phenomena can provide new control mechanisms in the realm of topological transport. 
+
+We study the topological properties of phonons in trapped Rydberg atom arrays, which arise from dipole-dipole interactions between the atoms. For various one-dimensional geometries, from zigzag to armchair configurations, we analyze the symmetries of the phononic Hamiltonian which give rise to topologically localized phonon excitations on the system boundaries. Because the phonon-phonon interactions here do not naturally respect chiral symmetry, which is crucial for realizing 1D topological phases, we show how an appropriate, geometry-dependent choice of the dipole moment orientation can restore this symmetry and enable topological characterization. The interplay between two phononic degrees of freedom in the harmonic trap potential, mediated by the dipole-dipole interactions, leads to interesting topological phases with winding numbers between zero and two. The corresponding edge states exhibit strong localization and robustness, making them potentially useful for applications in Rydberg-array-based quantum transport. 
+
+As an outlook we aim to explore how the phonon topology influences transport phenomena. Topological states in the electronic degrees of freedom in Rydberg arrays have already been shown to support topologically protected photon pumping \cite{citro_thouless_2023,nakajima_topological_2016,lohse_thouless_2016,meidan_topological_2011,tangpanitanon_topological_2016}. Studying the effect of spin-phonon coupling can provide new control mechanisms in the realm of topological transport.
+
 
 \section*{Hamiltonian}
 I am considering the interaction term $H_I$ of a Hamiltonian of a system of $N$ particles with positions $\{\bar{\mathbf{R}}_l\}_{l\in\{1,\dots,N\}}$. It shall consist of two-body interactions, which depend on the position of the involved particles. Thus $H_I$ can be written in the form
@@ -103,6 +113,47 @@ If we exploit that the interactions realized in $U$ are much smaller compared to
 \end{align*}
 
 
+\section*{Momentum space Hamiltonian}
+Let $c^A_{\mathbf{R},\alpha}$ and $c^B_{\mathbf{R},\alpha}$ be the phonon annihilation operators of sublattice $A$ and $B$ respectively at the unit cell, located at $\mathbf{R}$, where $\alpha\in\{x,y\}$ labels the the direction of movement. Let further $L$ be the set of all unit cells of the lattice, and $C=\{ c^A_{\mathbf{R},\alpha}, c^B_{\mathbf{R},\alpha} \}_{\mathbf{R}\in L, \alpha\in\{x,y\}}$ the set of all annihilation operators. The Hamiltonian in real space can then be written as
+\begin{align*}
+    H = \sum_{\substack{\mathbf{R},\mathbf{R}'\in L\\a,b \in C}}H^{a,b}(\mathbf{R}-\mathbf{R}')\,a_{\mathbf{R}}^{\dagger} b_{\mathbf{R}'}
+\end{align*}
+For two dimensional periodic boundary conditions one can introduce the Fourier transformed operators, $a\in C$
+\begin{align*}
+    a_{\mathbf{k}} = \frac{1}{N}\sum_{\mathbf{R}\in L} e^{-i\mathbf{k}\cdot\mathbf{R}}\,a_{\mathbf{R}},
+\end{align*}
+$k\in \bar{L}$ where $\bar{L}$ is the reciprocal lattice of $L$ and $N$ is the extent of the lattice in one direction.
+Writing the Hamiltonian in terms of these operators yields
+\begin{align*}
+    H &=\frac{1}{N^2}\,  \sum_{\substack{\mathbf{R},\mathbf{R}'\in L\\a,b \in C\\\mathbf{k},\mathbf{k}'\in\bar{L}}}H^{a,b}(\mathbf{R}-\mathbf{R}')\,e^{-i\,\mathbf{k}\mathbf{R}}\,e^{i\,\mathbf{k}'\mathbf{R}'}\,a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}'}\\
+    &=  \frac{1}{N^2}\,\sum_{\substack{\mathbf{R},\;\Delta\mathbf{R}=\mathbf{R}-\mathbf{R}'\\a,b 
+    \\\mathbf{k},\mathbf{k}'}}H^{a,b}(\Delta\mathbf{R})\,e^{-i\,\mathbf{R}(\mathbf{k}-\mathbf{k}')}\,e^{-i\,\Delta\mathbf{R}\mathbf{k}'}\,a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}'}\\
+    &= \sum_{\substack{\Delta\mathbf{R},\mathbf{k}\\a,b}}H^{a,b}(\Delta\mathbf{R})\,e^{-i\,\Delta\mathbf{R}\mathbf{k}}\,a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}}=\vcentcolon \sum_{\substack{\mathbf{k}\\a,b}}H^{a,b}_\mathbf{k}\,a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}}\\
+    \text{where}\quad H^{a,b}_\mathbf{k} &= \sum_{\Delta\mathbf{R}}H^{a,b}(\Delta\mathbf{R})\,e^{-i\,\Delta\mathbf{R}\mathbf{k}}
+\end{align*}
+\begin{figure}[H]
+    \centering
+    \includegraphics{pictures/lattice_def.pdf}
+    \caption{\textbf{Lattice definition} The main configuration of the grid,lattice 1, is the parallelogram spanned by the lattice vectors $\mathbf{a}_1$ and $\mathbf{a}_2$. This is visualized by the black dashed frame. There is also the possibility of defining a square lattice which is highlighted by the green dashed frame.}
+    \label{fig:lattice_def}
+\end{figure}
+For the case where only one direction of the lattice obeys periodic boundary conditions, while the other direction has open boundaries, the Fourier transform is only performed in the periodic direction. For this purpose I introduce the lattice vectors $\mathbf{a}_1$ and $\mathbf{a}_2$, which span the lattice. The lattice can be split into subspaces $L_n=\{j\cdot\mathbf{a}_n\}_{j\in M_n}$ whith $n\in\{1,2\}$ and $M_n$ is chosen in such a way, that $L_n$ spans from one edge of the lattice to the other. Hence the position of any unit cell $\mathbf{R}$ can be expressed as the linear combination of two vectors $\mathbf{r}_1\in L_1$ and $\mathbf{r}_2\in L_2$, i.e. $\mathbf{R}=\mathbf{r}_1+\mathbf{r}_2$. I can now also introduce the reciprocal lattice vectors $\mathbf{k}_1$ and $\mathbf{k}_2$ with the property $\mathbf{a}_i\cdot\mathbf{k}_j = 2\pi \delta_{ij}$. I perform the Fourier transformation as an example for the lattice 1 from \figref{fig:lattice_def}. 
+
+Here the lattice direction represented by $\mathbf{a}_2$ shall be periodic. I introduce the one dimensionally Fourier transformed operators
+\begin{align*}
+    a_{\mathbf{r}_1,\mathbf{k}} = \frac{1}{\sqrt{N}}\,\sum_{\mathbf{r}_2\in L_2} e^{-i\mathbf{k}\mathbf{r}_2}\,a_{\mathbf{r}_1+\mathbf{r}_2},\quad\mathbf{k}\in \{\frac{1}{N},\dots,1\}\cdot\mathbf{k}_2
+\end{align*}
+The Hamiltonian can now be transformed via
+\begin{align*}
+    H &=\frac{1}{N}\,  \sum_{\substack{\mathbf{r}_1,\mathbf{r}_1'\in L_1\\\mathbf{r}_2,\mathbf{r}_2'\in L_2}}\sum_{\substack{a,b \in C\\\mathbf{k},\mathbf{k}'\in\bar{L}}}H^{a,b}(\mathbf{R}-\mathbf{R}')\,e^{-i\,\mathbf{k}\mathbf{r}_2}\,e^{i\,\mathbf{k}'\mathbf{r}_2'}\,a_{\mathbf{r}_1,\mathbf{k}}^{\dagger} b_{\mathbf{r}_1',\mathbf{k}'}\\
+    &=  \frac{1}{N}\,\sum_{\substack{\mathbf{r}_1,\mathbf{r}_1'\\\mathbf{r}_2,\;\Delta\mathbf{r}_2=\mathbf{r}_2-\mathbf{r}_2'}}\sum_{\substack{a,b 
+    \\\mathbf{k},\mathbf{k}'}}H^{a,b}(\Delta\mathbf{R})\,e^{-i\,\mathbf{R}(\mathbf{k}-\mathbf{k}')}\,e^{-i\,\Delta\mathbf{R}\mathbf{k}'}\,a_{\mathbf{r}_1,\mathbf{k}}^{\dagger} b_{\mathbf{r}_1',\mathbf{k}'}\\
+    &=\sum_{\substack{\mathbf{r}_1,\mathbf{r}_1'\\\Delta\mathbf{r}_2,\mathbf{k}\\a,b}}H^{a,b}(\Delta\mathbf{R})\,e^{-i\,\Delta\mathbf{r}_2\mathbf{k}}\,a_{\mathbf{r}_1,\mathbf{k}}^{\dagger} b_{\mathbf{r}_1',\mathbf{k}}=\vcentcolon \sum_{\substack{\mathbf{r}_1,\mathbf{r}_1'\\\mathbf{k},a,b}}H^{a,b}(\mathbf{k},\Delta\mathbf{R})\,a_{\mathbf{r}_1,\mathbf{k}}^{\dagger} b_{\mathbf{r}_1',\mathbf{k}}\\
+    \text{where}\quad H^{a,b}(\mathbf{k},\Delta\mathbf{R}) &= \sum_{\Delta\mathbf{r}_2}H^{a,b}(\Delta\mathbf{R})\,e^{-i\,\Delta\mathbf{r}_2\mathbf{k}}= \sum_{\Delta\mathbf{r}_2}H^{a,b}(\Delta\mathbf{R})\,e^{-i\,\Delta\mathbf{R}\mathbf{k}}
+\end{align*}
+The last equality holds, when $\mathbf{k}$ is in the direction of one of the reciprocal lattice vectors. However, as we perform only a one dimensional Fourier transform, I think a restriction to a purely one dimensional treatment is necessary. Thus $\mathbf{k}_n$ should only be chosen with respect to the condition $\mathbf{k}_n\mathbf{a}_n=2\pi$, which gives the natural choice $\mathbf{k}_n\mathbin{\|}\mathbf{a}_n$. For the case of the alternative square lattice I think, we should consider the number of rows twice as big as the number of columns and choose an alternative lattice vector into the x-direction, as depicted in \figref{fig:lattice_def}. 
+
+What the one dimensional Fourier transform does, is projecting the system onto the one-dimensional chain not of atoms, but of interacting rows or columns of atoms. In this sense the division into sub-directions or sub-bases does not have to be restricted to the lattice vectors. The only thing needed is a labeling of the different rows or columns with the complementary direction having a periodic structure. This allows the division of the alternative square lattice as described above.
 
 \section*{Aligned Dipole-Dipole Interactions}
 

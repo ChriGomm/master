@@ -14,19 +14,40 @@ The terms with $a_{n,\alpha}^\dagger a_{n,\alpha}$ can thus be eliminiated by re
 \begin{align*}
     \omega_\alpha=\omega+\frac{2}{m\omega}\,U^{\alpha,\alpha}_{n,n}
 \end{align*}
-Now only the terms coupling the two direction of phonon modes on the same side have to be tuned to zero. Because of the nearest neighbour nature of the consideration only to distances play a role, the intracell distance $\mathbf{r}_I$ and the intercell distance $\mathbf{r}_O$. 
+Because on the borders $U_{n,n}^{\alpha,\alpha}$ is different from the bulk values, the trap potential for the atoms on the boundary have to be altered to compensate this shift. As I tested in the simulation the existence of separated energies in the bulk band gabs breaks down when the Hamiltonian on the border is different from the bulk.
+
+The terms coupling the two directions of phonon modes on the same side can not be internalized by another quantity. Here the degrees of freedom related to the dipole orientation are exploited to tune the $U_{n,n}^{x,y}$ values to zero, as mentioned above. Because of the nearest neighbour nature of the consideration only two distances play a role, the intracell distance $\mathbf{r}_I$ and the intercell distance $\mathbf{r}_O$. 
 \begin{align*}
     U_{n,n}^{x,y}= \frac{\partial^2 V(\mathbf{r}_{I})}{\partial {r}_{I,x}\partial r_{I,y}}+\frac{\partial^2 V(\mathbf{r}_{O})}{\partial {r}_{O,x}\partial r_{O,y}}
 \end{align*}
-The dipoles are then chosen in such a way that this sum vanishes.
+The dipoles are then chosen in such a way that this sum vanishes. For open boundary conditions the values of $U_{n,n}^{\alpha,\beta}$ at the borders are different from the bulk values. In the case of $\alpha=\beta$ the difference can be compensated by changed trap frequencies at the boundary. For the $xy$ coupling this is not possible and the interaction due to both neighboring atoms has to made zero individually such that $x$- and $y$-modes are completely decoupled from each other. \\\\
+Informed by simulations where the deviation of the border terms in the Hamiltonian has been kept the topologically non-trivial phase breaks down. It might be at first counter intuitive, that reducing the effect of an open border is decremental to the observation of edge states. It makes, however perfect sense, when remembering that those boundary terms in our case destroy the chrial symmetry. It seems to be neccesarry for the bulk-boundary condition to hold that not only the momentum space Hamiltonian with periodic boundary conditions but also for the real space Hamiltonian with open boundary conditions has to satisfy chiral symmetry. Otherwise one could choose the Hamiltonian describing the border in a completely arbitrary manner and still observe edge states, which would be quite a strong statement.
+
+
+
 \subsection*{Aligned dipoles in plane}
 I consider a geometry with two sublattices repeating itself in the $x$-axis and separeted by the distance $h$ from each other into the $y$-axis. Different configurations of this geometry are realized by moving the sublattices against each other in the $x$-direction. I consider an even amount of lattice, with $N$ atoms in each sublattice. The $n$th atom of each sublattice $A$ and $B$ takes the position.
 \begin{align*}
     \mathbf{r}^A_n&=n\cdot a \,\mathbf{e}_x\\
     \mathbf{r}^B_n&=n\cdot a\, \mathbf{e}_x + b\,\mathbf{e}_x+ h\,\mathbf{e}_y,
 \end{align*}
-where $a$ is the lattice constant, and the parameters $b$ and $h$ can be chosen to realize different lattice configurations. $b$ and $h$ have to be chosen in a way, such that the nearest neighbour restriction makes sense. 
-For any of these geometries there exists a unique orientation of the dipoles which makes the Hamiltonian with periodic boundary conditions chiral.
+where $a$ is the lattice constant, and the parameters $b$ and $h$ can be chosen to realize different lattice configurations. $b$ and $h$ have to be chosen in a way, such that the nearest neighbor restriction makes sense. 
+For any of these geometries there exists a unique orientation of the dipoles which makes the Hamiltonian with periodic boundary conditions chiral.\\\\
+By contemplating the spectrum in dependence of the parameter $b$ we find energy state that are well separated from the bulk energy \figref{fig:non_chiral_edge_spectrum}. But the separated energy values converge to a non-zero value, when the number of atoms goes to infinity. But this would be necessary for proper topological edge states. I assume this discrepancy occurs because, as I constructed the dipole moment, the components of the Hamiltonian related to the border are non vanishing. Only the bulk Hamiltonian obeys chiral symmetry. It makes of course sense that the chirality is not only required for the momentum space Hamiltonian with periodic boundary conditions but also for the real space Hamiltonian. In order for the bulk boundary correspondence to hold it seems to be necessary that the real space Hamiltonian satisfies the same symmetries as the momentum space Hamiltonian. Seems reasonable.\\\\
+Fortunately it is still possible to set 
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.9]{pictures/aligned_dipole_in_plane_sheer_spectrum_h1.1_a3.pdf}
+    \caption{\textbf{Spectrum of almost chiral-symmetric Hamiltonian.}}
+    \label{fig:non_chiral_edge_spectrum}
+\end{figure} 
+
+
+
+
+
+
 \begin{figure}
     \centering
     \includegraphics[]{pictures/aligned_dipoles_in_plane_orientation_sheer_h1.1_a3.pdf}
