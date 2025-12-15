@@ -1,0 +1,74 @@
+\chapter*{Spin-phonon coupling}
+
+\section*{Transport}
+I want to study the transport of excitations through the chain. The first step towards this is constructing a Hamiltonian which describes the dynamics of a system of Rydberg atoms, where one atom is excited, hence restricting ourselves to the single excitation subspace. The general coupling between the atoms arises from the interaction between the dipole moments of the atoms,
+\begin{align*}
+    V&=\sum_\mathbf{r}V(\mathbf{r})\\
+    \text{with}\quad V(\mathbf{r})&= \frac{\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2}{r^3}-3\,\frac{(\mathbf{r}\cdot \mathbf{\hat{d}}_1)(\mathbf{r}\cdot \mathbf{\hat{d}}_2)}{r^5}.
+\end{align*}
+Each individual atom is characterized by its position in the lattice and its atomic energy level which is captured by the non-interacting Hamiltonian $H_0$. The total Hamiltonian thus reads
+\begin{align*}
+    H = H_0 + V
+\end{align*}
+We will investigate the system in a regime, where the coupling due to the dipole forces is much smaller than the energy gap $\Delta$, which separates the energy of the atoms from their next higher and lower states, i.e. $\lVert V \rVert\ll\Delta$. In order to gain an approximate effective Hamiltonian, which acts in a closed way on the one excitation subspace, I will perform a Schrieffer-Wolff transform up to second order [cite]. Let $P_0$ be the projector on the one excitation subspace. Then an exact alternative Hamiltonian $H'$ can be constructed by the transformation
+\begin{align*}
+    H'&= e^S\,H\,e^{-S}
+\end{align*}
+for which holds, that it is block-diagonal with respect to the subspaces defined by the projections $P_0$ and $1-P_0$. Thus the alternative Hamiltonian $H'$ is closed with respect to the one excitation subspace and one can define the exact effective Hamiltonian as
+\begin{align*}
+    H_\text{eff}&=P_0\, e^S\,H\,e^{-S}\,P_0
+\end{align*}
+Let $\varepsilon$ be of the order of the coupling $\varepsilon=\lVert V \rVert$. The transformation generating operator $S$ can be expanded in orders of $V$.
+\begin{align*}
+    S&= \sum_{n=1}^\infty \varepsilon^n\,S_n
+\end{align*}
+I will consider the effective Hamiltonian up to second order in the coupling. This lets $H_\text{eff}$ read
+\begin{align*}
+    H_\text{eff}&=H_0P_0+P_0VP_0+\frac12\,P_0\,[S_1,V_\text{od}]\,P_0,
+\end{align*}
+with $V_\text{od}=P_0\,V\,(1-P_0)+(1-P_0)\,V\,P_0$ being the off-diagonal part of the interaction. The first term of the generator $S$ has the form
+\begin{align*}
+    S_1&=\mathcal{L}(V_\text{od})\\
+    \text{with}\quad \mathcal{L}(X)&=\sum_{\substack{i,j\in E\\E_i\neq E_j}}\frac{\braket{i|V|j}}{E_i-E_j}\,\ket{i}\bra{j}
+\end{align*}
+The sum in the superoperator $\mathcal{L}$ goes over all energy eigenstates, where the $i$, $j$ states with equal energy are omitted. It can be written via a sum over all energies in the single excitations subspace $E1$ and all the other eigenenergies $\tilde{E}$.
+\begin{align*}
+    \mathcal{L}(X)&=\sum_{\substack{i\in E1\\j\in\tilde{E}}}\frac{\braket{i|V|j}}{E_i-E_j}\,\ket{i}\bra{j}-\text{h.c.}
+\end{align*}
+From this the commutator term in the effective Hamiltonian can be calculated.
+\begin{align*}
+    P_0\,[S_1,V_\text{od}]\,P_0&= 2\,\sum_{\substack{i\in E1\\j\in\tilde{E}}}\frac{\left|\braket{i|V|j}\right|^2}{E_i-E_j}\,\ket{i}\bra{i}=\vcentcolon H_{\text{eff},2}
+\end{align*}
+Thus finally the effective Hamiltonian reads
+\begin{align*}
+    H_\text{eff}&=H_0P_0+P_0VP_0+\sum_{\substack{i\in E1\\j\in\tilde{E}}}\frac{\left|\braket{i|V|j}\right|^2}{E_i-E_j}\,\ket{i}\bra{i}
+\end{align*}
+Because of the large relative size of $\Delta$ over the interaction strength, I will only include energies into the above sum which differ from the single excitation subspace by $\Delta$. Further the zero excitations subspace does not couple to the one with one excitation in the considered order of expansion. Thus only eigenstates in the double excitation subspace have to be taken into account for the sum.\\\\
+In the following the effective Hamiltonian will be calculated for the specific configuration we are looking at. We consider a one-dimensional staggered chain of $N$ atoms, where the atoms are separated by alternating distances $\mathbf{r}_1$ and $\mathbf{r}_2$. For a single atom there are only two states available, excited $\ket{e}$ and unexcited $\ket{g}$. The states $\ket{i}$, which are summed over, represent the states where only atom $i$ is excited and the others are in the unexcited state. Going to a regime where only nearest neighbor interactions contribute we can write
+\begin{align*}
+    H_{\text{eff},2}&= \sum_{i=1}^N\tilde{V}_i\,\ket{i}\bra{i}\\
+    \tilde{V}_i &=-\frac{1}{\Delta}\,\begin{cases}
+        3\,\left[V(\mathbf{r}_1)+V(\mathbf{r}_2)\right]^2+(N-4+\frac{N}{2}-2)\,V^2(\mathbf{r}_1)+(N-4+\frac{N}{2}-2)\,V^2(\mathbf{r}_2)&\text{if}\;1\neq i\neq N\\\\
+        \left[V(\mathbf{r}_1)+V(\mathbf{r}_2)\right]^2+(N-3+\frac{N}{2}-1)\,V^2(\mathbf{r}_1)+(\frac{N}{2}-1)\,V^2(\mathbf{r}_2)&\text{if}\;i=1\\\\
+        2\,\left[V(\mathbf{r}_1)+V(\mathbf{r}_2)\right]^2+(N-3+\frac{N}{2}-2)\,V^2(\mathbf{r}_1)+(N-4+\frac{N}{2}-1)\,V^2(\mathbf{r}_2)&\text{if}\;i=2\\\\
+        2\,\left[V(\mathbf{r}_1)+V(\mathbf{r}_2)\right]^2+(N-4+\frac{N}{2}-1)\,V^2(\mathbf{r}_1)+(N-3+\frac{N}{2}-2)\,V^2(\mathbf{r}_2)&\text{if}\;i=N-1\\\\
+        \left[V(\mathbf{r}_1)+V(\mathbf{r}_2)\right]^2+(\frac{N}{2}-1)\,V^2(\mathbf{r}_1)+(N-3+\frac{N}{2}-1)\,V^2(\mathbf{r}_2)&\text{if}\;i=N
+    \end{cases}
+\end{align*}
+% There is actually another case distinction necessary for $i=2$ and $i=N-1$, this will be clearer later.
+The part involving interactions within the same subspace can be written as 
+\begin{align*}
+    P_0VP_0&= \sum_{\substack{i=1\\j=i+1}}^{N-1} V(\mathbf{r}_{i,j})\,\sigma^+_i\sigma^-_j+\text{h.c.},
+\end{align*}
+where $\mathbf{r}_{i,j}$ is the distance between the $i$th and $j$th site. I now also want to write $H_{\text{eff},2}$ in terms of a sum of two atom operators. Therefore I introduce the projectors $n^e_i=\ket{e}_i\bra{e}_i$ and $n^g_i=\ket{g}_i\bra{g}_i$.
+\begin{align*}
+    H_{\text{eff},2}&=\sum_{\substack{i=1\\j=i+1}}^{N-1}V^2(\mathbf{r}_{i,j})\,(n^e_in^g_j + n^g_in^e_j + n^g_in^g_j)+\sum_{i=2}^{N-1}\left[ V(\mathbf{r}_{i-1,i})+V(\mathbf{r}_{i,i+1}) \right]^2 \, n^g_{i-1}n^e_in^g_{i+1}\\ &+\sum_{i=3}^{N-1} \left[ V(\mathbf{r}_{i-2,i-1})+V(\mathbf{r}_{i-1,i}) \right]^2 \, n^g_{i-2}n^g_{i-1}n^e_{i} 
+    +\sum_{i=2}^{N-2} \left[ V(\mathbf{r}_{i,i+1})+V(\mathbf{r}_{i+1,i+2}) \right]^2 \, n^e_{i}n^g_{i+1}n^g_{i+2} \\
+    &+ \left[ V(\mathbf{r}_{1,2})+V(\mathbf{r}_{2,3}) \right]^2 n^e_1n^g_2n^g_3 + \left[ V(\mathbf{r}_{N-2,N-1})+V(\mathbf{r}_{N-1,N}) \right]^2 n^g_{N-2}n^g_{N-1}n^e_{N}
+\end{align*}
+A last step is possible since in the single excitation subspace terms like $n^e_in^g_j$ simplify to just $n^e_i$.
+\begin{align*}
+    &= \sum_{i=2}^{N-1}\left(V^2(\mathbf{r}_{i-1,i})+V^2(\mathbf{r}_{i,i+1})+\left[ V(\mathbf{r}_{i-1,i})+V(\mathbf{r}_{i,i+1}) \right]^2 \right)\,n^e_i \\&+ \sum_{i=3}^{N-1} \left[ V(\mathbf{r}_{i-2,i-1})+V(\mathbf{r}_{i-1,i}) \right]^2\, n^e_i +\sum_{i=2}^{N-2} \left[ V(\mathbf{r}_{i,i+1})+V(\mathbf{r}_{i+1,i+2}) \right]^2\,n^e_i\\
+    &+ \left( V^2(\mathbf{r}_{1,2}) + \left[ V(\mathbf{r}_{1,2})+V(\mathbf{r}_{2,3}) \right]^2 \right)\,n^e_1 + \left( V^2(\mathbf{r}_{N-1,N})+ \left[ V(\mathbf{r}_{N-2,N-1})+V(\mathbf{r}_{N-1,N}) \right]^2\right)\,n^e_N\\
+    &+ \sum_{i=1}^{N-1} V(\mathbf{r}_{i,i+1})\,n^g_in^g_{i+1}
+\end{align*}

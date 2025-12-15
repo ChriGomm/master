@@ -353,9 +353,9 @@ INPUT ./pictures/lattice_def.pdf
 INPUT ./pictures/lattice_def.pdf
 INPUT ./pictures/lattice_def.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm
-INPUT ./numerical_results.tex
-INPUT ./numerical_results.tex
-INPUT numerical_results.tex
+INPUT ./numerical_results_only_phonons.tex
+INPUT ./numerical_results_only_phonons.tex
+INPUT numerical_results_only_phonons.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecsx1200.tfm
 INPUT ./pictures/aligned_dipoles_in_plane_sheer.pdf
 INPUT ./pictures/aligned_dipoles_in_plane_sheer.pdf
@@ -377,6 +377,9 @@ INPUT ./pictures/ads_states_for_chain_lengths.pdf
 INPUT ./pictures/ads_states_for_chain_lengths.pdf
 INPUT ./pictures/ads_states_for_chain_lengths.pdf
 INPUT ./pictures/ads_states_for_chain_lengths.pdf
+INPUT ./spin_phonon_coupling.tex
+INPUT ./spin_phonon_coupling.tex
+INPUT spin_phonon_coupling.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecsx2074.tfm
 INPUT protocol.aux
 INPUT ./protocol.out
