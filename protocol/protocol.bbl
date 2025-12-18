@@ -558,6 +558,69 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevLett.113.046802
       \endverb
     \endentry
+    \entry{bravyi_schrieffer-wolff_2011}{article}{}
+      \name{author}{3}{}{%
+        {{hash=964ccce884d5c27e980e285b18d587cd}{%
+           family={Bravyi},
+           familyi={B\bibinitperiod},
+           given={Sergey},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9edabaf9cc637eb3c45a1e65b60544e3}{%
+           family={{DiVincenzo}},
+           familyi={D\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=484a7301172505faf210926187741479}{%
+           family={Loss},
+           familyi={L\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{84579f3f095941cba9a7e3acf22af7fc}
+      \strng{fullhash}{c121e740b7093edc6c33275de6749ea7}
+      \strng{bibnamehash}{c121e740b7093edc6c33275de6749ea7}
+      \strng{authorbibnamehash}{c121e740b7093edc6c33275de6749ea7}
+      \strng{authornamehash}{84579f3f095941cba9a7e3acf22af7fc}
+      \strng{authorfullhash}{c121e740b7093edc6c33275de6749ea7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Schrieﬀer-Wolﬀ ({SW}) method is a version of degenerate perturbation theory in which the low-energy eﬀective Hamiltonian Heﬀ is obtained from the exact Hamiltonian by a unitary transformation decoupling the low-energy and high-energy subspaces. We give a self-contained summary of the {SW} method with a focus on rigorous results. We begin with an exact deﬁnition of the {SW} transformation in terms of the so-called direct rotation between linear subspaces. From this we obtain elementary proofs of several important properties of Heﬀ such as the linked cluster theorem. We then study the perturbative version of the {SW} transformation obtained from a Taylor series representation of the direct rotation. Our perturbative approach provides a systematic diagram technique for computing high-order corrections to Heﬀ . We then specialize the {SW} method to quantum spin lattices with short-range interactions. We establish unitary equivalence between eﬀective low-energy Hamiltonians obtained using two diﬀerent versions of the {SW} method studied in the literature. Finally, we derive an upper bound on the precision up to which the ground state energy of the n-th order eﬀective Hamiltonian approximates the exact ground state energy.}
+      \field{eprinttype}{arxiv}
+      \field{issn}{00034916}
+      \field{journaltitle}{Annals of Physics}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{10}
+      \field{shortjournal}{Annals of Physics}
+      \field{title}{Schrieffer-Wolff transformation for quantum many-body systems}
+      \field{urlday}{16}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{326}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2793\bibrangedash 2826}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1016/j.aop.2011.06.004
+      \endverb
+      \verb{eprint}
+      \verb 1105.0675 [quant-ph]
+      \endverb
+      \verb{file}
+      \verb PDF:/home/christian/Zotero/storage/9MHETHYF/Bravyi et al. - 2011 - Schrieffer-Wolff transformation for quantum many-body systems.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1105.0675
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1105.0675
+      \endverb
+      \keyw{Condensed Matter - Statistical Mechanics,Condensed Matter - Strongly Correlated Electrons,Quantum Physics}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

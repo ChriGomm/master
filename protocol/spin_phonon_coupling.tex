@@ -10,7 +10,7 @@ Each individual atom is characterized by its position in the lattice and its ato
 \begin{align*}
     H = H_0 + V
 \end{align*}
-We will investigate the system in a regime, where the coupling due to the dipole forces is much smaller than the energy gap $\Delta$, which separates the energy of the atoms from their next higher and lower states, i.e. $\lVert V \rVert\ll\Delta$. In order to gain an approximate effective Hamiltonian, which acts in a closed way on the one excitation subspace, I will perform a Schrieffer-Wolff transform up to second order [cite]. Let $P_0$ be the projector on the one excitation subspace. Then an exact alternative Hamiltonian $H'$ can be constructed by the transformation
+We will investigate the system in a regime, where the coupling due to the dipole forces is much smaller than the energy gap $\Delta$, which separates the energy of the atoms from their next higher and lower states, i.e. $\lVert V \rVert\ll\Delta$. In order to gain an approximate effective Hamiltonian, which acts in a closed way on the one excitation subspace, I will perform a Schrieffer-Wolff transform up to second order \cite{bravyi_schrieffer-wolff_2011}. Let $P_0$ be the projector on the one excitation subspace. Then an exact alternative Hamiltonian $H'$ can be constructed by the transformation
 \begin{align*}
     H'&= e^S\,H\,e^{-S}
 \end{align*}
@@ -31,7 +31,7 @@ with $V_\text{od}=P_0\,V\,(1-P_0)+(1-P_0)\,V\,P_0$ being the off-diagonal part o
     S_1&=\mathcal{L}(V_\text{od})\\
     \text{with}\quad \mathcal{L}(X)&=\sum_{\substack{i,j\in E\\E_i\neq E_j}}\frac{\braket{i|V|j}}{E_i-E_j}\,\ket{i}\bra{j}
 \end{align*}
-The sum in the superoperator $\mathcal{L}$ goes over all energy eigenstates, where the $i$, $j$ states with equal energy are omitted. It can be written via a sum over all energies in the single excitations subspace $E1$ and all the other eigenenergies $\tilde{E}$.
+The sum in the superoperator $\mathcal{L}$ goes over all energy eigenstates, where the $i$, $j$ combination of states with equal energy are omitted. It can be written via a sum over all energies in the single excitations subspace $E1$ and all the other eigenenergies $\tilde{E}$.
 \begin{align*}
     \mathcal{L}(X)&=\sum_{\substack{i\in E1\\j\in\tilde{E}}}\frac{\braket{i|V|j}}{E_i-E_j}\,\ket{i}\bra{j}-\text{h.c.}
 \end{align*}
@@ -43,8 +43,14 @@ Thus finally the effective Hamiltonian reads
 \begin{align*}
     H_\text{eff}&=H_0P_0+P_0VP_0+\sum_{\substack{i\in E1\\j\in\tilde{E}}}\frac{\left|\braket{i|V|j}\right|^2}{E_i-E_j}\,\ket{i}\bra{i}
 \end{align*}
-Because of the large relative size of $\Delta$ over the interaction strength, I will only include energies into the above sum which differ from the single excitation subspace by $\Delta$. Further the zero excitations subspace does not couple to the one with one excitation in the considered order of expansion. Thus only eigenstates in the double excitation subspace have to be taken into account for the sum.\\\\
-In the following the effective Hamiltonian will be calculated for the specific configuration we are looking at. We consider a one-dimensional staggered chain of $N$ atoms, where the atoms are separated by alternating distances $\mathbf{r}_1$ and $\mathbf{r}_2$. For a single atom there are only two states available, excited $\ket{e}$ and unexcited $\ket{g}$. The states $\ket{i}$, which are summed over, represent the states where only atom $i$ is excited and the others are in the unexcited state. Going to a regime where only nearest neighbor interactions contribute we can write
+Because of the large relative size of $\Delta$ over the interaction strength, I will only include energies into the above sum which differ from the single excitation subspace by $\Delta$. Further the zero excitations subspace does not couple to the one with one excitation in the considered order of expansion. Thus only eigenstates in the double excitation subspace have to be taken into account for the sum.
+\begin{figure}[H]
+    \centering
+    \includegraphics{pictures/SWT_calc.pdf}
+    \caption{\textbf{Coupling schemes.} There are different ways double excited states couple to the single excited ones. The top row always depicts a state of the single, while the bottom row depicts a state of the double excited subspace. Generally configurations of two different subspaces are coupled to each other, when for two neighboring atoms one configuration has the inverted excitation scheme with respect to the other. I assign them to three categories. The first category is depicted in a). It couples two neighboring atoms twice. In the picture all possible cases are shown. For b) only two atoms couple two each other. Here the coupling takes place at a pair of $\ket{e}$ and $\ket{g}$ in both configurations. If the excitation in the single excitation subspace is at position $2<i<N-1$, there are $N-4$ different states in the double excited subspace that contribute a term $V(\mathbf{r}_1)^2$ and the same number for $V(\mathbf{r}_2)^2$. Category c) couples two unexcited sites in the single excitations subspace to two excited sites in the double excited subspace. For this case there are $N/2-2$ states that contribute $V(\mathbf{r}_1)^2$ and  $N/2-2$ states that contribute $V(\mathbf{r}_2)^2$, if the single excited state is is excited at atom $2<i<N-1$.}
+    \label{fig:SWT_schemes}
+\end{figure}
+In the following the effective Hamiltonian will be calculated for the specific configuration we are looking at. We consider a one-dimensional staggered chain of $N$ atoms, where the atoms are separated by alternating distances $\mathbf{r}_1$ and $\mathbf{r}_2$. For a single atom there are only two states available, excited $\ket{e}$ and unexcited $\ket{g}$. The states $\ket{i}$, which are summed over, represent the states where only atom $i$ is excited and the others are in the unexcited state. Going to a regime where only nearest neighbor interactions contribute we can write using the coupling schemes of \figref{fig:SWT_schemes}
 \begin{align*}
     H_{\text{eff},2}&= \sum_{i=1}^N\tilde{V}_i\,\ket{i}\bra{i}\\
     \tilde{V}_i &=-\frac{1}{\Delta}\,\begin{cases}
@@ -72,3 +78,4 @@ A last step is possible since in the single excitation subspace terms like $n^e_
     &+ \left( V^2(\mathbf{r}_{1,2}) + \left[ V(\mathbf{r}_{1,2})+V(\mathbf{r}_{2,3}) \right]^2 \right)\,n^e_1 + \left( V^2(\mathbf{r}_{N-1,N})+ \left[ V(\mathbf{r}_{N-2,N-1})+V(\mathbf{r}_{N-1,N}) \right]^2\right)\,n^e_N\\
     &+ \sum_{i=1}^{N-1} V(\mathbf{r}_{i,i+1})\,n^g_in^g_{i+1}
 \end{align*}
+

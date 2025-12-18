@@ -381,6 +381,11 @@ INPUT ./spin_phonon_coupling.tex
 INPUT ./spin_phonon_coupling.tex
 INPUT spin_phonon_coupling.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecsx2074.tfm
+INPUT ./pictures/SWT_calc.pdf
+INPUT ./pictures/SWT_calc.pdf
+INPUT ./pictures/SWT_calc.pdf
+INPUT ./pictures/SWT_calc.pdf
+INPUT ./pictures/SWT_calc.pdf
 INPUT protocol.aux
 INPUT ./protocol.out
 INPUT ./protocol.out

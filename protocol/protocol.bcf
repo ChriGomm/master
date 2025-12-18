@@ -2377,6 +2377,7 @@
     <bcf:citekey order="2" intorder="1">maffei_topological_2018</bcf:citekey>
     <bcf:citekey order="2" intorder="2">schnyder_classification_2008</bcf:citekey>
     <bcf:citekey order="3" intorder="1">mondragon-shem_topological_2014</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">bravyi_schrieffer-wolff_2011</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
