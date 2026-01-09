@@ -1,7 +1,7 @@
 \chapter*{Spin-phonon coupling}
 
 \section*{Transport}
-I want to study the transport of excitations through the chain. The first step towards this is constructing a Hamiltonian which describes the dynamics of a system of Rydberg atoms, where one atom is excited, hence restricting ourselves to the single excitation subspace. The general coupling between the atoms arises from the interaction between the dipole moments of the atoms,
+I want to allow for the propagation of excitations through the chain. The first step towards this is constructing a Hamiltonian which describes the dynamics of a system of Rydberg atoms, where one atom is excited, hence restricting ourselves to the single excitation subspace. The general coupling between the atoms arises from the interaction between the dipole moments of the atoms,
 \begin{align*}
     V&=\sum_\mathbf{r}V(\mathbf{r})\\
     \text{with}\quad V(\mathbf{r})&= \frac{\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2}{r^3}-3\,\frac{(\mathbf{r}\cdot \mathbf{\hat{d}}_1)(\mathbf{r}\cdot \mathbf{\hat{d}}_2)}{r^5}.
@@ -78,4 +78,5 @@ A last step is possible since in the single excitation subspace terms like $n^e_
     &+ \left( V^2(\mathbf{r}_{1,2}) + \left[ V(\mathbf{r}_{1,2})+V(\mathbf{r}_{2,3}) \right]^2 \right)\,n^e_1 + \left( V^2(\mathbf{r}_{N-1,N})+ \left[ V(\mathbf{r}_{N-2,N-1})+V(\mathbf{r}_{N-1,N}) \right]^2\right)\,n^e_N\\
     &+ \sum_{i=1}^{N-1} V(\mathbf{r}_{i,i+1})\,n^g_in^g_{i+1}
 \end{align*}
-
+\subsection*{Preparation of phonon states}
+The idea is to start with phonons in a 
