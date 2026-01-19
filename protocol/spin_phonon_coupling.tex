@@ -78,5 +78,18 @@ A last step is possible since in the single excitation subspace terms like $n^e_
     &+ \left( V^2(\mathbf{r}_{1,2}) + \left[ V(\mathbf{r}_{1,2})+V(\mathbf{r}_{2,3}) \right]^2 \right)\,n^e_1 + \left( V^2(\mathbf{r}_{N-1,N})+ \left[ V(\mathbf{r}_{N-2,N-1})+V(\mathbf{r}_{N-1,N}) \right]^2\right)\,n^e_N\\
     &+ \sum_{i=1}^{N-1} V(\mathbf{r}_{i,i+1})\,n^g_in^g_{i+1}
 \end{align*}
-\subsection*{Preparation of phonon states}
-The idea is to start with phonons in a 
+\subsection*{First order approximation}
+For the first approach I will continue with the Hamiltonian up to first order in the dipole interaction, i.e. without $H_{\text{eff},2}$. The phonons are introduced by again expanding the interaction up to second order. I will restrict the consideration also to the constant phonon excitation subspace. For this reason the first order expansion of the dipole interaction will be ignored, as it couples subspaces with different phonon numbers. The Hamiltonian thus reads
+\begin{align*}
+    H&=H_0 + \sum_{i=1}^{N-1}\left[V(\mathbf{r}_{i,i+1})+\sum_{n,m\in\{i,i+1\}}\frac{\partial^2V(\mathbf{r}_{i,i+1})}{\partial\mathbf{r}_{n}\partial\mathbf{r}_m}\,\delta\mathbf{\hat{r}}_n\delta\mathbf{\hat{r}}_m\right]\,\sigma_i^+\sigma_{i+1}^-+\text{h.c.}
+\end{align*}
+The hats in $\delta\mathbf{\hat{r}}$ indicates operators. Here also the operators are projected on the constant phonon subspace. What has to be accounted for is that this second order expansion is of course only a small correction to the dipole-dipole interaction. 
+\begin{align*}
+    \left| 1- \frac{V(\mathbf{r}+\delta\mathbf{r})}{V(\mathbf{r})} \right|&\ll 1\\
+    \left| \frac{\partial^2 V(\mathbf{r})}{\partial\mathbf{r}^2}\,\delta\mathbf{r}^2 \right|&\ll\left|V(\mathbf{r})\right|
+\end{align*}
+When quantizing the displacements to phonon operators $\delta\mathbf{r}\rightarrow \frac{2}{m\omega}\,a^\dagger a$, one finds the condition 
+\begin{align*}
+    \frac{2}{m\omega}\, \left| \frac{\partial^2 V(\mathbf{r})}{\partial\mathbf{r}^2} \right|&\ll\left|V(\mathbf{r})\right|,
+\end{align*}
+as $a^\dagger a$ is of the order of 1.
