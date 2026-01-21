@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.26)  19 JAN 2026 13:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.26)  21 JAN 2026 16:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1020,7 +1020,7 @@ File: pictures/lattice_def.pdf Graphic file (type pdf)
 Package pdftex.def Info: pictures/lattice_def.pdf  used on input line 136.
 (pdftex.def)             Requested size: 441.95732pt x 358.86281pt.
  [4 <./pictures/lattice_def.pdf>]
-Underfull \vbox (badness 2608) has occurred while \output is active []
+Underfull \vbox (badness 1910) has occurred while \output is active []
 
  [5] [6] [7] [8]) (./numerical_results_only_phonons.tex
 Underfull \hbox (badness 10000) in paragraph at lines 23--27
@@ -1086,7 +1086,34 @@ File: pictures/SWT_calc.pdf Graphic file (type pdf)
 <use pictures/SWT_calc.pdf>
 Package pdftex.def Info: pictures/SWT_calc.pdf  used on input line 49.
 (pdftex.def)             Requested size: 369.75032pt x 211.02664pt.
- [16 <./pictures/SWT_calc.pdf>] [17]) [18] [19
+ [16 <./pictures/SWT_calc.pdf>] [17]
+<pictures/rice_mele_protocol.pdf, id=452, 386.2742pt x 380.71687pt>
+File: pictures/rice_mele_protocol.pdf Graphic file (type pdf)
+<use pictures/rice_mele_protocol.pdf>
+Package pdftex.def Info: pictures/rice_mele_protocol.pdf  used on input line 98.
+(pdftex.def)             Requested size: 386.27324pt x 380.71594pt.
+ [18 <./pictures/rice_mele_protocol.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 105--109
+
+ []
+
+<pictures/spin_phonon_traj_colormap_phintc_rescale100.png, id=567, 393.26926pt x 387.96945pt>
+File: pictures/spin_phonon_traj_colormap_phintc_rescale100.png Graphic file (type png)
+<use pictures/spin_phonon_traj_colormap_phintc_rescale100.png>
+Package pdftex.def Info: pictures/spin_phonon_traj_colormap_phintc_rescale100.png  used on input line 113.
+(pdftex.def)             Requested size: 393.2683pt x 387.96849pt.
+<pictures/fidelity_coupling_strengths.pdf, id=569, 225.18973pt x 194.99455pt>
+File: pictures/fidelity_coupling_strengths.pdf Graphic file (type pdf)
+<use pictures/fidelity_coupling_strengths.pdf>
+Package pdftex.def Info: pictures/fidelity_coupling_strengths.pdf  used on input line 120.
+(pdftex.def)             Requested size: 225.18916pt x 194.99406pt.
+[19 <./pictures/spin_phonon_traj_colormap_phintc_rescale100.png>]
+<pictures/spin_phonon_traj_lines_phintc_rescale100_2ph.png, id=581, 432.4155pt x 373.6359pt>
+File: pictures/spin_phonon_traj_lines_phintc_rescale100_2ph.png Graphic file (type png)
+<use pictures/spin_phonon_traj_lines_phintc_rescale100_2ph.png>
+Package pdftex.def Info: pictures/spin_phonon_traj_lines_phintc_rescale100_2ph.png  used on input line 127.
+(pdftex.def)             Requested size: 432.41444pt x 373.63498pt.
+) [20 <./pictures/fidelity_coupling_strengths.pdf> <./pictures/spin_phonon_traj_lines_phintc_rescale100_2ph.png>] [21
 
 
 ] (./protocol.aux)
@@ -1101,18 +1128,18 @@ Package logreq Info: Writing requests to 'protocol.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29287 strings out of 474222
- 554980 string characters out of 5748733
+ 29325 strings out of 474222
+ 556672 string characters out of 5748733
  1960975 words of memory out of 5000000
- 51101 multiletter control sequences out of 15000+600000
+ 51133 multiletter control sequences out of 15000+600000
  570815 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,20n,107p,10945b,1777s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2074.pfb>
-Output written on protocol.pdf (19 pages, 833368 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2074.pfb>
+Output written on protocol.pdf (21 pages, 1531360 bytes).
 PDF statistics:
- 580 PDF objects out of 1000 (max. 8388607)
- 368 compressed objects within 4 object streams
- 50 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 739 PDF objects out of 1000 (max. 8388607)
+ 430 compressed objects within 5 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

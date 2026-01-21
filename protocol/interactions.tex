@@ -159,15 +159,15 @@ What the one dimensional Fourier transform does, is projecting the system onto t
 
 In this section the derivative of the dipole interaction will be performed in the case where all dipoles point into the same direction. The subsripts lableling the different positions are droped in order to make the notation plainer.
 \begin{align*}
-    V_{dd}(\mathbf{r}) = \frac{1}{r^3}-3\,\frac{(\mathbf{r}\cdot \hat{\mathbf{d}})^2}{r^5},
+    V_{dd}(\mathbf{r}) = V_0\,\left(\frac{1}{r^3}-3\,\frac{(\mathbf{r}\cdot \hat{\mathbf{d}})^2}{r^5}\right),
 \end{align*}
 with $\mathbf{r}=\mathbf{R}_i-\mathbf{R}_j$ beeing the distance between any to sites $i$ and $j$ ($i\neq j$). The first derivative with respect to component $\alpha$ of $\mathbf{r}$, $\alpha\in\{x,y,z\}$ reads
 \begin{align*}
-    \frac{\partial V_{dd}}{\partial r_\alpha} = -\frac{3 r_\alpha}{r^5} + \frac{15 r_\alpha (\mathbf{r}\cdot \hat{\mathbf{d}})^2}{r^7} - \frac{6 (\mathbf{r}\cdot \hat{\mathbf{d}}) d_\alpha}{r^5},
+    \frac{1}{V_0}\,\frac{\partial V_{dd}}{\partial r_\alpha} = -\frac{3 r_\alpha}{r^5} + \frac{15 r_\alpha (\mathbf{r}\cdot \hat{\mathbf{d}})^2}{r^7} - \frac{6 (\mathbf{r}\cdot \hat{\mathbf{d}}) d_\alpha}{r^5},
 \end{align*}
 the second derivative reads consequently
 \begin{align*}
-    \frac{\partial^2 V_{dd}}{\partial r_\alpha \partial r_\beta} &= -3\,\frac{\delta_{\alpha\beta}}{r^5} + 15\, \frac{r_\alpha r_\beta}{r^7} + 15 \,\frac{\delta_{\alpha\beta} (\mathbf{r}\cdot \hat{\mathbf{d}})^2}{r^7} - 15\cdot7\, \frac{r_\alpha r_\beta (\mathbf{r}\cdot \hat{\mathbf{d}})^2}{r^9} \\
+    \frac{1}{V_0}\,\frac{\partial^2 V_{dd}}{\partial r_\alpha \partial r_\beta} &= -3\,\frac{\delta_{\alpha\beta}}{r^5} + 15\, \frac{r_\alpha r_\beta}{r^7} + 15 \,\frac{\delta_{\alpha\beta} (\mathbf{r}\cdot \hat{\mathbf{d}})^2}{r^7} - 15\cdot7\, \frac{r_\alpha r_\beta (\mathbf{r}\cdot \hat{\mathbf{d}})^2}{r^9} \\
     &+30\, \frac{d_\alpha r_\beta + d_\beta r_\alpha}{r^7}\,(\mathbf{r}\cdot \hat{\mathbf{d}}) - 6\, \frac{d_\alpha d_\beta}{r^5}\\\\
     &= \delta_{\alpha\beta}\left(-3\,\frac{1}{r^5} + 15\, \frac{(\mathbf{r}\cdot \hat{\mathbf{d}})^2}{r^7}\right)- 6\, \frac{d_\alpha d_\beta}{r^5} +30\, \frac{d_\alpha r_\beta + d_\beta r_\alpha}{r^7}\,(\mathbf{r}\cdot \hat{\mathbf{d}}) \\
     &+ 15\,r_\alpha r_\beta \left( \frac{1}{r^7} - 7\, \frac{(\mathbf{r}\cdot \hat{\mathbf{d}})^2}{r^9}\right).
@@ -178,15 +178,15 @@ the second derivative reads consequently
 In the case where not all dipole moments are aligned, the properties of the interaction get extended to 
 
 \begin{align*}
-    V_{dd}(\mathbf{r}) = \frac{\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2}{r^3}-3\,\frac{(\mathbf{r}\cdot \mathbf{\hat{d}}_1)(\mathbf{r}\cdot \mathbf{\hat{d}}_2)}{r^5}.
+    V_{dd}(\mathbf{r}) = V_0\,\left(\frac{\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2}{r^3}-3\,\frac{(\mathbf{r}\cdot \mathbf{\hat{d}}_1)(\mathbf{r}\cdot \mathbf{\hat{d}}_2)}{r^5}\right).
 \end{align*}
 The first derivative reads
 \begin{align*}
-    \frac{\partial V_{dd}}{\partial r_\alpha} = -\frac{3\,(\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2)\, r_\alpha}{r^5} + \frac{15 r_\alpha (\mathbf{r}\cdot \mathbf{\hat{d}}_1)(\mathbf{r}\cdot \mathbf{\hat{d}}_2)}{r^7} - \frac{3\,\left( (\mathbf{r}\cdot \mathbf{\hat{d}}_1)\, d_{2,\alpha} +(\mathbf{r}\cdot \mathbf{\hat{d}}_2)\, d_{1,\alpha}\right)}{r^5},
+    \frac{1}{V_0}\,\frac{\partial V_{dd}}{\partial r_\alpha} = -\frac{3\,(\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2)\, r_\alpha}{r^5} + \frac{15 r_\alpha (\mathbf{r}\cdot \mathbf{\hat{d}}_1)(\mathbf{r}\cdot \mathbf{\hat{d}}_2)}{r^7} - \frac{3\,\left( (\mathbf{r}\cdot \mathbf{\hat{d}}_1)\, d_{2,\alpha} +(\mathbf{r}\cdot \mathbf{\hat{d}}_2)\, d_{1,\alpha}\right)}{r^5},
 \end{align*}
 the second derivative reads consequently
 \begin{align*}
-    \frac{\partial^2 V_{dd}}{\partial r_\alpha \partial r_\beta} &= -3\,\frac{\delta_{\alpha\beta}\,(\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2)}{r^5} + 15\, \frac{r_\alpha r_\beta\,(\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2)}{r^7} + 15 \,\frac{\delta_{\alpha\beta} (\mathbf{r}\cdot \mathbf{\hat{d}}_1)(\mathbf{r}\cdot \mathbf{\hat{d}}_2)}{r^7} - 15\cdot7\, \frac{r_\alpha r_\beta (\mathbf{r}\cdot \mathbf{\hat{d}}_1)(\mathbf{r}\cdot \mathbf{\hat{d}}_2)}{r^9} \\
+    \frac{1}{V_0}\,\frac{\partial^2 V_{dd}}{\partial r_\alpha \partial r_\beta} &= -3\,\frac{\delta_{\alpha\beta}\,(\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2)}{r^5} + 15\, \frac{r_\alpha r_\beta\,(\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2)}{r^7} + 15 \,\frac{\delta_{\alpha\beta} (\mathbf{r}\cdot \mathbf{\hat{d}}_1)(\mathbf{r}\cdot \mathbf{\hat{d}}_2)}{r^7} - 15\cdot7\, \frac{r_\alpha r_\beta (\mathbf{r}\cdot \mathbf{\hat{d}}_1)(\mathbf{r}\cdot \mathbf{\hat{d}}_2)}{r^9} \\
     &+15\,\left[\frac{d_{1,\alpha} r_\beta + d_{1,\beta} r_\alpha}{r^7}\,(\mathbf{r}\cdot \mathbf{\hat{d}}_2) + \frac{d_{2,\alpha} r_\beta + d_{2,\beta} r_\alpha}{r^7}\,(\mathbf{r}\cdot \mathbf{\hat{d}}_1) \right] - 3\, \frac{d_{1,\alpha} d_{2,\beta} + d_{2,\alpha} d_{1,\beta}}{r^5}\\\\
     &= \delta_{\alpha\beta}\left(-3\,\frac{\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2}{r^5} + 15\, \frac{(\mathbf{r}\cdot \mathbf{\hat{d}}_1)(\mathbf{r}\cdot \mathbf{\hat{d}}_2)}{r^7}\right)- 3\, \frac{d_{1,\alpha} d_{2,\beta} + d_{2,\alpha} d_{1,\beta}}{r^5} \\
     &+ 15\,\left[\frac{d_{1,\alpha} r_\beta + d_{1,\beta} r_\alpha}{r^7}\,(\mathbf{r}\cdot \mathbf{\hat{d}}_2) + \frac{d_{2,\alpha} r_\beta + d_{2,\beta} r_\alpha}{r^7}\,(\mathbf{r}\cdot \mathbf{\hat{d}}_1) \right] \\

@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber protocol"] 0 "protocol.bcf" "protocol.bbl" "protocol" 1768825479.85157 -1
-  "protocol.bcf" 1768825479.76978 108126 e699029231fc5bb54eea711e6320d63f "pdflatex"
+["biber protocol"] 0 "protocol.bcf" "protocol.bbl" "protocol" 1769008275.61988 -1
+  "protocol.bcf" 1769008275.55324 108126 e699029231fc5bb54eea711e6320d63f "pdflatex"
   "sources.bib" 1765880343.07162 16791 09c6a93502f14a06b7d72d199b8077c4 ""
   (generated)
   "protocol.bbl"
   "protocol.blg"
   (rewritten before read)
-["pdflatex"] 1768825478.33634 "/home/christian/Documents/master/protocol/protocol.tex" "protocol.pdf" "protocol" 1768825479.85179 0
+["pdflatex"] 1769008273.66638 "/home/christian/Documents/master/protocol/protocol.tex" "protocol.pdf" "protocol" 1769008275.62005 0
   "/etc/texmf/web2c/texmf.cnf" 1758895203.64774 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/christian/Documents/master/protocol/protocol.tex" 1765817679.52981 13185 1f9bcb24d296d6241328447a28f080e8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -50,6 +50,8 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1248133631 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1248133631 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb" 1248133631 24393 3b7eb51a67a0a62aec5849271bdb9c2e ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb" 1248133631 24420 52dbb8e8aa0069a1b987309557f8d303 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb" 1248133631 24373 a91d375736817a75026663adcb2190c1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb" 1248133631 28902 2f5c04fd2884d1878057baa5aad22765 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
@@ -197,20 +199,24 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1758895216.07337 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1758895244 8213773 f45dae838239d55b66681526ece92c70 ""
   "StandardPages.sty" 1759150099.35658 3802 cf878797be82f080136d69564456bed0 ""
-  "interactions.tex" 1768825141.33435 33500 53ec0b2fbc2b580bd63a41ddd362411e ""
+  "interactions.tex" 1768998465.17115 33596 1dc74a873dd1ed5a458473598eb912b2 ""
   "numerical_results_only_phonons.tex" 1765297356.0382 16039 6366256f99442b9515363be1461d623d ""
   "pictures/SWT_calc.pdf" 1765878246.79582 24607 901bf74e598cc24cf1d11fb02cb7f0be ""
   "pictures/ads_states_for_chain_lengths.pdf" 1765297299.39042 226328 a09c9195bbd2e38f7c50ba8203c5f41f ""
   "pictures/ads_top_states_b0.51.pdf" 1765297228.78413 226394 7458211fa1298da309ee250f3af53ff9 ""
   "pictures/aligned_dipoles_in_plane_sheer.pdf" 1765295825.55229 383954 4289324d20c23ae9ffa329d72d7a0724 ""
   "pictures/aligned_dipoles_in_plane_sheer_spectrum_chrial.pdf" 1765213543.04642 174646 52dd73a4faadf3f83b95b7e5e9293e4b ""
+  "pictures/fidelity_coupling_strengths.pdf" 1769008273.27327 180441 c492fe3320d8c94f16e9f7f601685e55 ""
   "pictures/lattice_def.pdf" 1764771546.92011 39756 538d9440906b79f8819a48c0904126ea ""
-  "protocol.aux" 1768825479.76896 8206 94e9f47f077dd7a87838d928f24d8f57 "pdflatex"
+  "pictures/rice_mele_protocol.pdf" 1769000078.89486 243888 d6877c3dc8013d7f774fc1416ec7f1b4 ""
+  "pictures/spin_phonon_traj_colormap_phintc_rescale100.png" 1768922088.48314 162993 023aa312c0f510f699de25b80a8448d2 ""
+  "pictures/spin_phonon_traj_lines_phintc_rescale100_2ph.png" 1769003908.61189 562571 8959d3d9915c6cf55f892cc7d2b5932f ""
+  "protocol.aux" 1769008275.55124 11907 2a8d21aa1d77b47baaa1677a33d35cdf "pdflatex"
   "protocol.bbl" 1765880381.45197 32481 c1d0dfeb11036d14cb7e56154b58e1ef "biber protocol"
-  "protocol.out" 1768825479.45359 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "protocol.run.xml" 1768825479.772 2455 9fca3ebbd622dcf6cac90ea88dc21fbe "pdflatex"
+  "protocol.out" 1769008274.60292 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "protocol.run.xml" 1769008275.55468 2455 9fca3ebbd622dcf6cac90ea88dc21fbe "pdflatex"
   "protocol.tex" 1765817679.52981 13185 1f9bcb24d296d6241328447a28f080e8 ""
-  "spin_phonon_coupling.tex" 1768825478.17443 10579 83cd6d1f08835627762285b399014197 ""
+  "spin_phonon_coupling.tex" 1769006280.33927 14567 b460e0f3db0f68501f246463ba893e4e ""
   (generated)
   "protocol.aux"
   "protocol.bcf"

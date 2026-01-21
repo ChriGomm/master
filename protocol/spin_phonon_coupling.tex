@@ -4,7 +4,7 @@
 I want to allow for the propagation of excitations through the chain. The first step towards this is constructing a Hamiltonian which describes the dynamics of a system of Rydberg atoms, where one atom is excited, hence restricting ourselves to the single excitation subspace. The general coupling between the atoms arises from the interaction between the dipole moments of the atoms,
 \begin{align*}
     V&=\sum_\mathbf{r}V(\mathbf{r})\\
-    \text{with}\quad V(\mathbf{r})&= \frac{\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2}{r^3}-3\,\frac{(\mathbf{r}\cdot \mathbf{\hat{d}}_1)(\mathbf{r}\cdot \mathbf{\hat{d}}_2)}{r^5}.
+    \text{with}\quad V(\mathbf{r})&= V_0\,\left(\frac{\mathbf{\hat{d}}_1\cdot\mathbf{\hat{d}}_2}{r^3}-3\,\frac{(\mathbf{r}\cdot \mathbf{\hat{d}}_1)(\mathbf{r}\cdot \mathbf{\hat{d}}_2)}{r^5}\right).
 \end{align*}
 Each individual atom is characterized by its position in the lattice and its atomic energy level which is captured by the non-interacting Hamiltonian $H_0$. The total Hamiltonian thus reads
 \begin{align*}
@@ -43,7 +43,7 @@ Thus finally the effective Hamiltonian reads
 \begin{align*}
     H_\text{eff}&=H_0P_0+P_0VP_0+\sum_{\substack{i\in E1\\j\in\tilde{E}}}\frac{\left|\braket{i|V|j}\right|^2}{E_i-E_j}\,\ket{i}\bra{i}
 \end{align*}
-Because of the large relative size of $\Delta$ over the interaction strength, I will only include energies into the above sum which differ from the single excitation subspace by $\Delta$. Further the zero excitations subspace does not couple to the one with one excitation in the considered order of expansion. Thus only eigenstates in the double excitation subspace have to be taken into account for the sum.
+For the effective Hamiltonian the contribution $H_0P_0$ is just a constant term and can be neglected. Further because of the large relative size of $\Delta$ over the interaction strength, I will only include energies into the above sum which differ from the single excitation subspace by $\Delta$. Further the zero excitations subspace does not couple to the one with one excitation in the considered order of expansion. Thus only eigenstates in the double excitation subspace have to be taken into account for the sum.
 \begin{figure}[H]
     \centering
     \includegraphics{pictures/SWT_calc.pdf}
@@ -81,15 +81,51 @@ A last step is possible since in the single excitation subspace terms like $n^e_
 \subsection*{First order approximation}
 For the first approach I will continue with the Hamiltonian up to first order in the dipole interaction, i.e. without $H_{\text{eff},2}$. The phonons are introduced by again expanding the interaction up to second order. I will restrict the consideration also to the constant phonon excitation subspace. For this reason the first order expansion of the dipole interaction will be ignored, as it couples subspaces with different phonon numbers. The Hamiltonian thus reads
 \begin{align*}
-    H&=H_0 + \sum_{i=1}^{N-1}\left[V(\mathbf{r}_{i,i+1})+\sum_{n,m\in\{i,i+1\}}\frac{\partial^2V(\mathbf{r}_{i,i+1})}{\partial\mathbf{r}_{n}\partial\mathbf{r}_m}\,\delta\mathbf{\hat{r}}_n\delta\mathbf{\hat{r}}_m\right]\,\sigma_i^+\sigma_{i+1}^-+\text{h.c.}
+    H&= \sum_{i=1}^{N-1}\left[V(\mathbf{r}_{i,i+1})+\sum_{n,m\in\{i,i+1\}}\frac{\partial^2V(\mathbf{r}_{i,i+1})}{\partial\mathbf{r}_{n}\partial\mathbf{r}_m}\,\delta\mathbf{\hat{r}}_n\delta\mathbf{\hat{r}}_m\right]\,\sigma_i^+\sigma_{i+1}^-+\text{h.c.}
 \end{align*}
 The hats in $\delta\mathbf{\hat{r}}$ indicates operators. Here also the operators are projected on the constant phonon subspace. What has to be accounted for is that this second order expansion is of course only a small correction to the dipole-dipole interaction. 
 \begin{align*}
     \left| 1- \frac{V(\mathbf{r}+\delta\mathbf{r})}{V(\mathbf{r})} \right|&\ll 1\\
     \left| \frac{\partial^2 V(\mathbf{r})}{\partial\mathbf{r}^2}\,\delta\mathbf{r}^2 \right|&\ll\left|V(\mathbf{r})\right|
 \end{align*}
-When quantizing the displacements to phonon operators $\delta\mathbf{r}\rightarrow \frac{2}{m\omega}\,a^\dagger a$, one finds the condition 
+When quantizing the displacements to phonon operators $\delta\mathbf{r}^2\rightarrow \frac{2}{m\omega}\,a^\dagger a$, one finds the condition 
 \begin{align*}
     \frac{2}{m\omega}\, \left| \frac{\partial^2 V(\mathbf{r})}{\partial\mathbf{r}^2} \right|&\ll\left|V(\mathbf{r})\right|,
 \end{align*}
-as $a^\dagger a$ is of the order of 1.
+as $a^\dagger a$ is of the order of 1. 
+\begin{figure}[H]
+    \centering
+    \includegraphics{pictures/rice_mele_protocol.pdf}
+    \caption{\textbf{Spin transfer protocol.} In a the course of the interaction during the transfer protocol is shown. b-c show the spectrum of the spin and phonon Hamiltonian respectively during the pump cycle each for one excitation in the respective degrees of freedom. For the spin Hamiltonian a pure dipole dipole interaction is used, where the dipole moments of the atoms are orientated in way that puts the interactions within the same sublattice to zero. This choice improves the accuracy of the nearest neighbor assumption. The phonon spectrum is received by the methods used in the previous chapters. It therefore depicts a scenario without spin degrees of freedom.}
+    \label{fig:pump_protocol}
+\end{figure}
+As a next step I want to first discard the phonon dynamics and realize a transfer protocol for a spin excitation through the chain. For this purpose I implement a Rice-Mele model configuration for the chain of Rydberg atoms. This is achieved by including an onsite potential with alternating sign of the form
+\begin{align*}
+    H_\text{OS}= \sum_{i=1}^N(-1)^i \,\Delta\,\sigma^+_i\sigma^-_i.
+\end{align*}
+Note that the detuning $\Delta$ is now a different parameter from above. By changing the position and detuning in an adiabatic cyclic way, one can implement a transfer protocol, which is depicted in \figref{fig:pump_protocol}. The system is initialized with the eigenstate of the spin Hamiltonian located at the edge. This is possible, as I start the transfer protocol in the topological phase. After the the transfer period I compare the evolved state with the target state, which is the eigenstate located at the other side. I use a chain of six atoms in total. The resulting fidelity between final and target state for this protocol is $0.9996$.\\\\
+I can now compare which influence the introduction of photons has on the transfer quality. Therefore I test the effect of four different phonon initial states on the transfer process. The different initial phonon states can be read of \figref{fig:transfer_trajectories}. \figref{fig:fidelity} shows that the evolvement of the phonon degrees of freedom does not change the quality of the transfer to a very considerable portion, where I investigated how the strength of the phonon-phonon interactions effect
+the fidelity of final and target state. In \figref{fig:2phonon_exc_traj} I show the time evolution of the phononic degrees of freedom for two initial phonon excitations.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics{pictures/spin_phonon_traj_colormap_phintc_rescale100.png}
+    \caption{\textbf{Spin transfer process.} The time evolution of the spin and phonon degrees of freedom is depicted during the adiabatic transfer protocol. For the same transfer protocol the system was prepared in different initial phonon configurations, which stored one excitation in total.}
+    \label{fig:transfer_trajectories}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics{pictures/fidelity_coupling_strengths.pdf}
+    \caption{\textbf{Fidelity in dependence of phonon interaction strength.} For the 4 initial phonon configurations introduced in \figref{fig:transfer_trajectories} (the labeling runs from top to bottom) different rations of spin dipole interactions to phonon interactions are chosen. The fidelity between the final and target state is shown in dependence of interaction ratio and initial phonon state.}
+    \label{fig:fidelity}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics{pictures/spin_phonon_traj_lines_phintc_rescale100_2ph.png}
+    \caption{\textbf{Phonon evolution for two excitations.} For two phonon excitations the evolution of the phonons during the transfer period is depicted.}
+    \label{fig:2phonon_exc_traj}
+\end{figure}
+
