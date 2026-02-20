@@ -129,3 +129,121 @@ the fidelity of final and target state. In \figref{fig:2phonon_exc_traj} I show 
     \label{fig:2phonon_exc_traj}
 \end{figure}
 
+
+\section*{Winding number of the spin-phonon coupled Hamiltonian}
+Next I want to determine the topological phase of the Hamiltonian where spin and and motional degrees of freedom are coupled in first order Schrieffer-Wolff approximation. I will again consider only nearest neighbor interaction and will also constrain the dynamics to the single excitation subspace, both in spin and phonon degrees of freedom. For this purpose I will write the interactions in terms of fermionic spin and phonon operators. $a_i$ and $b_i$ ($p_{A,i}$ and $p_{B,i}$) are spin (phonon) annihilation operators acting, respectively, on the sublattice $A$ and $B$ sites in unit cell $i$. The Hamiltonian then reads 
+\begin{align*}
+    H &= H_\text{sp}+H_\text{spph}\\
+    \text{with}\quad H_\text{sp} &= \sum_i V_1\,a_i^\dagger b_i + V_2\,b_i^\dagger a_{i+1} +\text{h.c.}\\
+    H_\text{spph}&= \sum_i V_3\,\left[ p_{A,i}^\dagger p_{B,i} + p_{B,i}^\dagger p_{A,i} - p_{A,i}^\dagger p_{A,i} - p_{B,i}^\dagger p_{B,i} \right]\,a_i^\dagger b_i +\text{h.c.}\\
+    &+\sum_i V_4\,\left[ p_{A,i+1}^\dagger p_{B,i} + p_{B,i}^\dagger p_{A,i+1} - p_{A,i+1}^\dagger p_{A,i+1} - p_{B,i}^\dagger p_{B,i} \right]\,a_{i+1}^\dagger b_i +\text{h.c.}
+\end{align*}
+Here the intracell couplings $V_1$, $V_3$, and the intercell couplings $V_2$, $V_4$ are constants which depend on the parameters distance and dipole moment. Transforming this Hamiltonian into momentum space by simply performing a Fourier transform of every operator does not simplify the description and does not allow for an analysis of the winding number.
+
+But by building collective operators of spin and phonon degrees of freedom one is able to make use of the one dimensional character of the chain and achieve a momentum space Hamiltonian with decoupled momenta. First I restrict myself to the spin phonon coupled term of the Hamiltonian. I group all operators in $H_\text{spph}$ acting on the same sublattice together and combine them into one operator, defined on an adapted space. By this procedure I get a couple of new operators. All of them act on the same space, which is defined on one site.
+\begin{align*}
+    \begin{pmatrix}
+        s_i^\uparrow p_i^\uparrow\\
+        s_i^\uparrow p_i^\downarrow\\
+        s_i^\downarrow p_i^\uparrow\\
+        s_i^\downarrow p_i^\downarrow
+    \end{pmatrix}=\vcentcolon \begin{pmatrix}
+        \ket{1}\\
+        \ket{2}\\
+        \ket{3}\\
+        \ket{4}
+    \end{pmatrix}
+\end{align*}
+
+For $D\in\{A,B\}$ and $d\in\{a,b\}$ I define
+\begin{align*}
+    c^{\bar{D},D}_i\vcentcolon&=p_{D,i}^\dagger d_i = \ket{3}\bra{2}\\
+    c^{D,\bar{D}}_i\vcentcolon&=p_{D,i}\,d_i^\dagger = \ket{2}\bra{3}\\
+    c^{\bar{D},\bar{D}}_i\vcentcolon&=p_{D,i}^\dagger d_i^\dagger = \ket{1}\bra{4}\\
+    c^{D,D}_i\vcentcolon&=p_{D,i}\, d_i = \ket{4}\bra{1}\\
+    c^{\bar{D}}_i\vcentcolon&= d_i^\dagger = \ket{1}\bra{3}+\ket{2}\bra{4}\\
+    c^{D}_i\vcentcolon&= d_i = \ket{3}\bra{1}+\ket{4}\bra{2}\\
+    c^{\bar{D},D,D}_i\vcentcolon&=p_{D,i}^\dagger p_{D,i}\, d_i = \ket{3}\bra{1}\\
+    c^{\bar{D},D,\bar{D}}_i\vcentcolon&=p_{D,i}^\dagger p_{D,i}\, d_i^\dagger = \ket{1}\bra{3}\,
+\end{align*}
+what lets the Hamiltonian read
+\begin{align*}
+    H_\text{spph}&= \sum_i V_3\,\left[ c_i^{\bar{A},\bar{A}}\,c_i^{B,B} + c_i^{A,\bar{A}}\,c_i^{\bar{B},B} - c_i^{\bar{A},A,\bar{A}}\,c_i^{B} - c_i^{\bar{A}}\,c_i^{\bar{B},B,B}\right] +\text{h.c.}\\
+    &+ \sum_i V_4\,\left[ c_{i+1}^{\bar{A},\bar{A}}\,c_i^{B,B} + c_{i+1}^{A,\bar{A}}\,c_i^{\bar{B},B} - c_{i+1}^{\bar{A},A,\bar{A}}\,c_i^{B} - c_{i+1}^{\bar{A}}\,c_i^{\bar{B},B,B}\right] +\text{h.c.}
+\end{align*}
+Because of the single excitation restriction, exactly one phonon and spin has to be present at the two neighboring sites for a term acting on those two neighboring sites to contribute. Therefore the combined space of the two neighboring sites collapses to the dimensin of the one site space, represented by the basis
+\begin{align*}
+    \begin{pmatrix}
+        s_1^\uparrow p_1^\uparrow \; s_2^\downarrow p_2^\downarrow\\
+        s_1^\uparrow p_1^\downarrow\; s_2^\downarrow p_2^\uparrow\\
+        s_1^\downarrow p_1^\uparrow\; s_2^\uparrow p_2^\downarrow\\
+        s_1^\downarrow p_1^\downarrow\; s_2^\uparrow p_2^\uparrow
+    \end{pmatrix}
+\end{align*}
+The Hamiltonian in $k$-space then reads
+\begin{align*}
+    H_\text{spph}&= \sum_k V_3\,\left[ c_k^{\bar{A},\bar{A}}\,c_k^{B,B} + c_k^{A,\bar{A}}\,c_k^{\bar{B},B} - c_k^{\bar{A},A,\bar{A}}\,c_k^{B} - c_k^{\bar{A}}\,c_k^{\bar{B},B,B}\right] +\text{h.c.}\\
+    &+ \sum_k V_4\,e^{ika}\,\left[ c_k^{\bar{A},\bar{A}}\,c_k^{B,B} + c_k^{A,\bar{A}}\,c_k^{\bar{B},B} - c_k^{\bar{A},A,\bar{A}}\,c_k^{B} - c_k^{\bar{A}}\,c_k^{\bar{B},B,B}\right] +\text{h.c.}\\
+    &= \sum_k \left(V_3+V_4\,e^{ika}\right)\,\left[ c_k^{\bar{A},\bar{A}}\,c_k^{B,B} + c_k^{A,\bar{A}}\,c_k^{\bar{B},B} - c_k^{\bar{A},A,\bar{A}}\,c_k^{B} - c_k^{\bar{A}}\,c_k^{\bar{B},B,B}\right] +\text{h.c.}\\
+    &=\vcentcolon \sum_k H_\text{spph}^k
+\end{align*}
+The blocks in $k$-space then read
+\begin{align*}
+    H_\text{spph}= \begin{pmatrix}
+        0 & 0 & -(V_3+V_4\,e^{ika}) & V_3+V_4\,e^{ika}\\
+        0 & 0 & V_3+V_4\,e^{ika} & -(V_3+V_4\,e^{ika})\\
+        -(V_3+V_4\,e^{-ika}) & V_3+V_4\,e^{-ika} & 0 & 0 \\
+       V_3+V_4\,e^{-ika} & -(V_3+V_4\,e^{-ika}) & 0 & 0         
+    \end{pmatrix}
+\end{align*}
+When considering the total Hamiltonian including $H_\text{sp}$ one has to expand the space for the collective operators as now the Hamiltonian does not only couple states where spin and phonon excitations are next to each other. But only two new states have to be introduced, $s_1^\uparrow p_1^\downarrow \; s_2^\downarrow p_2^\downarrow$ and $s_1^\downarrow p_1^\downarrow\; s_2^\uparrow p_2^\downarrow$. The basis is now family
+\begin{align*}
+    \begin{pmatrix}
+        s_1^\uparrow p_1^\uparrow \; s_2^\downarrow p_2^\downarrow\\
+        s_1^\uparrow p_1^\downarrow\; s_2^\downarrow p_2^\uparrow\\
+        s_1^\uparrow p_1^\downarrow \; s_2^\downarrow p_2^\downarrow\\
+        s_1^\downarrow p_1^\uparrow\; s_2^\uparrow p_2^\downarrow\\
+        s_1^\downarrow p_1^\downarrow\; s_2^\uparrow p_2^\uparrow\\
+        s_1^\downarrow p_1^\downarrow\; s_2^\uparrow p_2^\downarrow
+    \end{pmatrix}=\vcentcolon \begin{pmatrix}
+        \ket{1}\\
+        \ket{2}\\
+        \ket{3}\\
+        \ket{4}\\
+        \ket{5}\\
+        \ket{6}
+    \end{pmatrix}
+\end{align*}
+In this basis the spin Hamiltonian in momentum space $H_\text{sp}^k$ reads
+\begin{align*}
+    H_\text{sp}^k &= \begin{pmatrix}
+        0&\alpha\\
+        \alpha^\dagger&0
+    \end{pmatrix}\\
+    \text{with}\quad\alpha&= \left(V_1+V_2\,e^{ika}\right)\,\begin{pmatrix}
+        1&0&0\\
+        0&1&0\\
+        0&0&1
+    \end{pmatrix}
+\end{align*}
+The total Hamiltonian in momentum space thus reads
+\begin{align*}
+    H^k &= \begin{pmatrix}
+        0&\beta\\
+        \beta^\dagger&0
+    \end{pmatrix}\\
+    \text{with}\quad\beta&=\begin{pmatrix}
+        V_1-V_3+(V_2-V_4)\,e^{ika}&V_3+V_4\,e^{ika}&0\\
+        V_3+V_4\,e^{ika}&V_1-V_3+(V_2-V_4)\,e^{ika}&0\\
+        0&0&V_1+V_2\,e^{ika}
+    \end{pmatrix}
+\end{align*}
+The eigenvalues of $\beta$ are
+\begin{align*}
+    \beta_1 &= V_1-2\,V_3+(V_2-2\,V_4)\,e^{ika}\\
+    \beta_2 = \beta_3 &= V_1+V_2\,e^{ika}
+\end{align*}
+\subsection*{Problems}
+The main practical problem is that the total Hamiltonian is heavily degenerate $\sim N$. The winding number can however only take values between $0$ and $3$. Which eigenvalues are the topological protected ones?
+
+This might be not due to an erroneous derivation of the momentum space Hamiltonian. But I don't know. At first glance there is a problem with the kernel of the Hamiltonian. In real space it has a finite dimension of the magnitude of $N$. But in momentum space the kernel seems to vanish. I think the reason is that I only considered a basis for the combined coupling operators, which actually couple, hence discarding the kernel. But I think this is no unusual proceed. I don't know if the winding number is valid for degenerate Hamiltonians. 

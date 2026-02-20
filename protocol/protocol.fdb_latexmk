@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber protocol"] 0 "protocol.bcf" "protocol.bbl" "protocol" 1769084647.33929 -1
-  "protocol.bcf" 1769084647.27077 108126 e699029231fc5bb54eea711e6320d63f "pdflatex"
+["biber protocol"] 0 "protocol.bcf" "protocol.bbl" "protocol" 1771266281.79148 -1
+  "protocol.bcf" 1771266281.71708 108126 e699029231fc5bb54eea711e6320d63f "pdflatex"
   "sources.bib" 1765880343.07162 16791 09c6a93502f14a06b7d72d199b8077c4 ""
   (generated)
   "protocol.bbl"
   "protocol.blg"
   (rewritten before read)
-["pdflatex"] 1769084645.3498 "/home/christian/Documents/master/protocol/protocol.tex" "protocol.pdf" "protocol" 1769084647.33948 0
+["pdflatex"] 1771266279.5035 "/home/christian/Documents/master/protocol/protocol.tex" "protocol.pdf" "protocol" 1771266281.79169 0
   "/etc/texmf/web2c/texmf.cnf" 1758895203.64774 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/christian/Documents/master/protocol/protocol.tex" 1765817679.52981 13185 1f9bcb24d296d6241328447a28f080e8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -211,12 +211,12 @@
   "pictures/rice_mele_protocol.pdf" 1769000078.89486 243888 d6877c3dc8013d7f774fc1416ec7f1b4 ""
   "pictures/spin_phonon_traj_colormap_phintc_rescale100.png" 1768922088.48314 162993 023aa312c0f510f699de25b80a8448d2 ""
   "pictures/spin_phonon_traj_lines_phintc_rescale100_2ph.png" 1769003908.61189 562571 8959d3d9915c6cf55f892cc7d2b5932f ""
-  "protocol.aux" 1769084647.26877 11907 2a8d21aa1d77b47baaa1677a33d35cdf "pdflatex"
+  "protocol.aux" 1771266281.71408 11907 69c667c43ab4de2b81a89b99b788695c "pdflatex"
   "protocol.bbl" 1765880381.45197 32481 c1d0dfeb11036d14cb7e56154b58e1ef "biber protocol"
-  "protocol.out" 1769084646.30782 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "protocol.run.xml" 1769084647.27232 2455 9fca3ebbd622dcf6cac90ea88dc21fbe "pdflatex"
+  "protocol.out" 1771266280.61731 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "protocol.run.xml" 1771266281.71805 2455 9fca3ebbd622dcf6cac90ea88dc21fbe "pdflatex"
   "protocol.tex" 1765817679.52981 13185 1f9bcb24d296d6241328447a28f080e8 ""
-  "spin_phonon_coupling.tex" 1769084261.76483 14591 382690986c66a2e4c4c8e023e1785b1e ""
+  "spin_phonon_coupling.tex" 1771266279.33007 22617 4385fb2d7a6edc8ed703c6eca3feb94d ""
   (generated)
   "protocol.aux"
   "protocol.bcf"
