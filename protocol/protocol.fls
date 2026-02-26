@@ -406,6 +406,8 @@ INPUT ./pictures/spin_phonon_traj_lines_phintc_rescale100_2ph.png
 INPUT ./pictures/spin_phonon_traj_lines_phintc_rescale100_2ph.png
 INPUT ./pictures/spin_phonon_traj_lines_phintc_rescale100_2ph.png
 INPUT ./pictures/spin_phonon_traj_lines_phintc_rescale100_2ph.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
+INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT protocol.aux
 INPUT ./protocol.out
 INPUT ./protocol.out

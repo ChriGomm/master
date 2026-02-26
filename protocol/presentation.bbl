@@ -1,0 +1,86 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{raupach_robust_2026}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=11d019c543195beb36bca270326941f5}{%
+           family={Raupach},
+           familyi={R\bibinitperiod},
+           given={Siri},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8470193184a5670d20e3af25a883a65b}{%
+           family={Olmos},
+           familyi={O\bibinitperiod},
+           given={Beatriz},
+           giveni={B\bibinitperiod}}}%
+        {{hash=aa7c1cd7f25ec5861a60a6149873e86f}{%
+           family={Svendsen},
+           familyi={S\bibinitperiod},
+           given={Mathias\bibnamedelimb B.\bibnamedelimi M.},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{8fc43b211efdc1230ea7008b0ac25472}
+      \strng{fullhash}{de51bbed2d7109f477a7b2e45fb827cc}
+      \strng{bibnamehash}{de51bbed2d7109f477a7b2e45fb827cc}
+      \strng{authorbibnamehash}{de51bbed2d7109f477a7b2e45fb827cc}
+      \strng{authornamehash}{8fc43b211efdc1230ea7008b0ac25472}
+      \strng{authorfullhash}{de51bbed2d7109f477a7b2e45fb827cc}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We develop a theoretical framework for fast, robust and high-fidelity topological quantum state transfer in one-dimensional systems with long-range couplings, motivated by chains of Rydberg atoms with dipole-dipole interactions. Such long-range interactions naturally give rise to extended Su-Schrieffer-Heeger and Rice-Mele models supporting topologically protected edge states. We show that these edge states enable high-fidelity edge-to-edge excitation transfer using both time-independent protocols, based on coherent edge state dynamics, and time-dependent protocols, based on adiabatic modulation of system parameters. Long-range couplings play a central role by enhancing the relevant energy gaps, leading to a substantial improvement in transfer efficiency compared to nearest neighbour models. The resulting transfer is robust against positional disorder, reflecting its topological origin and highlighting the potential of long-range interacting platforms for reliable quantum state transfer.}
+      \field{day}{27}
+      \field{eprinttype}{arxiv}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{{arXiv}:2601.19713}
+      \field{title}{Robust topological quantum state transfer with long-range interactions in Rydberg arrays}
+      \field{urlday}{26}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2601.19713
+      \endverb
+      \verb{eprint}
+      \verb 2601.19713 [quant-ph]
+      \endverb
+      \verb{file}
+      \verb PDF:/home/christian/Zotero/storage/ALFINW63/Raupach et al. - 2026 - Robust topological quantum state transfer with long-range interactions in Rydberg arrays.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2601.19713
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2601.19713
+      \endverb
+      \keyw{Quantum Physics}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

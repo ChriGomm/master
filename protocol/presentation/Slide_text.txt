@@ -1,0 +1,57 @@
+
+Slide Classification and Robustness:
+
+Phase determined by symmetries of the bulk: \textbf{bulk-boundary correspondence}
+Example: chriral symmetry $\rightarrow H = \begin{pmatrix}0&h(\vec{k})\\h^\dagger(\vec{k})&0\end{pmatrix}$
+
+Topological phases can be distinguished\\
+by topological invariants\\
+in \textbf{1D: winding number}
+
+Topology at the example of the ssh-model
+
+$H_\text{ssh}= \sum_{i=1}^{N/2}\left[v\,a_{i}^\dagger b_{i}+ w\,b_{i}^\dagger a_{i+1}\right]+\text{h.c.}$
+
+slide Application Quantum Transport
+
+\begin{itemize}\item Adiabatic transfer in chain with odd number of atoms\item Rice-Mele transport\end{itemize}
+
+using the geometry properties of the chain:\\ mirroring couplings $\rightarrow$ mirroring edge states
+
+using a changing energy offset between the sublattices,\\ i.e. transfer between sublattices $\rightarrow$ transfer between edges
+
+slide system
+
+preparing the atoms in the $\ket{1}$ levels:
+
+$H=\sum_i\left(V(\mathbf{r}_i)+\sum_{j\in\{i,i+1\}}\frac{\partial V(\mathbf{r}_i)}{\partial \delta\mathbf{R}_j}\,\delta\mathbf{R}_j +\sum_{j_1,j_2\in\{i,i+1\}}\frac{\partial^2V(\mathbf{r}_i)}{\partial\delta\mathbf{R}_{j_1}\partial\delta\mathbf{R}_{j_2}}\,\delta\mathbf{R}_{j_1}\delta\mathbf{R}_{j_2} \right)\,n_i\,n_{i+1}$
+
+$\delta\mathbf{R}$
+
+$H=\sum_i\frac{\mathbf{P}_i^2}{2m}+\frac12\,m\omega\,\delta\mathbf{R}_i+\sum_{i\neq j}V(\mathbf{R}_i-\mathbf{R}_j)\,n_in_j$
+
+$\rightarrow H_\text{eff}=\sum_i\omega a^\dagger_i a_i+\sum_{i,j}U_{i,j}a^\dagger_ia_j$
+
+$H=\sum_i\frac{\mathbf{P}_i^2}{2m}+\frac12\,m\omega\,\delta\mathbf{R}_i+\sum_{i\neq j}V(\mathbf{R}_i-\mathbf{R}_j)\,n_in_j\;\rightarrow\; H_\text{eff}=\sum_{i,j}U_{i,j}a^\dagger_ia_j$
+
+\textbf{1D phonons}
+\begin{itemize}
+\item$U_{i,i}=0$
+\item can be mapped to the \\extended ssh model
+\end{itemize}
+
+\textbf{2D phonons}
+\begin{itemize}
+\item$U_{i,i}=0$ $\leftarrow$ only if phonon \\directions are decoupled
+\item two independent nearest neighbor \\ssh models
+\end{itemize}
+
+$n_i=\ket{1_i}\bra{1_i},\quad \delta R^{x/y}_i=\frac{1}{\sqrt{2m\omega}}\,\left(a^{x/y}_i+(a_i^{x/y})^\dagger\right)$
+
+
+slide outlook
+
+\begin{align*}H&=\sum_i\frac{\mathbf{P}_i^2}{2m}+\frac12\,m\omega\,\delta\mathbf{R}_i+\sum_{i}V(\mathbf{R}_i-\mathbf{R}_{i+1})\,\sigma^+_i\sigma^-_{i+1}+\text{h.c.}\\
+\rightarrow H_\text{eff}&=\sum_{i}V(\mathbf{R}_i-\mathbf{R}_{i+1})\,\sigma^+_i\sigma^-_{i+1}+\text{h.c.}\\
+&+\sum_{i}\frac{U_{i,i+1}}{2}\,\left(a_i^\dagger a_{i+1}+a_{i+1}^\dagger a_{i}-a_i^\dagger a_{i}-a_{i+1}^\dagger a_{i+1}\right)\,\sigma^+_i\sigma^-_{i+1}+\text{h.c.}\end{align*}
+

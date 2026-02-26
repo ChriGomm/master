@@ -87,11 +87,11 @@ Thus
 \end{align*}
 At this point I can eliminate the linear term of the Hamiltonian by introducing the trap potential 
 \begin{align*}
-    H_0(\{\delta\mathbf{R}_l\}) = \sum_n \frac12 m \omega^2 \,\delta\mathbf{R}_n^2 
+    H_0(\{\delta\mathbf{R}_l\}) = \sum_n\frac{\mathbf{P}_n^2}{2m}+ \frac12 m \omega^2 \,\delta\mathbf{R}_n^2,
 \end{align*}
-and redefining the trap centers by a equal shift of all positions $\{\delta\mathbf{R}_l\}=\{\delta\tilde{\mathbf{R}}_l+\mathbf{\Delta}\}$. Neglection all constant terms the Hamiltonian up to second order reads
+where $\mathbf{P}_n$ is the momentum of the $n$th atom. I can now redefine the trap centers by a equal shift of all positions $\{\delta\mathbf{R}_l\}=\{\delta\tilde{\mathbf{R}}_l+\mathbf{\Delta}\}$. Neglection all constant terms the Hamiltonian minus the momentum term $\tilde{H}=H-\sum_n\mathbf{P}_n/2m$ up to second order reads
 \begin{align*}
-    H(\{\delta\mathbf{R}_l\})&= \sum_n \frac12 m \omega^2 \,(\delta\tilde{\mathbf{R}}_n+\mathbf{\Delta}_n)^2+ \sum_n\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,(\delta\tilde{\mathbf{R}}_n+\mathbf{\Delta}_n) + \sum_{n,m}(\delta\tilde{\mathbf{R}}_n+\mathbf{\Delta}_n)\,U_{n,m}\,(\delta\tilde{\mathbf{R}}_m+\mathbf{\Delta}_m)\\
+    \tilde{H}(\{\delta\mathbf{R}_l\})&=\sum_n\frac{\mathbf{P}_n^2}{2m}+ \sum_n \frac12 m \omega^2 \,(\delta\tilde{\mathbf{R}}_n+\mathbf{\Delta}_n)^2+ \sum_n\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,(\delta\tilde{\mathbf{R}}_n+\mathbf{\Delta}_n) + \sum_{n,m}(\delta\tilde{\mathbf{R}}_n+\mathbf{\Delta}_n)\,U_{n,m}\,(\delta\tilde{\mathbf{R}}_m+\mathbf{\Delta}_m)\\
     &= \sum_n \frac12 m \omega^2 \,\delta\tilde{\mathbf{R}}_n^2  + \sum_{n,m}\delta\tilde{\mathbf{R}}_n\,U_{n,m}\,\delta\tilde{\mathbf{R}}_m + \sum_n\left(\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n} +\left( 2\,\sum_m\delta\tilde{\mathbf{R}}_m\, U_{m,n} + m\omega^2\right)\,\mathbf{\Delta}_n  \right)\,\delta\tilde{\mathbf{R}}_n,
 \end{align*}
 where it was used that $U$ is symmetric. The linear term vanishes, if $\mathbf{\Delta}_n$ is chosen such that
@@ -100,15 +100,16 @@ where it was used that $U$ is symmetric. The linear term vanishes, if $\mathbf{\
 \end{align*}
 Thus
 \begin{align*}
-    H(\{\delta\tilde{\mathbf{R}}_l\})&= \sum_n\frac12 m\omega^2\,\delta\tilde{\mathbf{R}}_n^2+ \sum_{n,m}\delta\tilde{\mathbf{R}}_n\,U_{n,m}\,\delta\tilde{\mathbf{R}}_m
+    H(\{\delta\tilde{\mathbf{R}}_l\})&= \sum_n\frac{\mathbf{P}_n^2}{2m}+ \sum_n\frac12 m\omega^2\,\delta\tilde{\mathbf{R}}_n^2+ \sum_{n,m}\delta\tilde{\mathbf{R}}_n\,U_{n,m}\,\delta\tilde{\mathbf{R}}_m
 \end{align*}
 To describe the deviation from the center in a quantum mechanical way, the displacements are now quantized as phonons using the quadrature operators 
 \begin{align*}
-    \delta\tilde{\mathbf{R}}_n = \frac{1}{\sqrt{m\omega}}\,(a_n + a_n^\dagger)
+    \delta\tilde{\mathbf{R}}_n &= \frac{1}{\sqrt{2m\omega}}\,(a_n + a_n^\dagger)\\
+    \mathbf{P}_n &= i\,\sqrt{\frac{m\omega}{2}}\,(a_n^\dagger - a_n)
 \end{align*}
 If we exploit that the interactions realized in $U$ are much smaller compared to the trap frequency, i.e. $U_{n,m}\ll m\omega^2$, the creation and annhiliation of phonons is supressed and the dynamics only involves phonon hopping, thus combinations $aa$ or $a^\dagger a^\dagger$ are discarded. 
 \begin{align*}
-    H &= \sum_n \omega\,a_n^\dagger a_n +2\, \sum_{n,m} \frac{U_{n,m}}{m\omega}\,a_n^\dagger a_m\\
+    H &= \sum_n \omega\,a_n^\dagger a_n + \sum_{n,m} \frac{U_{n,m}}{m\omega}\,a_n^\dagger a_m\\
     &=\vcentcolon\sum_n \omega\,a_n^\dagger a_n +\sum_{n,m} \tilde{U}_{n,m}\,a_n^\dagger a_m
 \end{align*}
 
