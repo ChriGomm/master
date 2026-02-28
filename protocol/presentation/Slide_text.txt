@@ -1,3 +1,9 @@
+title slide:
+Rydberg atom \\in optical tweezer
+motional degrees \\of freedom $\frac{1}{\sqrt{2m\omega}}\,\left(a_i+a_i^\dagger\right)$
+
+Christian Gommeringer; superviors: Beatriz Olmos \\Mathias B. M. Svendsen
+
 
 Slide Classification and Robustness:
 
@@ -40,7 +46,7 @@ $H=\sum_i\frac{\mathbf{P}_i^2}{2m}+\frac12\,m\omega\,\delta\mathbf{R}_i+\sum_{i\
 
 $H=H_\text{Trap}+\sum_{i\neq j}V(\mathbf{R}_i-\mathbf{R}_j)\;\rightarrow\; H_\text{eff}=\sum_{i,j}U_{i,j}a^\dagger_ia_j$
 
-for $i\neq j$: $U_{ij}=\frac{1}{m\omega}\,\frac{\partial^2V(\mathbf{R}_i-\mathbf{R}_j)}{\partial\delta\mathbf{R}_i\partial\delta\mathbf{R}_j}$
+for $i\neq j$: $U^{a,b}_{ij}=\frac{1}{m\omega}\,\frac{\partial^2V(\mathbf{R}^A_i-\mathbf{R}^B_j)}{\partial\delta\mathbf{R}^A_i\partial\delta\mathbf{R}^B_j}$
 
 $\delta\mathbf{R}=\frac{1}{\sqrt{2m\omega}}\,(\mathbf{a}+\mathbf{a}^\dagger)$
 
@@ -73,8 +79,18 @@ $\delta\mathbf{R}=\frac{1}{\sqrt{2m\omega}}\,(\mathbf{a}+\mathbf{a}^\dagger)$
 \end{itemize}\end{itemize}
 
 $n_i=\ket{1_i}\bra{1_i},\quad $
+
 $\delta R^{x/y}_i=\frac{1}{\sqrt{2m\omega}}\,\left(a^{x/y}_i+(a_i^{x/y})^\dagger\right)$
 
+imposing \textbf{chiral symmetry}:\\sublattices (,) can not\\interact with each other
+
+$$H_\text{eff}=\sum_{\substack{i,j=1\\c,d\in\{a,b\}}}^{N/2}U_{i,j}^{c,d}\,c^\dagger_id_j$$
+
+$$H_\text{eff}=\sum_{i,j}U_{i,j}^{a,b}\,a^\dagger_ib_j+\text{h.c.}$$
+
+$\delta R_i=\frac{1}{\sqrt{2m\omega}}\,\left(c_i+c_i^\dagger\right)$\\$c\in\{a,b\}$
+
+\begin{align*}\delta R_i&=\frac{1}{\sqrt{2m\omega}}\,\left(c_i+c_i^\dagger\right)\\c&\in\{a,b\}\end{align*}
 
 slide transport
 
@@ -104,4 +120,17 @@ $H = H_\text{sp}+ H_\text{sp-ph}$\begin{itemize}
 $H = H_\text{sp}+ H_\text{sp-ph}$\begin{itemize}
 \item What effect has the spin-phonon coupling on transport performance?
 \item Is it possible to transport both spins and phonons simultaneously?
+\end{itemize}\end{itemize}
+
+\textbf{Summary}
+\begin{itemize}
+\item topological phases for motion in Rydberg tweezer arrays 
+\item can be exploited for quantum state transfer
+\end{itemize}
+
+\textbf{Outlook}
+\begin{itemize}
+\item Spin-phonon coupling:\\
+$H = H_\text{sp}+ H_\text{sp-ph}$\begin{itemize}
+\item What effect has the spin-phonon coupling on transport performance?
 \end{itemize}\end{itemize}
