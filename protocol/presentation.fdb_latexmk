@@ -1,14 +1,14 @@
 # Fdb version 4
-["biber presentation"] 1772131220.51742 "presentation.bcf" "presentation.bbl" "presentation" 1772131391.30838 0
-  "presentation.bcf" 1772131391.24731 107850 acc11d4c349f27f7d71b8bda7ac7bb54 "pdflatex"
+["biber presentation"] 1772131220.51742 "presentation.bcf" "presentation.bbl" "presentation" 1772296141.756 0
+  "presentation.bcf" 1772296141.70843 107850 acc11d4c349f27f7d71b8bda7ac7bb54 "pdflatex"
   "sources2.bib" 1772130599.7381 18457 1b3992d1613db281a985ad76d23bee91 ""
   (generated)
   "presentation.bbl"
   "presentation.blg"
   (rewritten before read)
-["pdflatex"] 1772131390.12376 "/home/christian/Documents/master/protocol/presentation.tex" "presentation.pdf" "presentation" 1772131391.3086 0
+["pdflatex"] 1772296140.89809 "/home/christian/Documents/master/protocol/presentation.tex" "presentation.pdf" "presentation" 1772296141.75618 0
   "/etc/texmf/web2c/texmf.cnf" 1758895203.64774 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/christian/Documents/master/protocol/presentation.tex" 1772131335.07077 1968 fd02317f5019aac6951bb4e61c2c452d ""
+  "/home/christian/Documents/master/protocol/presentation.tex" 1772296140.73744 2033 4facec30aa25307eb9a243cd90efde8f ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -37,7 +37,6 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi10.tfm" 1336178347 1696 aaa5bbd1f47f001247d42218ce371101 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm" 1336178347 1676 fb6c6a335484692abff897d6e8965829 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi9.tfm" 1336178347 1700 6cce8f71de5b3d676f417bc2a77d1db2 ""
-  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1248133631 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb" 1248133631 24393 3b7eb51a67a0a62aec5849271bdb9c2e ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb" 1248133631 24420 52dbb8e8aa0069a1b987309557f8d303 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb" 1248133631 24373 a91d375736817a75026663adcb2190c1 ""
@@ -235,18 +234,17 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1758895216.07337 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1758895244 8213773 f45dae838239d55b66681526ece92c70 ""
-  "presentation.aux" 1772131391.24531 2437 42f11296b37398866f0dd84c27b7b048 "pdflatex"
+  "presentation.aux" 1772296141.70709 2221 0c8b5e7a12d1bbf15f9929f6dbb24f4d "pdflatex"
   "presentation.bbl" 1772131220.90571 3861 297e7f87579784c34392ba0fd2556a34 "biber presentation"
-  "presentation.nav" 1772131391.24805 1427 a03891294b4654ff5a8751351abb7a7d "pdflatex"
-  "presentation.out" 1772131391.24631 332 778f2cf29dd2081359fe21112bbbda2d "pdflatex"
-  "presentation.run.xml" 1772131391.24805 2456 caa783768e3af11975e2189a17ee1b35 "pdflatex"
-  "presentation.tex" 1772131335.07077 1968 fd02317f5019aac6951bb4e61c2c452d ""
-  "presentation/Classification.pdf" 1772129456.08311 67457 4ac0e8e1282b0d3a98d732d55540bed5 ""
-  "presentation/outlook1.pdf" 1772129634.6459 56367 d44b9894c6cac5d1249a716dc385ecfb ""
-  "presentation/results.pdf" 1772129527.67965 334548 62375847374dc19ac0c23fe12191d11c ""
-  "presentation/rice_mele_transport.pdf" 1772131389.72652 89636 76a0db85275aa6c9e1ae5f150eca3477 ""
-  "presentation/slide_model.pdf" 1772129093.26139 100346 94d6d94e020d12b3a33184847e9b046c ""
-  "presentation/ssh_model.pdf" 1772130095.40232 315632 556bf8681e24d364b207b3a3990d5232 ""
+  "presentation.nav" 1772296141.70942 1283 bfdf4044325306ab36440324125d785e "pdflatex"
+  "presentation.out" 1772296141.70759 421 9b5595c51004ae2e3e48d95f5101f9a1 "pdflatex"
+  "presentation.run.xml" 1772296141.70942 2456 caa783768e3af11975e2189a17ee1b35 "pdflatex"
+  "presentation.tex" 1772296140.73744 2033 4facec30aa25307eb9a243cd90efde8f ""
+  "presentation/outlook1.pdf" 1772283216.68314 49235 a3b3d160c6b7279cce6f223e4d771566 ""
+  "presentation/slide_model2.pdf" 1772295800.79712 128045 c58700076fb23ce8dd116e529c375f6b ""
+  "presentation/slide_odd_transfer.pdf" 1772291449.33155 71752 f831434777e63dfdcb340a60fe49dbfe ""
+  "presentation/ssh_model2.pdf" 1772283652.98278 40251 c5d35fe4979a39df99e9d9bc3b0180eb ""
+  "presentation/title.pdf" 1772291756.28044 2861042 5da1c5a91e578b15418995b8bba9d640 ""
   (generated)
   "presentation.aux"
   "presentation.bcf"

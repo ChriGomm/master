@@ -25,8 +25,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.9779745"
-     inkscape:cx="246.71704"
-     inkscape:cy="105.91643"
+     inkscape:cx="247.2226"
+     inkscape:cy="146.86741"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -37,7 +37,10 @@
        y="0"
        width="128"
        height="79.999992"
-       id="page8122" /><inkscape:page
+       id="page8122"
+       inkscape:export-filename="Classification.pdf"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" /><inkscape:page
        x="138"
        y="0"
        width="68.202934"

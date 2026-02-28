@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.26)  26 FEB 2026 19:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.26)  28 FEB 2026 17:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -986,16 +986,27 @@ Package biblatex Info: ... file 'presentation.bbl' found.
  (./presentation.bbl)
 Package biblatex Info: Reference section=0 on input line 21.
 Package biblatex Info: Reference segment=0 on input line 21.
- (./presentation.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-]
-<presentation/ssh_model.pdf, id=126, 364.19528pt x 227.62204pt>
-File: presentation/ssh_model.pdf Graphic file (type pdf)
-<use presentation/ssh_model.pdf>
-Package pdftex.def Info: presentation/ssh_model.pdf  used on input line 54.
+ (./presentation.nav)
+<presentation/title.pdf, id=55, 364.19528pt x 227.62204pt>
+File: presentation/title.pdf Graphic file (type pdf)
+<use presentation/title.pdf>
+Package pdftex.def Info: presentation/title.pdf  used on input line 26.
 (pdftex.def)             Requested size: 364.1944pt x 227.62148pt.
 
-Overfull \hbox (34.14224pt too wide) in paragraph at lines 54--54
+Overfull \hbox (29.8745pt too wide) in paragraph at lines 26--26
+[]| []  
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+ <./presentation/title.pdf>]
+<presentation/ssh_model2.pdf, id=190, 364.19528pt x 227.62204pt>
+File: presentation/ssh_model2.pdf Graphic file (type pdf)
+<use presentation/ssh_model2.pdf>
+Package pdftex.def Info: presentation/ssh_model2.pdf  used on input line 54.
+(pdftex.def)             Requested size: 364.1944pt x 227.62148pt.
+
+Overfull \hbox (29.8745pt too wide) in paragraph at lines 54--54
 []| []  
  []
 
@@ -1005,31 +1016,14 @@ Overfull \vbox (4.57507pt too high) detected at line 54
 
 [2
 
- <./presentation/ssh_model.pdf>]
-<presentation/Classification.pdf, id=1651, 364.19528pt x 227.62204pt>
-File: presentation/Classification.pdf Graphic file (type pdf)
-<use presentation/Classification.pdf>
-Package pdftex.def Info: presentation/Classification.pdf  used on input line 60.
+ <./presentation/ssh_model2.pdf>]
+<presentation/slide_model2.pdf, id=291, 364.19528pt x 227.62204pt>
+File: presentation/slide_model2.pdf Graphic file (type pdf)
+<use presentation/slide_model2.pdf>
+Package pdftex.def Info: presentation/slide_model2.pdf  used on input line 67.
 (pdftex.def)             Requested size: 364.1944pt x 227.62148pt.
 
-Overfull \hbox (34.14224pt too wide) in paragraph at lines 60--60
-[]| []  
- []
-
-
-Overfull \vbox (4.57507pt too high) detected at line 60
- []
-
-[3
-
- <./presentation/Classification.pdf>]
-<presentation/slide_model.pdf, id=1772, 364.19528pt x 227.62204pt>
-File: presentation/slide_model.pdf Graphic file (type pdf)
-<use presentation/slide_model.pdf>
-Package pdftex.def Info: presentation/slide_model.pdf  used on input line 67.
-(pdftex.def)             Requested size: 364.1944pt x 227.62148pt.
-
-Overfull \hbox (34.14224pt too wide) in paragraph at lines 67--67
+Overfull \hbox (29.8745pt too wide) in paragraph at lines 67--67
 []| []  
  []
 
@@ -1037,13 +1031,13 @@ Overfull \hbox (34.14224pt too wide) in paragraph at lines 67--67
 Overfull \vbox (4.57507pt too high) detected at line 67
  []
 
-[4
+[3
 
- <./presentation/slide_model.pdf>]
-<presentation/rice_mele_transport.pdf, id=1907, 364.19528pt x 190.63347pt>
-File: presentation/rice_mele_transport.pdf Graphic file (type pdf)
-<use presentation/rice_mele_transport.pdf>
-Package pdftex.def Info: presentation/rice_mele_transport.pdf  used on input line 74.
+ <./presentation/slide_model2.pdf>]
+<presentation/slide_odd_transfer.pdf, id=446, 364.19528pt x 190.63347pt>
+File: presentation/slide_odd_transfer.pdf Graphic file (type pdf)
+<use presentation/slide_odd_transfer.pdf>
+Package pdftex.def Info: presentation/slide_odd_transfer.pdf  used on input line 74.
 (pdftex.def)             Requested size: 364.1944pt x 190.63298pt.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 74.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1057,37 +1051,20 @@ LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inpu
  (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
-Overfull \hbox (34.14224pt too wide) in paragraph at lines 74--74
+Overfull \hbox (29.8745pt too wide) in paragraph at lines 74--74
 []| [] 
  []
 
-[5
+[4
 
- <./presentation/rice_mele_transport.pdf>]
-<presentation/results.pdf, id=2208, 364.19528pt x 227.62204pt>
-File: presentation/results.pdf Graphic file (type pdf)
-<use presentation/results.pdf>
-Package pdftex.def Info: presentation/results.pdf  used on input line 80.
-(pdftex.def)             Requested size: 364.1944pt x 227.62148pt.
-
-Overfull \hbox (34.14224pt too wide) in paragraph at lines 80--80
-[]| []  
- []
-
-
-Overfull \vbox (4.57507pt too high) detected at line 80
- []
-
-[6
-
- <./presentation/results.pdf>]
-<presentation/outlook1.pdf, id=2289, 364.19528pt x 227.62204pt>
+ <./presentation/slide_odd_transfer.pdf>]
+<presentation/outlook1.pdf, id=571, 364.19528pt x 227.62204pt>
 File: presentation/outlook1.pdf Graphic file (type pdf)
 <use presentation/outlook1.pdf>
 Package pdftex.def Info: presentation/outlook1.pdf  used on input line 86.
 (pdftex.def)             Requested size: 364.1944pt x 227.62148pt.
 
-Overfull \hbox (34.14224pt too wide) in paragraph at lines 86--86
+Overfull \hbox (29.8745pt too wide) in paragraph at lines 86--86
 []| []  
  []
 
@@ -1095,7 +1072,7 @@ Overfull \hbox (34.14224pt too wide) in paragraph at lines 86--86
 Overfull \vbox (4.57507pt too high) detected at line 86
  []
 
-[7
+[5
 
  <./presentation/outlook1.pdf>]
 \tf@nav=\write7
@@ -1113,24 +1090,24 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 778F2CF29DD2081359FE21112BBBDA2D;332.
+(rerunfilecheck)             Checksum: 9B5595C51004AE2E3E48D95F5101F9A1;421.
 Package logreq Info: Writing requests to 'presentation.run.xml'.
 \openout1 = `presentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31089 strings out of 474222
- 602870 string characters out of 5748733
- 1939975 words of memory out of 5000000
- 52773 multiletter control sequences out of 15000+600000
+ 30946 strings out of 474222
+ 599086 string characters out of 5748733
+ 1935975 words of memory out of 5000000
+ 52634 multiletter control sequences out of 15000+600000
  568469 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,20n,123p,1161b,1740s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb>
-Output written on presentation.pdf (7 pages, 928967 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb>
+Output written on presentation.pdf (5 pages, 3188727 bytes).
 PDF statistics:
- 2375 PDF objects out of 2487 (max. 8388607)
- 1595 compressed objects within 16 object streams
- 20 named destinations out of 1000 (max. 500000)
- 171 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 640 PDF objects out of 1000 (max. 8388607)
+ 442 compressed objects within 5 object streams
+ 16 named destinations out of 1000 (max. 500000)
+ 130 words of extra memory for PDF output out of 10000 (max. 10000000)
 

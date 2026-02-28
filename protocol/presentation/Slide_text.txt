@@ -12,6 +12,8 @@ Topology at the example of the ssh-model
 
 $H_\text{ssh}= \sum_{i=1}^{N/2}\left[v\,a_{i}^\dagger b_{i}+ w\,b_{i}^\dagger a_{i+1}\right]+\text{h.c.}$
 
+$$H_\text{ssh}= \sum_{i=1}^{N/2}\left[v\,c_{A_i}^\dagger c_{B_i}+ w\,c_{B_i}^\dagger c_{A_{i+1}}\right]+\text{h.c.}$$
+
 slide Application Quantum Transport
 
 \begin{itemize}\item Adiabatic transfer in chain with odd number of atoms\item Rice-Mele transport\end{itemize}
@@ -20,9 +22,11 @@ using the geometry properties of the chain:\\ mirroring couplings $\rightarrow$ 
 
 using a changing energy offset between the sublattices,\\ i.e. transfer between sublattices $\rightarrow$ transfer between edges
 
+Adiabatic and periodic change\\ in paremeters: $b(t)$, $h(t)$, $\Delta(t)$
+
 slide system
 
-preparing the atoms in the $\ket{1}$ levels:
+preparing the atoms in the Rydberg states:
 
 $H=\sum_i\left(V(\mathbf{r}_i)+\sum_{j\in\{i,i+1\}}\frac{\partial V(\mathbf{r}_i)}{\partial \delta\mathbf{R}_j}\,\delta\mathbf{R}_j +\sum_{j_1,j_2\in\{i,i+1\}}\frac{\partial^2V(\mathbf{r}_i)}{\partial\delta\mathbf{R}_{j_1}\partial\delta\mathbf{R}_{j_2}}\,\delta\mathbf{R}_{j_1}\delta\mathbf{R}_{j_2} \right)\,n_i\,n_{i+1}$
 
@@ -33,6 +37,12 @@ $H=\sum_i\frac{\mathbf{P}_i^2}{2m}+\frac12\,m\omega\,\delta\mathbf{R}_i+\sum_{i\
 $\rightarrow H_\text{eff}=\sum_i\omega a^\dagger_i a_i+\sum_{i,j}U_{i,j}a^\dagger_ia_j$
 
 $H=\sum_i\frac{\mathbf{P}_i^2}{2m}+\frac12\,m\omega\,\delta\mathbf{R}_i+\sum_{i\neq j}V(\mathbf{R}_i-\mathbf{R}_j)\,n_in_j\;\rightarrow\; H_\text{eff}=\sum_{i,j}U_{i,j}a^\dagger_ia_j$
+
+$H=H_\text{Trap}+\sum_{i\neq j}V(\mathbf{R}_i-\mathbf{R}_j)\;\rightarrow\; H_\text{eff}=\sum_{i,j}U_{i,j}a^\dagger_ia_j$
+
+for $i\neq j$: $U_{ij}=\frac{1}{m\omega}\,\frac{\partial^2V(\mathbf{R}_i-\mathbf{R}_j)}{\partial\delta\mathbf{R}_i\partial\delta\mathbf{R}_j}$
+
+$\delta\mathbf{R}=\frac{1}{\sqrt{2m\omega}}\,(\mathbf{a}+\mathbf{a}^\dagger)$
 
 \textbf{1D phonons}
 \begin{itemize}
@@ -46,7 +56,32 @@ $H=\sum_i\frac{\mathbf{P}_i^2}{2m}+\frac12\,m\omega\,\delta\mathbf{R}_i+\sum_{i\
 \item two independent nearest neighbor \\ssh models
 \end{itemize}
 
-$n_i=\ket{1_i}\bra{1_i},\quad \delta R^{x/y}_i=\frac{1}{\sqrt{2m\omega}}\,\left(a^{x/y}_i+(a_i^{x/y})^\dagger\right)$
+\textbf{2D phonons}
+\begin{itemize}
+\item relevant symmetry only if phonon \\directions are decoupled
+\item two independent nearest neighbor \\ssh models
+\end{itemize}
+
+\begin{itemize}
+\item \textbf{1D phonons:}
+\begin{itemize}
+\item can be mapped to the \\extended ssh model
+\end{itemize}
+\item \textbf{2D phonons:}
+\begin{itemize}
+\item two independent nearest neighbor \\ssh models
+\end{itemize}\end{itemize}
+
+$n_i=\ket{1_i}\bra{1_i},\quad $
+$\delta R^{x/y}_i=\frac{1}{\sqrt{2m\omega}}\,\left(a^{x/y}_i+(a_i^{x/y})^\dagger\right)$
+
+
+slide transport
+
+\begin{itemize}
+\item adiabatic mirroring of couplings \\leads to mirrored edge \\excitation
+\item Transfer protected by symmetries \\and the bulk gap
+\end{itemize}
 
 
 slide outlook
@@ -55,3 +90,18 @@ slide outlook
 \rightarrow H_\text{eff}&=\sum_{i}V(\mathbf{R}_i-\mathbf{R}_{i+1})\,\sigma^+_i\sigma^-_{i+1}+\text{h.c.}\\
 &+\sum_{i}\frac{U_{i,i+1}}{2}\,\left(a_i^\dagger a_{i+1}+a_{i+1}^\dagger a_{i}-a_i^\dagger a_{i}-a_{i+1}^\dagger a_{i+1}\right)\,\sigma^+_i\sigma^-_{i+1}+\text{h.c.}\end{align*}
 
+\begin{itemize}
+\item Go to higher dimensional lattices, e.g. transport on the closed surface of a 2D-lattice
+\item Spin-phonon coupling:\\
+$H = H_\text{sp}+ H_\text{sp-ph}$\begin{itemize}
+\item What effect has the spin-phonon coupling on transport performance?
+\item Is it possible to transport both spins and phonons simultaneously?
+\end{itemize}\end{itemize}
+
+\begin{itemize}
+\item \textbf{summary}
+\item Spin-phonon coupling:\\
+$H = H_\text{sp}+ H_\text{sp-ph}$\begin{itemize}
+\item What effect has the spin-phonon coupling on transport performance?
+\item Is it possible to transport both spins and phonons simultaneously?
+\end{itemize}\end{itemize}
