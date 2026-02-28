@@ -99,6 +99,7 @@ slide transport
 \item Transfer protected by symmetries \\and the bulk gap
 \end{itemize}
 
+S. Raupach et al., \textit{Robust topological quantum state transfer with long-range interactions in rydberg arrays}, Jan. 27, 2026
 
 slide outlook
 
