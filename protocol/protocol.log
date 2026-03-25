@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.26)  26 FEB 2026 18:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.11)  25 MAR 2026 16:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -138,9 +138,9 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language76). Reported on input line 105.
+(babel)             (\language28). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language76). Reported on input line 108.
+(babel)             (\language28). Reported on input line 108.
 )) (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 11.
@@ -1022,7 +1022,7 @@ Package pdftex.def Info: pictures/lattice_def.pdf  used on input line 137.
  [4 <./pictures/lattice_def.pdf>]
 Underfull \vbox (badness 1910) has occurred while \output is active []
 
- [5] [6] [7] [8]) (./numerical_results_only_phonons.tex
+ [5] [6] [7] [8]) (./numerical_results_only_phonons.tex [9]
 Underfull \hbox (badness 10000) in paragraph at lines 23--27
 
  []
@@ -1032,33 +1032,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--27
 
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 35--40
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 35--40
 
  []
 
-<pictures/aligned_dipoles_in_plane_sheer.pdf, id=134, 286.45325pt x 265.8624pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--40
+
+ []
+
+[10]
+<pictures/aligned_dipoles_in_plane_sheer.pdf, id=141, 286.45325pt x 265.8624pt>
 File: pictures/aligned_dipoles_in_plane_sheer.pdf Graphic file (type pdf)
 <use pictures/aligned_dipoles_in_plane_sheer.pdf>
 Package pdftex.def Info: pictures/aligned_dipoles_in_plane_sheer.pdf  used on input line 52.
 (pdftex.def)             Requested size: 286.45253pt x 265.86174pt.
-<pictures/aligned_dipoles_in_plane_sheer_spectrum_chrial.pdf, id=135, 380.27673pt x 262.35152pt>
+<pictures/aligned_dipoles_in_plane_sheer_spectrum_chrial.pdf, id=142, 380.27673pt x 262.35152pt>
 File: pictures/aligned_dipoles_in_plane_sheer_spectrum_chrial.pdf Graphic file (type pdf)
 <use pictures/aligned_dipoles_in_plane_sheer_spectrum_chrial.pdf>
 Package pdftex.def Info: pictures/aligned_dipoles_in_plane_sheer_spectrum_chrial.pdf  used on input line 60.
 (pdftex.def)             Requested size: 380.2758pt x 262.35086pt.
-<pictures/ads_top_states_b0.51.pdf, id=138, 433.02489pt x 636.54652pt>
+<pictures/ads_top_states_b0.51.pdf, id=145, 433.02489pt x 636.54652pt>
 File: pictures/ads_top_states_b0.51.pdf Graphic file (type pdf)
 <use pictures/ads_top_states_b0.51.pdf>
 Package pdftex.def Info: pictures/ads_top_states_b0.51.pdf  used on input line 65.
 (pdftex.def)             Requested size: 433.02382pt x 636.54497pt.
-[10 <./pictures/aligned_dipoles_in_plane_sheer.pdf>]
-<pictures/ads_states_for_chain_lengths.pdf, id=186, 459.31586pt x 603.12007pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11 <./pictures/aligned_dipoles_in_plane_sheer.pdf>]
+<pictures/ads_states_for_chain_lengths.pdf, id=191, 459.31586pt x 603.12007pt>
 File: pictures/ads_states_for_chain_lengths.pdf Graphic file (type pdf)
 <use pictures/ads_states_for_chain_lengths.pdf>
 Package pdftex.def Info: pictures/ads_states_for_chain_lengths.pdf  used on input line 70.
@@ -1071,23 +1075,23 @@ Overfull \hbox (9.7615pt too wide) in paragraph at lines 70--71
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11 <./pictures/aligned_dipoles_in_plane_sheer_spectrum_chrial.pdf>]
+ [12 <./pictures/aligned_dipoles_in_plane_sheer_spectrum_chrial.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12 <./pictures/ads_top_states_b0.51.pdf>]
+ [13 <./pictures/ads_top_states_b0.51.pdf>]
 Overfull \vbox (2.25235pt too high) has occurred while \output is active []
 
- [13 <./pictures/ads_states_for_chain_lengths.pdf>]) (./spin_phonon_coupling.tex [14
+ [14 <./pictures/ads_states_for_chain_lengths.pdf>]) (./spin_phonon_coupling.tex [15
 
 
-] [15]
-<pictures/SWT_calc.pdf, id=371, 369.75124pt x 211.02716pt>
+]
+<pictures/SWT_calc.pdf, id=372, 369.75124pt x 211.02716pt>
 File: pictures/SWT_calc.pdf Graphic file (type pdf)
 <use pictures/SWT_calc.pdf>
 Package pdftex.def Info: pictures/SWT_calc.pdf  used on input line 49.
 (pdftex.def)             Requested size: 369.75032pt x 211.02664pt.
  [16 <./pictures/SWT_calc.pdf>] [17]
-<pictures/rice_mele_protocol.pdf, id=452, 386.2742pt x 380.71687pt>
+<pictures/rice_mele_protocol.pdf, id=453, 386.2742pt x 380.71687pt>
 File: pictures/rice_mele_protocol.pdf Graphic file (type pdf)
 <use pictures/rice_mele_protocol.pdf>
 Package pdftex.def Info: pictures/rice_mele_protocol.pdf  used on input line 98.
@@ -1097,18 +1101,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--109
 
  []
 
-<pictures/spin_phonon_traj_colormap_phintc_rescale100.png, id=567, 393.26926pt x 387.96945pt>
+<pictures/spin_phonon_traj_colormap_phintc_rescale100.png, id=568, 393.26926pt x 387.96945pt>
 File: pictures/spin_phonon_traj_colormap_phintc_rescale100.png Graphic file (type png)
 <use pictures/spin_phonon_traj_colormap_phintc_rescale100.png>
 Package pdftex.def Info: pictures/spin_phonon_traj_colormap_phintc_rescale100.png  used on input line 113.
 (pdftex.def)             Requested size: 393.2683pt x 387.96849pt.
-<pictures/fidelity_coupling_strengths.pdf, id=569, 225.18973pt x 194.99455pt>
+<pictures/fidelity_coupling_strengths.pdf, id=570, 225.18973pt x 194.99455pt>
 File: pictures/fidelity_coupling_strengths.pdf Graphic file (type pdf)
 <use pictures/fidelity_coupling_strengths.pdf>
 Package pdftex.def Info: pictures/fidelity_coupling_strengths.pdf  used on input line 120.
 (pdftex.def)             Requested size: 225.18916pt x 194.99406pt.
 [19 <./pictures/spin_phonon_traj_colormap_phintc_rescale100.png>]
-<pictures/spin_phonon_traj_lines_phintc_rescale100_2ph.png, id=581, 432.4155pt x 373.6359pt>
+<pictures/spin_phonon_traj_lines_phintc_rescale100_2ph.png, id=582, 432.4155pt x 373.6359pt>
 File: pictures/spin_phonon_traj_lines_phintc_rescale100_2ph.png Graphic file (type png)
 <use pictures/spin_phonon_traj_lines_phintc_rescale100_2ph.png>
 Package pdftex.def Info: pictures/spin_phonon_traj_lines_phintc_rescale100_2ph.png  used on input line 127.
@@ -1128,18 +1132,18 @@ Package logreq Info: Writing requests to 'protocol.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29333 strings out of 474222
- 556629 string characters out of 5748733
+ 29334 strings out of 474222
+ 556640 string characters out of 5748732
  1960975 words of memory out of 5000000
  51133 multiletter control sequences out of 15000+600000
  571150 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,20n,107p,10945b,1777s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2074.pfb>
-Output written on protocol.pdf (25 pages, 1556011 bytes).
+Output written on protocol.pdf (25 pages, 1557070 bytes).
 PDF statistics:
- 763 PDF objects out of 1000 (max. 8388607)
- 449 compressed objects within 5 object streams
- 62 named destinations out of 1000 (max. 500000)
+ 764 PDF objects out of 1000 (max. 8388607)
+ 450 compressed objects within 5 object streams
+ 63 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

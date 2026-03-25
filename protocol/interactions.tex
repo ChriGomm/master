@@ -307,6 +307,36 @@ This can be expressed with respect to the full eigenvectors of the Hamiltonian v
     &= \frac{1}{2\pi i}  \sum_i\int_{\text{BZ}} dk\,\left(\bra{h_{1i}} \partial_k\ket{h_{1i}}-\bra{h_{2i}}\partial_k \ket{h_{2i}}\right)
 \end{align*}
 The quantity $\sum_i\bra{\Gamma\psi^-_i}\partial_k\ket{\psi^-_i}$ can be related to a polarisation \cite{mondragon-shem_topological_2014}.
+
+
+\section*{Time-reversal symmetry}
+Time reversal symmetry is represented by an anti-unitary operator $T$. The effect of time-reversal on an operator is the following.
+\begin{align*}
+    \hat{O}&\rightarrow T\hat{O}T^{-1},
+\end{align*} 
+with $T^{-1}=T^\dagger$, as the norm of vectors has to be conserved. $T$ can be decomposed into two operators $T=\tau K$, where $K$ is the complex conjugation operator acting on everything to the right. $T$ can satisfy one of conditions
+\begin{align*}
+    T^2=\pm1
+\end{align*}
+For spin-less particles in real space usually $\tau=\text{id}$ and $T^2=1$, whereas for particles with spin $\tau=-i\sigma_y$ can be chosen in real space, which fulfills $T^2=-1$.\\
+Take a look at the momentum space Hamiltonian without spin degrees of freedom
+\begin{align*}
+    H &= \sum_\mathbf{k} H(\mathbf{k})\,a_\mathbf{k}^\dagger a_\mathbf{k}\\
+    \text{with}\quad a_\mathbf{k}&=\frac{1}{\sqrt{N^d}}\,\sum_\mathbf{R} e^{-i\mathbf{k}\mathbf{R}}\,a_\mathbf{R}
+\end{align*}
+Time-reversal transforms the operators according to
+\begin{align*}
+    Ta_\mathbf{R}T^{-1}&=a_{\mathbf{R}}\\
+    \Rightarrow\quad Ta_\mathbf{k}T^{-1}&=a_{-\mathbf{k}}
+\end{align*}
+Symmetry regarding time-reversal ($H = THT^{-1}$) has thus the form
+\begin{align*}
+    H &= THT^{-1}\\
+    &= \sum_\mathbf{k} H^*(\mathbf{k})\,a_{-\mathbf{k}}^\dagger a_{-\mathbf{k}}\\
+    &= \sum_\mathbf{k} H^*(-\mathbf{k})\,a_\mathbf{k}^\dagger a_\mathbf{k}\\
+    \iff\quad H(\mathbf{k})&= H^*(-\mathbf{k})
+\end{align*}
+
 % As $q$ is unitary, $q$ and $q^\dagger$ can be simultaneaously diagonalized.
 % Labeling the eigenvalues and eigenstates of $q$ as $q_i$ and $\ket{q_i}$ respectively, a basis of Q can be constructed that preserves the block off-diagonal structure. The basis is split into two sets A and B,
 % \begin{align*}
