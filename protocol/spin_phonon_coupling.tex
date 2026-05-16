@@ -257,3 +257,78 @@ This might be not due to an erroneous derivation of the momentum space Hamiltoni
 \item Is it possible to transport both spins and phonons simultaneously?
 \end{itemize}
 \end{itemize}
+\newpage
+\subsection*{Spin-phonon coupling} 
+$$H=\sum_j H_\text{ph}^{j,j+1} a_j^\dagger a_{j+1} + \text{h.c.}$$
+with 
+$$H_\text{ph}^{j,j+1}=V_{j,j+1}^\text{der}\left(p_j^\dagger p_{j+1}+p_{j+1}^\dagger p_{j}-p_{j}^\dagger p_{j}-p_{j+1}^\dagger p_{j+1}\right)$$
+$a_j$ and $p_j$ are spin and phonon annihilation operators respectively.
+
+\begin{figure}[H]
+    \hspace*{-2.5cm}
+    \includegraphics{pictures/chain4_only_coupling.pdf}
+    \caption{\textbf{Evolution with only spin-phonon coupling term.}}
+    % \label{fig:fidelity}
+\end{figure}
+\begin{figure}[H]
+    \hspace*{-2.5cm}
+    \includegraphics{pictures/chain4_1spto1tenthcoupling.pdf}
+    \caption{\textbf{Evolution with full Hamiltonian ratio spin only: coupling 10:1.}}
+    % \label{fig:fidelity}
+\end{figure}
+\begin{figure}[H]
+    \hspace*{-2.5cm}
+    \includegraphics{pictures/chain4_1spto1coupling.pdf}
+    \caption{\textbf{Evolution with full Hamiltonian ratio spin only: coupling 1:1.}}
+    % \label{fig:fidelity}
+\end{figure}
+\begin{figure}[H]
+    \hspace*{-2.5cm}
+    \includegraphics{pictures/chain4_1spto10coupling.pdf}
+    \caption{\textbf{Evolution with full Hamiltonian ratio spin only: coupling 1:10.}}
+    % \label{fig:fidelity}
+\end{figure}
+\begin{figure}[H]
+    \hspace*{-2.5cm}
+    \includegraphics[scale=1]{pictures/interaction_ricemele_chain4.pdf}
+    \caption{\textbf{Interaction strengths during Rice-Mele scheme.}}
+    % \label{fig:fidelity}
+\end{figure}
+\begin{figure}[H]
+    \hspace*{-2.5cm}
+    \includegraphics{pictures/chain4_ricemele_1spto10oupling.pdf}
+    \caption{\textbf{Rice-Mele scheme.}}
+    % \label{fig:fidelity}
+\end{figure}
+% \begin{figure}[H]
+%     \begin{subfig}{0.5\textwidth}
+%         \includegraphics[scale=1]{pictures/chain4_ricemele_1spto10oupling_doubletime_10phonons.pdf.pdf}
+%         \caption{\textbf{Rice-Mele scheme with longer time evolution.}}
+%     \end{subfig}
+%     \begin{subfig}{0.5\textwidth}
+%         \includegraphics[scale=1]{pictures/chain4_ricemele_1spto10oupling_doubletime_10phonons_Delta10.pdf}
+%         \caption{\textbf{Rice-Mele scheme with longer time evolution with $\Delta$ 10 times higher.}}
+%     \end{subfig}
+% \end{figure}
+\begin{figure}[H]
+    \centering
+
+    % --- Left subplot ---
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{pictures/chain4_ricemele_1spto10oupling_doubletime_10phonons.pdf}
+        \caption{$\Delta=1$}
+        \label{fig:image1}
+    \end{subfigure}
+    \hfill
+    % --- Right subplot ---
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{pictures/chain4_ricemele_1spto10oupling_doubletime_10phonons_Delta10.pdf}
+        \caption{$\Delta=10$}
+        \label{fig:image2}
+    \end{subfigure}
+
+    \caption{\textbf{longer time evolution for phonon number 10.}}
+    \label{fig:both}
+\end{figure}
