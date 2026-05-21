@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.26)  7 MAY 2026 10:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.26)  20 MAY 2026 17:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/christian/Documents/master/protocol/protocol.tex
-(/home/christian/Documents/master/protocol/protocol.tex
+**/home/christian/Documents/master/protocol/documentation.tex
+(/home/christian/Documents/master/protocol/documentation.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbook.cls
@@ -1083,8 +1083,8 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
- (./protocol.aux)
-\openout1 = `protocol.aux'.
+ (./documentation.aux)
+\openout1 = `documentation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 232.
 LaTeX Font Info:    ... okay on input line 232.
@@ -1182,9 +1182,9 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 232.
- (./protocol.out) (./protocol.out)
+ (./documentation.out) (./documentation.out)
 \@outlinefile=\write5
-\openout5 = `protocol.out'.
+\openout5 = `documentation.out'.
 
 Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           Using `bookmark' together with `hyperref' is recommended,
@@ -1208,11 +1208,11 @@ File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout3 = `protocol.bcf'.
+\openout3 = `documentation.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'protocol.bbl' found.
- (./protocol.bbl)
+Package biblatex Info: ... file 'documentation.bbl' found.
+ (./documentation.bbl)
 Package biblatex Info: Reference section=0 on input line 232.
 Package biblatex Info: Reference segment=0 on input line 232.
 
@@ -1352,114 +1352,181 @@ Package pdftex.def Info: pictures/spin_phonon_traj_lines_phintc_rescale100_2ph.p
 <pictures/chain4_only_coupling.pdf, id=632, 578.16pt x 433.62pt>
 File: pictures/chain4_only_coupling.pdf Graphic file (type pdf)
 <use pictures/chain4_only_coupling.pdf>
-Package pdftex.def Info: pictures/chain4_only_coupling.pdf  used on input line 269.
+Package pdftex.def Info: pictures/chain4_only_coupling.pdf  used on input line 291.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 
-Overfull \hbox (59.69516pt too wide) in paragraph at lines 268--270
+Overfull \hbox (59.69516pt too wide) in paragraph at lines 290--292
  []|  [] 
  []
 
-<pictures/chain4_1spto1tenthcoupling.pdf, id=633, 578.16pt x 433.62pt>
-File: pictures/chain4_1spto1tenthcoupling.pdf Graphic file (type pdf)
-<use pictures/chain4_1spto1tenthcoupling.pdf>
-Package pdftex.def Info: pictures/chain4_1spto1tenthcoupling.pdf  used on input line 275.
+<pictures/chain4_spin_phonon_only.pdf, id=633, 578.16pt x 433.62pt>
+File: pictures/chain4_spin_phonon_only.pdf Graphic file (type pdf)
+<use pictures/chain4_spin_phonon_only.pdf>
+Package pdftex.def Info: pictures/chain4_spin_phonon_only.pdf  used on input line 297.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 
-Overfull \hbox (59.69516pt too wide) in paragraph at lines 274--276
- []|  [] 
- []
-
-<pictures/chain4_1spto1coupling.pdf, id=634, 578.16pt x 433.62pt>
-File: pictures/chain4_1spto1coupling.pdf Graphic file (type pdf)
-<use pictures/chain4_1spto1coupling.pdf>
-Package pdftex.def Info: pictures/chain4_1spto1coupling.pdf  used on input line 281.
-(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
-
-Overfull \hbox (59.69516pt too wide) in paragraph at lines 280--282
+Overfull \hbox (59.69516pt too wide) in paragraph at lines 296--298
  []|  [] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1062) has occurred while \output is active []
 
- [24 <./pictures/chain4_only_coupling.pdf>]
-<pictures/chain4_1spto10coupling.pdf, id=675, 578.16pt x 433.62pt>
-File: pictures/chain4_1spto10coupling.pdf Graphic file (type pdf)
-<use pictures/chain4_1spto10coupling.pdf>
-Package pdftex.def Info: pictures/chain4_1spto10coupling.pdf  used on input line 287.
+ [24]
+<pictures/chain4_free_evol_all_coupling.pdf, id=641, 578.16pt x 433.62pt>
+File: pictures/chain4_free_evol_all_coupling.pdf Graphic file (type pdf)
+<use pictures/chain4_free_evol_all_coupling.pdf>
+Package pdftex.def Info: pictures/chain4_free_evol_all_coupling.pdf  used on input line 303.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 
-Overfull \hbox (59.69516pt too wide) in paragraph at lines 286--288
+Overfull \hbox (59.69516pt too wide) in paragraph at lines 302--304
  []|  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25 <./pictures/chain4_1spto1tenthcoupling.pdf>]
-<pictures/interaction_ricemele_chain4.pdf, id=716, 433.62pt x 361.35pt>
+ [25 <./pictures/chain4_only_coupling.pdf>]
+<pictures/chain4_free_evol_1spto1tenthcoupling.pdf, id=682, 578.16pt x 433.62pt>
+File: pictures/chain4_free_evol_1spto1tenthcoupling.pdf Graphic file (type pdf)
+<use pictures/chain4_free_evol_1spto1tenthcoupling.pdf>
+Package pdftex.def Info: pictures/chain4_free_evol_1spto1tenthcoupling.pdf  used on input line 309.
+(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
+
+Overfull \hbox (59.69516pt too wide) in paragraph at lines 308--310
+ []|  [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26 <./pictures/chain4_spin_phonon_only.pdf>]
+<pictures/chain4_free_evol_1spto1coupling.pdf, id=722, 578.16pt x 433.62pt>
+File: pictures/chain4_free_evol_1spto1coupling.pdf Graphic file (type pdf)
+<use pictures/chain4_free_evol_1spto1coupling.pdf>
+Package pdftex.def Info: pictures/chain4_free_evol_1spto1coupling.pdf  used on input line 315.
+(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
+
+Overfull \hbox (59.69516pt too wide) in paragraph at lines 314--316
+ []|  [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27 <./pictures/chain4_free_evol_all_coupling.pdf>]
+<pictures/chain4_free_evol_1spto10coupling.pdf, id=774, 578.16pt x 433.62pt>
+File: pictures/chain4_free_evol_1spto10coupling.pdf Graphic file (type pdf)
+<use pictures/chain4_free_evol_1spto10coupling.pdf>
+Package pdftex.def Info: pictures/chain4_free_evol_1spto10coupling.pdf  used on input line 321.
+(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
+
+Overfull \hbox (59.69516pt too wide) in paragraph at lines 320--322
+ []|  [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28 <./pictures/chain4_free_evol_1spto1tenthcoupling.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29 <./pictures/chain4_free_evol_1spto1coupling.pdf>]
+<pictures/chain4_spin_phonon_only_mean_variance.pdf, id=853, 492.80537pt x 221.90585pt>
+File: pictures/chain4_spin_phonon_only_mean_variance.pdf Graphic file (type pdf)
+<use pictures/chain4_spin_phonon_only_mean_variance.pdf>
+Package pdftex.def Info: pictures/chain4_spin_phonon_only_mean_variance.pdf  used on input line 330.
+(pdftex.def)             Requested size: 492.80417pt x 221.9053pt.
+<pictures/chain4_spin_phonon_only_mean_variance2.pdf, id=854, 492.80537pt x 221.90585pt>
+File: pictures/chain4_spin_phonon_only_mean_variance2.pdf Graphic file (type pdf)
+<use pictures/chain4_spin_phonon_only_mean_variance2.pdf>
+Package pdftex.def Info: pictures/chain4_spin_phonon_only_mean_variance2.pdf  used on input line 336.
+(pdftex.def)             Requested size: 492.80417pt x 221.9053pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30 <./pictures/chain4_free_evol_1spto10coupling.pdf>]
+<pictures/chain4_maxima_dep_phnumb.pdf, id=895, 492.80537pt x 331.81277pt>
+File: pictures/chain4_maxima_dep_phnumb.pdf Graphic file (type pdf)
+<use pictures/chain4_maxima_dep_phnumb.pdf>
+Package pdftex.def Info: pictures/chain4_maxima_dep_phnumb.pdf  used on input line 342.
+(pdftex.def)             Requested size: 487.87883pt x 328.49565pt.
+<pictures/chain4_minima_dep_phnumb.pdf, id=896, 496.79152pt x 331.81277pt>
+File: pictures/chain4_minima_dep_phnumb.pdf Graphic file (type pdf)
+<use pictures/chain4_minima_dep_phnumb.pdf>
+Package pdftex.def Info: pictures/chain4_minima_dep_phnumb.pdf  used on input line 348.
+(pdftex.def)             Requested size: 491.82513pt x 328.49565pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31 <./pictures/chain4_spin_phonon_only_mean_variance.pdf> <./pictures/chain4_spin_phonon_only_mean_variance2.pdf>]
+<pictures/chain4_maxima_dep_phnumb2.pdf, id=952, 500.77766pt x 331.81277pt>
+File: pictures/chain4_maxima_dep_phnumb2.pdf Graphic file (type pdf)
+<use pictures/chain4_maxima_dep_phnumb2.pdf>
+Package pdftex.def Info: pictures/chain4_maxima_dep_phnumb2.pdf  used on input line 354.
+(pdftex.def)             Requested size: 495.77142pt x 328.49565pt.
+<pictures/chain4_minima_dep_phnumb2.pdf, id=953, 496.79152pt x 331.81277pt>
+File: pictures/chain4_minima_dep_phnumb2.pdf Graphic file (type pdf)
+<use pictures/chain4_minima_dep_phnumb2.pdf>
+Package pdftex.def Info: pictures/chain4_minima_dep_phnumb2.pdf  used on input line 360.
+(pdftex.def)             Requested size: 491.82513pt x 328.49565pt.
+ [32 <./pictures/chain4_maxima_dep_phnumb.pdf> <./pictures/chain4_minima_dep_phnumb.pdf>]
+<pictures/interaction_ricemele_chain4.pdf, id=1136, 433.62pt x 361.35pt>
 File: pictures/interaction_ricemele_chain4.pdf Graphic file (type pdf)
 <use pictures/interaction_ricemele_chain4.pdf>
-Package pdftex.def Info: pictures/interaction_ricemele_chain4.pdf  used on input line 293.
+Package pdftex.def Info: pictures/interaction_ricemele_chain4.pdf  used on input line 367.
 (pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [26 <./pictures/chain4_1spto1coupling.pdf>]
-<pictures/chain4_ricemele_1spto10oupling.pdf, id=756, 578.16pt x 433.62pt>
+<pictures/chain4_ricemele_1spto10oupling.pdf, id=1137, 578.16pt x 433.62pt>
 File: pictures/chain4_ricemele_1spto10oupling.pdf Graphic file (type pdf)
 <use pictures/chain4_ricemele_1spto10oupling.pdf>
-Package pdftex.def Info: pictures/chain4_ricemele_1spto10oupling.pdf  used on input line 299.
+Package pdftex.def Info: pictures/chain4_ricemele_1spto10oupling.pdf  used on input line 373.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 
-Overfull \hbox (59.69516pt too wide) in paragraph at lines 298--300
+Overfull \hbox (59.69516pt too wide) in paragraph at lines 372--374
  []|  [] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [27 <./pictures/chain4_1spto10coupling.pdf>]
-<pictures/chain4_ricemele_1spto10oupling_doubletime_10phonons.pdf, id=796, 462.52798pt x 346.89601pt>
+[33 <./pictures/chain4_maxima_dep_phnumb2.pdf> <./pictures/chain4_minima_dep_phnumb2.pdf>]
+<pictures/chain4_ricemele_1spto10oupling_doubletime_10phonons.pdf, id=1276, 462.52798pt x 346.89601pt>
 File: pictures/chain4_ricemele_1spto10oupling_doubletime_10phonons.pdf Graphic file (type pdf)
 <use pictures/chain4_ricemele_1spto10oupling_doubletime_10phonons.pdf>
-Package pdftex.def Info: pictures/chain4_ricemele_1spto10oupling_doubletime_10phonons.pdf  used on input line 319.
+Package pdftex.def Info: pictures/chain4_ricemele_1spto10oupling_doubletime_10phonons.pdf  used on input line 393.
 (pdftex.def)             Requested size: 215.78362pt x 161.83958pt.
-<pictures/chain4_ricemele_1spto10oupling_doubletime_10phonons_Delta10.pdf, id=797, 462.52798pt x 346.89601pt>
+<pictures/chain4_ricemele_1spto10oupling_doubletime_10phonons_Delta10.pdf, id=1277, 462.52798pt x 346.89601pt>
 File: pictures/chain4_ricemele_1spto10oupling_doubletime_10phonons_Delta10.pdf Graphic file (type pdf)
 <use pictures/chain4_ricemele_1spto10oupling_doubletime_10phonons_Delta10.pdf>
-Package pdftex.def Info: pictures/chain4_ricemele_1spto10oupling_doubletime_10phonons_Delta10.pdf  used on input line 327.
+Package pdftex.def Info: pictures/chain4_ricemele_1spto10oupling_doubletime_10phonons_Delta10.pdf  used on input line 401.
 (pdftex.def)             Requested size: 215.78362pt x 161.83958pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28 <./pictures/interaction_ricemele_chain4.pdf>]) [29 <./pictures/chain4_ricemele_1spto10oupling.pdf> <./pictures/chain4_ricemele_1spto10oupling_doubletime_10phonons.pdf> <./pictures/chain4_ricemele_1spto10oupling_doubletime_10phonons_Delta10.pdf>] [30
+ [34 <./pictures/interaction_ricemele_chain4.pdf>]) [35 <./pictures/chain4_ricemele_1spto10oupling.pdf> <./pictures/chain4_ricemele_1spto10oupling_doubletime_10phonons.pdf> <./pictures/chain4_ricemele_1spto10oupling_doubletime_10phonons_Delta10.pdf>] [36
 
 
-] [31] (./protocol.aux)
+] [37] (./documentation.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-Package rerunfilecheck Info: File `protocol.out' has not changed.
+Package rerunfilecheck Info: File `documentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package logreq Info: Writing requests to 'protocol.run.xml'.
-\openout1 = `protocol.run.xml'.
+Package logreq Info: Writing requests to 'documentation.run.xml'.
+\openout1 = `documentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49455 strings out of 474222
- 1118855 string characters out of 5748733
- 2181635 words of memory out of 5000000
- 70883 multiletter control sequences out of 15000+600000
+ 49536 strings out of 474222
+ 1122691 string characters out of 5748733
+ 2181660 words of memory out of 5000000
+ 70949 multiletter control sequences out of 15000+600000
  577230 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,20n,107p,10945b,1777s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2074.pfb>
-Output written on protocol.pdf (31 pages, 2343620 bytes).
+ 108i,20n,107p,10950b,1777s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2074.pfb>
+Output written on documentation.pdf (37 pages, 2591981 bytes).
 PDF statistics:
- 1061 PDF objects out of 1200 (max. 8388607)
- 579 compressed objects within 6 object streams
- 77 named destinations out of 1000 (max. 500000)
- 103 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1551 PDF objects out of 1728 (max. 8388607)
+ 707 compressed objects within 8 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 143 words of extra memory for PDF output out of 10000 (max. 10000000)
 

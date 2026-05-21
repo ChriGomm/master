@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>protocol.bcf</file>
+      <file>documentation.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>protocol.bbl</file>
+      <file>documentation.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -68,19 +68,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>protocol</infile>
+      <infile>documentation</infile>
     </cmdline>
     <input>
-      <file>protocol.bcf</file>
+      <file>documentation.bcf</file>
     </input>
     <output>
-      <file>protocol.bbl</file>
+      <file>documentation.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>protocol.bbl</file>
+      <file>documentation.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>protocol.bcf</file>
+      <file>documentation.bcf</file>
     </requires>
     <requires type="editable">
       <file>sources.bib</file>

@@ -263,6 +263,28 @@ $$H=\sum_j H_\text{ph}^{j,j+1} a_j^\dagger a_{j+1} + \text{h.c.}$$
 with 
 $$H_\text{ph}^{j,j+1}=V_{j,j+1}^\text{der}\left(p_j^\dagger p_{j+1}+p_{j+1}^\dagger p_{j}-p_{j}^\dagger p_{j}-p_{j+1}^\dagger p_{j+1}\right)$$
 $a_j$ and $p_j$ are spin and phonon annihilation operators respectively.
+\subsubsection*{Attempt of analytic solution for the time evolution (3 atoms)}
+I'm considering 3 atoms with the Hamiltonian 
+\begin{align*}
+H&=H_{12}a^\dagger b+H_{23}b^\dagger c +\text{h.c.}\\
+\text{with}\quad H_{ij}&=p_i^\dagger p_{j}+p_{j}^\dagger p_{i}-p_{i}^\dagger p_{i}-p_{j}^\dagger p_{j}
+\end{align*}
+I want to calculate the time evolution of the occupation operator $a^\dagger a$.
+$$a^\dagger a(t) = e^{iHt}a^\dagger a e^{-iHt}=\sum_n\frac{(it)^n}{n!} [H,a^\dagger a]_n=:\sum_n\frac{(it)^n}{n!}\,C_n$$
+with $[H,a^\dagger a]_n = [H,[H,a^\dagger a]_{n-1}]$.
+$$C_2 = 2 H_{12}^2 (a^\dagger a - b^\dagger b) + H_{23} H_{12} c^\dagger a + H_{12} H_{23} a^\dagger c $$ $$C_3 = (4 H_{12}^3 + H_{23}^2 H_{12}) b^\dagger a - (4 H_{12}^3 + H_{12} H_{23}^2) a^\dagger b - 3 H_{23} H_{12}^2 c^\dagger b + 3 H_{12}^2 H_{23} b^\dagger c $$
+
+$$ C_4 = (8 H_{12}^4 + 2 H_{12} H_{23}^2 H_{12}) a^\dagger a - \left(8 H_{12}^4 + 4 H_{12}^2 H_{23}^2 + 4 H_{23}^2 H_{12}^2 \right) b^\dagger b + 6 H_{23} H_{12}^2 H_{23} c^\dagger c  $$$$+ (7 H_{23} H_{12}^3 + H_{23}^3 H_{12}) c^\dagger a + (7 H_{12}^3 H_{23} + H_{12} H_{23}^3) a^\dagger c$$
+Concentrating on the odd indices one can determine a recursion relation for the coefficients of $a^\dagger b$ and $b^\dagger c$. 
+\begin{align*}
+    c_{ab}'&=H_{12}^2\,c_{ab}+c_{ab}\,(H_{12}^2+H_{23}^2)+2H_{12}\,c_{ab}^\dagger \,H_{12}-2H_{12}\,c_{bc}\,H_{23}-H_{12}H_{23}\,c_{bc}^\dagger  \\\\
+    c_{bc}'&=(H_{12}^2+H_{23}^2)\,c_{bc}+c_{bc}\,H_{23}^2+2H_{23}\,c_{bc}^\dagger \,H_{23}-2H_{12}\,c_{ab}\,H_{23}-c_{ab}^\dagger\, H_{12}H_{23} 
+\end{align*}
+By redefining the coefficients as
+$$c_{ab}=\vcentcolon H_{12}\,\alpha  ,\quad c_{bc}=\vcentcolon \beta\,H_{23}$$
+one can reach at a slightly simpler recursion relation
+$$\alpha_{n+1}=H_{12}^2\,\alpha_n +\alpha_n \,(H_{12}^2+H_{23}^2)+2\alpha_n ^\dagger \,H_{12}^2+2\beta_n\,H_{23}^2+H_{23}^2\,\beta_n^\dagger$$
+$$\beta_{n+1} = (H_{12}^2+H_{23}^2)\,\beta_n + \beta_n\, H_{23}^2 + 2H_{23}^2\,\beta_n^\dagger + 2H_{12}^2\,\alpha_n + \alpha_n^\dagger\, H_{12}^2$$
 
 \begin{figure}[H]
     \hspace*{-2.5cm}
@@ -272,22 +294,74 @@ $a_j$ and $p_j$ are spin and phonon annihilation operators respectively.
 \end{figure}
 \begin{figure}[H]
     \hspace*{-2.5cm}
-    \includegraphics{pictures/chain4_1spto1tenthcoupling.pdf}
+    \includegraphics{pictures/chain4_spin_phonon_only.pdf}
+    \caption{\textbf{Evolution with only spin-phonon coupling term.}}
+    % \label{fig:fidelity}
+\end{figure}
+\begin{figure}[H]
+    \hspace*{-2.5cm}
+    \includegraphics{pictures/chain4_free_evol_all_coupling.pdf}
+    \caption{\textbf{Summary spin evolution}}
+    % \label{fig:fidelity}
+\end{figure}
+\begin{figure}[H]
+    \hspace*{-2.5cm}
+    \includegraphics{pictures/chain4_free_evol_1spto1tenthcoupling.pdf}
     \caption{\textbf{Evolution with full Hamiltonian ratio spin only: coupling 10:1.}}
     % \label{fig:fidelity}
 \end{figure}
 \begin{figure}[H]
     \hspace*{-2.5cm}
-    \includegraphics{pictures/chain4_1spto1coupling.pdf}
+    \includegraphics{pictures/chain4_free_evol_1spto1coupling.pdf}
     \caption{\textbf{Evolution with full Hamiltonian ratio spin only: coupling 1:1.}}
     % \label{fig:fidelity}
 \end{figure}
 \begin{figure}[H]
     \hspace*{-2.5cm}
-    \includegraphics{pictures/chain4_1spto10coupling.pdf}
+    \includegraphics{pictures/chain4_free_evol_1spto10coupling.pdf}
     \caption{\textbf{Evolution with full Hamiltonian ratio spin only: coupling 1:10.}}
     % \label{fig:fidelity}
 \end{figure}
+
+
+
+\begin{figure}[H]
+    \hspace*{-2.5cm}
+    \includegraphics{pictures/chain4_spin_phonon_only_mean_variance.pdf}
+    \caption{\textbf{spin-phonon coupling only.}}
+    % \label{fig:fidelity}
+\end{figure}
+\begin{figure}[H]
+    \hspace*{-2.5cm}
+    \includegraphics{pictures/chain4_spin_phonon_only_mean_variance2.pdf}
+    % \caption{\textbf{spin-phonon coupling only.}}
+    % \label{fig:fidelity}
+\end{figure}
+\begin{figure}[H]
+    \hspace*{-2.5cm}
+    \includegraphics[scale=0.99]{pictures/chain4_maxima_dep_phnumb.pdf}
+    % \caption{\textbf{spin-phonon coupling only.}}
+    % \label{fig:fidelity}
+\end{figure}
+\begin{figure}[H]
+    \hspace*{-2.5cm}
+    \includegraphics[scale=0.99]{pictures/chain4_minima_dep_phnumb.pdf}
+    % \caption{\textbf{spin-phonon coupling only.}}
+    % \label{fig:fidelity}
+\end{figure}
+\begin{figure}[H]
+    \hspace*{-2.5cm}
+    \includegraphics[scale=0.99]{pictures/chain4_maxima_dep_phnumb2.pdf}
+    % \caption{\textbf{spin-phonon coupling only.}}
+    % \label{fig:fidelity}
+\end{figure}
+\begin{figure}[H]
+    \hspace*{-2.5cm}
+    \includegraphics[scale=0.99]{pictures/chain4_minima_dep_phnumb2.pdf}
+    % \caption{\textbf{spin-phonon coupling only.}}
+    % \label{fig:fidelity}
+\end{figure}
+
 \begin{figure}[H]
     \hspace*{-2.5cm}
     \includegraphics[scale=1]{pictures/interaction_ricemele_chain4.pdf}
