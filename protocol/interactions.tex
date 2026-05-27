@@ -14,11 +14,11 @@ As an outlook we aim to explore how the phonon topology influences transport phe
 \section*{Hamiltonian}
 I am considering the interaction term $H_I$ of a Hamiltonian of a system of $N$ particles with positions $\{\bar{\mathbf{R}}_l\}_{l\in\{1,\dots,N\}}$. It shall consist of two-body interactions, which depend on the position of the involved particles. Thus $H_I$ can be written in the form
 \begin{align*}
-    H_I(\{\bar{\mathbf{R}}_l\}) = \sum_{i,j;\;i\neq j}V_{i,j}(\bar{\mathbf{R}}_i,\bar{\mathbf{R}}_j)
+    H_I(\{\bar{\mathbf{R}}_l\}) = \sum_{i,j;\;i> j}V_{i,j}(\bar{\mathbf{R}}_i,\bar{\mathbf{R}}_j)
 \end{align*}
 In order to being able to derive the second order expansion of $H_I$, that will be needed later, in a more formal way, I write the two-body interactions as dependend on all positions.
 \begin{align*}
-    H_I(\{\bar{\mathbf{R}}_l\}) = \sum_{i,j;\;i\neq j}V_{i,j}(\{\bar{\mathbf{R}}_l\})
+    H_I(\{\bar{\mathbf{R}}_l\}) = \sum_{i,j;\;i> j}V_{i,j}(\{\bar{\mathbf{R}}_l\})
 \end{align*}
 The $V_{i,j}$ are formally functions of all positions $\{\bar{\mathbf{R}}_l\}$, i.e $V_{i,j}(\{\bar{\mathbf{R}}_l\})$. But of course they only depend on $\bar{\mathbf{R}}_i$ and $\bar{\mathbf{R}}_j$, i.e.
 \begin{align*}
@@ -34,34 +34,36 @@ Now I expand the interaction Hamiltonian in small displacements $\{\delta\mathbf
 \begin{align*}
     H_I(\{\mathbf{R}_l+\delta\mathbf{R}_l\})&=H_I(\{\mathbf{R}_l\})+\sum_n\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,\delta\mathbf{R}_n +  \frac12\sum_{n,m}\delta\mathbf{R}_n\,\frac{\partial^2 H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m\\
     &=H_I(\{\mathbf{R}_l\})+\sum_n\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,\delta\mathbf{R}_n +  \frac12\sum_{n\neq m}\delta\mathbf{R}_n\,\frac{\partial^2 H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m + \frac12\sum_{n= m}\delta\mathbf{R}_n\,\frac{\partial^2 H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m\\
-    &=H_I(\{\mathbf{R}_l\})+\sum_n\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,\delta\mathbf{R}_n +  \frac12\sum_{n\neq m}\;\sum_{i,j;\;i\neq j}\delta\mathbf{R}_n\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m  \\&+\frac12\sum_{n}\sum_{i,j;\;i\neq j}\delta\mathbf{R}_n\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n^2}\,\delta\mathbf{R}_n \\
-    &=H_I(\{\mathbf{R}_l\})+\sum_n\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,\delta\mathbf{R}_n +  \frac12\sum_{n\neq m}\;\sum_{i,j;\;i\neq j}\delta\mathbf{R}_n\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m \,(\delta_{n=i,m=j}+\delta_{n=j,m=i})  \\
-    &+\frac12\sum_{n}\sum_{i,j;\;i\neq j}\delta\mathbf{R}_n\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n^2}\,\delta\mathbf{R}_n\,(\delta_{n=i}+\delta_{n=j}) \\
+    &=H_I(\{\mathbf{R}_l\})+\sum_n\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,\delta\mathbf{R}_n +  \frac12\sum_{n\neq m}\;\sum_{i,j;\;i> j}\delta\mathbf{R}_n\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m  \\&+\frac12\sum_{n}\sum_{i,j;\;i> j}\delta\mathbf{R}_n\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n^2}\,\delta\mathbf{R}_n \\
+    &=H_I(\{\mathbf{R}_l\})+\sum_n\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,\delta\mathbf{R}_n +  \frac12\sum_{n\neq m}\;\sum_{i,j;\;i> j}\delta\mathbf{R}_n\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m \,(\delta_{n=i,m=j}+\delta_{n=j,m=i})  \\
+    &+\frac12\sum_{n}\sum_{i,j;\;i> j}\delta\mathbf{R}_n\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n^2}\,\delta\mathbf{R}_n\,(\delta_{n=i}+\delta_{n=j}) \\
 \end{align*}
 Using the fact, that
 \begin{align*}
-   \delta\mathbf{R}_i\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i\partial\mathbf{R}_j}\,\delta\mathbf{R}_j=\delta\mathbf{R}_j\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_j\partial\mathbf{R}_i}\,\delta\mathbf{R}_i
+   \sum_{i,j;\;i> j}\left(\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i^2}\,\delta\mathbf{R}_i^2+\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_j^2}\,\delta\mathbf{R}_j^2\right)=\sum_{i,j;\;i\neq j}\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i^2}\,\delta\mathbf{R}_i^2
 \end{align*}
-the expansion can be written as
+and similar for the mixed terms,the expansion can be written as
 \begin{align*}
-    H_I(\{\mathbf{R}_l+\delta\mathbf{R}_l\})&=H_I(\{\mathbf{R}_l\})+\sum_i\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i}\,\delta\mathbf{R}_i +  \sum_{i,j;\;i\neq j} \delta\mathbf{R}_i\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i\partial\mathbf{R}_j}\,\delta\mathbf{R}_j \\
-    &+\sum_{i,j;\;i\neq j}\delta\mathbf{R}_i\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i^2}\,\delta\mathbf{R}_i
+    H_I(\{\mathbf{R}_l+\delta\mathbf{R}_l\})&=H_I(\{\mathbf{R}_l\})+\sum_i\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i}\,\delta\mathbf{R}_i + \frac12\, \sum_{i,j;\;i> j}\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i\partial\mathbf{R}_j}\, \left(\delta\mathbf{R}_i\,\delta\mathbf{R}_j+\delta\mathbf{R}_j\,\delta\mathbf{R}_i\right) \\
+    &+\frac12\,\sum_{i,j;\;i\neq j}\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i^2}\,\delta\mathbf{R}_i^2\\
+    &=H_I(\{\mathbf{R}_l\})+\sum_i\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i}\,\delta\mathbf{R}_i + \frac12\, \sum_{i,j;\;i\neq j}\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i\partial\mathbf{R}_j}\,\delta\mathbf{R}_i\,\delta\mathbf{R}_j \\
+    &+\frac12\,\sum_{i,j;\;i\neq j}\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i^2}\,\delta\mathbf{R}_i^2
 \end{align*}
 If I introduce a matrix $U$ the expanded Hamiltonian can be brought into the same form as in the paper.
 \begin{align*}
-    H_I(\{\mathbf{R}_l+\delta\mathbf{R}_l\})&=H_I(\{\mathbf{R}_l\})+\sum_n\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,\delta\mathbf{R}_n + \sum_{n,m}\delta\mathbf{R}_n\,U_{n,m}\,\delta\mathbf{R}_m
+    H_I(\{\mathbf{R}_l+\delta\mathbf{R}_l\})&=H_I(\{\mathbf{R}_l\})+\sum_n\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,\delta\mathbf{R}_n + \sum_{n,m}U_{n,m}\,\delta\mathbf{R}_n\,\delta\mathbf{R}_m
 \end{align*}
 with
 \begin{align*}
     U_{n,m}&=
-        \frac{\partial^2 V_{n,m}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\quad\text{if}\:n\neq m\\
-    U_{n,n} &= \sum_{j;\,j\neq n}\frac{\partial^2 V_{n,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n^2}
+        \frac12\,\frac{\partial^2 V_{n,m}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\quad\text{if}\:n\neq m\\
+    U_{n,n} &= \frac12\,\sum_{j;\,j\neq n}\frac{\partial^2 V_{n,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n^2}
 \end{align*}
 Swithing again to the reduced writting, where $V_{ij}$ is only writen as a function of the variables of which it actually depends, reads
 \begin{align*}
     U_{n,m}&=
-        \frac{\partial^2 V_{n,m}(\mathbf{R}_n,\mathbf{R}_m)}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\quad\text{if}\:n\neq m\\
-    U_{n,n} &= \sum_{j;\,j\neq n}\frac{\partial^2 V_{n,j}(\mathbf{R}_n,\mathbf{R}_j)}{\partial \mathbf{R}_n^2}
+        \frac12\,\frac{\partial^2 V_{n,m}(\mathbf{R}_n,\mathbf{R}_m)}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\quad\text{if}\:n\neq m\\
+    U_{n,n} &= \frac12\,\sum_{j;\,j\neq n}\frac{\partial^2 V_{n,j}(\mathbf{R}_n,\mathbf{R}_j)}{\partial \mathbf{R}_n^2}
 \end{align*}
 This result is a good point to further specify the potential that is used in the next sections. The potential will only depend on the relative vector between the two positions, i.e. $\mathbf{r}_{ij}=\mathbf{R}_i-\mathbf{R}_j$. Using the derivative
 \begin{align*}
@@ -82,35 +84,36 @@ and
 Thus
 \begin{align*}
     U_{n,m}&=
-        -\frac{\partial^2 V_{n,m}(\mathbf{r}_{nm})}{\partial\mathbf{r}_{nm}^2}\quad\text{if}\:n\neq m\\
+        -\frac12\,\frac{\partial^2 V_{n,m}(\mathbf{r}_{nm})}{\partial\mathbf{r}_{nm}^2}\quad\text{if}\:n\neq m\\
     U_{n,n} &= \sum_{j;\,j\neq n}\frac{\partial^2 V_{n,j}(\mathbf{r}_{nj})}{\partial\mathbf{r}_{nj}^2}
 \end{align*}
 At this point I can eliminate the linear term of the Hamiltonian by introducing the trap potential 
 \begin{align*}
-    H_0(\{\delta\mathbf{R}_l\}) = \sum_n\frac{\mathbf{P}_n^2}{2m}+ \frac12 m \omega^2 \,\delta\mathbf{R}_n^2,
+    H_0(\{\delta\mathbf{R}_l\}) = \sum_i\frac{\mathbf{P}_i^2}{2m}+ \frac12 m \omega^2 \,\delta\mathbf{R}_i^2,
 \end{align*}
-where $\mathbf{P}_n$ is the momentum of the $n$th atom. I can now redefine the trap centers by a equal shift of all positions $\{\delta\mathbf{R}_l\}=\{\delta\tilde{\mathbf{R}}_l+\mathbf{\Delta}\}$. Neglection all constant terms the Hamiltonian minus the momentum term $\tilde{H}=H-\sum_n\mathbf{P}_n/2m$ up to second order reads
+where $\mathbf{P}_i$ is the momentum of the $i$th atom. I can now redefine the trap centers by a equal shift of all positions $\{\delta\mathbf{R}_l\}=\{\delta\tilde{\mathbf{R}}_l+\mathbf{\Delta}\}$, where $\delta\mathbf{R}_l$ and $\delta\tilde{\mathbf{R}}_l$ are operators and $\mathbf{\Delta}$ is just a constant vector. Neglecting all constant terms the Hamiltonian minus the momentum term $\tilde{H}=H-\sum_i\mathbf{P}_i/2m$ up to second order reads
 \begin{align*}
-    \tilde{H}(\{\delta\mathbf{R}_l\})&=\sum_n\frac{\mathbf{P}_n^2}{2m}+ \sum_n \frac12 m \omega^2 \,(\delta\tilde{\mathbf{R}}_n+\mathbf{\Delta}_n)^2+ \sum_n\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,(\delta\tilde{\mathbf{R}}_n+\mathbf{\Delta}_n) + \sum_{n,m}(\delta\tilde{\mathbf{R}}_n+\mathbf{\Delta}_n)\,U_{n,m}\,(\delta\tilde{\mathbf{R}}_m+\mathbf{\Delta}_m)\\
-    &= \sum_n \frac12 m \omega^2 \,\delta\tilde{\mathbf{R}}_n^2  + \sum_{n,m}\delta\tilde{\mathbf{R}}_n\,U_{n,m}\,\delta\tilde{\mathbf{R}}_m + \sum_n\left(\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n} +\left( 2\,\sum_m\delta\tilde{\mathbf{R}}_m\, U_{m,n} + m\omega^2\right)\,\mathbf{\Delta}_n  \right)\,\delta\tilde{\mathbf{R}}_n,
+    \tilde{H}(\{\delta\mathbf{R}_l\})&= \sum_i \frac12 m \omega^2 \,(\delta\tilde{\mathbf{R}}_i+\mathbf{\Delta}_i)^2+ \sum_i\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i}\,(\delta\tilde{\mathbf{R}}_i+\mathbf{\Delta}_i) + \sum_{i,j}(\delta\tilde{\mathbf{R}}_i+\mathbf{\Delta}_i)\,U_{i,j}\,(\delta\tilde{\mathbf{R}}_j+\mathbf{\Delta}_j)\\
+    &= \sum_i \frac12 m \omega^2 \,\delta\tilde{\mathbf{R}}_i^2  + \sum_{i,j}\delta\tilde{\mathbf{R}}_i\,U_{i,j}\,\delta\tilde{\mathbf{R}}_j + \sum_i\left(\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i} +\sum_j\,\left( 2\, U_{j,i} + m\omega^2\,\delta_{ij}\right)\,\mathbf{\Delta}_j  \right)\,\delta\tilde{\mathbf{R}}_i,
 \end{align*}
-where it was used that $U$ is symmetric. The linear term vanishes, if $\mathbf{\Delta}_n$ is chosen such that
-\begin{align*}
-    \mathbf{\Delta}_n = -\left( 2\,\sum_m\delta\tilde{\mathbf{R}}_m\, U_{m,n} + m\omega^2\right)^{-1} \,\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}
-\end{align*}
+where it was used that $U$ is symmetric. As the matrix $\left( 2\, U_{j,i} + m\omega^2\,\delta_{ij}\right)$ is invertible, a set of vectors $\{\mathbf{\Delta}_n\}$ can be found such that the linear term vanishes.
+% The linear term vanishes, if $\mathbf{\Delta}_n$ is chosen such that
+% \begin{align*}
+%     \mathbf{\Delta}_n = -\left( 2\,\sum_m\delta\tilde{\mathbf{R}}_m\, U_{m,n} + m\omega^2\right)^{-1} \,\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}
+% \end{align*}
 Thus
 \begin{align*}
-    H(\{\delta\tilde{\mathbf{R}}_l\})&= \sum_n\frac{\mathbf{P}_n^2}{2m}+ \sum_n\frac12 m\omega^2\,\delta\tilde{\mathbf{R}}_n^2+ \sum_{n,m}\delta\tilde{\mathbf{R}}_n\,U_{n,m}\,\delta\tilde{\mathbf{R}}_m
+    H(\{\delta\tilde{\mathbf{R}}_l\})&= \sum_n\frac{\mathbf{P}_n^2}{2m}+ \sum_n\frac12 m\omega^2\,\delta\tilde{\mathbf{R}}_n^2+ \sum_{n,m}U_{n,m}\,\delta\tilde{\mathbf{R}}_n\,\delta\tilde{\mathbf{R}}_m
 \end{align*}
-To describe the deviation from the center in a quantum mechanical way, the displacements are now quantized as phonons using the quadrature operators 
+At this point I introduce the quantized displacements in form oft the quadrature operators 
 \begin{align*}
-    \delta\tilde{\mathbf{R}}_n &= \frac{1}{\sqrt{2m\omega}}\,(a_n + a_n^\dagger)\\
-    \mathbf{P}_n &= i\,\sqrt{\frac{m\omega}{2}}\,(a_n^\dagger - a_n)
+    \delta\tilde{\mathbf{R}}_n &= \sqrt{\frac{\hbar}{2m\omega}}\,(a_n + a_n^\dagger)\\
+    \mathbf{P}_n &= i\,\sqrt{\frac{\hbar m\omega}{2}}\,(a_n^\dagger - a_n)
 \end{align*}
 If we exploit that the interactions realized in $U$ are much smaller compared to the trap frequency, i.e. $U_{n,m}\ll m\omega^2$, the creation and annhiliation of phonons is supressed and the dynamics only involves phonon hopping, thus combinations $aa$ or $a^\dagger a^\dagger$ are discarded. 
 \begin{align*}
-    H &= \sum_n \omega\,a_n^\dagger a_n + \sum_{n,m} \frac{U_{n,m}}{m\omega}\,a_n^\dagger a_m\\
-    &=\vcentcolon\sum_n \omega\,a_n^\dagger a_n +\sum_{n,m} \tilde{U}_{n,m}\,a_n^\dagger a_m
+    H &= \sum_n \hbar\omega\,a_n^\dagger a_n +\frac{\hbar}{m\omega}\, \sum_{n,m} U_{n,m}\,a_n^\dagger a_m\\
+    &=\vcentcolon\sum_n \hbar\omega\,a_n^\dagger a_n +\sum_{n,m} \tilde{U}_{n,m}\,a_n^\dagger a_m
 \end{align*}
 
 
@@ -159,9 +162,9 @@ What the one dimensional Fourier transform does, is projecting the system onto t
 \section*{Aligned Dipole-Dipole Interactions}
 
 In this section the derivative of the dipole interaction will be performed in the case where all dipoles point into the same direction. The subsripts lableling the different positions are droped in order to make the notation plainer.
-\begin{align*}
+\begin{align}\label{eq:dipole_potential}
     V_{dd}(\mathbf{r}) = V_0\,\left(\frac{1}{r^3}-3\,\frac{(\mathbf{r}\cdot \hat{\mathbf{d}})^2}{r^5}\right),
-\end{align*}
+\end{align}
 with $\mathbf{r}=\mathbf{R}_i-\mathbf{R}_j$ beeing the distance between any to sites $i$ and $j$ ($i\neq j$). The first derivative with respect to component $\alpha$ of $\mathbf{r}$, $\alpha\in\{x,y,z\}$ reads
 \begin{align*}
     \frac{1}{V_0}\,\frac{\partial V_{dd}}{\partial r_\alpha} = -\frac{3 r_\alpha}{r^5} + \frac{15 r_\alpha (\mathbf{r}\cdot \hat{\mathbf{d}})^2}{r^7} - \frac{6 (\mathbf{r}\cdot \hat{\mathbf{d}}) d_\alpha}{r^5},
