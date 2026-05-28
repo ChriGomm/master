@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber documentation"] 0 "documentation.bcf" "documentation.bbl" "documentation" 1779886404.9579 -1
-  "documentation.bcf" 1779886404.87341 108126 e699029231fc5bb54eea711e6320d63f "pdflatex"
+["biber documentation"] 0 "documentation.bcf" "documentation.bbl" "documentation" 1779986407.26795 -1
+  "documentation.bcf" 1779986407.19007 108126 e699029231fc5bb54eea711e6320d63f "pdflatex"
   "sources.bib" 1765880343.07162 16791 09c6a93502f14a06b7d72d199b8077c4 ""
   (generated)
   "documentation.bbl"
   "documentation.blg"
   (rewritten before read)
-["pdflatex"] 1779886403.4763 "/home/christian/Documents/master/protocol/documentation.tex" "documentation.pdf" "documentation" 1779886404.95813 0
+["pdflatex"] 1779986405.82206 "/home/christian/Documents/master/protocol/documentation.tex" "documentation.pdf" "documentation" 1779986407.26816 0
   "/etc/texmf/web2c/texmf.cnf" 1758895203.64774 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/christian/Documents/master/protocol/documentation.tex" 1779783856.2295 13289 5843cfbe4e3e378b70bc99f88c8e60d7 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -50,6 +50,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1248133631 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1248133631 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb" 1248133631 24393 3b7eb51a67a0a62aec5849271bdb9c2e ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb" 1248133631 24420 52dbb8e8aa0069a1b987309557f8d303 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb" 1248133631 24373 a91d375736817a75026663adcb2190c1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb" 1248133631 28902 2f5c04fd2884d1878057baa5aad22765 ""
@@ -306,11 +307,11 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1758895216.07337 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1758895244 8213773 f45dae838239d55b66681526ece92c70 ""
   "StandardPages.sty" 1759150099.35658 3802 cf878797be82f080136d69564456bed0 ""
-  "correct_coupling.tex" 1779871420.88129 14133 ecbb24e0da42bf74f0f65ac51fce2f62 ""
-  "documentation.aux" 1779886404.87041 11419 5ca988c3ad14e7fdcf87d05c0eeadcf8 "pdflatex"
+  "correct_coupling.tex" 1779986252.43016 15376 e2776f3eb7abbf16d200e8e447ab3aca ""
+  "documentation.aux" 1779986407.1892 12660 36e00aabc9af1a5f5baccaa65ea84a26 "pdflatex"
   "documentation.bbl" 1779783858.25069 32481 c1d0dfeb11036d14cb7e56154b58e1ef "biber documentation"
-  "documentation.out" 1779886404.5787 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "documentation.run.xml" 1779886404.87415 2490 94dc853a5b2ce70108da0fbd346365de "pdflatex"
+  "documentation.out" 1779986406.90125 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "documentation.run.xml" 1779986407.19201 2490 94dc853a5b2ce70108da0fbd346365de "pdflatex"
   "documentation.tex" 1779783856.2295 13289 5843cfbe4e3e378b70bc99f88c8e60d7 ""
   "interactions.tex" 1779816422.81718 37507 ca477570d50c2357a699beba3c8af85b ""
   "numerical_results_only_phonons.tex" 1765297356.0382 16039 6366256f99442b9515363be1461d623d ""
@@ -319,10 +320,12 @@
   "pictures/ads_top_states_b0.51.pdf" 1765297228.78413 226394 7458211fa1298da309ee250f3af53ff9 ""
   "pictures/aligned_dipoles_in_plane_sheer.pdf" 1765295825.55229 383954 4289324d20c23ae9ffa329d72d7a0724 ""
   "pictures/aligned_dipoles_in_plane_sheer_spectrum_chrial.pdf" 1765213543.04642 174646 52dd73a4faadf3f83b95b7e5e9293e4b ""
-  "pictures/diff_free_evol_(no)phonon.pdf" 1779869213.33719 1042448 d83115c47f13acbdafb75dfb4c390558 ""
+  "pictures/compare_with_without_phonon_late_time.pdf" 1779972339.6668 199640 cce12dfa943f62a0423852b0c0ba15a8 ""
   "pictures/lattice_def.pdf" 1764771546.92011 39756 538d9440906b79f8819a48c0904126ea ""
   "pictures/magnitude_dersqV_ifderVzero.pdf" 1779787313.20135 205353 54f5dda41e105006c8a25bcdd30871fb ""
-  "pictures/transfered_excitation_depphon.pdf" 1779886402.7344 217390 44d13d367a3a5a7f1352fa5939e764e6 ""
+  "pictures/maxima_compared_free_evolution.pdf" 1779986403.66023 147697 de38ef1631402ea2fe99047d6d562b73 ""
+  "pictures/rice-mele-scheme1to1000.pdf" 1779960464.99365 263326 2d43e28adbf83ab8123ed4a09362940e ""
+  "pictures/transfered_excitation_depphon.pdf" 1779960158.03175 217390 1a60f894ec8ed5578b5a8a31bfb8ec99 ""
   (generated)
   "documentation.aux"
   "documentation.bcf"

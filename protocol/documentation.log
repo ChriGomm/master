@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.26)  27 MAY 2026 14:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.26)  28 MAY 2026 18:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1323,31 +1323,52 @@ Overfull \hbox (2.4461pt too wide) in paragraph at lines 89--90
  [][] 
  []
 
-<pictures/diff_free_evol_(no)phonon.pdf, id=463, 503.17986pt x 287.73387pt>
-File: pictures/diff_free_evol_(no)phonon.pdf Graphic file (type pdf)
-<use pictures/diff_free_evol_(no)phonon.pdf>
-Package pdftex.def Info: pictures/diff_free_evol_(no)phonon.pdf  used on input line 107.
-(pdftex.def)             Requested size: 503.17862pt x 287.73317pt.
+<pictures/compare_with_without_phonon_late_time.pdf, id=463, 518.80482pt x 260.45236pt>
+File: pictures/compare_with_without_phonon_late_time.pdf Graphic file (type pdf)
+<use pictures/compare_with_without_phonon_late_time.pdf>
+Package pdftex.def Info: pictures/compare_with_without_phonon_late_time.pdf  used on input line 107.
+(pdftex.def)             Requested size: 518.80354pt x 260.45172pt.
 
-Overfull \hbox (53.6254pt too wide) in paragraph at lines 107--108
- [][] 
+Overfull \hbox (28.79288pt too wide) in paragraph at lines 106--108
+ []|  [] 
  []
 
 [18 <./pictures/magnitude_dersqV_ifderVzero.pdf>]
-<pictures/transfered_excitation_depphon.pdf, id=496, 460.02124pt x 192.43294pt>
-File: pictures/transfered_excitation_depphon.pdf Graphic file (type pdf)
-<use pictures/transfered_excitation_depphon.pdf>
-Package pdftex.def Info: pictures/transfered_excitation_depphon.pdf  used on input line 114.
-(pdftex.def)             Requested size: 460.02011pt x 192.43245pt.
+<pictures/maxima_compared_free_evolution.pdf, id=496, 494.12125pt x 256.4705pt>
+File: pictures/maxima_compared_free_evolution.pdf Graphic file (type pdf)
+<use pictures/maxima_compared_free_evolution.pdf>
+Package pdftex.def Info: pictures/maxima_compared_free_evolution.pdf  used on input line 114.
+(pdftex.def)             Requested size: 494.12004pt x 256.46986pt.
 
-Overfull \hbox (10.46689pt too wide) in paragraph at lines 114--115
+Overfull \hbox (4.10938pt too wide) in paragraph at lines 113--115
+ []|  [] 
+ []
+
+<pictures/rice-mele-scheme1to1000.pdf, id=499, 540.91771pt x 179.99075pt>
+File: pictures/rice-mele-scheme1to1000.pdf Graphic file (type pdf)
+<use pictures/rice-mele-scheme1to1000.pdf>
+Package pdftex.def Info: pictures/rice-mele-scheme1to1000.pdf  used on input line 121.
+(pdftex.def)             Requested size: 540.91638pt x 179.99031pt.
+
+Overfull \hbox (91.36316pt too wide) in paragraph at lines 121--122
  [][] 
  []
 
-) [19 <./pictures/diff_free_evol_(no)phonon.pdf> <./pictures/transfered_excitation_depphon.pdf>] [20
+[19 <./pictures/compare_with_without_phonon_late_time.pdf> <./pictures/maxima_compared_free_evolution.pdf>]
+<pictures/transfered_excitation_depphon.pdf, id=595, 460.02124pt x 192.43294pt>
+File: pictures/transfered_excitation_depphon.pdf Graphic file (type pdf)
+<use pictures/transfered_excitation_depphon.pdf>
+Package pdftex.def Info: pictures/transfered_excitation_depphon.pdf  used on input line 128.
+(pdftex.def)             Requested size: 460.02011pt x 192.43245pt.
+
+Overfull \hbox (10.46689pt too wide) in paragraph at lines 128--129
+ [][] 
+ []
+
+) [20 <./pictures/rice-mele-scheme1to1000.pdf> <./pictures/transfered_excitation_depphon.pdf>] [21
 
 
-] [21] (./documentation.aux)
+] (./documentation.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1359,18 +1380,18 @@ Package logreq Info: Writing requests to 'documentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49316 strings out of 474222
- 1114516 string characters out of 5748733
- 2182164 words of memory out of 5000000
- 70780 multiletter control sequences out of 15000+600000
+ 49336 strings out of 474222
+ 1115533 string characters out of 5748733
+ 2182294 words of memory out of 5000000
+ 70798 multiletter control sequences out of 15000+600000
  570815 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,20n,107p,10950b,1777s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2074.pfb>
-Output written on documentation.pdf (21 pages, 1768319 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2074.pfb>
+Output written on documentation.pdf (21 pages, 1054786 bytes).
 PDF statistics:
- 698 PDF objects out of 1000 (max. 8388607)
- 461 compressed objects within 5 object streams
- 59 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 782 PDF objects out of 1000 (max. 8388607)
+ 504 compressed objects within 6 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 68 words of extra memory for PDF output out of 10000 (max. 10000000)
 

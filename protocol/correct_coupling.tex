@@ -103,10 +103,24 @@ For the first approach I will continue with the Hamiltonian up to first order in
 The quadrature operators of the phonons are used $\delta\mathbf{\hat{r}}_i=\sqrt{\frac{\hbar}{2m\omega}}\,(p_i + p_i^\dagger)$. In the following I want to present a brief investigation of the influence of this small second order term on the dynamics of the spins. Ultimately I am interested in the effect of the phonons on the transport of spin excitations via a Rice-Mele scheme. Therefore I will compare the free evolution of the system with and without phonons at conditions mimicking a point in the middle of the Rice-Mele cycle, where the dynamics are the fastest. The results are shown in \figref{fig:diff_free_evol_with_without_phonons}. As can be seen, for high phonon excitation numbers the difference in the spin excitations during the time period of the whole cycle becomes substantial. Nevertheless, the performance of the Rice-Mele protocol is affected only mildly, and is even slightly improved by the inclusion of the phonons, as can be seen in \figref{fig:end_excitation_rice_mele_with_without_phonons}.
 
 \begin{figure}[H]
-    \centering
-    \includegraphics{pictures/diff_free_evol_(no)phonon.pdf}
-    \caption{\textbf{Comparison of free evolution with and without phonons.} The difference in spin excitation probability between the free evolution with and without phonons is shown for a chain of length $N=4$. As initial conditions I chose a quadratically decaying excitation profile from the right edge. And parameters $b=1.2\,r_0$, $h=0.4\,r_0$, $a=3\,r_0$. For an atom with 12 motional excitations the mean displacement is of the order of $0.15\,\mu\text{m}$, which is already around the limit of the expansion to second order being accurate.}
+    \hspace*{-1.5cm}
+    \includegraphics{pictures/compare_with_without_phonon_late_time.pdf}
+    \caption{\textbf{Comparison of free evolution with and without phonons.} The difference in spin excitation probability between the free evolution with and without phonons is shown for a chain of length $N=4$. As initial conditions I chose a quadratically decaying excitation profile from the right edge and parameters $b=1.2\,r_0$, $h=0.4\,r_0$, $a=3\,r_0$. The red line shows the trajectory for the case without motional degrees of freedom and the blue one the case with phonons present.For an atom with 12 motional excitations the mean displacement is of the order of $0.15\,\mu\text{m}$, which is already around the limit of the expansion to second order being accurate.}
     \label{fig:diff_free_evol_with_without_phonons}
+\end{figure}
+
+\begin{figure}[H]
+    \hspace*{-1.5cm}
+    \includegraphics{pictures/maxima_compared_free_evolution.pdf}
+    \caption{\textbf{Comparison of the maxima of the free evolution with and without phonons.} For the same parameters and initial conditions as in \figref{fig:diff_free_evol_with_without_phonons} the maxima of the spin excitation probability at the individual sites are compared for the free evolution with and without phonons. }
+    % \label{fig:diff_free_evol_with_without_phonons}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics{pictures/rice-mele-scheme1to1000.pdf}
+    \caption{\textbf{Rice-Mele scheme.} Depicted is the course of the the decisive parameters during the Rice-Mele cycle, i.e. the axial distance between atoms in the unit cell $b=1.8\,\text{-}\,1.2\,\text{-}\,1.8\,r_0$ (the distance orthogonal to the chain axis is kept constant $h=0.4\,r_0$ as well as the distance inside a sublattice $a=3\,r_0$). The detuning takes it's maximal value at $\Delta_\text{max}=0.4\,V_0$.}
+    % \label{fig:end_excitation_rice_mele_with_without_phonons}
 \end{figure}
 
 \begin{figure}[H]
