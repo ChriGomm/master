@@ -40,7 +40,11 @@ Now I expand the interaction Hamiltonian in small displacements $\{\delta\mathbf
 \end{align*}
 Using the fact, that
 \begin{align*}
-   \sum_{i,j;\;i> j}\left(\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i^2}\,\delta\mathbf{R}_i^2+\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_j^2}\,\delta\mathbf{R}_j^2\right)=\sum_{i,j;\;i\neq j}\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i^2}\,\delta\mathbf{R}_i^2
+   \sum_{i,j;\;i> j}\left(\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i^2}\,\delta\mathbf{R}_i^2+\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_j^2}\,\delta\mathbf{R}_j^2\right)&=\sum_{i,j;\;i\neq j}\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i^2}\,\delta\mathbf{R}_i^2
+\end{align*}
+and
+\begin{align*}
+    \sum_{i,j;\;i> j}\left(\delta\mathbf{R}_i\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i\partial\mathbf{R}_j}\,\delta\mathbf{R}_j + \delta\mathbf{R}_j\,\frac{\partial^2 V_{j,i}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_j\partial\mathbf{R}_i}\,\delta\mathbf{R}_i\right)&= \sum_{i,j;\;i\neq j}\delta\mathbf{R}_i\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i\partial\mathbf{R}_j}\,\delta\mathbf{R}_j
 \end{align*}
 and similar for the mixed terms,the expansion can be written as
 \begin{align*}
@@ -85,13 +89,13 @@ Thus
 \begin{align*}
     U_{n,m}&=
         -\frac12\,\frac{\partial^2 V_{n,m}(\mathbf{r}_{nm})}{\partial\mathbf{r}_{nm}^2}\quad\text{if}\:n\neq m\\
-    U_{n,n} &= \sum_{j;\,j\neq n}\frac{\partial^2 V_{n,j}(\mathbf{r}_{nj})}{\partial\mathbf{r}_{nj}^2}
+    U_{n,n} &= \frac12\sum_{j;\,j\neq n}\frac{\partial^2 V_{n,j}(\mathbf{r}_{nj})}{\partial\mathbf{r}_{nj}^2}
 \end{align*}
 At this point I can eliminate the linear term of the Hamiltonian by introducing the trap potential 
 \begin{align*}
     H_0(\{\delta\mathbf{R}_l\}) = \sum_i\frac{\mathbf{P}_i^2}{2m}+ \frac12 m \omega^2 \,\delta\mathbf{R}_i^2,
 \end{align*}
-where $\mathbf{P}_i$ is the momentum of the $i$th atom. I can now redefine the trap centers by a equal shift of all positions $\{\delta\mathbf{R}_l\}=\{\delta\tilde{\mathbf{R}}_l+\mathbf{\Delta}\}$, where $\delta\mathbf{R}_l$ and $\delta\tilde{\mathbf{R}}_l$ are operators and $\mathbf{\Delta}$ is just a constant vector. Neglecting all constant terms the Hamiltonian minus the momentum term $\tilde{H}=H-\sum_i\mathbf{P}_i/2m$ up to second order reads
+where $\mathbf{P}_i$ is the momentum of the $i$th atom. I can now shift the considered displacements from the trap centers by a constant $\{\delta\mathbf{R}_l\}=\{\delta\tilde{\mathbf{R}}_l+\mathbf{\Delta}_l\}$, where $\delta\mathbf{R}_l$ and $\delta\tilde{\mathbf{R}}_l$ are operators and $\mathbf{\Delta}_l$ are just constant vectors. Neglecting all constant terms the Hamiltonian minus the momentum term $\tilde{H}=H-\sum_i\mathbf{P}_i/2m$ up to second order reads
 \begin{align*}
     \tilde{H}(\{\delta\mathbf{R}_l\})&= \sum_i \frac12 m \omega^2 \,(\delta\tilde{\mathbf{R}}_i+\mathbf{\Delta}_i)^2+ \sum_i\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i}\,(\delta\tilde{\mathbf{R}}_i+\mathbf{\Delta}_i) + \sum_{i,j}(\delta\tilde{\mathbf{R}}_i+\mathbf{\Delta}_i)\,U_{i,j}\,(\delta\tilde{\mathbf{R}}_j+\mathbf{\Delta}_j)\\
     &= \sum_i \frac12 m \omega^2 \,\delta\tilde{\mathbf{R}}_i^2  + \sum_{i,j}\delta\tilde{\mathbf{R}}_i\,U_{i,j}\,\delta\tilde{\mathbf{R}}_j + \sum_i\left(\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i} +\sum_j\,\left( 2\, U_{j,i} + m\omega^2\,\delta_{ij}\right)\,\mathbf{\Delta}_j  \right)\,\delta\tilde{\mathbf{R}}_i,
@@ -116,6 +120,48 @@ If we exploit that the interactions realized in $U$ are much smaller compared to
     &=\vcentcolon\sum_n \hbar\omega\,a_n^\dagger a_n +\sum_{n,m} \tilde{U}_{n,m}\,a_n^\dagger a_m
 \end{align*}
 
+\section*{Physical implementation}
+As a physical implementation I consider a system of Rydberg atoms. The interaction stems from dipole-dipole interactions between dressed Rydberg states. The corresponding potential reads
+\begin{align*}
+    V_{dd}(\mathbf{r}) &= \frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\left(1-3\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)\\
+    \frac{\partial V_{dd}}{\partial r_\alpha} &=\frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\frac1r\,\left( -3\,\frac{ r_\alpha}{r} + 15\,\frac{ r_\alpha }{r}(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2 - 6\,\hat{d}_\alpha\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}}) \right)\\
+    \frac{\partial^2 V_{dd}}{\partial r_\alpha \partial r_\beta}  &= \frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\frac1{r^2}\,\left[\delta_{\alpha\beta}\left(-3 + 15\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)- 6\,\hat{d}_\alpha \hat{d}_\beta +30\, \frac{\hat{d}_\alpha r_\beta + \hat{d}_\beta r_\alpha}{r}\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}}) + 15\,\frac{r_\alpha r_\beta}{r^2} \left(1  - 7\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)\right]
+\end{align*}
+The interaction strength $V_0=\expval{d}^2/(4\pi\varepsilon_0\,r^3)$ can reach from a few MHz to a few GHz, when one assumes a dipole moment between $1000\,ea_0$ and $5000\,ea_0$ and a distance between the atoms of $3$ to $10\,\mu$m ($a_0=4\pi\varepsilon_0\hbar^2/(e^2m_e)$ is the Bohr radius). The trap frequency $\omega$ usually can take values of $10$ to $100$\,kHz. 
+
+In the following I will consider a chain of atoms and will restrict the displacements of the atoms to the $x$ direction, which is the direction in which the one dimensional chain extends. The chain consists of two sublattices $A$ and $B$ with a distance of $a\,\hat{\mathbf{e}}_x$ between neighboring atoms of the same sublattice and a distance of $b\,\hat{\mathbf{e}}_x+h\,\hat{\mathbf{e}}_y$ between neighboring atoms of different sublattices. Interactions shall only be relevant between nearest neighbors.
+
+At this point let us rediscuss the shift of the displacements which allowed us to eliminate the first order term in the Hamiltonian. The necessary condition was
+\begin{align*}
+    \left(\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i} +\sum_j\,\left( 2\, U_{j,i} + m\omega^2\,\delta_{ij}\right)\,{\Delta}_j  \right)= 0 \quad\forall i
+\end{align*}
+whereas
+\begin{align*} \frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i} &= \sum_{n,m;\,n<m}\frac{\partial V_{n,m}(\mathbf{R}_n,\mathbf{R}_m)}{\partial \mathbf{R}_i}\,(\delta_{i=n}+\delta_{i=m})\\
+&= \sum_{m;\,i<m}\frac{\partial V_{i,m}(\mathbf{R}_m-\mathbf{R}_i)}{\partial \mathbf{R}_i} + \sum_{n;\,n<i}\frac{\partial V_{n,i}(\mathbf{R}_i-\mathbf{R}_n)}{\partial \mathbf{R}_i}\\
+&= \sum_{m;\,i<m}\frac{\partial V_{i,m}(\mathbf{R}_m-\mathbf{R}_i)}{\partial \mathbf{r}_{i,m}} - \sum_{n;\,n<i}\frac{\partial V_{n,i}(\mathbf{R}_i-\mathbf{R}_n)}{\partial \mathbf{r}_{n,i}}
+\end{align*}
+with $\mathbf{r}_{i,j}=\mathbf{R}_j-\mathbf{R}_i$.
+% Returning to the aligned dipole potential I want to investigate the energy scales of the interaction.
+% Setting $1-3\,(\mathbf{d}\mathbf{r})^2/r^2=0$ with $\mathbf{r}=(b,h)$ one can determine the dipole from $r$ and  $h$
+
+% \begin{align*}
+% d_x\,b+d_y\,h&=\frac{r}{\sqrt{3}}\\
+% \sqrt{1-d_y^2}\,\sqrt{r^2-h^2}&=\frac{r}{\sqrt{3}}-d_y\,h\\
+% r^2-h^2+d_y^2\,(h^2-r^2)&=\frac{r^2}{3}-\frac{2}{\sqrt{3}}\,d_y\,h\,r+d_y^2\,h^2\\
+% d_y^2\,r^2-\frac{2}{\sqrt{3}}\,d_y\,h\,r+h^2-\frac{2}{3}\,r^2&=0\\
+% d_y&=\frac{1}{\sqrt{3}}\,\left(\frac{h}{r}\pm\sqrt{2\,\left(1-\frac{h^2}{r^2}\right)}\right)
+% \end{align*}
+
+% With this one finds the strength of the second order dipole interaction as
+% \begin{align*}
+%      \frac{m\omega}{\hbar}\,\frac{r^5}{V_0}\,\frac{\partial^2 V_{dd}}{\partial r_\alpha \partial r_\beta} &= -4+6\,d_y^2-\frac{60}{\sqrt{3}}\,\frac{d_y\,h}{r}+20\,\frac{h^2}{r^2}\\
+%      &= -16\,\left( \frac{h^2}{r^2}\mp\sqrt{2\,\left(1-\frac{h^2}{r^2}\right)}\,\frac{h}{r} \right)
+% \end{align*}
+
+% \begin{align*}
+%     &\frac{1}{r^5}\,\left[-3 + 15\, \frac{(\mathbf{r}\cdot \hat{\mathbf{d}})^2}{r^2}- 6\, {d_x^2} +60\, \frac{d_x\,r_x}{r^2}\,(\mathbf{r}\cdot \hat{\mathbf{d}}) 
+%     + 15\,\frac{r_x^2}{r^2}\, \left(1 - 7\, \frac{(\mathbf{r}\cdot \hat{\mathbf{d}})^2}{r^2}\right)\right]
+% \end{align*}
 
 \section*{Momentum space Hamiltonian}
 Let $c^A_{\mathbf{R},\alpha}$ and $c^B_{\mathbf{R},\alpha}$ be the phonon annihilation operators of sublattice $A$ and $B$ respectively at the unit cell, located at $\mathbf{R}$, where $\alpha\in\{x,y\}$ labels the the direction of movement. Let further $L$ be the set of all unit cells of the lattice, and $C=\{ c^A_{\mathbf{R},\alpha}, c^B_{\mathbf{R},\alpha} \}_{\mathbf{R}\in L, \alpha\in\{x,y\}}$ the set of all annihilation operators. The Hamiltonian in real space can then be written as
@@ -203,28 +249,7 @@ For the the Van der Waals interaction the potential has to be squared. Therefore
     \frac{\partial^2 V_{dd}^2}{\partial r_\alpha \partial r_\beta} &= 2\,\frac{\partial V_{dd}}{\partial r_\alpha}\frac{\partial V_{dd}}{\partial r_\beta} + 2\,V_{dd}\frac{\partial^2 V_{dd}}{\partial r_\alpha \partial r_\beta}
 \end{align*}
 
-\section*{Energies}
-Returning to the aligned dipole potential I want to investigate the energy scales of the interaction.
-Setting $1-3\,(\mathbf{d}\mathbf{r})^2/r^2=0$ with $\mathbf{r}=(b,h)$ one can determine the dipole from $r$ and  $h$
 
-\begin{align*}
-d_x\,b+d_y\,h&=\frac{r}{\sqrt{3}}\\
-\sqrt{1-d_y^2}\,\sqrt{r^2-h^2}&=\frac{r}{\sqrt{3}}-d_y\,h\\
-r^2-h^2+d_y^2\,(h^2-r^2)&=\frac{r^2}{3}-\frac{2}{\sqrt{3}}\,d_y\,h\,r+d_y^2\,h^2\\
-d_y^2\,r^2-\frac{2}{\sqrt{3}}\,d_y\,h\,r+h^2-\frac{2}{3}\,r^2&=0\\
-d_y&=\frac{1}{\sqrt{3}}\,\left(\frac{h}{r}\pm\sqrt{2\,\left(1-\frac{h^2}{r^2}\right)}\right)
-\end{align*}
-
-With this one finds the strength of the second order dipole interaction as
-\begin{align*}
-     \frac{m\omega}{\hbar}\,\frac{r^5}{V_0}\,\frac{\partial^2 V_{dd}}{\partial r_\alpha \partial r_\beta} &= -4+6\,d_y^2-\frac{60}{\sqrt{3}}\,\frac{d_y\,h}{r}+20\,\frac{h^2}{r^2}\\
-     &= -16\,\left( \frac{h^2}{r^2}\mp\sqrt{2\,\left(1-\frac{h^2}{r^2}\right)}\,\frac{h}{r} \right)
-\end{align*}
-
-\begin{align*}
-    &\frac{1}{r^5}\,\left[-3 + 15\, \frac{(\mathbf{r}\cdot \hat{\mathbf{d}})^2}{r^2}- 6\, {d_x^2} +60\, \frac{d_x\,r_x}{r^2}\,(\mathbf{r}\cdot \hat{\mathbf{d}}) 
-    + 15\,\frac{r_x^2}{r^2}\, \left(1 - 7\, \frac{(\mathbf{r}\cdot \hat{\mathbf{d}})^2}{r^2}\right)\right]
-\end{align*}
 
 
 
