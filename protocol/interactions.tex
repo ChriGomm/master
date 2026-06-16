@@ -123,11 +123,12 @@ If we exploit that the interactions realized in $U$ are much smaller compared to
 \section*{Physical implementation}
 As a physical implementation I consider a system of Rydberg atoms. The interaction stems from dipole-dipole interactions between dressed Rydberg states. The corresponding potential reads
 \begin{align*}
-    V_{dd}(\mathbf{r}) &= \frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\left(1-3\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)\\
-    \frac{\partial V_{dd}}{\partial r_\alpha} &=\frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\frac1r\,\left( -3\,\frac{ r_\alpha}{r} + 15\,\frac{ r_\alpha }{r}(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2 - 6\,\hat{d}_\alpha\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}}) \right)\\
-    \frac{\partial^2 V_{dd}}{\partial r_\alpha \partial r_\beta}  &= \frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\frac1{r^2}\,\left[\delta_{\alpha\beta}\left(-3 + 15\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)- 6\,\hat{d}_\alpha \hat{d}_\beta +30\, \frac{\hat{d}_\alpha r_\beta + \hat{d}_\beta r_\alpha}{r}\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}}) + 15\,\frac{r_\alpha r_\beta}{r^2} \left(1  - 7\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)\right]
+    V_{dd}(\mathbf{r}) &= \frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\left(1-3\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)=\vcentcolon V_0(r)\,f(\hat{\mathbf{r}})=V_0(a)\,\frac{a^3}{r^3}\,f(\hat{\mathbf{r}})\\
+    \frac{\partial V_{dd}}{\partial r_\alpha} &=\frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\frac1r\,\left( -3\,\frac{ r_\alpha}{r} + 15\,\frac{ r_\alpha }{r}(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2 - 6\,\hat{d}_\alpha\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}}) \right)=\vcentcolon \frac{V_0(r)}{r}\,g(\hat{\mathbf{r}})=\frac{V_0(a)}{a}\,\frac{a^4}{r^4}\,g(\hat{\mathbf{r}})\\
+    \frac{\partial^2 V_{dd}}{\partial r_\alpha \partial r_\beta}  &= \frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\frac1{r^2}\,\left[\delta_{\alpha\beta}\left(-3 + 15\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)- 6\,\hat{d}_\alpha \hat{d}_\beta +30\, \frac{\hat{d}_\alpha r_\beta + \hat{d}_\beta r_\alpha}{r}\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}}) + 15\,\frac{r_\alpha r_\beta}{r^2} \left(1  - 7\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)\right]\\
+    &=\vcentcolon \frac{V_0(r)}{r^2}\,c(\hat{\mathbf{r}})=\frac{V_0(a)}{a^2}\,\frac{a^5}{r^5}\,c(\hat{\mathbf{r}})
 \end{align*}
-The interaction strength $V_0=\expval{d}^2/(4\pi\varepsilon_0\,r^3)$ can reach from a few MHz to a few GHz, when one assumes a dipole moment between $1000\,ea_0$ and $5000\,ea_0$ and a distance between the atoms of $3$ to $10\,\mu$m ($a_0=4\pi\varepsilon_0\hbar^2/(e^2m_e)$ is the Bohr radius). The trap frequency $\omega$ usually can take values of $10$ to $100$\,kHz. 
+The interaction strength $V_0(r)=\expval{d}^2/(4\pi\varepsilon_0\,r^3)$ can reach from a few MHz to a few GHz, when one assumes a dipole moment between $1000\,ea_0$ and $5000\,ea_0$ and a distance between the atoms of $3$ to $10\,\mu$m ($a_0=4\pi\varepsilon_0\hbar^2/(e^2m_e)$ is the Bohr radius). The trap frequency $\omega$ usually can take values of $10$ to $100$\,kHz. 
 
 In the following I will consider a chain of atoms and will restrict the displacements of the atoms to the $x$ direction, which is the direction in which the one dimensional chain extends. The chain consists of two sublattices $A$ and $B$ with a distance of $a\,\hat{\mathbf{e}}_x$ between neighboring atoms of the same sublattice and a distance of $b\,\hat{\mathbf{e}}_x+h\,\hat{\mathbf{e}}_y$ between neighboring atoms of different sublattices. Interactions shall only be relevant between nearest neighbors.
 
@@ -140,7 +141,22 @@ whereas
 &= \sum_{m;\,i<m}\frac{\partial V_{i,m}(\mathbf{R}_m-\mathbf{R}_i)}{\partial \mathbf{R}_i} + \sum_{n;\,n<i}\frac{\partial V_{n,i}(\mathbf{R}_i-\mathbf{R}_n)}{\partial \mathbf{R}_i}\\
 &= \sum_{m;\,i<m}\frac{\partial V_{i,m}(\mathbf{R}_m-\mathbf{R}_i)}{\partial \mathbf{r}_{i,m}} - \sum_{n;\,n<i}\frac{\partial V_{n,i}(\mathbf{R}_i-\mathbf{R}_n)}{\partial \mathbf{r}_{n,i}}
 \end{align*}
-with $\mathbf{r}_{i,j}=\mathbf{R}_j-\mathbf{R}_i$.
+with $\mathbf{r}_{i,j}=\mathbf{R}_j-\mathbf{R}_i$. By defining
+\begin{align*}
+    h_i&\vcentcolon=\frac{a}{V_0(a)}\,\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i}\\
+    \tilde{U}_{i,j}&\vcentcolon=\frac{a^2}{V_0(a)}\, 2\, U_{j,i} 
+\end{align*}
+The condition for the shift can be written as
+\begin{align*}
+     \frac{V_0(a)}{a}\,G_i\vcentcolon=\frac{V_0(a)}{a}\,\left(h_i +\sum_j\,\left( \tilde{U}_{j,i} + \frac{m\omega^2 a^2}{V_0(a)}\,\delta_{ij}\right)\,\frac{{\Delta}_j}{a}  \right)= 0 \quad\forall i
+\end{align*}
+Here $h$ and $\tilde{U}$ are dimensionless and the the term $m\omega^2 a^2/[V_0(a)\,\text{max}(\tilde{U})]$ is of order $10^{-15}$-$10^{-10}$, hence negligibly small. Now I use the two free parameters $h$ and the angle $\varphi_d$ of the dipole moment $\hat{\mathbf{d}}$ to set $G_i=0$ or close to zero for different values of $b$. Close to zero means here that max$(|G_i|)$ compared to $\sqrt{\hbar/(2m\omega)}\,\text{max}(\tilde{U})/a$ is small.
+\begin{figure}[H]
+    \centering
+    \includegraphics{pictures/tuning_first_order_to_zero.pdf}
+    \caption{\textbf{Parameters for negligible first order.} }
+    % \label{fig:lattice_def}
+\end{figure}
 % Returning to the aligned dipole potential I want to investigate the energy scales of the interaction.
 % Setting $1-3\,(\mathbf{d}\mathbf{r})^2/r^2=0$ with $\mathbf{r}=(b,h)$ one can determine the dipole from $r$ and  $h$
 
