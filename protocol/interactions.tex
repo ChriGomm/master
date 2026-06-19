@@ -121,7 +121,7 @@ If we exploit that the interactions realized in $U$ are much smaller compared to
 \end{align*}
 
 \section*{Physical implementation}
-As a physical implementation I consider a system of Rydberg atoms. The interaction stems from dipole-dipole interactions between dressed Rydberg states. The corresponding potential reads
+As a physical implementation I consider a system of Rydberg atoms. The interaction stems from dipole-dipole interactions between mixed Rydberg states. The corresponding potential reads
 \begin{align*}
     V_{dd}(\mathbf{r}) &= \frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\left(1-3\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)=\vcentcolon V_0(r)\,f(\hat{\mathbf{r}})=V_0(a)\,\frac{a^3}{r^3}\,f(\hat{\mathbf{r}})\\
     \frac{\partial V_{dd}}{\partial r_\alpha} &=\frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\frac1r\,\left( -3\,\frac{ r_\alpha}{r} + 15\,\frac{ r_\alpha }{r}(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2 - 6\,\hat{d}_\alpha\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}}) \right)=\vcentcolon \frac{V_0(r)}{r}\,g(\hat{\mathbf{r}})=\frac{V_0(a)}{a}\,\frac{a^4}{r^4}\,g(\hat{\mathbf{r}})\\
@@ -143,20 +143,23 @@ whereas
 \end{align*}
 with $\mathbf{r}_{i,j}=\mathbf{R}_j-\mathbf{R}_i$. By defining
 \begin{align*}
-    h_i&\vcentcolon=\frac{a}{V_0(a)}\,\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i}\\
+    \tilde{g}_i&\vcentcolon=\frac{a}{V_0(a)}\,\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i}\\
     \tilde{U}_{i,j}&\vcentcolon=\frac{a^2}{V_0(a)}\, 2\, U_{j,i} 
 \end{align*}
 The condition for the shift can be written as
 \begin{align*}
-     \frac{V_0(a)}{a}\,G_i\vcentcolon=\frac{V_0(a)}{a}\,\left(h_i +\sum_j\,\left( \tilde{U}_{j,i} + \frac{m\omega^2 a^2}{V_0(a)}\,\delta_{ij}\right)\,\frac{{\Delta}_j}{a}  \right)= 0 \quad\forall i
+     \frac{V_0(a)}{a}\,G_i\vcentcolon=\frac{V_0(a)}{a}\,\left(\tilde{g}_i +\sum_jW_{ij}\,\frac{{\Delta}_j}{a}  \right)\vcentcolon=\frac{V_0(a)}{a}\,\left(\tilde{g}_i +\sum_j\,\left( \tilde{U}_{j,i} + \frac{m\omega^2 a^2}{V_0(a)}\,\delta_{ij}\right)\,\frac{{\Delta}_j}{a}  \right)= 0 \quad\forall i
 \end{align*}
-Here $h$ and $\tilde{U}$ are dimensionless and the the term $m\omega^2 a^2/[V_0(a)\,\text{max}(\tilde{U})]$ is of order $10^{-15}$-$10^{-10}$, hence negligibly small. Now I use the two free parameters $h$ and the angle $\varphi_d$ of the dipole moment $\hat{\mathbf{d}}$ to set $G_i=0$ or close to zero for different values of $b$. Close to zero means here that max$(|G_i|)$ compared to $\sqrt{\hbar/(2m\omega)}\,\text{max}(\tilde{U})/a$ is small.
+Here $h$ and $\tilde{U}$ are dimensionless and the the term $m\omega^2 a^2/[V_0(a)\,\text{max}(\tilde{U})]$ is of order $10^{-15}$-$10^{-10}$, hence negligibly small. Now I use the two free parameters $h$ and the angle $\varphi_d$ of the dipole moment $\hat{\mathbf{d}}$ to set $G_i=0$ or close to zero for different values of $b$. Close to zero means here that max$(|G_i|)$ compared to $\sqrt{\hbar/(2m\omega)}\,\text{max}(\tilde{U})/a$ is small. Here $\sqrt{\hbar/(2m\omega)}/a\sim10^{-3}$ is the displacement from a single motional excitation in units of $a$.
 \begin{figure}[H]
-    \centering
+    \hspace*{-2cm}
     \includegraphics{pictures/tuning_first_order_to_zero.pdf}
     \caption{\textbf{Parameters for negligible first order.} }
-    % \label{fig:lattice_def}
+    \label{fig:tuning_first_order_to_zero}
 \end{figure}
+As shown in \figref{fig:tuning_first_order_to_zero} the first order can be eliminated by choosing very small shifts in the displacement compared to the generic displacement inside the trap. This is possible due to the tuned small first order compared to the $W$-term as seen in \figref{fig:tuning_first_order_to_zero}d). Consequently the elimination of the linear term can also be understood from a comparison of the energy scales.
+
+Additionally it should be mentioned that \figref{fig:tuning_first_order_to_zero} is generated using $G=\tilde{g}_i +\sum_j \tilde{U}_{j,i} \,{\Delta}_j/a $, i.e. without the trap potential contribution. Therefore this elimination can be also performed for the later case, when spin operators are present.
 % Returning to the aligned dipole potential I want to investigate the energy scales of the interaction.
 % Setting $1-3\,(\mathbf{d}\mathbf{r})^2/r^2=0$ with $\mathbf{r}=(b,h)$ one can determine the dipole from $r$ and  $h$
 
