@@ -120,7 +120,7 @@ If we exploit that the interactions realized in $U$ are much smaller compared to
     &=\vcentcolon\sum_n \hbar\omega\,a_n^\dagger a_n +\sum_{n,m} \tilde{U}_{n,m}\,a_n^\dagger a_m
 \end{align*}
 
-\section*{Physical implementation}
+\section*{Physical implementation}\label{sec:Physical Implementation}
 As a physical implementation I consider a system of Rydberg atoms. The interaction stems from dipole-dipole interactions between mixed Rydberg states. The corresponding potential reads
 \begin{align*}
     V_{dd}(\mathbf{r}) &= \frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\left(1-3\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)=\vcentcolon V_0(r)\,f(\hat{\mathbf{r}})=V_0(a)\,\frac{a^3}{r^3}\,f(\hat{\mathbf{r}})\\
@@ -128,6 +128,12 @@ As a physical implementation I consider a system of Rydberg atoms. The interacti
     \frac{\partial^2 V_{dd}}{\partial r_\alpha \partial r_\beta}  &= \frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\frac1{r^2}\,\left[\delta_{\alpha\beta}\left(-3 + 15\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)- 6\,\hat{d}_\alpha \hat{d}_\beta +30\, \frac{\hat{d}_\alpha r_\beta + \hat{d}_\beta r_\alpha}{r}\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}}) + 15\,\frac{r_\alpha r_\beta}{r^2} \left(1  - 7\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)\right]\\
     &=\vcentcolon \frac{V_0(r)}{r^2}\,c(\hat{\mathbf{r}})=\frac{V_0(a)}{a^2}\,\frac{a^5}{r^5}\,c(\hat{\mathbf{r}})
 \end{align*}
+% \begin{align*}
+%     V_{dd}(\mathbf{r}) &= \frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\left(1-3\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)=\vcentcolon V_0(r)\,\tilde{f}(\hat{\mathbf{r}})=V_0(a)\,\frac{a^3}{r^3}\,\tilde{f}(\hat{\mathbf{r}})=\vcentcolon V_0(a)\,{f}(\hat{\mathbf{r}})\\
+%     \frac{\partial V_{dd}}{\partial r_\alpha} &=\frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\frac1r\,\left( -3\,\frac{ r_\alpha}{r} + 15\,\frac{ r_\alpha }{r}(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2 - 6\,\hat{d}_\alpha\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}}) \right)=\vcentcolon \frac{V_0(r)}{r}\,\tilde{g}(\hat{\mathbf{r}})=\frac{V_0(a)}{a}\,\frac{a^4}{r^4}\,\tilde{g}(\hat{\mathbf{r}})=:\frac{V_0(a)}{a}\,g(\hat{\mathbf{r}})\\
+%     \frac{\partial^2 V_{dd}}{\partial r_\alpha \partial r_\beta}  &= \frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\frac1{r^2}\,\left[\delta_{\alpha\beta}\left(-3 + 15\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)- 6\,\hat{d}_\alpha \hat{d}_\beta +30\, \frac{\hat{d}_\alpha r_\beta + \hat{d}_\beta r_\alpha}{r}\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}}) + 15\,\frac{r_\alpha r_\beta}{r^2} \left(1  - 7\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)\right]\\
+%     &=\vcentcolon \frac{V_0(r)}{r^2}\,\tilde{c}(\hat{\mathbf{r}})=\frac{V_0(a)}{a^2}\,\frac{a^5}{r^5}\,\tilde{c}(\hat{\mathbf{r}})=\vcentcolon \frac{V_0(a)}{a^2}\,c(\hat{\mathbf{r}})
+% \end{align*}
 The interaction strength $V_0(r)=\expval{d}^2/(4\pi\varepsilon_0\,r^3)$ can reach from a few MHz to a few GHz, when one assumes a dipole moment between $1000\,ea_0$ and $5000\,ea_0$ and a distance between the atoms of $3$ to $10\,\mu$m ($a_0=4\pi\varepsilon_0\hbar^2/(e^2m_e)$ is the Bohr radius). The trap frequency $\omega$ usually can take values of $10$ to $100$\,kHz. 
 
 In the following I will consider a chain of atoms and will restrict the displacements of the atoms to the $x$ direction, which is the direction in which the one dimensional chain extends. The chain consists of two sublattices $A$ and $B$ with a distance of $a\,\hat{\mathbf{e}}_x$ between neighboring atoms of the same sublattice and a distance of $b\,\hat{\mathbf{e}}_x+h\,\hat{\mathbf{e}}_y$ between neighboring atoms of different sublattices. Interactions shall only be relevant between nearest neighbors.
@@ -159,7 +165,7 @@ Here $h$ and $\tilde{U}$ are dimensionless and the the term $m\omega^2 a^2/[V_0(
 \end{figure}
 As shown in \figref{fig:tuning_first_order_to_zero} the first order can be eliminated by choosing very small shifts in the displacement compared to the generic displacement inside the trap. This is possible due to the tuned small first order compared to the $W$-term as seen in \figref{fig:tuning_first_order_to_zero}d). Consequently the elimination of the linear term can also be understood from a comparison of the energy scales.
 
-Additionally it should be mentioned that \figref{fig:tuning_first_order_to_zero} is generated using $G=\tilde{g}_i +\sum_j \tilde{U}_{j,i} \,{\Delta}_j/a $, i.e. without the trap potential contribution. Therefore this elimination can be also performed for the later case, when spin operators are present.
+% Additionally it should be mentioned that \figref{fig:tuning_first_order_to_zero} is generated using $G=\tilde{g}_i +\sum_j \tilde{U}_{j,i} \,{\Delta}_j/a $, i.e. without the trap potential contribution. Therefore this elimination can be also performed for the later case, when spin operators are present.
 % Returning to the aligned dipole potential I want to investigate the energy scales of the interaction.
 % Setting $1-3\,(\mathbf{d}\mathbf{r})^2/r^2=0$ with $\mathbf{r}=(b,h)$ one can determine the dipole from $r$ and  $h$
 
