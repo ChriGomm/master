@@ -114,11 +114,12 @@ At this point I introduce the quantized displacements in form oft the quadrature
     \delta\tilde{\mathbf{R}}_n &= \sqrt{\frac{\hbar}{2m\omega}}\,(a_n + a_n^\dagger)\\
     \mathbf{P}_n &= i\,\sqrt{\frac{\hbar m\omega}{2}}\,(a_n^\dagger - a_n)
 \end{align*}
-If we exploit that the interactions realized in $U$ are much smaller compared to the trap frequency, i.e. $U_{n,m}\ll m\omega^2$, the creation and annhiliation of phonons is supressed and the dynamics only involves phonon hopping, thus combinations $aa$ or $a^\dagger a^\dagger$ are discarded. 
+% If we exploit that the interactions realized in $U$ are much smaller compared to the trap frequency, i.e. $U_{n,m}\ll m\omega^2$, the creation and annhiliation of phonons is supressed and the dynamics only involves phonon hopping, thus combinations $aa$ or $a^\dagger a^\dagger$ are discarded. 
+With that the Hamiltonian gets its final form
 \begin{align*}
-    H &= \sum_n \hbar\omega\,a_n^\dagger a_n +\frac{\hbar}{m\omega}\, \sum_{n,m} U_{n,m}\,a_n^\dagger a_m\\
-    &=\vcentcolon\sum_n \hbar\omega\,a_n^\dagger a_n +\sum_{n,m} \tilde{U}_{n,m}\,a_n^\dagger a_m
-\end{align*}
+    H &= \sum_n \hbar\omega\,a_n^\dagger a_n +\frac{\hbar}{2m\omega}\, \sum_{n,m} U_{n,m}\,\left(a_n\,a_m + a_n^\dagger a_m + a_n\,a_m^\dagger + a_n^\dagger a_m^\dagger \right)
+    % &=\vcentcolon\sum_n \hbar\omega\,a_n^\dagger a_n +\sum_{n,m} \tilde{U}_{n,m}\,a_n^\dagger a_m
+\end{align*}\hfill\newpage
 
 \section*{Physical implementation}\label{sec:Physical Implementation}
 As a physical implementation I consider a system of Rydberg atoms. The interaction stems from dipole-dipole interactions between mixed Rydberg states. The corresponding potential reads
@@ -159,12 +160,19 @@ The condition for the shift can be written as
 Here $h$ and $\tilde{U}$ are dimensionless and the the term $m\omega^2 a^2/[V_0(a)\,\text{max}(\tilde{U})]$ is of order $10^{-15}$-$10^{-10}$, hence negligibly small. Now I use the two free parameters $h$ and the angle $\varphi_d$ of the dipole moment $\hat{\mathbf{d}}$ to set $G_i=0$ or close to zero for different values of $b$. Close to zero means here that max$(|G_i|)$ compared to $\sqrt{\hbar/(2m\omega)}\,\text{max}(\tilde{U})/a$ is small. Here $\sqrt{\hbar/(2m\omega)}/a\sim10^{-3}$ is the displacement from a single motional excitation in units of $a$.
 \begin{figure}[H]
     \hspace*{-2cm}
-    \includegraphics{pictures/tuning_first_order_to_zero.pdf}
+    \includegraphics{pictures/tuning_first_order_to_zero2.pdf}
     \caption{\textbf{Parameters for negligible first order.} }
     \label{fig:tuning_first_order_to_zero}
 \end{figure}
 As shown in \figref{fig:tuning_first_order_to_zero} the first order can be eliminated by choosing very small shifts in the displacement compared to the generic displacement inside the trap. This is possible due to the tuned small first order compared to the $W$-term as seen in \figref{fig:tuning_first_order_to_zero}d). Consequently the elimination of the linear term can also be understood from a comparison of the energy scales.
 
+
+The Hamiltonian has now a quadratic form in the creation and annihilation operators and can hence be written as
+\begin{align*}
+    H &= \sum_n \hbar\omega\,a_n^\dagger a_n +\frac{\hbar}{2m\omega}\, \sum_{n,m} U_{n,m}\,\left(a_n\,a_m + a_n^\dagger a_m + a_n\,a_m^\dagger + a_n^\dagger a_m^\dagger \right)\\
+    &= \mathbf{a}^\dagger\,A\,\mathbf{a}
+\end{align*}
+with $\vec{a}=(a_1,\dots,a_N,a_1^\dagger,\dots,a_N^\dagger)$ the vector of operators and a coupling matrix $A$. This allows for a topological characterization of the bosonic system.
 % Additionally it should be mentioned that \figref{fig:tuning_first_order_to_zero} is generated using $G=\tilde{g}_i +\sum_j \tilde{U}_{j,i} \,{\Delta}_j/a $, i.e. without the trap potential contribution. Therefore this elimination can be also performed for the later case, when spin operators are present.
 % Returning to the aligned dipole potential I want to investigate the energy scales of the interaction.
 % Setting $1-3\,(\mathbf{d}\mathbf{r})^2/r^2=0$ with $\mathbf{r}=(b,h)$ one can determine the dipole from $r$ and  $h$
@@ -188,24 +196,92 @@ As shown in \figref{fig:tuning_first_order_to_zero} the first order can be elimi
 %     + 15\,\frac{r_x^2}{r^2}\, \left(1 - 7\, \frac{(\mathbf{r}\cdot \hat{\mathbf{d}})^2}{r^2}\right)\right]
 % \end{align*}
 
+% \section*{Momentum space Hamiltonian}
+% Let $c^A_{\mathbf{R},\alpha}$ and $c^B_{\mathbf{R},\alpha}$ be the phonon annihilation operators of sublattice $A$ and $B$ respectively at the unit cell, located at $\mathbf{R}$, where $\alpha\in\{x,y\}$ labels the the direction of movement. Let further $L$ be the set of all unit cells of the lattice, and $C=\{ c^A_{\mathbf{R},\alpha}, c^B_{\mathbf{R},\alpha} \}_{\mathbf{R}\in L, \alpha\in\{x,y\}}$ the set of all annihilation operators. The Hamiltonian in real space can then be written as
+% \begin{align*}
+%     H = \sum_{\substack{\mathbf{R},\mathbf{R}'\in L\\a,b \in C}}H^{a,b}(\mathbf{R}-\mathbf{R}')\,a_{\mathbf{R}}^{\dagger} b_{\mathbf{R}'}
+% \end{align*}
+% For two dimensional periodic boundary conditions one can introduce the Fourier transformed operators, $a\in C$
+% \begin{align*}
+%     a_{\mathbf{k}} = \frac{1}{N}\sum_{\mathbf{R}\in L} e^{-i\mathbf{k}\cdot\mathbf{R}}\,a_{\mathbf{R}},
+% \end{align*}
+% $k\in \bar{L}$ where $\bar{L}$ is the reciprocal lattice of $L$ and $N$ is the extent of the lattice in one direction.
+% Writing the Hamiltonian in terms of these operators yields
+% \begin{align*}
+%     H &=\frac{1}{N^2}\,  \sum_{\substack{\mathbf{R},\mathbf{R}'\in L\\a,b \in C\\\mathbf{k},\mathbf{k}'\in\bar{L}}}H^{a,b}(\mathbf{R}-\mathbf{R}')\,e^{-i\,\mathbf{k}\mathbf{R}}\,e^{i\,\mathbf{k}'\mathbf{R}'}\,a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}'}\\
+%     &=  \frac{1}{N^2}\,\sum_{\substack{\mathbf{R},\;\Delta\mathbf{R}=\mathbf{R}-\mathbf{R}'\\a,b 
+%     \\\mathbf{k},\mathbf{k}'}}H^{a,b}(\Delta\mathbf{R})\,e^{-i\,\mathbf{R}(\mathbf{k}-\mathbf{k}')}\,e^{-i\,\Delta\mathbf{R}\mathbf{k}'}\,a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}'}\\
+%     &= \sum_{\substack{\Delta\mathbf{R},\mathbf{k}\\a,b}}H^{a,b}(\Delta\mathbf{R})\,e^{-i\,\Delta\mathbf{R}\mathbf{k}}\,a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}}=\vcentcolon \sum_{\substack{\mathbf{k}\\a,b}}H^{a,b}_\mathbf{k}\,a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}}\\
+%     \text{where}\quad H^{a,b}_\mathbf{k} &= \sum_{\Delta\mathbf{R}}H^{a,b}(\Delta\mathbf{R})\,e^{-i\,\Delta\mathbf{R}\mathbf{k}}
+% \end{align*}
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics{pictures/lattice_def.pdf}
+%     \caption{\textbf{Lattice definition} The main configuration of the grid,lattice 1, is the parallelogram spanned by the lattice vectors $\mathbf{a}_1$ and $\mathbf{a}_2$. This is visualized by the black dashed frame. There is also the possibility of defining a square lattice which is highlighted by the green dashed frame.}
+%     \label{fig:lattice_def}
+% \end{figure}
+% For the case where only one direction of the lattice obeys periodic boundary conditions, while the other direction has open boundaries, the Fourier transform is only performed in the periodic direction. For this purpose I introduce the lattice vectors $\mathbf{a}_1$ and $\mathbf{a}_2$, which span the lattice. The lattice can be split into subspaces $L_n=\{j\cdot\mathbf{a}_n\}_{j\in M_n}$ whith $n\in\{1,2\}$ and $M_n$ is chosen in such a way, that $L_n$ spans from one edge of the lattice to the other. Hence the position of any unit cell $\mathbf{R}$ can be expressed as the linear combination of two vectors $\mathbf{r}_1\in L_1$ and $\mathbf{r}_2\in L_2$, i.e. $\mathbf{R}=\mathbf{r}_1+\mathbf{r}_2$. I can now also introduce the reciprocal lattice vectors $\mathbf{k}_1$ and $\mathbf{k}_2$ with the property $\mathbf{a}_i\cdot\mathbf{k}_j = 2\pi \delta_{ij}$. I perform the Fourier transformation as an example for the lattice 1 from \figref{fig:lattice_def}. 
+
+% Here the lattice direction represented by $\mathbf{a}_2$ shall be periodic. I introduce the one dimensionally Fourier transformed operators
+% \begin{align*}
+%     a_{\mathbf{r}_1,\mathbf{k}} = \frac{1}{\sqrt{N}}\,\sum_{\mathbf{r}_2\in L_2} e^{-i\mathbf{k}\mathbf{r}_2}\,a_{\mathbf{r}_1+\mathbf{r}_2},\quad\mathbf{k}\in \{\frac{1}{N},\dots,1\}\cdot\mathbf{k}_2
+% \end{align*}
+% The Hamiltonian can now be transformed via
+% \begin{align*}
+%     H &=\frac{1}{N}\,  \sum_{\substack{\mathbf{r}_1,\mathbf{r}_1'\in L_1\\\mathbf{r}_2,\mathbf{r}_2'\in L_2}}\sum_{\substack{a,b \in C\\\mathbf{k},\mathbf{k}'\in\bar{L}}}H^{a,b}(\mathbf{R}-\mathbf{R}')\,e^{-i\,\mathbf{k}\mathbf{r}_2}\,e^{i\,\mathbf{k}'\mathbf{r}_2'}\,a_{\mathbf{r}_1,\mathbf{k}}^{\dagger} b_{\mathbf{r}_1',\mathbf{k}'}\\
+%     &=  \frac{1}{N}\,\sum_{\substack{\mathbf{r}_1,\mathbf{r}_1'\\\mathbf{r}_2,\;\Delta\mathbf{r}_2=\mathbf{r}_2-\mathbf{r}_2'}}\sum_{\substack{a,b 
+%     \\\mathbf{k},\mathbf{k}'}}H^{a,b}(\Delta\mathbf{R})\,e^{-i\,\mathbf{R}(\mathbf{k}-\mathbf{k}')}\,e^{-i\,\Delta\mathbf{R}\mathbf{k}'}\,a_{\mathbf{r}_1,\mathbf{k}}^{\dagger} b_{\mathbf{r}_1',\mathbf{k}'}\\
+%     &=\sum_{\substack{\mathbf{r}_1,\mathbf{r}_1'\\\Delta\mathbf{r}_2,\mathbf{k}\\a,b}}H^{a,b}(\Delta\mathbf{R})\,e^{-i\,\Delta\mathbf{r}_2\mathbf{k}}\,a_{\mathbf{r}_1,\mathbf{k}}^{\dagger} b_{\mathbf{r}_1',\mathbf{k}}=\vcentcolon \sum_{\substack{\mathbf{r}_1,\mathbf{r}_1'\\\mathbf{k},a,b}}H^{a,b}(\mathbf{k},\Delta\mathbf{R})\,a_{\mathbf{r}_1,\mathbf{k}}^{\dagger} b_{\mathbf{r}_1',\mathbf{k}}\\
+%     \text{where}\quad H^{a,b}(\mathbf{k},\Delta\mathbf{R}) &= \sum_{\Delta\mathbf{r}_2}H^{a,b}(\Delta\mathbf{R})\,e^{-i\,\Delta\mathbf{r}_2\mathbf{k}}= \sum_{\Delta\mathbf{r}_2}H^{a,b}(\Delta\mathbf{R})\,e^{-i\,\Delta\mathbf{R}\mathbf{k}}
+% \end{align*}
 \section*{Momentum space Hamiltonian}
 Let $c^A_{\mathbf{R},\alpha}$ and $c^B_{\mathbf{R},\alpha}$ be the phonon annihilation operators of sublattice $A$ and $B$ respectively at the unit cell, located at $\mathbf{R}$, where $\alpha\in\{x,y\}$ labels the the direction of movement. Let further $L$ be the set of all unit cells of the lattice, and $C=\{ c^A_{\mathbf{R},\alpha}, c^B_{\mathbf{R},\alpha} \}_{\mathbf{R}\in L, \alpha\in\{x,y\}}$ the set of all annihilation operators. The Hamiltonian in real space can then be written as
+% \begin{align*}
+%     H = \sum_{\substack{\mathbf{R},\mathbf{R}'\in N}}U(\mathbf{R}-\mathbf{R}')\,\left( a_{\mathbf{R}}^{\dagger} a_{\mathbf{R}'}+a_{\mathbf{R}} a_{\mathbf{R}'}^{\dagger} + a_{\mathbf{R}}^{\dagger} a_{\mathbf{R}'}^{\dagger}+a_{\mathbf{R}} a_{\mathbf{R}'}\right)
+% \end{align*}
+% For two dimensional periodic boundary conditions one can introduce the Fourier transformed operators, $a\in C$
+% \begin{align*}
+%     a_{\mathbf{k}} = \frac{1}{\sqrt{N}}\sum_{\mathbf{R}\in N} e^{-i\mathbf{k}\cdot\mathbf{R}}\,a_{\mathbf{R}},
+% \end{align*}
+% $k\in \bar{L}$ where $\bar{L}$ is the reciprocal lattice of $L$ and $N$ is the extent of the lattice in one direction.
+% Writing the Hamiltonian in terms of these operators yields
+% \begin{align*}
+%     H &=\frac{1}{N}\,  \sum_{\substack{\mathbf{R},\mathbf{R}'\in N\\\mathbf{k},\mathbf{k}'\in\bar{N}}}U(\mathbf{R}-\mathbf{R}')\,\Bigg(e^{-i\,(\mathbf{k}\mathbf{R}-\mathbf{k}'\mathbf{R}')}\, a_{\mathbf{k}}^{\dagger} a_{\mathbf{k}'}+ e^{i\,(\mathbf{k}\mathbf{R}-\mathbf{k}'\mathbf{R}')}\, a_{\mathbf{k}} a_{\mathbf{k}'}^{\dagger} \\&+  e^{-i\,(\mathbf{k}\mathbf{R}+\mathbf{k}'\mathbf{R}')}\,a_{\mathbf{k}}^{\dagger} a_{\mathbf{k}'}^{\dagger}+  e^{i\,(\mathbf{k}\mathbf{R}+\mathbf{k}'\mathbf{R}')}\,a_{\mathbf{k}} a_{\mathbf{k}'}\Bigg)\\\\
+%     %
+%      &=\frac{1}{N}\,  \sum_{\substack{\mathbf{R},\;\Delta\mathbf{R}=\mathbf{R}-\mathbf{R}' 
+%     \\\mathbf{k},\mathbf{k}'}}U(\Delta\mathbf{R})\,\Bigg(e^{-i\,\mathbf{R}\,(\mathbf{k}-\mathbf{k}')-i\,\Delta\mathbf{R}\mathbf{k}'}\, a_{\mathbf{k}}^{\dagger} a_{\mathbf{k}'}+ e^{i\,\mathbf{R}\,(\mathbf{k}-\mathbf{k}')+i\,\Delta\mathbf{R}\mathbf{k}'}\, a_{\mathbf{k}} a_{\mathbf{k}'}^{\dagger}\\&+  e^{-i\,\mathbf{R}\,(\mathbf{k}+\mathbf{k}')+i\,\Delta\mathbf{R}\mathbf{k}'}\,a_{\mathbf{k}}^{\dagger} a_{\mathbf{k}'}^{\dagger}+  e^{i\,\mathbf{R}\,(\mathbf{k}+\mathbf{k}')-i\,\Delta\mathbf{R}\mathbf{k}'}\,a_{\mathbf{k}} a_{\mathbf{k}'}\Bigg)\\\\
+%     %
+%      &=  \sum_{\substack{\Delta\mathbf{R},\mathbf{k}}}U(\Delta\mathbf{R})\,\Bigg(e^{-i\,\Delta\mathbf{R}\mathbf{k}}\, a_{\mathbf{k}}^{\dagger} a_{\mathbf{k}}+ e^{i\,\Delta\mathbf{R}\mathbf{k}} \,a_{\mathbf{k}} a_{\mathbf{k}}^{\dagger} +  e^{-i\,\Delta\mathbf{R}\mathbf{k}}\,a_{\mathbf{k}}^{\dagger} a_{-\mathbf{k}}^{\dagger}+  e^{i\,\Delta\mathbf{R}\mathbf{k}}\,a_{\mathbf{k}} a_{-\mathbf{k}}\Bigg)\\
+%      %
+%     &=  \sum_{\substack{\mathbf{k}}}\Bigg(U(\mathbf{k})\, a_{\mathbf{k}}^{\dagger} a_{\mathbf{k}}+ U^*(\mathbf{k})\,a_{\mathbf{k}} a_{\mathbf{k}}^{\dagger} +  U(\mathbf{k})\,a_{\mathbf{k}}^{\dagger} a_{-\mathbf{k}}^{\dagger}+  U^*(\mathbf{k})\,a_{\mathbf{k}} a_{-\mathbf{k}}\Bigg)=\vcentcolon \sum_{\mathbf{k}}H_\mathbf{k}\\
+%     %
+%     \text{where}\quad U(\mathbf{k}) &= \sum_{\Delta\mathbf{R}}U(\Delta\mathbf{R})\,e^{-i\,\Delta\mathbf{R}\mathbf{k}}
+% \end{align*}
 \begin{align*}
-    H = \sum_{\substack{\mathbf{R},\mathbf{R}'\in L\\a,b \in C}}H^{a,b}(\mathbf{R}-\mathbf{R}')\,a_{\mathbf{R}}^{\dagger} b_{\mathbf{R}'}
+    H = \sum_{\substack{\mathbf{R},\mathbf{R}'\in L\\a_\mathbf{R}\in C_\mathbf{R},\;b_{\mathbf{R}'}\in C_{\mathbf{R}'}}}U_{ab}(\mathbf{R}-\mathbf{R}')\,\left( a_{\mathbf{R}}^{\dagger} b_{\mathbf{R}'}+a_{\mathbf{R}} b_{\mathbf{R}'}^{\dagger} + a_{\mathbf{R}}^{\dagger} b_{\mathbf{R}'}^{\dagger}+a_{\mathbf{R}} b_{\mathbf{R}'}\right)
 \end{align*}
 For two dimensional periodic boundary conditions one can introduce the Fourier transformed operators, $a\in C$
 \begin{align*}
-    a_{\mathbf{k}} = \frac{1}{N}\sum_{\mathbf{R}\in L} e^{-i\mathbf{k}\cdot\mathbf{R}}\,a_{\mathbf{R}},
+    a_{\mathbf{k}} = \frac{1}{\sqrt{N}}\sum_{\mathbf{R}\in N} e^{-i\mathbf{k}\cdot\mathbf{R}}\,a_{\mathbf{R}},
 \end{align*}
 $k\in \bar{L}$ where $\bar{L}$ is the reciprocal lattice of $L$ and $N$ is the extent of the lattice in one direction.
 Writing the Hamiltonian in terms of these operators yields
 \begin{align*}
-    H &=\frac{1}{N^2}\,  \sum_{\substack{\mathbf{R},\mathbf{R}'\in L\\a,b \in C\\\mathbf{k},\mathbf{k}'\in\bar{L}}}H^{a,b}(\mathbf{R}-\mathbf{R}')\,e^{-i\,\mathbf{k}\mathbf{R}}\,e^{i\,\mathbf{k}'\mathbf{R}'}\,a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}'}\\
-    &=  \frac{1}{N^2}\,\sum_{\substack{\mathbf{R},\;\Delta\mathbf{R}=\mathbf{R}-\mathbf{R}'\\a,b 
-    \\\mathbf{k},\mathbf{k}'}}H^{a,b}(\Delta\mathbf{R})\,e^{-i\,\mathbf{R}(\mathbf{k}-\mathbf{k}')}\,e^{-i\,\Delta\mathbf{R}\mathbf{k}'}\,a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}'}\\
-    &= \sum_{\substack{\Delta\mathbf{R},\mathbf{k}\\a,b}}H^{a,b}(\Delta\mathbf{R})\,e^{-i\,\Delta\mathbf{R}\mathbf{k}}\,a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}}=\vcentcolon \sum_{\substack{\mathbf{k}\\a,b}}H^{a,b}_\mathbf{k}\,a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}}\\
-    \text{where}\quad H^{a,b}_\mathbf{k} &= \sum_{\Delta\mathbf{R}}H^{a,b}(\Delta\mathbf{R})\,e^{-i\,\Delta\mathbf{R}\mathbf{k}}
+    H &=\frac{1}{L}\,  \sum_{\substack{\mathbf{R},\mathbf{R}'\in L\\\mathbf{k},\mathbf{k}'\in\bar{L}\\a_\mathbf{k}\in C_\mathbf{k},\;b_{\mathbf{k}'}\in C_{\mathbf{k}'}}}U_{ab}(\mathbf{R}-\mathbf{R}')\,\Bigg(e^{-i\,(\mathbf{k}\mathbf{R}-\mathbf{k}'\mathbf{R}')}\, a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}'}+ e^{i\,(\mathbf{k}\mathbf{R}-\mathbf{k}'\mathbf{R}')}\, a_{\mathbf{k}} b_{\mathbf{k}'}^{\dagger} \\&+  e^{-i\,(\mathbf{k}\mathbf{R}+\mathbf{k}'\mathbf{R}')}\,a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}'}^{\dagger}+  e^{i\,(\mathbf{k}\mathbf{R}+\mathbf{k}'\mathbf{R}')}\,a_{\mathbf{k}} b_{\mathbf{k}'}\Bigg)\\\\
+    %
+     &=\frac{1}{L}\,  \sum_{\substack{\mathbf{R},\;\Delta\mathbf{R}=\mathbf{R}-\mathbf{R}' 
+    \\\mathbf{k},\mathbf{k}'\\a,b}}U_{ab}(\Delta\mathbf{R})\,\Bigg(e^{-i\,\mathbf{R}\,(\mathbf{k}-\mathbf{k}')-i\,\Delta\mathbf{R}\mathbf{k}'}\, a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}'}+ e^{i\,\mathbf{R}\,(\mathbf{k}-\mathbf{k}')+i\,\Delta\mathbf{R}\mathbf{k}'}\, a_{\mathbf{k}} b_{\mathbf{k}'}^{\dagger}\\&+  e^{-i\,\mathbf{R}\,(\mathbf{k}+\mathbf{k}')+i\,\Delta\mathbf{R}\mathbf{k}'}\,a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}'}^{\dagger}+  e^{i\,\mathbf{R}\,(\mathbf{k}+\mathbf{k}')-i\,\Delta\mathbf{R}\mathbf{k}'}\,a_{\mathbf{k}} b_{\mathbf{k}'}\Bigg)\\\\
+    %
+     &=  \sum_{\substack{\Delta\mathbf{R},\mathbf{k},a,b}}U_{ab}(\Delta\mathbf{R})\,\Bigg(e^{-i\,\Delta\mathbf{R}\mathbf{k}}\, a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}}+ e^{i\,\Delta\mathbf{R}\mathbf{k}} \,a_{\mathbf{k}} b_{\mathbf{k}}^{\dagger} +  e^{-i\,\Delta\mathbf{R}\mathbf{k}}\,a_{\mathbf{k}}^{\dagger} b_{-\mathbf{k}}^{\dagger}+  e^{i\,\Delta\mathbf{R}\mathbf{k}}\,a_{\mathbf{k}} b_{-\mathbf{k}}\Bigg)\\
+     %
+    &=  \sum_{\substack{\mathbf{k},a,b}}\Bigg(U_{ab}(\mathbf{k})\, a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}}+ U_{ab}^*(\mathbf{k})\,a_{\mathbf{k}} b_{\mathbf{k}}^{\dagger} +  U_{ab}(\mathbf{k})\,a_{\mathbf{k}}^{\dagger} b_{-\mathbf{k}}^{\dagger}+  U_{ab}^*(\mathbf{k})\,a_{\mathbf{k}} b_{-\mathbf{k}}\Bigg)=\vcentcolon \sum_{\mathbf{k}}H_\mathbf{k}\\
+    %
+    \text{where}\quad U_{ab}(\mathbf{k}) &= \sum_{\Delta\mathbf{R}}U_{ab}(\Delta\mathbf{R})\,e^{-i\,\Delta\mathbf{R}\mathbf{k}}
 \end{align*}
+% By this the terms $H_\mathbf{k}$ take the form
+% \begin{align*}
+%     H_\mathbf{k}&= 
+% \end{align*}
 \begin{figure}[H]
     \centering
     \includegraphics{pictures/lattice_def.pdf}

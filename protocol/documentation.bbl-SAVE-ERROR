@@ -1,0 +1,627 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{citro_thouless_2023}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f0f7cb746e8e8b13e5cc8e3711f31b6c}{%
+           family={Citro},
+           familyi={C\bibinitperiod},
+           given={Roberta},
+           giveni={R\bibinitperiod}}}%
+        {{hash=fe46e08fcce4b07197b07d3c1cdda5e6}{%
+           family={Aidelsburger},
+           familyi={A\bibinitperiod},
+           given={Monika},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e515cc224313c23be5081e15fee8992c}
+      \strng{fullhash}{e515cc224313c23be5081e15fee8992c}
+      \strng{bibnamehash}{e515cc224313c23be5081e15fee8992c}
+      \strng{authorbibnamehash}{e515cc224313c23be5081e15fee8992c}
+      \strng{authornamehash}{e515cc224313c23be5081e15fee8992c}
+      \strng{authorfullhash}{e515cc224313c23be5081e15fee8992c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Thouless pumping provides one of the simplest manifestations of topology in quantum systems, and has attracted a lot of recent interest, both theoretically and experimentally. Since the seminal works by Thouless and Niu in 1983 and 1984, it is argued that the quantization of the pumped charge is robust against weak disorder, but a clear characterization of the localization properties of the relevant states, and the breakdown of quantized transport in the presence of interaction or out of the adiabatic approximation, has been long debated. Thouless pumping is also the first example of a topological phase emerging in a periodically-driven system. Driven systems can exhibit exotic topological phases without any static analogue and have been the subject of many recent proposals both in fermionic and bosonic systems in diverse platforms ranging from cold atoms to photonics and condensed matter systems. In this respect, this review has a twofold purpose: On the one hand, it serves as a basis to understand the robustness of the topology of slowly-driven systems per se; On the other hand, it highlights the rich properties of topological pumps and their diverse range of applications, for instance, in systems with synthetic dimensions or for understanding higher-order topological phases. These examples underline the relevance of topological pumping for the fast growing field of topological quantum matter.}
+      \field{day}{4}
+      \field{eprinttype}{arxiv}
+      \field{issn}{2522-5820}
+      \field{journaltitle}{Nature Reviews Physics}
+      \field{month}{1}
+      \field{number}{2}
+      \field{shortjournal}{Nat Rev Phys}
+      \field{title}{Thouless pumping and topology}
+      \field{urlday}{1}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{5}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{87\bibrangedash 101}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1038/s42254-022-00545-0
+      \endverb
+      \verb{eprint}
+      \verb 2210.02050 [cond-mat]
+      \endverb
+      \verb{file}
+      \verb Preprint PDF:/home/christian/Zotero/storage/28NX6WLE/Citro and Aidelsburger - 2023 - Thouless pumping and topology.pdf:application/pdf;Snapshot:/home/christian/Zotero/storage/ZIV7QW4C/2210.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2210.02050
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2210.02050
+      \endverb
+      \keyw{Condensed Matter - Mesoscale and Nanoscale Physics,Condensed Matter - Quantum Gases}
+    \endentry
+    \entry{nakajima_topological_2016}{article}{}
+      \name{author}{8}{}{%
+        {{hash=55828cbb26f10965c563a851080648a6}{%
+           family={Nakajima},
+           familyi={N\bibinitperiod},
+           given={Shuta},
+           giveni={S\bibinitperiod}}}%
+        {{hash=29d65dcd68770541f23a290977b973ec}{%
+           family={Tomita},
+           familyi={T\bibinitperiod},
+           given={Takafumi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=57124377f98917f105a8ff35f0d66cb2}{%
+           family={Taie},
+           familyi={T\bibinitperiod},
+           given={Shintaro},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ca5b0ac33774f48c27016c4311b82d66}{%
+           family={Ichinose},
+           familyi={I\bibinitperiod},
+           given={Tomohiro},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c09a44de95f371943ac3d69fda922d00}{%
+           family={Ozawa},
+           familyi={O\bibinitperiod},
+           given={Hideki},
+           giveni={H\bibinitperiod}}}%
+        {{hash=1f647bb6da8304b7be380ec58eb6373a}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Lei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=8c95c0b716ad4a10a2ab4370aca0d0ca}{%
+           family={Troyer},
+           familyi={T\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8fb8715b4f7b07331c8bcfeb2aea5e47}{%
+           family={Takahashi},
+           familyi={T\bibinitperiod},
+           given={Yoshiro},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{6155cc212ef086dcbef89363208ba5f2}
+      \strng{fullhash}{535915f56055de07aa9b538f88502254}
+      \strng{bibnamehash}{535915f56055de07aa9b538f88502254}
+      \strng{authorbibnamehash}{535915f56055de07aa9b538f88502254}
+      \strng{authornamehash}{6155cc212ef086dcbef89363208ba5f2}
+      \strng{authorfullhash}{535915f56055de07aa9b538f88502254}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Charge transport in a cyclically time-modulated periodic potential, also known as a topological Thouless pump, has been realized in an ultracold gas of fermionic atoms.}
+      \field{issn}{1745-2481}
+      \field{journaltitle}{Nature Physics}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{note}{Publisher: Nature Publishing Group}
+      \field{number}{4}
+      \field{shortjournal}{Nature Phys}
+      \field{title}{Topological Thouless pumping of ultracold fermions}
+      \field{urlday}{1}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{12}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{296\bibrangedash 300}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1038/nphys3622
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/home/christian/Zotero/storage/K3HN2ZE8/Nakajima et al. - 2016 - Topological Thouless pumping of ultracold fermions.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/nphys3622
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/nphys3622
+      \endverb
+      \keyw{Condensed-matter physics,Quantum simulation}
+    \endentry
+    \entry{lohse_thouless_2016}{article}{}
+      \name{author}{5}{}{%
+        {{hash=381fb5e52bdaa8c85b106fd1d45221c2}{%
+           family={Lohse},
+           familyi={L\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4349eb4b893a6868acab7be0d0582bfc}{%
+           family={Schweizer},
+           familyi={S\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e268f5ba8b2dd908d07f373b772de9f5}{%
+           family={Zilberberg},
+           familyi={Z\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+        {{hash=bd5aff6cda33d649dc5a72c7e2678e3b}{%
+           family={Aidelsburger},
+           familyi={A\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=37d6dd0a2f780911ebf569aec9cd8209}{%
+           family={Bloch},
+           familyi={B\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1ad3dc28a0058b9d97cfe217e4304a0}
+      \strng{fullhash}{1595b7599c0932b19d62c1f1b3f8ba03}
+      \strng{bibnamehash}{1595b7599c0932b19d62c1f1b3f8ba03}
+      \strng{authorbibnamehash}{1595b7599c0932b19d62c1f1b3f8ba03}
+      \strng{authornamehash}{f1ad3dc28a0058b9d97cfe217e4304a0}
+      \strng{authorfullhash}{1595b7599c0932b19d62c1f1b3f8ba03}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Topological charge pumping enables the transport of charge through an adiabatic cyclic evolution of the underlying Hamiltonian. In contrast to classical transport, the transported charge is quantized and purely determined by the topology of the pump cycle, making it robust to perturbations. Here, we report on the realization of such a pump with ultracold bosonic atoms forming a Mott insulator in a dynamically controlled optical superlattice. By taking in situ images of the cloud, we observe a quantized deflection per pump cycle. We reveal the pump’s genuine quantum nature by showing that, in contrast to ground-state particles, a counterintuitive reversed deflection occurs for particles in the first excited band. Furthermore, we directly demonstrate that the system undergoes a controlled topological transition in higher bands when tuning the superlattice parameters. These results open a route to the implementation of more complex pumping schemes, including spin degrees of freedom and higher dimensions.}
+      \field{issn}{1745-2481}
+      \field{journaltitle}{Nature Physics}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{note}{Publisher: Nature Publishing Group}
+      \field{number}{4}
+      \field{shortjournal}{Nature Phys}
+      \field{title}{A Thouless quantum pump with ultracold bosonic atoms in an optical superlattice}
+      \field{urlday}{1}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{12}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{350\bibrangedash 354}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1038/nphys3584
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/home/christian/Zotero/storage/LRDP2LBU/Lohse et al. - 2016 - A Thouless quantum pump with ultracold bosonic atoms in an optical superlattice.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/nphys3584
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/nphys3584
+      \endverb
+      \keyw{Quantum simulation,Ultracold gases}
+    \endentry
+    \entry{meidan_topological_2011}{article}{}
+      \name{author}{3}{}{%
+        {{hash=11fbeddfc3d175f4039fe8cf3db66d60}{%
+           family={Meidan},
+           familyi={M\bibinitperiod},
+           given={Dganit},
+           giveni={D\bibinitperiod}}}%
+        {{hash=0ef390a4227691870e22c625727797dd}{%
+           family={Micklitz},
+           familyi={M\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+        {{hash=61915b99f91280d38daf1536182bc515}{%
+           family={Brouwer},
+           familyi={B\bibinitperiod},
+           given={Piet\bibnamedelima W.},
+           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{db8f468ddd6e57586f7d9bc1ca9896ea}
+      \strng{fullhash}{d378253304e005b47be87a035448b2f1}
+      \strng{bibnamehash}{d378253304e005b47be87a035448b2f1}
+      \strng{authorbibnamehash}{d378253304e005b47be87a035448b2f1}
+      \strng{authornamehash}{db8f468ddd6e57586f7d9bc1ca9896ea}
+      \strng{authorfullhash}{d378253304e005b47be87a035448b2f1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{When adiabatically varied in time, certain one-dimensional band insulators allow for the quantized noiseless pumping of spin even in the presence of strong spin-orbit scattering. These spin pumps are closely related to the quantum spin Hall system, and their properties are protected by a time-reversal restriction on the pumping cycle. In this paper we study pumps formed of one-dimensional insulators with a time-reversal restriction on the pumping cycle and a bulk energy gap which arises due to interactions. We find that the correlated gapped phase can lead to novel pumping properties. In particular, systems with 𝑑 different ground states can give rise to 𝑑+1 different classes of spin pumps, including a trivial class which does not pump quantized spin and 𝑑 nontrivial classes allowing for the pumping of quantized spin ℏ/𝑛 on average per cycle, where 1≤𝑛≤𝑑. We discuss an example of a spin pump that transfers an average of spin ℏ/2 without transferring charge.}
+      \field{day}{12}
+      \field{journaltitle}{Physical Review B}
+      \field{month}{8}
+      \field{note}{Publisher: American Physical Society}
+      \field{number}{7}
+      \field{shortjournal}{Phys. Rev. B}
+      \field{title}{Topological classification of interaction-driven spin pumps}
+      \field{urlday}{1}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{84}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{075325}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.84.075325
+      \endverb
+      \verb{file}
+      \verb APS Snapshot:/home/christian/Zotero/storage/SRCWQYN3/PhysRevB.84.html:text/html;Full Text PDF:/home/christian/Zotero/storage/AY53Y7GS/Meidan et al. - 2011 - Topological classification of interaction-driven spin pumps.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.84.075325
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.84.075325
+      \endverb
+    \endentry
+    \entry{tangpanitanon_topological_2016}{article}{}
+      \name{author}{6}{}{%
+        {{hash=90e3d4ace0c4a080aa2c76b09f6f09de}{%
+           family={Tangpanitanon},
+           familyi={T\bibinitperiod},
+           given={Jirawat},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8d30819f5fca7ee21e6dfd10e64834dc}{%
+           family={Bastidas},
+           familyi={B\bibinitperiod},
+           given={Victor\bibnamedelima M.},
+           giveni={V\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=45a93b90a78d72948d95086f266d2257}{%
+           family={Al-Assam},
+           familyi={A\bibinithyphendelim A\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ab67b0d3986106680d464532f25dc939}{%
+           family={Roushan},
+           familyi={R\bibinitperiod},
+           given={Pedram},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3ec448edbb352dc4613e4f52f64c7a4d}{%
+           family={Jaksch},
+           familyi={J\bibinitperiod},
+           given={Dieter},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a2d6e24f48a7049d0d2a90ef2ef0af59}{%
+           family={Angelakis},
+           familyi={A\bibinitperiod},
+           given={Dimitris\bibnamedelima G.},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{9661faff4dd48dd0226f19e9c5b20715}
+      \strng{fullhash}{a51b40be5054c7218b411c8fdafd5314}
+      \strng{bibnamehash}{a51b40be5054c7218b411c8fdafd5314}
+      \strng{authorbibnamehash}{a51b40be5054c7218b411c8fdafd5314}
+      \strng{authornamehash}{9661faff4dd48dd0226f19e9c5b20715}
+      \strng{authorfullhash}{a51b40be5054c7218b411c8fdafd5314}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We show how to implement topological or Thouless pumping of interacting photons in one-dimensional nonlinear resonator arrays by simply modulating the frequency of the resonators periodically in space and time. The interplay between the interactions and the adiabatic modulations enables robust transport of Fock states with few photons per site. We analyze the transport mechanism via an effective analytic model and study its topological properties and its protection to noise. We conclude by a detailed study of an implementation with existing circuit-{QED} architectures.}
+      \field{day}{17}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{11}
+      \field{note}{Publisher: American Physical Society}
+      \field{number}{21}
+      \field{shortjournal}{Phys. Rev. Lett.}
+      \field{title}{Topological Pumping of Photons in Nonlinear Resonator Arrays}
+      \field{urlday}{1}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{117}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{213603}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.117.213603
+      \endverb
+      \verb{file}
+      \verb APS Snapshot:/home/christian/Zotero/storage/D4SZM5KY/PhysRevLett.117.html:text/html;Full Text PDF:/home/christian/Zotero/storage/CALSM7K3/Tangpanitanon et al. - 2016 - Topological Pumping of Photons in Nonlinear Resonator Arrays.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.117.213603
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.117.213603
+      \endverb
+    \endentry
+    \entry{maffei_topological_2018}{article}{}
+      \name{author}{5}{}{%
+        {{hash=32d46a789950e4548b2a49c1fc0d6466}{%
+           family={Maffei},
+           familyi={M\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
+        {{hash=42d32f862262fb4c790c26b34d072518}{%
+           family={Dauphin},
+           familyi={D\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=26952e027e3576cf04165c1f92267b6a}{%
+           family={Cardano},
+           familyi={C\bibinitperiod},
+           given={Filippo},
+           giveni={F\bibinitperiod}}}%
+        {{hash=bb70d7fd7235ae3a7ea0481b921e220e}{%
+           family={Lewenstein},
+           familyi={L\bibinitperiod},
+           given={Maciej},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a3f4b2fdf3513d2d3fa12d64a290f5b3}{%
+           family={Massignan},
+           familyi={M\bibinitperiod},
+           given={Pietro},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{035bcba2a623d6271544f2147efb4345}
+      \strng{fullhash}{a1e72475a4183353a70069961c9d5f8d}
+      \strng{bibnamehash}{a1e72475a4183353a70069961c9d5f8d}
+      \strng{authorbibnamehash}{a1e72475a4183353a70069961c9d5f8d}
+      \strng{authornamehash}{035bcba2a623d6271544f2147efb4345}
+      \strng{authorfullhash}{a1e72475a4183353a70069961c9d5f8d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study chiral models in one spatial dimension, both static and periodically driven. We demonstrate that their topological properties may be read out through the long time limit of a bulk observable, the mean chiral displacement. The derivation of this result is done in terms of spectral projectors, allowing for a detailed understanding of the physics. We show that the proposed detection converges rapidly and it can be implemented in a wide class of chiral systems. Furthermore, it can measure arbitrary winding numbers and topological boundaries, it applies to all non-interacting systems, independently of their quantum statistics, and it requires no additional elements, such as external ﬁelds, nor ﬁlled bands.}
+      \field{day}{17}
+      \field{issn}{1367-2630}
+      \field{journaltitle}{New Journal of Physics}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{New J. Phys.}
+      \field{title}{Topological characterization of chiral models through their long time dynamics}
+      \field{urlday}{3}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{20}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{013023}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1367-2630/aa9d4c
+      \endverb
+      \verb{file}
+      \verb PDF:/home/christian/Zotero/storage/78C7QXBJ/Maffei et al. - 2018 - Topological characterization of chiral models through their long time dynamics.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://iopscience.iop.org/article/10.1088/1367-2630/aa9d4c
+      \endverb
+      \verb{url}
+      \verb https://iopscience.iop.org/article/10.1088/1367-2630/aa9d4c
+      \endverb
+    \endentry
+    \entry{schnyder_classification_2008}{article}{}
+      \name{author}{4}{}{%
+        {{hash=a67373224eafb9e6200fd3ab19f3b6b6}{%
+           family={Schnyder},
+           familyi={S\bibinitperiod},
+           given={Andreas\bibnamedelima P.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=e98e80616d8c35e9d2fbbb928838ec72}{%
+           family={Ryu},
+           familyi={R\bibinitperiod},
+           given={Shinsei},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7b57c51242955fc185759690e6088d41}{%
+           family={Furusaki},
+           familyi={F\bibinitperiod},
+           given={Akira},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dc858600b1f8b10b087f1d4e46c6cff7}{%
+           family={Ludwig},
+           familyi={L\bibinitperiod},
+           given={Andreas\bibnamedelimb W.\bibnamedelimi W.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b2afe9d1439255b39dd52994c8a925b6}
+      \strng{fullhash}{e796206db38de31c55877e4f5af154bb}
+      \strng{bibnamehash}{e796206db38de31c55877e4f5af154bb}
+      \strng{authorbibnamehash}{e796206db38de31c55877e4f5af154bb}
+      \strng{authornamehash}{b2afe9d1439255b39dd52994c8a925b6}
+      \strng{authorfullhash}{e796206db38de31c55877e4f5af154bb}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We systematically study topological phases of insulators and superconductors (or superfluids) in three spatial dimensions. We find that there exist three-dimensional (3D) topologically nontrivial insulators or superconductors in five out of ten symmetry classes introduced in seminal work by Altland and Zirnbauer within the context of random matrix theory, more than a decade ago. One of these is the recently introduced ℤ2 topological insulator in the symplectic (or spin-orbit) symmetry class. We show that there exist precisely four more topological insulators. For these systems, all of which are time-reversal invariant in three dimensions, the space of insulating ground states satisfying certain discrete symmetry properties is partitioned into topological sectors that are separated by quantum phase transitions. Three of the above five topologically nontrivial phases can be realized as time-reversal invariant superconductors. In these the different topological sectors are characterized by an integer winding number defined in momentum space. When such 3D topological insulators are terminated by a two-dimensional surface, they support a number (which may be an arbitrary nonvanishing even number for singlet pairing) of Dirac fermion (Majorana fermion when spin-rotation symmetry is completely broken) surface modes which remain gapless under arbitrary perturbations of the Hamiltonian that preserve the characteristic discrete symmetries, including disorder. In particular, these surface modes completely evade Anderson localization from random impurities. These topological phases can be thought of as three-dimensional analogs of well-known paired topological phases in two spatial dimensions such as the spinless chiral (𝑝𝑥±𝑖⁢𝑝𝑦)-wave superconductor (or Moore-Read Pfaffian state). In the corresponding topologically nontrivial (analogous to “weak pairing”) and topologically trivial (analogous to “strong pairing”) 3D phases, the wave functions exhibit markedly distinct behavior. When an electromagnetic U(1) gauge field and fluctuations of the gap functions are included in the dynamics, the superconducting phases with nonvanishing winding number possess nontrivial topological ground-state degeneracies.}
+      \field{day}{26}
+      \field{journaltitle}{Physical Review B}
+      \field{month}{11}
+      \field{note}{Publisher: American Physical Society}
+      \field{number}{19}
+      \field{shortjournal}{Phys. Rev. B}
+      \field{title}{Classification of topological insulators and superconductors in three spatial dimensions}
+      \field{urlday}{3}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{78}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{195125}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.78.195125
+      \endverb
+      \verb{file}
+      \verb APS Snapshot:/home/christian/Zotero/storage/L94Q72SA/PhysRevB.78.html:text/html;Full Text PDF:/home/christian/Zotero/storage/MULGLCVF/Schnyder et al. - 2008 - Classification of topological insulators and superconductors in three spatial dimensions.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.78.195125
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.78.195125
+      \endverb
+    \endentry
+    \entry{mondragon-shem_topological_2014}{article}{}
+      \name{author}{4}{}{%
+        {{hash=c7eac818468f03cd990011c7a5deb495}{%
+           family={Mondragon-Shem},
+           familyi={M\bibinithyphendelim S\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=963e05e74e6c18075e45849051373b1e}{%
+           family={Hughes},
+           familyi={H\bibinitperiod},
+           given={Taylor\bibnamedelima L.},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=5485dc745f1f9a712c3adfc8cc1577c8}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Juntao},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d06619865b27dd6bae18e036deb780f9}{%
+           family={Prodan},
+           familyi={P\bibinitperiod},
+           given={Emil},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{7364dc6776cb42eab85e1574966924c3}
+      \strng{fullhash}{f62d58136d2ef18297b7d6fe8e7fd5d8}
+      \strng{bibnamehash}{f62d58136d2ef18297b7d6fe8e7fd5d8}
+      \strng{authorbibnamehash}{f62d58136d2ef18297b7d6fe8e7fd5d8}
+      \strng{authornamehash}{7364dc6776cb42eab85e1574966924c3}
+      \strng{authorfullhash}{f62d58136d2ef18297b7d6fe8e7fd5d8}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{23}
+      \field{issn}{0031-9007, 1079-7114}
+      \field{journaltitle}{Physical Review Letters}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{4}
+      \field{shortjournal}{Phys. Rev. Lett.}
+      \field{title}{Topological Criticality in the Chiral-Symmetric {AIII} Class at Strong Disorder}
+      \field{urlday}{3}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{113}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{046802}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.113.046802
+      \endverb
+      \verb{file}
+      \verb PDF:/home/christian/Zotero/storage/BE5F6WUP/Mondragon-Shem et al. - 2014 - Topological Criticality in the Chiral-Symmetric AIII Class at Strong Disorder.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.113.046802
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.113.046802
+      \endverb
+    \endentry
+    \entry{bravyi_schrieffer-wolff_2011}{article}{}
+      \name{author}{3}{}{%
+        {{hash=964ccce884d5c27e980e285b18d587cd}{%
+           family={Bravyi},
+           familyi={B\bibinitperiod},
+           given={Sergey},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9edabaf9cc637eb3c45a1e65b60544e3}{%
+           family={{DiVincenzo}},
+           familyi={D\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=484a7301172505faf210926187741479}{%
+           family={Loss},
+           familyi={L\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{84579f3f095941cba9a7e3acf22af7fc}
+      \strng{fullhash}{c121e740b7093edc6c33275de6749ea7}
+      \strng{bibnamehash}{c121e740b7093edc6c33275de6749ea7}
+      \strng{authorbibnamehash}{c121e740b7093edc6c33275de6749ea7}
+      \strng{authornamehash}{84579f3f095941cba9a7e3acf22af7fc}
+      \strng{authorfullhash}{c121e740b7093edc6c33275de6749ea7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Schrieﬀer-Wolﬀ ({SW}) method is a version of degenerate perturbation theory in which the low-energy eﬀective Hamiltonian Heﬀ is obtained from the exact Hamiltonian by a unitary transformation decoupling the low-energy and high-energy subspaces. We give a self-contained summary of the {SW} method with a focus on rigorous results. We begin with an exact deﬁnition of the {SW} transformation in terms of the so-called direct rotation between linear subspaces. From this we obtain elementary proofs of several important properties of Heﬀ such as the linked cluster theorem. We then study the perturbative version of the {SW} transformation obtained from a Taylor series representation of the direct rotation. Our perturbative approach provides a systematic diagram technique for computing high-order corrections to Heﬀ . We then specialize the {SW} method to quantum spin lattices with short-range interactions. We establish unitary equivalence between eﬀective low-energy Hamiltonians obtained using two diﬀerent versions of the {SW} method studied in the literature. Finally, we derive an upper bound on the precision up to which the ground state energy of the n-th order eﬀective Hamiltonian approximates the exact ground state energy.}
+      \field{eprinttype}{arxiv}
+      \field{issn}{00034916}
+      \field{journaltitle}{Annals of Physics}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{10}
+      \field{shortjournal}{Annals of Physics}
+      \field{title}{Schrieffer-Wolff transformation for quantum many-body systems}
+      \field{urlday}{16}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{326}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2793\bibrangedash 2826}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1016/j.aop.2011.06.004
+      \endverb
+      \verb{eprint}
+      \verb 1105.0675 [quant-ph]
+      \endverb
+      \verb{file}
+      \verb PDF:/home/christian/Zotero/storage/9MHETHYF/Bravyi et al. - 2011 - Schrieffer-Wolff transformation for quantum many-body systems.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1105.0675
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1105.0675
+      \endverb
+      \keyw{Condensed Matter - Statistical Mechanics,Condensed Matter - Strongly Correlated Electrons,Quantum Physics}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
