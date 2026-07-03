@@ -83,7 +83,7 @@
       <file>documentation.bcf</file>
     </requires>
     <requires type="editable">
-      <file>sources.bib</file>
+      <file>sources3.bib</file>
     </requires>
   </external>
 </requests>

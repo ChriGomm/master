@@ -1,14 +1,14 @@
 # Fdb version 4
-["biber documentation"] 1782399613.50443 "documentation.bcf" "documentation.bbl" "documentation" 1782400024.22542 0
-  "documentation.bcf" 1782400024.14517 108126 e699029231fc5bb54eea711e6320d63f "pdflatex"
-  "sources.bib" 1765880343.07162 16791 09c6a93502f14a06b7d72d199b8077c4 ""
+["biber documentation"] 0 "documentation.bcf" "documentation.bbl" "documentation" 1783097335.24517 -1
+  "documentation.bcf" 1783097335.13888 108350 c6954db667d11b43ea4a9b3f0eb39442 "pdflatex"
+  "sources3.bib" 1782919003.91429 19696 8f0099eb2d2a75db65e1232a6151201a ""
   (generated)
   "documentation.bbl"
   "documentation.blg"
   (rewritten before read)
-["pdflatex"] 1782400022.71403 "/home/christian/Documents/master/protocol/documentation.tex" "documentation.pdf" "documentation" 1782400024.22561 0
+["pdflatex"] 1783097333.58647 "/home/christian/Documents/master/protocol/documentation.tex" "documentation.pdf" "documentation" 1783097335.24535 0
   "/etc/texmf/web2c/texmf.cnf" 1758895203.64774 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/christian/Documents/master/protocol/documentation.tex" 1781509935.49199 13287 462e06a9698c434d00cf6abd1cc91db2 ""
+  "/home/christian/Documents/master/protocol/documentation.tex" 1782919358.83855 13288 e3fe5c2479e0a847eedc4e34d8ea3e01 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1136768653 3584 2d666ecf6d466d8b007246bc2f94d9da ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0500.tfm" 1136768653 3584 178baad7ffca7f5d3428a83bd7cc64c3 ""
@@ -310,12 +310,12 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1758895244 8213773 f45dae838239d55b66681526ece92c70 ""
   "StandardPages.sty" 1759150099.35658 3802 cf878797be82f080136d69564456bed0 ""
   "correct_coupling.tex" 1782225684.80232 23443 856c66d39ccf61d6172cdc64004f12ae ""
-  "documentation.aux" 1782400024.14317 13335 380ddff642e0befda69c1081e066a093 "pdflatex"
-  "documentation.bbl" 1782399613.97129 32481 c1d0dfeb11036d14cb7e56154b58e1ef "biber documentation"
-  "documentation.out" 1782400023.83052 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "documentation.run.xml" 1782400024.14674 2490 94dc853a5b2ce70108da0fbd346365de "pdflatex"
-  "documentation.tex" 1781509935.49199 13287 462e06a9698c434d00cf6abd1cc91db2 ""
-  "interactions.tex" 1782400022.54758 55273 17a0dc8f7e3f41865e20a443e7c629e4 ""
+  "documentation.aux" 1783097335.13567 13811 e8e74e5803e17b0e1c8d88ee92dbc865 "pdflatex"
+  "documentation.bbl" 1782919360.84437 28405 64dcf78c1d07bb2c3f0105a2e76f413a "biber documentation"
+  "documentation.out" 1783097334.76554 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "documentation.run.xml" 1783097335.1397 2491 cbca60edd16169d0d5674e9529742b0f "pdflatex"
+  "documentation.tex" 1782919358.83855 13288 e3fe5c2479e0a847eedc4e34d8ea3e01 ""
+  "interactions.tex" 1783097331.7281 63473 6bba6a6e6376fa54add076336340ee57 ""
   "numerical_results_only_phonons.tex" 1765297356.0382 16039 6366256f99442b9515363be1461d623d ""
   "pictures/SWT_calc.pdf" 1765878246.79582 24607 901bf74e598cc24cf1d11fb02cb7f0be ""
   "pictures/ads_states_for_chain_lengths.pdf" 1765297299.39042 226328 a09c9195bbd2e38f7c50ba8203c5f41f ""

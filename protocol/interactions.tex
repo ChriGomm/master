@@ -8,7 +8,7 @@
 
 We study the topological properties of phonons in trapped Rydberg atom arrays, which arise from dipole-dipole interactions between the atoms. For various one-dimensional geometries, from zigzag to armchair configurations, we analyze the symmetries of the phononic Hamiltonian which give rise to topologically localized phonon excitations on the system boundaries. Because the phonon-phonon interactions here do not naturally respect chiral symmetry, which is crucial for realizing 1D topological phases, we show how an appropriate, geometry-dependent choice of the dipole moment orientation can restore this symmetry and enable topological characterization. The interplay between two phononic degrees of freedom in the harmonic trap potential, mediated by the dipole-dipole interactions, leads to interesting topological phases with winding numbers between zero and two. The corresponding edge states exhibit strong localization and robustness, making them potentially useful for applications in Rydberg-array-based quantum transport. 
 
-As an outlook we aim to explore how the phonon topology influences transport phenomena. Topological states in the electronic degrees of freedom in Rydberg arrays have already been shown to support topologically protected photon pumping \cite{citro_thouless_2023,nakajima_topological_2016,lohse_thouless_2016,meidan_topological_2011,tangpanitanon_topological_2016}. Studying the effect of spin-phonon coupling can provide new control mechanisms in the realm of topological transport.
+As an outlook we aim to explore how the phonon topology influences transport phenomena. Topological states in the electronic degrees of freedom in Rydberg arrays have already been shown to support topologically protected photon pumping \cite{citroThoulessPumpingTopology2023,nakajimaTopologicalThoulessPumping2016,lohseThoulessQuantumPump2016,meidanTopologicalClassificationInteractiondriven201,tangpanitanonTopologicalPumpingPhotons2016}. Studying the effect of spin-phonon coupling can provide new control mechanisms in the realm of topological transport.
 
 
 \section*{Hamiltonian}
@@ -172,7 +172,37 @@ The Hamiltonian has now a quadratic form in the creation and annihilation operat
     H &= \sum_n \hbar\omega\,a_n^\dagger a_n +\frac{\hbar}{2m\omega}\, \sum_{n,m} U_{n,m}\,\left(a_n\,a_m + a_n^\dagger a_m + a_n\,a_m^\dagger + a_n^\dagger a_m^\dagger \right)\\
     &= \mathbf{a}^\dagger\,A\,\mathbf{a}
 \end{align*}
-with $\vec{a}=(a_1,\dots,a_N,a_1^\dagger,\dots,a_N^\dagger)$ the vector of operators and a coupling matrix $A$. This allows for a topological characterization of the bosonic system.
+with $\vec{a}=(a_1,\dots,a_N,a_1^\dagger,\dots,a_N^\dagger)$ the vector of operators and a coupling matrix $A$, which takes the following form
+\begin{align*}
+    A &= \frac{\hbar}{2m\omega}\,\begin{pmatrix}
+       \bar{U} & U \\
+       U & \bar{U}
+    \end{pmatrix}\\
+    \text{with}\quad \bar{U}&= U+m\omega^2.
+\end{align*}
+This allows for a topological characterization of the bosonic system, acording to \cite{peanoTopologicalEdgeStates2018}. The Heisenberg equations of motion for the operators read
+\begin{align*}
+    \frac{d}{dt}\,{a}_j &= i\,([H,{a}_j]) = -i\, \hbar\omega a_j - i\,\frac{\hbar}{2m\omega}\,\sum_n \left(U_{j,n}\,a_n + U_{n,j}\,a_n + U_{j,n}\,a_n^\dagger + U_{n,j}\,a_n^\dagger\right) \\
+    &= -i\, \hbar\omega a_j -i\,\frac{\hbar}{m\omega}\,\sum_n \left(U_{j,n}\,a_n + U_{j,n}\,a_n^\dagger \right) = -2\,i\,(A\,\vec{a})_j\\
+    %
+    \frac{d}{dt}\,{a}^\dagger_j &= i\,([H,{a}^\dagger_j]) = i\, \hbar\omega a_j^\dagger  +i\,\frac{\hbar}{2m\omega}\,\sum_n \left(U_{j,n}\,a_n + U_{n,j}\,a_n + U_{j,n}\,a_n^\dagger + U_{n,j}\,a_n^\dagger\right) \\
+    &=  2\,i\,(A\,\vec{a})_{j+N}\\
+\end{align*}
+This lets one write the equations of motion in a different form
+\begin{align*}
+    \Rightarrow\quad \frac{d}{dt}\,\vec{a} &= -i\,\tilde{H}\,\vec{a}\\
+    \text{where}\quad \tilde{H} &= \frac{\hbar}{m\omega}\,\begin{pmatrix}
+       \bar{U} & U \\
+       -U & -\bar{U}
+       \end{pmatrix}
+\end{align*}
+And it is this matrix $\tilde{H}$ that determines the topological properties of the system. $\tilde{H}$ is in the Bogoliubov de Gennes form and a real matrix. Therefore it is time reversal symmetric. Particle-hole symmetry is also fulfilled, as $\tilde{H}^*=-\Sigma_x\,\tilde{H}\,\Sigma_x$ with 
+\begin{align*}\Sigma_x=\begin{pmatrix}
+    0 & \mathbb{1}\\
+    \mathbb{1} & 0
+\end{pmatrix}\end{align*}
+As a consequence it is then also chiral symmetric, as $\tilde{H}=-\Sigma_x\,\tilde{H}\,\Sigma_x$. It is hence int the CI symmetry class, which allows for a topological characterization in one dimension.
+
 % Additionally it should be mentioned that \figref{fig:tuning_first_order_to_zero} is generated using $G=\tilde{g}_i +\sum_j \tilde{U}_{j,i} \,{\Delta}_j/a $, i.e. without the trap potential contribution. Therefore this elimination can be also performed for the later case, when spin operators are present.
 % Returning to the aligned dipole potential I want to investigate the energy scales of the interaction.
 % Setting $1-3\,(\mathbf{d}\mathbf{r})^2/r^2=0$ with $\mathbf{r}=(b,h)$ one can determine the dipole from $r$ and  $h$
@@ -268,16 +298,106 @@ $k\in \bar{L}$ where $\bar{L}$ is the reciprocal lattice of $L$ and $N$ is the e
 Writing the Hamiltonian in terms of these operators yields
 \begin{align*}
     H &=\frac{1}{L}\,  \sum_{\substack{\mathbf{R},\mathbf{R}'\in L\\\mathbf{k},\mathbf{k}'\in\bar{L}\\a_\mathbf{k}\in C_\mathbf{k},\;b_{\mathbf{k}'}\in C_{\mathbf{k}'}}}U_{ab}(\mathbf{R}-\mathbf{R}')\,\Bigg(e^{-i\,(\mathbf{k}\mathbf{R}-\mathbf{k}'\mathbf{R}')}\, a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}'}+ e^{i\,(\mathbf{k}\mathbf{R}-\mathbf{k}'\mathbf{R}')}\, a_{\mathbf{k}} b_{\mathbf{k}'}^{\dagger} \\&+  e^{-i\,(\mathbf{k}\mathbf{R}+\mathbf{k}'\mathbf{R}')}\,a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}'}^{\dagger}+  e^{i\,(\mathbf{k}\mathbf{R}+\mathbf{k}'\mathbf{R}')}\,a_{\mathbf{k}} b_{\mathbf{k}'}\Bigg)\\\\
-    %
+\end{align*}
+\begin{align*}
      &=\frac{1}{L}\,  \sum_{\substack{\mathbf{R},\;\Delta\mathbf{R}=\mathbf{R}-\mathbf{R}' 
     \\\mathbf{k},\mathbf{k}'\\a,b}}U_{ab}(\Delta\mathbf{R})\,\Bigg(e^{-i\,\mathbf{R}\,(\mathbf{k}-\mathbf{k}')-i\,\Delta\mathbf{R}\mathbf{k}'}\, a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}'}+ e^{i\,\mathbf{R}\,(\mathbf{k}-\mathbf{k}')+i\,\Delta\mathbf{R}\mathbf{k}'}\, a_{\mathbf{k}} b_{\mathbf{k}'}^{\dagger}\\&+  e^{-i\,\mathbf{R}\,(\mathbf{k}+\mathbf{k}')+i\,\Delta\mathbf{R}\mathbf{k}'}\,a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}'}^{\dagger}+  e^{i\,\mathbf{R}\,(\mathbf{k}+\mathbf{k}')-i\,\Delta\mathbf{R}\mathbf{k}'}\,a_{\mathbf{k}} b_{\mathbf{k}'}\Bigg)\\\\
     %
+\end{align*}
+\begin{align*}
      &=  \sum_{\substack{\Delta\mathbf{R},\mathbf{k},a,b}}U_{ab}(\Delta\mathbf{R})\,\Bigg(e^{-i\,\Delta\mathbf{R}\mathbf{k}}\, a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}}+ e^{i\,\Delta\mathbf{R}\mathbf{k}} \,a_{\mathbf{k}} b_{\mathbf{k}}^{\dagger} +  e^{-i\,\Delta\mathbf{R}\mathbf{k}}\,a_{\mathbf{k}}^{\dagger} b_{-\mathbf{k}}^{\dagger}+  e^{i\,\Delta\mathbf{R}\mathbf{k}}\,a_{\mathbf{k}} b_{-\mathbf{k}}\Bigg)\\
      %
-    &=  \sum_{\substack{\mathbf{k},a,b}}\Bigg(U_{ab}(\mathbf{k})\, a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}}+ U_{ab}^*(\mathbf{k})\,a_{\mathbf{k}} b_{\mathbf{k}}^{\dagger} +  U_{ab}(\mathbf{k})\,a_{\mathbf{k}}^{\dagger} b_{-\mathbf{k}}^{\dagger}+  U_{ab}^*(\mathbf{k})\,a_{\mathbf{k}} b_{-\mathbf{k}}\Bigg)=\vcentcolon \sum_{\mathbf{k}}H_\mathbf{k}\\
+    &=  \sum_{\substack{\mathbf{k},a,b}}\Bigg(U_{ab}(\mathbf{k})\, a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}}+ U_{ab}^*(\mathbf{k})\,a_{\mathbf{k}} b_{\mathbf{k}}^{\dagger} +  U_{ab}(\mathbf{k})\,a_{\mathbf{k}}^{\dagger} b_{-\mathbf{k}}^{\dagger}+  U_{ab}^*(\mathbf{k})\,a_{\mathbf{k}} b_{-\mathbf{k}}\Bigg)=\vcentcolon \sum_{\mathbf{k}\geq0}H_{\mathbf{k},-\mathbf{k}}\\
     %
     \text{where}\quad U_{ab}(\mathbf{k}) &= \sum_{\Delta\mathbf{R}}U_{ab}(\Delta\mathbf{R})\,e^{-i\,\Delta\mathbf{R}\mathbf{k}}
 \end{align*}
+% Apart from a constant term $H_{\mathbf{k},-\mathbf{k}}$ can be written as
+% \begin{align*}
+%     H_{\mathbf{k},-\mathbf{k}} &= \Bigg(U_{ab}(\mathbf{k})\, a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}}+ U_{ab}^*(\mathbf{k})\,a_{\mathbf{k}} b_{\mathbf{k}}^{\dagger} +  U_{ab}(\mathbf{k})\,a_{\mathbf{k}}^{\dagger} b_{-\mathbf{k}}^{\dagger}+  U_{ab}^*(\mathbf{k})\,a_{\mathbf{k}} b_{-\mathbf{k}}\\
+%     &+ U_{ab}(-\mathbf{k})\, a_{-\mathbf{k}}^{\dagger} b_{-\mathbf{k}}+ U_{ab}^*(-\mathbf{k})\,a_{-\mathbf{k}} b_{-\mathbf{k}}^{\dagger} +  U_{ab}(-\mathbf{k})\,a_{-\mathbf{k}}^{\dagger} b_{\mathbf{k}}^{\dagger}+  U_{ab}^*(-\mathbf{k})\,a_{-\mathbf{k}} b_{\mathbf{k}}\Bigg) \\
+%     %
+%     %
+%     &= \sum_{\substack{a,b}}\Bigg(U_{ab}(\mathbf{k})\, a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}}+ U_{ab}^*(\mathbf{k})\,b_{\mathbf{k}}^{\dagger} a_{\mathbf{k}}  +  U_{ab}(\mathbf{k})\,a_{\mathbf{k}}^{\dagger} b_{-\mathbf{k}}^{\dagger}+  U_{ab}^*(\mathbf{k})\,b_{-\mathbf{k}} a_{\mathbf{k}} \\
+%     &+ U_{ab}^*(\mathbf{k})\, b_{-\mathbf{k}} a_{-\mathbf{k}}^{\dagger}+ U_{ab}(\mathbf{k})\, a_{-\mathbf{k}} b_{-\mathbf{k}}^{\dagger} +  U_{ab}^*(\mathbf{k})\, b_{\mathbf{k}}^{\dagger} a_{-\mathbf{k}}^{\dagger}+  U_{ab}(\mathbf{k})\,a_{-\mathbf{k}} b_{\mathbf{k}}  \Bigg)
+% \end{align*}
+The block of the Hamiltonian in momentum space $H_{\mathbf{k},-\mathbf{k}}$ can be written in a more compact form, by introducing the vector of operators $\mathbf{a}=(a_\mathbf{k},b_\mathbf{k},a_{-\mathbf{k}},b_{-\mathbf{k}},a_{\mathbf{k}}^{\dagger},b_{\mathbf{k}}^{\dagger},a_{-\mathbf{k}}^{\dagger},b_{-\mathbf{k}}^{\dagger})$ and the coupling matrix $A_{\mathbf{k}}$, which takes the following form
+\begin{align*}
+    A_{\mathbf{k}} &=
+    \begin{pmatrix}
+u_{aa} & u_{ab} & 0 & 0 & 0 & 0 & u_{aa} & u_{ab} \\
+u_{ab}^{*} & u_{aa} & 0 & 0 & 0 & 0 & u_{ab}^{*} & u_{aa} \\
+0 & 0 & u_{aa} & u_{ab}^{*} & u_{aa} & u_{ab}^{*} & 0 & 0 \\
+0 & 0 & u_{ab} & u_{aa} & u_{ab} & u_{aa} & 0 & 0 \\
+0 & 0 & u_{aa} & u_{ab}^{*} & u_{aa} & u_{ab}^{*} & 0 & 0 \\
+0 & 0 & u_{ab} & u_{aa} & u_{ab} & u_{aa} & 0 & 0 \\
+u_{aa} & u_{ab} & 0 & 0 & 0 & 0 & u_{aa} & u_{ab} \\
+u_{ab}^{*} & u_{aa} & 0 & 0 & 0 & 0 & u_{ab}^{*} & u_{aa}
+\end{pmatrix}
+\end{align*}
+such that $H_{\mathbf{k},-\mathbf{k}} = \mathbf{a}^{\dagger} A_{\mathbf{k}} \mathbf{a}$.
+% \begin{align*}
+% aa:\quad & a_k^{\dagger}\left(u\,a_k + u^{*} a_k + u\,a_k^{\dagger} + u^{*} a_{-k}^{\dagger}\right) \\
+% u\cdot u_{aa}:\quad & a_k^{\dagger}\left(u^{*} a_k^{\dagger} + u\,a_{-k}^{\dagger} + (u+u^{*})\,a_k\right) \\[2ex]
+% ab:\quad & a_k^{\dagger}\left(u\,b_k + u\,b_{-k}^{\dagger}\right)
+%     \qquad a_{-k}\left(u\,b_{-k}^{\dagger} + u\,b_k\right) \\
+% u\cdot u_{ab}:\quad & b_k^{\dagger}\left(u^{*} a_k + u^{*} a_{-k}^{\dagger}\right)
+%     \qquad b_{-k}\left(u^{*} a_{-k}^{\dagger} + u^{*} a_k\right) \\[2ex]
+% ba:\quad & a_k^{\dagger}\left(u^{*} b_k + u^{*} b_{-k}^{\dagger}\right) \\
+% u\cdot u_{ba}:\quad & b_k^{\dagger} \ \text{analog} \\[2ex]
+% bb:\quad & b_k^{\dagger} \ \text{analog wie } aa \\
+% u\cdot u_{bb}: & \\[2ex]
+% u_{ab}(k) &= u_{ba}^{*}(k)
+% \end{align*}
+This can in principal also be written in a more compact form as
+\begin{align*}
+    H_{\mathbf{k},-\mathbf{k}} &= \begin{pmatrix} a_\mathbf{k}^{\dagger}, & b_\mathbf{k}^{\dagger}, & a_{-\mathbf{k}}, & b_{-\mathbf{k}} \end{pmatrix}
+      \;\tilde{A}_{\mathbf{k}}\;
+      \begin{pmatrix} a_\mathbf{k} \\ b_\mathbf{k} \\ a_{-\mathbf{k}}^{\dagger} \\ b_{-\mathbf{k}}^{\dagger} \end{pmatrix}\\
+    \text{with}\quad \tilde{A}_{\mathbf{k}} &= \begin{pmatrix}
+2\,\mathrm{Re}(u_{aa}) & 2\,u_{ab} & 2\,\mathrm{Re}(u_{aa}) & 2\,u_{ab} \\
+2\,u_{ab}^{*} & 2\,\mathrm{Re}(u_{aa}) & 2\,u_{ab}^{*} & 2\,\mathrm{Re}(u_{aa}) \\
+2\,\mathrm{Re}(u_{aa}) & 2\,u_{ab} & 2\,\mathrm{Re}(u_{aa}) & 2\,u_{ab} \\
+2\,u_{ab}^{*} & 2\,\mathrm{Re}(u_{aa}) & 2\,u_{ab}^{*} & 2\,\mathrm{Re}(u_{aa})
+\end{pmatrix}
+\end{align*}
+The matrix $A_\mathbf{k}$ takes the form
+\begin{align*}
+    A_\mathbf{k} = \begin{pmatrix}
+        B &C\\
+        C^* & B^T
+\end{pmatrix}
+\end{align*}
+with $B^\dagger=B$ and $C^T=C$. In general for a Hamiltonian $H$ which is written as
+\begin{align*}
+    H &= \left(\vec{a}^{\dagger},\;\vec{a} \right) \begin{pmatrix}
+        P & Q\\
+        R & S
+    \end{pmatrix} \begin{pmatrix}\vec{a}\\\vec{a}^{\dagger} \end{pmatrix}
+\end{align*}
+where $\vec{a}=(a_\mathbf{k},b_\mathbf{k},a_{-\mathbf{k}},b_{-\mathbf{k}})$ and $P,Q,R,S$ are matrices, the Heisenberg equations of motion determined by the commutators of $H$ with the operators $a_i$ and $a_i^{\dagger}$ can be calculated as
+\begin{align*}
+H &= \vec{a}^{\dagger} P \vec{a} + \vec{a}^{\dagger} Q \vec{a}^{\dagger} 
+    + \vec{a} R \vec{a} + \vec{a} S \vec{a}^{\dagger}\\
+%
+&= \sum_{ij} a_i^{\dagger} P_{ij} a_j + a_i^{\dagger} Q_{ij} a_j^{\dagger} 
+  + a_i R_{ij} a_j + a_i S_{ij} a_j^{\dagger}\\
+%
+[H, a_k] &= \sum_j P_{kj} a_j + Q_{kj} a_j^{\dagger} + a_j^{\dagger} Q_{jk} + a_j S_{jk}\\
+         &= P \vec{a} + S^{T} \vec{a} + Q \vec{a}^{\dagger} + Q^{T} \vec{a}^{\dagger}\\
+%
+[H, a_k^{\dagger}] &= -\sum_j a_j^{\dagger} P_{jk} + R_{kj} a_j^{\dagger} + a_j^{\dagger} R_{jk} + S_{kj} a_j^{\dagger}\\
+                   &= -\left( P^{T} \vec{a}^{\dagger} + R \vec{a} + R^{T} \vec{a} + S \vec{a}^{\dagger} \right)\\
+\end{align*}
+Thus in the case of the Hamiltonian $H_{\mathbf{k},-\mathbf{k}}$, where $P^T=S$ and $R^T=R$, the Heisenberg equations of motion can be written as
+\begin{align*}
+    \frac{d}{dt} \mathbf{a}_j &= -2i \sum_{l=1}^4 B_{jl} \mathbf{a}_l + C_{jl} \mathbf{a}_{4+l} \quad\text{for}\quad j=1,\dots,4\\
+    \frac{d}{dt} \mathbf{a}_j &= 2i \sum_{l=1}^4 C^*_{jl} \mathbf{a}_l + B^*_{jl} \mathbf{a}_{4+l} \quad\text{for}\quad j=4,\dots,8\\
+    \Rightarrow\quad \frac{d}{dt} \mathbf{a} &= -2i \begin{pmatrix}
+        B & C\\
+        -C^* & -B^*
+    \end{pmatrix} \mathbf{a}=\vcentcolon -i \tilde{H}_\mathbf{k} \mathbf{a}
+\end{align*}
+
 % By this the terms $H_\mathbf{k}$ take the form
 % \begin{align*}
 %     H_\mathbf{k}&= 
@@ -360,13 +480,21 @@ A chiral Hamiltonian is defined through the property, that it anticommutes with 
     \Gamma H \Gamma = -H \quad \text{with} \quad \Gamma^2 = 1.
 \end{align}
 From this property follows that the Hamiltonian can be written in block off-diagonal form
-\begin{align}
+\begin{align}\label{eq:block_off_Ham}
     H = \begin{pmatrix}
         0 & h \\
         h^\dagger & 0
     \end{pmatrix},
 \end{align}
-where $h$ is, in general, a non-Hermitian matrix. This structure also applies for the matrix in momentum space and allows the definition of a winding number, which characterizes the topological properties of the system. If the Hamiltonian is $2\times 2$ dimensional, the winding number can be defined through the decomposition of $H$ in terms of the Pauli matrices
+where $h$ is, in general, a non-Hermitian matrix. This structure also applies for the matrix in momentum space and allows the definition of a winding number, which characterizes the topological properties of the system. In the basis of \eqref{eq:block_off_Ham} the chiral operator $\Gamma$ is diagonal and can be written as
+\begin{align}
+    \Gamma = \begin{pmatrix}   
+        \mathbb{1} & 0 \\
+            0 & -\mathbb{1} 
+    \end{pmatrix}.
+\end{align}         
+
+If the Hamiltonian is $2\times 2$ dimensional, the winding number can be defined through the decomposition of $H$ in terms of the Pauli matrices
 \begin{align}
     H =  \mathbf{n}\cdot \boldsymbol{\sigma},
 \end{align}
@@ -378,7 +506,7 @@ In terms of the Hamiltonian above this reads
 \begin{align*}
     w= \frac{1}{2\pi i} \int_{\text{BZ}} dk\, \frac{h'(k)}{h(k)}.
 \end{align*}
-Generalizing the winding number to higher dimensional Hamiltonians is possible through the use of the block off-diagonal form. The winding number then reads \cite{maffei_topological_2018,schnyder_classification_2008}
+Generalizing the winding number to higher dimensional Hamiltonians is possible through the use of the block off-diagonal form. The winding number then reads \cite{maffeiTopologicalCharacterizationChiral2018,schnyderClassificationTopologicalInsulators2008}
 \begin{align*}
     w = \frac{1}{2\pi i} \int_\text{BZ} dk \,\text{Tr}\left[h^{-1}(k) \partial_kh(k)\right].
 \end{align*}
@@ -459,7 +587,7 @@ This can be expressed with respect to the full eigenvectors of the Hamiltonian v
     &= \frac{1}{\pi i}  \sum_i\int_{\text{BZ}} dk\,\bra{\psi^+_i}\partial_k\ket{\psi^-_i}\\
     &= \frac{1}{2\pi i}  \sum_i\int_{\text{BZ}} dk\,\left(\bra{h_{1i}} \partial_k\ket{h_{1i}}-\bra{h_{2i}}\partial_k \ket{h_{2i}}\right)
 \end{align*}
-The quantity $\sum_i\bra{\Gamma\psi^-_i}\partial_k\ket{\psi^-_i}$ can be related to a polarisation \cite{mondragon-shem_topological_2014}.
+The quantity $\sum_i\bra{\Gamma\psi^-_i}\partial_k\ket{\psi^-_i}$ can be related to a polarisation \cite{mondragon-shemTopologicalCriticalityChiralSymmetric2014}.
 
 
 \section*{Time-reversal symmetry}
