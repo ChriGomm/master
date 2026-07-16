@@ -398,6 +398,210 @@ Thus in the case of the Hamiltonian $H_{\mathbf{k},-\mathbf{k}}$, where $P^T=S$ 
     \end{pmatrix} \mathbf{a}=\vcentcolon -i \tilde{H}_\mathbf{k} \mathbf{a}
 \end{align*}
 
+I want to introduce a more mathematical approach to the Hamiltonian. 
+\begin{align*}
+\mathcal{H} &= \frac{1}{2}(\mathbf{a}^\dagger)^t h\, \mathbf{a} + \frac{1}{2}\mathbf{a}^t h\, \mathbf{a}^\dagger
+  + \frac{1}{2}(\mathbf{a}^\dagger)^t \Delta\, \mathbf{a}^\dagger + \frac{1}{2}\mathbf{a}^t \Delta^\dagger\, \mathbf{a},
+\qquad h=h^\dagger,\quad \Delta=\Delta^t \\
+&= \frac12\,\left( \mathbf{h} + \overline{\mathbf{h}} + \mathbf{\Delta} + \mathbf{\Delta}^\dagger \right)
+\end{align*}
+This can be written in matrix form as
+\begin{align*}
+    \mathcal{H} &= \frac{1}{2}\begin{pmatrix} \mathbf{a}^\dagger \\ \mathbf{a} \end{pmatrix}^{\!t} \tilde{A} 
+\begin{pmatrix} \mathbf{a} \\ \mathbf{a}^\dagger \end{pmatrix},
+\qquad
+\tilde{A} = \begin{pmatrix} h & \Delta \\ \Delta^\dagger &  h \end{pmatrix} 
+%= A^\dagger \ \in\ B(\mathfrak{h}_{ph})
+\end{align*}
+In the topological framework we want to consider single-particle Hamiltonians, defined on a single particle space $\mathfrak{h} = \mathbb{C}^N \otimes \ell^2(\mathbb{Z}^d)$ where $\mathbb{C}^N$ treats the internal degrees of freedom of each unit cell and $\ell^2(\mathbb{Z}^d)$ represents the lattice structure. One can then define $$\mathbf{h}:\mathfrak{h} \to \mathfrak{h}.$$But the $\Delta$-terms are two-particle operators. The solution to this problem is to interpret the creation part of the stacked operator vector as operators in a hole-space, i.e. hole-annihilation operators and then treating holes and particles as independent degrees of freedom. I show here how this reinterpretation can be carried out. Take for example the last term of the Hamiltonian. It takes two particles and annihilates them, it can be viewed as bilinear form on the two particle space, reducing the particle space by two particles
+\begin{align*}
+    \mathbf{\Delta}^\dagger &: \mathfrak{h}\times\mathfrak{h}\to\mathbb{C}: \ket{\psi}\ket{\phi}\mapsto \mathbf{\Delta}^\dagger\left(\ket{\psi}\ket{\phi}\right)
+\end{align*}
+But for plugging in a certain vector $\ket{\psi}$ and leaving the other spot open, we can define a map $\mathbf{\tilde{\Delta}}^\dagger(\ket{\psi}):\mathfrak{h}\to\mathcal{L}(\mathfrak{h},\mathbb{C})\to\mathfrak{h}^*$, where $\mathcal{L}(\mathfrak{h},\mathbb{C})$ is the space of linear maps from $\mathfrak{h}$ to $\mathbb{C}$. But each such map can be represented in the dual space by a vector $\mathcal{L}(\mathfrak{h},\mathbb{C})\to \mathfrak{h}^*:\mathbf{\Delta}^\dagger(\ket{\psi},\cdot)\mapsto\ket{\tilde{\Delta}^\dagger(\psi)}\in\mathfrak{h}^*$ such that $\mathbf{\Delta}^\dagger\left(\ket{\psi}\ket{\phi}\right) = \braket{\tilde{\Delta}^\dagger(\psi)|\phi}$. But the linearity of $\mathbf{\Delta}^\dagger$ results in 
+\begin{align*}
+    \ket{\tilde{\Delta}^\dagger(\lambda\psi)} &= \bar{\lambda}\,\ket{\tilde{\Delta}^\dagger(\psi)}
+\end{align*}
+This makes $\mathbf{\tilde{\Delta}}^\dagger$ an anti-linear operation. One can resolve this issue by introduce a different space $\overline{\mathfrak{h}}$ which possesses a scalar multiplication of the form
+$$\cdot: \mathbb{C}\times\overline{\mathfrak{h}}\to\overline{\mathfrak{h}}: (\lambda,\ket{\varphi})\mapsto \bar{\lambda}\,\ket{\varphi}$$
+By this way one can define a linear operator over single particle Hamiltonians
+\begin{align*}
+    \mathbf{\Delta}_s^\dagger &: \mathfrak{h}\to\overline{\mathfrak{h}}: \ket{\psi}\mapsto \ket{\tilde{\Delta}^\dagger(\psi)}
+\end{align*}
+In a similar way one can define
+\begin{align*}
+    \mathbf{\Delta} &:\mathbb{C}\to \mathfrak{h}\times\mathfrak{h}: 1\mapsto\Delta \ket{\psi}\ket{\phi}\\
+    \leadsto\mathbf{\Delta}_s &: \overline{\mathfrak{h}}\to\mathfrak{h}: \ket{\psi}\mapsto \bra{\psi}\,\mathbf{\Delta}(1)=\Delta\ket{\phi}
+\end{align*}
+where $\mathbf{\Delta}_s$ can be divided into a simple linear map $M:\overline{\mathfrak{h}}\to\mathfrak{h}$ that maps each basis vector $\ket{b}_{\overline{\mathfrak{h}}}$ in $\overline{\mathfrak{h}}$ to the appropriate basis vector $\ket{b}_{\mathfrak{h}}$ in $\mathfrak{h}$, thus $\bar{\lambda}\ket{b}_{\overline{\mathfrak{h}}}\mapsto{\lambda}\ket{b}_{\mathfrak{h}}$, followed by adjunction and multiplication with $\mathbf{\Delta}(1)$. 
+\begin{align*}
+\mathbf{\Delta}_s &: \overline{\mathfrak{h}}\to\mathfrak{h}: \ket{\psi}\mapsto \left(M(\ket{\psi})\right)^\dagger\,\mathbf{\Delta}(1)=\Delta\ket{\phi}\\
+\leadsto \mathbf{\Delta} &:\mathbb{C}\to \mathfrak{h}\times\mathfrak{h}: 1\mapsto M\left(\ket{\psi}_{\overline{\mathfrak{h}}}\right)\mathbf{\Delta}_s(\ket{\psi}_{\overline{\mathfrak{h}}})
+\end{align*}
+At this state one identify the space $\mathfrak{h}$ with the single particle space and $\overline{\mathfrak{h}}$ with the single hole-space, where particle and holes are interpreted as independent degrees of freedom. The total space is than represented by the Nambu-spinor $(\ket{\psi}_{\mathfrak{h}},\ket{\varphi}_{\overline{\mathfrak{h}}})$ with particle degrees of freedom $\ket{\psi}$ and hole degrees of freedom $\ket{\phi}$. This lets the effect of the Hamiltonian on such a Nambu-state be written as
+\begin{align*}
+    \mathcal{H}\begin{pmatrix}\ket{\psi}\\\ket{\phi} \end{pmatrix}&=\begin{pmatrix} \mathbf{h} & \mathbf{\Delta} \\ \mathbf{\Delta^\dagger} & \overline{\mathbf{h}} \end{pmatrix} \begin{pmatrix}\ket{\psi}\\\ket{\phi} \end{pmatrix}\\[2mm]
+    \text{with}\quad \overline{\mathbf{h}}&:\overline{\mathfrak{h}}\to\overline{\mathfrak{h}}
+\end{align*}
+Each single particle operator can be separated into operators that act on the internal system of a unit cell and one, that mediates between unit cells $u^x$. Considering periodic boundaries the operators only depend on the distance $x$ between the cells and one can write for example
+\begin{align*}
+    \mathbf{h}=\sum_x h_x u^x
+\end{align*}
+where $h_x:\mathbb{C}\to\mathbb{C}$ treats the internal degrees of freedom and $u^x:\ell^2(\mathbb{Z}^d)\to\ell^2(\mathbb{Z}^d)$ is just the shift operator.
+Fourier transforming a state $\ket{\psi}=\ket{\psi}_\text{int}\psi(y)\in\mathfrak{h}$, $\ket{\phi}=\ket{\phi}_\text{int}\phi(y)\in\overline{\mathfrak{h}}$, where $y$ is the position of a unit cell, is defined as 
+\begin{align*}
+    \mathcal{F}(\psi)(k)&=\sum_y e^{-iky}\ket{\psi}_\text{int}\psi(y)\\
+    \mathcal{F}(\phi)(k)&=\sum_y e^{iky}\ket{\phi}_\text{int}\phi(y)
+\end{align*}
+By this one can determine the Fourier transform of the operators by their action on the states.
+\begin{align*}
+    \mathcal{F}(\mathbf{h}\psi)(k)&=\sum_{y,x}e^{-iky}\,h_x u^x \ket{\psi}_\text{int}\psi(y)\\
+    &=\sum_{y,x}e^{-iky}\,h_x \ket{\psi}_\text{int}\psi(y-x)\\
+    &=\sum_{z,x}e^{-ikz}e^{-ikx}\,h_x \ket{\psi}_\text{int}\psi(z)\\
+    &=\sum_{x}e^{-ikx}\,h_x \mathcal{F}(\psi)(k)\\
+    &=\vcentcolon \mathbf{h}(k)\,\mathcal{F}(\psi)(k)=\vcentcolon \mathbf{h}(k)\,\psi(k)
+\end{align*}
+As $\overline{\mathbf{h}}=\sum_x\bar{h}_x u^x$, where the bar means complex conjugation, we can write
+\begin{align*}
+    \mathcal{F}(\overline{\mathbf{h}}\phi)(k)&=\sum_{y,x}e^{iky}\,\bar{h}_x u^x \ket{\phi}_\text{int}\phi(y)\\
+    &=\sum_{x}e^{ikx}\,\bar{h}_x \mathcal{F}(\phi)(k)=\overline{\sum_{x}e^{-ikx}\,h_x} \mathcal{F}(\phi)(k)\\
+    &= \overline{\mathbf{h}}(k)\,\phi(k)
+\end{align*}
+For $\mathbf{\Delta}_s=\sum_x\Delta_x u^x$ and $\mathbf{\Delta}_s^\dagger=\sum_x\Delta_x^\dagger u^x$ we find the Fourier transform as
+\begin{align*}
+     \mathcal{F}(\mathbf{\Delta}_s\phi)(k)&=\sum_{y,x}e^{-iky}\,\Delta_x u^x \ket{\phi}_\text{int}\phi(y)\\
+    &=\sum_{x}e^{-ikx}\,\Delta_x \mathcal{F}(\phi)(-k)\\
+    &= \mathbf{\Delta}_s(k)\,\phi(-k)\\
+    \mathcal{F}(\mathbf{\Delta}_s^\dagger\psi)(k)&=\sum_{y,x}e^{iky}\,\Delta_x^\dagger u^x \ket{\psi}_\text{int}\psi(y)\\
+    &=\sum_{x}e^{ikx}\,\Delta_x^\dagger \mathcal{F}(\psi)(-k)=\overline{\sum_{x}e^{-ikx}\,\Delta_x} \mathcal{F}(\psi)(-k)\\
+    &= \mathbf{\Delta}_s^\dagger(k)\,\psi(-k)
+\end{align*}
+If we write the space over all $k$ in the form $\Psi=\oplus_k (\psi(k),\phi(-k))$ one can write the Hamiltonian a block diagonal $\mathcal{H}=\oplus_k A_k$ with
+\begin{align*}
+    A_k = \begin{pmatrix}
+        \mathbf{h}(k) & \mathbf{\Delta}_s(k)\\
+        \mathbf{\Delta}_s^\dagger(-k) & \overline{\mathbf{h}}(-k)
+    \end{pmatrix}
+\end{align*}
+The equations of motion for this reduced Nambu-k-space are again described by a matrix $H_k$
+\begin{align*}
+    \frac{d}{dt}\,\begin{pmatrix}
+        \psi(k)\\\phi(-k)
+    \end{pmatrix}&=\begin{pmatrix}
+        \mathbf{h}(k) & \mathbf{\Delta}_s(k)\\
+       - \mathbf{\Delta}_s^\dagger(-k) & -\overline{\mathbf{h}}(-k)
+    \end{pmatrix}\,\begin{pmatrix}
+        \psi(k)\\\phi(-k)
+    \end{pmatrix}=\vcentcolon H_k\,\begin{pmatrix}
+        \psi(k)\\\phi(-k)
+    \end{pmatrix}
+\end{align*}
+
+
+% To transition from a form that evaluates two vectors to an operator that acts on a state, we fix the second vector $\phi$. This creates a map $\psi \mapsto \Delta(\psi, \phi)$, which is a continuous linear functional on $\mathfrak{h}$.
+
+% By the Riesz Representation Theorem, every linear functional on a Hilbert space can be uniquely represented as an inner product with a specific vector in that space. Let us call this unique vector $\tilde{\Delta}(\phi)$. Therefore, we can write:
+
+
+% $$\Delta(\psi, \phi) = \langle \tilde{\Delta}(\phi) \vert{} \psi \rangle$$
+
+% This establishes a new mapping $\tilde{\Delta}: \mathfrak{h} \to \mathfrak{h}$ given by $\phi \mapsto \tilde{\Delta}(\phi)$.
+
+
+% Let us test how this new mapping $\tilde{\Delta}$ handles scalar multiplication. We substitute $\lambda \phi$ into the second argument of our bilinear form:
+
+
+% $$\Delta(\psi, \lambda \phi) = \langle \tilde{\Delta}(\lambda \phi) \vert{} \psi \rangle$$
+
+% However, utilizing the bilinearity of $\Delta$, we also know:
+
+
+% $$\Delta(\psi, \lambda \phi) = \lambda \Delta(\psi, \phi) = \lambda \langle \tilde{\Delta}(\phi) \vert{} \psi \rangle$$
+
+% In the physics inner product convention, moving a scalar inside the "bra" (the first argument) requires complex conjugation:
+
+
+% $$\lambda \langle \tilde{\Delta}(\phi) \vert{} \psi \rangle = \langle \bar{\lambda} \tilde{\Delta}(\phi) \vert{} \psi \rangle$$
+
+% Equating the two results yields:
+
+
+% $$\langle \tilde{\Delta}(\lambda \phi) \vert{} \psi \rangle = \langle \bar{\lambda} \tilde{\Delta}(\phi) \vert{} \psi \rangle$$
+
+% Since this must hold for all $\psi \in \mathfrak{h}$, it demands that:
+
+
+% $$\tilde{\Delta}(\lambda \phi) = \bar{\lambda} \tilde{\Delta}(\phi)$$
+
+% This proves that $\tilde{\Delta}$ is **conjugate-linear (anti-linear)**, not linear. It cannot be used as a standard block in a matrix Hamiltonian.
+
+
+% To absorb this complex conjugation, we introduce the conjugate Hilbert space $\bar{\mathfrak{h}}$. The elements of $\bar{\mathfrak{h}}$ are in a one-to-one correspondence with the elements of $\mathfrak{h}$. For every $\vert{}\phi\rangle \in \mathfrak{h}$, there exists a state $\vert{}\bar{\phi}\rangle \in \bar{\mathfrak{h}}$.
+
+% Vector addition in $\bar{\mathfrak{h}}$ behaves normally, but scalar multiplication is defined with a built-in complex conjugation:
+
+
+% $$\lambda \cdot \vert{}\bar{\phi}\rangle \equiv \vert{}\overline{\bar{\lambda} \phi}\rangle$$
+
+% We now define a new operator $\mathbf{\Delta}$ whose domain is the conjugate space $\bar{\mathfrak{h}}$ and whose codomain is the original space $\mathfrak{h}$:
+
+
+% $$\mathbf{\Delta} : \bar{\mathfrak{h}} \to \mathfrak{h}$$
+
+% $$\mathbf{\Delta} \vert{}\bar{\phi}\rangle \equiv \tilde{\Delta}(\phi)$$
+
+% Let us test the linearity of $\mathbf{\Delta}$ by scaling the input state by $\lambda \in \mathbb{C}$:
+
+
+% $$\mathbf{\Delta} (\lambda \cdot \vert{}\bar{\phi}\rangle) = \mathbf{\Delta} (\vert{}\overline{\bar{\lambda} \phi}\rangle) = \tilde{\Delta}(\bar{\lambda} \phi)$$
+
+% Using the anti-linear property of $\tilde{\Delta}$ derived in Step 3, we evaluate $\tilde{\Delta}(\bar{\lambda} \phi)$:
+
+
+% $$\tilde{\Delta}(\bar{\lambda} \phi) = \overline{(\bar{\lambda})} \tilde{\Delta}(\phi) = \lambda \tilde{\Delta}(\phi)$$
+
+% Substituting $\mathbf{\Delta} \vert{}\bar{\phi}\rangle$ back in for $\tilde{\Delta}(\phi)$, we achieve the final result:
+
+
+% $$\mathbf{\Delta} (\lambda \cdot \vert{}\bar{\phi}\rangle) = \lambda \left( \mathbf{\Delta} \vert{}\bar{\phi}\rangle \right)$$
+
+% By forcing the domain of the pairing operator to be $\bar{\mathfrak{h}}$, the conjugation mechanics of the space perfectly cancel the conjugate-linearity of the Riesz representation. The resulting operator $\mathbf{\Delta} \in \text{Hom}(\bar{\mathfrak{h}}, \mathfrak{h})$ is rigorously and strictly linear.
+\begin{align*}
+\mathfrak{h} &= \mathbb{C}^N \otimes \ell^2(\mathbb{Z}^d), \qquad
+\overline{\mathfrak{h}} \;:\; \lambda \cdot_{\overline{\mathfrak{h}}} |\bar\phi\rangle \equiv |\bar{\lambda}\phi\rangle \\[2mm]
+%
+\mathbf{a} &= (a_1,a_2,\ldots)^t, \qquad \mathbf{a}^\dagger = (a_1^\dagger,a_2^\dagger,\ldots)^t, \\
+[a_n, a_{n'}^\dagger] &= \delta_{n,n'}, \qquad [a_n,a_{n'}]=0, \qquad [a_n^\dagger,a_{n'}^\dagger]=0 \\[2mm]
+%
+\\[2mm]
+%
+\Delta &: \mathfrak{h}\times\mathfrak{h}\to\mathbb{C}
+\quad\xrightarrow{\text{Riesz + real structure}}\quad
+\Delta : \overline{\mathfrak{h}} \to \mathfrak{h} \\[2mm]
+%
+\mathfrak{h}_{ph} &= \mathfrak{h} \oplus \overline{\mathfrak{h}} 
+= \mathfrak{h}\otimes\mathbb{C}^2_{ph} \\[2mm]
+%
+\\[2mm]
+%
+\partial_t \begin{pmatrix} \mathbf{a} \\ \mathbf{a}^\dagger \end{pmatrix} 
+&= i\Big[H,\begin{pmatrix} \mathbf{a}\\\mathbf{a}^\dagger\end{pmatrix}\Big] 
+= -i\,\mathcal{H} \begin{pmatrix} \mathbf{a}\\\mathbf{a}^\dagger\end{pmatrix},
+\qquad
+J = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \\[2mm]
+%
+\mathcal{H} &:= J A = \begin{pmatrix} h & \Delta \\ -\Delta^\dagger & -\bar h \end{pmatrix} \\[2mm]
+%
+\mathcal{H}^\dagger &= J\mathcal{H}J \quad (J\text{-self-adjoint, Krein space } (\mathfrak{h}_{ph},J)), \\
+K\mathcal{H}K &= -\mathcal{H}, \qquad 
+K=\begin{pmatrix}0&1\\1&0\end{pmatrix} \quad (\text{particle-hole symmetry})
+\end{align*}
+\[
+\begin{bNiceMatrix}[first-row, first-col]
+        & \text{Col 1} & \text{Col 2} \\
+\text{Row 1} & a & b \\
+\text{Row 2} & c & d 
+\end{bNiceMatrix}
+\]
 % By this the terms $H_\mathbf{k}$ take the form
 % \begin{align*}
 %     H_\mathbf{k}&= 
