@@ -546,6 +546,7 @@ INPUT ./pictures/tuning_first_order_to_zero2.pdf
 INPUT ./pictures/tuning_first_order_to_zero2.pdf
 INPUT ./pictures/tuning_first_order_to_zero2.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecsx1200.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/mnsymbol/MnSymbolS10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/mnsymbol/MnSymbolS7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/mnsymbol/MnSymbolS5.tfm
@@ -556,6 +557,16 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolS.enc
+INPUT ./pictures/Bdg_spec_80N.pdf
+INPUT ./pictures/Bdg_spec_80N.pdf
+INPUT ./pictures/Bdg_spec_80N.pdf
+INPUT ./pictures/Bdg_spec_80N.pdf
+INPUT ./pictures/Bdg_spec_80N.pdf
+INPUT ./pictures/Bdg_spec_800N.pdf
+INPUT ./pictures/Bdg_spec_800N.pdf
+INPUT ./pictures/Bdg_spec_800N.pdf
+INPUT ./pictures/Bdg_spec_800N.pdf
+INPUT ./pictures/Bdg_spec_800N.pdf
 INPUT ./pictures/lattice_def.pdf
 INPUT ./pictures/lattice_def.pdf
 INPUT ./pictures/lattice_def.pdf
@@ -564,7 +575,6 @@ INPUT ./pictures/lattice_def.pdf
 INPUT ./numerical_results_only_phonons.tex
 INPUT ./numerical_results_only_phonons.tex
 INPUT numerical_results_only_phonons.tex
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecsx1200.tfm
 INPUT ./pictures/aligned_dipoles_in_plane_sheer.pdf
 INPUT ./pictures/aligned_dipoles_in_plane_sheer.pdf
 INPUT ./pictures/aligned_dipoles_in_plane_sheer.pdf
@@ -638,10 +648,12 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb

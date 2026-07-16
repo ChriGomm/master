@@ -336,7 +336,7 @@ u_{ab}^{*} & u_{aa} & 0 & 0 & 0 & 0 & u_{ab}^{*} & u_{aa}
 \end{align*}
 such that $H_{\mathbf{k},-\mathbf{k}} = \mathbf{a}^{\dagger} A_{\mathbf{k}} \mathbf{a}$.
 % \begin{align*}
-% aa:\quad & a_k^{\dagger}\left(u\,a_k + u^{*} a_k + u\,a_k^{\dagger} + u^{*} a_{-k}^{\dagger}\right) \\
+% aa:\quad & a_k^{\dagger}\left(u\,a_k + u^{*} a_k + u\,a_{-k}^{\dagger} + u^{*} a_{-k}^{\dagger}\right) \\
 % u\cdot u_{aa}:\quad & a_k^{\dagger}\left(u^{*} a_k^{\dagger} + u\,a_{-k}^{\dagger} + (u+u^{*})\,a_k\right) \\[2ex]
 % ab:\quad & a_k^{\dagger}\left(u\,b_k + u\,b_{-k}^{\dagger}\right)
 %     \qquad a_{-k}\left(u\,b_{-k}^{\dagger} + u\,b_k\right) \\
@@ -397,7 +397,7 @@ Thus in the case of the Hamiltonian $H_{\mathbf{k},-\mathbf{k}}$, where $P^T=S$ 
         -C^* & -B^*
     \end{pmatrix} \mathbf{a}=\vcentcolon -i \tilde{H}_\mathbf{k} \mathbf{a}
 \end{align*}
-
+\subsection*{Mathematical approach to the BdG Hamiltonian}
 I want to introduce a more mathematical approach to the Hamiltonian. 
 \begin{align*}
 \mathcal{H} &= \frac{1}{2}(\mathbf{a}^\dagger)^t h\, \mathbf{a} + \frac{1}{2}\mathbf{a}^t h\, \mathbf{a}^\dagger
@@ -482,20 +482,36 @@ If we write the space over all $k$ in the form $\Psi=\oplus_k (\psi(k),\phi(-k))
         \mathbf{\Delta}_s^\dagger(-k) & \overline{\mathbf{h}}(-k)
     \end{pmatrix}
 \end{align*}
-The equations of motion for this reduced Nambu-k-space are again described by a matrix $H_k$
+The dynamical matrix that has to be analyzed with respect to topological properties is still
 \begin{align*}
-    \frac{d}{dt}\,\begin{pmatrix}
-        \psi(k)\\\phi(-k)
-    \end{pmatrix}&=\begin{pmatrix}
+   H_k&=\begin{pmatrix}
         \mathbf{h}(k) & \mathbf{\Delta}_s(k)\\
        - \mathbf{\Delta}_s^\dagger(-k) & -\overline{\mathbf{h}}(-k)
-    \end{pmatrix}\,\begin{pmatrix}
-        \psi(k)\\\phi(-k)
-    \end{pmatrix}=\vcentcolon H_k\,\begin{pmatrix}
-        \psi(k)\\\phi(-k)
-    \end{pmatrix}
+    \end{pmatrix} 
 \end{align*}
-
+\begin{figure}[H]
+    \centering
+    \includegraphics{pictures/Bdg_spec_80N.pdf}
+    \caption{\textbf{BdG spectrum for lattice size 80}}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics{pictures/Bdg_spec_800N.pdf}
+    \caption{\textbf{BdG spectrum for lattice size 800} }
+\end{figure}
+% \begin{align*}
+%     \frac{d}{dt}\,\begin{pmatrix}
+%         \psi(k)\\\phi(-k)
+%     \end{pmatrix}&=\begin{pmatrix}
+%         \mathbf{h}(k) & \mathbf{\Delta}_s(k)\\
+%        - \mathbf{\Delta}_s^\dagger(-k) & -\overline{\mathbf{h}}(-k)
+%     \end{pmatrix}\,\begin{pmatrix}
+%         \psi(k)\\\phi(-k)
+%     \end{pmatrix}=\vcentcolon H_k\,\begin{pmatrix}
+%         \psi(k)\\\phi(-k)
+%     \end{pmatrix}
+% \end{align*}
+%
 
 % To transition from a form that evaluates two vectors to an operator that acts on a state, we fix the second vector $\phi$. This creates a map $\psi \mapsto \Delta(\psi, \phi)$, which is a continuous linear functional on $\mathfrak{h}$.
 
@@ -565,43 +581,43 @@ The equations of motion for this reduced Nambu-k-space are again described by a 
 % $$\mathbf{\Delta} (\lambda \cdot \vert{}\bar{\phi}\rangle) = \lambda \left( \mathbf{\Delta} \vert{}\bar{\phi}\rangle \right)$$
 
 % By forcing the domain of the pairing operator to be $\bar{\mathfrak{h}}$, the conjugation mechanics of the space perfectly cancel the conjugate-linearity of the Riesz representation. The resulting operator $\mathbf{\Delta} \in \text{Hom}(\bar{\mathfrak{h}}, \mathfrak{h})$ is rigorously and strictly linear.
-\begin{align*}
-\mathfrak{h} &= \mathbb{C}^N \otimes \ell^2(\mathbb{Z}^d), \qquad
-\overline{\mathfrak{h}} \;:\; \lambda \cdot_{\overline{\mathfrak{h}}} |\bar\phi\rangle \equiv |\bar{\lambda}\phi\rangle \\[2mm]
-%
-\mathbf{a} &= (a_1,a_2,\ldots)^t, \qquad \mathbf{a}^\dagger = (a_1^\dagger,a_2^\dagger,\ldots)^t, \\
-[a_n, a_{n'}^\dagger] &= \delta_{n,n'}, \qquad [a_n,a_{n'}]=0, \qquad [a_n^\dagger,a_{n'}^\dagger]=0 \\[2mm]
-%
-\\[2mm]
-%
-\Delta &: \mathfrak{h}\times\mathfrak{h}\to\mathbb{C}
-\quad\xrightarrow{\text{Riesz + real structure}}\quad
-\Delta : \overline{\mathfrak{h}} \to \mathfrak{h} \\[2mm]
-%
-\mathfrak{h}_{ph} &= \mathfrak{h} \oplus \overline{\mathfrak{h}} 
-= \mathfrak{h}\otimes\mathbb{C}^2_{ph} \\[2mm]
-%
-\\[2mm]
-%
-\partial_t \begin{pmatrix} \mathbf{a} \\ \mathbf{a}^\dagger \end{pmatrix} 
-&= i\Big[H,\begin{pmatrix} \mathbf{a}\\\mathbf{a}^\dagger\end{pmatrix}\Big] 
-= -i\,\mathcal{H} \begin{pmatrix} \mathbf{a}\\\mathbf{a}^\dagger\end{pmatrix},
-\qquad
-J = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \\[2mm]
-%
-\mathcal{H} &:= J A = \begin{pmatrix} h & \Delta \\ -\Delta^\dagger & -\bar h \end{pmatrix} \\[2mm]
-%
-\mathcal{H}^\dagger &= J\mathcal{H}J \quad (J\text{-self-adjoint, Krein space } (\mathfrak{h}_{ph},J)), \\
-K\mathcal{H}K &= -\mathcal{H}, \qquad 
-K=\begin{pmatrix}0&1\\1&0\end{pmatrix} \quad (\text{particle-hole symmetry})
-\end{align*}
-\[
-\begin{bNiceMatrix}[first-row, first-col]
-        & \text{Col 1} & \text{Col 2} \\
-\text{Row 1} & a & b \\
-\text{Row 2} & c & d 
-\end{bNiceMatrix}
-\]
+% \begin{align*}
+% \mathfrak{h} &= \mathbb{C}^N \otimes \ell^2(\mathbb{Z}^d), \qquad
+% \overline{\mathfrak{h}} \;:\; \lambda \cdot_{\overline{\mathfrak{h}}} |\bar\phi\rangle \equiv |\bar{\lambda}\phi\rangle \\[2mm]
+% %
+% \mathbf{a} &= (a_1,a_2,\ldots)^t, \qquad \mathbf{a}^\dagger = (a_1^\dagger,a_2^\dagger,\ldots)^t, \\
+% [a_n, a_{n'}^\dagger] &= \delta_{n,n'}, \qquad [a_n,a_{n'}]=0, \qquad [a_n^\dagger,a_{n'}^\dagger]=0 \\[2mm]
+% %
+% \\[2mm]
+% %
+% \Delta &: \mathfrak{h}\times\mathfrak{h}\to\mathbb{C}
+% \quad\xrightarrow{\text{Riesz + real structure}}\quad
+% \Delta : \overline{\mathfrak{h}} \to \mathfrak{h} \\[2mm]
+% %
+% \mathfrak{h}_{ph} &= \mathfrak{h} \oplus \overline{\mathfrak{h}} 
+% = \mathfrak{h}\otimes\mathbb{C}^2_{ph} \\[2mm]
+% %
+% \\[2mm]
+% %
+% \partial_t \begin{pmatrix} \mathbf{a} \\ \mathbf{a}^\dagger \end{pmatrix} 
+% &= i\Big[H,\begin{pmatrix} \mathbf{a}\\\mathbf{a}^\dagger\end{pmatrix}\Big] 
+% = -i\,\mathcal{H} \begin{pmatrix} \mathbf{a}\\\mathbf{a}^\dagger\end{pmatrix},
+% \qquad
+% J = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \\[2mm]
+% %
+% \mathcal{H} &:= J A = \begin{pmatrix} h & \Delta \\ -\Delta^\dagger & -\bar h \end{pmatrix} \\[2mm]
+% %
+% \mathcal{H}^\dagger &= J\mathcal{H}J \quad (J\text{-self-adjoint, Krein space } (\mathfrak{h}_{ph},J)), \\
+% K\mathcal{H}K &= -\mathcal{H}, \qquad 
+% K=\begin{pmatrix}0&1\\1&0\end{pmatrix} \quad (\text{particle-hole symmetry})
+% \end{align*}
+% \[
+% \begin{bNiceMatrix}[first-row, first-col]
+%         & \text{Col 1} & \text{Col 2} \\
+% \text{Row 1} & a & b \\
+% \text{Row 2} & c & d 
+% \end{bNiceMatrix}
+% \]
 % By this the terms $H_\mathbf{k}$ take the form
 % \begin{align*}
 %     H_\mathbf{k}&= 

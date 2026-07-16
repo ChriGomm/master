@@ -1,0 +1,18 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'documentation.blg'
+[83] biber:340> INFO - === Thu Jul 16, 2026, 23:14:28
+[102] Biber.pm:419> INFO - Reading 'documentation.bcf'
+[167] Biber.pm:979> INFO - Found 10 citekeys in bib section 0
+[181] Biber.pm:4419> INFO - Processing section 0
+[192] Biber.pm:4610> INFO - Looking for bibtex file 'sources3.bib' for section 0
+[195] bibtex.pm:1713> INFO - LaTeX decoding ...
+[217] bibtex.pm:1519> INFO - Found BibTeX data source 'sources3.bib'
+[329] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[330] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[330] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[330] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[341] bbl.pm:660> INFO - Writing 'documentation.bbl' with encoding 'UTF-8'
+[345] bbl.pm:763> INFO - Output to documentation.bbl
+[346] Biber.pm:131> WARN - I didn't find a database entry for 'meidanTopologicalClassificationInteractiondriven201' (section 0)
+[346] Biber.pm:131> WARN - I didn't find a database entry for 'bravyi_schrieffer-wolff_2011' (section 0)
+[346] Biber.pm:133> INFO - WARNINGS: 2
