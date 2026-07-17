@@ -160,7 +160,7 @@ The condition for the shift can be written as
 Here $h$ and $\tilde{U}$ are dimensionless and the the term $m\omega^2 a^2/[V_0(a)\,\text{max}(\tilde{U})]$ is of order $10^{-15}$-$10^{-10}$, hence negligibly small. Now I use the two free parameters $h$ and the angle $\varphi_d$ of the dipole moment $\hat{\mathbf{d}}$ to set $G_i=0$ or close to zero for different values of $b$. Close to zero means here that max$(|G_i|)$ compared to $\sqrt{\hbar/(2m\omega)}\,\text{max}(\tilde{U})/a$ is small. Here $\sqrt{\hbar/(2m\omega)}/a\sim10^{-3}$ is the displacement from a single motional excitation in units of $a$.
 \begin{figure}[H]
     \hspace*{-2cm}
-    \includegraphics{pictures/tuning_first_order_to_zero2.pdf}
+    \includegraphics{pictures/minimizing_first_order.pdf}
     \caption{\textbf{Parameters for negligible first order.} }
     \label{fig:tuning_first_order_to_zero}
 \end{figure}
@@ -447,31 +447,31 @@ Each single particle operator can be separated into operators that act on the in
     \mathbf{h}=\sum_x h_x u^x
 \end{align*}
 where $h_x:\mathbb{C}\to\mathbb{C}$ treats the internal degrees of freedom and $u^x:\ell^2(\mathbb{Z}^d)\to\ell^2(\mathbb{Z}^d)$ is just the shift operator.
-Fourier transforming a state $\ket{\psi}=\ket{\psi}_\text{int}\psi(y)\in\mathfrak{h}$, $\ket{\phi}=\ket{\phi}_\text{int}\phi(y)\in\overline{\mathfrak{h}}$, where $y$ is the position of a unit cell, is defined as 
+Fourier transforming a state $\psi(y)=\ket{\psi}_\text{int}\ket{\psi}_\text{Lat}(y)\in\mathfrak{h}$, $\phi(y)=\ket{\phi}_\text{int}\ket{\phi}_\text{Lat}(y)\in\overline{\mathfrak{h}}$, where $y$ is the position of a unit cell, is defined as  
 \begin{align*}
-    \mathcal{F}(\psi)(k)&=\sum_y e^{-iky}\ket{\psi}_\text{int}\psi(y)\\
-    \mathcal{F}(\phi)(k)&=\sum_y e^{iky}\ket{\phi}_\text{int}\phi(y)
+    \mathcal{F}(\psi)(k)&=\sum_y e^{-iky}\psi(y)\\
+    \mathcal{F}(\phi)(k)&=\sum_y e^{iky}\phi(y)
 \end{align*}
 By this one can determine the Fourier transform of the operators by their action on the states.
 \begin{align*}
-    \mathcal{F}(\mathbf{h}\psi)(k)&=\sum_{y,x}e^{-iky}\,h_x u^x \ket{\psi}_\text{int}\psi(y)\\
-    &=\sum_{y,x}e^{-iky}\,h_x \ket{\psi}_\text{int}\psi(y-x)\\
-    &=\sum_{z,x}e^{-ikz}e^{-ikx}\,h_x \ket{\psi}_\text{int}\psi(z)\\
+    \mathcal{F}(\mathbf{h}\psi)(k)&=\sum_{y,x}e^{-iky}\,h_x u^x \psi(y)\\
+    &=\sum_{y,x}e^{-iky}\,h_x \psi(y-x)\\
+    &=\sum_{z,x}e^{-ikz}e^{-ikx}\,h_x \psi(z)\\
     &=\sum_{x}e^{-ikx}\,h_x \mathcal{F}(\psi)(k)\\
     &=\vcentcolon \mathbf{h}(k)\,\mathcal{F}(\psi)(k)=\vcentcolon \mathbf{h}(k)\,\psi(k)
 \end{align*}
 As $\overline{\mathbf{h}}=\sum_x\bar{h}_x u^x$, where the bar means complex conjugation, we can write
 \begin{align*}
-    \mathcal{F}(\overline{\mathbf{h}}\phi)(k)&=\sum_{y,x}e^{iky}\,\bar{h}_x u^x \ket{\phi}_\text{int}\phi(y)\\
+    \mathcal{F}(\overline{\mathbf{h}}\phi)(k)&=\sum_{y,x}e^{iky}\,\bar{h}_x u^x \phi(y)\\
     &=\sum_{x}e^{ikx}\,\bar{h}_x \mathcal{F}(\phi)(k)=\overline{\sum_{x}e^{-ikx}\,h_x} \mathcal{F}(\phi)(k)\\
     &= \overline{\mathbf{h}}(k)\,\phi(k)
 \end{align*}
 For $\mathbf{\Delta}_s=\sum_x\Delta_x u^x$ and $\mathbf{\Delta}_s^\dagger=\sum_x\Delta_x^\dagger u^x$ we find the Fourier transform as
 \begin{align*}
-     \mathcal{F}(\mathbf{\Delta}_s\phi)(k)&=\sum_{y,x}e^{-iky}\,\Delta_x u^x \ket{\phi}_\text{int}\phi(y)\\
+     \mathcal{F}(\mathbf{\Delta}_s\phi)(k)&=\sum_{y,x}e^{-iky}\,\Delta_x u^x \phi(y)\\
     &=\sum_{x}e^{-ikx}\,\Delta_x \mathcal{F}(\phi)(-k)\\
     &= \mathbf{\Delta}_s(k)\,\phi(-k)\\
-    \mathcal{F}(\mathbf{\Delta}_s^\dagger\psi)(k)&=\sum_{y,x}e^{iky}\,\Delta_x^\dagger u^x \ket{\psi}_\text{int}\psi(y)\\
+    \mathcal{F}(\mathbf{\Delta}_s^\dagger\psi)(k)&=\sum_{y,x}e^{iky}\,\Delta_x^\dagger u^x \psi(y)\\
     &=\sum_{x}e^{ikx}\,\Delta_x^\dagger \mathcal{F}(\psi)(-k)=\overline{\sum_{x}e^{-ikx}\,\Delta_x} \mathcal{F}(\psi)(-k)\\
     &= \mathbf{\Delta}_s^\dagger(k)\,\psi(-k)
 \end{align*}
@@ -491,12 +491,12 @@ The dynamical matrix that has to be analyzed with respect to topological propert
 \end{align*}
 \begin{figure}[H]
     \centering
-    \includegraphics{pictures/Bdg_spec_80N.pdf}
+    \includegraphics{pictures/Bdg_spec_8N.pdf}
     \caption{\textbf{BdG spectrum for lattice size 80}}
-\end{figure}
+\end{figure}\hfill
 \begin{figure}[H]
     \centering
-    \includegraphics{pictures/Bdg_spec_800N.pdf}
+    \includegraphics{pictures/Bdg_spec_50N.pdf}
     \caption{\textbf{BdG spectrum for lattice size 800} }
 \end{figure}
 % \begin{align*}
