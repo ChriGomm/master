@@ -160,9 +160,15 @@ The condition for the shift can be written as
 Here $h$ and $\tilde{U}$ are dimensionless and the the term $m\omega^2 a^2/[V_0(a)\,\text{max}(\tilde{U})]$ is of order $10^{-15}$-$10^{-10}$, hence negligibly small. Now I use the two free parameters $h$ and the angle $\varphi_d$ of the dipole moment $\hat{\mathbf{d}}$ to set $G_i=0$ or close to zero for different values of $b$. Close to zero means here that max$(|G_i|)$ compared to $\sqrt{\hbar/(2m\omega)}\,\text{max}(\tilde{U})/a$ is small. Here $\sqrt{\hbar/(2m\omega)}/a\sim10^{-3}$ is the displacement from a single motional excitation in units of $a$.
 \begin{figure}[H]
     \hspace*{-2cm}
-    \includegraphics{pictures/minimizing_first_order.pdf}
+    \includegraphics{pictures/tuning_first_order_to_zero3.pdf}
     \caption{\textbf{Parameters for negligible first order.} }
     \label{fig:tuning_first_order_to_zero}
+\end{figure}
+\begin{figure}[H]
+    \hspace*{-2cm}
+    \includegraphics{pictures/Deltas3.pdf}
+    \caption{\textbf{Displacements.} }
+    % \label{fig:tuning_first_order_to_zero}
 \end{figure}
 As shown in \figref{fig:tuning_first_order_to_zero} the first order can be eliminated by choosing very small shifts in the displacement compared to the generic displacement inside the trap. This is possible due to the tuned small first order compared to the $W$-term as seen in \figref{fig:tuning_first_order_to_zero}d). Consequently the elimination of the linear term can also be understood from a comparison of the energy scales.
 
@@ -180,7 +186,7 @@ with $\vec{a}=(a_1,\dots,a_N,a_1^\dagger,\dots,a_N^\dagger)$ the vector of opera
     \end{pmatrix}\\
     \text{with}\quad \bar{U}&= U+m\omega^2.
 \end{align*}
-This allows for a topological characterization of the bosonic system, acording to \cite{peanoTopologicalEdgeStates2018}. The Heisenberg equations of motion for the operators read
+This allows for a topological characterization of the bosonic system, acording to \cite{peanoTopologicalEdgeStates2018}. In order to understand the significance of the constant shift, one has to take into account the physical properties of the system. The Rydberg atoms, which have lifetimes up to $100\,\mu$s, are trapped in optical tweezers of trap frequency up to $100\,$kHz. This implies that one has to implement an Hamiltonian that induces a non-trivial dynamics within the lifetimes of the atoms. Responsible for non-trivial dynamics is the U-matrix. Thus the interaction strength has to be at least as big as the trap frequency, i.e. $|U|\geq m\omega^2$. The Heisenberg equations of motion for the operators read
 \begin{align*}
     \frac{d}{dt}\,{a}_j &= i\,([H,{a}_j]) = -i\, \hbar\omega a_j - i\,\frac{\hbar}{2m\omega}\,\sum_n \left(U_{j,n}\,a_n + U_{n,j}\,a_n + U_{j,n}\,a_n^\dagger + U_{n,j}\,a_n^\dagger\right) \\
     &= -i\, \hbar\omega a_j -i\,\frac{\hbar}{m\omega}\,\sum_n \left(U_{j,n}\,a_n + U_{j,n}\,a_n^\dagger \right) = -2\,i\,(A\,\vec{a})_j\\

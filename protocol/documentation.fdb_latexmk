@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber documentation"] 0 "documentation.bcf" "documentation.bbl" "documentation" 1784286896.30292 -1
-  "documentation.bcf" 1784286896.1722 108350 c6954db667d11b43ea4a9b3f0eb39442 "pdflatex"
+["biber documentation"] 0 "documentation.bcf" "documentation.bbl" "documentation" 1784825933.30496 -1
+  "documentation.bcf" 1784825933.17386 108350 c6954db667d11b43ea4a9b3f0eb39442 "pdflatex"
   "sources3.bib" 1782919003.91429 19696 8f0099eb2d2a75db65e1232a6151201a ""
   (generated)
   "documentation.bbl"
   "documentation.blg"
   (rewritten before read)
-["pdflatex"] 1784286894.64431 "/home/christian/Documents/master/protocol/documentation.tex" "documentation.pdf" "documentation" 1784286896.30311 0
+["pdflatex"] 1784825931.60419 "/home/christian/Documents/master/protocol/documentation.tex" "documentation.pdf" "documentation" 1784825933.30515 0
   "/etc/texmf/web2c/texmf.cnf" 1758895203.64774 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/christian/Documents/master/protocol/documentation.tex" 1784115901.01729 13334 028fa5cea132eefa3e541e92ed97b921 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc" 1177804218 3341 78e600b269762aa2a25a5293cc4535c0 ""
@@ -353,15 +353,16 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1758895244 8213773 f45dae838239d55b66681526ece92c70 ""
   "StandardPages.sty" 1759150099.35658 3802 cf878797be82f080136d69564456bed0 ""
   "correct_coupling.tex" 1782225684.80232 23443 856c66d39ccf61d6172cdc64004f12ae ""
-  "documentation.aux" 1784286896.1702 14147 af11cc599b105510ffd36e8180229713 "pdflatex"
+  "documentation.aux" 1784825933.17185 14296 7fac39ac049fa4623c81923160444f21 "pdflatex"
   "documentation.bbl" 1782919360.84437 28405 64dcf78c1d07bb2c3f0105a2e76f413a "biber documentation"
-  "documentation.out" 1784286895.79761 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "documentation.run.xml" 1784286896.17423 2491 cbca60edd16169d0d5674e9529742b0f "pdflatex"
+  "documentation.out" 1784825932.79297 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "documentation.run.xml" 1784825933.17486 2491 cbca60edd16169d0d5674e9529742b0f "pdflatex"
   "documentation.tex" 1784115901.01729 13334 028fa5cea132eefa3e541e92ed97b921 ""
-  "interactions.tex" 1784286892.76063 77942 11dd20d724c0cfba9585002672cbe868 ""
+  "interactions.tex" 1784825931.37153 78666 010fd95736e307a1763054691e3a4212 ""
   "numerical_results_only_phonons.tex" 1765297356.0382 16039 6366256f99442b9515363be1461d623d ""
   "pictures/Bdg_spec_50N.pdf" 1784280887.81135 292440 dbdc9a46773d60629ee21276d93a3354 ""
   "pictures/Bdg_spec_8N.pdf" 1784280917.06246 250635 de1c3c6d6bb0b36f1192029f0fc2dc5c ""
+  "pictures/Deltas3.pdf" 1784805415.7344 171441 4029b4f190215cdc9256fe7013de243e ""
   "pictures/SWT_calc.pdf" 1765878246.79582 24607 901bf74e598cc24cf1d11fb02cb7f0be ""
   "pictures/ads_states_for_chain_lengths.pdf" 1765297299.39042 226328 a09c9195bbd2e38f7c50ba8203c5f41f ""
   "pictures/ads_top_states_b0.51.pdf" 1765297228.78413 226394 7458211fa1298da309ee250f3af53ff9 ""
@@ -371,9 +372,9 @@
   "pictures/lattice_def.pdf" 1764771546.92011 39756 538d9440906b79f8819a48c0904126ea ""
   "pictures/magnitude_dersqV_ifderVzero.pdf" 1779787313.20135 205353 54f5dda41e105006c8a25bcdd30871fb ""
   "pictures/maxima_compared_free_evolution.pdf" 1779986403.66023 147697 de38ef1631402ea2fe99047d6d562b73 ""
-  "pictures/minimizing_first_order.pdf" 1784286790.38765 307517 9f072fe660efefe61b85ee9b07520306 ""
   "pictures/rice-mele-scheme1to1000.pdf" 1779960464.99365 263326 2d43e28adbf83ab8123ed4a09362940e ""
   "pictures/transfered_excitation_depphon.pdf" 1779960158.03175 217390 1a60f894ec8ed5578b5a8a31bfb8ec99 ""
+  "pictures/tuning_first_order_to_zero3.pdf" 1784799133.37606 288881 e8687c4f294901a4c018bb0605843a63 ""
   "pictures/tuning_first_order_to_zero_spph.pdf" 1782117508.67013 291186 777e5167a5e921ba6d749d9a2b0382b0 ""
   (generated)
   "documentation.aux"
