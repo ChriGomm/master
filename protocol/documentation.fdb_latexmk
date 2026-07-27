@@ -1,14 +1,14 @@
 # Fdb version 4
-["biber documentation"] 0 "documentation.bcf" "documentation.bbl" "documentation" 1784825933.30496 -1
-  "documentation.bcf" 1784825933.17386 108350 c6954db667d11b43ea4a9b3f0eb39442 "pdflatex"
-  "sources3.bib" 1782919003.91429 19696 8f0099eb2d2a75db65e1232a6151201a ""
+["biber documentation"] 1785164022.55864 "documentation.bcf" "documentation.bbl" "documentation" 1785166068.68392 0
+  "documentation.bcf" 1785166068.53694 108524 b18c7e906e6560a7e6fb2c5925e0924f "pdflatex"
+  "sources4.bib" 1785163918.20871 23739 332ece92559f5bdbba319ee27a7658a3 ""
   (generated)
   "documentation.bbl"
   "documentation.blg"
   (rewritten before read)
-["pdflatex"] 1784825931.60419 "/home/christian/Documents/master/protocol/documentation.tex" "documentation.pdf" "documentation" 1784825933.30515 0
+["pdflatex"] 1785166067.01974 "/home/christian/Documents/master/protocol/documentation.tex" "documentation.pdf" "documentation" 1785166068.68414 0
   "/etc/texmf/web2c/texmf.cnf" 1758895203.64774 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/christian/Documents/master/protocol/documentation.tex" 1784115901.01729 13334 028fa5cea132eefa3e541e92ed97b921 ""
+  "/home/christian/Documents/master/protocol/documentation.tex" 1785163936.78757 13334 ee3fb0c6914e90987018fd83c658011c ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc" 1177804218 3341 78e600b269762aa2a25a5293cc4535c0 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc" 1177804218 3275 8d7166dfdbc31ffdc8aba0c31b3bd5c8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc" 1177804218 3375 808c88761dbdc66fc653d18f42765b64 ""
@@ -353,12 +353,12 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1758895244 8213773 f45dae838239d55b66681526ece92c70 ""
   "StandardPages.sty" 1759150099.35658 3802 cf878797be82f080136d69564456bed0 ""
   "correct_coupling.tex" 1782225684.80232 23443 856c66d39ccf61d6172cdc64004f12ae ""
-  "documentation.aux" 1784825933.17185 14296 7fac39ac049fa4623c81923160444f21 "pdflatex"
-  "documentation.bbl" 1782919360.84437 28405 64dcf78c1d07bb2c3f0105a2e76f413a "biber documentation"
-  "documentation.out" 1784825932.79297 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "documentation.run.xml" 1784825933.17486 2491 cbca60edd16169d0d5674e9529742b0f "pdflatex"
-  "documentation.tex" 1784115901.01729 13334 028fa5cea132eefa3e541e92ed97b921 ""
-  "interactions.tex" 1784825931.37153 78666 010fd95736e307a1763054691e3a4212 ""
+  "documentation.aux" 1785166068.53428 14690 93bb41788293c64894ef2aa8ede6be3d "pdflatex"
+  "documentation.bbl" 1785164022.98005 36630 5c095ac86e06b76dcbc27ad5884caaf9 "biber documentation"
+  "documentation.out" 1785166068.14634 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "documentation.run.xml" 1785166068.53794 2491 bbc62d05d7529821faa8b7cb3dc6d249 "pdflatex"
+  "documentation.tex" 1785163936.78757 13334 ee3fb0c6914e90987018fd83c658011c ""
+  "interactions.tex" 1785166066.84818 80367 c94ac49c3e576cc77a2e5e03c1902850 ""
   "numerical_results_only_phonons.tex" 1765297356.0382 16039 6366256f99442b9515363be1461d623d ""
   "pictures/Bdg_spec_50N.pdf" 1784280887.81135 292440 dbdc9a46773d60629ee21276d93a3354 ""
   "pictures/Bdg_spec_8N.pdf" 1784280917.06246 250635 de1c3c6d6bb0b36f1192029f0fc2dc5c ""

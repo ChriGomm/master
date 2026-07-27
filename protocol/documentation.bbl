@@ -312,6 +312,156 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevLett.117.213603
       \endverb
     \endentry
+    \entry{wilsonTrappingAlkalineEarth2022}{article}{}
+      \name{author}{7}{}{%
+        {{hash=10e380b53166e80867355830547f0a94}{%
+           family={Wilson},
+           familyi={W\bibinitperiod},
+           given={J.\bibnamedelimi T.},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=6f3e8a8ea0ce8277eb3d65e9db637772}{%
+           family={Saskin},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5ad4ef69feb5856691193dbba3c8a58a}{%
+           family={Meng},
+           familyi={M\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=5e538d7c5ab3d9762c299955fb081ce2}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b103e7bdccb1ede7807cbb0b072859d7}{%
+           family={Dilip},
+           familyi={D\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9df73bc0fbbd51af1436ee86e384b4fe}{%
+           family={Burgers},
+           familyi={B\bibinitperiod},
+           given={A.\bibnamedelimi P.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=cd73d2a1224ea92c8ec865582cefe63e}{%
+           family={Thompson},
+           familyi={T\bibinitperiod},
+           given={J.\bibnamedelimi D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{f5359d386575574fadeee9c5f5006a8b}
+      \strng{fullhash}{33cd3f701f6d426ec8512fde2c5b54dc}
+      \strng{bibnamehash}{33cd3f701f6d426ec8512fde2c5b54dc}
+      \strng{authorbibnamehash}{33cd3f701f6d426ec8512fde2c5b54dc}
+      \strng{authornamehash}{f5359d386575574fadeee9c5f5006a8b}
+      \strng{authorfullhash}{33cd3f701f6d426ec8512fde2c5b54dc}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Neutral atom qubits with Rydberg-mediated interactions are a leading platform for developing large-scale coherent quantum systems. In the majority of experiments to date, the Rydberg states are not trapped by the same potential that confines ground state atoms, resulting in atom loss and constraints on the achievable interaction time. In this Letter, we demonstrate that the Rydberg states of an alkaline earth atom, ytterbium, can be stably trapped by the same red-detuned optical tweezer that also confines the ground state, by leveraging the polarizability of the Yb+ ion core. Using the previously unobserved 3𝑆1 series, we demonstrate trapped Rydberg atom lifetimes exceeding 100 𝜇⁢s, and observe no evidence of auto- or photoionization from the trap light for these states. We measure a coherence time of 𝑇2=59 𝜇⁢s between two Rydberg levels, exceeding the 28 𝜇⁢s lifetime of untrapped Rydberg atoms under the same conditions. These results are promising for extending the interaction time of Rydberg atom arrays for quantum simulation and computing, and are vital to capitalize on the extended Rydberg lifetimes in circular states or cryogenic environments.}
+      \field{day}{20}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{1}
+      \field{number}{3}
+      \field{shortjournal}{Phys. Rev. Lett.}
+      \field{title}{Trapping {{Alkaline Earth Rydberg Atoms Optical Tweezer Arrays}}}
+      \field{urlday}{27}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{128}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{033201}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.128.033201
+      \endverb
+      \verb{file}
+      \verb /home/christian/Zotero/storage/RCP8SBQM/Wilson et al. - 2022 - Trapping Alkaline Earth Rydberg Atoms Optical Tweezer Arrays.pdf;/home/christian/Zotero/storage/PI7DY9HH/PhysRevLett.128.html
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.128.033201
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.128.033201
+      \endverb
+    \endentry
+    \entry{holzlLongLivedCircularRydberg2024}{article}{}
+      \name{author}{5}{}{%
+        {{hash=93f2ab563b14d8dba7724a4b7efbfa4b}{%
+           family={Hölzl},
+           familyi={H\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9dbda6f2bf47dfcc25c532f65149d55c}{%
+           family={Götzelmann},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=691d2b69c55c7455fc164f6a309e7caf}{%
+           family={Pultinevicius},
+           familyi={P\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c88ae71f371b743f4d8e5f92e5cf6f9e}{%
+           family={Wirth},
+           familyi={W\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e2bb0b6e736b7d6563aee8e0f6a60569}{%
+           family={Meinert},
+           familyi={M\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{9bd01344696713c0f1c232d1279dbc59}
+      \strng{fullhash}{781233eb074e96e0be80bb39c828b079}
+      \strng{bibnamehash}{781233eb074e96e0be80bb39c828b079}
+      \strng{authorbibnamehash}{781233eb074e96e0be80bb39c828b079}
+      \strng{authornamehash}{9bd01344696713c0f1c232d1279dbc59}
+      \strng{authorfullhash}{781233eb074e96e0be80bb39c828b079}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Coherence time and gate fidelities in Rydberg atom quantum simulators and computers are fundamentally limited by the Rydberg state lifetime. Circular Rydberg states are highly promising candidates to overcome this limitation by orders of magnitude, as they can be effectively protected from decay due to their maximum angular momentum. We report the first realization of alkaline-earth circular Rydberg atoms trapped in optical tweezers, which provide unique and novel control possibilities due to the optically active ionic core. Specifically, we demonstrate creation of very high-𝑛 (𝑛 =79) circular states of 88Sr. We measure lifetimes as long as 2.55 ms at room temperature, which are achieved via cavity-assisted suppression of black-body radiation. We show coherent control of a microwave qubit encoded in circular states of nearby manifolds, and characterize the qubit coherence time via Ramsey and spin-echo spectroscopy. Finally, circular-state tweezer trapping exploiting the Sr+ core polarizability is quantified via measurements of the trap-induced light shift on the qubit. Our work opens routes for quantum simulations with circular Rydberg states of divalent atoms, exploiting the emergent toolbox associated with the optically active core ion.}
+      \field{day}{3}
+      \field{journaltitle}{Physical Review X}
+      \field{month}{5}
+      \field{number}{2}
+      \field{shortjournal}{Phys. Rev. X}
+      \field{title}{Long-{{Lived Circular Rydberg Qubits}} of {{Alkaline-Earth Atoms}} in {{Optical Tweezers}}}
+      \field{urlday}{27}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{14}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{021024}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevX.14.021024
+      \endverb
+      \verb{file}
+      \verb /home/christian/Zotero/storage/W38YDY5U/Hölzl et al. - 2024 - Long-Lived Circular Rydberg Qubits of Alkaline-Earth Atoms in Optical Tweezers.pdf;/home/christian/Zotero/storage/UQIRPPA9/PhysRevX.14.html
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevX.14.021024
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevX.14.021024
+      \endverb
+    \endentry
     \entry{peanoTopologicalEdgeStates2018}{article}{}
       \name{author}{2}{}{%
         {{hash=511d498634b8e5a18edcbb7e022b7ec4}{%
@@ -331,8 +481,8 @@
       \strng{authorbibnamehash}{03ff491a1897888884f99f915b760997}
       \strng{authornamehash}{03ff491a1897888884f99f915b760997}
       \strng{authorfullhash}{03ff491a1897888884f99f915b760997}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Quadratic bosonic Hamiltonians over a one-particle Hilbert space can be described by a Bogoliubov-de Gennes (BdG) Hamiltonian on a particle-hole Hilbert space. In general, the BdG Hamiltonian is not self-adjoint, but only J-self-adjoint on the particle-hole space viewed as a Krein space. Nevertheless, its energy bands can have non-trivial topological invariants like Chern numbers or winding numbers. By a thorough analysis for tight-binding models, it is proved that these invariants lead to bosonic edge modes which are robust to a large class of possibly disordered perturbations. Furthermore, general scenarios are presented for these edge states to be dynamically unstable even though the bulk modes are stable.}
@@ -399,8 +549,8 @@
       \strng{authorbibnamehash}{a1e72475a4183353a70069961c9d5f8d}
       \strng{authornamehash}{035bcba2a623d6271544f2147efb4345}
       \strng{authorfullhash}{a1e72475a4183353a70069961c9d5f8d}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We study chiral models in one spatial dimension, both static and periodically driven. We demonstrate that their topological properties may be read out through the long time limit of a bulk observable, the mean chiral displacement. The derivation of this result is done in terms of spectral projectors, allowing for a detailed understanding of the physics. We show that the proposed detection converges rapidly and it can be implemented in a wide class of chiral systems. Furthermore, it can measure arbitrary winding numbers and topological boundaries, it applies to all non-interacting systems, independently of their quantum statistics, and it requires no additional elements, such as external fields, nor filled bands.}
@@ -466,8 +616,8 @@
       \strng{authorbibnamehash}{e796206db38de31c55877e4f5af154bb}
       \strng{authornamehash}{b2afe9d1439255b39dd52994c8a925b6}
       \strng{authorfullhash}{e796206db38de31c55877e4f5af154bb}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We systematically study topological phases of insulators and superconductors (or superfluids) in three spatial dimensions. We find that there exist three-dimensional (3D) topologically nontrivial insulators or superconductors in five out of ten symmetry classes introduced in seminal work by Altland and Zirnbauer within the context of random matrix theory, more than a decade ago. One of these is the recently introduced ℤ2 topological insulator in the symplectic (or spin-orbit) symmetry class. We show that there exist precisely four more topological insulators. For these systems, all of which are time-reversal invariant in three dimensions, the space of insulating ground states satisfying certain discrete symmetry properties is partitioned into topological sectors that are separated by quantum phase transitions. Three of the above five topologically nontrivial phases can be realized as time-reversal invariant superconductors. In these the different topological sectors are characterized by an integer winding number defined in momentum space. When such 3D topological insulators are terminated by a two-dimensional surface, they support a number (which may be an arbitrary nonvanishing even number for singlet pairing) of Dirac fermion (Majorana fermion when spin-rotation symmetry is completely broken) surface modes which remain gapless under arbitrary perturbations of the Hamiltonian that preserve the characteristic discrete symmetries, including disorder. In particular, these surface modes completely evade Anderson localization from random impurities. These topological phases can be thought of as three-dimensional analogs of well-known paired topological phases in two spatial dimensions such as the spinless chiral (𝑝𝑥±𝑖⁢𝑝𝑦)-wave superconductor (or Moore-Read Pfaffian state). In the corresponding topologically nontrivial (analogous to “weak pairing”) and topologically trivial (analogous to “strong pairing”) 3D phases, the wave functions exhibit markedly distinct behavior. When an electromagnetic U(1) gauge field and fluctuations of the gap functions are included in the dynamics, the superconducting phases with nonvanishing winding number possess nontrivial topological ground-state degeneracies.}
@@ -528,8 +678,8 @@
       \strng{authorbibnamehash}{f62d58136d2ef18297b7d6fe8e7fd5d8}
       \strng{authornamehash}{7364dc6776cb42eab85e1574966924c3}
       \strng{authorfullhash}{f62d58136d2ef18297b7d6fe8e7fd5d8}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{23}
