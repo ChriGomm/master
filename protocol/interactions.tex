@@ -159,20 +159,20 @@ The condition for the shift can be written as
 \begin{align*}
      \frac{V_0(a)}{a}\,G_i\vcentcolon=\frac{V_0(a)}{a}\,\left(\tilde{g}_i +\sum_jW_{ij}\,\frac{{\Delta}_j}{a}  \right)\vcentcolon=\frac{V_0(a)}{a}\,\left(\tilde{g}_i +\sum_j\,\left( \tilde{U}_{j,i} + \frac{m\omega^2 a^2}{V_0(a)}\,\delta_{ij}\right)\,\frac{{\Delta}_j}{a}  \right)= 0 \quad\forall i
 \end{align*}
-Here $h$ and $\tilde{U}$ are dimensionless and the the term $m\omega^2 a^2/[V_0(a)\,\text{max}(\tilde{U})]$ is of order $10^{-15}$-$10^{-10}$, hence negligibly small. Now I use the two free parameters $h$ and the angle $\varphi_d$ of the dipole moment $\hat{\mathbf{d}}$ to set $G_i=0$ or close to zero for different values of $b$. Close to zero means here that max$(|G_i|)$ compared to $\sqrt{\hbar/(2m\omega)}\,\text{max}(\tilde{U})/a$ is small. Here $\sqrt{\hbar/(2m\omega)}/a\sim10^{-3}$ is the displacement from a single motional excitation in units of $a$.
+Here $h$ and $\tilde{U}$ are dimensionless and the the term $m\omega^2 a^2/[V_0(a)\,\text{max}(\tilde{U})]$ chosen of order $0.01$-$250$. Now I use the two free parameters $h$ and the angle $\varphi_d$ of the dipole moment $\hat{\mathbf{d}}$ to set $G_i=0$ or close to zero for different values of $b$. Close to zero means here that max$(|G_i|)$ compared to $\sqrt{\hbar/(2m\omega)}\,\text{max}(\tilde{U})/a$ is small. Here $\sqrt{\hbar/(2m\omega)}/a\sim10^{-3}$ is the displacement from a single motional excitation in units of $a$.
 \begin{figure}[H]
     \hspace*{-2cm}
     \includegraphics{pictures/tuning_first_order_to_zero3.pdf}
     \caption{\textbf{Parameters for negligible first order.} }
     \label{fig:tuning_first_order_to_zero}
 \end{figure}
-\begin{figure}[H]
+\begin{figure}[h]
     \hspace*{-2cm}
     \includegraphics{pictures/Deltas3.pdf}
     \caption{\textbf{Displacements.} }
     % \label{fig:tuning_first_order_to_zero}
 \end{figure}
-As shown in \figref{fig:tuning_first_order_to_zero} the first order can be eliminated by choosing very small shifts in the displacement compared to the generic displacement inside the trap. This is possible due to the tuned small first order compared to the $W$-term as seen in \figref{fig:tuning_first_order_to_zero}d). Consequently the elimination of the linear term can also be understood from a comparison of the energy scales.
+% As shown in \figref{fig:tuning_first_order_to_zero} the first order can be eliminated by choosing very small shifts in the displacement compared to the generic displacement inside the trap. This is possible due to the tuned small first order compared to the $W$-term as seen in \figref{fig:tuning_first_order_to_zero}d). Consequently the elimination of the linear term can also be understood from a comparison of the energy scales.
 
 
 The Hamiltonian has now a quadratic form in the creation and annihilation operators and can hence be written as
@@ -300,7 +300,7 @@ Let $c^A_{\mathbf{R},\alpha}$ and $c^B_{\mathbf{R},\alpha}$ be the phonon annihi
 \end{align*}
 For two dimensional periodic boundary conditions one can introduce the Fourier transformed operators, $a\in C$
 \begin{align*}
-    a_{\mathbf{k}} = \frac{1}{\sqrt{N}}\sum_{\mathbf{R}\in N} e^{-i\mathbf{k}\cdot\mathbf{R}}\,a_{\mathbf{R}},
+    a_{\mathbf{k}} = \frac{1}{\sqrt{L}}\sum_{\mathbf{R}\in N} e^{-i\mathbf{k}\cdot\mathbf{R}}\,a_{\mathbf{R}},
 \end{align*}
 $k\in \bar{L}$ where $\bar{L}$ is the reciprocal lattice of $L$ and $N$ is the extent of the lattice in one direction.
 Writing the Hamiltonian in terms of these operators yields
@@ -405,6 +405,19 @@ Thus in the case of the Hamiltonian $H_{\mathbf{k},-\mathbf{k}}$, where $P^T=S$ 
         -C^* & -B^*
     \end{pmatrix} \mathbf{a}=\vcentcolon -i \tilde{H}_\mathbf{k} \mathbf{a}
 \end{align*}
+
+\begin{figure}[H]
+    \hspace*{-2cm}
+    \includegraphics{pictures/spectrum_abs_of_tuned_BdG_various_shift.pdf}
+    \caption{\textbf{Spectrum of BdG Hamiltonian for different trap frequencies.} }
+    % \label{fig:tuning_first_order_to_zero}
+\end{figure}
+\begin{figure}[h]
+    \hspace*{-2cm}
+    \includegraphics{pictures/spectrum_U_r_and_k_space.pdf}
+    \caption{\textbf{Spectrum of the $U$ matrix in real and momentum space.} }
+    % \label{fig:tuning_first_order_to_zero}
+\end{figure}
 \subsection*{Mathematical approach to the BdG Hamiltonian}
 I want to introduce a more mathematical approach to the Hamiltonian. 
 \begin{align*}
@@ -497,16 +510,16 @@ The dynamical matrix that has to be analyzed with respect to topological propert
        - \mathbf{\Delta}_s^\dagger(-k) & -\overline{\mathbf{h}}(-k)
     \end{pmatrix} 
 \end{align*}
-\begin{figure}[H]
-    \centering
-    \includegraphics{pictures/Bdg_spec_8N.pdf}
-    \caption{\textbf{BdG spectrum for lattice size 80}}
-\end{figure}\hfill
-\begin{figure}[H]
-    \centering
-    \includegraphics{pictures/Bdg_spec_50N.pdf}
-    \caption{\textbf{BdG spectrum for lattice size 800} }
-\end{figure}
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics{pictures/Bdg_spec_8N.pdf}
+%     \caption{\textbf{BdG spectrum for lattice size 80}}
+% \end{figure}\hfill
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics{pictures/Bdg_spec_50N.pdf}
+%     \caption{\textbf{BdG spectrum for lattice size 800} }
+% \end{figure}
 % \begin{align*}
 %     \frac{d}{dt}\,\begin{pmatrix}
 %         \psi(k)\\\phi(-k)
