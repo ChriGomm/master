@@ -549,8 +549,8 @@
       \strng{authorbibnamehash}{a1e72475a4183353a70069961c9d5f8d}
       \strng{authornamehash}{035bcba2a623d6271544f2147efb4345}
       \strng{authorfullhash}{a1e72475a4183353a70069961c9d5f8d}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We study chiral models in one spatial dimension, both static and periodically driven. We demonstrate that their topological properties may be read out through the long time limit of a bulk observable, the mean chiral displacement. The derivation of this result is done in terms of spectral projectors, allowing for a detailed understanding of the physics. We show that the proposed detection converges rapidly and it can be implemented in a wide class of chiral systems. Furthermore, it can measure arbitrary winding numbers and topological boundaries, it applies to all non-interacting systems, independently of their quantum statistics, and it requires no additional elements, such as external fields, nor filled bands.}
@@ -616,8 +616,8 @@
       \strng{authorbibnamehash}{e796206db38de31c55877e4f5af154bb}
       \strng{authornamehash}{b2afe9d1439255b39dd52994c8a925b6}
       \strng{authorfullhash}{e796206db38de31c55877e4f5af154bb}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We systematically study topological phases of insulators and superconductors (or superfluids) in three spatial dimensions. We find that there exist three-dimensional (3D) topologically nontrivial insulators or superconductors in five out of ten symmetry classes introduced in seminal work by Altland and Zirnbauer within the context of random matrix theory, more than a decade ago. One of these is the recently introduced ℤ2 topological insulator in the symplectic (or spin-orbit) symmetry class. We show that there exist precisely four more topological insulators. For these systems, all of which are time-reversal invariant in three dimensions, the space of insulating ground states satisfying certain discrete symmetry properties is partitioned into topological sectors that are separated by quantum phase transitions. Three of the above five topologically nontrivial phases can be realized as time-reversal invariant superconductors. In these the different topological sectors are characterized by an integer winding number defined in momentum space. When such 3D topological insulators are terminated by a two-dimensional surface, they support a number (which may be an arbitrary nonvanishing even number for singlet pairing) of Dirac fermion (Majorana fermion when spin-rotation symmetry is completely broken) surface modes which remain gapless under arbitrary perturbations of the Hamiltonian that preserve the characteristic discrete symmetries, including disorder. In particular, these surface modes completely evade Anderson localization from random impurities. These topological phases can be thought of as three-dimensional analogs of well-known paired topological phases in two spatial dimensions such as the spinless chiral (𝑝𝑥±𝑖⁢𝑝𝑦)-wave superconductor (or Moore-Read Pfaffian state). In the corresponding topologically nontrivial (analogous to “weak pairing”) and topologically trivial (analogous to “strong pairing”) 3D phases, the wave functions exhibit markedly distinct behavior. When an electromagnetic U(1) gauge field and fluctuations of the gap functions are included in the dynamics, the superconducting phases with nonvanishing winding number possess nontrivial topological ground-state degeneracies.}
@@ -678,8 +678,8 @@
       \strng{authorbibnamehash}{f62d58136d2ef18297b7d6fe8e7fd5d8}
       \strng{authornamehash}{7364dc6776cb42eab85e1574966924c3}
       \strng{authorfullhash}{f62d58136d2ef18297b7d6fe8e7fd5d8}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{23}

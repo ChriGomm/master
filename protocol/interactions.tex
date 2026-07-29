@@ -125,7 +125,7 @@ With that the Hamiltonian gets its final form
 As a physical implementation I consider a system of Rydberg atoms. The interactions between Rydberg atoms can be tuned in a wide range of magnitude. What is however restricted are the lifetimes of such Rydberg states. They can reach for conventional Rydberg states up to several hundred $\mu$s. For Circular Rydberg states the lifetimes can reach even a few ms. In both cases the trap depth ($\omega$) can easily have a few MHz \cite{wilsonTrappingAlkalineEarth2022,holzlLongLivedCircularRydberg2024}. In order to observe the physics induced by the Rydberg-Hamiltonian during the lifetime $T$, this Hamiltonian has to be be on energy scales $|H|>>1/T\sim5$-$10\,$kHz. For the implementation of a Rice-Mele transfer one can estimate the duration $T_{RM}$ of the process of $T_{RM}>>\braket{i|\dot{H}|f}/\Delta^2\sim1/(T_{RM}\Delta^2)\rightarrow T_{RM}>>1/\Delta$, where $\Delta$ is the band gap of the topological insulator ($\Delta\sim|H|$). Thus for circular Rydberg states as well as conventional ones it is possible to fulfill this condition whilst at the same time satisfying $|H|<<\omega$. The latter assumption leads to a large energy splitting of different motional excitation numbers and hence to an effective conservation of motional excitations. This allows one to analyze the topological properties of the system via a single-particle fermionic formalism.
 
 
-One can, however, also consider a regime where the motional excitations are not conserved, i.e. $\omega\lesssim|H|$. For this investigation I assume dipole-dipole interactions between mixed Rydberg states. The corresponding potential reads
+One can, however, also consider a regime where the motional excitations are not conserved, i.e. $\omega\lesssim|H|$. For this investigation I assume dipole-dipole interactions between dressed Rydberg states. The corresponding potential reads
 \begin{align*}
     V_{dd}(\mathbf{r}) &= \frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\left(1-3\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)=\vcentcolon V_0(r)\,f(\hat{\mathbf{r}})=V_0(a)\,\frac{a^3}{r^3}\,f(\hat{\mathbf{r}})\\
     \frac{\partial V_{dd}}{\partial r_\alpha} &=\frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\frac1r\,\left( -3\,\frac{ r_\alpha}{r} + 15\,\frac{ r_\alpha }{r}(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2 - 6\,\hat{d}_\alpha\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}}) \right)=\vcentcolon \frac{V_0(r)}{r}\,g(\hat{\mathbf{r}})=\frac{V_0(a)}{a}\,\frac{a^4}{r^4}\,g(\hat{\mathbf{r}})\\
@@ -159,7 +159,7 @@ The condition for the shift can be written as
 \begin{align*}
      \frac{V_0(a)}{a}\,G_i\vcentcolon=\frac{V_0(a)}{a}\,\left(\tilde{g}_i +\sum_jW_{ij}\,\frac{{\Delta}_j}{a}  \right)\vcentcolon=\frac{V_0(a)}{a}\,\left(\tilde{g}_i +\sum_j\,\left( \tilde{U}_{j,i} + \frac{m\omega^2 a^2}{V_0(a)}\,\delta_{ij}\right)\,\frac{{\Delta}_j}{a}  \right)= 0 \quad\forall i
 \end{align*}
-Here $h$ and $\tilde{U}$ are dimensionless and the the term $m\omega^2 a^2/[V_0(a)\,\text{max}(\tilde{U})]$ chosen of order $0.01$-$250$. Now I use the two free parameters $h$ and the angle $\varphi_d$ of the dipole moment $\hat{\mathbf{d}}$ to set $G_i=0$ or close to zero for different values of $b$. Close to zero means here that max$(|G_i|)$ compared to $\sqrt{\hbar/(2m\omega)}\,\text{max}(\tilde{U})/a$ is small. Here $\sqrt{\hbar/(2m\omega)}/a\sim10^{-3}$ is the displacement from a single motional excitation in units of $a$.
+Here $\tilde{g}$ and $\tilde{U}$ are dimensionless and the the term $m\omega^2 a^2/[V_0(a)\,\text{max}(\tilde{U})]=\vcentcolon m\omega^2/V_\text{max}$ chosen of order $0.01$-$10$. Now I use the two free parameters $h$ and the angle $\varphi_d$ of the dipole moment $\hat{\mathbf{d}}$ to set $G_i=0$ or close to zero for different values of $b$. Close to zero means here that max$(|G_i|)$ compared to $\sqrt{\hbar/(2m\omega)}\,\text{max}(\tilde{U})/a$ is small. Here $\sqrt{\hbar/(2m\omega)}/a\sim10^{-3}$ is the displacement from a single motional excitation in units of $a$.
 \begin{figure}[H]
     \hspace*{-2cm}
     \includegraphics{pictures/tuning_first_order_to_zero3.pdf}
@@ -170,17 +170,16 @@ Here $h$ and $\tilde{U}$ are dimensionless and the the term $m\omega^2 a^2/[V_0(
     \hspace*{-2cm}
     \includegraphics{pictures/Deltas3.pdf}
     \caption{\textbf{Displacements.} }
-    % \label{fig:tuning_first_order_to_zero}
+    \label{fig:tuning_first_order_to_zero_displacements}
 \end{figure}
+\figref{fig:tuning_first_order_to_zero} and \figref{fig:tuning_first_order_to_zero_displacements} tell us that the $\Delta$-displacements are of order $10^{-2}$, an order of magnitude bigger than the single motional mode displacement. Nevertheless the shift is small compared to the atomic distance $a$. Realizing a vanishing first order in this way, the Hamiltonian takes a quadratic form in the creation and annihilation operators and can hence be written as
 % As shown in \figref{fig:tuning_first_order_to_zero} the first order can be eliminated by choosing very small shifts in the displacement compared to the generic displacement inside the trap. This is possible due to the tuned small first order compared to the $W$-term as seen in \figref{fig:tuning_first_order_to_zero}d). Consequently the elimination of the linear term can also be understood from a comparison of the energy scales.
 
-
-The Hamiltonian has now a quadratic form in the creation and annihilation operators and can hence be written as
 \begin{align*}
     H &= \sum_n \hbar\omega\,a_n^\dagger a_n +\frac{\hbar}{2m\omega}\, \sum_{n,m} U_{n,m}\,\left(a_n\,a_m + a_n^\dagger a_m + a_n\,a_m^\dagger + a_n^\dagger a_m^\dagger \right)\\
     &= \mathbf{a}^\dagger\,A\,\mathbf{a}
 \end{align*}
-with $\vec{a}=(a_1,\dots,a_N,a_1^\dagger,\dots,a_N^\dagger)$ the vector of operators and a coupling matrix $A$, which takes the following form
+with $\mathbf{a}=(a_1,\dots,a_N,a_1^\dagger,\dots,a_N^\dagger)$ the vector of operators and a coupling matrix $A$, which takes the following form
 \begin{align*}
     A &= \frac{\hbar}{2m\omega}\,\begin{pmatrix}
        \bar{U} & U \\
@@ -188,7 +187,9 @@ with $\vec{a}=(a_1,\dots,a_N,a_1^\dagger,\dots,a_N^\dagger)$ the vector of opera
     \end{pmatrix}\\
     \text{with}\quad \bar{U}&= U+m\omega^2.
 \end{align*}
-This allows for a topological characterization of the bosonic system, acording to \cite{peanoTopologicalEdgeStates2018}. In order to understand the significance of the constant shift, one has to take into account the physical properties of the system. The Rydberg atoms, which have lifetimes up to $\sim200\,\mu$s, are trapped in optical tweezers of trap frequency up to $\sim2\,$MHz. This implies that one has to implement an Hamiltonian that induces non-trivial dynamics within the lifetimes of the atoms. Responsible for non-trivial dynamics is the U-matrix. Thus the interaction strength has to be at least as big as the trap frequency, i.e. $|U|\geq m\omega^2$. The Heisenberg equations of motion for the operators read
+This allows for a topological characterization of the bosonic system, acording to \cite{peanoTopologicalEdgeStates2018}. A first step is to consider the Heisenberg equations of motion for the operators which read %In order to understand the significance of the constant shift, one has to take into account the physical properties of the system. The Rydberg atoms, which have lifetimes up to $\sim200\,\mu$s, are trapped in optical tweezers of trap frequency up to $\sim2\,$MHz. This implies that one has to implement an Hamiltonian that induces non-trivial dynamics within the lifetimes of the atoms. Responsible for non-trivial dynamics is the U-matrix. Thus the interaction strength has to be at least as big as the trap frequency, i.e. $|U|\geq m\omega^2$. 
+
+
 \begin{align*}
     \frac{d}{dt}\,{a}_j &= i\,([H,{a}_j]) = -i\, \hbar\omega a_j - i\,\frac{\hbar}{2m\omega}\,\sum_n \left(U_{j,n}\,a_n + U_{n,j}\,a_n + U_{j,n}\,a_n^\dagger + U_{n,j}\,a_n^\dagger\right) \\
     &= -i\, \hbar\omega a_j -i\,\frac{\hbar}{m\omega}\,\sum_n \left(U_{j,n}\,a_n + U_{j,n}\,a_n^\dagger \right) = -2\,i\,(A\,\vec{a})_j\\
@@ -204,13 +205,19 @@ This lets one write the equations of motion in a different form
        -U & -\bar{U}
        \end{pmatrix}
 \end{align*}
-And it is this matrix $\tilde{H}$ that determines the topological properties of the system. $\tilde{H}$ is in the Bogoliubov de Gennes form and a real matrix. Therefore it is time reversal symmetric. Particle-hole symmetry is also fulfilled, as $\tilde{H}^*=-\Sigma_x\,\tilde{H}\,\Sigma_x$ with 
+And it is this matrix $\tilde{H}$ that determines the topological properties of the system, since it provides the eigenmodes of the dynamics. $\tilde{H}$ is in the Bogoliubov de Gennes form and a real matrix. Therefore it is time reversal symmetric. Particle-hole symmetry is also fulfilled, as $\tilde{H}^*=-\Sigma_x\,\tilde{H}\,\Sigma_x$ with 
 \begin{align*}\Sigma_x=\begin{pmatrix}
     0 & \mathbb{1}\\
     \mathbb{1} & 0
 \end{pmatrix}\end{align*}
-As a consequence it is then also chiral symmetric, as $\tilde{H}=-\Sigma_x\,\tilde{H}\,\Sigma_x$. It is hence int the CI symmetry class, which allows for a topological characterization in one dimension.
-
+As a consequence it is then also chiral symmetric, as $\tilde{H}=-\Sigma_x\,\tilde{H}\,\Sigma_x$. It is hence int the CI symmetry class, which allows for a topological characterization in one dimension. 
+Since $H$ is not hermitian it does not necessarily have only real eigenvalues.For the topological classification to be possible, the Hamiltonian has to be, however, dynamically stable, which means no complex eigenvalues are allowed, as they lead to unbounded dynamics. When looking at the spectrum of the BdG-Hamiltonian over the parameter that lets the first order be neglected, one observes always large imaginary parts. This is seen in \figref{fig:spectrum_BdG}. As a consequence the system is not classifiable by the formalism described in \cite{peanoTopologicalEdgeStates2018}.
+\begin{figure}[H]
+    \hspace*{-2cm}
+    \includegraphics{pictures/spectrum_abs_of_tuned_BdG_various_shift.pdf}
+    \caption{\textbf{Spectrum of BdG Hamiltonian for different trap frequencies.}}
+    \label{fig:spectrum_BdG}
+\end{figure}
 % Additionally it should be mentioned that \figref{fig:tuning_first_order_to_zero} is generated using $G=\tilde{g}_i +\sum_j \tilde{U}_{j,i} \,{\Delta}_j/a $, i.e. without the trap potential contribution. Therefore this elimination can be also performed for the later case, when spin operators are present.
 % Returning to the aligned dipole potential I want to investigate the energy scales of the interaction.
 % Setting $1-3\,(\mathbf{d}\mathbf{r})^2/r^2=0$ with $\mathbf{r}=(b,h)$ one can determine the dipole from $r$ and  $h$
