@@ -203,6 +203,9 @@ This lets one write the equations of motion in a different form
     \text{where}\quad \tilde{H} &= \frac{\hbar}{m\omega}\,\begin{pmatrix}
        \bar{U} & U \\
        -U & -\bar{U}
+       \end{pmatrix}=\vcentcolon \begin{pmatrix}
+        h & \Delta\\
+        -\Delta & -h
        \end{pmatrix}
 \end{align*}
 And it is this matrix $\tilde{H}$ that determines the topological properties of the system, since it provides the eigenmodes of the dynamics. $\tilde{H}$ is in the Bogoliubov de Gennes form and a real matrix. Therefore it is time reversal symmetric. Particle-hole symmetry is also fulfilled, as $\tilde{H}^*=-\Sigma_x\,\tilde{H}\,\Sigma_x$ with 
@@ -413,18 +416,18 @@ Thus in the case of the Hamiltonian $H_{\mathbf{k},-\mathbf{k}}$, where $P^T=S$ 
     \end{pmatrix} \mathbf{a}=\vcentcolon -i \tilde{H}_\mathbf{k} \mathbf{a}
 \end{align*}
 
-\begin{figure}[H]
-    \hspace*{-2cm}
-    \includegraphics{pictures/spectrum_abs_of_tuned_BdG_various_shift.pdf}
-    \caption{\textbf{Spectrum of BdG Hamiltonian for different trap frequencies.} }
-    % \label{fig:tuning_first_order_to_zero}
-\end{figure}
-\begin{figure}[h]
-    \hspace*{-2cm}
-    \includegraphics{pictures/spectrum_U_r_and_k_space.pdf}
-    \caption{\textbf{Spectrum of the $U$ matrix in real and momentum space.} }
-    % \label{fig:tuning_first_order_to_zero}
-\end{figure}
+% \begin{figure}[H]
+%     \hspace*{-2cm}
+%     \includegraphics{pictures/spectrum_abs_of_tuned_BdG_various_shift.pdf}
+%     \caption{\textbf{Spectrum of BdG Hamiltonian for different trap frequencies.} }
+%     \label{fig:spectrum_BdG}
+% \end{figure}
+% \begin{figure}[h]
+%     \hspace*{-2cm}
+%     \includegraphics{pictures/spectrum_U_r_and_k_space.pdf}
+%     \caption{\textbf{Spectrum of the $U$ matrix in real and momentum space.} }
+%     % \label{fig:tuning_first_order_to_zero}
+% \end{figure}
 \subsection*{Mathematical approach to the BdG Hamiltonian}
 I want to introduce a more mathematical approach to the Hamiltonian. 
 \begin{align*}
@@ -517,6 +520,87 @@ The dynamical matrix that has to be analyzed with respect to topological propert
        - \mathbf{\Delta}_s^\dagger(-k) & -\overline{\mathbf{h}}(-k)
     \end{pmatrix} 
 \end{align*}
+If the matrix $H_k$ has chiral symmetry, which is true if $H$ has chiral symmetry, this means that there is a unitary matrix $U$ such that
+\begin{align*}
+    U H_k U^\dagger &= \begin{pmatrix}
+        0 & S\\
+        T & 0
+    \end{pmatrix}=\vcentcolon H'
+\end{align*}
+The $J$ matrix transforms under $U$ to $J'$, which is still hermitian and squares to the identity. Setting 
+\begin{align*}
+    J'&= \begin{pmatrix}
+        A & B\\
+        B^\dagger & C
+    \end{pmatrix}
+\end{align*}
+one can write the explicitly
+\begin{align*}
+    H'^\dagger J' &= J'\,H'\\
+    \Leftrightarrow \quad \begin{pmatrix}
+        T^\dagger B^\dagger & T^\dagger C\\
+        S^\dagger A & S^\dagger B
+    \end{pmatrix}&= \begin{pmatrix}
+        B\,T & A\,S\\
+        C\,T & B^\dagger S
+    \end{pmatrix}\\
+    \Leftrightarrow\quad S &= A^{-1}T^\dagger C \\
+    T &= B^{-1}T^\dagger B^\dagger\\
+    S &= (B^\dagger)^{-1} S^\dagger B
+\end{align*}
+The equation $S = A^{-1}T^\dagger C$ gives the insight that calculating the winding with $S$ or $T$ is equivalent. This becomes clear when one remembers the definition of the winding number for a hermitian block-off-diagonal matrix with blocks $h$ and $h^\dagger$, i.e. 
+\begin{align*}
+    w = \frac{1}{2\pi i} \int_\text{BZ} dk \,\text{Tr}\left[h^{-1}(k) \partial_kh(k)\right].
+\end{align*}
+Investigating the kernel of the integral when replacing $h$ by $S$, one can put the winding of the two blocks in relation.
+\begin{align*}
+    \text{Tr}\left[ S^{-1}\partial_k S  \right]&= \text{Tr}\left[ C^{-1}(T^\dagger)^{-1}A\,\partial_k \left( A^{-1}T^\dagger C \right)  \right]\\
+    &=  \text{Tr}\left[ (T^\dagger)^{-1}\partial_k T^\dagger  \right]
+\end{align*}
+this is the same relation as between the hermitian blocks ($w(h)=-w(h^\dagger)$). Going back to the Rydberg atom system, the computed $H_k$ has the following form, which is independent of the geometry of the system.
+\begin{gather*}
+    H_k = \begin{pmatrix}
+        R_k & P_k\\
+        -P_k & -R_k
+       \end{pmatrix}\\
+    R_k = \begin{pmatrix}
+        w(\mathbf{k}) & u(\mathbf{k})\\
+        \bar{u}(\mathbf{k})& w(\mathbf{k})
+    \end{pmatrix}\quad P_k = \begin{pmatrix}
+        v(\mathbf{k}) & u(\mathbf{k})\\
+        \bar{u}(\mathbf{k}) & v(\mathbf{k})
+    \end{pmatrix}
+\end{gather*}
+Exploiting the symmetric structure of the matrix one can write
+\begin{align*}
+    H_k &= \tau_z \otimes R_k + i\tau_y \otimes P_k\\
+    R_k &=  w(\mathbf{k})\,\sigma_0  + \text{Re}[u(\mathbf{k})]\,\sigma_x -\text{Im}[u(\mathbf{k})]\,\sigma_y\\
+    P_k &=  v(\mathbf{k})\,\sigma_0  + \text{Re}[u(\mathbf{k})]\,\sigma_x -\text{Im}[u(\mathbf{k})]\,\sigma_y\\
+    \Rightarrow\quad H_k &= w(\mathbf{k})\,\tau_z \otimes \sigma_0 + v(\mathbf{k})\,i\tau_y \otimes \sigma_0 + \text{Re}[u(\mathbf{k})]\,(\tau_z+i\tau_y) \otimes \sigma_x - \text{Im}[u(\mathbf{k})]\,(\tau_z+i\tau_y) \otimes \sigma_y
+\end{align*}
+where $\tau_\alpha$, $\sigma_\alpha$ $\alpha\in\{0,x,y,z\}$ are the usual Pauli matrices. Since every $4\times4$ matrix $X$ can be written in the form
+\begin{align*}
+    X = \sum_{\alpha,\beta\in\{0,x,y,z\}}x_{\alpha,\beta}\, \tau_\alpha \otimes \sigma_\beta
+\end{align*}
+one can conclude that the only matrix commuting with $H_k$ is the identity, i.e $[X,H_k]=0$ $\Rightarrow X=\mathbb{1}$. As no two different pauli matrices commute, the occurrence of $\tau_z$ and $\tau_y$ implies $x_{\alpha,\beta}=0$ for $\alpha\neq0$, similarly the occurrence of $\sigma_x$ and $\sigma_y$ implies $x_{\alpha,\beta}=0$ for $\beta\neq0$.
+Transforming into the basis where the chiral transformation $\Sigma_x^k=(\mathbb{1},-\mathbb{1})$, $H_k$ takes the form
+\begin{gather*}
+    H_k' = \begin{pmatrix}
+        0 & S_k\\
+        T_k & 0
+    \end{pmatrix}\\
+    S_k = \begin{pmatrix}
+        w(\mathbf{k})-v(\mathbf{k}) & 0\\
+        0 & w(\mathbf{k})-v(\mathbf{k})
+    \end{pmatrix}\quad T_k = \begin{pmatrix}
+        w(\mathbf{k})+v(\mathbf{k}) & 2\,u(\mathbf{k})\\
+        2\,\bar{u}(\mathbf{k}) & w(\mathbf{k}) + v(\mathbf{k})
+    \end{pmatrix}
+\end{gather*}
+As both matrices $S_k$ and $T_k$ are hermitian the Hamiltonian has vanishing winding number, indicating a topological trivial phase. This is confirmed when looking at the eigenstates inside the gap of \figref{fig:spectrum_BdG}, when $m\omega^2=10\,V_\text{max}$.
+
+
+
 % \begin{figure}[H]
 %     \centering
 %     \includegraphics{pictures/Bdg_spec_8N.pdf}
