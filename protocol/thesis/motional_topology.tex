@@ -1,0 +1,142 @@
+\chapter{Topological Classification of motional modes in Rydberg atom arrays}
+The possibility of trapping atoms in optical tweezers and arranging them in arbitrary geometries has inspired the investigation of various topological properties in such arrays. One of the targets of such investigations has been the motional modes of the atoms in the array. As the atoms move in the harmonic oscillator potential of the tweezer, the interaction between atoms, which are distance dependent, also change. This leads to a coupling between the motional modes of the atoms. In this work the atoms will occupy Rydberg states leading to dipole-dipole or van der Waals interactions. There are two regimes of interest, which behave in a different way. If the trap depth is much larger than the interaction, the generation of additional motional excitations is suppressed, and only hopping of motional excitations between sites takes place. Thus topological classification can exploit the single particle property of the dynamics. In the complementary regime the excitation number is not conserved and one has to deploy a bosonic formalism for the topological classification, via the Bogoliubov de Gennes (BdG) picture, discussed in the previous chapter. In the next section it is briefly discussed why both regimes can be implemented in Rydberg atom arrays.
+
+\section{Parameter regimes}
+Important for the presence or absence of motional excitation number conservation is the ratio of interaction strength $V$ to trap depth $\omega$. The lifetime of the Rydberg states $T$, however, sets a lower bound on the interaction strength, as the dynamics induced by the interaction has to be faster than the lifetime of the Rydberg state, in order to be observed. For the regime, in which the motional excitation number is conserved, the trap depth has to be much larger than the interaction which in turn has to be much larger than this lower bound. In the following I will discuss the relevant energy scales and show that both regimes can be implemented in Rydberg atom arrays.
+The lifetimes for conventional Rydberg states can reach up to several hundred $\mu$s. For Circular Rydberg states the lifetimes can reach even a few ms. In both cases the trap depth ($\omega$) can easily have a few MHz \cite{wilsonTrappingAlkalineEarth2022,holzlLongLivedCircularRydberg2024}, which sets the lower bound for the interaction strength $V>>1/T\sim1\,$kHz. With the trap depth being in the MHz range, the conditions of conserved motional excitation number can be easily met, as the interactions between Rydberg atoms can be tuned in wide range from kHz to GHz. Due to this large flexibility in the interaction strength, also the complementary regime of non-conserved motional excitation number can be realized. In the following I will derive the effective Hamiltonian for the motional modes.
+
+
+\section{Model}
+For the topological analysis a model will be used, that only takes motional degrees of freedom into account. This can be achieved by assuming that all atoms are in the same internal state, and the interaction doesn't couple different states. The interaction that results by this is a van der Waals interaction for atoms in Rydberg states or a dipole-dipole interaction if the atoms are dressed with an external field. I will keep the form of the interaction general in the following derivation. The system consists of $N$ atoms, which are trapped in optical tweezers with centers $\{\mathbf{R}_l\}_{l\in\{1,\dots,N\}}$. The Hamiltonian that describes the model consists of the harmonic trap potential part $\mathcal{H}_0$ and an interaction part $\mathcal{H}_I$, that depends on the position of the atoms.
+\begin{align*}
+    \mathcal{H} &= \mathcal{H}_0 + \mathcal{H}_I(\{{\mathbf{R}}_l\})\\
+    \text{with}\quad\mathcal{H}_I(\{{\mathbf{R}}_l\}) &= \half \,\sum_{i,j}V_{i,j}(\{{\mathbf{R}}_l\})\,n_i n_j\\
+    \text{where}\quad V_{i,j}(\{{\mathbf{R}}_l\})&=V({\mathbf{R}}_i,{\mathbf{R}}_j)
+\end{align*}
+The operators $n_i$ are the projectors on the internal state of the $i$th atom. As all atoms are assumed to be in the same internal state, the $n_i$ become redundant and can be dropped. The interaction Hamiltonian then reads
+
+\begin{align*}
+    \mathcal{H}_I(\{{\mathbf{R}}_l\}) = \sum_{i,j;\;i> j}V_{i,j}(\{{\mathbf{R}}_l\})
+\end{align*}
+The $V_{i,j}$ are formally functions of all positions $\{{\mathbf{R}}_l\}$, i.e $V_{i,j}(\{{\mathbf{R}}_l\})$. But of course they only depend on ${\mathbf{R}}_i$ and ${\mathbf{R}}_j$, i.e.
+\begin{align*}
+    \frac{\partial\,V_{i,j}}{\partial {\mathbf{R}}_l } = 0\quad\text{if}\:i\neq l\neq j
+\end{align*}
+The displacements of the atoms from the tweezer centers  $\{\delta\mathbf{R}_l\}$ are assumed to be small compared to the distance between the tweezers, which justifies a Taylor expansion of the interaction potential to second order. As shown in \appref{appendix:derivation_Hamiltonian} this leads to an interaction Hamiltonian of the form
+\begin{align*}
+    \mathcal{H}_I(\{\mathbf{R}_l+\delta\mathbf{R}_l\})&=\sum_n\frac{\partial \mathcal{H}_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,\delta\mathbf{R}_n + \sum_{n,m}U_{n,m}\,\delta\mathbf{R}_n\,\delta\mathbf{R}_m
+\end{align*}
+with
+\begin{align*}
+    U_{n,m}&=
+        \frac12\,\frac{\partial^2 V_{n,m}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\quad\text{if}\:n\neq m\\
+    U_{n,n} &= \frac12\,\sum_{j;\,j\neq n}\frac{\partial^2 V_{n,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n^2}
+\end{align*}
+In order to allow for a quantum mechanical description of the displacements $\delta\mathbf{R}_l$ are treated as operators.
+
+\section{No particle number conservation}
+Even for a bosonic system a topological classification with respect to the Altland-Zirnbauer symmetry classes is possible. As discussed in \secref{sec:BdG_formalism}, the concept of holes has to be introduced by rewriting the Hamiltonian in a BdG form. For this it is, however, necessary  that the Hamiltonian is quadratic in the displacements. The linear term originating from the first order expansion of the interaction potential however breaks this condition. In order to remove this term, the trap centers can be redefined, such that the linear term vanishes. For this purpose the displacement operators are shifted by constant vectors $\{\delta\mathbf{R}_l\}=\{\delta\tilde{\mathbf{R}}_l+\mathbf{\Delta}_l\}$. 
+In the following I will treat the 1D case and the interaction is assumed to be of the dipole-dipole type, i.e.
+\begin{align*}
+    V_{dd}(\mathbf{r}) &= \frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\left(1-3\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)=\vcentcolon V_0(r)\,f(\hat{\mathbf{r}})=V_0(a)\,\frac{a^3}{r^3}\,f(\hat{\mathbf{r}})\\
+    \frac{\partial V_{dd}}{\partial r_\alpha} &=\frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\frac1r\,\left( -3\,\frac{ r_\alpha}{r} + 15\,\frac{ r_\alpha }{r}(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2 - 6\,\hat{d}_\alpha\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}}) \right)=\vcentcolon \frac{V_0(r)}{r}\,g(\hat{\mathbf{r}})=\frac{V_0(a)}{a}\,\frac{a^4}{r^4}\,g(\hat{\mathbf{r}})\\
+    \frac{\partial^2 V_{dd}}{\partial r_\alpha \partial r_\beta}  &= \frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\frac1{r^2}\,\left[\delta_{\alpha\beta}\left(-3 + 15\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)- 6\,\hat{d}_\alpha \hat{d}_\beta +30\, \frac{\hat{d}_\alpha r_\beta + \hat{d}_\beta r_\alpha}{r}\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}}) + 15\,\frac{r_\alpha r_\beta}{r^2} \left(1  - 7\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)\right]\\
+    &=\vcentcolon \frac{V_0(r)}{r^2}\,c(\hat{\mathbf{r}})=\frac{V_0(a)}{a^2}\,\frac{a^5}{r^5}\,c(\hat{\mathbf{r}})
+\end{align*}
+In the above equations $d$ is the dipole operator, $a$ is the distance between the tweezers and $\mathbf{r}=\mathbf{R}_2-\mathbf{R}_1$ is the distance vector between two atoms. The hat symbol denotes vectors with unit norm. 
+In combination with the harmonic trap potential this leads to a Hamiltonian for the shifted displacements $\{\delta\tilde{\mathbf{R}}_l\}$ of the form
+\begin{align*}
+    {\mathcal{H}}(\{\delta\tilde{\mathbf{R}}_l\})&= \sum_i\frac{\mathbf{P}_i}{2m} +\sum_i \frac12 m \omega^2 \,(\delta\tilde{\mathbf{R}}_i+\mathbf{\Delta}_i)^2+ \sum_i\frac{\partial \mathcal{H}_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i}\,(\delta\tilde{\mathbf{R}}_i+\mathbf{\Delta}_i) + \sum_{i,j}(\delta\tilde{\mathbf{R}}_i+\mathbf{\Delta}_i)\,U_{i,j}\,(\delta\tilde{\mathbf{R}}_j+\mathbf{\Delta}_j)\\
+    &= \sum_i\frac{\mathbf{P}_i}{2m} +\sum_i \frac12 m \omega^2 \,\delta\tilde{\mathbf{R}}_i^2  + \sum_{i,j}\delta\tilde{\mathbf{R}}_i\,U_{i,j}\,\delta\tilde{\mathbf{R}}_j + \sum_i\left(\frac{\partial \mathcal{H}_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i} +\sum_j\,\left( 2\, U_{j,i} + m\omega^2\,\delta_{ij}\right)\,\mathbf{\Delta}_j  \right)\,\delta\tilde{\mathbf{R}}_i,
+\end{align*}
+where $\mathbf{P}_i$ are the momentum operators of the atoms. In the second line all constant terms have been dropped.
+
+Thus the linear term can be removed by choosing the shift vectors $\{\mathbf{\Delta}_l\}$ such that
+\begin{align*}
+    \left(\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i} +\sum_j\,\left( 2\, U_{j,i} + m\omega^2\,\delta_{ij}\right)\,\mathbf{\Delta}_j  \right)= 0 \quad\forall i
+\end{align*}
+% whereas
+% \begin{align*} \frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i} &= \sum_{n,m;\,n<m}\frac{\partial V_{n,m}(\mathbf{R}_n,\mathbf{R}_m)}{\partial \mathbf{R}_i}\,(\delta_{i=n}+\delta_{i=m})\\
+% &= \sum_{m;\,i<m}\frac{\partial V_{i,m}(\mathbf{R}_m-\mathbf{R}_i)}{\partial \mathbf{R}_i} + \sum_{n;\,n<i}\frac{\partial V_{n,i}(\mathbf{R}_i-\mathbf{R}_n)}{\partial \mathbf{R}_i}\\
+% &= \sum_{m;\,i<m}\frac{\partial V_{i,m}(\mathbf{R}_m-\mathbf{R}_i)}{\partial \mathbf{r}_{i,m}} - \sum_{n;\,n<i}\frac{\partial V_{n,i}(\mathbf{R}_i-\mathbf{R}_n)}{\partial \mathbf{r}_{n,i}}
+% \end{align*}
+% with $\mathbf{r}_{i,j}=\mathbf{R}_j-\mathbf{R}_i$. By defining
+By defining the following dimensionless quantities
+\begin{align*}
+    \tilde{g}_i&\vcentcolon=\frac{a}{V_0(a)}\,\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i}\\
+    \tilde{U}_{i,j}&\vcentcolon=\frac{a^2}{V_0(a)}\, 2\, U_{j,i} 
+\end{align*}
+the condition for the shift can be written as
+\begin{align*}
+     \frac{V_0(a)}{a}\,G_i\vcentcolon=\frac{V_0(a)}{a}\,\left(\tilde{g}_i +\sum_jW_{ij}\,\frac{{\Delta}_j}{a}  \right)\vcentcolon=\frac{V_0(a)}{a}\,\left(\tilde{g}_i +\sum_j\,\left( \tilde{U}_{j,i} + \frac{m\omega^2 a^2}{V_0(a)}\,\delta_{ij}\right)\,\frac{{\Delta}_j}{a}  \right)= 0 \quad\forall i
+\end{align*}
+Here $\tilde{g}$ and $\tilde{U}$ are dimensionless and the the term $m\omega^2 a^2/[V_0(a)\,\text{max}(\tilde{U})]=\vcentcolon m\omega^2/V_\text{max}$ chosen of order $0.01$-$10$. Now I use the two free parameters $h$ and the angle $\varphi_d$ of the dipole moment $\hat{\mathbf{d}}$ to set $G_i$ close to zero for different values of $b$. Close to zero means here that max$(|G_i|)$ compared to $\sqrt{\hbar/(2m\omega)}\,\text{max}(\tilde{U})/a$ is small. Here $\sqrt{\hbar/(2m\omega)}/a\sim10^{-3}$ is the displacement from a single motional excitation in units of $a$.
+\begin{figure}[H]
+    \hspace*{-2cm}
+    \includegraphics{pictures/tuning_first_order_to_zero4.pdf}
+    \caption{\textbf{Parameters for negligible first order.} For different values of $m\omega^2$ the parameters $h$ and $\varphi_d$ are tuned such that the first order is negligible. The color code indicates the value of $m\omega^2/V_\text{max}$. The resulting ratio between first and second order is shown in panel a) for all considered values of $m\omega^2/V_\text{max}$ $0.01$, $0.8$, $4$ and $10$. As an example the optimal parameters $h$ and $\varphi_d$ for $m\omega^2/V_\text{max}=4$ are shown in panel b) and c). The maximal shift of the trap center necessary to eliminate the first order is shown in panel e), while panel d) shows that size of the shift is mainly determined by the ratio between $\tilde{g}$ and $W$.}
+    \label{fig:tuning_first_order_to_zero}
+\end{figure}
+\hfill\newpage
+\begin{figure}[h]
+    \hspace*{-2cm}
+    \includegraphics{pictures/Deltas4.pdf}
+    \caption{\textbf{Trap center shift.} For $m\omega^2=10\,V_\text{max}$ the shift of the trap center for each site, that tunes the linear order to zero, is shown. The length of the chain is taken as 8 atoms.}
+    \label{fig:tuning_first_order_to_zero_displacements}
+\end{figure}
+\figref{fig:tuning_first_order_to_zero} and \figref{fig:tuning_first_order_to_zero_displacements} tell us that the $\Delta$-displacements are of order $10^{-2}$, an order of magnitude bigger than the single motional mode displacement. Nevertheless the shift is small compared to the atomic distance $a$, which allows us to stick to the assumption of a periodic lattice. The shifts get smaller with increasing trap frequency. By eliminating the linear order, the Hamiltonian takes a quadratic form in the displacement and can hence be written as
+\begin{align*}
+    \mathcal{H}&=\sum_i\frac{\mathbf{P}_i}{2m} +\sum_i \frac12 m \omega^2 \,\delta\tilde{\mathbf{R}}_i^2  + \sum_{i,j}\delta\tilde{\mathbf{R}}_i\,U_{i,j}\,\delta\tilde{\mathbf{R}}_j 
+\end{align*}
+In second quantized from where I write the momentum and displacement operators in terms of creation and annihilation operators
+\begin{align*}
+    \delta\tilde{\mathbf{R}}_n &= \sqrt{\frac{\hbar}{2m\omega}}\,(a_n + a_n^\dagger)\\
+    \mathbf{P}_n &= i\,\sqrt{\frac{\hbar m\omega}{2}}\,(a_n^\dagger - a_n)
+\end{align*} 
+the total Hamiltonian reads
+\begin{align*}
+    \mathcal{H} &= \sum_n \hbar\omega\,a_n^\dagger a_n +\frac{\hbar}{2m\omega}\, \sum_{n,m} U_{n,m}\,\left(a_n\,a_m + a_n^\dagger a_m + a_n\,a_m^\dagger + a_n^\dagger a_m^\dagger \right)\\
+    &= \mathbf{a}^\dagger\,A\,\mathbf{a}
+\end{align*}
+with $\mathbf{a}=(a_1,\dots,a_N,a_1^\dagger,\dots,a_N^\dagger)$ the vector of operators and a coupling matrix $A$, which establishes the BdG form of the Hamiltonian and has itself the following structure
+\begin{align*}
+    A &= \frac{\hbar}{2m\omega}\,\begin{pmatrix}
+       \bar{U} & U \\
+       U & \bar{U}
+    \end{pmatrix}\\
+    \text{with}\quad \bar{U}&= U+m\omega^2.
+\end{align*}
+This allows for a topological characterization of the bosonic system, acording to \cite{peanoTopologicalEdgeStates2018}. A first step is to consider the Heisenberg equations of motion for the operators which read %In order to understand the significance of the constant shift, one has to take into account the physical properties of the system. The Rydberg atoms, which have lifetimes up to $\sim200\,\mu$s, are trapped in optical tweezers of trap frequency up to $\sim2\,$MHz. This implies that one has to implement an Hamiltonian that induces non-trivial dynamics within the lifetimes of the atoms. Responsible for non-trivial dynamics is the U-matrix. Thus the interaction strength has to be at least as big as the trap frequency, i.e. $|U|\geq m\omega^2$. 
+
+
+\begin{align*}
+    \frac{d}{dt}\,{a}_j &= i\,([H,{a}_j]) = -i\, \hbar\omega a_j - i\,\frac{\hbar}{2m\omega}\,\sum_n \left(U_{j,n}\,a_n + U_{n,j}\,a_n + U_{j,n}\,a_n^\dagger + U_{n,j}\,a_n^\dagger\right) \\
+    &= -i\, \hbar\omega a_j -i\,\frac{\hbar}{m\omega}\,\sum_n \left(U_{j,n}\,a_n + U_{j,n}\,a_n^\dagger \right) = -2\,i\,(A\,\vec{a})_j\\
+    %
+    \frac{d}{dt}\,{a}^\dagger_j &= i\,([H,{a}^\dagger_j]) = i\, \hbar\omega a_j^\dagger  +i\,\frac{\hbar}{2m\omega}\,\sum_n \left(U_{j,n}\,a_n + U_{n,j}\,a_n + U_{j,n}\,a_n^\dagger + U_{n,j}\,a_n^\dagger\right) \\
+    &=  2\,i\,(A\,\vec{a})_{j+N}\\
+\end{align*}
+This lets one write the equations of motion in a different form
+\begin{align*}
+    \Rightarrow\quad \frac{d}{dt}\,\vec{a} &= -i\,\tilde{H}\,\vec{a}\\
+    \text{where}\quad \tilde{H} &= \frac{\hbar}{m\omega}\,\begin{pmatrix}
+       \bar{U} & U \\
+       -U & -\bar{U}
+       \end{pmatrix}=\vcentcolon \begin{pmatrix}
+        h & \Delta\\
+        -\Delta & -h
+       \end{pmatrix}
+\end{align*}
+And it is this matrix $\tilde{H}$ that determines the topological properties of the system, since it provides the eigenmodes of the dynamics. $\tilde{H}$ is in the Bogoliubov de Gennes form and a real matrix. Therefore it is time reversal symmetric. Particle-hole symmetry is also fulfilled, as $\tilde{H}^*=-\Sigma_x\,\tilde{H}\,\Sigma_x$ with 
+\begin{align*}\Sigma_x=\begin{pmatrix}
+    0 & \mathbb{1}\\
+    \mathbb{1} & 0
+\end{pmatrix}\end{align*}
+As a consequence it is then also chiral symmetric, as $\tilde{H}=-\Sigma_x\,\tilde{H}\,\Sigma_x$. This puts the system in the BDI symmetry class, which allows for a topological characterization in one dimension. 
+Since $H$ is not hermitian it does not necessarily have only real eigenvalues.For the topological classification to be possible, the Hamiltonian has to be, however, dynamically stable, which means no complex eigenvalues are allowed, as they lead to unbounded dynamics. When looking at the spectrum of the BdG-Hamiltonian over the parameter that lets the first order be neglected, one observes always large imaginary parts. This is seen in \figref{fig:spectrum_BdG}. As a consequence the system is not classifiable by the formalism described in \cite{peanoTopologicalEdgeStates2018}.
+\begin{figure}[H]
+    \hspace*{-2cm}
+    \includegraphics{pictures/spectrum_abs_of_tuned_BdG_various_shift_opt.pdf}
+    \caption{\textbf{Spectrum of BdG Hamiltonian for different trap frequencies.}}
+    \label{fig:spectrum_BdG}
+\end{figure}

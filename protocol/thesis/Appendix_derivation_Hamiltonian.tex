@@ -1,0 +1,100 @@
+\appendix
+    \chapter{Derivation of the Hamiltonian for the chain of Rydberg atoms in optical tweezers}
+    \label{appendix:derivation_Hamiltonian}
+As described in the main text, the assumption of small displacements $\{\delta\mathbf{R}_l\}$ compared to the distance between the tweezers motivates the Taylor expansion of the interaction potential to second order.
+% By redefining the trap center the first order term can be absorbed. Consider a function $f(r)$ which is expanded up to first order in $r$, i.e. $f(r+\delta r)\approx f(r)+ \partial_rf(r)\cdot\delta r$, if we now add a trap-like potiential
+% \begin{align*}
+%     \frac12 m\omega^2 \,\delta r^2 + f(r) +\partial_rf(r)\,\delta r&= \frac12 m\omega^2\,(\delta r+\frac{\partial_rf(r)}{m\omega^2})^2+ \frac12 \,\frac{(\partial_rf(r))^2}{m\omega^2} + f(r)\\
+%     &=\vcentcolon  \frac12 m\omega^2 \,\delta\tilde{r}^2 +\text{const.},
+% \end{align*}
+% Thus by discarding the first order the Hamiltonian up to second order reads
+\begin{align*}
+    \mathcal{H}_I(\{\mathbf{R}_l+\delta\mathbf{R}_l\})&=\mathcal{H}_I(\{\mathbf{R}_l\})+\sum_n\frac{\partial \mathcal{H}_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,\delta\mathbf{R}_n +  \frac12\sum_{n,m}\delta\mathbf{R}_n\,\frac{\partial^2 \mathcal{H}_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m\\
+    &=\mathcal{H}_I(\{\mathbf{R}_l\})+\sum_n\frac{\partial \mathcal{H}_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,\delta\mathbf{R}_n +  \frac12\sum_{n\neq m}\delta\mathbf{R}_n\,\frac{\partial^2 \mathcal{H}_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m + \frac12\sum_{n= m}\delta\mathbf{R}_n\,\frac{\partial^2 \mathcal{H}_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m\\
+    &=\mathcal{H}_I(\{\mathbf{R}_l\})+\sum_n\frac{\partial \mathcal{H}_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,\delta\mathbf{R}_n +  \frac12\sum_{n\neq m}\;\sum_{i,j;\;i> j}\delta\mathbf{R}_n\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m  \\&+\frac12\sum_{n}\sum_{i,j;\;i> j}\delta\mathbf{R}_n\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n^2}\,\delta\mathbf{R}_n \\
+    &=\mathcal{H}_I(\{\mathbf{R}_l\})+\sum_n\frac{\partial \mathcal{H}_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,\delta\mathbf{R}_n +  \frac12\sum_{n\neq m}\;\sum_{i,j;\;i> j}\delta\mathbf{R}_n\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\,\delta\mathbf{R}_m \,(\delta_{n=i,m=j}+\delta_{n=j,m=i})  \\
+    &+\frac12\sum_{n}\sum_{i,j;\;i> j}\delta\mathbf{R}_n\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n^2}\,\delta\mathbf{R}_n\,(\delta_{n=i}+\delta_{n=j}) \\
+\end{align*}
+In order to allow for a quantum mechanical description the displacements $\delta\mathbf{R}_l$ are treated as operators. The second order term can be simplified by exploiting the symmetry of the second derivative and the fact that $V_{i,j}$ only depends on $\mathbf{R}_i$ and $\mathbf{R}_j$. Thus
+\begin{align*}
+   \sum_{i,j;\;i> j}\left(\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i^2}\,\delta\mathbf{R}_i^2+\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_j^2}\,\delta\mathbf{R}_j^2\right)&=\sum_{i,j;\;i\neq j}\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i^2}\,\delta\mathbf{R}_i^2
+\end{align*}
+and
+\begin{align*}
+    \sum_{i,j;\;i> j}\left(\delta\mathbf{R}_i\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i\partial\mathbf{R}_j}\,\delta\mathbf{R}_j + \delta\mathbf{R}_j\,\frac{\partial^2 V_{j,i}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_j\partial\mathbf{R}_i}\,\delta\mathbf{R}_i\right)&= \sum_{i,j;\;i\neq j}\delta\mathbf{R}_i\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i\partial\mathbf{R}_j}\,\delta\mathbf{R}_j
+\end{align*}
+The interaction can therefore be written in the following form
+\begin{align*}
+    \mathcal{H}_I(\{\mathbf{R}_l+\delta\mathbf{R}_l\})&=\mathcal{H}_I(\{\mathbf{R}_l\})+\sum_i\frac{\partial \mathcal{H}_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i}\,\delta\mathbf{R}_i + \frac12\, \sum_{i,j;\;i> j}\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i\partial\mathbf{R}_j}\, \left(\delta\mathbf{R}_i\,\delta\mathbf{R}_j+\delta\mathbf{R}_j\,\delta\mathbf{R}_i\right) \\
+    &+\frac12\,\sum_{i,j;\;i\neq j}\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i^2}\,\delta\mathbf{R}_i^2\\
+    &=\mathcal{H}_I(\{\mathbf{R}_l\})+\sum_i\frac{\partial \mathcal{H}_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i}\,\delta\mathbf{R}_i + \frac12\, \sum_{i,j;\;i\neq j}\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i\partial\mathbf{R}_j}\,\delta\mathbf{R}_i\,\delta\mathbf{R}_j \\
+    &+\frac12\,\sum_{i,j;\;i\neq j}\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i^2}\,\delta\mathbf{R}_i^2
+\end{align*}
+By introducing the matrix $U$ the expanded interaction Hamiltonian takes the compact form
+\begin{align*}
+    \mathcal{H}_I(\{\mathbf{R}_l+\delta\mathbf{R}_l\})&=\mathcal{H}_I(\{\mathbf{R}_l\})+\sum_n\frac{\partial \mathcal{H}_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,\delta\mathbf{R}_n + \sum_{n,m}U_{n,m}\,\delta\mathbf{R}_n\,\delta\mathbf{R}_m
+\end{align*}
+Where the constant energy shift $\mathcal{H}_I(\{\mathbf{R}_l\})$ can be ignored and the matrix $U$ is defined as
+\begin{align*}
+    U_{n,m}&=
+        \frac12\,\frac{\partial^2 V_{n,m}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\quad\text{if}\:n\neq m\\
+    U_{n,n} &= \frac12\,\sum_{j;\,j\neq n}\frac{\partial^2 V_{n,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n^2}
+\end{align*}
+% Swithing again to the reduced writting, where $V_{ij}$ is only writen as a function of the variables of which it actually depends, reads
+% \begin{align*}
+%     U_{n,m}&=
+%         \frac12\,\frac{\partial^2 V_{n,m}(\mathbf{R}_n,\mathbf{R}_m)}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\quad\text{if}\:n\neq m\\
+%     U_{n,n} &= \frac12\,\sum_{j;\,j\neq n}\frac{\partial^2 V_{n,j}(\mathbf{R}_n,\mathbf{R}_j)}{\partial \mathbf{R}_n^2}
+% \end{align*}
+For an interaction that only depends on the relative distance between the atoms $\mathbf{r}_{ij}=\mathbf{R}_i-\mathbf{R}_j$, i.e. $V_{i,j}(\{\mathbf{R}_l\})=V_{i,j}(\mathbf{R}_i-\mathbf{R}_j)$, the matrix $U$ can be further specified. Using the fact that
+\begin{align*}
+    \frac{\partial \mathbf{r}_{ij}}{\partial \mathbf{R}_i}=\mathbb{1}=-\frac{\partial \mathbf{r}_{ij}}{\partial \mathbf{R}_j}
+\end{align*}
+the derivatives in $U$ can be written as 
+\begin{align*}
+    \frac{\partial^2 V_{n,m}(\mathbf{r}_{nm})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}&=\frac{\partial}{\partial  \mathbf{R}_n }\,\left( \frac{\partial V_{n,m}(\mathbf{r}_{nm})}{\partial\mathbf{r}_{nm}}\,  \frac{\partial \mathbf{r}_{nm}}{\partial\mathbf{R}_{m}}\right)\\
+    &= \frac{\partial^2 V_{n,m}(\mathbf{r}_{nm})}{\partial\mathbf{r}_{nm}^2}\,  \frac{\partial \mathbf{r}_{nm}}{\partial\mathbf{R}_{m}}\frac{\partial \mathbf{r}_{nm}}{\partial\mathbf{R}_{n}}+\frac{\partial V_{n,m}(\mathbf{r}_{nm})}{\partial\mathbf{r}_{nm}}\,  \frac{\partial^2 \mathbf{r}_{nm}}{\partial\mathbf{R}_{n}\partial\mathbf{R}_{m}}\\
+    &=-\frac{\partial^2 V_{n,m}(\mathbf{r}_{nm})}{\partial\mathbf{r}_{nm}^2}
+\end{align*}
+and
+\begin{align*}
+    \frac{\partial^2 V_{n,m}(\mathbf{r}_{nm})}{\partial \mathbf{R}_m^2m}
+    &= \frac{\partial^2 V_{n,m}(\mathbf{r}_{nm})}{\partial\mathbf{r}_{nm}^2}\,  \frac{\partial \mathbf{r}_{nm}}{\partial\mathbf{R}_{m}}\frac{\partial \mathbf{r}_{nm}}{\partial\mathbf{R}_{m}}\\
+    &=\frac{\partial^2 V_{n,m}(\mathbf{r}_{nm})}{\partial\mathbf{r}_{nm}^2}
+\end{align*}
+Thus
+\begin{align*}
+    U_{n,m}&=
+        -\frac12\,\frac{\partial^2 V_{n,m}(\mathbf{r}_{nm})}{\partial\mathbf{r}_{nm}^2}\quad\text{if}\:n\neq m\\
+    U_{n,n} &= \frac12\sum_{j;\,j\neq n}\frac{\partial^2 V_{n,j}(\mathbf{r}_{nj})}{\partial\mathbf{r}_{nj}^2}
+\end{align*}
+At this point I can eliminate the linear term of the Hamiltonian by introducing the trap potential 
+\begin{align*}
+    \mathcal{H}_0(\{\delta\mathbf{R}_l\}) = \sum_i\frac{\mathbf{P}_i^2}{2m}+ \frac12 m \omega^2 \,\delta\mathbf{R}_i^2,
+\end{align*}
+where $\mathbf{P}_i$ is the momentum of the $i$th atom. I can now shift the considered displacements from the trap centers by a constant $\{\delta\mathbf{R}_l\}=\{\delta\tilde{\mathbf{R}}_l+\mathbf{\Delta}_l\}$, where $\delta\mathbf{R}_l$ and $\delta\tilde{\mathbf{R}}_l$ are operators and $\mathbf{\Delta}_l$ are just constant vectors. Neglecting all constant terms the Hamiltonian minus the momentum term $\tilde{\mathcal{H}}=\mathcal{H}-\sum_i\mathbf{P}_i/2m$ up to second order reads
+\begin{align*}
+    \tilde{\mathcal{H}}(\{\delta\mathbf{R}_l\})&= \sum_i \frac12 m \omega^2 \,(\delta\tilde{\mathbf{R}}_i+\mathbf{\Delta}_i)^2+ \sum_i\frac{\partial \mathcal{H}_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i}\,(\delta\tilde{\mathbf{R}}_i+\mathbf{\Delta}_i) + \sum_{i,j}(\delta\tilde{\mathbf{R}}_i+\mathbf{\Delta}_i)\,U_{i,j}\,(\delta\tilde{\mathbf{R}}_j+\mathbf{\Delta}_j)\\
+    &= \sum_i \frac12 m \omega^2 \,\delta\tilde{\mathbf{R}}_i^2  + \sum_{i,j}\delta\tilde{\mathbf{R}}_i\,U_{i,j}\,\delta\tilde{\mathbf{R}}_j + \sum_i\left(\frac{\partial \mathcal{H}_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i} +\sum_j\,\left( 2\, U_{j,i} + m\omega^2\,\delta_{ij}\right)\,\mathbf{\Delta}_j  \right)\,\delta\tilde{\mathbf{R}}_i,
+\end{align*}
+where it was used that $U$ is symmetric. As the matrix $\left( 2\, U_{j,i} + m\omega^2\,\delta_{ij}\right)$ is invertible, a set of vectors $\{\mathbf{\Delta}_n\}$ can be found such that the linear term vanishes.
+% The linear term vanishes, if $\mathbf{\Delta}_n$ is chosen such that
+% \begin{align*}
+%     \mathbf{\Delta}_n = -\left( 2\,\sum_m\delta\tilde{\mathbf{R}}_m\, U_{m,n} + m\omega^2\right)^{-1} \,\frac{\partial \mathcal{H}_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}
+% \end{align*}
+Thus
+\begin{align*}
+    \mathcal{H}(\{\delta\tilde{\mathbf{R}}_l\})&= \sum_n\frac{\mathbf{P}_n^2}{2m}+ \sum_n\frac12 m\omega^2\,\delta\tilde{\mathbf{R}}_n^2+ \sum_{n,m}U_{n,m}\,\delta\tilde{\mathbf{R}}_n\,\delta\tilde{\mathbf{R}}_m
+\end{align*}
+At this point I introduce the quantized displacements in form oft the quadrature operators 
+\begin{align*}
+    \delta\tilde{\mathbf{R}}_n &= \sqrt{\frac{\hbar}{2m\omega}}\,(a_n + a_n^\dagger)\\
+    \mathbf{P}_n &= i\,\sqrt{\frac{\hbar m\omega}{2}}\,(a_n^\dagger - a_n)
+\end{align*}
+% If we exploit that the interactions realized in $U$ are much smaller compared to the trap frequency, i.e. $U_{n,m}\ll m\omega^2$, the creation and annhiliation of phonons is supressed and the dynamics only involves phonon hopping, thus combinations $aa$ or $a^\dagger a^\dagger$ are discarded. 
+With that the Hamiltonian gets its final form
+\begin{align*}
+    \mathcal{H} &= \sum_n \hbar\omega\,a_n^\dagger a_n +\frac{\hbar}{2m\omega}\, \sum_{n,m} U_{n,m}\,\left(a_n\,a_m + a_n^\dagger a_m + a_n\,a_m^\dagger + a_n^\dagger a_m^\dagger \right)
+    % &=\vcentcolon\sum_n \hbar\omega\,a_n^\dagger a_n +\sum_{n,m} \tilde{U}_{n,m}\,a_n^\dagger a_m
+\end{align*}\hfill\newpage
+
