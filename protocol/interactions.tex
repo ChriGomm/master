@@ -338,9 +338,9 @@ Writing the Hamiltonian in terms of these operators yields
 %     &= \sum_{\substack{a,b}}\Bigg(U_{ab}(\mathbf{k})\, a_{\mathbf{k}}^{\dagger} b_{\mathbf{k}}+ U_{ab}^*(\mathbf{k})\,b_{\mathbf{k}}^{\dagger} a_{\mathbf{k}}  +  U_{ab}(\mathbf{k})\,a_{\mathbf{k}}^{\dagger} b_{-\mathbf{k}}^{\dagger}+  U_{ab}^*(\mathbf{k})\,b_{-\mathbf{k}} a_{\mathbf{k}} \\
 %     &+ U_{ab}^*(\mathbf{k})\, b_{-\mathbf{k}} a_{-\mathbf{k}}^{\dagger}+ U_{ab}(\mathbf{k})\, a_{-\mathbf{k}} b_{-\mathbf{k}}^{\dagger} +  U_{ab}^*(\mathbf{k})\, b_{\mathbf{k}}^{\dagger} a_{-\mathbf{k}}^{\dagger}+  U_{ab}(\mathbf{k})\,a_{-\mathbf{k}} b_{\mathbf{k}}  \Bigg)
 % \end{align*}
-The block of the Hamiltonian in momentum space $H_{\mathbf{k},-\mathbf{k}}$ can be written in a more compact form, by introducing the vector of operators $\mathbf{a}=(a_\mathbf{k},b_\mathbf{k},a_{-\mathbf{k}},b_{-\mathbf{k}},a_{\mathbf{k}}^{\dagger},b_{\mathbf{k}}^{\dagger},a_{-\mathbf{k}}^{\dagger},b_{-\mathbf{k}}^{\dagger})$ and the coupling matrix $A_{\mathbf{k}}$, which takes the following form
+The block of the Hamiltonian in momentum space $H_{\mathbf{k},-\mathbf{k}}$ can be written in a more compact form, by introducing the vector of operators $\mathbf{\beta}_\mathbf{k}=(a_\mathbf{k},b_\mathbf{k},a_{-\mathbf{k}},b_{-\mathbf{k}},a_{\mathbf{k}}^{\dagger},b_{\mathbf{k}}^{\dagger},a_{-\mathbf{k}}^{\dagger},b_{-\mathbf{k}}^{\dagger})$ and the coupling matrix $B_{\mathbf{k}}$, which takes the following form
 \begin{align*}
-    A_{\mathbf{k}} &=
+    B_{\mathbf{k}} &=
     \begin{pmatrix}
 u_{aa} & u_{ab} & 0 & 0 & 0 & 0 & u_{aa} & u_{ab} \\
 u_{ab}^{*} & u_{aa} & 0 & 0 & 0 & 0 & u_{ab}^{*} & u_{aa} \\
@@ -352,7 +352,30 @@ u_{aa} & u_{ab} & 0 & 0 & 0 & 0 & u_{aa} & u_{ab} \\
 u_{ab}^{*} & u_{aa} & 0 & 0 & 0 & 0 & u_{ab}^{*} & u_{aa}
 \end{pmatrix}
 \end{align*}
-such that $H_{\mathbf{k},-\mathbf{k}} = \mathbf{a}^{\dagger} A_{\mathbf{k}} \mathbf{a}$.
+such that $H_{\mathbf{k},-\mathbf{k}} = \mathbf{\beta}_\mathbf{k}^{\dagger} B_{\mathbf{k}} \mathbf{\beta}_\mathbf{k}$. By reordering $\mathbf{\beta}_\mathbf{k}$ into $\tilde{\mathbf{\beta}}_\mathbf{k}=(a_\mathbf{k},b_\mathbf{k},a_{-\mathbf{k}}^{\dagger},b_{-\mathbf{k}}^{\dagger},a_{-\mathbf{k}},b_{-\mathbf{k}},a_{\mathbf{k}}^{\dagger},b_{\mathbf{k}}^{\dagger})$ the matrix $B_k$ becomes block diagonal with
+\begin{align*}
+    \tilde{B}_{\mathbf{k}} &=
+    \begin{pmatrix}
+u_{aa} & u_{ab} & u_{aa} & u_{ab} &0 & 0 & 0 & 0  \\
+u_{ab}^{*} & u_{aa}& u_{ab}^{*} & u_{aa} & 0 & 0 & 0 & 0  \\
+u_{aa} & u_{ab} & u_{aa} & u_{ab} & 0 & 0 & 0 & 0 \\
+u_{ab}^{*} & u_{aa} & u_{ab}^{*} & u_{aa} & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & u_{aa} & u_{ab}^{*} & u_{aa} & u_{ab}^{*} \\
+0 & 0 & 0 & 0 & u_{ab} & u_{aa} & u_{ab} & u_{aa} \\
+0 & 0 & 0 & 0 & u_{aa} & u_{ab}^{*} & u_{aa} & u_{ab}^{*} \\
+0 & 0 & 0 & 0 & u_{ab} & u_{aa} & u_{ab} & u_{aa} 
+\end{pmatrix}
+\end{align*}
+Accordingly the Hamiltonian can be diagonalized in terms of momentum, if one introduce the particle-hole space for a specific $\mathbf{k}$ as corresponding to the annihilation operator vector $\mathbf{a}_\mathbf{k}=(a_\mathbf{k},b_\mathbf{k},a_{-\mathbf{k}}^{\dagger},b_{-\mathbf{k}}^{\dagger})$ with $(a_\mathbf{k},b_\mathbf{k})$ annihilating particles and $(a_{-\mathbf{k}}^{\dagger},b_{-\mathbf{k}}^{\dagger})$ annihilating holes.
+\begin{align*}
+    H_{\mathbf{k},-\mathbf{k}}&= \mathbf{a}_\mathbf{k}^\dagger A_\mathbf{k}\,\mathbf{a}_\mathbf{k} + \mathbf{a}_{-\mathbf{k}}^\dagger A_{-\mathbf{k}}\,\mathbf{a}_{-\mathbf{k}}\\
+    \text{with}\quad A_\mathbf{k}&=\bar{A}_{-\mathbf{k}}=\begin{pmatrix}
+u_{aa} & u_{ab} & u_{aa} & u_{ab}  \\
+u_{ab}^{*} & u_{aa}& u_{ab}^{*} & u_{aa}  \\
+u_{aa} & u_{ab} & u_{aa} & u_{ab}  \\
+u_{ab}^{*} & u_{aa} & u_{ab}^{*} & u_{aa} \end{pmatrix}
+\end{align*}
+
 % \begin{align*}
 % aa:\quad & a_k^{\dagger}\left(u\,a_k + u^{*} a_k + u\,a_{-k}^{\dagger} + u^{*} a_{-k}^{\dagger}\right) \\
 % u\cdot u_{aa}:\quad & a_k^{\dagger}\left(u^{*} a_k^{\dagger} + u\,a_{-k}^{\dagger} + (u+u^{*})\,a_k\right) \\[2ex]
@@ -979,3 +1002,132 @@ Symmetry regarding time-reversal ($H = THT^{-1}$) has thus the form
 %     &= \frac{1}{2}\left( \bra{h_j^A}\partial_k\ket{h_j^A} - \bra{h_j^B}\partial_k\ket{h_j^B}\right) - \frac12 \,\frac{h_j \partial_k h_j^* }{|h_j|^2}\\
 %     &= -\frac12 \frac{\partial_k h_j^*}{h_j^*}.
 % \end{align*}
+
+\section*{Short Answer}
+
+The statement is in the book, but as an asserted result with references rather than a proof---and the step from that result to ``states decay exponentially away from the boundary'' is left to the reader. Both gaps are easy to close, and the full proof of the key estimate is in one of the book's own references.
+
+---
+
+\section{What the Book Actually Says}
+
+\begin{enumerate}
+    \item \textbf{The claim, unproven, in \S2.2.1 (p.~27):} 
+    After introducing the half-space Hamiltonian $\hat{H}$ on $\mathbb{C}^N \otimes \ell^2(\mathbb{Z}^{d-1} \times \mathbb{N})$, the authors write that when $\mathrm{Ch}_d \neq 0$, the spectrum of $\hat{H}$ extends into the bulk gap, and that 
+    \begin{quote}
+        ``the electron states corresponding to the spectrum inside the bulk insulating gap are exponentially localized near the boundary, hence the terminology boundary states and boundary spectrum.''
+    \end{quote}
+    This is a physics statement with a pointer to \S2.4.3 for an example---no argument attached.
+
+    \item \textbf{The quantitative result, \S2.4.3, Proposition 2.4.10 (p.~52):} 
+    This is the mathematical content you want. With $\hat{H} = \Pi_d H \Pi_d^* + \tilde{H}$ as in (2.55)--(2.56) (Dirichlet restriction plus a boundary Hamiltonian whose hoppings are cut off at distance $R$ from the surface), and assuming the Bulk Gap Hypothesis (BGH) for the bulk component $H$:
+
+    For any smooth $\varphi$ with support in the bulk insulating gap,
+    \begin{equation*}
+        \sup_{\omega} \abs{\matrixel{x,n}{\varphi(\hat{H}_\omega)}{y,m}} \le A_M (1+|x-y|)^{-M} e^{-\beta(n+m)}, \quad n,m \in \mathbb{N}, \; x,y \in \mathbb{Z}^{d-1},
+    \end{equation*}
+    with $M$ any integer and $A_M, \beta > 0$.
+
+    Here $n, m$ are the coordinates normal to the boundary. Note the asymmetry: exponential decay perpendicular to the surface, only polynomial (but arbitrarily fast) decay parallel to it---which is exactly right, since the boundary states must stay extended along the edge.
+
+    The book gives no proof, only the remark that ``these estimates are by now standard with proofs based on the functional calculus introduced by Dynkin [57], often also referred to as the Helffer--Sjöstrand formula [89]'', citing Elbau--Graf [58], Schulz-Baldes [194], and Prodan [166].
+
+    \item \textbf{The bulk ingredient, Proposition 2.4.2 (p.~47):} 
+    Under BGH, the Fermi projection satisfies:
+    \[
+        \sup_{\omega} \abs{\matrixel{x}{\chi(H_\omega \le \mu)}{y}} \le \gamma e^{-\beta|x-y|},
+    \]
+    ``by a well-known Combes--Thomas estimate''. This is the bulk analogue; the same Combes--Thomas input is what drives Proposition 2.4.10.
+\end{enumerate}
+
+---
+
+\section{The Missing Step: From Prop.~2.4.10 to ``States Decay Exponentially''}
+
+This one line is not in the book. Let $\Delta'$ be a closed interval strictly inside the gap $\Delta$, let $\hat{P} = \chi_{\Delta'}(\hat{H}_\omega)$, and pick $\varphi \in C^\infty$ with $\varphi \equiv 1$ on $\Delta'$ and $\supp \varphi \subset \Delta$. Then $\varphi(\hat{H})\hat{P} = \hat{P}$, so any $\psi \in \Ran \hat{P}$ satisfies $\psi = \varphi(\hat{H})\psi$ and
+\[
+    |\psi(x,n)| = \abs{\matrixel{x,n}{\varphi(\hat{H})}{\psi}} \le \norm{\psi} \cdot \left( \sum_{y,m} \abs{\matrixel{x,n}{\varphi(\hat{H})}{y,m}}^2 \right)^{1/2}.
+\]
+Insert Proposition 2.4.10 with $2M > d-1$: the $m$-sum of $e^{-2\beta m}$ converges, the $y$-sum of $(1+|x-y|)^{-2M}$ converges, and both are independent of $x$ and $n$. Hence
+\[
+    |\psi(x,n)| \le C e^{-\beta n} \norm{\psi}, \quad \text{uniformly in } \omega \text{ and in } x.
+\]
+So every state in the spectral subspace of $\hat{H}$ associated with energies in the gap decays exponentially in the direction normal to the boundary, with a rate independent of the disorder configuration. 
+
+Taking $x = y$ and $n = m$ in Proposition 2.4.10 gives the same conclusion for the local density of states (LDOS) in the gap: it is bounded by $A e^{-2\beta n}$, which is the version that survives the fact that for a homogeneous edge, the boundary spectrum is typically continuous---there are then no normalizable eigenstates at all, and ``exponentially localized at the boundary'' must be phrased as a statement about spectral projections / the LDOS rather than about eigenvectors. That is presumably why the book states it in kernel form.
+
+\paragraph{Two Caveats Implicit in the Hypotheses:}
+\begin{itemize}
+    \item $\beta$ degrades as $\supp \varphi$ approaches the gap edges (the estimate requires a positive distance $\delta$ to $\sigma(H)$), so nothing is claimed for states at the band edges.
+    \item Localization is strictly transverse.
+\end{itemize}
+
+---
+
+\section{Why Proposition 2.4.10 Is True---and Where the Proof Is}
+
+The proof is in reference [166]: 
+\begin{quote}
+    E. Prodan, \textit{The edge spectrum of Chern insulators with rough boundaries}, J. Math. Phys. \textbf{50}, 083517 (2009) (\href{https://arxiv.org/abs/0809.2569}{arXiv:0809.2569}), Proposition 2 and Appendix 6.2.
+\end{quote}
+It is for $d = 2$ with an arbitrarily rough boundary, but the argument is dimension-independent and is precisely the source of the book's statement. The mechanism, in the same notation:
+
+\begin{enumerate}
+    \item \textbf{Combes--Thomas for the bulk resolvent (his Prop.~1, App.~6.1):} 
+    Conjugating with the boost $U_q \ket{n} = e^{-q \cdot n}\ket{n}$ gives $H_q = H_0 + W_q$ with $\norm{W_q} = \zeta(q) \to 0$ as $q \to 0$, hence
+    \[
+        \abs{\matrixel{n,\alpha}{(H_0-z)^{-1}}{n',\beta}} \le \frac{e^{-q|n-n'|}}{\dist(z,\sigma(H_0)) - \zeta(q)}
+    \]
+    for $q$ small enough that the denominator is positive. This is the book's [53]/Prop.~2.4.2 input, made explicit for exactly the tight-binding class of (2.12).
+
+    \item \textbf{The boundary is a finite-range perturbation:} 
+    Writing $H = H_0 - \Delta V$, where $\Delta V$ collects the hoppings cut by the boundary (and, in the book's setting, also $\tilde{H}$ from (2.56)), $\Delta V$ is supported in a strip of finite width around the surface. Then the twice-iterated resolvent identity 
+    \[
+        R(z) = R_0(z) + R_0(z)\Delta V R_0(z) + R_0(z)\Delta V R(z)\Delta V R_0(z)
+    \]
+    is used, and since the support of $\varphi$ lies in the gap of $H_0$, the purely-$R_0$ terms are analytic there and drop out of the functional calculus. What survives has one bulk resolvent running from $x$ to the strip and another from the strip to $y$---and by step 1, each contributes $e^{-q \cdot (\text{distance to boundary})}$, giving $e^{-q(n_1+n_1')}$. The identity expresses the simple principle that exponential decay of the bulk resolvent makes $R(z) - R_0(z)$ exponentially localized near the edge, because $\Delta V$ is strictly localized there.
+
+    \item \textbf{Handling the boundary spectrum singularity:} 
+    The technical subtlety is that the middle factor $R(\lambda \pm i\varepsilon)$ is evaluated on the boundary spectrum, so it blows up as $\varepsilon \to 0$. Prodan handles this by sandwiching it between the normalized vectors $\Delta V\ket{m,\alpha}/\norm{\cdot}$ and reading the $\varepsilon \to 0$ limit as an integral against a spectral probability measure, so only $\sup_\lambda$ of the (bounded) remaining factors is needed (his Eqs.~70--79).
+
+    \item \textbf{The parallel direction:} 
+    The parallel direction is treated separately (App.~6.2(ii)) with an almost-analytic extension / Helffer--Sjöstrand representation:
+    \[
+        \varphi(H) = \frac{1}{2\pi}\int \bar{\partial}f_N (H-z)^{-1} \, d^2z.
+    \]
+    Because $\zeta(q) \sim q$ for small $q$, one may take $q \approx |\mathrm{Im}\, z|/M$, and integrating $v^{N-1}e^{-v|n-n'|/M}$ yields decay $(1+|n-n'|)^{-N}$ for every $N$. Multiplying the two estimates gives exactly the mixed form of the book's Prop.~2.4.10.
+\end{enumerate}
+
+\paragraph{Other Treatments of the Same Estimate:}
+\begin{itemize}
+    \item P. Elbau, G.-M. Graf, \textit{Equality of bulk and edge Hall conductance revisited}, Commun. Math. Phys. \textbf{229}, 415--432 (2002) (the book's [58]);
+    \item H. Schulz-Baldes, \textit{Persistence of spin edge currents in disordered quantum spin Hall systems}, Commun. Math. Phys. \textbf{324}, 589--600 (2013) ([194]);
+    \item For the underlying estimate itself: J.-M. Combes, L. Thomas, Commun. Math. Phys. \textbf{34}, 251--270 (1973).
+    \item M. Aizenman, S. Warzel, \textit{Random Operators} (AMS 2015), Ch.~10, has a clean textbook Combes--Thomas proof.
+\end{itemize}
+
+---
+
+\section{Two Other Places the Book Makes the Point Without the General Estimate}
+
+\begin{enumerate}
+    \item \textbf{The explicit periodic model, \S2.2.4 (pp.~33--35):} 
+    For the Dirac-type model restricted to $x_d \ge 0$, the authors state that 
+    \begin{quote}
+        ``for $\hat{E}_k$ inside the bulk insulating gap, the solutions to the Schrödinger equation must be sought in the form $\psi_k(x) = \xi_k \otimes (\lambda_k)^x, \; |\lambda_k| < 1$,''
+    \end{quote}
+    and then derive $\lambda_k = -(m + \sum_j \cos k_j)$ together with $(i\gamma_d + \gamma_0)\xi_k = 0$; the edge band exists precisely where the constraint $|\lambda_k| < 1$ holds, cf.~(2.28). 
+
+    This is the transfer-matrix picture: an energy in the gap admits no real transverse momentum, only complex ones, so the only admissible solutions are evanescent, with localization length $1/|\log|\lambda_k||$. It is an argument, but only for this model and only for periodic, Dirichlet-truncated systems. (Same style of argument in the chiral model, \S2.3.3, p.~43 ff.; and \S1.2, p.~4, has the degenerate case $m = 0$ where the zero modes are supported exactly on the boundary site.)
+
+    \item \textbf{The $C^*$-algebraic shadow of the statement, \S4.3.1 (pp.~100--101):} 
+    In the exact sequence $0 \to \mathcal{E}_d \to \hat{\mathcal{A}}_d \to \mathcal{A}_d \to 0$, the evaluation $ev$ is a $C^*$-homomorphism and therefore commutes with continuous functional calculus (this is used explicitly in the proof of Prop.~4.3.1). 
+    
+    Hence for $\varphi$ supported in the gap, $\ev(\varphi(\hat{h})) = \varphi(\ev(\hat{h})) = \varphi(h) = 0$, i.e., $\varphi(\hat{h}) \in \mathcal{E}_d \cong \mathcal{A}_{d-1} \otimes \mathcal{K}$ by Prop.~3.2.4(i)---``functions of $\hat{H}$ supported in the bulk gap are boundary observables'', compact in the transverse direction. The authors invoke exactly this when they note that $\tilde{u}_\Delta - 1_N$ lies in the smooth boundary algebra ``according to Proposition 2.4.10''. This is the qualitative, structural version; Prop.~2.4.10 is what upgrades compactness to an explicit exponential rate.
+\end{enumerate}
+
+---
+
+\section*{Summary}
+
+The result you want is \textbf{Proposition 2.4.10}, the deduction to states is the Cauchy--Schwarz line shown in Section 2, and the proof of 2.4.10 itself you will find in Prodan (2009), App.~6.2---not in the book.

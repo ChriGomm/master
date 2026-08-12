@@ -3,6 +3,53 @@
 \section{Rydberg atoms}
 
 \section{Topological symmetry protected phases}
+\subsection{Fock space operators}
+\subsubsection{Fock space}
+This chapter will start with first recapitalizing the second quantization from a mathematical point of view. Beginning with a Hilbert space $\mathfrak{h}$ for a single particle, this shall be embedded into the large Fock space. The first step is to consider the $M$-particle space $\otimes_{i=1}^M\mathfrak{h}$. For fermions or bosons the space has to be anti-symmetrized or symmetrized respectively. This is accomplished by the action of the (anti-)symmetrizing operator.
+\begin{align*}
+    P_\pm^M&=\frac{1}{M!}\,\sum_{\sigma\in S_M}(\pm1)^{\text{sgn}(\sigma)}\sigma 
+\end{align*}
+$S_M$ is the set of all permutations of the M-particle indices.
+The Fock space is then the direct sum over the (anti-)symmetrized spaces over all particle numbers
+\begin{align*}
+    \mathfrak{F}=\bigoplus_{M=0}^\infty P^M_\pm\left(\otimes_{i=1}^M\mathfrak{h}\right)=: \bigoplus_{M=0}^\infty\mathfrak{f}_M
+\end{align*}
+A single particle operator $A_s:\mathfrak{h}\to\mathfrak{h}$ can then be embedded into the Fock space by lifting it into the $M$-particle spaces via
+\begin{align*}
+    A^{(M)}=\sum_{i=1}^M\bigotimes_{j=1}^M\left( \delta_{i\neq j}\,\mathbb{1} + \delta_{i=j}\,A_s \right)
+\end{align*}
+The operator on the Fock space $A$ then corresponds to the sum over all lifted operators
+\begin{align*}
+    A&= \bigoplus_{M=0}^\infty A^{(M)}
+\end{align*}
+As can already be seen from this expression operators, defined like this, conserve the particle number, as they are block diagonal with respect to the constant particle number blocks. In order to introduce operators which can mix particle numbers one has to already start with operators on the multi-particle space $$B_{K,L}:P^K_\pm\left(\otimes_{i=1}^K\mathfrak{h}\right) \to P^L_\pm\left(\otimes_{i=1}^L\mathfrak{h}\right).$$ 
+One then can lift this operator into higher particle space as an operator from $B^{(M)}:\mathfrak{f}_M\to\mathfrak{f}_{M+\Delta}$ ($\Delta=L-K$) by considering all $\binom{M}{K}\cdot\binom{M+\Delta}{L}$ possible connections, between the spaces. The full operator is then the sum
+\begin{align*}
+    B&= \bigoplus_{M=\text{max}(K,K-\Delta)}^\infty B^{(M)}
+\end{align*}
+\subsubsection{Second quantization}
+For a family of one-particle states $(\phi_1,\dots,\phi_M)$ one can construct an (anti-)symmetric state $\ket{\phi}$ via
+\begin{align*}
+    \ket{\phi}&= P_\pm^M\left( \phi_1 \otimes \cdots\otimes\phi_M \right)
+\end{align*}
+One can then introduce creation and annihilation operators for a one-particle state $\psi$ acting on any $M$-particle state by defining
+\begin{align*}
+    a^\dagger(\psi)\,\ket{\phi}&= \sqrt{M+1}\,P_\pm^M\left(\psi\otimes \phi_1 \otimes \cdots\otimes\phi_M \right)\\
+    a(\psi)\,\ket{\phi}&= \sqrt{M}\,\braket{\psi|\phi}_\text{partial}
+\end{align*}
+where for a vector $\ket{\alpha}=\alpha_1\otimes\cdots\otimes\alpha_M$ the above scalar product is defined as $$\braket{\psi|\alpha}_\text{partial}=\braket{\psi|\alpha_1}\,\alpha_2\otimes\cdots\otimes\alpha_M.$$
+One can represent the multi-particle Operators in terms of creation and annihilation operators. Therefore one can choose a basis $(e_i)$ for the one-particle space $\mathfrak{h}$ and define $a_i:=a(e_i)$. An operator $A$ on the Fock space, which originates from a single-particle Hamiltonian in the way, which was described above, can then be expressed as 
+\begin{align*}
+    A&=\sum_{i,j=1}^{\text{dim}(\mathfrak{h})}\braket{e_i|A_s|e_j}\,a_i^\dagger a_j
+\end{align*}
+This is similar to a basis representation for a single body operator, while avoiding to explicitly write the symmetrization overhead. To see this let us introduce an explicit basis of the $M$-particle space. Let the dimension of the single-particle space be $N$ for this purpose. There are $\binom{M+N-1}{N-1}$ possibilities to distribute $M$ particles to $N$ states. A basis of the $M$-particle space then includes all distinguishable (anti-)symmetric permutations of these distributions. 
+
+As the operator itself respects the (anti-)symmetry it is advantageous to organize the basis states into the different regions with respect to the $\binom{M+N-1}{N-1}$ state distributions. The operator $A$ can then be organized into blocks that mediate between these subregions, changing the state distribution into one where one state is replaced by another. But this is exactly what the functions $a_i^\dagger a_j$ do.
+
+For the other type of Fock space operators originating from multi-particle operators, one proceeds in the same way. For a function $B$ from the previous section, one can express
+\begin{align*}
+    B= \sum_{i_1=1}^{\text{dim}(\mathfrak{h})}\sum_{i_2=1}^{i_1}\cdots\sum_{i_L}^{i_{L-1}}\sum_{j_1=1}^{\text{dim}(\mathfrak{h})}\sum_{j_2=1}^{j_1}\cdots\sum_{j_K=1}^{j_{K-1}}\braket{P^L_\pm\left(l_{i_1}\otimes\cdots\otimes l_{i_L}\right)|B_{K,L}|P^K_\pm\left(k_{j_1}\otimes\cdots\otimes k_{j_K}\right)} a_{j_1}^\dagger\cdots a_{i_L}^\dagger a_{j_1}\cdots a_{j_K}
+\end{align*}
 \subsection{Introduction to topological phases}
 \subsubsection{Time-reversal symmetry}
 Time reversal symmetry is represented by an anti-unitary operator $T$. The effect of time-reversal on an operator is the following.
@@ -31,129 +78,20 @@ Symmetry regarding time-reversal ($H = THT^{-1}$) has thus the form
     &= \sum_\mathbf{k} H^*(-\mathbf{k})\,a_\mathbf{k}^\dagger a_\mathbf{k}\\
     \iff\quad H(\mathbf{k})&= H^*(-\mathbf{k})
 \end{align*}
-
-\subsection{Winding Number}
-A chiral Hamiltonian is defined through the property, that it anticommutes with a unitary hermitian operator $\Gamma$
-\begin{align}
-    \Gamma H \Gamma = -H \quad \text{with} \quad \Gamma^2 = 1.
-\end{align}
-From this property follows that the Hamiltonian can be written in block off-diagonal form
-\begin{align}\label{eq:block_off_Ham}
-    H = \begin{pmatrix}
-        0 & h \\
-        h^\dagger & 0
-    \end{pmatrix},
-\end{align}
-where $h$ is, in general, a non-Hermitian matrix. This structure also applies for the matrix in momentum space and allows the definition of a winding number, which characterizes the topological properties of the system. In the basis of \eqref{eq:block_off_Ham} the chiral operator $\Gamma$ is diagonal and can be written as
-\begin{align}
-    \Gamma = \begin{pmatrix}   
-        \mathbb{1} & 0 \\
-            0 & -\mathbb{1} 
-    \end{pmatrix}.
-\end{align}         
-
-If the Hamiltonian is $2\times 2$ dimensional, the winding number can be defined through the decomposition of $H$ in terms of the Pauli matrices
-\begin{align}
-    H =  \mathbf{n}\cdot \boldsymbol{\sigma},
-\end{align}
-where $\mathbf{n}=(n_x,n_y,0)$ is a vector in the $xy$-plane. The winding number is then given by the winding of the vector $\mathbf{n}$ around the origin when traversing the Brillouin zone. Identifying the $xy$-plane of $\mathbf{n}$ with the complex plane, which defines a path $\mathbf{n}(k)\rightarrow\gamma(k)$, the winding number can be calculated through
+\subsubsection{Particle-hole symmetry}
+\subsubsection{Chiral symmetry}
+\subsubsection{Bulk-boundary correspondence}
+The bulk-boundary correspondence states a connection between topological indices which can be calculated for Hamiltonians defined on an infinitely dimensional space with properties on the edge of a half space Hamiltonian. The bulk-boundary correspondence can come in different mathematical forms, see for example [cite Prodan]. One particular version relates the Chern number calculated for a band gap of the bulk Hamiltonian to a charge current.
 \begin{align*}
-    w = \frac{1}{2\pi i} \oint_{\gamma_k}\frac1z\,dz = \frac{1}{2\pi i} \int_\text{BZ} dk \frac{1}{\gamma(k)}\frac{d\gamma(k)}{dk}.
-\end{align*}
-In terms of the Hamiltonian above this reads
-\begin{align*}
-    w= \frac{1}{2\pi i} \int_{\text{BZ}} dk\, \frac{h'(k)}{h(k)}.
-\end{align*}
-Generalizing the winding number to higher dimensional Hamiltonians is possible through the use of the block off-diagonal form. The winding number then reads \cite{maffeiTopologicalCharacterizationChiral2018,schnyderClassificationTopologicalInsulators2008}
-\begin{align*}
-    w = \frac{1}{2\pi i} \int_\text{BZ} dk \,\text{Tr}\left[h^{-1}(k) \partial_kh(k)\right].
-\end{align*}
-Diagonalizing $h$ as $h=S\Lambda S^{-1}$ with the diagonal matrix $\Lambda=\text{diag}(\lambda_1,\lambda_2,...)$ and the invertible matrix $S$, the trace can be rewritten as
-\begin{align*}
-    \text{Tr}\left[h^{-1} \partial_kh\right] &= \text{Tr}\left[S \Lambda^{-1} S^{-1} \partial_k(S \Lambda S^{-1})\right]\\
-    &= \text{Tr}\left[\Lambda^{-1} \partial_k\Lambda + S^{-1}\partial_k S + (\partial_k S^{-1}) S\right]\\
-    \text{Tr}\left[ S^{-1}\partial_k S + S \partial_k S^{-1}\right] &=
-    \text{Tr}\left[\partial_k\,(S S^{-1})\right] = 0,\\
-    \Rightarrow \text{Tr}\left[h^{-1} \partial_kh\right] &= \text{Tr}\left[\Lambda^{-1} \partial_k\Lambda\right] = \sum_i \frac{\partial_k \lambda_i}{\lambda_i} = \partial_k \left(\sum_i \ln(\lambda_i)\right) = \partial_k \ln(\det[h]).
-\end{align*}
-
-Another useful definition of the winding number is through the so-called $Q$-matrix, which is defined through the projectors onto the eigenstates of the Hamiltonian. As the Hamiltonian is chiral, the eigenvalues come in pairs $\pm E$. We introduce a labeling of the eigenvalues, such that $E_j = -E_{-j}$ with $j=1,2,...,N$ and $N$ being half the dimension of the Hamiltonian. The corresponding eigenstates are labeled accordingly ($\ket{\psi_j}$) and posses the property $\Gamma\ket{\psi_j}=\ket{\psi_{-j}}$. The Q-matrix is defined as 
-\begin{align*}
-    Q = \sum_{j=1}^N \left(\ket{\psi_j}\bra{\psi_j} - \ket{\psi_{-j}}\bra{\psi_{-j}}\right).
-\end{align*}
-As a consequence of the chiral symmetry, the Q-matrix anticommutes with $\Gamma$ and can therefore be written in block off-diagonal form in the basis, where $\Gamma$ is diagonal, which is also the case in which H is block off-diagonal.
-\begin{align*}
-    \Gamma Q \Gamma &= \sum_{j=1}^N \left( \ket{\psi_{-j}}\bra{\psi_{-j}} - \ket{\psi_j}\bra{\psi_j}\right) = -Q\\
-    \Rightarrow Q &= \begin{pmatrix}
-        0 & q \\
-        q^\dagger & 0
-    \end{pmatrix}
-\end{align*}
-The fact that the winding number of the q-matrix is the same as that of $h$ can be shown with the help of the following two properties.
-\begin{align*}
-    Q^2 &= 1\quad\Rightarrow \quad q q^\dagger = \mathbb{1}, \quad q^\dagger q = \mathbb{1}\\
-    QHQ& = H\quad\Rightarrow\quad qh^\dagger q=h^\dagger
-\end{align*}
-From the second property follows that $q^\dagger h = h^\dagger q$. Thus $h^\dagger q$ is a hermitian matrix and therefore has no winding number, since the eigenvalues are real. Hence
-\begin{align*}
-    0 &= \text{Tr}\left[ q^\dagger (h^\dagger)^{-1} \partial_k (h^\dagger q)\right]\\
-    &= \text{Tr}\left[q\,q^\dagger\,(h^\dagger)^{-1} \partial_k h^\dagger + h^\dagger (h^\dagger)^{-1}\,q^\dagger \partial_k q\right]\\
-    \Rightarrow \text{Tr}\left[q^{-1} \partial_k q\right] &= -\text{Tr}\left[(h^\dagger)^{-1} \partial_k h^\dagger\right]\\
-    &=\text{Tr}\left[h^{-1} \partial_k h\right]
-\end{align*}
-
-There is another useful property, for which we consider the basis in which $\Gamma=\sigma_z \otimes \mathbb{1}_N$. This is the same diagonal basis as previously used. In this basis we can represent all eigenvalues of $H$ as a stack of to $N$-component vectors. The eigenvector for negative energies is written as
-\begin{align*}
-    \ket{\psi_{i}^-}=\frac{1}{\sqrt{2}}\begin{pmatrix}
-        \ket{h_{1i}} \\
-        \ket{h_{2i}}
-    \end{pmatrix}\quad i\in\{1,\dots,N\}
-\end{align*}
-Because of the chirality of the Hamiltonian the eigenvector with positive energy is already determined by this choice and reads
-\begin{align*}
-    \ket{\psi^+_{i}}=\frac{1}{\sqrt{2}}\begin{pmatrix}
-        \ket{h_{1i}} \\
-        -\ket{h_{2i}}
-    \end{pmatrix}
-\end{align*}
-The matrix $Q$ is represented in the following form
-\begin{align*}
-    Q&=\sum_i\begin{pmatrix}
-        0 & \ket{h_{1i}}\bra{h_{2i}} \\
-        \ket{h_{2i}}\bra{h_{1i}} & 0
-    \end{pmatrix}\\
-    \Rightarrow\quad q&= \sum_i\ket{h_{1i}}\bra{h_{2i}}
-\end{align*}
-If we now compute the kernel of the winding number with respect to $q$ we get
-\begin{align*}
-    \text{Tr}[q^\dagger\partial_k q]&= \text{Tr}\left[ \sum_{i,j}\ket{h_{2i}}\bra{h_{1i}}\partial_k\,\left( \ket{h_{1j}}\bra{h_{2j}}\right) \right]\\
-    &=\sum_{i,j}\text{Tr}\left[\ket{h_{2i}}\bra{h_{1i}}\left( \partial_k\ket{h_{1j}}\right)\,\bra{h_{2j}} \right]+\sum_{i,j}\text{Tr}\left[ \ket{h_{2i}}\bra{h_{1i}}\ket{h_{1j}}\,\left(\partial_k \bra{h_{2j}}\right) \right]\\
-    &=\sum_{i}\bra{h_{1i}}\left( \partial_k\ket{h_{1i}}\right)+\sum_{i} \left(\partial_k \bra{h_{2i}}\right)\ket{h_{2i}} 
-\end{align*}
-When computing the winding number the second term contributes with a minus sign compared to its complex conjugated self, i.e.
-\begin{align*}
-    \int_{\text{BZ}} dk\,\left(\partial_k \bra{h_{2i}}\right)\ket{h_{2i}}&=  -\int_{\text{BZ}} dk\, \bra{h_{2i}}\left(\partial_k\ket{h_{2i}}\right)
-\end{align*}
-Thus the winding number reads
-\begin{align*}
-     w&= \frac{1}{2\pi i} \int_{\text{BZ}} dk\,\text{Tr}[q^\dagger\partial_k q]\\
-     &= \frac{1}{2\pi i} \,\sum_i\int_{\text{BZ}} dk\,\left(\bra{h_{1i}} \partial_k\ket{h_{1i}}-\bra{h_{2i}}\partial_k \ket{h_{2i}}\right)
-\end{align*}
-This can be expressed with respect to the full eigenvectors of the Hamiltonian via
-\begin{align*}
-    w&= \frac{1}{\pi i}  \sum_i\int_{\text{BZ}} dk\,\bra{\Gamma\psi^-_i}\partial_k\ket{\psi^-_i}\\
-    &= \frac{1}{\pi i}  \sum_i\int_{\text{BZ}} dk\,\bra{\psi^+_i}\partial_k\ket{\psi^-_i}\\
-    &= \frac{1}{2\pi i}  \sum_i\int_{\text{BZ}} dk\,\left(\bra{h_{1i}} \partial_k\ket{h_{1i}}-\bra{h_{2i}}\partial_k \ket{h_{2i}}\right)
-\end{align*}
-The quantity $\sum_i\bra{\Gamma\psi^-_i}\partial_k\ket{\psi^-_i}$ can be related to a polarisation \cite{mondragon-shemTopologicalCriticalityChiralSymmetric2014}.
-
-
+    -\frac{1}{2\pi}\,\hat{\mathcal{T}}\left(g_i(\hat{H})\,\nabla_\mathbf{k}\hat{H}\right)&= Ch(gap)
+\end{align*} 
+to be refined
 
 \subsection{Mathematical approach to the BdG Hamiltonian}
-This chapter will start with first recapitalizing the second quantization from a mathematical point of view. Beginning with a Hilbert space $\mathfrak{h}$ for a single particle, this shall be embedded into the large Fock space. The first step is to consider the $M$-particle space $\mathfrak{f}_M=\otimes_{i=1}^M\mathfrak{h}$. The Fock space is then the direct sum over all particle numbers
-\begin{align*}
-    \mathfrak{F}=\bigoplus_{M=0}^\infty \mathfrak{f}_M
-\end{align*}
+
+
+
+
 I want to introduce a more mathematical approach to the Hamiltonian. 
 \begin{align*}
 \mathcal{H} &= \frac{1}{2}(\mathbf{a}^\dagger)^t h\, \mathbf{a} + \frac{1}{2}\mathbf{a}^t h\, \mathbf{a}^\dagger
@@ -325,3 +263,119 @@ one can conclude that the only matrix commuting with $H_k$ is the identity, i.e 
     \end{pmatrix}
 \end{gather*}
 As both matrices $S_k$ and $T_k$ are hermitian the Hamiltonian has vanishing winding number, indicating a topological trivial phase. This is confirmed when looking at the eigenstates inside the gap of \figref{fig:spectrum_BdG}, when $m\omega^2=10\,V_\text{max}$. I want to mention that if there are no pairing terms, i.e. $\mathbf{\Delta}=0$, the Hamiltonian is block diagonal and therefore not irreducible. In this case the introduction of holes is redundant and the winding number can be calculated from a single block, which can lead to non-vanishing winding numbers. It is thereby shown that the pairing terms prohibit the occurrence of topologically non-trivial phases in 1D for motional degrees of freedom stemming from a second order tailor expansion of an interaction potential.
+
+
+\subsection{Winding Number}
+A chiral Hamiltonian is defined through the property, that it anticommutes with a unitary hermitian operator $\Gamma$
+\begin{align}
+    \Gamma H \Gamma = -H \quad \text{with} \quad \Gamma^2 = 1.
+\end{align}
+From this property follows that the Hamiltonian can be written in block off-diagonal form
+\begin{align}\label{eq:block_off_Ham}
+    H = \begin{pmatrix}
+        0 & h \\
+        h^\dagger & 0
+    \end{pmatrix},
+\end{align}
+where $h$ is, in general, a non-Hermitian matrix. This structure also applies for the matrix in momentum space and allows the definition of a winding number, which characterizes the topological properties of the system. In the basis of \eqref{eq:block_off_Ham} the chiral operator $\Gamma$ is diagonal and can be written as
+\begin{align}
+    \Gamma = \begin{pmatrix}   
+        \mathbb{1} & 0 \\
+            0 & -\mathbb{1} 
+    \end{pmatrix}.
+\end{align}         
+
+If the Hamiltonian is $2\times 2$ dimensional, the winding number can be defined through the decomposition of $H$ in terms of the Pauli matrices
+\begin{align}
+    H =  \mathbf{n}\cdot \boldsymbol{\sigma},
+\end{align}
+where $\mathbf{n}=(n_x,n_y,0)$ is a vector in the $xy$-plane. The winding number is then given by the winding of the vector $\mathbf{n}$ around the origin when traversing the Brillouin zone. Identifying the $xy$-plane of $\mathbf{n}$ with the complex plane, which defines a path $\mathbf{n}(k)\rightarrow\gamma(k)$, the winding number can be calculated through
+\begin{align*}
+    w = \frac{1}{2\pi i} \oint_{\gamma_k}\frac1z\,dz = \frac{1}{2\pi i} \int_\text{BZ} dk \frac{1}{\gamma(k)}\frac{d\gamma(k)}{dk}.
+\end{align*}
+In terms of the Hamiltonian above this reads
+\begin{align*}
+    w= \frac{1}{2\pi i} \int_{\text{BZ}} dk\, \frac{h'(k)}{h(k)}.
+\end{align*}
+Generalizing the winding number to higher dimensional Hamiltonians is possible through the use of the block off-diagonal form. The winding number then reads \cite{maffeiTopologicalCharacterizationChiral2018,schnyderClassificationTopologicalInsulators2008}
+\begin{align*}
+    w = \frac{1}{2\pi i} \int_\text{BZ} dk \,\text{Tr}\left[h^{-1}(k) \partial_kh(k)\right].
+\end{align*}
+Diagonalizing $h$ as $h=S\Lambda S^{-1}$ with the diagonal matrix $\Lambda=\text{diag}(\lambda_1,\lambda_2,...)$ and the invertible matrix $S$, the trace can be rewritten as
+\begin{align*}
+    \text{Tr}\left[h^{-1} \partial_kh\right] &= \text{Tr}\left[S \Lambda^{-1} S^{-1} \partial_k(S \Lambda S^{-1})\right]\\
+    &= \text{Tr}\left[\Lambda^{-1} \partial_k\Lambda + S^{-1}\partial_k S + (\partial_k S^{-1}) S\right]\\
+    \text{Tr}\left[ S^{-1}\partial_k S + S \partial_k S^{-1}\right] &=
+    \text{Tr}\left[\partial_k\,(S S^{-1})\right] = 0,\\
+    \Rightarrow \text{Tr}\left[h^{-1} \partial_kh\right] &= \text{Tr}\left[\Lambda^{-1} \partial_k\Lambda\right] = \sum_i \frac{\partial_k \lambda_i}{\lambda_i} = \partial_k \left(\sum_i \ln(\lambda_i)\right) = \partial_k \ln(\det[h]).
+\end{align*}
+
+Another useful definition of the winding number is through the so-called $Q$-matrix, which is defined through the projectors onto the eigenstates of the Hamiltonian. As the Hamiltonian is chiral, the eigenvalues come in pairs $\pm E$. We introduce a labeling of the eigenvalues, such that $E_j = -E_{-j}$ with $j=1,2,...,N$ and $N$ being half the dimension of the Hamiltonian. The corresponding eigenstates are labeled accordingly ($\ket{\psi_j}$) and posses the property $\Gamma\ket{\psi_j}=\ket{\psi_{-j}}$. The Q-matrix is defined as 
+\begin{align*}
+    Q = \sum_{j=1}^N \left(\ket{\psi_j}\bra{\psi_j} - \ket{\psi_{-j}}\bra{\psi_{-j}}\right).
+\end{align*}
+As a consequence of the chiral symmetry, the Q-matrix anticommutes with $\Gamma$ and can therefore be written in block off-diagonal form in the basis, where $\Gamma$ is diagonal, which is also the case in which H is block off-diagonal.
+\begin{align*}
+    \Gamma Q \Gamma &= \sum_{j=1}^N \left( \ket{\psi_{-j}}\bra{\psi_{-j}} - \ket{\psi_j}\bra{\psi_j}\right) = -Q\\
+    \Rightarrow Q &= \begin{pmatrix}
+        0 & q \\
+        q^\dagger & 0
+    \end{pmatrix}
+\end{align*}
+The fact that the winding number of the q-matrix is the same as that of $h$ can be shown with the help of the following two properties.
+\begin{align*}
+    Q^2 &= 1\quad\Rightarrow \quad q q^\dagger = \mathbb{1}, \quad q^\dagger q = \mathbb{1}\\
+    QHQ& = H\quad\Rightarrow\quad qh^\dagger q=h^\dagger
+\end{align*}
+From the second property follows that $q^\dagger h = h^\dagger q$. Thus $h^\dagger q$ is a hermitian matrix and therefore has no winding number, since the eigenvalues are real. Hence
+\begin{align*}
+    0 &= \text{Tr}\left[ q^\dagger (h^\dagger)^{-1} \partial_k (h^\dagger q)\right]\\
+    &= \text{Tr}\left[q\,q^\dagger\,(h^\dagger)^{-1} \partial_k h^\dagger + h^\dagger (h^\dagger)^{-1}\,q^\dagger \partial_k q\right]\\
+    \Rightarrow \text{Tr}\left[q^{-1} \partial_k q\right] &= -\text{Tr}\left[(h^\dagger)^{-1} \partial_k h^\dagger\right]\\
+    &=\text{Tr}\left[h^{-1} \partial_k h\right]
+\end{align*}
+
+There is another useful property, for which we consider the basis in which $\Gamma=\sigma_z \otimes \mathbb{1}_N$. This is the same diagonal basis as previously used. In this basis we can represent all eigenvalues of $H$ as a stack of to $N$-component vectors. The eigenvector for negative energies is written as
+\begin{align*}
+    \ket{\psi_{i}^-}=\frac{1}{\sqrt{2}}\begin{pmatrix}
+        \ket{h_{1i}} \\
+        \ket{h_{2i}}
+    \end{pmatrix}\quad i\in\{1,\dots,N\}
+\end{align*}
+Because of the chirality of the Hamiltonian the eigenvector with positive energy is already determined by this choice and reads
+\begin{align*}
+    \ket{\psi^+_{i}}=\frac{1}{\sqrt{2}}\begin{pmatrix}
+        \ket{h_{1i}} \\
+        -\ket{h_{2i}}
+    \end{pmatrix}
+\end{align*}
+The matrix $Q$ is represented in the following form
+\begin{align*}
+    Q&=\sum_i\begin{pmatrix}
+        0 & \ket{h_{1i}}\bra{h_{2i}} \\
+        \ket{h_{2i}}\bra{h_{1i}} & 0
+    \end{pmatrix}\\
+    \Rightarrow\quad q&= \sum_i\ket{h_{1i}}\bra{h_{2i}}
+\end{align*}
+If we now compute the kernel of the winding number with respect to $q$ we get
+\begin{align*}
+    \text{Tr}[q^\dagger\partial_k q]&= \text{Tr}\left[ \sum_{i,j}\ket{h_{2i}}\bra{h_{1i}}\partial_k\,\left( \ket{h_{1j}}\bra{h_{2j}}\right) \right]\\
+    &=\sum_{i,j}\text{Tr}\left[\ket{h_{2i}}\bra{h_{1i}}\left( \partial_k\ket{h_{1j}}\right)\,\bra{h_{2j}} \right]+\sum_{i,j}\text{Tr}\left[ \ket{h_{2i}}\bra{h_{1i}}\ket{h_{1j}}\,\left(\partial_k \bra{h_{2j}}\right) \right]\\
+    &=\sum_{i}\bra{h_{1i}}\left( \partial_k\ket{h_{1i}}\right)+\sum_{i} \left(\partial_k \bra{h_{2i}}\right)\ket{h_{2i}} 
+\end{align*}
+When computing the winding number the second term contributes with a minus sign compared to its complex conjugated self, i.e.
+\begin{align*}
+    \int_{\text{BZ}} dk\,\left(\partial_k \bra{h_{2i}}\right)\ket{h_{2i}}&=  -\int_{\text{BZ}} dk\, \bra{h_{2i}}\left(\partial_k\ket{h_{2i}}\right)
+\end{align*}
+Thus the winding number reads
+\begin{align*}
+     w&= \frac{1}{2\pi i} \int_{\text{BZ}} dk\,\text{Tr}[q^\dagger\partial_k q]\\
+     &= \frac{1}{2\pi i} \,\sum_i\int_{\text{BZ}} dk\,\left(\bra{h_{1i}} \partial_k\ket{h_{1i}}-\bra{h_{2i}}\partial_k \ket{h_{2i}}\right)
+\end{align*}
+This can be expressed with respect to the full eigenvectors of the Hamiltonian via
+\begin{align*}
+    w&= \frac{1}{\pi i}  \sum_i\int_{\text{BZ}} dk\,\bra{\Gamma\psi^-_i}\partial_k\ket{\psi^-_i}\\
+    &= \frac{1}{\pi i}  \sum_i\int_{\text{BZ}} dk\,\bra{\psi^+_i}\partial_k\ket{\psi^-_i}\\
+    &= \frac{1}{2\pi i}  \sum_i\int_{\text{BZ}} dk\,\left(\bra{h_{1i}} \partial_k\ket{h_{1i}}-\bra{h_{2i}}\partial_k \ket{h_{2i}}\right)
+\end{align*}
+The quantity $\sum_i\bra{\Gamma\psi^-_i}\partial_k\ket{\psi^-_i}$ can be related to a polarisation \cite{mondragon-shemTopologicalCriticalityChiralSymmetric2014}.
