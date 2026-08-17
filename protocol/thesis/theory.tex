@@ -27,7 +27,7 @@ One then can lift this operator into higher particle space as an operator from $
 \begin{align*}
     B&= \bigoplus_{M=\text{max}(K,K-\Delta)}^\infty B^{(M)}
 \end{align*}
-\subsubsection{Second quantization}
+\subsubsection{Second quantization}\label{sec:second_quantization}
 For a family of one-particle states $(\phi_1,\dots,\phi_M)$ one can construct an (anti-)symmetric state $\ket{\phi}$ via
 \begin{align*}
     \ket{\phi}&= P_\pm^M\left( \phi_1 \otimes \cdots\otimes\phi_M \right)
@@ -39,9 +39,9 @@ One can then introduce creation and annihilation operators for a one-particle st
 \end{align*}
 where for a vector $\ket{\alpha}=\alpha_1\otimes\cdots\otimes\alpha_M$ the above scalar product is defined as $$\braket{\psi|\alpha}_\text{partial}=\braket{\psi|\alpha_1}\,\alpha_2\otimes\cdots\otimes\alpha_M.$$
 One can represent the multi-particle Operators in terms of creation and annihilation operators. Therefore one can choose a basis $(e_i)$ for the one-particle space $\mathfrak{h}$ and define $a_i:=a(e_i)$. An operator $A$ on the Fock space, which originates from a single-particle Hamiltonian in the way, which was described above, can then be expressed as 
-\begin{align*}
+\begin{align}\label{eq:fock_single_body}
     A&=\sum_{i,j=1}^{\text{dim}(\mathfrak{h})}\braket{e_i|A_s|e_j}\,a_i^\dagger a_j
-\end{align*}
+\end{align}
 This is similar to a basis representation for a single body operator, while avoiding to explicitly write the symmetrization overhead. To see this let us introduce an explicit basis of the $M$-particle space. Let the dimension of the single-particle space be $N$ for this purpose. There are $\binom{M+N-1}{N-1}$ possibilities to distribute $M$ particles to $N$ states. A basis of the $M$-particle space then includes all distinguishable (anti-)symmetric permutations of these distributions. 
 
 As the operator itself respects the (anti-)symmetry it is advantageous to organize the basis states into the different regions with respect to the $\binom{M+N-1}{N-1}$ state distributions. The operator $A$ can then be organized into blocks that mediate between these subregions, changing the state distribution into one where one state is replaced by another. But this is exactly what the functions $a_i^\dagger a_j$ do.
@@ -50,6 +50,23 @@ For the other type of Fock space operators originating from multi-particle opera
 \begin{align*}
     B= \sum_{i_1=1}^{\text{dim}(\mathfrak{h})}\sum_{i_2=1}^{i_1}\cdots\sum_{i_L}^{i_{L-1}}\sum_{j_1=1}^{\text{dim}(\mathfrak{h})}\sum_{j_2=1}^{j_1}\cdots\sum_{j_K=1}^{j_{K-1}}\braket{P^L_\pm\left(l_{i_1}\otimes\cdots\otimes l_{i_L}\right)|B_{K,L}|P^K_\pm\left(k_{j_1}\otimes\cdots\otimes k_{j_K}\right)} a_{j_1}^\dagger\cdots a_{i_L}^\dagger a_{j_1}\cdots a_{j_K}
 \end{align*}
+For an operator $B_{2,0}$ with $K=2$, $L=0$ this takes the explicit form
+\begin{align}\label{eq:fock_2body}
+    B&= \sum_{j_1=1}^{\text{dim}(\mathfrak{h})}\sum_{j_2=1}^{j_1} B_{2,0}\ket{P_\pm^2(k_{j_1}\otimes k_{i_2})}\,a_{i_1}\,a_{i_2}
+\end{align}
+Both \eqref{eq:fock_single_body} and \eqref{eq:fock_2body} can be written in matrix after introducing the vector $\mathbf{a}=(a_1,\dots,a_{\text{dim}(\mathfrak{h})})$ and defining appropriate matrices $\mathbf{A}$ and $\mathbf{B}$.
+\begin{alignat*}{2}
+    A = (\mathbf{a}^\dagger)^t\mathbf{A}\,\mathbf{a}\quad\quad&&B = (\mathbf{a}^\dagger)^t\mathbf{B}\,\mathbf{a}
+\end{alignat*}
+For the bosonic case these matrices take the form
+\begin{alignat*}{2}
+    \mathbf{A}=\left(\braket{e_i|A_s|e_j}\right)_{i,j}\quad\quad\quad&&\mathbf{B}=\left(B_{2,0}\ket{P_\pm^2(k_{i}\otimes k_{j})}\,(1+\delta_{i,j})/2\right)_{i,j}
+\end{alignat*}
+
+
+
+
+
 \subsection{Introduction to topological phases}
 \subsubsection{Time-reversal symmetry}
 Time reversal symmetry is represented by an anti-unitary operator $T$. The effect of time-reversal on an operator is the following.
@@ -80,42 +97,70 @@ Symmetry regarding time-reversal ($H = THT^{-1}$) has thus the form
 \end{align*}
 \subsubsection{Particle-hole symmetry}
 \subsubsection{Chiral symmetry}
-\subsubsection{Bulk-boundary correspondence}
-The bulk-boundary correspondence states a connection between topological indices which can be calculated for Hamiltonians defined on an infinitely dimensional space with properties on the edge of a half space Hamiltonian. The bulk-boundary correspondence can come in different mathematical forms, see for example [cite Prodan]. One particular version relates the Chern number calculated for a band gap of the bulk Hamiltonian to a charge current.
+\subsubsection{Bulk-boundary correspondence}\label{sec:bulk-boundary}
+The bulk-boundary correspondence states a connection between topological indices, which can be calculated for Hamiltonians defined on an infinite $d$-dimensional lattice, with properties on the edge of a half-space (half-lattice) Hamiltonian. The Hamiltonian of the full space $H$, in the following also called bulk Hamiltonian, is an operator on a single-particle Hilbert space
 \begin{align*}
-    -\frac{1}{2\pi}\,\hat{\mathcal{T}}\left(g_i(\hat{H})\,\nabla_\mathbf{k}\hat{H}\right)&= Ch(gap)
+    \mathfrak{h}&=\mathbb{C}^N \otimes \ell^2(\mathbb{Z}^d)\\
+    H&:\mathfrak{h}\to\mathfrak{h},
+\end{align*}
+where $\mathbb{Z}^d$ accounts for the lattice and the internal degrees of freedom are represented in $\mathbb{C}^N$. The half-space is simply defined by
+\begin{align*}
+    \tilde{\mathfrak{h}}&=\mathbb{C}^N \otimes \ell^2(\mathbb{Z}^{d-1}\times\mathbb{N})
+\end{align*}
+and one defines the corresponding half-space Hamiltonian $\hat{H}:\tilde{\mathfrak{h}}\to\tilde{\mathfrak{h}}$.
+The bulk-boundary correspondence can come in different mathematical forms \cite{prodanBulkBoundaryInvariants2016}. One particular version relates the Chern number calculated for a band gap of the bulk Hamiltonian to a charge current in the half-space. For two dimensions this correspondence reads \cite{prodanBulkBoundaryInvariants2016,peanoTopologicalEdgeStates2018}
+\begin{align*}
+    -\frac{1}{2\pi}\,\hat{\mathcal{T}}\left(g(\hat{H}_{k_1})\,\nabla_{k_1}\hat{H}_{k_1}\right)&= \text{Ch}_2(P_F)
 \end{align*} 
-to be refined
+Let us disassemble the relation. $\text{Ch}_2(P_F)$ is the Chern number computed for the Fermi projection, which is the projection on the energy bands of the bulk Hamiltonian below the Fermi energy $\mu_F$, whereas the Fermi energy is located in the bulk gap. The chern number is an index which is computed exclusively from the bulk Hamiltonian and takes integer values. The left hand-side of the equation, however, is a property of the boundary Hamiltonian an represents a charge current. $\mathcal{T}$ is the trace per unit volume and the hats denote boundary operators. $\hat{H}_{k_1}$ is the half-space Hamiltonian transformed into momentum space along the periodic first dimension, whereas $g$ is an arbitrary continuous function with support exclusively in the bulk energy gap. 
 
-\subsection{Mathematical approach to the BdG Hamiltonian}
+Therefore $g(\hat{H}_{k_1})$ is only non-vanishing for any $g$ of this property, if the boundary Hamiltonian has eigenenergies inside the bulk energy gap. Thus for non vanishing bulk chern number, the half-space system must possess energies inside the bulk gap.
 
+On the other hand, if the Fermi level lies inside of a bulk energy gap, one can prove the following property \cite{prodanBulkBoundaryInvariants2016} (Proposition 2.4.10)
+\begin{align*}
+    \abs{\matrixel{x,n}{g(\hat{H})}{y,m}} \le A_M (1+|x-y|)^{-M} e^{-\beta(n+m)}, \quad n,m \in \mathbb{N}, \; x,y \in \mathbb{Z}^{d-1}
+\end{align*}
+here $M$ can be any integer and $A_M$, $\beta$ are strictly positive constants. $n$, $m$ are the positions in the dimension which was cut to half, when introducing the half-space system. From this follows that an eigenstate of $\hat{H}$ with energy inside the bulk gap is localized at the boundary. This can be understood when considering the amplitude of such an eigenstate $\ket{\psi}$ at position $(x,n)$. One can exploit that $g(\hat{H})\ket{\psi}=\alpha\,\ket{\psi}$ with $\alpha\neq0$ for appropriate $g$.
+\begin{align*}
+    \left|\braket{x,n|\psi}\right|&=\frac{1}{|\alpha|}\,\left|\braket{x,n|g(\hat{H})|\psi}\right|=\frac{1}{|\alpha|}\,\left|\sum_{y\in\mathbb{Z}^{d-1},m\in\mathbb{N}}\braket{x,n|g(\hat{H})|y,m}\braket{y,m|\psi}\right|\\&\leq \frac{1}{|\alpha|}\,\sum_{y\in\mathbb{Z}^{d-1},m\in\mathbb{N}}|\braket{x,n|g(\hat{H})|y,m}|\,|\braket{y,m|\psi}|\\
+    &\leq \frac{1}{|\alpha|}\,\sum_{y\in\mathbb{Z}^{d-1},m\in\mathbb{N}} A_M (1+|x-y|)^{-M} e^{-\beta(n+m)} ||\psi||\\
+    &= \frac{||\psi||}{|\alpha|\,(1-e^{-\beta})}\,\sum_{y\in\mathbb{Z}^{d-1}} A_M (1+|x-y|)^{-M} e^{-\beta\,n} 
+\end{align*} 
+If $M\geq d$ is chosen the sum over $y$ converges and one can infer the exponential decay of the eigenstate with distance $n$ from the boundary
+\begin{align*}
+    \left|\braket{x,n|\psi}\right|\leq C_M\,e^{-\beta\,n}
+\end{align*}  
+In summary these are the two most significant properties of topological protected non-trivial phases, i.e. there are eigenenergies of the open system, whose states are exponentially localized at the boundary.
 
-
-
-I want to introduce a more mathematical approach to the Hamiltonian. 
+\subsection{Bogoliubov-de Gennes Hamiltonian}
+As stated in \secref{sec:bulk-boundary} about the bulk boundary correspondence the topological properties and there analysis is restricted to single-particle Hamiltonians. A generic Hamiltonian that describes many physical systems and is also relevant for the present thesis is the quadratic Hamiltonian, written in general form as
 \begin{align*}
 \mathcal{H} &= \frac{1}{2}(\mathbf{a}^\dagger)^t h\, \mathbf{a} + \frac{1}{2}\mathbf{a}^t h\, \mathbf{a}^\dagger
   + \frac{1}{2}(\mathbf{a}^\dagger)^t \Delta\, \mathbf{a}^\dagger + \frac{1}{2}\mathbf{a}^t \Delta^\dagger\, \mathbf{a},
-\qquad h=h^\dagger,\quad \Delta=\Delta^t \\
-&= \frac12\,\left( \mathbf{h} + \overline{\mathbf{h}} + \mathbf{\Delta} + \mathbf{\Delta}^\dagger \right)
-\end{align*}
-This can be written in matrix form as
+\qquad h=h^\dagger,\quad \Delta=\Delta^t 
+%&= \frac12\,\left( \mathbf{h} + \overline{\mathbf{h}} + \mathbf{\Delta} + \mathbf{\Delta}^\dagger \right)
+\end{align*} 
+It can be written in matrix form as
 \begin{align*}
-    \mathcal{H} &= \frac{1}{2}\begin{pmatrix} \mathbf{a}^\dagger \\ \mathbf{a} \end{pmatrix}^{\!t} \tilde{A} 
+    \mathcal{H} &= \frac{1}{2}\begin{pmatrix} (\mathbf{a}^\dagger)^t & \mathbf{a}^t \end{pmatrix} \tilde{A} 
 \begin{pmatrix} \mathbf{a} \\ \mathbf{a}^\dagger \end{pmatrix},
 \qquad
 \tilde{A} = \begin{pmatrix} h & \Delta \\ \Delta^\dagger &  h \end{pmatrix} 
 %= A^\dagger \ \in\ B(\mathfrak{h}_{ph})
 \end{align*}
-In the topological framework we want to consider single-particle Hamiltonians, defined on a single particle space $\mathfrak{h} = \mathbb{C}^N \otimes \ell^2(\mathbb{Z}^d)$ where $\mathbb{C}^N$ treats the internal degrees of freedom of each unit cell and $\ell^2(\mathbb{Z}^d)$ represents the lattice structure. One can then define $$\mathbf{h}:\mathfrak{h} \to \mathfrak{h}.$$But the $\Delta$-terms are two-particle operators. The solution to this problem is to interpret the creation part of the stacked operator vector as operators in a hole-space, i.e. hole-annihilation operators and then treating holes and particles as independent degrees of freedom. I show here how this reinterpretation can be carried out. Take for example the last term of the Hamiltonian. It takes two particles and annihilates them, it can be viewed as bilinear form on the two particle space, reducing the particle space by two particles
+% In the topological framework we want to consider single-particle Hamiltonians, defined on a single particle space $\mathfrak{h} = \mathbb{C}^N \otimes \ell^2(\mathbb{Z}^d)$ where $\mathbb{C}^N$ treats the internal degrees of freedom of each unit cell and $\ell^2(\mathbb{Z}^d)$ represents the lattice structure. One can then define $$\mathbf{h}:\mathfrak{h} \to \mathfrak{h}.$$
+This Hamiltonian is, however, not of the single-particle form due to the coupling terms proportional to $\Delta$, which are two-particle operators. 
+This problem can be circumvented by interpreting the creation part of the stacked operator vector as operators in a hole-space, i.e. hole-annihilation operators and then treating holes and particles as independent degrees of freedom. 
+
+To show how this reinterpretation can be carried out, take for example the last term of the Hamiltonian. It takes two particles and annihilates them. According to \secref{sec:second_quantization} it can be viewed as originating from a bilinear form on the two particle space, reducing the particle number by two 
 \begin{align*}
     \mathbf{\Delta}^\dagger &: \mathfrak{h}\times\mathfrak{h}\to\mathbb{C}: \ket{\psi}\ket{\phi}\mapsto \mathbf{\Delta}^\dagger\left(\ket{\psi}\ket{\phi}\right)
 \end{align*}
-But for plugging in a certain vector $\ket{\psi}$ and leaving the other spot open, we can define a map $\mathbf{\tilde{\Delta}}^\dagger(\ket{\psi}):\mathfrak{h}\to\mathcal{L}(\mathfrak{h},\mathbb{C})\to\mathfrak{h}^*$, where $\mathcal{L}(\mathfrak{h},\mathbb{C})$ is the space of linear maps from $\mathfrak{h}$ to $\mathbb{C}$. But each such map can be represented in the dual space by a vector $\mathcal{L}(\mathfrak{h},\mathbb{C})$$\,\to \mathfrak{h}^*:\mathbf{\Delta}^\dagger(\ket{\psi},\cdot)\mapsto\ket{\tilde{\Delta}^\dagger(\psi)}\in\mathfrak{h}^*$ such that $\mathbf{\Delta}^\dagger\left(\ket{\psi}\ket{\phi}\right) = \braket{\tilde{\Delta}^\dagger(\psi)|\phi}$. But the linearity of $\mathbf{\Delta}^\dagger$ results in 
+Plugging in a certain vector $\ket{\psi}$ and leaving the other spot open, we can, however, define a map $\mathbf{\tilde{\Delta}}^\dagger(\ket{\psi}):\mathfrak{h}\to\mathcal{L}(\mathfrak{h},\mathbb{C})\to\mathfrak{h}^*$, where $\mathcal{L}(\mathfrak{h},\mathbb{C})$ is the space of linear maps from $\mathfrak{h}$ to $\mathbb{C}$. But each such map can be represented in the dual space by a vector $\mathcal{L}(\mathfrak{h},\mathbb{C})$$\,\to \mathfrak{h}^*:\mathbf{\Delta}^\dagger(\ket{\psi},\cdot)\mapsto\ket{\tilde{\Delta}^\dagger(\psi)}\in\mathfrak{h}^*$ such that $\mathbf{\Delta}^\dagger\left(\ket{\psi}\ket{\phi}\right) = \braket{\tilde{\Delta}^\dagger(\psi)|\phi}$. The linearity of $\mathbf{\Delta}^\dagger$ results in 
 \begin{align*}
     \ket{\tilde{\Delta}^\dagger(\lambda\psi)} &= \bar{\lambda}\,\ket{\tilde{\Delta}^\dagger(\psi)}
 \end{align*}
-This makes $\mathbf{\tilde{\Delta}}^\dagger$ an anti-linear operation. One can resolve this issue by introduce a different space $\overline{\mathfrak{h}}$ which possesses a scalar multiplication of the form
+This makes $\mathbf{\tilde{\Delta}}^\dagger$ an anti-linear operation, instead of the required linear one. This issue can be resolved by introduce a different space $\overline{\mathfrak{h}}$ which possesses a scalar multiplication of the form
 $$\cdot: \mathbb{C}\times\overline{\mathfrak{h}}\to\overline{\mathfrak{h}}: (\lambda,\ket{\varphi})\mapsto \bar{\lambda}\,\ket{\varphi}$$
 By this way one can define a linear operator over single particle Hamiltonians
 \begin{align*}
@@ -131,54 +176,79 @@ where $\mathbf{\Delta}_s$ can be divided into a simple linear map $M:\overline{\
 \mathbf{\Delta}_s &: \overline{\mathfrak{h}}\to\mathfrak{h}: \ket{\psi}\mapsto \left(M(\ket{\psi})\right)^\dagger\,\mathbf{\Delta}(1)=\Delta\ket{\phi}\\
 \leadsto \mathbf{\Delta} &:\mathbb{C}\to \mathfrak{h}\times\mathfrak{h}: 1\mapsto M\left(\ket{\psi}_{\overline{\mathfrak{h}}}\right)\mathbf{\Delta}_s(\ket{\psi}_{\overline{\mathfrak{h}}})
 \end{align*}
-At this state one identify the space $\mathfrak{h}$ with the single particle space and $\overline{\mathfrak{h}}$ with the single hole-space, where particle and holes are interpreted as independent degrees of freedom. The total space is than represented by the Nambu-spinor $(\ket{\psi}_{\mathfrak{h}},\ket{\varphi}_{\overline{\mathfrak{h}}})$ with particle degrees of freedom $\ket{\psi}$ and hole degrees of freedom $\ket{\phi}$. This lets the effect of the Hamiltonian on such a Nambu-state be written as
+At this state one identify the space $\mathfrak{h}$ with the single-particle space and $\overline{\mathfrak{h}}$ with the single-hole space, where particle and holes are interpreted as independent degrees of freedom. The total space is than represented by the Nambu-spinor $(\ket{\psi}_{\mathfrak{h}},\ket{\varphi}_{\overline{\mathfrak{h}}})$ with particle degrees of freedom $\ket{\psi}$ and hole degrees of freedom $\ket{\phi}$. This lets the effect of such an single-particle Hamiltonian on a Nambu-state be written as
 \begin{align*}
-    \mathcal{H}\begin{pmatrix}\ket{\psi}\\\ket{\phi} \end{pmatrix}&=\begin{pmatrix} \mathbf{h} & \mathbf{\Delta} \\ \mathbf{\Delta^\dagger} & \overline{\mathbf{h}} \end{pmatrix} \begin{pmatrix}\ket{\psi}\\\ket{\phi} \end{pmatrix}\\[2mm]
+    \mathcal{H}_s\begin{pmatrix}\ket{\psi}\\\ket{\phi} \end{pmatrix}&=\begin{pmatrix} \mathbf{h} & \mathbf{\Delta} \\ \mathbf{\Delta^\dagger} & \overline{\mathbf{h}} \end{pmatrix} \begin{pmatrix}\ket{\psi}\\\ket{\phi} \end{pmatrix}\\[2mm]
     \text{with}\quad \overline{\mathbf{h}}&:\overline{\mathfrak{h}}\to\overline{\mathfrak{h}}
 \end{align*}
-The space $\mathfrak{h} = \mathbb{C}^N \otimes \ell^2(\mathbb{Z}^d)$ can be structured by the canonical basis $B$ for $\mathbb{C}^N$ combined with a basis for $\ell^2(\mathbb{Z}^d)$. As basis of $\ell^2(\mathbb{Z}^d)$ one can choose all functions $\{f_z|z\in\mathbb{Z}^d\}$ with $f_z: \mathbb{Z}^d\to \mathbb{C}: x\mapsto \delta_{x,z}$, which is the canonical discrete position basis $f_z=:\ket{z}$. For $\overline{\mathfrak{h}}$ one can use the same basis for the postion combined with a basis of $\mathbb{C}^N$ with a different scalar multiplication.
-Each single particle operator can be separated into operators that act on the internal system ($\mathbb{C}^N$) of a unit cell and one, that mediates between unit cells $u^x$. Considering periodic boundaries the operators only depend on the distance $x$ between the cells and one can write for example
+By defining a basis $B$ of $\mathfrak{h}$ and $C$ of $\overline{\mathfrak{h}}$, one can construct a basis of the Nambu space $D=B\oplus C$. In this way one can lift the just defined single-particle Hamiltonian into Fock space via second quantization. By defining the matrices
 \begin{align*}
-    \mathbf{h}=\sum_x h_x u^x
+    h'&= \Big( \braket{b_i|\mathbf{h}|b_j} \Big)_{i,j}\\
+    \overline{h}'&=\Big( \braket{c_i|\overline{\mathbf{h}}|c_j} \Big)_{i,j}\\
+    \Delta'&=\Big( \braket{b_i|\mathbf{\Delta}|c_j} \Big)_{i,j}\\
+    (\Delta^\dagger)'&=\Big( \braket{c_i|\mathbf{\Delta}^\dagger|b_j} \Big)_{i,j}
 \end{align*}
-where $h_x:\mathbb{C}^N\to\mathbb{C}^N$ treats the internal degrees of freedom and $u^x:\ell^2(\mathbb{Z}^d)\to\ell^2(\mathbb{Z}^d)$ is just the shift operator. The Fourier transform is a map to the d-dimensional torus $\mathcal{F}:\ell^2(\mathbb{Z}^d)\to\mathbb{T}^d=(-\pi,\pi]\times\cdots\times(-\pi,\pi]$.
+
+
+\subsubsection{Momentum space representation}
+The space $\mathfrak{h} = \mathbb{C}^N \otimes \ell^2(\mathbb{Z}^d)$ can be structured by the canonical basis for $\mathbb{C}^N$, denoted as $G$ in the following, combined with a basis for $\ell^2(\mathbb{Z}^d)$. As basis of $\ell^2(\mathbb{Z}^d)$ one can choose all functions $\{f_z|z\in\mathbb{Z}^d\}$ with $f_z: \mathbb{Z}^d\to \mathbb{C}: x\mapsto \delta_{x,z}$, which is the canonical discrete position basis $f_z=:\ket{z}$. For $\overline{\mathfrak{h}}$ one can use the same basis for the postion combined with a basis of $\mathbb{C}^N$ with a different scalar multiplication.
+Each single particle operator can be separated into operators that act on the internal system ($\mathbb{C}^N$) of a unit cell and one, that mediates between unit cells $u^x$. In a generic form one can write an opertor with range $\mathcal{R}$ in the following form. The range is here the set of distances $x$ with non-zero coupling.
+\begin{align*}
+    \mathbf{h}=\sum_{x\in \mathcal{R}} h_x u^x
+\end{align*}
+where $h_x:\mathbb{C}^N\to\mathbb{C}^N$ treats the internal degrees of freedom and $u^x:\ell^2(\mathbb{Z}^d)\to\ell^2(\mathbb{Z}^d):\ket{z}\mapsto\ket{z-x}$ is just the shift operator. The Fourier transform is a map from $\mathfrak{h}$ to the d-dimensional torus $\mathcal{F}:\ell^2(\mathbb{Z}^d)\to\mathbb{T}^d=(-\pi,\pi]\times\cdots\times(-\pi,\pi]$.
 Fourier transforming a state in the braket notation can be written as an operator $\int_{\mathbb{T}^d}^\oplus dk\sum_xe^{-ikx}\, \ket{k}\bra{x}$. With respect to $k$ the sum goes over a continuous parameter space which is indicated by the integral symbol. $\{\ket{k}|k\in\mathbb{T}^d\}$ is here a basis of the d-dimensional torus in the same way as $\{\ket{x}|x\in\mathbb{Z}^d\}$ is a basis for the discrete lattice. By splitting a state in internal and lattice degrees of freedom one can write $\ket{\psi}=\ket{\psi_\text{int}}\ket{\psi_\text{Lat}}\in\mathfrak{h}$, $\ket{\phi}=\ket{\phi_\text{int}}\ket{\phi_\text{Lat}}\in\overline{\mathfrak{h}}$, and as usual $\psi(y)=\ket{\psi_\text{int}}\braket{y|\psi_\text{Lat}}$, where $y$ is the position of a unit cell.
 % where $h_x:\mathbb{C}^N\to\mathbb{C}^N$ treats the internal degrees of freedom and $u^x:\ell^2(\mathbb{Z}^d)\to\ell^2(\mathbb{Z}^d)$ is just the shift operator.
 % Fourier transforming a state $\psi(y)=\ket{\psi_\text{int}}\ket{y_\text{Lat}}\in\mathfrak{h}$, $\phi(y)=\ket{\phi_\text{int}}\ket{y_\text{Lat}}\in\overline{\mathfrak{h}}$, where $y$ is the position of a unit cell, is defined as   
-\begin{align*}
-    \mathcal{F}(\psi)(k)&=\braket{k|\mathcal{F}(\psi)}=\sum_y e^{-iky}\psi(y)\\
-    \mathcal{F}(\phi)(k)&=\sum_y e^{iky}\phi(y)
-\end{align*}
-A new basis for $\ket{\psi}_k$ is therefore $\{ \ket{b_\text{int}}\ket{k}|b\in B,\;k\in\mathbb{T}^d \}$. One can determine the Fourier transform of the operators by their action on the states.
+\begin{alignat*}{2}
+    \mathcal{F}(\psi)(k)&=\braket{k|\mathcal{F}(\psi)}=\sum_y e^{-iky}\psi(y)\quad&&\text{particle}\\
+    \mathcal{F}(\phi)(k)&=\sum_y e^{iky}\phi(y)\quad&&\text{hole}
+\end{alignat*}
+A new basis for $\ket{\psi}_k$ is therefore $G_k:=\{ \ket{g_\text{int}}\ket{k}|g\in G,\;k\in\mathbb{T}^d \}$. One can determine the Fourier transform of the operators by their action on the states.
 \begin{align*}
     \mathcal{F}(\mathbf{h}\psi)(k)&=\sum_{y,x}e^{-iky}\,h_x u^x \psi(y)\\
     &=\sum_{y,x}e^{-iky}\,h_x \psi(y-x)\\
     &=\sum_{z,x}e^{-ikz}e^{-ikx}\,h_x \psi(z)\\
     &=\sum_{x}e^{-ikx}\,h_x \mathcal{F}(\psi)(k)\\
-    &=\vcentcolon \mathbf{h}(k)\,\mathcal{F}(\psi)(k)=\vcentcolon \mathbf{h}(k)\,\psi(k)
+    &=\vcentcolon {h}(k)\,\mathcal{F}(\psi)(k)=\vcentcolon {h}(k)\,\psi(k)
 \end{align*}
-As $\overline{\mathbf{h}}=\sum_x\bar{h}_x u^x$, where the bar means complex conjugation, we can write
+As $\overline{{h}}=\sum_x\bar{h}_x u^x$, where the bar means complex conjugation, we can write
 \begin{align*}
     \mathcal{F}(\overline{\mathbf{h}}\phi)(k)&=\sum_{y,x}e^{iky}\,\bar{h}_x u^x \phi(y)\\
     &=\sum_{x}e^{ikx}\,\bar{h}_x \mathcal{F}(\phi)(k)=\overline{\sum_{x}e^{-ikx}\,h_x} \mathcal{F}(\phi)(k)\\
-    &= \overline{\mathbf{h}}(k)\,\phi(k)
+    &= \overline{{h}}(k)\,\phi(k)
 \end{align*}
 For $\mathbf{\Delta}_s=\sum_x\Delta_x u^x$ and $\mathbf{\Delta}_s^\dagger=\sum_x\Delta_x^\dagger u^x$ we find the Fourier transform as
 \begin{align*}
      \mathcal{F}(\mathbf{\Delta}_s\phi)(k)&=\sum_{y,x}e^{-iky}\,\Delta_x u^x \phi(y)\\
     &=\sum_{x}e^{-ikx}\,\Delta_x \mathcal{F}(\phi)(-k)\\
-    &= \mathbf{\Delta}_s(k)\,\phi(-k)\\
+    &= {\Delta}_s(k)\,\phi(-k)\\
     \mathcal{F}(\mathbf{\Delta}_s^\dagger\psi)(k)&=\sum_{y,x}e^{iky}\,\Delta_x^\dagger u^x \psi(y)\\
     &=\sum_{x}e^{ikx}\,\Delta_x^\dagger \mathcal{F}(\psi)(-k)=\overline{\sum_{x}e^{-ikx}\,\Delta_x} \mathcal{F}(\psi)(-k)\\
-    &= \mathbf{\Delta}_s^\dagger(k)\,\psi(-k)
+    &= {\Delta}_s^\dagger(k)\,\psi(-k)
 \end{align*}
-If we order the space in such a form that $\ket{\psi}=\int_{\mathbb{}}\oplus_k (\psi(k),\phi(-k))$ one can write the Hamiltonian a block diagonal $\mathcal{H}=\oplus_k A_k$ with
+If we order the space in such a form that $\ket{\psi}=\int_{\mathbb{}}\oplus_k (\psi(k),\phi(-k))$ one can write the Hamiltonian as block diagonal $\mathcal{H}=\oplus_k \mathbf{A_k}$ with
 \begin{align*}
-    A_k = \begin{pmatrix}
-        \mathbf{h}(k) & \mathbf{\Delta}_s(k)\\
-        \mathbf{\Delta}_s^\dagger(-k) & \overline{\mathbf{h}}(-k)
+    \mathbf{A_k} = \begin{pmatrix}
+        {h}(k) & {\Delta}_s(k)\\
+        {\Delta}_s^\dagger(-k) & \overline{{h}}(-k)
     \end{pmatrix}
 \end{align*}
+From here one can shift to the second quantized form and lift the operators back into Fock space by introducing the creation and annihilation operators with respect to the basis vectors of $G_k$.
+\begin{align*}
+    &a(\ket{g}\ket{k})=:g_k^p\quad \text{for } \ket{g}\ket{k}\in G_k&&a(\ket{g}\ket{k})=:g_k^h\quad \text{for } \ket{g}\ket{k}\in \overline{G}_k\\
+    &\mathbf{a}_k:=(g_k^p)_{g\in G}&&\mathbf{b}_k:=(g_k^h)_{g\in G}
+\end{align*}
+As the matrices $h(k)$, $\Delta(k)$ are already written in the basis of $G$ one can directly transfer to Fock space by
+\begin{align*}
+    \mathcal{H}=\int_{\Pi_d}^\oplus dk\,\left[ (\mathbf{a}_k^\dagger)^t h(k)\, \mathbf{a}_k + (\mathbf{b}_k^\dagger)^t \overline{h}(k)\, \mathbf{b}_k + (\mathbf{a}_k^\dagger)^t \Delta(k)\,\mathbf{b}_k + (\mathbf{b}_k^\dagger)^t \Delta^\dagger(k)\, \mathbf{a}_k \right]
+\end{align*}
+
+
+
+
+
+
 The dynamical matrix that has to be analyzed with respect to topological properties is still
 \begin{align*}
    H_k&=\begin{pmatrix}

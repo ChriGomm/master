@@ -2369,13 +2369,17 @@
     <bcf:datasource type="file" datatype="bibtex">sources4.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">maffeiTopologicalCharacterizationChiral2018</bcf:citekey>
-    <bcf:citekey order="1" intorder="2">schnyderClassificationTopologicalInsulators2008</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">mondragon-shemTopologicalCriticalityChiralSymmetric2014</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">wilsonTrappingAlkalineEarth2022</bcf:citekey>
-    <bcf:citekey order="3" intorder="2">holzlLongLivedCircularRydberg2024</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">peanoTopologicalEdgeStates2018</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">peanoTopologicalEdgeStates2018</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">prodanBulkBoundaryInvariants2016</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">prodanBulkBoundaryInvariants2016</bcf:citekey>
+    <bcf:citekey order="2" intorder="2">peanoTopologicalEdgeStates2018</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">prodanBulkBoundaryInvariants2016</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">maffeiTopologicalCharacterizationChiral2018</bcf:citekey>
+    <bcf:citekey order="4" intorder="2">schnyderClassificationTopologicalInsulators2008</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">mondragon-shemTopologicalCriticalityChiralSymmetric2014</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">wilsonTrappingAlkalineEarth2022</bcf:citekey>
+    <bcf:citekey order="6" intorder="2">holzlLongLivedCircularRydberg2024</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">peanoTopologicalEdgeStates2018</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">peanoTopologicalEdgeStates2018</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
