@@ -28,33 +28,68 @@ One then can lift this operator into higher particle space as an operator from $
     B&= \bigoplus_{M=\text{max}(K,K-\Delta)}^\infty B^{(M)}
 \end{align*}
 \subsubsection{Second quantization}\label{sec:second_quantization}
-For a family of one-particle states $(\phi_1,\dots,\phi_M)$ one can construct an (anti-)symmetric state $\ket{\phi}$ via
+
+For an orthonormal subset $(\alpha_1,\dots,\alpha_N)\subseteq B$ of a basis of the one-particle space $\mathfrak{h}$ with prevalence-vector $(n_1,\dots,n_N)$, $\sum_{i=1}^N n_i=M$, one can construct a family $\Phi=(\phi_1,\dots,\phi_M)$ of $M$ states by stacking the states together according to their prevalence. From this family an (anti-)symmetric state $\ket{\phi}$ can be created via
+\begin{align}\label{eq:fock_state}
+    \ket{\Phi}&= \frac{\sqrt{M!}}{\sqrt{n_1!\cdots n_N!}}\,P_\pm^M\left( \Phi\right)\notag\\
+    &=\frac{1}{\sqrt{M!\,n_1!\cdots n_N!}}\,\sum_{\sigma\in S_M} \phi_{\sigma(1)}\otimes\cdots\otimes\phi_{\sigma(M)}\\
+    &=:\ket{n_1\phi_1,\dots,n_N\phi_N}\notag
+\end{align}
+One can then introduce creation and annihilation operators for a one-particle state $\psi\in B$ acting on any $M$-particle state by defining
 \begin{align*}
-    \ket{\phi}&= P_\pm^M\left( \phi_1 \otimes \cdots\otimes\phi_M \right)
-\end{align*}
-One can then introduce creation and annihilation operators for a one-particle state $\psi$ acting on any $M$-particle state by defining
-\begin{align*}
-    a^\dagger(\psi)\,\ket{\phi}&= \sqrt{M+1}\,P_\pm^M\left(\psi\otimes \phi_1 \otimes \cdots\otimes\phi_M \right)\\
-    a(\psi)\,\ket{\phi}&= \sqrt{M}\,\braket{\psi|\phi}_\text{partial}
+    a^\dagger(\psi)\,\ket{\Phi}&=\sqrt{M+1}\, \frac{\sqrt{M!}}{\sqrt{n_1!\cdots n_N!}}\,P_\pm^{M+1}\left(\psi\otimes \phi_1 \otimes \cdots\otimes\phi_M \right)\\
+    &=\sqrt{n_\psi+1}\,\ket{n_1\phi_1,\dots,(n_\psi+1)\psi,\dots,n_N\phi_N}\\
+    a(\psi)\,\ket{\Phi}&= \sqrt{M}\,\braket{\psi|\Phi}_\text{partial}=\sqrt{M}\,\frac{\sqrt{M!}}{\sqrt{n_1!\cdots n_N!}}\,n_\psi\,\frac{(M-1)!}{M!}\,P_\pm^{M-1}\left(\phi_1 \otimes \cdots\otimes\phi_{M-1} \right)\\
+    &=\frac{\sqrt{(M-1)!}}{\sqrt{n_1!\cdots (n_\psi-1)!\cdots n_N!}}\,\sqrt{n_\psi}\,P_\pm^{M-1}\left(\phi_1 \otimes \cdots\otimes\phi_{M-1} \right)\\
+    &=\sqrt{n_\psi}\,\ket{n_1\phi_1,\dots,(n_\psi-1)\psi,\dots,n_N\phi_N}
 \end{align*}
 where for a vector $\ket{\alpha}=\alpha_1\otimes\cdots\otimes\alpha_M$ the above scalar product is defined as $$\braket{\psi|\alpha}_\text{partial}=\braket{\psi|\alpha_1}\,\alpha_2\otimes\cdots\otimes\alpha_M.$$
-One can represent the multi-particle Operators in terms of creation and annihilation operators. Therefore one can choose a basis $(e_i)$ for the one-particle space $\mathfrak{h}$ and define $a_i:=a(e_i)$. An operator $A$ on the Fock space, which originates from a single-particle Hamiltonian in the way, which was described above, can then be expressed as 
+The operation $(M+1)!\,P_\pm^{M+1}\left(\psi\otimes \phi_1 \otimes \cdots\otimes\phi_M \right)$ is equivalent to inserting the vector $\psi$ at every position of every tensor product, which is involved in building the state $\ket{\phi}$. 
+In the next step I want to present, how one can represent the multi-particle operators in terms of creation and annihilation operators. Therefore one resorts to the basis of the one-particle space $\mathfrak{h}$ and define $a_i:=a(\phi_i)$. Let us consider a generic operator $A_s=\ket{\phi_\alpha}\bra{\phi_\beta}$ written in bra-ket notation in the single-body space. The lifted operator $A^{(M)}$ on  in the $M$-particle space takes the form
+\begin{align*}
+    A^{(M)}&=\sum_{i=1}^M \mathbb{1}\otimes\cdots\otimes \ket{\phi_\alpha}\bra{\phi_\beta}\otimes\cdots\otimes\mathbb{1}
+\end{align*}
+Its action onto a $M$-particle state has the effect that it takes the partial scalar product of the state with $\phi_\beta$ at all positions, which are, however, equivalent, and correspondingly inserts then at every position of the reduced state, i.e. the now empty positions, the vector $\phi_\alpha$. In other words the action of $A^{(M)}$ is such, that for every summand in \eqref{eq:fock_state} it replaces at every possible position once the vector $\phi_\beta$ by $\phi_\alpha$. If one defines the family $\Phi'$, where one $\phi_\beta$ in $\Phi$ is replaced by a $\phi_\alpha$, the action can therefore be written as 
+\begin{align*}
+    A^{(M)}\ket{\Phi}&\rightarrow\frac{\sqrt{M!}}{\sqrt{n_1!\cdots n_N!}}\,\frac{n_\beta}{M}\,P_\pm^{M-1}\left( \Phi/\{1\cdot\phi_\beta\}\right)\rightarrow \frac{\sqrt{M!}}{\sqrt{n_1!\cdots n_N!}}\,\frac{n_\beta}{M}\,\frac{M!}{(M-1)!}\,P_\pm^{M}\left( \Phi'\right)\\
+    &=\frac{\sqrt{M!}}{\sqrt{n_1!\cdots n_N!}}\,{n_\beta}\,P_\pm^{M}\left( \Phi'\right)=\sqrt{n_\beta\,(n_\alpha+1)}\,\ket{\Phi'}\\
+    &=a_\alpha^\dagger a_\beta\,\ket{\Phi}
+\end{align*}
+In this way one can construct for a generic operator $A_s$ the creation and annihilation operator representation of the lifted Fock space operator as
 \begin{align}\label{eq:fock_single_body}
     A&=\sum_{i,j=1}^{\text{dim}(\mathfrak{h})}\braket{e_i|A_s|e_j}\,a_i^\dagger a_j
 \end{align}
-This is similar to a basis representation for a single body operator, while avoiding to explicitly write the symmetrization overhead. To see this let us introduce an explicit basis of the $M$-particle space. Let the dimension of the single-particle space be $N$ for this purpose. There are $\binom{M+N-1}{N-1}$ possibilities to distribute $M$ particles to $N$ states. A basis of the $M$-particle space then includes all distinguishable (anti-)symmetric permutations of these distributions. 
+This is similar to a basis representation for a single body operator, while avoiding to explicitly write the symmetrization overhead. 
+% To see this let us introduce an explicit basis of the $M$-particle space. Let the dimension of the single-particle space be $N$ for this purpose. There are $\binom{M+N-1}{N-1}$ possibilities to distribute $M$ particles to $N$ states. A basis of the $M$-particle space then includes all distinguishable (anti-)symmetric permutations of these distributions. 
 
-As the operator itself respects the (anti-)symmetry it is advantageous to organize the basis states into the different regions with respect to the $\binom{M+N-1}{N-1}$ state distributions. The operator $A$ can then be organized into blocks that mediate between these subregions, changing the state distribution into one where one state is replaced by another. But this is exactly what the functions $a_i^\dagger a_j$ do.
+% As the operator itself respects the (anti-)symmetry it is advantageous to organize the basis states into the different regions with respect to the $\binom{M+N-1}{N-1}$ state distributions. The operator $A$ can then be organized into blocks that mediate between these subregions, changing the state distribution into one where one state is replaced by another. But this is exactly what the functions $a_i^\dagger a_j$ do.
 
 For the other type of Fock space operators originating from multi-particle operators, one proceeds in the same way. For a function $B$ from the previous section, one can express
 \begin{align*}
-    B= \sum_{i_1=1}^{\text{dim}(\mathfrak{h})}\sum_{i_2=1}^{i_1}\cdots\sum_{i_L}^{i_{L-1}}\sum_{j_1=1}^{\text{dim}(\mathfrak{h})}\sum_{j_2=1}^{j_1}\cdots\sum_{j_K=1}^{j_{K-1}}\braket{P^L_\pm\left(l_{i_1}\otimes\cdots\otimes l_{i_L}\right)|B_{K,L}|P^K_\pm\left(k_{j_1}\otimes\cdots\otimes k_{j_K}\right)} a_{j_1}^\dagger\cdots a_{i_L}^\dagger a_{j_1}\cdots a_{j_K}
+    B&= \sum_{i_1=1}^{\text{dim}(\mathfrak{h})}\sum_{i_2=1}^{i_1}\cdots\sum_{i_L}^{i_{L-1}}\sum_{j_1=1}^{\text{dim}(\mathfrak{h})}\sum_{j_2=1}^{j_1}\cdots\sum_{j_K=1}^{j_{K-1}}\frac{\sqrt{L!\,K!}}{\sqrt{n_{1}!\cdots n_{L}!\,m_{1}!\cdots m_{K}!}}\\\\&\cdot\braket{P^L_\pm\left(l_{i_1}\otimes\cdots\otimes l_{i_L}\right)|B_{K,L}|P^K_\pm\left(k_{j_1}\otimes\cdots\otimes k_{j_K}\right)} a_{j_1}^\dagger\cdots a_{i_L}^\dagger a_{j_1}\cdots a_{j_K}
 \end{align*}
 For an operator $B_{2,0}$ with $K=2$, $L=0$ this takes the explicit form
 \begin{align}\label{eq:fock_2body}
-    B&= \sum_{j_1=1}^{\text{dim}(\mathfrak{h})}\sum_{j_2=1}^{j_1} B_{2,0}\ket{P_\pm^2(k_{j_1}\otimes k_{i_2})}\,a_{i_1}\,a_{i_2}
+    B&= \sum_{j_1=1}^{\text{dim}(\mathfrak{h})}\sum_{j_2=1}^{j_1} \frac{\sqrt{2}}{\sqrt{n_1!\,n_2!}} B_{2,0}\ket{P_\pm^2(k_{j_1}\otimes k_{i_2})}\,a_{i_1}\,a_{i_2}
 \end{align}
-Both \eqref{eq:fock_single_body} and \eqref{eq:fock_2body} can be written in matrix after introducing the vector $\mathbf{a}=(a_1,\dots,a_{\text{dim}(\mathfrak{h})})$ and defining appropriate matrices $\mathbf{A}$ and $\mathbf{B}$.
+In order to validate this for the above example, take the lifted operator $D_2$ with
+\begin{align*}
+    D_2&= \sum_{\alpha,\beta}\bra{\phi_\alpha}\bra{\phi_\beta}\\
+    D^{(M)}&= \frac{1}{\sqrt{M(M-1)}}\,\sum_{\alpha,\beta}\,\sum_{i,j=1;\,i\neq j}^M\bigotimes_{k=1}^M \left[\mathbb{1}+\delta_{k,i}\,(\bra{\phi_\alpha}-\mathbb{1})+\delta_{k,j}\,(\bra{\phi_\beta}-\mathbb{1})\right]
+\end{align*}
+where the factor $1/\sqrt{M(M-1)}$ is necessary to achieve a well defined output state. 
+% For $\phi_\alpha=\phi_\beta$ the operator would look like
+% \begin{align*}
+%     D_2&= \bra{\phi_\alpha}\bra{\phi_\alpha}\\
+%     D^{(M)}&= \frac{1}{\sqrt{M(M-1)}}\,\sum_{i,j=1;\,i\neq j}^M\bigotimes_{k=1}^M \left[\mathbb{1}+\delta_{k,i}\,(\bra{\phi_\alpha}-\mathbb{1})+\delta_{k,j}\,(\bra{\phi_\alpha}-\mathbb{1})\right]
+% \end{align*}
+When acting with $D^{(M)}$ on a state, one can exploit the symmetry property of the state in order simplify the calculation%. For both cases one obtains
+\begin{align*}
+    D^{(M)}\ket{\Phi}&=\half\,\sqrt{M\,(M-1)}\,\sum_{\alpha,\beta}\bra{\phi_\alpha}\otimes\bra{\phi_\beta}\otimes\mathbb{1}\otimes\cdots\otimes\mathbb{1}\ket{\Phi}\\
+    &=\half\,\sum_{\alpha,\beta}\sqrt{M-1}\,\braket{\phi_\alpha|\Phi'}_\text{partial}\quad \quad\quad\text{with }\ket{\Phi'}=\sqrt{M}\,\braket{\phi_\beta|\Phi}_\text{partial}\\
+    &=\half\,\sum_{\alpha,\beta} a_\alpha\,a_\beta\,\ket{\Phi}
+\end{align*}
+Both \eqref{eq:fock_single_body} and \eqref{eq:fock_2body} can be written in matrix form after introducing the vector $\mathbf{a}=(a_1,\dots,a_{\text{dim}(\mathfrak{h})})$ and defining appropriate matrices $\mathbf{A}$ and $\mathbf{B}$.
 \begin{alignat*}{2}
     A = (\mathbf{a}^\dagger)^t\mathbf{A}\,\mathbf{a}\quad\quad&&B = (\mathbf{a}^\dagger)^t\mathbf{B}\,\mathbf{a}
 \end{alignat*}
