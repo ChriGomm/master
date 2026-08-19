@@ -27,15 +27,15 @@ The displacements of the atoms from the tweezer centers  $\{\delta\mathbf{R}_l\}
     \mathcal{H}_I(\{\mathbf{R}_l+\delta\mathbf{R}_l\})&=\sum_n\frac{\partial \mathcal{H}_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,\delta\mathbf{R}_n + \sum_{n,m}U_{n,m}\,\delta\mathbf{R}_n\,\delta\mathbf{R}_m
 \end{align*}
 with
-\begin{align*}
+\begin{align}\label{eq:U-matrix}
     U_{n,m}&=
         \frac12\,\frac{\partial^2 V_{n,m}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\quad\text{if}\:n\neq m\\
     U_{n,n} &= \frac12\,\sum_{j;\,j\neq n}\frac{\partial^2 V_{n,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n^2}
-\end{align*}
+\end{align}
 In order to allow for a quantum mechanical description of the displacements $\delta\mathbf{R}_l$ are treated as operators.
 
 \section{No particle number conservation}
-Even for a bosonic system a topological classification with respect to the Altland-Zirnbauer symmetry classes is possible. As discussed in \secref{sec:BdG_formalism}, the concept of holes has to be introduced by rewriting the Hamiltonian in a BdG form. For this it is, however, necessary  that the Hamiltonian is quadratic in the displacements. The linear term originating from the first order expansion of the interaction potential however breaks this condition. In order to remove this term, the trap centers can be redefined, such that the linear term vanishes. For this purpose the displacement operators are shifted by constant vectors $\{\delta\mathbf{R}_l\}=\{\delta\tilde{\mathbf{R}}_l+\mathbf{\Delta}_l\}$. 
+Even for a bosonic system a topological classification with respect to the Altland-Zirnbauer symmetry classes is possible. As discussed in \secref{sec:BdG formalism}, the concept of holes has to be introduced by rewriting the Hamiltonian in a BdG form. For this it is, however, necessary  that the Hamiltonian is quadratic in the displacements. The linear term originating from the first order expansion of the interaction potential however breaks this condition. In order to remove this term, the trap centers can be redefined, such that the linear term vanishes. For this purpose the displacement operators are shifted by constant vectors $\{\delta\mathbf{R}_l\}=\{\delta\tilde{\mathbf{R}}_l+\mathbf{\Delta}_l\}$. 
 In the following I will treat the 1D case and the interaction is assumed to be of the dipole-dipole type, i.e.
 \begin{align*}
     V_{dd}(\mathbf{r}) &= \frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\left(1-3\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)=\vcentcolon V_0(r)\,f(\hat{\mathbf{r}})=V_0(a)\,\frac{a^3}{r^3}\,f(\hat{\mathbf{r}})\\
@@ -53,7 +53,7 @@ where $\mathbf{P}_i$ are the momentum operators of the atoms. In the second line
 
 Thus the linear term can be removed by choosing the shift vectors $\{\mathbf{\Delta}_l\}$ such that
 \begin{align*}
-    \left(\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i} +\sum_j\,\left( 2\, U_{j,i} + m\omega^2\,\delta_{ij}\right)\,\mathbf{\Delta}_j  \right)= 0 \quad\forall i
+    \left(\frac{\partial \mathcal{H}_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i} +\sum_j\,\left( 2\, U_{j,i} + m\omega^2\,\delta_{ij}\right)\,\mathbf{\Delta}_j  \right)= 0 \quad\forall i
 \end{align*}
 % whereas
 % \begin{align*} \frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i} &= \sum_{n,m;\,n<m}\frac{\partial V_{n,m}(\mathbf{R}_n,\mathbf{R}_m)}{\partial \mathbf{R}_i}\,(\delta_{i=n}+\delta_{i=m})\\
@@ -74,7 +74,7 @@ Here $\tilde{g}$ and $\tilde{U}$ are dimensionless and the the term $m\omega^2 a
 \begin{figure}[H]
     \hspace*{-2cm}
     \includegraphics{pictures/tuning_first_order_to_zero4.pdf}
-    \caption{\textbf{Parameters for negligible first order.} For different values of $m\omega^2$ the parameters $h$ and $\varphi_d$ are tuned such that the first order is negligible. The color code indicates the value of $m\omega^2/V_\text{max}$. The resulting ratio between first and second order is shown in panel a) for all considered values of $m\omega^2/V_\text{max}$ $0.01$, $0.8$, $4$ and $10$. As an example the optimal parameters $h$ and $\varphi_d$ for $m\omega^2/V_\text{max}=4$ are shown in panel b) and c). The maximal shift of the trap center necessary to eliminate the first order is shown in panel e), while panel d) shows that size of the shift is mainly determined by the ratio between $\tilde{g}$ and $W$.}
+    \caption{\textbf{Parameters for negligible first order.} For different values of $m\omega^2$ the parameters $h$ and $\varphi_d$ are tuned such that the first order is negligible. The color code indicates the value of $m\omega^2/V_\text{max}$. The resulting ratio between first and second order is shown in panel a) for all considered values of $m\omega^2/V_\text{max}$ $0.01$, $0.8$, $4$ and $10$. As an example the optimal parameters $h$ and $\varphi_d$ for $m\omega^2/V_\text{max}=4$ are shown in panel b) and c). The maximal shift of the trap center necessary to eliminate the first order is shown in panel e), while panel d) shows that size of the shift is mainly determined by the ratio between $\tilde{g}$ and $W$. For the calculations a chain length of 8 atoms was used.}
     \label{fig:tuning_first_order_to_zero}
 \end{figure}
 \hfill\newpage
@@ -106,37 +106,97 @@ with $\mathbf{a}=(a_1,\dots,a_N,a_1^\dagger,\dots,a_N^\dagger)$ the vector of op
     \end{pmatrix}\\
     \text{with}\quad \bar{U}&= U+m\omega^2.
 \end{align*}
-This allows for a topological characterization of the bosonic system, acording to \cite{peanoTopologicalEdgeStates2018}. A first step is to consider the Heisenberg equations of motion for the operators which read %In order to understand the significance of the constant shift, one has to take into account the physical properties of the system. The Rydberg atoms, which have lifetimes up to $\sim200\,\mu$s, are trapped in optical tweezers of trap frequency up to $\sim2\,$MHz. This implies that one has to implement an Hamiltonian that induces non-trivial dynamics within the lifetimes of the atoms. Responsible for non-trivial dynamics is the U-matrix. Thus the interaction strength has to be at least as big as the trap frequency, i.e. $|U|\geq m\omega^2$. 
+% This allows for a topological characterization of the bosonic system, acording to \cite{peanoTopologicalEdgeStates2018}. A first step is to consider the Heisenberg equations of motion for the operators which read %In order to understand the significance of the constant shift, one has to take into account the physical properties of the system. The Rydberg atoms, which have lifetimes up to $\sim200\,\mu$s, are trapped in optical tweezers of trap frequency up to $\sim2\,$MHz. This implies that one has to implement an Hamiltonian that induces non-trivial dynamics within the lifetimes of the atoms. Responsible for non-trivial dynamics is the U-matrix. Thus the interaction strength has to be at least as big as the trap frequency, i.e. $|U|\geq m\omega^2$. 
 
 
+% \begin{align*}
+%     \frac{d}{dt}\,{a}_j &= i\,([H,{a}_j]) = -i\, \hbar\omega a_j - i\,\frac{\hbar}{2m\omega}\,\sum_n \left(U_{j,n}\,a_n + U_{n,j}\,a_n + U_{j,n}\,a_n^\dagger + U_{n,j}\,a_n^\dagger\right) \\
+%     &= -i\, \hbar\omega a_j -i\,\frac{\hbar}{m\omega}\,\sum_n \left(U_{j,n}\,a_n + U_{j,n}\,a_n^\dagger \right) = -2\,i\,(A\,\vec{a})_j\\
+%     %
+%     \frac{d}{dt}\,{a}^\dagger_j &= i\,([H,{a}^\dagger_j]) = i\, \hbar\omega a_j^\dagger  +i\,\frac{\hbar}{2m\omega}\,\sum_n \left(U_{j,n}\,a_n + U_{n,j}\,a_n + U_{j,n}\,a_n^\dagger + U_{n,j}\,a_n^\dagger\right) \\
+%     &=  2\,i\,(A\,\vec{a})_{j+N}\\
+% \end{align*}
+% This lets one write the equations of motion in a different form
+The dynamical matrix is then given by
 \begin{align*}
-    \frac{d}{dt}\,{a}_j &= i\,([H,{a}_j]) = -i\, \hbar\omega a_j - i\,\frac{\hbar}{2m\omega}\,\sum_n \left(U_{j,n}\,a_n + U_{n,j}\,a_n + U_{j,n}\,a_n^\dagger + U_{n,j}\,a_n^\dagger\right) \\
-    &= -i\, \hbar\omega a_j -i\,\frac{\hbar}{m\omega}\,\sum_n \left(U_{j,n}\,a_n + U_{j,n}\,a_n^\dagger \right) = -2\,i\,(A\,\vec{a})_j\\
-    %
-    \frac{d}{dt}\,{a}^\dagger_j &= i\,([H,{a}^\dagger_j]) = i\, \hbar\omega a_j^\dagger  +i\,\frac{\hbar}{2m\omega}\,\sum_n \left(U_{j,n}\,a_n + U_{n,j}\,a_n + U_{j,n}\,a_n^\dagger + U_{n,j}\,a_n^\dagger\right) \\
-    &=  2\,i\,(A\,\vec{a})_{j+N}\\
-\end{align*}
-This lets one write the equations of motion in a different form
-\begin{align*}
-    \Rightarrow\quad \frac{d}{dt}\,\vec{a} &= -i\,\tilde{H}\,\vec{a}\\
-    \text{where}\quad \tilde{H} &= \frac{\hbar}{m\omega}\,\begin{pmatrix}
+    % \Rightarrow\quad \frac{d}{dt}\,\vec{a} &= -i\, H \,\vec{a}\\
+    % \text{where}\quad 
+   {H} &= \frac{\hbar}{m\omega}\,\begin{pmatrix}
        \bar{U} & U \\
        -U & -\bar{U}
-       \end{pmatrix}=\vcentcolon \begin{pmatrix}
-        h & \Delta\\
-        -\Delta & -h
        \end{pmatrix}
+    %    =\vcentcolon \begin{pmatrix}
+    %     h & \Delta\\
+    %     -\Delta & -h
+    %    \end{pmatrix}
 \end{align*}
-And it is this matrix $\tilde{H}$ that determines the topological properties of the system, since it provides the eigenmodes of the dynamics. $\tilde{H}$ is in the Bogoliubov de Gennes form and a real matrix. Therefore it is time reversal symmetric. Particle-hole symmetry is also fulfilled, as $\tilde{H}^*=-\Sigma_x\,\tilde{H}\,\Sigma_x$ with 
+As it is a real matrix, it is time reversal symmetric. Particle-hole symmetry is also fulfilled, as $ \overline{H}=-\Sigma_x\, H \,\Sigma_x$ with 
 \begin{align*}\Sigma_x=\begin{pmatrix}
     0 & \mathbb{1}\\
     \mathbb{1} & 0
 \end{pmatrix}\end{align*}
-As a consequence it is then also chiral symmetric, as $\tilde{H}=-\Sigma_x\,\tilde{H}\,\Sigma_x$. This puts the system in the BDI symmetry class, which allows for a topological characterization in one dimension. 
-Since $H$ is not hermitian it does not necessarily have only real eigenvalues.For the topological classification to be possible, the Hamiltonian has to be, however, dynamically stable, which means no complex eigenvalues are allowed, as they lead to unbounded dynamics. When looking at the spectrum of the BdG-Hamiltonian over the parameter that lets the first order be neglected, one observes always large imaginary parts. This is seen in \figref{fig:spectrum_BdG}. As a consequence the system is not classifiable by the formalism described in \cite{peanoTopologicalEdgeStates2018}.
+Consequently it is then also chiral symmetric, as $ H =-\Sigma_x\, H \,\Sigma_x$. This puts the system in the BDI symmetry class, which allows for a topological characterization in one dimension. 
+Since $H$ is not hermitian one has to investigate its spectrum for dynamical stability, i.e. no complex eigenenergies are allowed. \figref{fig:spectrum_BdG} shows that for small trapping depth compared to the phonon interactions always large imaginary contributions to the eigenvalues are observed. But for large tweezer strength ($m\omega^2=10\,V_\text{max}$), the imaginary part of the spectrum vanishes and also eigenstates inside of a gap are visible. %This motivates the computation of the system's winding number.
 \begin{figure}[H]
     \hspace*{-2cm}
     \includegraphics{pictures/spectrum_abs_of_tuned_BdG_various_shift_opt.pdf}
-    \caption{\textbf{Spectrum of BdG Hamiltonian for different trap frequencies.}}
+    \caption{\textbf{Spectrum of BdG Hamiltonian for different trap frequencies.} For different strengths of the optical trap the real and imaginary part of the spectrum is plotted. The atom number used for this computation is 8. In the last row the absolute value of the spectra is shown.}
     \label{fig:spectrum_BdG}
+\end{figure}\hfill\newpage
+However by calculating the positive spectrum for larger atom numbers, as depicted in \figref{fig:pos_spectrum_different_chainlengths} one realizes that there is no real gap that withstands an infinite lattice size limit. This indicates that the system does not possess topological states, which can be confirmed by calculating the system's winding number.
+\begin{figure}[h]
+    \hspace*{-2cm}
+    \includegraphics{pictures/spectrum_abs_of_tuned_BdG_various_chainlengths_for_gap_10V.pdf}
+    \caption{\textbf{Positive spectrum of BdG Hamiltonian for different atom numbers.}}
+    \label{fig:pos_spectrum_different_chainlengths}
 \end{figure}
+The first step is to transform the dynamical matrix into momentum space. When recapitulating the momentum space form of the general Bogoliubov-de Gennes Hamiltonian, \eqref{eq:Fourier Hamiltonian}, one can infer the structure of the dynamical matrix as
+\begin{align*}
+   H_k&=\begin{pmatrix}
+        \tilde{U}(k) & U(k)\\
+       - \overline{U(-k) }& -\overline{\tilde{U}(-k)}
+    \end{pmatrix} =\begin{pmatrix}
+        \tilde{U}(k) & U(k)\\
+       - {U(k) }& -{\tilde{U}(k)}
+    \end{pmatrix} 
+\end{align*}
+This form is independent of the explicit shape of $U$ and therefore the potential. By assuming only that $U$ is generated by a second order expansion of a potential with two sublattices, i.e. \eqref{eq:U-matrix}, the form of $H_k$ can be inferred
+\begin{gather*}
+    H_k = \begin{pmatrix}
+        \tilde{U}(k) & U(k)\\
+       - {U(k) }& -{\tilde{U}(k)}
+    \end{pmatrix} \\
+    \tilde{U}_k = \begin{pmatrix}
+        b(k) & d(k)\\
+        \bar{d}(k)& b(k)
+    \end{pmatrix}\quad U_k = \begin{pmatrix}
+        c(k) & d(k)\\
+        \bar{d}(k) & c(k)
+    \end{pmatrix}
+\end{gather*}
+Exploiting the symmetric structure of the matrix one can write
+\begin{align*}
+    H_k &= \tau_z \otimes \tilde{U}_k + i\tau_y \otimes U_k\\
+    \tilde{U}_k &=  b(k)\,\sigma_0  + \text{Re}[d(k)]\,\sigma_x -\text{Im}[d(k)]\,\sigma_y\\
+    U_k &=  c(k)\,\sigma_0  + \text{Re}[d(k)]\,\sigma_x -\text{Im}[d(k)]\,\sigma_y\\
+    \Rightarrow\quad H_k &= b(k)\,\tau_z \otimes \sigma_0 + c(k)\,i\tau_y \otimes \sigma_0 + \text{Re}[d(k)]\,(\tau_z+i\tau_y) \otimes \sigma_x - \text{Im}[d(k)]\,(\tau_z+i\tau_y) \otimes \sigma_y
+\end{align*}
+where $\tau_\alpha$, $\sigma_\alpha$ $\alpha\in\{0,x,y,z\}$ are the usual Pauli matrices. Since every $4\times4$ matrix $X$ can be written in the form
+\begin{align*}
+    X = \sum_{\alpha,\beta\in\{0,x,y,z\}}x_{\alpha,\beta}\, \tau_\alpha \otimes \sigma_\beta
+\end{align*}
+one can conclude that the only matrix commuting with $H_k$ is the identity, i.e $[X,H_k]=0$ $\Rightarrow X=\mathbb{1}$. As no two different pauli matrices commute, the occurrence of $\tau_z$ and $\tau_y$ implies $x_{\alpha,\beta}=0$ for $\alpha\neq0$, similarly the occurrence of $\sigma_x$ and $\sigma_y$ implies $x_{\alpha,\beta}=0$ for $\beta\neq0$. Thus $H_k$ is irreducible as it has no unitary symmetries. This allows to perform a topological classification. Exploiting the chiral symmetry, one can change to a basis where the chiral transformation $\Sigma_x^k=(\mathbb{1},-\mathbb{1})$. In this basis $H_k$ takes the form
+\begin{gather*}
+    H_k' = \begin{pmatrix}
+        0 & S_k\\
+        T_k & 0
+    \end{pmatrix}\\
+    S_k = \begin{pmatrix}
+        b(k)-c(k) & 0\\
+        0 & b(k)-c(k)
+    \end{pmatrix}\quad T_k = \begin{pmatrix}
+        b(k)+c(k) & 2\,d(k)\\
+        2\,\bar{d}(k) & b(k) + c(k)
+    \end{pmatrix}
+\end{gather*}
+As both matrices $S_k$ and $T_k$ are hermitian the Hamiltonian has vanishing winding number, indicating a topological trivial phase. This is confirmed when looking at the eigenstates inside the gap of \figref{fig:spectrum_BdG}, when $m\omega^2=10\,V_\text{max}$. I want to mention that if there are no pairing terms, i.e. $\mathbf{\Delta}=0$, the Hamiltonian is block diagonal and therefore not irreducible. In this case the introduction of holes is redundant and the winding number can be calculated from a single block, which can lead to non-vanishing winding numbers. It is thereby shown that the pairing terms prohibit the occurrence of topologically non-trivial phases in 1D for motional degrees of freedom stemming from a second order tailor expansion of an interaction potential.

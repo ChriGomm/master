@@ -125,6 +125,70 @@
       \verb https://pubs.aip.org/jmp/article/59/3/031901/396504/Topological-edge-states-for-disordered-bosonic
       \endverb
     \endentry
+    \entry{ryuTopologicalInsulatorsSuperconductors2010}{article}{}
+      \name{author}{4}{}{%
+        {{hash=e98e80616d8c35e9d2fbbb928838ec72}{%
+           family={Ryu},
+           familyi={R\bibinitperiod},
+           given={Shinsei},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a67373224eafb9e6200fd3ab19f3b6b6}{%
+           family={Schnyder},
+           familyi={S\bibinitperiod},
+           given={Andreas\bibnamedelima P},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=7b57c51242955fc185759690e6088d41}{%
+           family={Furusaki},
+           familyi={F\bibinitperiod},
+           given={Akira},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dc858600b1f8b10b087f1d4e46c6cff7}{%
+           family={Ludwig},
+           familyi={L\bibinitperiod},
+           given={Andreas\bibnamedelimb W\bibnamedelima W},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1da944322c22e1c9fba79c4d7f594b3}
+      \strng{fullhash}{634d9f24dd08e8c9cecd798c384a7851}
+      \strng{bibnamehash}{634d9f24dd08e8c9cecd798c384a7851}
+      \strng{authorbibnamehash}{634d9f24dd08e8c9cecd798c384a7851}
+      \strng{authornamehash}{f1da944322c22e1c9fba79c4d7f594b3}
+      \strng{authorfullhash}{634d9f24dd08e8c9cecd798c384a7851}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{17}
+      \field{issn}{1367-2630}
+      \field{journaltitle}{New Journal of Physics}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{6}
+      \field{shortjournal}{New J. Phys.}
+      \field{shorttitle}{Topological Insulators and Superconductors}
+      \field{title}{Topological Insulators and Superconductors: Tenfold Way and Dimensional Hierarchy}
+      \field{urlday}{19}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{12}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{065010}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1367-2630/12/6/065010
+      \endverb
+      \verb{file}
+      \verb /home/christian/Zotero/storage/GF2N9LQC/Ryu et al. - 2010 - Topological insulators and superconductors tenfold way and dimensional hierarchy.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://iopscience.iop.org/article/10.1088/1367-2630/12/6/065010
+      \endverb
+      \verb{url}
+      \verb https://iopscience.iop.org/article/10.1088/1367-2630/12/6/065010
+      \endverb
+    \endentry
     \entry{maffeiTopologicalCharacterizationChiral2018}{article}{}
       \name{author}{5}{}{%
         {{hash=32d46a789950e4548b2a49c1fc0d6466}{%
@@ -159,8 +223,8 @@
       \strng{authorbibnamehash}{a1e72475a4183353a70069961c9d5f8d}
       \strng{authornamehash}{035bcba2a623d6271544f2147efb4345}
       \strng{authorfullhash}{a1e72475a4183353a70069961c9d5f8d}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We study chiral models in one spatial dimension, both static and periodically driven. We demonstrate that their topological properties may be read out through the long time limit of a bulk observable, the mean chiral displacement. The derivation of this result is done in terms of spectral projectors, allowing for a detailed understanding of the physics. We show that the proposed detection converges rapidly and it can be implemented in a wide class of chiral systems. Furthermore, it can measure arbitrary winding numbers and topological boundaries, it applies to all non-interacting systems, independently of their quantum statistics, and it requires no additional elements, such as external fields, nor filled bands.}
@@ -226,8 +290,8 @@
       \strng{authorbibnamehash}{e796206db38de31c55877e4f5af154bb}
       \strng{authornamehash}{b2afe9d1439255b39dd52994c8a925b6}
       \strng{authorfullhash}{e796206db38de31c55877e4f5af154bb}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We systematically study topological phases of insulators and superconductors (or superfluids) in three spatial dimensions. We find that there exist three-dimensional (3D) topologically nontrivial insulators or superconductors in five out of ten symmetry classes introduced in seminal work by Altland and Zirnbauer within the context of random matrix theory, more than a decade ago. One of these is the recently introduced ℤ2 topological insulator in the symplectic (or spin-orbit) symmetry class. We show that there exist precisely four more topological insulators. For these systems, all of which are time-reversal invariant in three dimensions, the space of insulating ground states satisfying certain discrete symmetry properties is partitioned into topological sectors that are separated by quantum phase transitions. Three of the above five topologically nontrivial phases can be realized as time-reversal invariant superconductors. In these the different topological sectors are characterized by an integer winding number defined in momentum space. When such 3D topological insulators are terminated by a two-dimensional surface, they support a number (which may be an arbitrary nonvanishing even number for singlet pairing) of Dirac fermion (Majorana fermion when spin-rotation symmetry is completely broken) surface modes which remain gapless under arbitrary perturbations of the Hamiltonian that preserve the characteristic discrete symmetries, including disorder. In particular, these surface modes completely evade Anderson localization from random impurities. These topological phases can be thought of as three-dimensional analogs of well-known paired topological phases in two spatial dimensions such as the spinless chiral (𝑝𝑥±𝑖⁢𝑝𝑦)-wave superconductor (or Moore-Read Pfaffian state). In the corresponding topologically nontrivial (analogous to “weak pairing”) and topologically trivial (analogous to “strong pairing”) 3D phases, the wave functions exhibit markedly distinct behavior. When an electromagnetic U(1) gauge field and fluctuations of the gap functions are included in the dynamics, the superconducting phases with nonvanishing winding number possess nontrivial topological ground-state degeneracies.}
@@ -288,8 +352,8 @@
       \strng{authorbibnamehash}{f62d58136d2ef18297b7d6fe8e7fd5d8}
       \strng{authornamehash}{7364dc6776cb42eab85e1574966924c3}
       \strng{authorfullhash}{f62d58136d2ef18297b7d6fe8e7fd5d8}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{23}
@@ -369,8 +433,8 @@
       \strng{authorbibnamehash}{33cd3f701f6d426ec8512fde2c5b54dc}
       \strng{authornamehash}{f5359d386575574fadeee9c5f5006a8b}
       \strng{authorfullhash}{33cd3f701f6d426ec8512fde2c5b54dc}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Neutral atom qubits with Rydberg-mediated interactions are a leading platform for developing large-scale coherent quantum systems. In the majority of experiments to date, the Rydberg states are not trapped by the same potential that confines ground state atoms, resulting in atom loss and constraints on the achievable interaction time. In this Letter, we demonstrate that the Rydberg states of an alkaline earth atom, ytterbium, can be stably trapped by the same red-detuned optical tweezer that also confines the ground state, by leveraging the polarizability of the Yb+ ion core. Using the previously unobserved 3𝑆1 series, we demonstrate trapped Rydberg atom lifetimes exceeding 100 𝜇⁢s, and observe no evidence of auto- or photoionization from the trap light for these states. We measure a coherence time of 𝑇2=59 𝜇⁢s between two Rydberg levels, exceeding the 28 𝜇⁢s lifetime of untrapped Rydberg atoms under the same conditions. These results are promising for extending the interaction time of Rydberg atom arrays for quantum simulation and computing, and are vital to capitalize on the extended Rydberg lifetimes in circular states or cryogenic environments.}
@@ -439,8 +503,8 @@
       \strng{authorbibnamehash}{781233eb074e96e0be80bb39c828b079}
       \strng{authornamehash}{9bd01344696713c0f1c232d1279dbc59}
       \strng{authorfullhash}{781233eb074e96e0be80bb39c828b079}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Coherence time and gate fidelities in Rydberg atom quantum simulators and computers are fundamentally limited by the Rydberg state lifetime. Circular Rydberg states are highly promising candidates to overcome this limitation by orders of magnitude, as they can be effectively protected from decay due to their maximum angular momentum. We report the first realization of alkaline-earth circular Rydberg atoms trapped in optical tweezers, which provide unique and novel control possibilities due to the optically active ionic core. Specifically, we demonstrate creation of very high-𝑛 (𝑛 =79) circular states of 88Sr. We measure lifetimes as long as 2.55 ms at room temperature, which are achieved via cavity-assisted suppression of black-body radiation. We show coherent control of a microwave qubit encoded in circular states of nearby manifolds, and characterize the qubit coherence time via Ramsey and spin-echo spectroscopy. Finally, circular-state tweezer trapping exploiting the Sr+ core polarizability is quantified via measurements of the trap-induced light shift on the qubit. Our work opens routes for quantum simulations with circular Rydberg states of divalent atoms, exploiting the emergent toolbox associated with the optically active core ion.}
