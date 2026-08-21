@@ -3,7 +3,8 @@ The possibility of trapping atoms in optical tweezers and arranging them in arbi
 
 \section{Parameter regimes}
 Important for the presence or absence of motional excitation number conservation is the ratio of interaction strength $V$ to trap depth $\omega$. The lifetime of the Rydberg states $T$, however, sets a lower bound on the interaction strength, as the dynamics induced by the interaction has to be faster than the lifetime of the Rydberg state, in order to be observed. For the regime, in which the motional excitation number is conserved, the trap depth has to be much larger than the interaction which in turn has to be much larger than this lower bound. In the following I will discuss the relevant energy scales and show that both regimes can be implemented in Rydberg atom arrays.
-The lifetimes for conventional Rydberg states can reach up to several hundred $\mu$s. For Circular Rydberg states the lifetimes can reach even a few ms. In both cases the trap depth ($\omega$) can easily have a few MHz \cite{wilsonTrappingAlkalineEarth2022,holzlLongLivedCircularRydberg2024}, which sets the lower bound for the interaction strength $V>>1/T\sim1\,$kHz. With the trap depth being in the MHz range, the conditions of conserved motional excitation number can be easily met, as the interactions between Rydberg atoms can be tuned in wide range from kHz to GHz. Due to this large flexibility in the interaction strength, also the complementary regime of non-conserved motional excitation number can be realized. In the following I will derive the effective Hamiltonian for the motional modes.
+
+The lifetimes for conventional Rydberg states can reach up to several hundred $\mu$s. For Circular Rydberg states the lifetimes can reach even a few ms. In both cases the trap depth ($\omega$) can easily have values of a few MHz \cite{wilsonTrappingAlkalineEarth2022,holzlLongLivedCircularRydberg2024}. Correspondingly the lower bound for the interaction strength is located at $V>>1/T\sim1\,$kHz. With the trap depth being in the MHz range, the conditions of conserved motional excitation number can be easily met, as the interactions between Rydberg atoms can be tuned in wide range from kHz to GHz. Due to this large flexibility in the interaction strength, also the complementary regime of non-conserved motional excitation number can be realized. In the following I will derive the effective Hamiltonian for the motional modes.
 
 
 \section{Model}
@@ -24,14 +25,16 @@ The $V_{i,j}$ are formally functions of all positions $\{{\mathbf{R}}_l\}$, i.e 
 \end{align*}
 The displacements of the atoms from the tweezer centers  $\{\delta\mathbf{R}_l\}$ are assumed to be small compared to the distance between the tweezers, which justifies a Taylor expansion of the interaction potential to second order. As shown in \appref{appendix:derivation_Hamiltonian} this leads to an interaction Hamiltonian of the form
 \begin{align*}
-    \mathcal{H}_I(\{\mathbf{R}_l+\delta\mathbf{R}_l\})&=\sum_n\frac{\partial \mathcal{H}_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n}\,\delta\mathbf{R}_n + \sum_{n,m}U_{n,m}\,\delta\mathbf{R}_n\,\delta\mathbf{R}_m
+    \mathcal{H}_I(\{\mathbf{R}_l+\delta\mathbf{R}_l\})&=\sum_n\frac{\partial \mathcal{H}_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i}\,\delta\mathbf{R}_i + \sum_{i,j}U_{i,j}\,\delta\mathbf{R}_i\,\delta\mathbf{R}_j
 \end{align*}
 with
-\begin{align}\label{eq:U-matrix}
-    U_{n,m}&=
-        \frac12\,\frac{\partial^2 V_{n,m}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n\partial\mathbf{R}_m}\quad\text{if}\:n\neq m\\
-    U_{n,n} &= \frac12\,\sum_{j;\,j\neq n}\frac{\partial^2 V_{n,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_n^2}
-\end{align}
+\begin{equation}\label{eq:U-matrix}
+\begin{aligned}
+    U_{i,j}&=
+        \frac12\,\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i\partial\mathbf{R}_j}\quad\text{if}\:i\neq j\\
+    U_{i,i} &= \frac12\,\sum_{j;\,j\neq i}\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i^2}
+\end{aligned}
+\end{equation}
 In order to allow for a quantum mechanical description of the displacements $\delta\mathbf{R}_l$ are treated as operators.
 
 \section{No particle number conservation}
@@ -64,13 +67,13 @@ Thus the linear term can be removed by choosing the shift vectors $\{\mathbf{\De
 By defining the following dimensionless quantities
 \begin{align*}
     \tilde{g}_i&\vcentcolon=\frac{a}{V_0(a)}\,\frac{\partial H_I(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i}\\
-    \tilde{U}_{i,j}&\vcentcolon=\frac{a^2}{V_0(a)}\, 2\, U_{j,i} 
+    {U}_{i,j}'&\vcentcolon=\frac{a^2}{V_0(a)}\, 2\, U_{j,i} 
 \end{align*}
 the condition for the shift can be written as
 \begin{align*}
-     \frac{V_0(a)}{a}\,G_i\vcentcolon=\frac{V_0(a)}{a}\,\left(\tilde{g}_i +\sum_jW_{ij}\,\frac{{\Delta}_j}{a}  \right)\vcentcolon=\frac{V_0(a)}{a}\,\left(\tilde{g}_i +\sum_j\,\left( \tilde{U}_{j,i} + \frac{m\omega^2 a^2}{V_0(a)}\,\delta_{ij}\right)\,\frac{{\Delta}_j}{a}  \right)= 0 \quad\forall i
+     \frac{V_0(a)}{a}\,G_i\vcentcolon=\frac{V_0(a)}{a}\,\left(\tilde{g}_i +\sum_jW_{ij}\,\frac{{\Delta}_j}{a}  \right)\vcentcolon=\frac{V_0(a)}{a}\,\left(\tilde{g}_i +\sum_j\,\left( {U}_{j,i}' + \frac{m\omega^2 a^2}{V_0(a)}\,\delta_{ij}\right)\,\frac{{\Delta}_j}{a}  \right)= 0 \quad\forall i
 \end{align*}
-Here $\tilde{g}$ and $\tilde{U}$ are dimensionless and the the term $m\omega^2 a^2/[V_0(a)\,\text{max}(\tilde{U})]=\vcentcolon m\omega^2/V_\text{max}$ chosen of order $0.01$-$10$. Now I use the two free parameters $h$ and the angle $\varphi_d$ of the dipole moment $\hat{\mathbf{d}}$ to set $G_i$ close to zero for different values of $b$. Close to zero means here that max$(|G_i|)$ compared to $\sqrt{\hbar/(2m\omega)}\,\text{max}(\tilde{U})/a$ is small. Here $\sqrt{\hbar/(2m\omega)}/a\sim10^{-3}$ is the displacement from a single motional excitation in units of $a$.
+Here $\tilde{g}$ and ${U}'$ are dimensionless and the the term $m\omega^2 a^2/[V_0(a)\,\text{max}(U')]=\vcentcolon m\omega^2/V_\text{max}$ chosen of order $0.01$-$10$. Now I use the two free parameters $h$ and the angle $\varphi_d$ of the dipole moment $\hat{\mathbf{d}}$ to set $G_i$ close to zero for different values of $b$. Close to zero means here that max$(|G_i|)$ compared to $\sqrt{\hbar/(2m\omega)}\,\text{max}(U')/a$ is small. Here $\sqrt{\hbar/(2m\omega)}/a\sim10^{-3}$ is the displacement from a single motional excitation in units of $a$.
 \begin{figure}[H]
     \hspace*{-2cm}
     \includegraphics{pictures/tuning_first_order_to_zero4.pdf}
@@ -90,12 +93,12 @@ Here $\tilde{g}$ and $\tilde{U}$ are dimensionless and the the term $m\omega^2 a
 \end{align*}
 In second quantized from where I write the momentum and displacement operators in terms of creation and annihilation operators
 \begin{align*}
-    \delta\tilde{\mathbf{R}}_n &= \sqrt{\frac{\hbar}{2m\omega}}\,(a_n + a_n^\dagger)\\
-    \mathbf{P}_n &= i\,\sqrt{\frac{\hbar m\omega}{2}}\,(a_n^\dagger - a_n)
+    \delta\tilde{\mathbf{R}}_i &= \sqrt{\frac{\hbar}{2m\omega}}\,(a_i + a_i^\dagger)\\
+    \mathbf{P}_i &= i\,\sqrt{\frac{\hbar m\omega}{2}}\,(a_i^\dagger - a_i)
 \end{align*} 
 the total Hamiltonian reads
 \begin{align*}
-    \mathcal{H} &= \sum_n \hbar\omega\,a_n^\dagger a_n +\frac{\hbar}{2m\omega}\, \sum_{n,m} U_{n,m}\,\left(a_n\,a_m + a_n^\dagger a_m + a_n\,a_m^\dagger + a_n^\dagger a_m^\dagger \right)\\
+    \mathcal{H} &= \sum_i \hbar\omega\,a_i^\dagger a_i +\frac{\hbar}{2m\omega}\, \sum_{i,j} U_{i,j}\,\left(a_i\,a_j + a_i^\dagger a_j + a_i\,a_j^\dagger + a_i^\dagger a_j^\dagger \right)\\
     &= \mathbf{a}^\dagger\,A\,\mathbf{a}
 \end{align*}
 with $\mathbf{a}=(a_1,\dots,a_N,a_1^\dagger,\dots,a_N^\dagger)$ the vector of operators and a coupling matrix $A$, which establishes the BdG form of the Hamiltonian and has itself the following structure
@@ -143,13 +146,14 @@ Since $H$ is not hermitian one has to investigate its spectrum for dynamical sta
     \caption{\textbf{Spectrum of BdG Hamiltonian for different trap frequencies.} For different strengths of the optical trap the real and imaginary part of the spectrum is plotted. The atom number used for this computation is 8. In the last row the absolute value of the spectra is shown.}
     \label{fig:spectrum_BdG}
 \end{figure}\hfill\newpage
-However by calculating the positive spectrum for larger atom numbers, as depicted in \figref{fig:pos_spectrum_different_chainlengths} one realizes that there is no real gap that withstands an infinite lattice size limit. This indicates that the system does not possess topological states, which can be confirmed by calculating the system's winding number.
+However by calculating the positive spectrum for larger atom numbers, as depicted in \figref{fig:pos_spectrum_different_chainlengths} one realizes that there is no real gap that withstands an infinite lattice size limit. This indicates that the system does not possess topological states, which can be affirmed by calculating the system's winding number, under the approximation that the periodicity breaking due to the small shifts of the trap center can be neglected.
 \begin{figure}[h]
     \hspace*{-2cm}
     \includegraphics{pictures/spectrum_abs_of_tuned_BdG_various_chainlengths_for_gap_10V.pdf}
     \caption{\textbf{Positive spectrum of BdG Hamiltonian for different atom numbers.}}
     \label{fig:pos_spectrum_different_chainlengths}
 \end{figure}
+
 The first step is to transform the dynamical matrix into momentum space. When recapitulating the momentum space form of the general Bogoliubov-de Gennes Hamiltonian, \eqref{eq:Fourier Hamiltonian}, one can infer the structure of the dynamical matrix as
 \begin{align*}
    H_k&=\begin{pmatrix}
@@ -160,7 +164,7 @@ The first step is to transform the dynamical matrix into momentum space. When re
        - {U(k) }& -{\tilde{U}(k)}
     \end{pmatrix} 
 \end{align*}
-This form is independent of the explicit shape of $U$ and therefore the potential. By assuming only that $U$ is generated by a second order expansion of a potential with two sublattices, i.e. \eqref{eq:U-matrix}, the form of $H_k$ can be inferred
+This form is independent of the explicit shape of $U$ and the potential. By assuming only that $U$ is generated by a second order expansion of a potential with two sublattices, i.e. \eqref{eq:U-matrix}, the form of $H_k$ can be inferred.
 \begin{gather*}
     H_k = \begin{pmatrix}
         \tilde{U}(k) & U(k)\\
@@ -185,12 +189,20 @@ where $\tau_\alpha$, $\sigma_\alpha$ $\alpha\in\{0,x,y,z\}$ are the usual Pauli 
 \begin{align*}
     X = \sum_{\alpha,\beta\in\{0,x,y,z\}}x_{\alpha,\beta}\, \tau_\alpha \otimes \sigma_\beta
 \end{align*}
-one can conclude that the only matrix commuting with $H_k$ is the identity, i.e $[X,H_k]=0$ $\Rightarrow X=\mathbb{1}$. As no two different pauli matrices commute, the occurrence of $\tau_z$ and $\tau_y$ implies $x_{\alpha,\beta}=0$ for $\alpha\neq0$, similarly the occurrence of $\sigma_x$ and $\sigma_y$ implies $x_{\alpha,\beta}=0$ for $\beta\neq0$. Thus $H_k$ is irreducible as it has no unitary symmetries. This allows to perform a topological classification. Exploiting the chiral symmetry, one can change to a basis where the chiral transformation $\Sigma_x^k=(\mathbb{1},-\mathbb{1})$. In this basis $H_k$ takes the form
+one can conclude that the only matrix commuting with $H_k$ is the identity, i.e $[X,H_k]=0$ $\Rightarrow X=\mathbb{1}$. As no two different pauli matrices commute, the occurrence of $\tau_z$ and $\tau_y$ implies $x_{\alpha,\beta}=0$ for $\alpha\neq0$, similarly the occurrence of $\sigma_x$ and $\sigma_y$ implies $x_{\alpha,\beta}=0$ for $\beta\neq0$. Thus $H_k$ is irreducible as it has no unitary symmetries. This allows to perform a topological classification. It is worth to mention that in the general form it can even be assumed that $b(k)$, $c(k)$ and $d(k)$ are symmetric matrices which couple modes of different directional displacement $x$, $y$, $z$. It has to be, however, assumed that these matrices are irreducible. With this requirement the irreducibility of the dynamical matrix remains intact. 
+
+Exploiting the chiral symmetry, one can change to a basis where the chiral transformation $\Sigma_x^k=(\mathbb{1},-\mathbb{1})$. In this basis $H_k$ takes the form
 \begin{gather*}
     H_k' = \begin{pmatrix}
         0 & S_k\\
         T_k & 0
-    \end{pmatrix}\\
+    \end{pmatrix}= \half\,\begin{pmatrix}
+        \mathbb{1} & \mathbb{1}\\
+        \mathbb{1} & -\mathbb{1}
+    \end{pmatrix}\,H_k\,\begin{pmatrix}
+        \mathbb{1} & \mathbb{1}\\
+        \mathbb{1} & -\mathbb{1}
+    \end{pmatrix}\\\
     S_k = \begin{pmatrix}
         b(k)-c(k) & 0\\
         0 & b(k)-c(k)
@@ -198,5 +210,15 @@ one can conclude that the only matrix commuting with $H_k$ is the identity, i.e 
         b(k)+c(k) & 2\,d(k)\\
         2\,\bar{d}(k) & b(k) + c(k)
     \end{pmatrix}
-\end{gather*}
-As both matrices $S_k$ and $T_k$ are hermitian the Hamiltonian has vanishing winding number, indicating a topological trivial phase. This is confirmed when looking at the eigenstates inside the gap of \figref{fig:spectrum_BdG}, when $m\omega^2=10\,V_\text{max}$. I want to mention that if there are no pairing terms, i.e. $\mathbf{\Delta}=0$, the Hamiltonian is block diagonal and therefore not irreducible. In this case the introduction of holes is redundant and the winding number can be calculated from a single block, which can lead to non-vanishing winding numbers. It is thereby shown that the pairing terms prohibit the occurrence of topologically non-trivial phases in 1D for motional degrees of freedom stemming from a second order tailor expansion of an interaction potential.
+\end{gather*}% This is confirmed when looking at the eigenstates inside the gap of \figref{fig:spectrum_BdG}, when $m\omega^2=10\,V_\text{max}$.
+As both matrices $S_k$ and $T_k$ are hermitian the Hamiltonian has vanishing winding number, indicating a topological trivial phase. The structure of $S_k$ and $T_k$ remains the same for higher dimensional displacements. I want to mention that if there are no pairing terms, i.e. $\mathbf{\Delta}=0$, the Hamiltonian is block diagonal and therefore not irreducible. In this case the introduction of holes is redundant and the winding number can be calculated from a single block, which can lead to non-vanishing winding numbers. It is thereby shown that the pairing terms prohibit the occurrence of topologically non-trivial phases in 1D for motional degrees of freedom stemming from a second order tailor expansion of an interaction potential.
+
+
+\section{Excitation conservation}
+In this section I want to discuss the case, where the trapping strength dominates over the the interaction between the atoms, i.e. $m\omega^2>>\text{max}(U)$. In this regime the creation of additional excitations through the interaction channel is suppressed and can be neglected. As a consequence the Hamiltonian can be projected onto a subspace of fixed excitation number, which is equivalent to a first order Schrieffer-Wolff transform. The result is that the terms that change the motional excitation number vanish and the Hamiltonian takes the form
+\begin{align*}
+    \mathcal{H} &= \sum_i \hbar\omega\,a_i^\dagger a_i +\frac{\hbar}{2m\omega}\, \sum_{i,j} U_{i,j}\,\left( a_i^\dagger a_j + a_i\,a_j^\dagger  \right)\\
+    &=\frac{\hbar}{m\omega}\, \sum_{i,j}\,\left( \delta_{i,j}\,m\omega^2 + U_{i,j} \right)\,a_i^\dagger a_j\\
+    &= (\mathbf{a}^\dagger)^t\,A\,\mathbf{a}\qquad\text{with }A=\frac{\hbar}{m\omega}\,\left( \delta_{i,j}\,m\omega^2 + U_{i,j} \right)_{i,j}
+\end{align*}
+Again the vector of annihilation operators is introduced $\mathbf{a}=(a_1,\dots,a_N)$, this time for the particle space only. 
