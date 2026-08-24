@@ -181,16 +181,74 @@ This form is independent of the explicit shape of $U$ and the potential. By assu
 Exploiting the symmetric structure of the matrix one can write
 \begin{align*}
     H_k &= \tau_z \otimes \tilde{U}_k + i\tau_y \otimes U_k\\
-    \tilde{U}_k &=  b(k)\,\sigma_0  + \text{Re}[d(k)]\,\sigma_x -\text{Im}[d(k)]\,\sigma_y\\
-    U_k &=  c(k)\,\sigma_0  + \text{Re}[d(k)]\,\sigma_x -\text{Im}[d(k)]\,\sigma_y\\
+    \tilde{U}_k &=  \sigma_0\,b(k)  + \sigma_x\,\text{Re}[d(k)] -\sigma_y\,\text{Im}[d(k)]\\
+    U_k &=  \sigma_0\,c(k)  + \sigma_x\,\text{Re}[d(k)] -\sigma_y\,\text{Im}[d(k)]\\
     \Rightarrow\quad H_k &= b(k)\,\tau_z \otimes \sigma_0 + c(k)\,i\tau_y \otimes \sigma_0 + \text{Re}[d(k)]\,(\tau_z+i\tau_y) \otimes \sigma_x - \text{Im}[d(k)]\,(\tau_z+i\tau_y) \otimes \sigma_y
 \end{align*}
-where $\tau_\alpha$, $\sigma_\alpha$ $\alpha\in\{0,x,y,z\}$ are the usual Pauli matrices. Since every $4\times4$ matrix $X$ can be written in the form
+where $\tau_\alpha$, $\sigma_\alpha$ $\alpha\in\{0,x,y,z\}$ are the usual Pauli matrices. In these expressions $b$, $c$, $d$ can be matrices treating the different directions of displacements from the trap center. The tensor product is not written explicitly in these cases.
+Writing an arbitrary matrix in the form
 \begin{align*}
-    X = \sum_{\alpha,\beta\in\{0,x,y,z\}}x_{\alpha,\beta}\, \tau_\alpha \otimes \sigma_\beta
+    X&= \mathbb{1}\otimes A + \tau_x \otimes B + \tau_y \otimes C + \tau_z \otimes D
 \end{align*}
-one can conclude that the only matrix commuting with $H_k$ is the identity, i.e $[X,H_k]=0$ $\Rightarrow X=\mathbb{1}$. As no two different pauli matrices commute, the occurrence of $\tau_z$ and $\tau_y$ implies $x_{\alpha,\beta}=0$ for $\alpha\neq0$, similarly the occurrence of $\sigma_x$ and $\sigma_y$ implies $x_{\alpha,\beta}=0$ for $\beta\neq0$. Thus $H_k$ is irreducible as it has no unitary symmetries. This allows to perform a topological classification. It is worth to mention that in the general form it can even be assumed that $b(k)$, $c(k)$ and $d(k)$ are symmetric matrices which couple modes of different directional displacement $x$, $y$, $z$. It has to be, however, assumed that these matrices are irreducible. With this requirement the irreducibility of the dynamical matrix remains intact. 
+one can compute the commutation relation by using
+\begin{align*}
+    \left[ O\otimes P, R\otimes S \right]&=\half \,[O,R]\otimes \{P,S\}+ \half\,\{O,P\}\otimes [R,S]
+\end{align*}
+\begin{align*}
+    [H_k,X]&= \left[\left( \tau_z \otimes \tilde{U} + i \tau_y\otimes U\right)\;,\; \left(\mathbb{1} \otimes A + \tau_x \otimes B + \tau_y \otimes C + \tau_z \otimes D \right)\right] \\
+&= \tau_z \otimes [\tilde{U}, A] + i \tau_y \otimes [U, A] + i \tau_y \otimes \{\tilde{U}, B\} + \tau_z \otimes \{U, B\} \\
+&\quad - i \tau_x \otimes \{\tilde{U}, C\} + i \mathbb{1} \otimes [U, C] + \mathbb{1} \otimes [\tilde{U}, D] - \tau_x \otimes \{U, D\} \\
+&= \mathbb{1} \otimes ( i[U, C] + [\tilde{U}, D] ) - \tau_x \otimes ( i\{\tilde{U}, C\} + \{U, D\} ) \\
+&\quad + \tau_y \otimes ( i[U, A] + i\{\tilde{U}, B\} ) + \tau_z \otimes ( [\tilde{U}, A] + \{U, B\} )
+\end{align*}
+All of the summands are independent of each other, as are the pauli matrices. Therefore every summand has to vanish itself. To show that this is true I use the similarity of $\tilde{U}$ and $U$, in the form $\tilde{U}=\mathbb{1}\otimes b(k)+W$ and $U=\mathbb{1}\otimes c(k)+W$. The vanishing of the terms that come with $\mathbb{1}$ and $\tau_x$ yields 
+\begin{align*}
+    i\,[U,C] + [\tilde{U},D]&=0\\
+    \Rightarrow\quad i\,[\mathbb{1}\otimes c(k),C]+ [\mathbb{1}\otimes b(k),D]+ [W,i\,C+D]&=0\\
+    \text{and}\quad i\,\{\tilde{U}, C\} + \{U, D\}&=0\\
+    \Rightarrow\quad i\,\{\mathbb{1}\otimes c(k),C\}+ \{\mathbb{1}\otimes b(k),D\}+\{W,i\,C+D\}&=0
+\end{align*}
+$b(k)$ and $c(k)$ differ only by a constant diagonal term, originating from the trap potential. This lets the last row read
+\begin{align*}
+    i\,\frac{\omega}{2}\,\{\mathbb{1},C\}+ \{\mathbb{1}\otimes b(k),i\,C+D\}+\{W,i\,C+D\}&=0
+\end{align*}
+By exploiting that this equation has to hold for any $k$ with $X$ $k$-independent and realizing that $b(k)$ and $W(k)$ are independent functions one follows that $C=0$ and therefore also $D=0$. Similarly one proceeds for the first and second term
+\begin{align*}
+    [U, A] + \{\tilde{U}, B\}&=0\\
+    \Rightarrow\quad[\mathbb{1}\otimes c(k),A]+ \{\mathbb{1}\otimes b(k),B\}+[W,A]+\{W,B\}&=0\\
+    [\tilde{U}, A] + \{U, B\}&=0\\
+    \Rightarrow\quad[\mathbb{1}\otimes b(k),A]+ \{\mathbb{1}\otimes c(k),B\}+[W,A]+\{W,B\}&=0\\
+    \Rightarrow\quad-\frac{\omega}{2}\,[\mathbb{1},A]+\frac{\omega}{2}\,\{\mathbb{1},B\}&=0\\
+    \Rightarrow\quad B&=0
+\end{align*}
+Using again the independence of $b(k)$ and $W(k)$ one follows $[W,A]=0$. The matrix $W$ can then be written as
+\begin{align*}
+    W &= \sum_{\alpha,\beta\in\{0,x,y,z\}}w_{\alpha,\beta}(k)\,\sigma_\alpha\otimes\sigma_\beta\\
+    &= \sigma_x\otimes\left( w_{x,0}\,\mathbb{1}+w_{x,x}\,\sigma_x+w_{x,z}\,\sigma_z \right)+\sigma_y\otimes\left( w_{y,0}\,\mathbb{1}+w_{y,x}\,\sigma_x+w_{y,z}\,\sigma_z \right)
+\end{align*}
+Due to the independence of the $w_{\alpha,\beta}(k)$ functions, $A$ has to commute with every summand individually. The only matrix which is not proportional to the identity, that commutes with the $\sigma_x$-term is $\sigma_x\otimes\mathbb{1}$. But this does not commute with the $\sigma_y$-term. Hence the $A$ has to be proportional to the identity and therefore $X$ has to be proportional to the identity.
 
+
+
+% Combining the second and fourth row results in
+% \begin{align*}
+%     i\,C\,b(k)+D\,c(k)+W\,(i\,C+D)=0
+% \end{align*}
+% At this point it can be exploited that in order for X to be a symmetry of the system it has to commute with $H_k$ for all $k$ and hence be independent of $k$. Thus one can derive the equation by $k$ and can use $b'(k)=c'(k)$.
+% \begin{align*}
+%     (2\,b'(k)+W')\,(i\,C+D)=0
+% \end{align*}
+% This implies either $i\,C+D=0$ or $\text{Image}(i\,C+D)\subseteq \text{Kernel}(2\,b'(k)+W')$. In both cases there have to be vectors $\alpha\neq0$ such that
+% \begin{align*}
+%     (i\,C+D)\,\alpha=0\\
+%     \Rightarrow\quad D\alpha=-i\,C\alpha
+% \end{align*}
+% Since every $4\times4$ matrix $X$ can be written in the form
+% \begin{align*}
+%     X = \sum_{\alpha,\beta\in\{0,x,y,z\}}x_{\alpha,\beta}\, \tau_\alpha \otimes \sigma_\beta
+% \end{align*}
+% one can conclude that the only matrix commuting with $H_k$ is the identity, i.e $[X,H_k]=0$ $\Rightarrow X=\mathbb{1}$. As no two different pauli matrices commute, the occurrence of $\tau_z$ and $\tau_y$ implies $x_{\alpha,\beta}=0$ for $\alpha\neq0$, similarly the occurrence of $\sigma_x$ and $\sigma_y$ implies $x_{\alpha,\beta}=0$ for $\beta\neq0$. 
+Thus $H_k$ is irreducible as it has no unitary symmetries. This allows to perform a topological classification. %It is worth to mention that in the general form it can even be assumed that $b(k)$, $c(k)$ and $d(k)$ are symmetric matrices which couple modes of different directional displacement $x$, $y$, $z$. It has to be, however, assumed that these matrices are irreducible. With this requirement the irreducibility of the dynamical matrix remains intact. 
 Exploiting the chiral symmetry, one can change to a basis where the chiral transformation $\Sigma_x^k=(\mathbb{1},-\mathbb{1})$. In this basis $H_k$ takes the form
 \begin{gather*}
     H_k' = \begin{pmatrix}
