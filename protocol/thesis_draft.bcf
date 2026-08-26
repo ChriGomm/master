@@ -2382,6 +2382,7 @@
     <bcf:citekey order="9" intorder="1">peanoTopologicalEdgeStates2018</bcf:citekey>
     <bcf:citekey order="10" intorder="1">wilsonTrappingAlkalineEarth2022</bcf:citekey>
     <bcf:citekey order="10" intorder="2">holzlLongLivedCircularRydberg2024</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">ryuTopologicalInsulatorsSuperconductors2010</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

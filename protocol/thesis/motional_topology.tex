@@ -35,7 +35,7 @@ with
     U_{i,i} &= \frac12\,\sum_{j;\,j\neq i}\frac{\partial^2 V_{i,j}(\{\mathbf{R}_l\})}{\partial \mathbf{R}_i^2}
 \end{aligned}
 \end{equation}
-In order to allow for a quantum mechanical description of the displacements $\delta\mathbf{R}_l$ are treated as operators.
+In order to allow for a quantum mechanical description of the displacements $\delta\mathbf{R}_l$ are treated as operators.\hfill\newpage
 
 \section{No particle number conservation}
 Even for a bosonic system a topological classification with respect to the Altland-Zirnbauer symmetry classes is possible. As discussed in \secref{sec:BdG formalism}, the concept of holes has to be introduced by rewriting the Hamiltonian in a BdG form. For this it is, however, necessary  that the Hamiltonian is quadratic in the displacements. The linear term originating from the first order expansion of the interaction potential however breaks this condition. In order to remove this term, the trap centers can be redefined, such that the linear term vanishes. For this purpose the displacement operators are shifted by constant vectors $\{\delta\mathbf{R}_l\}=\{\delta\tilde{\mathbf{R}}_l+\mathbf{\Delta}_l\}$. 
@@ -80,7 +80,7 @@ Here $\tilde{g}$ and ${U}'$ are dimensionless and the the term $m\omega^2 a^2/[V
     \caption{\textbf{Parameters for negligible first order.} For different values of $m\omega^2$ the parameters $h$ and $\varphi_d$ are tuned such that the first order is negligible. The color code indicates the value of $m\omega^2/V_\text{max}$. The resulting ratio between first and second order is shown in panel a) for all considered values of $m\omega^2/V_\text{max}$ $0.01$, $0.8$, $4$ and $10$. As an example the optimal parameters $h$ and $\varphi_d$ for $m\omega^2/V_\text{max}=4$ are shown in panel b) and c). The maximal shift of the trap center necessary to eliminate the first order is shown in panel e), while panel d) shows that size of the shift is mainly determined by the ratio between $\tilde{g}$ and $W$. For the calculations a chain length of 8 atoms was used.}
     \label{fig:tuning_first_order_to_zero}
 \end{figure}
-\hfill\newpage
+% \hfill\newpage
 \begin{figure}[h]
     \hspace*{-2cm}
     \includegraphics{pictures/Deltas4.pdf}
@@ -140,12 +140,12 @@ As it is a real matrix, it is time reversal symmetric. Particle-hole symmetry is
 \end{pmatrix}\end{align*}
 Consequently it is then also chiral symmetric, as $ H =-\Sigma_x\, H \,\Sigma_x$. This puts the system in the BDI symmetry class, which allows for a topological characterization in one dimension. 
 Since $H$ is not hermitian one has to investigate its spectrum for dynamical stability, i.e. no complex eigenenergies are allowed. \figref{fig:spectrum_BdG} shows that for small trapping depth compared to the phonon interactions always large imaginary contributions to the eigenvalues are observed. But for large tweezer strength ($m\omega^2=10\,V_\text{max}$), the imaginary part of the spectrum vanishes and also eigenstates inside of a gap are visible. %This motivates the computation of the system's winding number.
-\begin{figure}[H]
+\begin{figure}[h]
     \hspace*{-2cm}
     \includegraphics{pictures/spectrum_abs_of_tuned_BdG_various_shift_opt.pdf}
     \caption{\textbf{Spectrum of BdG Hamiltonian for different trap frequencies.} For different strengths of the optical trap the real and imaginary part of the spectrum is plotted. The atom number used for this computation is 8. In the last row the absolute value of the spectra is shown.}
     \label{fig:spectrum_BdG}
-\end{figure}\hfill\newpage
+\end{figure}%\hfill\newpage
 However by calculating the positive spectrum for larger atom numbers, as depicted in \figref{fig:pos_spectrum_different_chainlengths} one realizes that there is no real gap that withstands an infinite lattice size limit. This indicates that the system does not possess topological states, which can be affirmed by calculating the system's winding number, under the approximation that the periodicity breaking due to the small shifts of the trap center can be neglected.
 \begin{figure}[h]
     \hspace*{-2cm}
@@ -269,14 +269,55 @@ Exploiting the chiral symmetry, one can change to a basis where the chiral trans
         2\,\bar{d}(k) & b(k) + c(k)
     \end{pmatrix}
 \end{gather*}% This is confirmed when looking at the eigenstates inside the gap of \figref{fig:spectrum_BdG}, when $m\omega^2=10\,V_\text{max}$.
-As both matrices $S_k$ and $T_k$ are hermitian the Hamiltonian has vanishing winding number, indicating a topological trivial phase. The structure of $S_k$ and $T_k$ remains the same for higher dimensional displacements. I want to mention that if there are no pairing terms, i.e. $\mathbf{\Delta}=0$, the Hamiltonian is block diagonal and therefore not irreducible. In this case the introduction of holes is redundant and the winding number can be calculated from a single block, which can lead to non-vanishing winding numbers. It is thereby shown that the pairing terms prohibit the occurrence of topologically non-trivial phases in 1D for motional degrees of freedom stemming from a second order tailor expansion of an interaction potential.
+As both matrices $S_k$ and $T_k$ are hermitian the Hamiltonian has vanishing winding number, indicating a topological trivial phase. The structure of $S_k$ and $T_k$ remains the same for higher dimensional displacements. I want to mention that if there are no pairing terms, i.e. $\mathbf{\Delta}=0$, the Hamiltonian is block diagonal and therefore not irreducible. In this case the introduction of holes is redundant and the winding number can be calculated from a single block, which can lead to non-vanishing winding numbers. It is thereby shown that the pairing terms prohibit the occurrence of topologically non-trivial phases in 1D for motional degrees of freedom stemming from a second order tailor expansion of an interaction potential.\hfill\newpage
 
 
 \section{Excitation conservation}
 In this section I want to discuss the case, where the trapping strength dominates over the the interaction between the atoms, i.e. $m\omega^2>>\text{max}(U)$. In this regime the creation of additional excitations through the interaction channel is suppressed and can be neglected. As a consequence the Hamiltonian can be projected onto a subspace of fixed excitation number, which is equivalent to a first order Schrieffer-Wolff transform. The result is that the terms that change the motional excitation number vanish and the Hamiltonian takes the form
 \begin{align*}
-    \mathcal{H} &= \sum_i \hbar\omega\,a_i^\dagger a_i +\frac{\hbar}{2m\omega}\, \sum_{i,j} U_{i,j}\,\left( a_i^\dagger a_j + a_i\,a_j^\dagger  \right)\\
-    &=\frac{\hbar}{m\omega}\, \sum_{i,j}\,\left( \delta_{i,j}\,m\omega^2 + U_{i,j} \right)\,a_i^\dagger a_j\\
-    &= (\mathbf{a}^\dagger)^t\,A\,\mathbf{a}\qquad\text{with }A=\frac{\hbar}{m\omega}\,\left( \delta_{i,j}\,m\omega^2 + U_{i,j} \right)_{i,j}
+    \mathcal{H}' &= \sum_i \hbar\omega\,a_i^\dagger a_i +\frac{\hbar}{2m\omega}\, \sum_{i,j} U_{i,j}\,\left( a_i^\dagger a_j + a_i\,a_j^\dagger  \right)
 \end{align*}
-Again the vector of annihilation operators is introduced $\mathbf{a}=(a_1,\dots,a_N)$, this time for the particle space only. 
+By going into the reference frame of the harmonic trap oscillation, one can avoid the first term of this expression. The corresponding transform via $\exp(-it\omega\sum_ia_i^\dagger a_i)$ lets the Hamiltonian read
+\begin{align*}
+    \mathcal{H}&=\frac{\hbar}{m\omega}\, \sum_{i,j} U_{i,j}\,a_i^\dagger a_j\\
+    &= (\mathbf{a}^\dagger)^t\,H\,\mathbf{a}\qquad\text{with }H=\frac{\hbar}{m\omega}\,\left(  U_{i,j} \right)_{i,j}
+\end{align*}
+Again the vector of annihilation operators is introduced $\mathbf{a}=(a_1,a_2,\dots)$, this time for the particle space only. The transformation into momentum space can also be performed in the annihilation/creation operator picture by dividing the system into two sublattices $L_A=(\mathbf{R}_1,\mathbf{R}_3,\mathbf{R}_5,\dots)$ and $L_B=(\mathbf{R}_2,\mathbf{R}_4,\dots)$. The operators in $A$ and $B$ transform via
+\begin{align*}
+    a_{\mathbf{k}} = \sum_{\mathbf{R}\in L_{A}} e^{-i\mathbf{k}\cdot\mathbf{R}}\,a_{\mathbf{R}}\\
+    b_{\mathbf{k}} = \sum_{\mathbf{R}\in L_{B}} e^{-i\mathbf{k}\cdot\mathbf{R}}\,a_{\mathbf{R}}
+\end{align*}
+From this the Hamiltonian can be written in momentum space as well.
+\begin{align*}
+    \mathcal{H} &=\sum_{C,D\in\{A,B\}}\int_{\mathbb{T}^d}\frac{dk}{(2\pi)^d}\,\int_{\mathbb{T}^d}\frac{dk'}{(2\pi)^d}\,  \sum_{\substack{\mathbf{R}\in L_C;\,\mathbf{R}'\in L_D}}H(\mathbf{R}-\mathbf{R}')\,e^{-i\,(\mathbf{k}\mathbf{R}-\mathbf{k}'\mathbf{R}')}\, c_{\mathbf{k}}^{\dagger} d_{\mathbf{k}'}\\
+    &=\sum_{C,D\in\{A,B\}}\int_{\mathbb{T}^d}\frac{dk}{(2\pi)^d}\,\int_{\mathbb{T}^d}\frac{dk'}{(2\pi)^d}\,  \sum_{\substack{\mathbf{R}\in L_C;\,\Delta\mathbf{R}\in\{ L_D-L_C\}}}H(\Delta\mathbf{R})\,e^{-i\,(\mathbf{k}-\mathbf{k}')\,\mathbf{R}+i\,\mathbf{k}'\Delta\mathbf{R}}\, c_{\mathbf{k}}^{\dagger} d_{\mathbf{k}'}\\
+    &=\sum_{C,D\in\{A,B\}}\int_{\mathbb{T}^d}\frac{dk}{(2\pi)^d} \sum_{\substack{\Delta\mathbf{R}\in\{ L_D-L_C\}}}H(\Delta\mathbf{R})\,e^{i\,\mathbf{k}\Delta\mathbf{R}}\, c_{\mathbf{k}}^{\dagger} d_{\mathbf{k}}\\
+    &=:\int_{\mathbb{T}^d}\frac{dk}{(2\pi)^d}\sum_{C,D\in\{A,B\}} H_\mathbf{k}^{C,D}\, c_{\mathbf{k}}^{\dagger} d_{\mathbf{k}}=:\int_{\mathbb{T}^d}\frac{dk}{(2\pi)^d}\, (\mathbf{a}_{\mathbf{k}}^\dagger)^t\,H_\mathbf{k}\,\mathbf{a}_{\mathbf{k}}
+\end{align*}
+with $\mathbf{a}_\mathbf{k}=(a_\mathbf{k},b_\mathbf{k})$. 
+Since $\Delta\mathbf{R}^{A,B}=-\Delta\mathbf{R}^{B,A}$ and $\Delta\mathbf{R}^{A,A}=\Delta\mathbf{R}^{B,B}$ the form of $H_\mathbf{k}$ is 
+\begin{align*}
+    H_\mathbf{k}&=\begin{pmatrix}
+        H_\mathbf{k}^{A,A} & H_\mathbf{k}^{A,B}\\
+        (H_\mathbf{k}^{A,B})^* & H_\mathbf{k}^{A,A}
+    \end{pmatrix}\\
+    &=\mathbb{1}\otimes H_\mathbf{k}^{A,A} + \sigma_x\otimes\text{Re}\left[ H_\mathbf{k}^{A,B} \right]-\sigma_y\otimes\text{Im}\left[ H_\mathbf{k}^{A,B} \right]
+\end{align*}
+The submatrices of $H_\mathbf{k}$ can again be matrices themselves that couple the different directions of displacement and thus have the form of
+\begin{align}\label{eq:xy-decomposition}
+    O &= O_0\,\mathbb{1}+ O_x\,\sigma_x+ O_z\,\sigma_z
+\end{align}
+It is important to note that the decomposition of $H_k$ into pauli matrices contains only independent functions of $k$ as coefficients.
+\subsection{One dimensional chain}
+First let us analyze a one dimensional zik-zak chain with alternating distances, as depicted in Figure. As the Hamiltonian derived in section is $T=+1$ time reversal symmetric, with respect to the Altland-Zirnbauer symmetry classes \cite{ryuTopologicalInsulatorsSuperconductors2010}, the only possibility in 1D that the system possesses topological phases requires the Hamiltonian to be in the BDI class and thus be particle-hole and chiral symmetric. With the knowledge of time reversal symmetry the latter to symmetries imply each other and it suffices to show that one of those symmetries is satisfied. For a $H_k$ to be chiral symmetric one demands, as stated in \secref{sec:winding number}, that $\{H_k,X\}=0$ for an unitary matrix $X$. 
+
+In the case with only one-dimensional displacements one immediately recognizes that chiral symmetry is only fulfilled if the term $H_k^{A,A}$ vanishes. This is only possible for all $k$ if the Hamiltonian does not couple sites within the same sublattice. 
+
+When allowing displacements in the 2-dimensional plane one can still exploit the independence of the individual contributions to $H_k$. This implies that $X$ has to anti-commute with every contribution individually. The first consequence is, that $H_k$ can not contain a term proportional to the identity. Thus $(H_k^{A,A})_0=0$ referring to the notation of \eqref{eq:xy-decomposition}. The identity 
+\begin{align*}
+    \{\sigma_i\otimes\sigma_j,\sigma_n\otimes\sigma_m\}=\half\,\{\sigma_i,\sigma_n\}\otimes\{\sigma_j,\sigma_m\}
+\end{align*}
+which is derived in \secref{appendix:symmetry}, infers that possible contributions to an anti-commuting matrix $X$ contain
+\begin{align*}
+    \sigma
+\end{align*}

@@ -98,3 +98,71 @@ With that the Hamiltonian gets its final form
     % &=\vcentcolon\sum_n \hbar\omega\,a_n^\dagger a_n +\sum_{n,m} \tilde{U}_{n,m}\,a_n^\dagger a_m
 \end{align*}\hfill\newpage
 
+\chapter{Symmetry and irreducibility check}
+    \label{appendix:symmetry}
+
+In order to evaluate wether a matrix is irreducible one has check whether there are unitary matrices that specific matrix. It is helpful to decompose the matrices into tensor products of pauli matrices. for 4x4 matrices it is useful to know the commutator of the following tensor products
+\begin{align*}
+    \left[(\sigma_i\otimes\sigma_j), (\sigma_n\otimes\sigma_m)  \right]&= \half \,[\sigma_i,\sigma_n]\otimes\{\sigma_j,\sigma_m\}+\half\,\{\sigma_i,\sigma_n\}\otimes[\sigma_j,\sigma_m]
+\end{align*}
+in order to evaluate this expression, I distinguish three exclusive cases. First let at least one of the pauli matrices be the identity. Without loss of generality let $\sigma_i=\mathbb{1}$. Then it follows
+\begin{align*}
+    \left[(\sigma_i\otimes\sigma_j), (\sigma_n\otimes\sigma_m)  \right]&= \sigma_n\otimes[\sigma_j,\sigma_m]
+\end{align*}
+This vanishes if one matrix of the $j,m$ pair is the identity or if they are the same.
+The other case is $\sigma_i=\sigma_n$ or $\sigma_j=\sigma_m$. Here one receives a similar result. Let $\sigma_i=\sigma_n$, then
+\begin{align*}
+    \left[(\sigma_i\otimes\sigma_j), (\sigma_n\otimes\sigma_m)  \right]&= \mathbb{1}\otimes[\sigma_j,\sigma_m]
+\end{align*}
+which equals to zero under the same premises as in case 1.
+Finally if none of these two cases is true the result is
+\begin{align*}
+    \left[(\sigma_i\otimes\sigma_j), (\sigma_n\otimes\sigma_m)  \right]&= \sum_p2 \,i\varepsilon_{i,n,p}\sigma_p\otimes\delta_{j,m}+\sum_q2\,\delta_{i,n}\otimes\varepsilon_{j,m,q}\sigma_q
+\end{align*}
+It vanishes if the pairs $i,n$ and $j,m$ consist of different matrices respectively, thus in any configuration, given the restrictions of this case. Applying this consideration to the matrix
+\begin{align}\label{eq:momentum Hamiltonian}
+    H_\mathbf{k} &=\mathbb{1}\otimes H_\mathbf{k}^{A,A} + \sigma_x\otimes\text{Re}\left[ H_\mathbf{k}^{A,B} \right]-\sigma_y\otimes\text{Im}\left[ H_\mathbf{k}^{A,B} \right]
+\end{align}
+where the submatrices have the structure
+\begin{align*}
+    O &= O_0\,\mathbb{1}+ O_x\,\sigma_x+ O_z\,\sigma_z
+\end{align*}
+Using the fact that all contributions to $H_k$ are independent functions, as stated in the main part, each matrix commuting with all $H_k$ for all $k$ has to commute with each contribution individually.
+Starting with the $\mathbb{1}\otimes\sigma_x$ part of the $A,A$ term, the possible contributions to a commuting matrix are restricted to
+\begin{align*}
+    \sigma_{0/x/y/z}\otimes\sigma_{0/x}
+\end{align*}
+whereas the part proportional to $\mathbb{1}\otimes\sigma_y$ restricts the possible contributions to 
+\begin{align*}
+    \sigma_{0/x/y/z}\otimes\sigma_{0}
+\end{align*}
+Turning to the second term of \eqref{eq:momentum Hamiltonian}, the $\sigma_x\otimes\sigma_{0/x/z}$ part rules out all contributions but
+\begin{align*}
+    \sigma_{0/x}\otimes\sigma_{0}
+\end{align*}
+And the last term of \eqref{eq:momentum Hamiltonian} finally only permits multiples of the identity as commuting matrices. Therefore the momentum space Hamiltonian matrix is irreducible.\\\\
+Another useful identity for the evaluation of chiral symmetry is
+\begin{align*}
+    \{\sigma_i\otimes\sigma_j,\sigma_n\otimes\sigma_m\}=\half\,\{\sigma_i,\sigma_n\}\otimes\{\sigma_j,\sigma_m\}
+\end{align*}
+This can be shown by distinguishing the three exclusive cases from above:
+\begin{itemize}
+    \item case 1: at least one of the pauli matrices is the identity. Then without loss of generality if $\sigma_i=\mathbb{1}$
+    \begin{align*}
+        \{\sigma_i\otimes\sigma_j,\sigma_n\otimes\sigma_m\}&=\sigma_n\otimes\sigma_j\sigma_m+\sigma_n\otimes\sigma_m\sigma_j\\
+        &=\sigma_n\otimes\{\sigma_j,\sigma_m\}\\
+        &=\half\,\{\sigma_i,\sigma_n\}\otimes\{\sigma_j,\sigma_m\}
+    \end{align*}
+    \item case 2: $\sigma_i=\sigma_n$ or $\sigma_j=\sigma_m$. Assuming the former yields
+    \begin{align*}
+        \{\sigma_i\otimes\sigma_j,\sigma_n\otimes\sigma_m\}&=\mathbb{1}\otimes\sigma_j\sigma_m+\mathbb{1}\otimes\sigma_m\sigma_j\\
+        &=\half\,\{\sigma_i,\sigma_n\}\otimes\{\sigma_j,\sigma_m\}
+    \end{align*}
+    \item case 3: neither of the previous cases. Here it holds
+    \begin{align*}
+        \{\sigma_i\otimes\sigma_j,\sigma_n\otimes\sigma_m\}&=\sigma_i\sigma_n\otimes\sigma_j\sigma_m+\sigma_n\sigma_i\otimes\sigma_m\sigma_j\\
+        &=\sum_{p,q} i\varepsilon_{inp}\,\sigma_p\otimes i\varepsilon_{jmq}\,\sigma_q+\sum_{p,q} i\varepsilon_{nip}\,\sigma_p\otimes i\varepsilon_{mjq}\,\sigma_q\\
+        &=2\,\sum_{p,q} i\varepsilon_{inp}\,\sigma_p\otimes i\varepsilon_{jmq}\,\sigma_q\\
+        &=\half[\sigma_i,\sigma_n]\otimes[\sigma_j,\sigma_m]\neq0
+    \end{align*}
+\end{itemize}
