@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber thesis_draft"] 1787661905.22329 "thesis_draft.bcf" "thesis_draft.bbl" "thesis_draft" 1787737174.24875 0
+["biber thesis_draft"] 0 "thesis_draft.bcf" "thesis_draft.bbl" "thesis_draft" 1787936423.12456 -1
   "sources4.bib" 1787143703.24323 28543 c3d4a32141b7a8e18a89dd90b668ffba ""
-  "thesis_draft.bcf" 1787737174.09463 108690 99cee4117de50b20f82ad265aedb36c7 "pdflatex"
+  "thesis_draft.bcf" 1787936422.96964 108690 99cee4117de50b20f82ad265aedb36c7 "pdflatex"
   (generated)
   "thesis_draft.bbl"
   "thesis_draft.blg"
   (rewritten before read)
-["pdflatex"] 1787737172.57138 "/home/christian/Documents/master/protocol/thesis_draft.tex" "thesis_draft.pdf" "thesis_draft" 1787737174.24893 0
+["pdflatex"] 1787936421.42082 "/home/christian/Documents/master/protocol/thesis_draft.tex" "thesis_draft.pdf" "thesis_draft" 1787936423.12474 0
   "/etc/texmf/web2c/texmf.cnf" 1758895203.64774 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/christian/Documents/master/protocol/thesis_draft.tex" 1785847698.64754 13380 4a4ba5593eb2bf5057829e2254b897b4 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc" 1177804218 3341 78e600b269762aa2a25a5293cc4535c0 ""
@@ -363,12 +363,12 @@
   "pictures/spectrum_abs_of_tuned_BdG_various_shift_opt.pdf" 1785851082.59829 326975 71c518aed17a20bbb93fc0a6679c5923 ""
   "pictures/tuning_first_order_to_zero4.pdf" 1787226470.9866 439941 396fd01ba7dd3cf636eae2637e4c2520 ""
   "thesis/Appendix_derivation_Hamiltonian.tex" 1787737172.40762 15856 804c7b26f2e4cc747d56cfe06c6b9c03 ""
-  "thesis/motional_topology.tex" 1787737125.20841 32585 9e56b15d860750c3959bedd833896487 ""
+  "thesis/motional_topology.tex" 1787936421.25063 35171 e16112cc40040f4cb015e3e80670b891 ""
   "thesis/theory.tex" 1787662208.65685 44191 a186adf946e88ef14f4df7acd2c1676f ""
-  "thesis_draft.aux" 1787737174.09268 17282 e75f88104ea1cf566c4944d38e4724a1 "pdflatex"
+  "thesis_draft.aux" 1787936422.96564 17374 23bf4a8b6d14a99dc023741285ccc206 "pdflatex"
   "thesis_draft.bbl" 1787661905.65658 27152 fc5ced2aa62580d91328b96b90e32251 "biber thesis_draft"
-  "thesis_draft.out" 1787737173.70322 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "thesis_draft.run.xml" 1787737174.09635 2484 5f8edbd782c692ffa530ad7323efe339 "pdflatex"
+  "thesis_draft.out" 1787936422.57247 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "thesis_draft.run.xml" 1787936422.97046 2484 5f8edbd782c692ffa530ad7323efe339 "pdflatex"
   "thesis_draft.tex" 1785847698.64754 13380 4a4ba5593eb2bf5057829e2254b897b4 ""
   (generated)
   "thesis_draft.aux"

@@ -2382,6 +2382,7 @@
     <bcf:citekey order="5" intorder="2">schnyderClassificationTopologicalInsulators2008</bcf:citekey>
     <bcf:citekey order="6" intorder="1">mondragon-shemTopologicalCriticalityChiralSymmetric2014</bcf:citekey>
     <bcf:citekey order="7" intorder="1">bravyi_schrieffer-wolff_2011</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">bravyi_schrieffer-wolff_2011</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

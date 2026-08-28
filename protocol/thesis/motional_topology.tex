@@ -40,12 +40,12 @@ In order to allow for a quantum mechanical description of the displacements $\de
 \section{No particle number conservation}
 Even for a bosonic system a topological classification with respect to the Altland-Zirnbauer symmetry classes is possible. As discussed in \secref{sec:BdG formalism}, the concept of holes has to be introduced by rewriting the Hamiltonian in a BdG form. For this it is, however, necessary  that the Hamiltonian is quadratic in the displacements. The linear term originating from the first order expansion of the interaction potential however breaks this condition. In order to remove this term, the trap centers can be redefined, such that the linear term vanishes. For this purpose the displacement operators are shifted by constant vectors $\{\delta\mathbf{R}_l\}=\{\delta\tilde{\mathbf{R}}_l+\mathbf{\Delta}_l\}$. 
 In the following I will treat the 1D case and the interaction is assumed to be of the dipole-dipole type, i.e.
-\begin{align*}
+\begin{align}\label{eq:dipole interaction}
     V_{dd}(\mathbf{r}) &= \frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\left(1-3\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)=\vcentcolon V_0(r)\,f(\hat{\mathbf{r}})=V_0(a)\,\frac{a^3}{r^3}\,f(\hat{\mathbf{r}})\\
     \frac{\partial V_{dd}}{\partial r_\alpha} &=\frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\frac1r\,\left( -3\,\frac{ r_\alpha}{r} + 15\,\frac{ r_\alpha }{r}(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2 - 6\,\hat{d}_\alpha\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}}) \right)=\vcentcolon \frac{V_0(r)}{r}\,g(\hat{\mathbf{r}})=\frac{V_0(a)}{a}\,\frac{a^4}{r^4}\,g(\hat{\mathbf{r}})\\
-    \frac{\partial^2 V_{dd}}{\partial r_\alpha \partial r_\beta}  &= \frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\frac1{r^2}\,\left[\delta_{\alpha\beta}\left(-3 + 15\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)- 6\,\hat{d}_\alpha \hat{d}_\beta +30\, \frac{\hat{d}_\alpha r_\beta + \hat{d}_\beta r_\alpha}{r}\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}}) + 15\,\frac{r_\alpha r_\beta}{r^2} \left(1  - 7\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)\right]\\
+    \frac{\partial^2 V_{dd}}{\partial r_\alpha \partial r_\beta}  &= \frac{\expval{d}^2}{4\pi\varepsilon_0\,r^3}\,\frac1{r^2}\,\left[\delta_{\alpha\beta}\left(-3 + 15\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)- 6\,\hat{d}_\alpha \hat{d}_\beta +30\, \frac{\hat{d}_\alpha r_\beta + \hat{d}_\beta r_\alpha}{r}\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}}) + 15\,\frac{r_\alpha r_\beta}{r^2} \left(1  - 7\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)\right]\notag\\
     &=\vcentcolon \frac{V_0(r)}{r^2}\,c(\hat{\mathbf{r}})=\frac{V_0(a)}{a^2}\,\frac{a^5}{r^5}\,c(\hat{\mathbf{r}})
-\end{align*}
+\end{align}
 In the above equations $d$ is the dipole operator, $a$ is the distance between the tweezers and $\mathbf{r}=\mathbf{R}_2-\mathbf{R}_1$ is the distance vector between two atoms. The hat symbol denotes vectors with unit norm. 
 In combination with the harmonic trap potential this leads to a Hamiltonian for the shifted displacements $\{\delta\tilde{\mathbf{R}}_l\}$ of the form
 \begin{align*}
@@ -313,11 +313,33 @@ First let us analyze a one dimensional zik-zak chain with alternating distances,
 
 In the case with only one-dimensional displacements one immediately recognizes that chiral symmetry is only fulfilled if the term $H_k^{A,A}$ vanishes. This is only possible for all $k$ if the Hamiltonian does not couple sites within the same sublattice. 
 
-When allowing displacements in the 2-dimensional plane one can still exploit the independence of the individual contributions to $H_k$. This implies that $X$ has to anti-commute with every contribution individually. The first consequence is, that $H_k$ can not contain a term proportional to the identity. Thus $(H_k^{A,A})_0=0$ referring to the notation of \eqref{eq:xy-decomposition}. The identity 
+When allowing displacements in the 2-dimensional plane one can still exploit the independence of the individual contributions to $H_k$. This implies that $X$ has to anti-commute with every contribution individually. The first consequence is, that $H_k$ can not contain a term proportional to the identity. Thus $(H_k^{A,A})_0=0$ referring to the notation of \eqref{eq:xy-decomposition}. %The identity 
+% \begin{align*}
+%     \{\sigma_i\otimes\sigma_j,\sigma_n\otimes\sigma_m\}=\half\,\{\sigma_i,\sigma_n\}\otimes\{\sigma_j,\sigma_m\}
+% \end{align*}
+% which is derived in \secref{appendix:symmetry}, infers that possible contributions to an anti-commuting matrix $X$ contain
+% \begin{align*}
+%     \sigma
+% \end{align*}
+This term is determined by the interactions between sites of the same sublattice and at the same time between modes of the same direction of displacement, i.e. $xx$ or $yy$. Thus either the interactions inside a sublattice between the same direction have to vanish or the $xx$ and $yy$ interactions have to have opposite sign, allowing the $(H_k^{A,A})_0$ term to be non-zero. In the first case one has to tune the interactions between sites of the same sublattice to zero. But the onsite term $U_{ii}^{\alpha,\alpha}=\sum_r\partial^2V_{dd}/(\partial r_\alpha \partial r_\alpha)$ has to be considered as well. As the 
+
 \begin{align*}
-    \{\sigma_i\otimes\sigma_j,\sigma_n\otimes\sigma_m\}=\half\,\{\sigma_i,\sigma_n\}\otimes\{\sigma_j,\sigma_m\}
+    c_{\alpha\beta}(\hat{\mathbf{r}}) &= \delta_{\alpha\beta}\left(-3 + 15\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)- 6\,\hat{d}_\alpha \hat{d}_\beta +30\, \frac{\hat{d}_\alpha r_\beta + \hat{d}_\beta r_\alpha}{r}\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}}) + 15\,\frac{r_\alpha r_\beta}{r^2} \left(1  - 7\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)\\
+    &= \delta_{\alpha\beta}\left(-3 + 15\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right) + A_{\alpha\beta}
 \end{align*}
-which is derived in \secref{appendix:symmetry}, infers that possible contributions to an anti-commuting matrix $X$ contain
 \begin{align*}
-    \sigma
+    c_{xx}(\hat{\mathbf{r}})&\overset{!}{=}-c_{yy}(\hat{\mathbf{r}})\\
+    &=-6 + 30 \, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2 + A_{xx}+A_{yy}\\
+    A_{xx}+A_{yy}&=- 6\,(\hat{d}_x^2+\hat{d}_y^2) +60\, \frac{\hat{d}_x r_x + \hat{d}_y r_y}{r}\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}}) + 15\,\frac{r_x^2 + r_y^2}{r^2} \left(1  - 7\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)\\
+    &= 9 - 3\cdot15\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\\
+    \Rightarrow\quad 0&=3 - 15\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2
+\end{align*}
+and for the two different vectors ${\mathbf{r}}_1$ and ${\mathbf{r}}_2$ the interactions have different signs if
+\begin{gather*}
+    \frac{1}{r_1^5}\,c_{xx}(\hat{\mathbf{r}}_1)\overset{!}{=}-\frac{1}{r_2^5}\,c_{xx}(\hat{\mathbf{r}}_2)\quad\text{and}\quad \frac{1}{r_1^5}\,c_{yy}(\hat{\mathbf{r}}_1)\overset{!}{=}-\frac{1}{r_2^5}\,c_{yy}(\hat{\mathbf{r}}_2)\\
+    \Rightarrow\quad \frac{1}{r_1^5}\,\left[ 3 - 15\,(\hat{\mathbf{r}}_1\cdot \hat{\mathbf{d}})^2 \right] = -\frac{1}{r_2^5}\,\left[ 3 - 15\,(\hat{\mathbf{r}}_2\cdot \hat{\mathbf{d}})^2 \right]
+\end{gather*}
+\begin{align*}
+3 - 15 d_x^2 &= -\frac{1}{r^5} \left[ 3 - \frac{15}{r^2}\, \left( r_x^2 d_x^2 + r_y^2 d_y^2 + 2 r_x r_y d_x d_y \right) \right] \\[1ex]
+0 &= 3 r^5 + 3 - 15 \left( r^5 + \frac{r_x^2}{r^2} \right) d_x^2 - 15 \frac{r_y^2}{r^2} d_y^2 + 30 \frac{r_x r_y}{r^2} d_x d_y
 \end{align*}
