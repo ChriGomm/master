@@ -19,6 +19,123 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{oechsnerAnamorphicShapingLaser2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=403ebc19431c87f0f988368b00655911}{%
+           family={Oechsner},
+           familyi={O\bibinitperiod},
+           given={Ulrich},
+           giveni={U\bibinitperiod}}}%
+        {{hash=af1479b08be5532e7e7237f2fae12819}{%
+           family={Knothe},
+           familyi={K\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f43292e76a740c641682bc7d6de051b2}{%
+           family={Rahmel},
+           familyi={R\bibinitperiod},
+           given={Mats},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f5f50b37d290c3a1a08c384275a242cb}
+      \strng{fullhash}{d3318ffc9e069ea726ea172eec85ed2b}
+      \strng{bibnamehash}{d3318ffc9e069ea726ea172eec85ed2b}
+      \strng{authorbibnamehash}{d3318ffc9e069ea726ea172eec85ed2b}
+      \strng{authornamehash}{f5f50b37d290c3a1a08c384275a242cb}
+      \strng{authorfullhash}{d3318ffc9e069ea726ea172eec85ed2b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Abstract Anamorphic beam shaping optics are, e.g., used to transform elliptical laser beams to a round shape before coupling them to single‐mode optical fibers. Conversely, there are cases where originally round laser beams need to be transformed into an elliptical shape. The article describes some sample applications and discusses several concepts of anamorphic beam shaping and their respective advantages and disadvantages.}
+      \field{issn}{2626-1294, 2626-1308}
+      \field{journaltitle}{PhotonicsViews}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{3}
+      \field{shortjournal}{PhotonicsViews}
+      \field{shorttitle}{Anamorphic {{Shaping}} of {{Laser Beams}}}
+      \field{title}{Anamorphic {{Shaping}} of {{Laser Beams}}: {{How}} to Transforms a Collimated Laser Beam with Elliptical Cross‐section into a Circular Beam or Vice Versa}
+      \field{urlday}{8}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{volume}{16}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{56\bibrangedash 59}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1002/phvs.201900031
+      \endverb
+      \verb{file}
+      \verb /home/christian/Zotero/storage/5XDKNNZZ/Oechsner et al. - 2019 - Anamorphic Shaping of Laser Beams How to transforms a collimated laser beam with elliptical cross‐s.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1002/phvs.201900031
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1002/phvs.201900031
+      \endverb
+    \endentry
+    \entry{grimmOpticalDipoleTraps1999}{online}{}
+      \name{author}{3}{}{%
+        {{hash=fe2959547cb357a53a7a05b33161fd76}{%
+           family={Grimm},
+           familyi={G\bibinitperiod},
+           given={Rudolf},
+           giveni={R\bibinitperiod}}}%
+        {{hash=604ca347b0838576e0972c83aad2ec33}{%
+           family={Weidemüller},
+           familyi={W\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e461893ff8f08d83158fbd189db92533}{%
+           family={Ovchinnikov},
+           familyi={O\bibinitperiod},
+           given={Yurii\bibnamedelima B.},
+           giveni={Y\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{c7cb039d06c32e8fe13a603a80124e40}
+      \strng{fullhash}{fe64ee81819c2d533ee5596c0c4a5c71}
+      \strng{bibnamehash}{fe64ee81819c2d533ee5596c0c4a5c71}
+      \strng{authorbibnamehash}{fe64ee81819c2d533ee5596c0c4a5c71}
+      \strng{authornamehash}{c7cb039d06c32e8fe13a603a80124e40}
+      \strng{authorfullhash}{fe64ee81819c2d533ee5596c0c4a5c71}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The subject of this review are atom traps based on optical dipole forces in laser fields, along with their unique features as storage devices at ultralow energies. The basic physics of the dipole interaction is discussed, and the experimental background of dipole trapping experiments is explained. Specific trapping schemes and experiments are presented, where the wide range of applications of dipole traps is explored considering particular examples.}
+      \field{day}{24}
+      \field{eprinttype}{arXiv}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{pubstate}{prepublished}
+      \field{title}{Optical Dipole Traps for Neutral Atoms}
+      \field{urlday}{8}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.physics/9902072
+      \endverb
+      \verb{eprint}
+      \verb physics/9902072
+      \endverb
+      \verb{file}
+      \verb /home/christian/Zotero/storage/Q7YLZF69/Grimm et al. - 1999 - Optical dipole traps for neutral atoms.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/physics/9902072
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/physics/9902072
+      \endverb
+      \keyw{Condensed Matter,Physics - Atomic Physics,Physics - General Physics,Physics - Optics,Quantum Physics}
+    \endentry
     \entry{prodanBulkBoundaryInvariants2016}{book}{}
       \name{author}{2}{}{%
         {{hash=d06619865b27dd6bae18e036deb780f9}{%
@@ -44,8 +161,8 @@
       \strng{authorbibnamehash}{5343bb88057417b9a03f0884e8137760}
       \strng{authornamehash}{5343bb88057417b9a03f0884e8137760}
       \strng{authorfullhash}{5343bb88057417b9a03f0884e8137760}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{isbn}{978-3-319-29350-9 978-3-319-29351-6}
@@ -91,8 +208,8 @@
       \strng{authorbibnamehash}{03ff491a1897888884f99f915b760997}
       \strng{authornamehash}{03ff491a1897888884f99f915b760997}
       \strng{authorfullhash}{03ff491a1897888884f99f915b760997}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Quadratic bosonic Hamiltonians over a one-particle Hilbert space can be described by a Bogoliubov-de Gennes (BdG) Hamiltonian on a particle-hole Hilbert space. In general, the BdG Hamiltonian is not self-adjoint, but only J-self-adjoint on the particle-hole space viewed as a Krein space. Nevertheless, its energy bands can have non-trivial topological invariants like Chern numbers or winding numbers. By a thorough analysis for tight-binding models, it is proved that these invariants lead to bosonic edge modes which are robust to a large class of possibly disordered perturbations. Furthermore, general scenarios are presented for these edge states to be dynamically unstable even though the bulk modes are stable.}
@@ -154,8 +271,8 @@
       \strng{authorbibnamehash}{634d9f24dd08e8c9cecd798c384a7851}
       \strng{authornamehash}{f1da944322c22e1c9fba79c4d7f594b3}
       \strng{authorfullhash}{634d9f24dd08e8c9cecd798c384a7851}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{day}{17}
@@ -223,8 +340,8 @@
       \strng{authorbibnamehash}{a1e72475a4183353a70069961c9d5f8d}
       \strng{authornamehash}{035bcba2a623d6271544f2147efb4345}
       \strng{authorfullhash}{a1e72475a4183353a70069961c9d5f8d}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We study chiral models in one spatial dimension, both static and periodically driven. We demonstrate that their topological properties may be read out through the long time limit of a bulk observable, the mean chiral displacement. The derivation of this result is done in terms of spectral projectors, allowing for a detailed understanding of the physics. We show that the proposed detection converges rapidly and it can be implemented in a wide class of chiral systems. Furthermore, it can measure arbitrary winding numbers and topological boundaries, it applies to all non-interacting systems, independently of their quantum statistics, and it requires no additional elements, such as external fields, nor filled bands.}
@@ -290,8 +407,8 @@
       \strng{authorbibnamehash}{e796206db38de31c55877e4f5af154bb}
       \strng{authornamehash}{b2afe9d1439255b39dd52994c8a925b6}
       \strng{authorfullhash}{e796206db38de31c55877e4f5af154bb}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We systematically study topological phases of insulators and superconductors (or superfluids) in three spatial dimensions. We find that there exist three-dimensional (3D) topologically nontrivial insulators or superconductors in five out of ten symmetry classes introduced in seminal work by Altland and Zirnbauer within the context of random matrix theory, more than a decade ago. One of these is the recently introduced ℤ2 topological insulator in the symplectic (or spin-orbit) symmetry class. We show that there exist precisely four more topological insulators. For these systems, all of which are time-reversal invariant in three dimensions, the space of insulating ground states satisfying certain discrete symmetry properties is partitioned into topological sectors that are separated by quantum phase transitions. Three of the above five topologically nontrivial phases can be realized as time-reversal invariant superconductors. In these the different topological sectors are characterized by an integer winding number defined in momentum space. When such 3D topological insulators are terminated by a two-dimensional surface, they support a number (which may be an arbitrary nonvanishing even number for singlet pairing) of Dirac fermion (Majorana fermion when spin-rotation symmetry is completely broken) surface modes which remain gapless under arbitrary perturbations of the Hamiltonian that preserve the characteristic discrete symmetries, including disorder. In particular, these surface modes completely evade Anderson localization from random impurities. These topological phases can be thought of as three-dimensional analogs of well-known paired topological phases in two spatial dimensions such as the spinless chiral (𝑝𝑥±𝑖⁢𝑝𝑦)-wave superconductor (or Moore-Read Pfaffian state). In the corresponding topologically nontrivial (analogous to “weak pairing”) and topologically trivial (analogous to “strong pairing”) 3D phases, the wave functions exhibit markedly distinct behavior. When an electromagnetic U(1) gauge field and fluctuations of the gap functions are included in the dynamics, the superconducting phases with nonvanishing winding number possess nontrivial topological ground-state degeneracies.}
@@ -352,8 +469,8 @@
       \strng{authorbibnamehash}{f62d58136d2ef18297b7d6fe8e7fd5d8}
       \strng{authornamehash}{7364dc6776cb42eab85e1574966924c3}
       \strng{authorfullhash}{f62d58136d2ef18297b7d6fe8e7fd5d8}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{23}
@@ -535,6 +652,191 @@
       \verb{url}
       \verb https://link.aps.org/doi/10.1103/PhysRevX.14.021024
       \endverb
+    \endentry
+    \entry{endresAtombyatomAssemblyDefectfree2016}{article}{}
+      \name{author}{10}{}{%
+        {{hash=aa730f0fe3724843990535fb381fb8a9}{%
+           family={Endres},
+           familyi={E\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=70cee1d90abc06fcd058421b5de2548e}{%
+           family={Bernien},
+           familyi={B\bibinitperiod},
+           given={Hannes},
+           giveni={H\bibinitperiod}}}%
+        {{hash=502c6437b38a15438a51906e27ca93f8}{%
+           family={Keesling},
+           familyi={K\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3d882c9d3ed49738af5e04139f81e3ed}{%
+           family={Levine},
+           familyi={L\bibinitperiod},
+           given={Harry},
+           giveni={H\bibinitperiod}}}%
+        {{hash=becd75e819ad146c40fab5e183ae63af}{%
+           family={Anschuetz},
+           familyi={A\bibinitperiod},
+           given={Eric\bibnamedelima R.},
+           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=53273561b0377d2adffa7029b7a717f8}{%
+           family={Krajenbrink},
+           familyi={K\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=db4f53b4c5cdf73b93c5c8ea03862d8b}{%
+           family={Senko},
+           familyi={S\bibinitperiod},
+           given={Crystal},
+           giveni={C\bibinitperiod}}}%
+        {{hash=7760fdf5da94329d189533bdd2fdf9f6}{%
+           family={Vuletic},
+           familyi={V\bibinitperiod},
+           given={Vladan},
+           giveni={V\bibinitperiod}}}%
+        {{hash=28a6aa289448ed258d404c6982cd2dd7}{%
+           family={Greiner},
+           familyi={G\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8fd921a549ae6718702b6c8c84fef487}{%
+           family={Lukin},
+           familyi={L\bibinitperiod},
+           given={Mikhail\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Association for the Advancement of Science}%
+      }
+      \strng{namehash}{4cb80a97ccfd985537c7ac25efa945f8}
+      \strng{fullhash}{ae49bdc02c443b9da00012f9514d8ac6}
+      \strng{bibnamehash}{ae49bdc02c443b9da00012f9514d8ac6}
+      \strng{authorbibnamehash}{ae49bdc02c443b9da00012f9514d8ac6}
+      \strng{authornamehash}{4cb80a97ccfd985537c7ac25efa945f8}
+      \strng{authorfullhash}{ae49bdc02c443b9da00012f9514d8ac6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The realization of large-scale fully controllable quantum systems is an exciting frontier in modern physical science. We use atom-by-atom assembly to implement a platform for the deterministic preparation of regular one-dimensional arrays of individually controlled cold atoms. In our approach, a measurement and feedback procedure eliminates the entropy associated with probabilistic trap occupation and results in defect-free arrays of more than 50 atoms in less than 400 milliseconds. The technique is based on fast, real-time control of 100 optical tweezers, which we use to arrange atoms in desired geometric patterns and to maintain these configurations by replacing lost atoms with surplus atoms from a reservoir. This bottom-up approach may enable controlled engineering of scalable many-body systems for quantum information processing, quantum simulations, and precision measurements.}
+      \field{day}{25}
+      \field{journaltitle}{Science}
+      \field{month}{11}
+      \field{number}{6315}
+      \field{title}{Atom-by-Atom Assembly of Defect-Free One-Dimensional Cold Atom Arrays}
+      \field{urlday}{8}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{volume}{354}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1024\bibrangedash 1027}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1126/science.aah3752
+      \endverb
+      \verb{file}
+      \verb /home/christian/Zotero/storage/SSJBH9SW/Endres et al. - 2016 - Atom-by-atom assembly of defect-free one-dimensional cold atom arrays.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.science.org/doi/10.1126/science.aah3752
+      \endverb
+      \verb{url}
+      \verb https://www.science.org/doi/10.1126/science.aah3752
+      \endverb
+    \endentry
+    \entry{youngHalfminutescaleAtomicCoherence2020}{article}{}
+      \name{author}{9}{}{%
+        {{hash=dc507f3c5176aa9d933d74a889dbae7d}{%
+           family={Young},
+           familyi={Y\bibinitperiod},
+           given={Aaron\bibnamedelima W.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=19dfbdc49621fc4ffa16890be444c45b}{%
+           family={Eckner},
+           familyi={E\bibinitperiod},
+           given={William\bibnamedelima J.},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=945c1e3fe5dee30e64a8c7ef51b7d480}{%
+           family={Milner},
+           familyi={M\bibinitperiod},
+           given={William\bibnamedelima R.},
+           giveni={W\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=693ad544302022a2fe269fdc8475c0f5}{%
+           family={Kedar},
+           familyi={K\bibinitperiod},
+           given={Dhruv},
+           giveni={D\bibinitperiod}}}%
+        {{hash=90224a7e65afa4a65bd72ebe11f092ef}{%
+           family={Norcia},
+           familyi={N\bibinitperiod},
+           given={Matthew\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=97940827651c750c3efa1302b7d6f349}{%
+           family={Oelker},
+           familyi={O\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=e0268e5b67eb1eeab3a342fd4b28e448}{%
+           family={Schine},
+           familyi={S\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=3737d32939a3f1581e3cba8bf0eb0adc}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c21946406d045cbc38a83a4fb0f26207}{%
+           family={Kaufman},
+           familyi={K\bibinitperiod},
+           given={Adam\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{859b416e89906834310c3445aac82e6b}
+      \strng{fullhash}{3f811221e1538bffef12abab49c97e81}
+      \strng{bibnamehash}{3f811221e1538bffef12abab49c97e81}
+      \strng{authorbibnamehash}{3f811221e1538bffef12abab49c97e81}
+      \strng{authornamehash}{859b416e89906834310c3445aac82e6b}
+      \strng{authorfullhash}{3f811221e1538bffef12abab49c97e81}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The preparation of large, low-entropy, highly coherent ensembles of identical quantum systems is fundamental for many studies in quantum metrology1, simulation2 and information3. However, the simultaneous realization of these properties remains a central challenge in quantum science across atomic and condensed-matter systems2,4–7. Here we leverage the favourable properties of tweezer-trapped alkaline-earth (strontium-88) atoms8–10, and introduce a hybrid approach to tailoring optical potentials that balances scalability, high-fidelity state preparation, site-resolved readout and preservation of atomic coherence. With this approach, we achieve trapping and optical-clock excited-state lifetimes exceeding 40 seconds in ensembles of approximately 150 atoms. This leads to half-minute-scale atomic coherence on an optical-clock transition, corresponding to quality factors well in excess of 1016. These coherence times and atom numbers reduce the effect of quantum projection noise to a level that is comparable with that of~leading atomic systems, which use optical lattices to interrogate many thousands of atoms in parallel11,12. The result is a relative fractional frequency stability of 5.2(3)~×~10−17τ−1/2 (where τ is the averaging time in seconds) for synchronous clock comparisons between sub-ensembles within the tweezer array. When further combined with the microscopic control and readout that are available in this system, these results pave the way towards long-lived engineered entanglement on an optical-clock transition13 in tailored atom arrays.}
+      \field{issn}{1476-4687}
+      \field{journaltitle}{Nature}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{7838}
+      \field{title}{Half-Minute-Scale Atomic Coherence and High Relative Stability in a Tweezer Clock}
+      \field{urlday}{8}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{volume}{588}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{408\bibrangedash 413}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1038/s41586-020-3009-y
+      \endverb
+      \verb{file}
+      \verb /home/christian/Zotero/storage/JAYSFJVN/Young et al. - 2020 - Half-minute-scale atomic coherence and high relative stability in a tweezer clock.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41586-020-3009-y
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41586-020-3009-y
+      \endverb
+      \keyw{Quantum metrology,Ultracold gases}
     \endentry
   \enddatalist
 \endrefsection

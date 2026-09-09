@@ -1,8 +1,27 @@
 \chapter{Theoretical Background}
 
 \section{Rydberg atoms}
+\subsection{Dipole traps}\label{sec:dipole traps}
+A widely used technique to trap neutral atoms are optical tweezer/ dipole traps. In the simplest classical model, an external electric field $\mathbf{E}$ induces a dipole moment $\mathbf{p}$ in the atom, with which it interacts. The potential describing this interaction is just
+\begin{align*}
+    V &= -\half\,\braket{\mathbf{p}\mathbf{E}}\\
+    &=-\alpha\, I
+\end{align*}
+with a constant $\alpha$ and the intensity of the electric field $I$. For a elliptically shaped laser beam \cite{oechsnerAnamorphicShapingLaser2019} the intensity profile is \cite{grimmOpticalDipoleTraps1999}
+\begin{align*}
+    I(x,y,z)&= P(z)\,\exp\left(-\frac{x^2}{\sigma_x^2(z)}-\frac{y^2}{\sigma_y^2(z)}\right)
+\end{align*}
+Assuming the atom is constraint within a small distance from a minimum or maximum of this potential, one can expand the intensity to second order and reach an effective harmonic trap potential 
+\begin{align*}
+    V&= \half\,m\,\left(\omega_xx^2+\omega_y y^2+ \omega_zz^2\right)
+\end{align*}
 
-\section{Topological symmetry protected phases}
+
+
+
+
+
+\section{Symmetry protected topological phases}
 \subsection{Fock space operators}
 \subsubsection{Fock space}
 This chapter will start with first recapitalizing the second quantization from a mathematical point of view. Beginning with a Hilbert space $\mathfrak{h}$ for a single particle, this shall be embedded into the large Fock space. The first step is to consider the $M$-particle space $\otimes_{i=1}^M\mathfrak{h}$. For fermions or bosons the space has to be anti-symmetrized or symmetrized respectively. This is accomplished by the action of the (anti-)symmetrizing operator.
@@ -147,9 +166,9 @@ where $\mathbb{Z}^d$ accounts for the lattice and the internal degrees of freedo
 and one defines the corresponding half-space Hamiltonian $\hat{H}:\tilde{\mathfrak{h}}\to\tilde{\mathfrak{h}}$.
 The bulk-boundary correspondence can come in different mathematical forms \cite{prodanBulkBoundaryInvariants2016}. One particular version relates the Chern number calculated for a band gap of the bulk Hamiltonian to a charge current in the half-space. For two dimensions this correspondence reads \cite{prodanBulkBoundaryInvariants2016,peanoTopologicalEdgeStates2018}
 \begin{align*}
-    -\frac{1}{2\pi}\,\hat{\mathcal{T}}\left(g(\hat{H}_{k_1})\,\nabla_{k_1}\hat{H}_{k_1}\right)&= \text{Ch}_2(P_F)
+    -\frac{1}{2\pi}\,\int_{\mathbb{T}^d}\frac{d^dk}{(2\pi^d)}\,\hat{\mathcal{T}}\left(g(\hat{H}_{k_1})\,\nabla_{k_1}\hat{H}_{k_1}\right)&= \text{Ch}_2(P_F)
 \end{align*} 
-Let us disassemble the relation. $\text{Ch}_2(P_F)$ is the Chern number computed for the Fermi projection, which is the projection on the energy bands of the bulk Hamiltonian below the Fermi energy $\mu_F$, whereas the Fermi energy is located in the bulk gap. The chern number is an index which is computed exclusively from the bulk Hamiltonian and takes integer values. The left hand-side of the equation, however, is a property of the boundary Hamiltonian an represents a charge current. $\mathcal{T}$ is the trace per unit volume and the hats denote boundary operators. $\hat{H}_{k_1}$ is the half-space Hamiltonian transformed into momentum space along the periodic first dimension, whereas $g$ is an arbitrary continuous function with support exclusively in the bulk energy gap. 
+Let us disassemble the relation. $\text{Ch}_2(P_F)$ is the Chern number computed for the Fermi projection, which is the projection on the energy bands of the bulk Hamiltonian below the Fermi energy $\mu_F$, whereas the Fermi energy is located in the bulk gap. The chern number is an index which is computed exclusively from the bulk Hamiltonian and takes integer values. The left hand-side of the equation, however, is a property of the boundary Hamiltonian an represents a charge current. $\hat{\mathcal{T}}$ is the trace per unit volume in the direction perpendicular to the boundary and the hats denote boundary operators. $\hat{H}_{k_1}$ is the half-space Hamiltonian transformed into momentum space along the periodic first dimension, whereas $g$ is an arbitrary continuous function with support exclusively in the bulk energy gap. 
 
 Therefore $g(\hat{H}_{k_1})$ is only non-vanishing for any $g$ of this property, if the boundary Hamiltonian has eigenenergies inside the bulk energy gap. Thus for non vanishing bulk chern number, the half-space system must possess energies inside the bulk gap.
 

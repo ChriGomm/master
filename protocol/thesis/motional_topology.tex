@@ -7,7 +7,7 @@ Important for the presence or absence of motional excitation number conservation
 The lifetimes for conventional Rydberg states can reach up to several hundred $\mu$s. For Circular Rydberg states the lifetimes can reach even a few ms. In both cases the trap depth ($\omega$) can easily have values of a few MHz \cite{wilsonTrappingAlkalineEarth2022,holzlLongLivedCircularRydberg2024}. Correspondingly the lower bound for the interaction strength is located at $V>>1/T\sim1\,$kHz. With the trap depth being in the MHz range, the conditions of conserved motional excitation number can be easily met, as the interactions between Rydberg atoms can be tuned in wide range from kHz to GHz. Due to this large flexibility in the interaction strength, also the complementary regime of non-conserved motional excitation number can be realized. In the following I will derive the effective Hamiltonian for the motional modes.
 
 
-\section{Model}
+\section{Model}\label{sec:model derivation}
 For the topological analysis a model will be used, that only takes motional degrees of freedom into account. This can be achieved by assuming that all atoms are in the same internal state, and the interaction doesn't couple different states. The interaction that results by this is a van der Waals interaction for atoms in Rydberg states or a dipole-dipole interaction if the atoms are dressed with an external field. I will keep the form of the interaction general in the following derivation. The system consists of $N$ atoms, which are trapped in optical tweezers with centers $\{\mathbf{R}_l\}_{l\in\{1,\dots,N\}}$. The Hamiltonian that describes the model consists of the harmonic trap potential part $\mathcal{H}_0$ and an interaction part $\mathcal{H}_I$, that depends on the position of the atoms.
 \begin{align*}
     \mathcal{H} &= \mathcal{H}_0 + \mathcal{H}_I(\{{\mathbf{R}}_l\})\\
@@ -296,50 +296,139 @@ From this the Hamiltonian can be written in momentum space as well.
 \end{align*}
 with $\mathbf{a}_\mathbf{k}=(a_\mathbf{k},b_\mathbf{k})$. 
 Since $\Delta\mathbf{R}^{A,B}=-\Delta\mathbf{R}^{B,A}$ and $\Delta\mathbf{R}^{A,A}=\Delta\mathbf{R}^{B,B}$ the form of $H_\mathbf{k}$ is 
-\begin{align*}
+\begin{align}\label{eq:H_k decomposition}
     H_\mathbf{k}&=\begin{pmatrix}
         H_\mathbf{k}^{A,A} & H_\mathbf{k}^{A,B}\\
         (H_\mathbf{k}^{A,B})^* & H_\mathbf{k}^{A,A}
-    \end{pmatrix}\\
+    \end{pmatrix}\notag\\
     &=\mathbb{1}\otimes H_\mathbf{k}^{A,A} + \sigma_x\otimes\text{Re}\left[ H_\mathbf{k}^{A,B} \right]-\sigma_y\otimes\text{Im}\left[ H_\mathbf{k}^{A,B} \right]
-\end{align*}
+\end{align}
 The submatrices of $H_\mathbf{k}$ can again be matrices themselves that couple the different directions of displacement and thus have the form of
 \begin{align}\label{eq:xy-decomposition}
     O &= O_0\,\mathbb{1}+ O_x\,\sigma_x+ O_z\,\sigma_z
 \end{align}
+In this case the matrix $H_\mathbf{k}$ is only irreducible if it contains non-zero $\sigma_x$ and $\sigma_y$ contributions in the first slot of the tensor product as well as $\sigma_x$ and $\sigma_z$ contributions in its second slot.
 It is important to note that the decomposition of $H_k$ into pauli matrices contains only independent functions of $k$ as coefficients.
 \subsection{One dimensional chain}
-First let us analyze a one dimensional zik-zak chain with alternating distances, as depicted in Figure. As the Hamiltonian derived in section is $T=+1$ time reversal symmetric, with respect to the Altland-Zirnbauer symmetry classes \cite{ryuTopologicalInsulatorsSuperconductors2010}, the only possibility in 1D that the system possesses topological phases requires the Hamiltonian to be in the BDI class and thus be particle-hole and chiral symmetric. With the knowledge of time reversal symmetry the latter to symmetries imply each other and it suffices to show that one of those symmetries is satisfied. For a $H_k$ to be chiral symmetric one demands, as stated in \secref{sec:winding number}, that $\{H_k,X\}=0$ for an unitary matrix $X$. 
+As a one-dimensional chain I will investigate the zik-zak configuration with alternating distances, as depicted in \figref{fig:chain and dipole orientation}. As the Hamiltonian derived in \secref{sec:model derivation} is $T=+1$ time reversal symmetric, with respect to the Altland-Zirnbauer symmetry classes \cite{ryuTopologicalInsulatorsSuperconductors2010}, the only possibility in 1D that lets the system possess topological phases requires the Hamiltonian to be in the BDI class and thus be particle-hole and chiral symmetric. With the knowledge of time reversal symmetry the latter to symmetries imply each other and it suffices to show that one of those symmetries is satisfied. For a $H_k$ to be chiral symmetric one demands, as stated in \secref{sec:winding number}, that $\{H_k,X\}=0$ for an unitary matrix $X$. 
 
-In the case with only one-dimensional displacements one immediately recognizes that chiral symmetry is only fulfilled if the term $H_k^{A,A}$ vanishes. This is only possible for all $k$ if the Hamiltonian does not couple sites within the same sublattice. 
+% In the case with only one-dimensional displacements one immediately recognizes that chiral symmetry is only fulfilled if the term $H_k^{A,A}$ vanishes. This is only possible for all $k$ if the Hamiltonian does not couple sites within the same sublattice. 
 
-When allowing displacements in the 2-dimensional plane one can still exploit the independence of the individual contributions to $H_k$. This implies that $X$ has to anti-commute with every contribution individually. The first consequence is, that $H_k$ can not contain a term proportional to the identity. Thus $(H_k^{A,A})_0=0$ referring to the notation of \eqref{eq:xy-decomposition}. %The identity 
-% \begin{align*}
-%     \{\sigma_i\otimes\sigma_j,\sigma_n\otimes\sigma_m\}=\half\,\{\sigma_i,\sigma_n\}\otimes\{\sigma_j,\sigma_m\}
-% \end{align*}
-% which is derived in \secref{appendix:symmetry}, infers that possible contributions to an anti-commuting matrix $X$ contain
-% \begin{align*}
-%     \sigma
-% \end{align*}
-This term is determined by the interactions between sites of the same sublattice and at the same time between modes of the same direction of displacement, i.e. $xx$ or $yy$. Thus either the interactions inside a sublattice between the same direction have to vanish or the $xx$ and $yy$ interactions have to have opposite sign, allowing the $(H_k^{A,A})_0$ term to be non-zero. In the first case one has to tune the interactions between sites of the same sublattice to zero. But the onsite term $U_{ii}^{\alpha,\alpha}=\sum_r\partial^2V_{dd}/(\partial r_\alpha \partial r_\alpha)$ has to be considered as well. As the 
+When allowing displacements in the 2-dimensional plane one can exploit the independence of the individual contributions to $H_k$, which implies that $X$ has to anti-commute with every contribution individually. Due to the results of \appref{appendix:symmetry} the only possible chiral symmetry that preserves the irreducible of the matrix is 
+\begin{align*}
+    S= \mathbb{1}\otimes\sigma_y
+\end{align*}
+It requires that the identity contribution in the second slot of the tensor product has to vanish. This can only be true if the $xx$ and $yy$ interaction have opposite signs.
+% The first consequence is, that $H_k$ can not contain a term proportional to the identity. Thus $(H_k^{A,A})_0=0$ referring to the notation of \eqref{eq:xy-decomposition}. %The identity 
+% % \begin{align*}
+% %     \{\sigma_i\otimes\sigma_j,\sigma_n\otimes\sigma_m\}=\half\,\{\sigma_i,\sigma_n\}\otimes\{\sigma_j,\sigma_m\}
+% % \end{align*}
+% % which is derived in \secref{appendix:symmetry}, infers that possible contributions to an anti-commuting matrix $X$ contain
+% % \begin{align*}
+% %     \sigma
+% % \end{align*}
+% This term is determined by the interactions between sites of the same sublattice and modes of the same direction of displacement, i.e. $xx$ or $yy$, and the onsite term of $U$. The fact that $(H_k^{A,A})_0=0$ has to hold for all $k$ enforces the onsite term $U_{ii}^{\alpha,\alpha}=\sum_r\partial^2V_{dd}/\partial r_\alpha^2$ to be zero or have opposite sign for the two displacement directions. 
+% Exploiting the high control of dipole traps in cold atom experiments one can tune the harmonic potential of each trap individually \cite{endresAtombyatomAssemblyDefectfree2016,youngHalfminutescaleAtomicCoherence2020}.
+% Thus by fine tuning the trap frequencies at each site one can in principle cancel the onsite terms.
+
+% At the same time one has to take into consideration that these conditions also have to be true at the borders of the chain, as in order for the bulk-boundary correspondence to be applicable both the infinite system as well as the open system have to respect the necessary symmetries. Thus if one wants to implement a system where the sum in the onsite potential vanishes, one has to make sure that the two parts of the sum, going to the right and to the left, vanish individually. Because of the vast decay of the interaction with $1/r^5$ I only considered up to next nearest neighbor interactions. In this case it was not possible to find a dipole orientation that meets the condition of vanishing onsite potential.
+% Consequently I resort to the second possibility, to make interactions between $xx$ and $yy$ of opposite sign. 
+Recall the dependence of the interaction of the direction of $\mathbf{r}$ and $\mathbf{d}$ in form of   
+% Thus either the interactions inside a sublattice between the same direction have to vanish or the $xx$ and $yy$ interactions have to have opposite sign, allowing the $(H_k^{A,A})_0$ term to be non-zero. In the first case one has to tune the interactions between sites of the same sublattice to zero. But the onsite term $U_{ii}^{\alpha,\alpha}=\sum_r\partial^2V_{dd}/(\partial r_\alpha \partial r_\alpha)$ has to be considered as well. As the 
 
 \begin{align*}
     c_{\alpha\beta}(\hat{\mathbf{r}}) &= \delta_{\alpha\beta}\left(-3 + 15\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)- 6\,\hat{d}_\alpha \hat{d}_\beta +30\, \frac{\hat{d}_\alpha r_\beta + \hat{d}_\beta r_\alpha}{r}\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}}) + 15\,\frac{r_\alpha r_\beta}{r^2} \left(1  - 7\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)\\
     &= \delta_{\alpha\beta}\left(-3 + 15\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right) + A_{\alpha\beta}
 \end{align*}
-\begin{align*}
+\begin{figure}[h]
+    \hspace*{-2cm}
+    \includegraphics{pictures/chain_with_interaction_arrows2.pdf}
+    \caption{\textbf{Zik-zak chain and dipole orientation.} Interactions up to next nearest neighbors are presented. The dipole is orientated in such a way that it is perpendicular to the connection vectors of nearest neighbor distances. Thus the scalar product with the dipole moment is the same for both the solid and the dashed vector.}
+    \label{fig:chain and dipole orientation}
+\end{figure}
+% \hfill\newpage
+In order for the interaction between atoms of relative distance $\mathbf{r}$ to vanish the following condition has to hold
+\begin{align}\label{eq:opposite sign condition}
     c_{xx}(\hat{\mathbf{r}})&\overset{!}{=}-c_{yy}(\hat{\mathbf{r}})\\
-    &=-6 + 30 \, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2 + A_{xx}+A_{yy}\\
-    A_{xx}+A_{yy}&=- 6\,(\hat{d}_x^2+\hat{d}_y^2) +60\, \frac{\hat{d}_x r_x + \hat{d}_y r_y}{r}\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}}) + 15\,\frac{r_x^2 + r_y^2}{r^2} \left(1  - 7\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)\\
-    &= 9 - 3\cdot15\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\\
-    \Rightarrow\quad 0&=3 - 15\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2
-\end{align*}
-and for the two different vectors ${\mathbf{r}}_1$ and ${\mathbf{r}}_2$ the interactions have different signs if
-\begin{gather*}
-    \frac{1}{r_1^5}\,c_{xx}(\hat{\mathbf{r}}_1)\overset{!}{=}-\frac{1}{r_2^5}\,c_{xx}(\hat{\mathbf{r}}_2)\quad\text{and}\quad \frac{1}{r_1^5}\,c_{yy}(\hat{\mathbf{r}}_1)\overset{!}{=}-\frac{1}{r_2^5}\,c_{yy}(\hat{\mathbf{r}}_2)\\
-    \Rightarrow\quad \frac{1}{r_1^5}\,\left[ 3 - 15\,(\hat{\mathbf{r}}_1\cdot \hat{\mathbf{d}})^2 \right] = -\frac{1}{r_2^5}\,\left[ 3 - 15\,(\hat{\mathbf{r}}_2\cdot \hat{\mathbf{d}})^2 \right]
-\end{gather*}
+    &=-6 + 30 \, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2 + A_{xx}+A_{yy}\notag\\
+    A_{xx}+A_{yy}&=- 6\,(\hat{d}_x^2+\hat{d}_y^2) +60\, \frac{\hat{d}_x r_x + \hat{d}_y r_y}{r}\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}}) + 15\,\frac{r_x^2 + r_y^2}{r^2} \left(1  - 7\, (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\right)\notag\\
+    &= 9\,||d_{\parallel}||^2 - 3\cdot15\,(\hat{\mathbf{r}}\cdot \hat{\mathbf{d}})^2\notag\\
+    \Rightarrow\quad (\hat{\mathbf{r}}\cdot \hat{\mathbf{d}}_{\parallel})^2&= \frac{3}{15}\notag
+\end{align}
+% and for the two different vectors ${\mathbf{r}}_1$ and ${\mathbf{r}}_2$ the interactions have different signs if
+% \begin{gather*}
+%     \frac{1}{r_1^5}\,c_{xx}(\hat{\mathbf{r}}_1)\overset{!}{=}-\frac{1}{r_2^5}\,c_{xx}(\hat{\mathbf{r}}_2)\quad\text{and}\quad \frac{1}{r_1^5}\,c_{yy}(\hat{\mathbf{r}}_1)\overset{!}{=}-\frac{1}{r_2^5}\,c_{yy}(\hat{\mathbf{r}}_2)\\
+%     \Rightarrow\quad \frac{1}{r_1^5}\,\left[ 3 - 15\,(\hat{\mathbf{r}}_1\cdot \hat{\mathbf{d}})^2 \right] = -\frac{1}{r_2^5}\,\left[ 3 - 15\,(\hat{\mathbf{r}}_2\cdot \hat{\mathbf{d}})^2 \right]
+% \end{gather*}
+
+% \begin{align*}
+% 3 - 15 d_x^2 &= -\frac{1}{r^5} \left[ 3 - \frac{15}{r^2}\, \left( r_x^2 d_x^2 + r_y^2 d_y^2 + 2 r_x r_y d_x d_y \right) \right] \\[1ex]
+% 0 &= 3 r^5 + 3 - 15 \left( r^5 + \frac{r_x^2}{r^2} \right) d_x^2 - 15 \frac{r_y^2}{r^2} d_y^2 + 30 \frac{r_x r_y}{r^2} d_x d_y
+% \end{align*}
+This condition can only be satisfied when all vectors lie on a straight line. Picturing the zik-zak chain implementation of the system as depicted in \figref{fig:chain and dipole orientation} one realizes that this is not possible if one encounters bot interactions between  and within the sublattices.
+However, the restriction to only nearest neighbor interactions lets the coupling only take place between sublattices and one can choose the dipole moment in $y$ direction to satisfy \eqref{eq:opposite sign condition} as in \figref{fig:chain and dipole orientation}. In this case the model only contains four different coupling parameters, $V_x$, $V_{xy}$ for interactions within the unit cell and $W_x$, $W_{xy}$ for interactions between unit cells. One can write down the contributions to the Hamiltonian as
 \begin{align*}
-3 - 15 d_x^2 &= -\frac{1}{r^5} \left[ 3 - \frac{15}{r^2}\, \left( r_x^2 d_x^2 + r_y^2 d_y^2 + 2 r_x r_y d_x d_y \right) \right] \\[1ex]
-0 &= 3 r^5 + 3 - 15 \left( r^5 + \frac{r_x^2}{r^2} \right) d_x^2 - 15 \frac{r_y^2}{r^2} d_y^2 + 30 \frac{r_x r_y}{r^2} d_x d_y
+    H_k^{A,A}&=\begin{pmatrix}
+        V_x + W_x & V_{xy} + W_{xy}\\
+        V_{xy} + W_{xy} & -V_x - W_x
+    \end{pmatrix}=(V_x + W_x)\,\sigma_z+(V_{xy} + W_{xy})\,\sigma_x\\\\
+    H_k^{A,B} &= \begin{pmatrix}
+        V_x + W_x \, e^{-ika}& V_{xy} + W_{xy}\, e^{-ika}\\
+        V_{xy} + W_{xy} \, e^{-ika}& -V_x - W_x\, e^{-ika}
+    \end{pmatrix}=\left(V_x + W_x\, e^{-ika}\right)\,\sigma_z+\left(V_{xy} + W_{xy}\, e^{-ika}\right)\,\sigma_x
 \end{align*}
+% $H_k$ is still irreducible (see \secref{appendix:symmetry}). Thus the anti-commutation property with the matrix 
+% \begin{align*}
+%     S= \mathbb{1}\otimes\sigma_y
+% \end{align*}
+% is the unique chiral symmetry of the system. 
+Transforming to the basis where $S=\sigma_z\otimes\mathbb{1}$ the Hamiltonian takes the form
+\begin{align*}
+    H_k&=\begin{pmatrix}
+        0&h\\
+        h^\dagger&0
+    \end{pmatrix}\\
+    \text{with}\quad h&= \begin{pmatrix}i\,(V_{xy}+W_{xy})-(V_x+W_x)  & i\,\left(V_{xy} + W_{xy}\, e^{-ika}\right)-\left(V_x + W_x\, e^{-ika}\right)\\
+        i\,\left(V_{xy} + W_{xy}\, e^{ika}\right)-\left(V_x + W_x\, e^{ika}\right) & i\,(V_{xy}+W_{xy})-(V_x+W_x)
+    \end{pmatrix}
+\end{align*}
+This can be written in shorter and clearer form as
+\begin{align*}
+    h&=\begin{pmatrix}
+        a & b+c\,e^{-ika}\\
+        b+c\,e^{ika}& a
+    \end{pmatrix}\quad a,b,c\in\mathbb{C}
+\end{align*}
+From this the eigenvalues $\lambda_\pm$ can be calculated as
+\begin{align*}
+    \lambda_\pm&= a\pm\sqrt{b^2+c^2+2bc\,\cos(ka)}
+\end{align*}
+Since $a$ is constant the only winding can come from the square root expression. As the discriminant is, however, of the form $r+s\,t$ with $r,s\in\mathbb{C}$ and $t\in[0,1]$ the square root cannot describe a closed curve in the complex plain. Hence this implementation of chiral symmetry does not exhibit topologically non-trivial phases.\\\\
+In order to have a qualitatively different disorder, one has to make the $H_k^{A,A}$ term vanish. Since one cannot choose the dipole in such a way that the $xx$, $yy$ and $xy$ interaction of one distance vanish at the same time, one has to assume nearest neighbor interactions only. In this scenario one is still left with the onside terms of $U$. Exploiting the high control of dipole traps in cold atom experiments one can tune the harmonic potential of each trap individually \cite{endresAtombyatomAssemblyDefectfree2016,youngHalfminutescaleAtomicCoherence2020}.
+Thus by fine tuning the trap frequencies at each site one can in principle cancel the onsite terms corresponding to $xx$ and $yy$ interactions. The interaction between different direction, however, is still present after this step and has to be tuned to zero via the geometry of the lattice and the dipole orientation. This decouples the two direction completely from each other leading to a mere coexistence of two models. It has to be noted that the open system with boundaries has to satisfy the same symmetries as the infinite system in order for the bulk-boundary correspondence to hold. Hence it is not possible to tune the sum in $U_{ii}^{xy}=\sum_r\partial^2V_{dd}/\partial r_x\partial r_y$ to zero for every site of the open system without forcing every summand to zero. 
+After decoupling into one model for each direction of displacement, it is, however, possible to observe both models in different topological phases at the same time, as indicated by \figref{fig:topological phases 1D}.
+\begin{addmargin}[2em]{2em} % [left margin]{right margin}
+\small \textbf{Note:} The value of the derivative of the dipole-dipole interaction on the unit circle is only dependent on two properties. On the one hand the dipole-dipole interaction is only dependent on the angle between dipole and distance vector. The derivative on the other hand is additionally dependent on the direction of derivation, thus by the choice of the coordinate frame. If the frame is rotated by the angle $\varphi$ around the $z$-axis, one can write the old variables as functions of the new ones.
+\begin{align*}
+    r_x&= \cos\varphi\,r_x' + \sin\varphi\,r_y'\\
+    r_y&= -\sin\varphi\,r_x' + \cos\varphi\,r_y'
+\end{align*}
+From this expression one can write the derivations into the new $x$- and $y$-directions.
+\begin{align*}
+    \frac{\partial V_{dd}}{\partial r_x'}&=  \frac{\partial V_{dd}}{\partial r_x}\,\cos\varphi - \frac{\partial V_{dd}}{\partial r_y}\,\sin\varphi\\
+    \frac{\partial^2 V_{dd}}{(\partial r_x')^2}&= \cos^2\varphi\,\frac{\partial^2 V_{dd}}{\partial r_x^2} - 2\,\cos\varphi\sin\varphi\,\frac{\partial^2 V_{dd}}{\partial r_x\partial r_y}+\sin^2\varphi\,\frac{\partial^2 V_{dd}}{\partial r_y^2}\\
+    % 
+    \frac{\partial^2 V_{dd}}{(\partial r_y')^2}&= \sin^2\varphi\,\frac{\partial^2 V_{dd}}{\partial r_x^2} + 2\,\cos\varphi\sin\varphi\,\frac{\partial^2 V_{dd}}{\partial r_x\partial r_y}+\cos^2\varphi\,\frac{\partial^2 V_{dd}}{\partial r_y^2}\\
+    %
+    \frac{\partial^2 V_{dd}}{\partial r_x'\partial r_y'}&= \cos\varphi\sin\varphi\,\frac{\partial^2 V_{dd}}{\partial r_x^2} - \left(\cos^2\varphi-\sin^2\varphi\right)\,\frac{\partial^2 V_{dd}}{\partial r_x\partial r_y}-\cos\varphi\sin\varphi\,\frac{\partial^2 V_{dd}}{\partial r_y^2}\\
+\end{align*}
+All three derivatives in the new frame can only be zero if they where already zero in the old reference frame. As it is not possible to find a dipole orientation that makes this happen for the direction $\hat{e}_x$. It is not possible to find another orientation of the distance vector such that all second derivatives would vanish.
+\end{addmargin}
+\begin{figure}[h]
+    \hspace*{-2cm}
+    \includegraphics{pictures/topological_phases_decoupled_2D.pdf}
+    \caption{\textbf{Topological phase diagram.} There are up to four possible dipole orientations that decouple $x$ and $y$-directions. Two of them are shown on the left panels by depicting the $x$-component of the dipole. White space indicates here that there were no appropriate dipoles found. On the right side of the panel the topological phases are depicted. It is shown, whether a topological phase arises for the $x$, $y$ or both directions, or if the system exhibits a topologically trivial phase.}
+    \label{fig:topological phases 1D}
+\end{figure}
+A different approach to decoupling the two directions of displacement $x$ and $y$, is by choosing different trap frequencies along each direction (see \secref{sec:dipole traps}). If one can still ensure $|\omega_x-\omega_y|\gg|U|\ll\omega_x,\,\omega_y$, the two direction of displacement are decoupled as well, since transfer between the $x$ and $y$-mode are suppressed. In this case one still has free choice over the dipole orientation. Focussing in the following only on one direction, one receives a full one-dimensional model with one mode per site. Eliminating the onsite potential with the help of the trap frequencies, this system can be mapped to an extended SSH-model. The only requirement left for this mapping is the vanishing of interactions within the same sublattice. This can be eliminated by choosing an appropriate dipole orientation, i.e. $d_x=\pm1/\sqrt{3}$.
+
