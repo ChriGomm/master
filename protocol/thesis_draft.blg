@@ -1,17 +1,17 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'thesis_draft.blg'
-[30] biber:340> INFO - === Tue Sep  8, 2026, 16:02:57
-[36] Biber.pm:419> INFO - Reading 'thesis_draft.bcf'
-[62] Biber.pm:979> INFO - Found 12 citekeys in bib section 0
-[67] Biber.pm:4419> INFO - Processing section 0
-[71] Biber.pm:4610> INFO - Looking for bibtex file 'sources4.bib' for section 0
-[73] bibtex.pm:1713> INFO - LaTeX decoding ...
-[90] bibtex.pm:1519> INFO - Found BibTeX data source 'sources4.bib'
-[156] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[156] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[156] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[156] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[161] bbl.pm:660> INFO - Writing 'thesis_draft.bbl' with encoding 'UTF-8'
-[164] bbl.pm:763> INFO - Output to thesis_draft.bbl
-[164] Biber.pm:131> WARN - ISBN '978-3-319-29350-9 978-3-319-29351-6' in entry 'prodanBulkBoundaryInvariants2016' is invalid - run biber with '--validate_datamodel' for details.
-[164] Biber.pm:133> INFO - WARNINGS: 1
+[34] biber:340> INFO - === Fri Sep 18, 2026, 18:11:10
+[42] Biber.pm:419> INFO - Reading 'thesis_draft.bcf'
+[71] Biber.pm:979> INFO - Found 10 citekeys in bib section 0
+[77] Biber.pm:4419> INFO - Processing section 0
+[82] Biber.pm:4610> INFO - Looking for bibtex file 'sources4.bib' for section 0
+[84] bibtex.pm:1713> INFO - LaTeX decoding ...
+[104] bibtex.pm:1519> INFO - Found BibTeX data source 'sources4.bib'
+[165] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[165] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[165] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[165] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[170] bbl.pm:660> INFO - Writing 'thesis_draft.bbl' with encoding 'UTF-8'
+[173] bbl.pm:763> INFO - Output to thesis_draft.bbl
+[173] Biber.pm:131> WARN - ISBN '978-3-319-29350-9 978-3-319-29351-6' in entry 'prodanBulkBoundaryInvariants2016' is invalid - run biber with '--validate_datamodel' for details.
+[173] Biber.pm:133> INFO - WARNINGS: 1
