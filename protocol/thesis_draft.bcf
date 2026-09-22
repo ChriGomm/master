@@ -2385,6 +2385,7 @@
     <bcf:citekey order="12" intorder="1">wilsonTrappingAlkalineEarth2022</bcf:citekey>
     <bcf:citekey order="12" intorder="2">holzlLongLivedCircularRydberg2024</bcf:citekey>
     <bcf:citekey order="13" intorder="1">ryuTopologicalInsulatorsSuperconductors2010</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">taoHighFidelityDetectionLargeScale2024</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

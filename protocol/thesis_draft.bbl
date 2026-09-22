@@ -653,6 +653,76 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevX.14.021024
       \endverb
     \endentry
+    \entry{taoHighFidelityDetectionLargeScale2024}{article}{}
+      \name{author}{5}{}{%
+        {{hash=57fb0cc9b67ac23d5f54f507aab3874c}{%
+           family={Tao},
+           familyi={T\bibinitperiod},
+           given={Renhao},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7dc14a863d4bdca57010513ce3a65192}{%
+           family={Ammenwerth},
+           familyi={A\bibinitperiod},
+           given={Maximilian},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e45160c27fa05a51dc9d0091e6e0f25e}{%
+           family={Gyger},
+           familyi={G\bibinitperiod},
+           given={Flavien},
+           giveni={F\bibinitperiod}}}%
+        {{hash=2706649dd73bd9e5cf6ed59802894f8c}{%
+           family={Bloch},
+           familyi={B\bibinitperiod},
+           given={Immanuel},
+           giveni={I\bibinitperiod}}}%
+        {{hash=ebd99a912e076a7dc696db17cf8b435f}{%
+           family={Zeiher},
+           familyi={Z\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{df0a74f0cf89a5dde159eb2de0077a88}
+      \strng{fullhash}{dcb49d16242f878ea34d35cfee4c4b8e}
+      \strng{bibnamehash}{dcb49d16242f878ea34d35cfee4c4b8e}
+      \strng{authorbibnamehash}{dcb49d16242f878ea34d35cfee4c4b8e}
+      \strng{authornamehash}{df0a74f0cf89a5dde159eb2de0077a88}
+      \strng{authorfullhash}{dcb49d16242f878ea34d35cfee4c4b8e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recent advances in quantum simulation based on neutral atoms have largely benefited from high-resolution, single-atom sensitive imaging techniques. A variety of approaches have been developed to achieve such local detection of atoms in optical lattices or optical tweezers. For alkaline-earth and alkaline-earth-like atoms, the presence of narrow optical transitions opens up the possibility of performing novel types of Sisyphus cooling, where the cooling mechanism originates from the capability to spatially resolve the differential optical level shifts in the trap potential. Up to now, it has been an open question whether high-fidelity imaging could be achieved in a “repulsive Sisyphus” configuration, where the trap depth of the ground state exceeds that of the excited state involved in cooling. Here, we demonstrate high-fidelity (99.971(1)\%) and high-survival (99.80(5)\%) imaging of strontium atoms using repulsive Sisyphus cooling. We use an optical lattice as a pinning potential for atoms in a large-scale tweezer array with up to 399 tweezers and show repeated, high-fidelity lattice-tweezer-lattice transfers. We furthermore demonstrate loading the lattice with approximately 10 000 atoms directly from the MOT and scalable imaging over {$>$}10 000 lattice sites with a combined survival probability and classification fidelity better than 99.2\%. Our lattice thus serves as a locally addressable and sortable reservoir for continuous refilling of optical tweezer arrays in the future.}
+      \field{day}{1}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{7}
+      \field{number}{1}
+      \field{shortjournal}{Phys. Rev. Lett.}
+      \field{title}{High-{{Fidelity Detection}} of {{Large-Scale Atom Arrays}} in an {{Optical Lattice}}}
+      \field{urlday}{21}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{volume}{133}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{013401}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.133.013401
+      \endverb
+      \verb{file}
+      \verb /home/christian/Zotero/storage/ZDIJ8WH7/Tao et al. - 2024 - High-Fidelity Detection of Large-Scale Atom Arrays in an Optical Lattice.pdf;/home/christian/Zotero/storage/4BS2H62U/PhysRevLett.133.html
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.133.013401
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.133.013401
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

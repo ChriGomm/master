@@ -15,9 +15,20 @@ Assuming the atom is constraint within a small distance from a minimum or maximu
 \begin{align*}
     V&= \half\,m\,\left(\omega_xx^2+\omega_y y^2+ \omega_zz^2\right)
 \end{align*}
-
-
-
+Consider the example of a circular gaussian beam with intensity profile
+\begin{align*}
+    I(r,z)&=\frac{wP}{\pi w^2(z)}\,\exp\left(-2\,\frac{r^2}{w^2(z)}\right)
+\end{align*}
+where radial beam modulation is $w(z)=w_0\,\sqrt{1+(z/z_R)^2}$. The constant $w_0$ is called the beam waist and describes the waist of the gaussian at $z=0$. The trap depth $\tilde{V}=V(\mathbf{r}=0)$ is the value of the potential at its maximum. Expanding the potential to second order one reaches at the harmonic potential
+\begin{align*}
+    V &= \half\,m\,\left(\omega_r^2\,r^2+\omega_z^2\,z^2\right)\\
+    \text{with}\quad \omega_r&=\left( \frac{4\tilde{V}}{m\,w_0^2} \right)^{1/2}\\
+    \omega_z&=\left( \frac{2\tilde{V}}{m\,z_R^2} \right)^{1/2}
+\end{align*}
+This allows one to compute the relative error in trap frequency from known beam waist error and trap depth uncertainty using the gaussian error propagation formula.
+\begin{align*}
+    \frac{\delta\omega_r}{\omega_r}&=\left( \frac14\,\left(\frac{\delta\tilde{V}}{\tilde{V}}\right)^2+\left(\frac{\delta w_0}{w_0}\right)^2 \right)^{1/2}
+\end{align*}
 
 
 

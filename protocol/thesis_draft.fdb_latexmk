@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber thesis_draft"] 1789747870.36554 "thesis_draft.bcf" "thesis_draft.bbl" "thesis_draft" 1789753032.26276 0
-  "sources4.bib" 1788872812.0252 37228 b6c25a28f7b8f0f51fbaf416b8d15862 ""
-  "thesis_draft.bcf" 1789753032.09044 108863 337579ab9c9c9b84028382d9a498ebff "pdflatex"
+["biber thesis_draft"] 0 "thesis_draft.bcf" "thesis_draft.bbl" "thesis_draft" 1790007357.65 -1
+  "sources4.bib" 1790001374.53753 39560 f472043798363a434842dd08bc023f8c ""
+  "thesis_draft.bcf" 1790007357.45633 108957 e8a06af2082e8cee129ee7fc63d1f459 "pdflatex"
   (generated)
   "thesis_draft.bbl"
   "thesis_draft.blg"
   (rewritten before read)
-["pdflatex"] 1789753030.23115 "/home/christian/Documents/master/protocol/thesis_draft.tex" "thesis_draft.pdf" "thesis_draft" 1789753032.26293 0
+["pdflatex"] 1790007355.51954 "/home/christian/Documents/master/protocol/thesis_draft.tex" "thesis_draft.pdf" "thesis_draft" 1790007357.65022 0
   "/etc/texmf/web2c/texmf.cnf" 1758895203.64774 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/christian/Documents/master/protocol/thesis_draft.tex" 1788436085.2235 13402 09c852172e2cc036a37b7a3958b510d2 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc" 1177804218 3341 78e600b269762aa2a25a5293cc4535c0 ""
@@ -365,18 +365,19 @@
   "StandardPages.sty" 1759150099.35658 3802 cf878797be82f080136d69564456bed0 ""
   "pictures/Deltas4.pdf" 1785858926.73742 171388 013694504934a3046d5091ca7b693204 ""
   "pictures/chain_with_interaction_arrows_wo_dipole.pdf" 1789748320.29083 5753 64050cdf35f688c15ec2e9fc6224bdcc ""
-  "pictures/edge_occupation_alpha.pdf" 1789741370.24514 223224 6566141c9affe450eb600f63dd5d9c57 ""
-  "pictures/edge_occupation_xy_model.pdf" 1789749974.29641 274178 8a5fdf07c7cdcd2013823dd6f7b5392a ""
+  "pictures/edge_occupation_alpha2.pdf" 1789999516.67993 346506 9ad475bda9dd0466f422f7ad674eb403 ""
+  "pictures/edge_occupation_xy_model.pdf" 1789998149.80812 296698 1ef1ea2ef3eb41fe44579af54f1f55a7 ""
+  "pictures/optimal_tuning_HAA_vs_HAB.pdf" 1789996473.86333 202155 c03a6fd86d65d4aa6fe7d941dd452d37 ""
   "pictures/spectrum_abs_of_tuned_BdG_various_chainlengths_for_gap_10V.pdf" 1787160891.29682 214924 ed6dd8dbc9dbfe002d47044bac442ac2 ""
   "pictures/spectrum_abs_of_tuned_BdG_various_shift_opt.pdf" 1785851082.59829 326975 71c518aed17a20bbb93fc0a6679c5923 ""
   "pictures/tuning_first_order_to_zero4.pdf" 1787226470.9866 439941 396fd01ba7dd3cf636eae2637e4c2520 ""
   "thesis/Appendix_derivation_Hamiltonian.tex" 1788363907.48251 15865 b05e7e19dbe3b17cf4bfc2eff6489329 ""
-  "thesis/motional_topology.tex" 1789753030.07763 35676 953017bd28510d661fdeed293dc579fa ""
-  "thesis/theory.tex" 1788974210.59473 45334 8c4eab0037c38004a6323aa3a94496f8 ""
-  "thesis_draft.aux" 1789753032.08644 19923 40d5655959c903eda032b834248eb260 "pdflatex"
-  "thesis_draft.bbl" 1789747870.8653 32628 53776e00403a20fa1641e26fdcc59526 "biber thesis_draft"
-  "thesis_draft.out" 1789753031.57786 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "thesis_draft.run.xml" 1789753032.09277 2484 5f8edbd782c692ffa530ad7323efe339 "pdflatex"
+  "thesis/motional_topology.tex" 1790007355.3361 38686 b282d088d5d428431e8388a77f5b8e9c ""
+  "thesis/theory.tex" 1790006658.65723 46417 7f0533129501f26395f839640f549866 ""
+  "thesis_draft.aux" 1790007357.45133 22369 fae086d8e0a82f70eda930107e9e2902 "pdflatex"
+  "thesis_draft.bbl" 1790001377.48208 36824 84b55d8de1284ed6c22c1e3695384d8f "biber thesis_draft"
+  "thesis_draft.out" 1790007356.9008 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "thesis_draft.run.xml" 1790007357.45704 2484 5f8edbd782c692ffa530ad7323efe339 "pdflatex"
   "thesis_draft.tex" 1788436085.2235 13402 09c852172e2cc036a37b7a3958b510d2 ""
   (generated)
   "thesis_draft.aux"
