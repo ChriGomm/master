@@ -4,7 +4,13 @@ The possibility of trapping atoms in optical tweezers and arranging them in arbi
 \section{Parameter regimes}
 Important for the presence or absence of motional excitation number conservation is the ratio of interaction strength $V$ to trap depth $\omega$. The lifetime of the Rydberg states $T$, however, sets a lower bound on the interaction strength, as the dynamics induced by the interaction has to be faster than the lifetime of the Rydberg state, in order to be observed. For the regime, in which the motional excitation number is conserved, the trap depth has to be much larger than the interaction which in turn has to be much larger than this lower bound. In the following I will discuss the relevant energy scales and show that both regimes can be implemented in Rydberg atom arrays.
 
-The lifetimes for conventional Rydberg states can reach up to several hundred $\mu$s. For Circular Rydberg states the lifetimes can reach even a few ms. In both cases the trap depth ($\omega$) can have values of a few MHz \cite{wilsonTrappingAlkalineEarth2022,holzlLongLivedCircularRydberg2024}. Correspondingly the lower bound for the interaction strength is located at $V>>1/T\sim1\,$kHz. With the trap depth being in the MHz range, the conditions of conserved motional excitation number can be easily met, as the interactions between Rydberg atoms can be tuned in wide range from kHz to GHz. Due to this large flexibility in the interaction strength, also the complementary regime of non-conserved motional excitation number can be realized. In the following I will derive the effective Hamiltonian for the motional modes.
+The lifetimes for conventional Rydberg states can reach up to several hundred $\mu$s. For Circular Rydberg states lifetimes up to $10\,$ms have been reported \cite{pultineviciusLonglivedGiantCircular2026}. In both cases the trap depth ($\omega$) can have values of a $\sim100\,$kHz. Correspondingly the lower bound for the interaction strength is located at $V>>1/T\sim100\,$Hz, when using circular Rydberg states. With the trap strength of above mentioned dimension, the conditions of conserved motional excitation number 
+are tight.
+\begin{align*}
+    1/T\sim100\,\text{Hz} \ll V \ll \omega/2\pi\sim100\,\text{kHz}
+\end{align*}
+Reaching life times of circular Rydberg states of $20\,$ms and trap frequencies of $500\,$kHz seems to be feasible, which would allow a good separation of time scales of a factor $100$ each.
+can be easily met, as the interactions between Rydberg atoms can be tuned in wide range from kHz to GHz. Due to this large flexibility in the interaction strength, also the complementary regime of non-conserved motional excitation number can be realized. In the following I will derive the effective Hamiltonian for the motional modes.
 
 
 \section{Model}\label{sec:model derivation}

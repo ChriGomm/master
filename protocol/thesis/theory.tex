@@ -7,7 +7,12 @@ A widely used technique to trap neutral atoms are optical tweezer/ dipole traps.
     V &= -\half\,\braket{\mathbf{p}\mathbf{E}}\\
     &=-\alpha\, I
 \end{align*}
-with a constant $\alpha$ and the intensity of the electric field $I$. For a elliptically shaped laser beam \cite{oechsnerAnamorphicShapingLaser2019} the intensity profile is \cite{grimmOpticalDipoleTraps1999}
+with a constant $\alpha$ and the intensity of the electric field $I$. In the case of a induced dipole moment $\mathbf{d}$ between two levels the potential in the rotating wave approximation takes the form
+\begin{align*}
+    V &= \frac{\mathbf{d}^2}{2\epsilon_0\hbar c}\,\frac{I}{\Delta}
+\end{align*}
+With the detuning $\Delta=\omega_E-\omega_0$ between the frequency of the laser $\omega_E$ and the transition frequency$\omega_0$ between the two levels. The potential is attractive for red detuning $\Delta<0$ and repulsive for blue detuning $\Delta>0$.
+For a elliptically shaped laser beam \cite{oechsnerAnamorphicShapingLaser2019} the intensity profile is \cite{grimmOpticalDipoleTraps1999}
 \begin{align*}
     I(x,y,z)&= P(z)\,\exp\left(-\frac{x^2}{\sigma_x^2(z)}-\frac{y^2}{\sigma_y^2(z)}\right)
 \end{align*}
@@ -29,6 +34,12 @@ This allows one to compute the relative error in trap frequency from known beam 
 \begin{align*}
     \frac{\delta\omega_r}{\omega_r}&=\left( \frac14\,\left(\frac{\delta\tilde{V}}{\tilde{V}}\right)^2+\left(\frac{\delta w_0}{w_0}\right)^2 \right)^{1/2}
 \end{align*}
+\subsubsection{Trapping of Rydberg atoms}
+Atoms in Rydberg state can also be trapped in an optical tweezer. This can be achieved using two different approaches. Since the highest transition frequencies of neighboring Rydberg states are in the regime up to around $\sim\,$THz, the trapping laser would have to have a wavelength of $>300\,\mu$m, Which would prevent trapping of atoms in distances of a few $\mu$m, as is common for usual Rydberg experiments. A trapping laser with a typical wavelength of $1\,\mu$m creates a ponderomotive potential for the Rydberg electron, which attracts the electron to intensity minima. Thus the atom can be trapped by a hollow, so called, bottle beam, Where a intensity minimum is engineered in the center of the laser beam. Using this technique, trap frequencies from $\omega/(2\pi)=1-23\,$kHz have been achieved \cite{cortinasLaserTrappingCircular2020,mehaignerieInteractingCircularRydberg2025,ArrayIndividualCircular}.
+% , which could maybe be increased to $\sim100\,$kHz \cite{}. The paper of Ravon at al. does not mention the necessary parameters to compute this. It is given a trap depth of $70\,\mu$K, but no waist of the trapping beam is given. The paper arranges atoms in a distance of $15\,\mu$m. Thus assuming this distance is bigger than the waist of the bottle beam, one can estimate trap frequency as $\sim10\,$kHz, going to $\sim100\,$kHz for a waist of $1.5\,\mu$m. 
+
+The second option is to use alkaline earth atoms, which have a second valence electron. Therefore they retain the necessary polarizability to be trapped in a red-detuned highly focused laser beam. In this way trapping frequencies for atoms in low angular momentum Rydberg states of $\sim40\,$kHz have been achieved \cite{wilsonTrappingAlkalineEarth2022}. For circular Rydberg states, trap frequencies of $\approx20\,$kHz have been reported \cite{holzlLongLivedCircularRydberg2024}, but I expect that trap frequencies of $\sim100\,$kHz are possible as is usual for ground state trapping\cite{nogretteSingleAtomTrappingHolographic2014}.
+
 
 
 
