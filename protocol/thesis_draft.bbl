@@ -421,6 +421,7 @@
       \strng{authorbibnamehash}{d93bef7d64f986eb74f430a04a8a8aaf}
       \strng{authornamehash}{deee0507e3ae75bc59f855efcc7b6518}
       \strng{authorfullhash}{d93bef7d64f986eb74f430a04a8a8aaf}
+      \field{extraname}{1}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
@@ -454,6 +455,420 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevX.4.021034
       \endverb
     \endentry
+    \entry{masterThesisAOD}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=2d147734ab49de34aec62eb5adb26581}{%
+           family={Guariento},
+           familyi={G\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of Firenze}%
+      }
+      \list{location}{1}{%
+        {SR-RYDBERG LAB}%
+      }
+      \strng{namehash}{2d147734ab49de34aec62eb5adb26581}
+      \strng{fullhash}{2d147734ab49de34aec62eb5adb26581}
+      \strng{bibnamehash}{2d147734ab49de34aec62eb5adb26581}
+      \strng{authorbibnamehash}{2d147734ab49de34aec62eb5adb26581}
+      \strng{authornamehash}{2d147734ab49de34aec62eb5adb26581}
+      \strng{authorfullhash}{2d147734ab49de34aec62eb5adb26581}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Development of {{Optical Tweezer}} Techniques with {{Acousto Optic Deflectors}} for Atomic Quantum Simulators}
+      \field{type}{mathesis}
+      \field{year}{2021}
+      \field{dateera}{ce}
+    \endentry
+    \entry{nogretteSingleAtomTrappingHolographic2014a}{article}{}
+      \name{author}{8}{}{%
+        {{hash=8d2fb27894732a3cc277166f0070aafa}{%
+           family={Nogrette},
+           familyi={N\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=d9d1e766d3fa96b378c4bb044a84ac7f}{%
+           family={Labuhn},
+           familyi={L\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=233f7696a73ce9425e8f47a47689d4ef}{%
+           family={Ravets},
+           familyi={R\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0c1eafd0a47c16c6d1881b4053ea6bc2}{%
+           family={Barredo},
+           familyi={B\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9b511be95433787d41669d0dcddccdf6}{%
+           family={Béguin},
+           familyi={B\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=523716e6e33f25f52aec11d4b481b308}{%
+           family={Vernier},
+           familyi={V\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bb6880a17d8f5919048e3ab7b3c43849}{%
+           family={Lahaye},
+           familyi={L\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=5b1df1defa8f80603c4d44950f43764d}{%
+           family={Browaeys},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{deee0507e3ae75bc59f855efcc7b6518}
+      \strng{fullhash}{d93bef7d64f986eb74f430a04a8a8aaf}
+      \strng{bibnamehash}{d93bef7d64f986eb74f430a04a8a8aaf}
+      \strng{authorbibnamehash}{d93bef7d64f986eb74f430a04a8a8aaf}
+      \strng{authornamehash}{deee0507e3ae75bc59f855efcc7b6518}
+      \strng{authorfullhash}{d93bef7d64f986eb74f430a04a8a8aaf}
+      \field{extraname}{2}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We demonstrate single-atom trapping in two-dimensional arrays of microtraps with arbitrary geometries. We generate the arrays using a spatial light modulator, with which we imprint an appropriate phase pattern on an optical dipole-trap beam prior to focusing. We trap single 87Rb atoms in the sites of arrays containing up to approximately 100 microtraps separated by distances as small as 3 𝜇⁢m, with complex structures such as triangular, honeycomb, or kagome lattices. Using a closed-loop optimization of the uniformity of the trap depths ensures that all trapping sites are equivalent. This versatile system opens appealing applications in quantum-information processing and quantum simulation, e.g., for simulating frustrated quantum magnetism using Rydberg atoms.}
+      \field{day}{23}
+      \field{journaltitle}{Physical Review X}
+      \field{month}{5}
+      \field{number}{2}
+      \field{shortjournal}{Phys. Rev. X}
+      \field{title}{Single-{{Atom Trapping}} in {{Holographic 2D Arrays}} of {{Microtraps}} with {{Arbitrary Geometries}}}
+      \field{urlday}{19}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{4}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{021034}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevX.4.021034
+      \endverb
+      \verb{file}
+      \verb /home/christian/Zotero/storage/2D2L2TB6/Nogrette et al. - 2014 - Single-Atom Trapping in Holographic 2D Arrays of Microtraps with Arbitrary Geometries.pdf;/home/christian/Zotero/storage/6KKJKTHC/PhysRevX.4.html
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevX.4.021034
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevX.4.021034
+      \endverb
+    \endentry
+    \entry{endresAtombyatomAssemblyDefectfree2016}{article}{}
+      \name{author}{10}{}{%
+        {{hash=aa730f0fe3724843990535fb381fb8a9}{%
+           family={Endres},
+           familyi={E\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=70cee1d90abc06fcd058421b5de2548e}{%
+           family={Bernien},
+           familyi={B\bibinitperiod},
+           given={Hannes},
+           giveni={H\bibinitperiod}}}%
+        {{hash=502c6437b38a15438a51906e27ca93f8}{%
+           family={Keesling},
+           familyi={K\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3d882c9d3ed49738af5e04139f81e3ed}{%
+           family={Levine},
+           familyi={L\bibinitperiod},
+           given={Harry},
+           giveni={H\bibinitperiod}}}%
+        {{hash=becd75e819ad146c40fab5e183ae63af}{%
+           family={Anschuetz},
+           familyi={A\bibinitperiod},
+           given={Eric\bibnamedelima R.},
+           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=53273561b0377d2adffa7029b7a717f8}{%
+           family={Krajenbrink},
+           familyi={K\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=db4f53b4c5cdf73b93c5c8ea03862d8b}{%
+           family={Senko},
+           familyi={S\bibinitperiod},
+           given={Crystal},
+           giveni={C\bibinitperiod}}}%
+        {{hash=7760fdf5da94329d189533bdd2fdf9f6}{%
+           family={Vuletic},
+           familyi={V\bibinitperiod},
+           given={Vladan},
+           giveni={V\bibinitperiod}}}%
+        {{hash=28a6aa289448ed258d404c6982cd2dd7}{%
+           family={Greiner},
+           familyi={G\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8fd921a549ae6718702b6c8c84fef487}{%
+           family={Lukin},
+           familyi={L\bibinitperiod},
+           given={Mikhail\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Association for the Advancement of Science}%
+      }
+      \strng{namehash}{4cb80a97ccfd985537c7ac25efa945f8}
+      \strng{fullhash}{ae49bdc02c443b9da00012f9514d8ac6}
+      \strng{bibnamehash}{ae49bdc02c443b9da00012f9514d8ac6}
+      \strng{authorbibnamehash}{ae49bdc02c443b9da00012f9514d8ac6}
+      \strng{authornamehash}{4cb80a97ccfd985537c7ac25efa945f8}
+      \strng{authorfullhash}{ae49bdc02c443b9da00012f9514d8ac6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The realization of large-scale fully controllable quantum systems is an exciting frontier in modern physical science. We use atom-by-atom assembly to implement a platform for the deterministic preparation of regular one-dimensional arrays of individually controlled cold atoms. In our approach, a measurement and feedback procedure eliminates the entropy associated with probabilistic trap occupation and results in defect-free arrays of more than 50 atoms in less than 400 milliseconds. The technique is based on fast, real-time control of 100 optical tweezers, which we use to arrange atoms in desired geometric patterns and to maintain these configurations by replacing lost atoms with surplus atoms from a reservoir. This bottom-up approach may enable controlled engineering of scalable many-body systems for quantum information processing, quantum simulations, and precision measurements.}
+      \field{day}{25}
+      \field{journaltitle}{Science}
+      \field{month}{11}
+      \field{number}{6315}
+      \field{title}{Atom-by-Atom Assembly of Defect-Free One-Dimensional Cold Atom Arrays}
+      \field{urlday}{8}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{volume}{354}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1024\bibrangedash 1027}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1126/science.aah3752
+      \endverb
+      \verb{file}
+      \verb /home/christian/Zotero/storage/SSJBH9SW/Endres et al. - 2016 - Atom-by-atom assembly of defect-free one-dimensional cold atom arrays.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.science.org/doi/10.1126/science.aah3752
+      \endverb
+      \verb{url}
+      \verb https://www.science.org/doi/10.1126/science.aah3752
+      \endverb
+    \endentry
+    \entry{tamuraHighlyUniformHolographic2016}{article}{}
+      \name{author}{5}{}{%
+        {{hash=fda380b5c34fb50abaf14c43ad74ecfe}{%
+           family={Tamura},
+           familyi={T\bibinitperiod},
+           given={Hikaru},
+           giveni={H\bibinitperiod}}}%
+        {{hash=bf0960a9cd86f3b68dd78c091a22290e}{%
+           family={Unakami},
+           familyi={U\bibinitperiod},
+           given={Tomoyuki},
+           giveni={T\bibinitperiod}}}%
+        {{hash=1e1aeaa170e67ede50111a962ff1168c}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7dfb3e899e9f182b6c4769f5b5fac9bc}{%
+           family={Miyamoto},
+           familyi={M\bibinitperiod},
+           given={Yoko},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a9519e2c0621cba8254e785b465118ee}{%
+           family={Nakagawa},
+           familyi={N\bibinitperiod},
+           given={Ken’ichi},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Optica Publishing Group}%
+      }
+      \strng{namehash}{a0aa17f5faab3c5c79548113ef7ce9c0}
+      \strng{fullhash}{50a0e5014029eb226cbc20dd8ce54215}
+      \strng{bibnamehash}{50a0e5014029eb226cbc20dd8ce54215}
+      \strng{authorbibnamehash}{50a0e5014029eb226cbc20dd8ce54215}
+      \strng{authornamehash}{a0aa17f5faab3c5c79548113ef7ce9c0}
+      \strng{authorfullhash}{50a0e5014029eb226cbc20dd8ce54215}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We report on the novel optimization method to realize highly uniform microtrap arrays for single atom trapping with a spatial light modulator (SLM). This method consists of two iterative feedback loops with the measurements of both diffracted light intensities and in-trap fluorescence intensities from each microtrap. By applying this method to the single 87Rb atom trapping, we can reduce the variance of trap depths from 20.8\&\#x00025; to 1.7\&\#x00025; for 4 \&\#x000D7; 4 square arrays and less than 4\&\#x00025; for various arrays with up to 62 sites. The detection error of individual single atoms is also reduced from 1.7\&\#x00025; to 0.0054\&\#x00025; on average.}
+      \field{day}{18}
+      \field{issn}{1094-4087}
+      \field{journaltitle}{Optics Express}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{8}
+      \field{shortjournal}{Opt. Express, OE}
+      \field{title}{Highly Uniform Holographic Microtrap Arrays for Single Atom Trapping Using a Feedback Optimization of In-Trap Fluorescence Measurements}
+      \field{urlday}{19}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{24}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{8132\bibrangedash 8141}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1364/OE.24.008132
+      \endverb
+      \verb{urlraw}
+      \verb https://opg.optica.org/oe/abstract.cfm?uri=oe-24-8-8132
+      \endverb
+      \verb{url}
+      \verb https://opg.optica.org/oe/abstract.cfm?uri=oe-24-8-8132
+      \endverb
+      \keyw{CMOS cameras,Diffraction efficiency,Fourier transforms,Optical systems,Polarization maintaining fibers,Spatial light modulators}
+    \endentry
+    \entry{taoUniversalGlobalGates2026}{article}{}
+      \name{author}{1}{}{%
+        {{hash=57fb0cc9b67ac23d5f54f507aab3874c}{%
+           family={Tao},
+           familyi={T\bibinitperiod},
+           given={Renhao},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{57fb0cc9b67ac23d5f54f507aab3874c}
+      \strng{fullhash}{57fb0cc9b67ac23d5f54f507aab3874c}
+      \strng{bibnamehash}{57fb0cc9b67ac23d5f54f507aab3874c}
+      \strng{authorbibnamehash}{57fb0cc9b67ac23d5f54f507aab3874c}
+      \strng{authornamehash}{57fb0cc9b67ac23d5f54f507aab3874c}
+      \strng{authorfullhash}{57fb0cc9b67ac23d5f54f507aab3874c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{15}
+      \field{shortjournal}{Phys. Rev. Lett.}
+      \field{title}{Universal {{Global Gates}} for a {{Fine-Structure Qubit}} in {{Strontium-88}}}
+      \field{volume}{136}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1103/gj3b-5ngl
+      \endverb
+      \verb{file}
+      \verb /home/christian/Zotero/storage/JZ7QNIPB/Tao - 2026 - Universal Global Gates for a Fine-Structure Qubit in Strontium-88.pdf;/home/christian/Zotero/storage/LUCLZNA9/gj3b-5ngl.html
+      \endverb
+    \endentry
+    \entry{liFiberArrayArchitecture2025}{article}{}
+      \name{author}{11}{}{%
+        {{hash=9974d6382df9a9870c97dad6837bcf62}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Xiao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=1b99fd78b3f4f84b2605cb7452ebdd61}{%
+           family={Hou},
+           familyi={H\bibinitperiod},
+           given={Jia-Yi},
+           giveni={J\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=b3276bd3dbde30774e7be5f610c44a24}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jia-Chao},
+           giveni={J\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=4e2087e18a8c557fa068f2c9c5b411be}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Guang-Wei},
+           giveni={G\bibinithyphendelim W\bibinitperiod}}}%
+        {{hash=1437b6ae9959a70a454b0aa94437cf01}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Xiao-Dong},
+           giveni={X\bibinithyphendelim D\bibinitperiod}}}%
+        {{hash=66d3c3089bcd7bce5ea942512ee9f7a2}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Feng},
+           giveni={F\bibinitperiod}}}%
+        {{hash=44e2fe68bb7fe8f760f3395078d64db1}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yi-Bo},
+           giveni={Y\bibinithyphendelim B\bibinitperiod}}}%
+        {{hash=1c1849178c68a5d6d69e9f789392d65d}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Min},
+           giveni={M\bibinitperiod}}}%
+        {{hash=57cf8531003f9d0c22b8a30358523ffc}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a9f1e89449a8f9e0a4b65ee24d8f421d}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Peng},
+           giveni={P\bibinitperiod}}}%
+        {{hash=31c312b3aa87fa7a49fa8a7618a2bbcf}{%
+           family={Zhan},
+           familyi={Z\bibinitperiod},
+           given={Ming-Sheng},
+           giveni={M\bibinithyphendelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{37484a3171735bf5d2180fded2f2e8d7}
+      \strng{fullhash}{4361dd7304700305b9a741c917078298}
+      \strng{bibnamehash}{4361dd7304700305b9a741c917078298}
+      \strng{authorbibnamehash}{4361dd7304700305b9a741c917078298}
+      \strng{authornamehash}{37484a3171735bf5d2180fded2f2e8d7}
+      \strng{authorfullhash}{4361dd7304700305b9a741c917078298}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Arrays of single atoms trapped in optical tweezers are increasingly recognized as a promising platform for scalable quantum computing. In both the fault-tolerant and NISQ eras, the ability to individually control qubits is essential for the efficient execution of quantum circuits. Time-division multiplexed control schemes based on atom shuttling or beam scanning have been employed to build programmable neutral atom quantum processors, but achieving high-rate, highly parallel gate operations remains a challenge. Here, we propose a fiber array architecture for atom quantum computing capable of fully independent control of individual atoms. The trapping and addressing lasers for each individual atom are emitted from the same optical waveguide, enabling robust control through common-mode suppression of beam pointing noise. Using a fiber array, we experimentally demonstrate the trapping and independent control of ten single atoms in two-dimensional optical tweezers, achieving individually addressed single-qubit gates with an average fidelity of 0.9966(3). More significantly, we perform simultaneous arbitrary single-qubit gates on four randomly selected qubits, resulting in an average fidelity of 0.9961(4). Our work paves the way for time-efficient execution of quantum algorithms on neutral atom quantum computers.}
+      \field{day}{4}
+      \field{issn}{2041-1723}
+      \field{journaltitle}{Nature Communications}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{1}
+      \field{shortjournal}{Nat Commun}
+      \field{title}{A Fiber Array Architecture for Atom Quantum Computing}
+      \field{urlday}{19}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{16}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{9728}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41467-025-64738-8
+      \endverb
+      \verb{file}
+      \verb /home/christian/Zotero/storage/EYDR8ZI9/Li et al. - 2025 - A fiber array architecture for atom quantum computing.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41467-025-64738-8
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41467-025-64738-8
+      \endverb
+      \keyw{Quantum information,Qubits}
+    \endentry
     \entry{prodanBulkBoundaryInvariants2016}{book}{}
       \name{author}{2}{}{%
         {{hash=d06619865b27dd6bae18e036deb780f9}{%
@@ -479,8 +894,8 @@
       \strng{authorbibnamehash}{5343bb88057417b9a03f0884e8137760}
       \strng{authornamehash}{5343bb88057417b9a03f0884e8137760}
       \strng{authorfullhash}{5343bb88057417b9a03f0884e8137760}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{isbn}{978-3-319-29350-9 978-3-319-29351-6}
@@ -526,8 +941,8 @@
       \strng{authorbibnamehash}{03ff491a1897888884f99f915b760997}
       \strng{authornamehash}{03ff491a1897888884f99f915b760997}
       \strng{authorfullhash}{03ff491a1897888884f99f915b760997}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Quadratic bosonic Hamiltonians over a one-particle Hilbert space can be described by a Bogoliubov-de Gennes (BdG) Hamiltonian on a particle-hole Hilbert space. In general, the BdG Hamiltonian is not self-adjoint, but only J-self-adjoint on the particle-hole space viewed as a Krein space. Nevertheless, its energy bands can have non-trivial topological invariants like Chern numbers or winding numbers. By a thorough analysis for tight-binding models, it is proved that these invariants lead to bosonic edge modes which are robust to a large class of possibly disordered perturbations. Furthermore, general scenarios are presented for these edge states to be dynamically unstable even though the bulk modes are stable.}
@@ -858,8 +1273,8 @@
       \strng{authorbibnamehash}{3df5e79d41b49350803a5a87bcaec391}
       \strng{authornamehash}{8e16ae624e6eb6e4450a83243a24dbcf}
       \strng{authorfullhash}{3df5e79d41b49350803a5a87bcaec391}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Stability achieved by large angular momentum is ubiquitous in nature, with examples ranging from classical mechanics, over optics and chemistry, to nuclear physics. In atoms, angular momentum can protect excited electronic orbitals from decay due to selection rules. This manifests spectacularly in highly excited Rydberg states. Low angular momentum Rydberg states are at the heart of recent breakthroughs in quantum computing, simulation and sensing with neutral atoms. For these applications the lifetime of the Rydberg levels sets fundamental limits for gate fidelities, coherence times, or spectroscopic precision. The quest for longer Rydberg state lifetimes has motivated the generation, coherent control and trapping of circular Rydberg atoms, which are characterized by the maximally allowed electron orbital momentum and were key to seminal experiments with single atoms and photons. Here, we report the observation of individually trapped circular Rydberg atoms with lifetimes of more than 10 milliseconds, two orders of magnitude longer-lived than the established low angular momentum orbitals. This is achieved via Purcell suppression of blackbody modes at room temperature. We coherently control individual circular Rydberg levels at so far elusive principal quantum numbers of up to n~=~103, and observe tweezer trapping of the Rydberg atoms on the hundred millisecond scale. Our results pave the way for quantum information processing and sensing utilizing the combination of extreme lifetimes and giant Rydberg blockade.}
@@ -931,8 +1346,8 @@
       \strng{authorbibnamehash}{dcb49d16242f878ea34d35cfee4c4b8e}
       \strng{authornamehash}{df0a74f0cf89a5dde159eb2de0077a88}
       \strng{authorfullhash}{dcb49d16242f878ea34d35cfee4c4b8e}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Recent advances in quantum simulation based on neutral atoms have largely benefited from high-resolution, single-atom sensitive imaging techniques. A variety of approaches have been developed to achieve such local detection of atoms in optical lattices or optical tweezers. For alkaline-earth and alkaline-earth-like atoms, the presence of narrow optical transitions opens up the possibility of performing novel types of Sisyphus cooling, where the cooling mechanism originates from the capability to spatially resolve the differential optical level shifts in the trap potential. Up to now, it has been an open question whether high-fidelity imaging could be achieved in a “repulsive Sisyphus” configuration, where the trap depth of the ground state exceeds that of the excited state involved in cooling. Here, we demonstrate high-fidelity (99.971(1)\%) and high-survival (99.80(5)\%) imaging of strontium atoms using repulsive Sisyphus cooling. We use an optical lattice as a pinning potential for atoms in a large-scale tweezer array with up to 399 tweezers and show repeated, high-fidelity lattice-tweezer-lattice transfers. We furthermore demonstrate loading the lattice with approximately 10 000 atoms directly from the MOT and scalable imaging over {$>$}10 000 lattice sites with a combined survival probability and classification fidelity better than 99.2\%. Our lattice thus serves as a locally addressable and sortable reservoir for continuous refilling of optical tweezer arrays in the future.}
