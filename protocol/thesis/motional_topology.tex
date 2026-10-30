@@ -342,10 +342,17 @@ For displacements only along the $x$-axis, $H_k^{A,A}$ and $H_k^{A,B}$ become ju
 
 \begin{figure}[H]
     % \hspace*{-2cm}
-    \includegraphics{pictures/edge_stability_trapnoise_x.pdf}
+    \includegraphics{pictures/edge_stability_trapnoise_x_version2.pdf}
     % \vspace*{-0.3cm}
-    % \caption{\textbf{Edge occupation in dependence of onsite potential strength.} The left panel shows the spectrum of $H$ in dependence of the spacing between the atoms for different values of $\alpha$. Energies are given in units of $V_0=\hbar V(a)/(2m\omega a^2)$. In the diagram, $\alpha$ is an artificial factor with whom the diagonal of matrix $H$ is multiplied, in order to show how this term pulls the in-gap modes into the bulk. For the highlighted $b$-values the left panel shows how the edge occupation degrades with increasing $\alpha$.}
-    % \label{fig:1D dis edge occupation}
+    \caption{\textbf{Average spectrum.} Average spectra over different trap noise distributions and coupling strengths are depicted. The uncertainty in trap frequency is modeled as a gaussian distribution with standard deviation of $\sigma=1\%$ in the top row and $\sigma=0.2\%$ in the bottom row. For each figure $1000$ samples have been generated. The left column uses a larger set of possible relative displacements of the two sublattices in comparison with the right column which necessitates a smaller dipole strength in order to stay in the phonon conversation regime. This results in a larger coupling to noise ratio for a larger part of the displacement configurations. The red dotted curves depict the the mean of the two eigenenergies, whose states are most localized at the edges, while the red shaded area indicates their standard deviation. The black dotted curves show the averaged next neighbor in energy to the two most localized states. The vertical yellow lines mark displacement configurations for which a more detailed analysis of the gaps is shown in \figref{fig:gap and localization analysis}.}
+    \label{fig:1D dis spectrum}
+\end{figure}
+\begin{figure}[h]
+    % \hspace*{-2cm}
+    \includegraphics{pictures/edge_gap_stability_trapnoise_x.pdf}
+    % \vspace*{-0.3cm}
+    \caption{\textbf{Edge occupation and gap size.} a)-b) The maximal localization on the edges of the system is shown for varying displacements between the sublattices. The localization for a state $\mathbf{x}$ is defined as $n_\text{edge}/n_\text{bulk}=(|x_1|^2+|x_L|^2)/(\sum_{i=2}^{L-1}|x_i|^2)$ with $L$ being the number of atoms in the chain. For the displacement values marked in \figref{fig:1D dis spectrum} the distribution of the upper (dark red) and lower (light red) gap between edge and bulk states is shown in the insets. a) (b)) treats the case for trap noise of $\delta\omega=1\%$ ($\delta\omega=0.2\%$). Figures c) and d) show the non-gaussian distributions of the edge localization for $\delta\omega=1\%$ and $\delta\omega=0.2\%$ respectively.}
+    \label{fig:gap and localization analysis}
 \end{figure}
 
 By tuning the trap potential in such a way that it compensates the inhomogeneity of the diagonal of $H$, one would restore the chiral symmetry and edge states of the system. The state of the art precision when it comes to the homogeneity of optical tweezer depth in an array lies around 2\% \cite{taoHighFidelityDetectionLargeScale2024}. According to \secref{sec:dipole traps} one can estimate the precision in overall trap frequency to be around 1\%. This ratio is also in the order of magnitude of the ratio between interaction and trapping frequency for the model at hand. It is therefore just at the edge of being able to reduce the onsite terms of the interaction matrix in an sufficient way, as to bring the boundary-localized in-gap modes back to the spectrum. Hence, at this current state the trap frequency can on its own be a source of uncertainty that brakes the edge localization of states, but future improvements in the precision of trap strength configuration could allow to tune the system to a proper topological phase.
@@ -370,6 +377,6 @@ The chiral symmetry is not satisfied for these configurations. But one can never
 \begin{figure}[h]
     % \hspace*{-2cm}
     \includegraphics{pictures/edge_and_gap_xy_model.pdf}
-    % \caption{\textbf{Spectrum and edge states for 2D displacement.} For the cross section specified in \figref{fig:optimal ratio AA to AB} the spectrum is presented in a). Inside the bulk gap as well as inside the bulk spectrum states are found that are highly localized at the boundaries of the system. These states are depicted in c) and d) respectively. Figure c) shows the ratio of edge occupation to bulk occupation, where the edge contains the outer four sites of the chain.}
+    \caption{\textbf{Spectrum and edge states for 2D displacement.} }
     \label{fig:edge occupation 2d dis}
 \end{figure}
