@@ -357,6 +357,28 @@ For displacements only along the $x$-axis, $H_k^{A,A}$ and $H_k^{A,B}$ become ju
 
 By tuning the trap potential in such a way that it compensates the inhomogeneity of the diagonal of $H$, one would restore the chiral symmetry and edge states of the system. The state of the art precision when it comes to the homogeneity of optical tweezer depth in an array lies around 2\% \cite{taoHighFidelityDetectionLargeScale2024}. According to \secref{sec:dipole traps} one can estimate the precision in overall trap frequency to be around 1\%. This ratio is also in the order of magnitude of the ratio between interaction and trapping frequency for the model at hand. It is therefore just at the edge of being able to reduce the onsite terms of the interaction matrix in an sufficient way, as to bring the boundary-localized in-gap modes back to the spectrum. Hence, at this current state the trap frequency can on its own be a source of uncertainty that brakes the edge localization of states, but future improvements in the precision of trap strength configuration could allow to tune the system to a proper topological phase.
 
+The coupling between any states should be much smaller than the trapping strength. The maximal coupling can be estimated by the spectrum of the Hamiltonian by the following argument. It holds
+\begin{align*}
+    \text{max}\{\left\|H\psi\right\||\left\|\psi\right\|=1\}=E_\text{max}
+\end{align*}
+where $E_\text{max}$ is the maximal eigenvalue of $H$. It follows
+\begin{align*}
+    \text{sup}\{\left\|\braket{\psi|H|\phi}\right\||\psi\neq\phi\}\leq E_\text{max}
+\end{align*}
+%  Let $S$ be the basis change that transforms the Hamiltonian into diagonal form $S^{-1}HS=D$.
+% \begin{align*}
+%     \text{max}\{|\braket{\psi|H|\phi}|\,|\psi\neq\phi\}&=\text{max}\{|\braket{\psi|SDS^{-1}|\phi}|\,|\psi\neq\phi\}\\
+%     &=\text{max}\{|\braket{\psi|D|\phi}|\,|\psi\neq\phi\}\\
+%     &\leq\text{max}\{\braket{\psi|\text{max}(|D|)\mathbb{1}|\phi}|\psi\neq\phi\}\\
+%     &<\text{max}(|D|)
+% \end{align*}
+% The last expression can be estimated by choosing the states $\psi$ and $\phi$ such that they are supported by the same basis vectors but one of the basis $\{\hat{e}_i\}_{i=1,\dots,L}$ in which $H$ is diagonal, i.e 
+% \begin{align*}
+%     \ket{\psi}=\frac{1}{\sqrt{n}}\,\sum_{i=1}^n\hat{e}_i,\quad\ket{\phi}=\frac{1}{\sqrt{n+1}}\,\sum_{i=1}^{n+1}\hat{e}_i\quad n<L\\
+%     \Rightarrow \quad\braket{\psi|E_\text{max}\mathbb{1}|\phi}=\frac{n}{\sqrt{n^2+n}}\,E_\text{max}\\
+%     \Rightarrow \quad\text{max}\{\braket{\psi|H|\phi}|\psi\neq\phi\}\leq\frac{1}{\sqrt{2}}\,E_\text{max}
+% \end{align*}
+
 
 
 
