@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.11)  31 OCT 2026 21:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.26)  2 NOV 2026 13:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -138,9 +138,9 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language28). Reported on input line 105.
+(babel)             (\language76). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language28). Reported on input line 108.
+(babel)             (\language76). Reported on input line 108.
 )) (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 11.
@@ -4548,8 +4548,8 @@ Package logreq Info: Writing requests to 'thesis_draft.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  54547 strings out of 474222
- 1230310 string characters out of 5748732
- 2266772 words of memory out of 5000000
+ 1230310 string characters out of 5748733
+ 2266769 words of memory out of 5000000
  75882 multiletter control sequences out of 15000+600000
  579165 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
