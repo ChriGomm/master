@@ -329,9 +329,9 @@ As a one-dimensional chain I will investigate the zik-zak configuration with alt
     \caption{\textbf{Zik-zak chain.} Interactions up to next nearest neighbors are presented. The two sublattices A and B are depicted in colors red and blue respectively.}
     \label{fig:chain scheme}
 \end{figure}
-The difference in trap depth with respect to the axial versus the radial direction of the trap allows to decouple axial ($z$-axis) and radial $xy$-plane degrees of freedom. If the difference in trap potential is much larger than the interactions between the motional degrees of freedom mediation between these two directions is suppressed. If additionally an elliptical shaped trap is realized where trapping strength in $x$ and $y$-direction differ by a significant amount, one can restrict oneself to the consideration of only one dimensional displacements, as all three directions decouple from each other.
+The difference in trap depth with respect to the axial versus the radial direction of the trap allows to decouple axial ($z$-axis) and radial $xy$-plane degrees of freedom. Exchange between these two directions is suppressed if the energy separation is much larger than the their coupling. Additionally in the case of a strong elliptically shaped trap in the $xy$ plane decoupling of all three spatial directions is achieved.
 
-For displacements only along the $x$-axis, $H_k^{A,A}$ and $H_k^{A,B}$ become just complex numbers. The only way that the system possesses chiral symmetry is then that $H_k^{A,A}=0$. This requires on the one hand that interactions between sublattices vanish and on the other hand the onsite terms of the interaction matrix. Interactions within one sublattice can be tuned to zero by choosing the $x$-component of the dipole unit-vector to $d_x=1/\sqrt{3}$. But the onsite terms are an inherent feature of the model stemming from the second order expansion of the dipole potential and cannot be avoided by the geometry of the system. These onsite terms destroy the chiral symmetry of the chain and prohibit edge-states to form. \figref{fig:1D dis edge occupation} shows what happens if the diagonal of matrix $U$ is artificially multiplied by a factor $\alpha\in[0,1]$. As the diagonal terms of $U$ are of the same magnitude as the other coupling strengths, the in-gap states get expelled from the gap and loose their edge-occupation as $\alpha$ is increased. $\alpha=1$ restores the original $U$ matrix and it is seen that no edge states prevail in this scenario.
+For displacements only along the $x$-axis, $H_k^{A,A}$ and $H_k^{A,B}$ become just complex numbers. The only way that the system possesses chiral symmetry is then that $H_k^{A,A}=0$. This requires that interactions between sublattices vanish as well as the onsite terms of the interaction matrix. Interactions within one sublattice can be tuned to zero by choosing the $x$-component of the dipole unit-vector to $d_x=1/\sqrt{3}$. But the onsite terms are an inherent feature of the model stemming from the second order expansion of the dipole potential and cannot be avoided by the geometry of the system. These onsite terms destroy the chiral symmetry of the chain and prohibit edge-states to form. \figref{fig:1D dis edge occupation} shows what happens if the diagonal of matrix $U$ is artificially multiplied by a factor $\alpha\in[0,1]$. As the diagonal terms of $U$ are of the same magnitude as the other coupling strengths, the in-gap states get expelled from the gap and loose their edge-occupation as $\alpha$ is increased. $\alpha=1$ restores the original $U$ matrix and it is seen that no edge states prevail in this scenario.
 \begin{figure}[H]
     % \hspace*{-2cm}
     \includegraphics{pictures/edge_occupation_alpha2.pdf}
@@ -355,16 +355,17 @@ For displacements only along the $x$-axis, $H_k^{A,A}$ and $H_k^{A,B}$ become ju
     \label{fig:gap and localization analysis}
 \end{figure}
 
-By tuning the trap potential in such a way that it compensates the inhomogeneity of the diagonal of $H$, one would restore the chiral symmetry and edge states of the system. The state of the art precision when it comes to the homogeneity of optical tweezer depth in an array lies around 2\% \cite{taoHighFidelityDetectionLargeScale2024}. According to \secref{sec:dipole traps} one can estimate the precision in overall trap frequency to be around 1\%. This ratio is also in the order of magnitude of the ratio between interaction and trapping frequency for the model at hand. It is therefore just at the edge of being able to reduce the onsite terms of the interaction matrix in an sufficient way, as to bring the boundary-localized in-gap modes back to the spectrum. Hence, at this current state the trap frequency can on its own be a source of uncertainty that brakes the edge localization of states, but future improvements in the precision of trap strength configuration could allow to tune the system to a proper topological phase.
+By tuning the trap potential in such a way that it compensates the inhomogeneity of the diagonal of $H$, one can restore chiral symmetry and the presence of edge states. As discussed in \secref{sec:dipole traps} the accuracy of implementing a certain trap frequency usually reaches 1\% standard deviation with the record lying at 0.15\%. \figref{fig:1D dis spectrum} takes this uncertainty into account and confirms the presence of states inside of the gap, that are well separated from the bulk spectrum. As confirmed in \figref{fig:gap and localization analysis} these states are strongly localized at the boundaries of the chain.%\\\\
+% one can estimate the precision in overall trap frequency to be around 1\%. This ratio is also in the order of magnitude of the ratio between interaction and trapping frequency for the model at hand. It is therefore just at the edge of being able to reduce the onsite terms of the interaction matrix in an sufficient way, as to bring the boundary-localized in-gap modes back to the spectrum. Hence, at this current state the trap frequency can on its own be a source of uncertainty that brakes the edge localization of states, but future improvements in the precision of trap strength configuration could allow to tune the system to a proper topological phase.
 
-The coupling between any states should be much smaller than the trapping strength. The maximal coupling can be estimated by the spectrum of the Hamiltonian by the following argument. It holds
-\begin{align*}
-    \text{max}\{\left\|H\psi\right\||\left\|\psi\right\|=1\}=E_\text{max}
-\end{align*}
-where $E_\text{max}$ is the maximal eigenvalue of $H$. It follows
-\begin{align*}
-    \text{sup}\{\left\|\braket{\psi|H|\phi}\right\||\psi\neq\phi\}\leq E_\text{max}
-\end{align*}
+% The coupling between any states should be much smaller than the trapping strength. The maximal coupling can be estimated by the spectrum of the Hamiltonian by the following argument. It holds
+% \begin{align*}
+%     \text{max}\{\left\|H\psi\right\||\left\|\psi\right\|=1\}=E_\text{max}
+% \end{align*}
+% where $E_\text{max}$ is the maximal eigenvalue of $H$. It follows
+% \begin{align*}
+%     \text{sup}\{\left\|\braket{\psi|H|\phi}\right\||\psi\neq\phi\}\leq E_\text{max}
+% \end{align*}
 %  Let $S$ be the basis change that transforms the Hamiltonian into diagonal form $S^{-1}HS=D$.
 % \begin{align*}
 %     \text{max}\{|\braket{\psi|H|\phi}|\,|\psi\neq\phi\}&=\text{max}\{|\braket{\psi|SDS^{-1}|\phi}|\,|\psi\neq\phi\}\\
@@ -382,14 +383,15 @@ where $E_\text{max}$ is the maximal eigenvalue of $H$. It follows
 
 
 
-For displacements along both $x$ and $y$-direction, where equal trap strength along both directions is assumed, the only way chiral symmetry can be meaningfully fulfilled is for vanishing $H_k^{A,A}$. This is however not achievable by any choice of geometry. It is only possible to realize an optimal configuration in form of the  distance between the sublattices together with the orientation of the dipole moment that lets $H_k^{A,A}$ be up to an order of magnitude smaller than the other coupling. The optimal ratio $H_k^{A,A}/H_k^{A,B}$ is shown in \figref{fig:optimal ratio AA to AB} for different lattice configurations.  It was also assumed that the onsite terms get cancelled by an appropriate choice of the trap potentials. 
+For displacements along both $x$ and $y$-direction, where equal trap strength along both directions is assumed, the only way chiral symmetry can be meaningfully fulfilled is for vanishing $H_k^{A,A}$. Despite the cancellation of the onsite terms, it is not possible to realize this condition due to the presence of presence of onsite $xy$-interactions that cannot be eliminated by the trap. It is only possible to optimize the ratio between $H_k^{A,A}$ and $H_k^{A,B}$ for every chain geometry by choosing an appropriate orientation of the dipole moment. 
+%The optimal ratio $H_k^{A,A}/H_k^{A,B}$ is shown in \figref{fig:optimal ratio AA to AB} for different lattice configurations.  It was also assumed that the onsite terms get cancelled by an appropriate choice of the trap potentials. 
 % \begin{figure}[h]
 %     \hspace*{-2cm}
 %     \includegraphics{pictures/optimal_tuning_HAA_vs_HAB.pdf}
 %     \caption{\textbf{Optimal ratio between maximum of $H_k^{A,A}$ and minimum of $H_k^{A,B}$.} The ratio is computed taking to account nearest neighbor interactions for $H_k^{A,B}$ and next to nearest neighbor interactions for $H_k^{A,A}$. The circles depict the 1D cross section for which the spectrum and the edge occupation is considered in \figref{fig:edge occupation 2d dis}. }
 %     \label{fig:optimal ratio AA to AB}
 % \end{figure}
-The chiral symmetry is not satisfied for these configurations. But one can nevertheless analyze if there are states inside of the bulk gap that are well localized at the edges of the chain. This is shown in \figref{fig:edge occupation 2d dis}. One actually finds modes inside the bulk gap, which are localized at the edges, but neither lie the energies of these states perfectly in the middle of the gap at zero energy, nor are the states completely restricted to edge excitations. On the other hand one can find states inside the bulk spectrum which are orders of magnitude better localized. These states are however not protected by the bulk gap against perturbations.  
+The chiral symmetry is not satisfied for these configurations. But one can nevertheless analyze if there are states inside of the bulk gap that are well localized at the edges of the chain. This is shown in \figref{fig:edge occupation 2d dis}. One actually finds modes inside the bulk gap, which are localized at the edges. But those states are not separated from the bulk spectrum in a sufficient way and are therefore not stable.  
 % \begin{figure}[h]
 %     % \hspace*{-2cm}
 %     \includegraphics{pictures/edge_occupation_xy_model.pdf}
@@ -399,6 +401,6 @@ The chiral symmetry is not satisfied for these configurations. But one can never
 \begin{figure}[h]
     % \hspace*{-2cm}
     \includegraphics{pictures/edge_and_gap_xy_model2.pdf}
-    \caption{\textbf{Spectrum and edge states for 2D displacement.} }
+    \caption{\textbf{Spectrum and edge states for 2D displacement.} In the upper left corner the full spectrum of the Hamiltonian is shown. A positive and a negative band can be identified, which envelope another bulk band at around zero energy. A closer look at the zero energy region is shown in the upper right corner. The energies with the highest edge occupation are indicated by colored dots, while the standard deviation of their spectral position over a sample of $200$ trap noise configurations is marked by the color-shaded areas. The four panels below this graph show the mean edge occupation of these states with error bars. Especially for the lowest energy states shown, the edge occupation reaches high values, whilst at the same time these states are more separated from the bulk than the others. A closer look at those states for the value of $b/a=0.9$ (lower left panel) shows, however, that the separation from the bulk spectrum is not stable or even most likely. The lower middle panel shows the distribution of edge excitations for this state.}
     \label{fig:edge occupation 2d dis}
 \end{figure}
