@@ -1309,6 +1309,272 @@
       \endverb
       \keyw{Atomic and molecular physics,Quantum simulation}
     \endentry
+    \entry{carruthersCoherentStatesForced1965}{article}{}
+      \name{author}{2}{}{%
+        {{hash=59e0c6e3e5f9469e0c69b36418f5f0e9}{%
+           family={Carruthers},
+           familyi={C\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=77fbe8b60d46ede131e030a9af541611}{%
+           family={Nieto},
+           familyi={N\bibinitperiod},
+           given={M.\bibnamedelimi M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{32b3bd5aff017d454bae4c81395213b0}
+      \strng{fullhash}{32b3bd5aff017d454bae4c81395213b0}
+      \strng{bibnamehash}{32b3bd5aff017d454bae4c81395213b0}
+      \strng{authorbibnamehash}{32b3bd5aff017d454bae4c81395213b0}
+      \strng{authornamehash}{32b3bd5aff017d454bae4c81395213b0}
+      \strng{authorfullhash}{32b3bd5aff017d454bae4c81395213b0}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{It is shown that the forced quantum oscillator subject to a transient classical force is easily described in terms of the “coherent states”recently found useful in the description of light from optical masers. The natural role these states play in understanding the notions of the phase of a quantum oscillator and the transition to the classical limit is also explained. Very simple derivations of the state vectors, energy transfer, and various transition probabilities are given.}
+      \field{day}{1}
+      \field{issn}{0002-9505}
+      \field{journaltitle}{American Journal of Physics}
+      \field{month}{7}
+      \field{number}{7}
+      \field{shortjournal}{Am. J. Phys.}
+      \field{title}{Coherent {{States}} and the {{Forced Quantum Oscillator}}}
+      \field{urlday}{23}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{volume}{33}
+      \field{year}{1965}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{537\bibrangedash 544}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1119/1.1971895
+      \endverb
+      \verb{file}
+      \verb /home/christian/Zotero/storage/I9UFX49V/1.html
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1119/1.1971895
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1119/1.1971895
+      \endverb
+    \endentry
+    \entry{hendersonExperimentalDemonstrationPainting2009}{article}{}
+      \name{author}{4}{}{%
+        {{hash=9bb4d10160cf194c0a5284b118008922}{%
+           family={Henderson},
+           familyi={H\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod}}}%
+        {{hash=4793ec0311bfdb9f708c6006875887fc}{%
+           family={Ryu},
+           familyi={R\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+        {{hash=62367bafc5215b812954a2dfa3ebad26}{%
+           family={MacCormick},
+           familyi={M\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9e4b6adb56511c0730a3cb8563ff48c5}{%
+           family={Boshier},
+           familyi={B\bibinitperiod},
+           given={M\bibnamedelima G},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{63d8cb46c764907172490c559ecf5add}
+      \strng{fullhash}{91a37ce9a12637676c813ad496225ab2}
+      \strng{bibnamehash}{91a37ce9a12637676c813ad496225ab2}
+      \strng{authorbibnamehash}{91a37ce9a12637676c813ad496225ab2}
+      \strng{authornamehash}{63d8cb46c764907172490c559ecf5add}
+      \strng{authorfullhash}{91a37ce9a12637676c813ad496225ab2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{There is a pressing need for robust and straightforward methods to create potentials for trapping Bose–Einstein condensates (BECs) that are simultaneously dynamic, fully arbitrary and sufficiently stable to not heat the ultracold gas. We show here how to accomplish these goals, using a rapidly moving laser beam that ‘paints’ a time-averaged optical dipole potential in which we create BECs in a variety of geometries, including toroids, ring lattices and square lattices. Matter wave interference patterns confirm that the trapped gas is a condensate. As a simple illustration of dynamics, we show that the technique can transform a toroidal condensate into a ring lattice and back into a toroid. The technique is general and should work with any sufficiently polarizable low-energy particles.}
+      \field{issn}{1367-2630}
+      \field{journaltitle}{New Journal of Physics}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{4}
+      \field{shortjournal}{New J. Phys.}
+      \field{title}{Experimental Demonstration of Painting Arbitrary and Dynamic Potentials for {{Bose}}–{{Einstein}} Condensates}
+      \field{urlday}{23}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{volume}{11}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{043030}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1367-2630/11/4/043030
+      \endverb
+      \verb{file}
+      \verb /home/christian/Zotero/storage/QGIDP2EM/Henderson et al. - 2009 - Experimental demonstration of painting arbitrary and dynamic potentials for Bose–Einstein condensate.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1088/1367-2630/11/4/043030
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1088/1367-2630/11/4/043030
+      \endverb
+    \endentry
+    \entry{luAstigmatismfree3DOptical2026}{article}{}
+      \name{author}{7}{}{%
+        {{hash=028698cb979f0e83e2b42732d37a5819}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Yue-Hui},
+           giveni={Y\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=eb2d8b14c4a64dbc6cd82eeaf8c1b927}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=35e49b80b1ff951e75e2c8a4c5d1954b}{%
+           family={Xiang},
+           familyi={X\bibinitperiod},
+           given={Tai},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ddc669d46a865963cfe19b5ac1cab9fa}{%
+           family={Ho},
+           familyi={H\bibinitperiod},
+           given={Jacquelyn},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bea73b6c8b9e47b791371a6db4e11821}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Tsai-Chen},
+           giveni={T\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=9455f6a763d8017d1980fd80cd398153}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Zhenjie},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=b6fbcd836621d7377267b1f634a1790a}{%
+           family={Stamper-Kurn},
+           familyi={S\bibinithyphendelim K\bibinitperiod},
+           given={Dan\bibnamedelima M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Optica Publishing Group}%
+      }
+      \strng{namehash}{d4b3a40d129fb1776df37fdef27d416f}
+      \strng{fullhash}{766e82acc36cd35b9688bf46b0a5ee69}
+      \strng{bibnamehash}{766e82acc36cd35b9688bf46b0a5ee69}
+      \strng{authorbibnamehash}{766e82acc36cd35b9688bf46b0a5ee69}
+      \strng{authornamehash}{d4b3a40d129fb1776df37fdef27d416f}
+      \strng{authorfullhash}{766e82acc36cd35b9688bf46b0a5ee69}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Reconfigurable neutral-atom arrays are a promising platform for quantum computing, quantum simulation, and quantum metrology, but atom transport using frequency-chirped acousto-optic deflectors (AODs) is limited by chirp-induced acoustic lensing and trajectory distortion. We address these limitations using a three-dimensional acousto-optic deflector lens (3D-AODL), a design predicted to reduce long-range transport times by more than a factor of two. We further introduce fading-Shepard waveforms that circumvent finite AOD bandwidth, enabling sustained axial displacement. We demonstrate unrestricted three-dimensional optical-tweezer motion over a 200\&\#x00A0;\&\#x03BC;m \&\#x00D7; 200\&\#x00A0;\&\#x03BC;m \&\#x00D7; 136\&\#x00A0;\&\#x03BC;m volume with velocities exceeding 4.2\&\#x2009;m/s. Arbitrary three-dimensional control of optical-tweezer trajectories enables rapid atom rearrangement and dynamical engineering of optical potentials in tweezer arrays and optical lattices. This capability advances quantum control and atom manipulation in neutral-atom quantum processors by enabling faster rearrangement, higher clock rates, and scalable sorting in complex geometries.}
+      \field{day}{25}
+      \field{issn}{2837-6714}
+      \field{journaltitle}{Optica Quantum}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{3}
+      \field{shortjournal}{Optica Quantum, OPTICAQ}
+      \field{title}{Astigmatism-Free {{3D}} Optical Tweezer Control for Rapid Atom Rearrangement}
+      \field{urlday}{23}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{volume}{4}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{241\bibrangedash 249}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1364/OPTICAQ.583554
+      \endverb
+      \verb{file}
+      \verb /home/christian/Zotero/storage/V5HBVXZE/Lu et al. - 2026 - Astigmatism-free 3D optical tweezer control for rapid atom rearrangement.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://opg.optica.org/opticaq/abstract.cfm?uri=opticaq-4-3-241
+      \endverb
+      \verb{url}
+      \verb https://opg.optica.org/opticaq/abstract.cfm?uri=opticaq-4-3-241
+      \endverb
+      \keyw{Distortion,Frequency modulation,Optical tweezers,Quantum metrology,Spatial light modulators,Three dimensional reconstruction}
+    \endentry
+    \entry{winelandExperimentalIssuesCoherent1997}{online}{}
+      \name{author}{6}{}{%
+        {{hash=7e1cc1aeb5e45f657d533ecad9747f29}{%
+           family={Wineland},
+           familyi={W\bibinitperiod},
+           given={D.\bibnamedelimi J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=74ebfc3b4e582a44afe3631a345d75b2}{%
+           family={Monroe},
+           familyi={M\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=4539bd748af41832d08db3384e7af341}{%
+           family={Itano},
+           familyi={I\bibinitperiod},
+           given={W.\bibnamedelimi M.},
+           giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=abd2182e135345700f424b3a28914771}{%
+           family={Leibfried},
+           familyi={L\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=0fb5f95c07813d117f54d056b9322b9d}{%
+           family={King},
+           familyi={K\bibinitperiod},
+           given={B.\bibnamedelimi E.},
+           giveni={B\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=1a3a6463ddaeb090aa8d19af5dee659a}{%
+           family={Meekhof},
+           familyi={M\bibinitperiod},
+           given={D.\bibnamedelimi M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {arXiv.org}%
+      }
+      \strng{namehash}{b2d596f8a3791ecebbe331a23ecded24}
+      \strng{fullhash}{1e62589b6e919a8a4e70228ccb536a5a}
+      \strng{bibnamehash}{1e62589b6e919a8a4e70228ccb536a5a}
+      \strng{authorbibnamehash}{1e62589b6e919a8a4e70228ccb536a5a}
+      \strng{authornamehash}{b2d596f8a3791ecebbe331a23ecded24}
+      \strng{authorfullhash}{1e62589b6e919a8a4e70228ccb536a5a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Methods for, and limitations to, the generation of entangled states of trapped atomic ions are examined. As much as possible, state manipulations are described in terms of quantum logic operations since the conditional dynamics implicit in quantum logic is central to the creation of entanglement. Keeping with current interest, some experimental issues in the proposal for trapped-ion quantum computation by I. Cirac and P. Zoller (University of Innsbruck) are discussed. Several possible decoherence mechanisms are examined and what may be the more important of these are identified. Some potential applications for entangled states of trapped-ions which lie outside the immediate realm of quantum computation are also discussed.}
+      \field{day}{7}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{title}{Experimental Issues in Coherent Quantum-State Manipulation of Trapped Atomic Ions}
+      \field{urlday}{24}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{1997}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/christian/Zotero/storage/CYEM3RAE/Wineland et al. - 1997 - Experimental issues in coherent quantum-state manipulation of trapped atomic ions.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/quant-ph/9710025v2
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/quant-ph/9710025v2
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

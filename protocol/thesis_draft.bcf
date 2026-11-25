@@ -2397,6 +2397,10 @@
     <bcf:citekey order="21" intorder="1">peanoTopologicalEdgeStates2018</bcf:citekey>
     <bcf:citekey order="22" intorder="1">pultineviciusLonglivedGiantCircular2026</bcf:citekey>
     <bcf:citekey order="23" intorder="1">ryuTopologicalInsulatorsSuperconductors2010</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">carruthersCoherentStatesForced1965</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">hendersonExperimentalDemonstrationPainting2009</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">luAstigmatismfree3DOptical2026</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">winelandExperimentalIssuesCoherent1997</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

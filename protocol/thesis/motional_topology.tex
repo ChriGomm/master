@@ -404,3 +404,76 @@ The chiral symmetry is not satisfied for these configurations. But one can never
     \caption{\textbf{Spectrum and edge states for 2D displacement.} In the upper left corner the full spectrum of the Hamiltonian is shown. A positive and a negative band can be identified, which envelope another bulk band at around zero energy. A closer look at the zero energy region is shown in the upper right corner. The energies with the highest edge occupation are indicated by colored dots, while the standard deviation of their spectral position over a sample of $200$ trap noise configurations is marked by the color-shaded areas. The four panels below this graph show the mean edge occupation of these states with error bars. Especially for the lowest energy states shown, the edge occupation reaches high values, whilst at the same time these states are more separated from the bulk than the others. A closer look at those states for the value of $b/a=0.9$ (lower left panel) shows, however, that the separation from the bulk spectrum is not stable or even most likely. The lower middle panel shows the distribution of edge excitations for this state.}
     \label{fig:edge occupation 2d dis}
 \end{figure}
+
+
+
+
+\section{State preparation}
+\subsection{Trap shaking}
+First let us investigate the case where the trap is moved in an oscillatory manner, i.e.the trap center $x_0(t)$ follows the movement
+\begin{align*}
+    x_0(t) = x_0 \sin(\Omega t)
+\end{align*}
+This implies a time-dependent Hamiltonian of the form
+\begin{align*}
+    H_\text{trap}(t)&= \frac{\hat{p}^2}{2m} + \frac{1}{2} m \omega^2 (\hat{x}-x_0(t))^2\\
+    &= \frac{\hat{p}^2}{2m} + \frac{1}{2} m \omega^2 \hat{x}^2 - m \omega^2 \hat{x} x_0(t) + \frac{1}{2} m \omega^2 x_0(t)^2
+\end{align*}
+writing this Hamiltonian in terms of creation and annihilation operators and neglecting constant terms yields
+\begin{align*}
+    H_\text{trap}(t) &= \hbar \omega\,a^\dagger a - \sqrt{\frac{\hbar m \omega^3}{2}}\,x_0(t)\,(a+a^\dagger) 
+\end{align*}
+The corresponding Heisenberg equation of motion for the annihilation operator reads
+\begin{align*}
+    \dot{a} &= -i\omega a + i \sqrt{\frac{m \omega^3}{2\hbar}}\,x_0(t)\\
+    &:= -i\omega a + i \lambda \sin(\Omega t)
+\end{align*}
+As this is the equation of motion for a periodically displaced harmonic oscillator, I use the ansatz $a(t)=e^{-i\omega t}a+d(t)$ which yields
+\begin{align*}
+    \dot{a}&= -i\omega e^{-i\omega t}a + \dot{d}(t)=-i\omega a(t)+ i\lambda \sin(\Omega t)\\
+    \Rightarrow\quad \dot{d}(t)&= -i\omega d(t) + i\lambda \sin(\Omega t)
+\end{align*}
+This is the equation of motion for a purely scalar quantity and can be solved by the ansatz $d(t)=e^{-i\omega t}f(t)$, which yields
+\begin{align*}
+    \dot{d}(t)&= -i\omega e^{-i\omega t}f(t) + e^{-i\omega t}\dot{f}(t)=-i\omega d(t)+ i\lambda \sin(\Omega t)\\
+    \Rightarrow \quad \dot{f}(t)&= i\lambda e^{i\omega t} \sin(\Omega t) 
+\end{align*}
+Thus the equation of motion for the annihilation operator is correctly solved by the expression
+\begin{align*}
+    a(t) &= e^{-i\omega t}a + e^{-i\omega t}\int_0^t dt'\, i\lambda e^{i\omega t'} \sin(\Omega t')
+\end{align*}
+Starting from the vacuum state, the system evolves as a coherent state $\ket{\alpha(t)}$ with the time-dependent state label \cite{carruthersCoherentStatesForced1965}
+\begin{align*}
+    \alpha(t) &= \int_0^t dt'\, i\lambda e^{i\omega t'} \sin(\Omega t')\\
+    &= \lambda \int_0^t dt'\, \frac{1}{2}\left( e^{ i( \omega +\Omega)t'} -  e^{ i( \omega -\Omega)t'} \right)\\
+    &= \frac{\lambda}{2}\left( \frac{e^{ i( \omega +\Omega)t}-1}{i(\omega+\Omega)} -  \frac{e^{ i( \omega -\Omega)t}-1}{i(\omega-\Omega)} \right)\\
+    &= \frac{\lambda}{2i(\omega^2-\Omega^2)}\left[ 2\Omega+\omega e^{i\omega t}\left(e^{i\Omega t}-e^{-i\Omega t}\right)- \Omega e^{i\omega t} \left(e^{i\Omega t}+e^{-i\Omega t}\right) \right]\\
+    &= \frac{\lambda}{i(\omega^2-\Omega^2)}\left[ \Omega + e^{i\omega t}\left(i\omega \sin(\Omega t) -\Omega \cos(\Omega t)\right)\right]
+\end{align*}
+The mean number of excitations in the system is given by 
+\begin{align*}
+    \braket{n(t)} &= |\alpha(t)|^2\\
+    &= \frac{\lambda^2}{(\omega^2-\Omega^2)^2}\left[ \left(\Omega- \omega\sin(\omega t)\sin(\Omega t) - \Omega \cos(\omega t) \cos(\Omega t) \right)^2  + \left( \omega \cos(\omega t)\sin(\Omega t) -\Omega \sin(\omega t)\cos(\Omega t)\right)^2  \right]
+    % &= \frac{\lambda^2}{(\omega^2-\Omega^2)^2}\left[ \Omega^2 + \omega^2 \sin^2(\Omega t) + \Omega^2 \cos^2(\Omega t) + 4\,\omega\,\Omega\,\sin(\Omega t)\,\sin(\omega t) + 4\,\Omega^2\,\cos(\Omega t)\,\cos(\omega t) \right]
+\end{align*}
+The maximum of the mean excitation number's periodic oscillation depends on the frequency of the trap shaking $\Omega$ and of its amplitude $x_0$. \figref{fig:dis amplitude} shows the amplitude necessary to reach a mean excitation number of $\braket{n}=1$ for different shaking frequencies. The speed and frequency of the trap motion is limited by several experimental constraints. One of them is the responds time of the AOD generating the trap, which is in the order of $10\,\mu s$. This limits the frequency of the trap shaking to $\Omega\lesssim 100\,kHz$, when one takes into account the reshaping of the entire trap potential. In \cite{hendersonExperimentalDemonstrationPainting2009} arbitrary trap potentials are generated by fast averaging over multiple trap configurations. They reported a limiting ramping frequency of the AOD of $25\,kHz$, over which distortions of the trap shape where present. Nevertheless for mere motion of the trap center higher change rates of the AOD frequency seem to be used \cite{luAstigmatismfree3DOptical2026}. Even with the lower limit of $25\,$kHz coherent excitation of atom movement can be realized with small displacement amplitudes.
+\begin{figure}[H]
+    % \hspace*{-2cm}
+    \includegraphics{pictures/necessary_trap_displacement_for_excitation.pdf}
+    \caption{\textbf{Necessary displacement amplitude for trap shaking.} }
+    \label{fig:dis amplitude}
+\end{figure}
+\subsection{Resonant sideband pulses}
+The standard way to prepare a motional Fock state of an atom in a trap, is to perform a sequence of sideband pulses. The interaction of a laser with the atom can be described by The Hamiltonian
+\begin{align*}
+    H&=\frac{\omega_a}{2} \sigma_z+ {\omega_T } a^\dagger a + 2\Omega \sigma_x\cos(kx-\omega_L t+\phi),
+\end{align*}
+The next step is to transform into the interaction picture with respect to the uncoupled atom and trap evolution and perform a rotating wave approximation.
+\begin{align*}
+    H_\text{int}&= \Omega \sigma_+ \exp\left(i\left[\eta\left(a\,e^{-i\omega_T t}+ a^\dagger e^{i\omega_T t}\right)-\delta t + \phi\right]\right)+\text{h.c.}%\frac{\Delta}{2} \sigma_z + 
+\end{align*}
+For small Lamb-Dicke parameter $\eta=k\sqrt{\hbar/(2m\omega)}\ll1$, where the motion of the atom takes place on scales much smaller than the wavelength of the laser, one can expand the exponential in orders of $\eta$.
+\begin{align*}
+    H_\text{int}&\approx \Omega\sigma_+\,\left[ 1+ i\eta\left(a\,e^{-i\omega_T t}+ a^\dagger e^{i\omega_T t}\right) \right]\,e^{-i(\delta t-\phi)}+\text{h.c.}
+\end{align*}
+By choice of the detuning one can make either the carrier-transition ($\delta=0$ motion is not affected) the blue sideband transition ($\delta=\omega_T$ additional motion is created) or the red sideband transition ($\delta=-\omega_T$ a motional quanta is destroyed) resonant. In this way one can generate motional Fock states by applying a sequence of $\pi$-pulses to the atom with the correct detunings \cite{winelandExperimentalIssuesCoherent1997}.
